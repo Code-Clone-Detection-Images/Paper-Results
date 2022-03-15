@@ -1,0 +1,154 @@
+nicad-runscript c-other c > nicad-c--other-vestigium.txt  0,16s user 0,09s system 1% cpu 13,925 total
+
+[Script] Using docker: Docker version 20.10.12, build e91ed5707e
+./nicad6 functions "c" "/home/nicad-user/data/sub"
+
+NiCad Clone Detector v6.2 (13.11.20)
+
+config=./config/default.cfg
+system=/home/nicad-user/data/sub
+threshold=0.30
+granularity=functions
+language=c
+transform=none
+rename=blind
+filter=none
+abstract=none
+normalize=none
+cluster=yes
+report=yes
+include=
+exclude=
+
+Tue Mar 15 16:43:29 UTC 2022
+
+Extracting functions from c files in /home/nicad-user/data/sub
+
+*** Warning: 12 source files failed to parse
+
+Extracted 169 functions
+
+Applying blind renaming to extracted functions from c files in /home/nicad-user/data/sub
+
+Finding clones between 10 and 2500 lines at UPI threshold 0.30
+
+Found 12 clone pairs
+
+Clustering clone pairs into classes
+
+Clustered clone pairs into 12 classes
+
+Getting original sources for clones
+
+Making HTML reports
+
+Done.
+
+Detailed log in /home/nicad-user/data/sub_functions-clones-2022-03-15-16:43:29.log
+Results in /home/nicad-user/data/sub_functions-blind-clones/
+Report in /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes-withsource.html
+
+Tue Mar 15 16:43:42 UTC 2022
+
+[Logs] -----------------------------------------------
+Tue Mar 15 16:43:29 UTC 2022
+./txl/c-extract-functions.x ALL.c >> /home/nicad-user/data/sub_functions.xml
+[/tmp/_home_nicad-user_data_sub_ugurkkkkkk_00000000002351b1_00000000002351b1.c-ifdefed, c-extract-functions.txl] : TXL0192E line 1 of /tmp/_home_nicad-user_data_sub_ugurkkkkkk_00000000002351b1_00000000002351b1.c-ifdefed - Syntax error at or near:
+	include < >>> stdio <<< . h > include <
+[/tmp/_home_nicad-user_data_sub_godchinmay_000000000027ccda_000000000027ccda.c-ifdefed, c-extract-functions.txl] : TXL0192E line 4 of /tmp/_home_nicad-user_data_sub_godchinmay_000000000027ccda_000000000027ccda.c-ifdefed - Syntax error at or near:
+	void main { >>> int <<< a [ N ] ,
+[/tmp/_home_nicad-user_data_sub_pheonixking_0000000000235641_0000000000235641.c-ifdefed, c-extract-functions.txl] : TXL0192E line 35 of /tmp/_home_nicad-user_data_sub_pheonixking_0000000000235641_0000000000235641.c-ifdefed - Syntax error at or near:
+	} } } for ( >>> = <<< 0 ; j < size
+[/tmp/_home_nicad-user_data_sub_Eligator_0000000000243dad_0000000000243dad.c-ifdefed, c-extract-functions.txl] : TXL0192E line 13 of /tmp/_home_nicad-user_data_sub_Eligator_0000000000243dad_0000000000243dad.c-ifdefed - Syntax error at or near:
+	; vector < vector < >>> int <<< >> arr ( n ,
+[/tmp/_home_nicad-user_data_sub_chetanshahajipatil_0000000000224fc6_0000000000224fc6.c-ifdefed, c-extract-functions.txl] : TXL0192E line 93 of /tmp/_home_nicad-user_data_sub_chetanshahajipatil_0000000000224fc6_0000000000224fc6.c-ifdefed - Syntax error at or near:
+	, y1 ) ; } >>> return <<< 0 ; }
+[/tmp/_home_nicad-user_data_sub_15Vaibhav_000000000024d9f4_000000000024d9f4.c-ifdefed, c-extract-functions.txl] : TXL0192E line 21 of /tmp/_home_nicad-user_data_sub_15Vaibhav_000000000024d9f4_000000000024d9f4.c-ifdefed - Syntax error at or near:
+	++ ) { temp = >>> [ <<< 0 ] [ c ]
+[/tmp/_home_nicad-user_data_sub_Tejusimhadri_000000000023e76e_000000000023e76e.c-ifdefed, c-extract-functions.txl] : TXL0192E line 1 of /tmp/_home_nicad-user_data_sub_Tejusimhadri_000000000023e76e_000000000023e76e.c-ifdefed - Syntax error at or near:
+	include < >>> stdio <<< . h > int main
+[/tmp/_home_nicad-user_data_sub_Sreekharreddy_00000000002352dc_00000000002352dc.c-ifdefed, c-extract-functions.txl] : TXL0191E at end of /tmp/_home_nicad-user_data_sub_Sreekharreddy_00000000002352dc_00000000002352dc.c-ifdefed - Syntax error at end of:
+	45
+[/tmp/_home_nicad-user_data_sub_acutesaloni0498_0000000000273d76_0000000000273d76.c-ifdefed, c-extract-functions.txl] : TXL0192E line 26 of /tmp/_home_nicad-user_data_sub_acutesaloni0498_0000000000273d76_0000000000273d76.c-ifdefed - Syntax error at or near:
+	] ) { int rowcount >>> ++ <<< ; } if ( i
+[/tmp/_home_nicad-user_data_sub_Muskan22_99_0000000000287e34_0000000000287e34.c-ifdefed, c-extract-functions.txl] : TXL0192E line 1 of /tmp/_home_nicad-user_data_sub_Muskan22_99_0000000000287e34_0000000000287e34.c-ifdefed - Syntax error at or near:
+	[ >>> 12 <<< : 03 AM , 4
+[/tmp/_home_nicad-user_data_sub_giridhar19199_0000000000244ede_0000000000244ede.c-ifdefed, c-extract-functions.txl] : TXL0192E line 25 of /tmp/_home_nicad-user_data_sub_giridhar19199_0000000000244ede_0000000000244ede.c-ifdefed - Syntax error at or near:
+	n ) { set < >>> int <<< > s ; frj (
+[/tmp/_home_nicad-user_data_sub_nikhilchemistry_0000000000267a57_0000000000267a57.c-ifdefed, c-extract-functions.txl] : TXL0192E line 16 of /tmp/_home_nicad-user_data_sub_nikhilchemistry_0000000000267a57_0000000000267a57.c-ifdefed - Syntax error at or near:
+	= strlen ( 2 ) >>> } <<< }
+
+Tue Mar 15 16:43:42 UTC 2022
+
+Tue Mar 15 16:43:42 UTC 2022
+./tools/streamprocess.x './txl/c-rename-blind-functions.x stdin' < /home/nicad-user/data/sub_functions.xml > /home/nicad-user/data/sub_functions-blind.xml
+
+real	0m0.153s
+user	0m0.146s
+sys	0m0.006s
+
+Tue Mar 15 16:43:42 UTC 2022
+
+Tue Mar 15 16:43:42 UTC 2022
+./tools/clonepairs.x /home/nicad-user/data/sub_functions-blind.xml 0.30 10 2500 > /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30.xml
+Processing /home/nicad-user/data/sub_functions-blind.xml with difference threshold 30%, clone size 10 .. 2500 lines
+Reading pcs . done.
+Total 169/6000000 potential clones of 10 lines or more
+Used 4259/100000000 total pc lines
+Used 38782/600000000 unique line text chars
+ and 767/12000000 unique lines
+Sorting pcs . done.
+Finding clones  done.
+Total 4093 pc comparisons
+Pruning embedded clone pairs .. done.
+Pruned 0 embedded clone pairs
+Found 12 clone pairs
+Generating XML output . done.
+
+
+real	0m0.021s
+user	0m0.006s
+sys	0m0.015s
+
+Tue Mar 15 16:43:42 UTC 2022
+
+Tue Mar 15 16:43:42 UTC 2022
+./tools/cloneclasses.x /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30.xml > /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes.xml
+Processing /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30.xml
+Reading clone pairs . done.
+Total 12 pairs
+Sorting pairs . done.
+Indexing pairs . done.
+Computing classes . done.
+Clustered clone pairs into 12 classes
+Generating XML output . done.
+
+
+real	0m0.029s
+user	0m0.022s
+sys	0m0.007s
+
+Tue Mar 15 16:43:42 UTC 2022
+
+Tue Mar 15 16:43:42 UTC 2022
+./tools/getsource.x /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes.xml /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes-withsource.xml
+/home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes.xml
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+
+Tue Mar 15 16:43:42 UTC 2022
+
+Tue Mar 15 16:43:42 UTC 2022
+./tools/tohtmlpairs.x /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes-withsource.xml /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes-withsource.html
+functions-blind
+30%
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+
+Tue Mar 15 16:43:42 UTC 2022
+
+[Output] See: "sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes-withsource.html"

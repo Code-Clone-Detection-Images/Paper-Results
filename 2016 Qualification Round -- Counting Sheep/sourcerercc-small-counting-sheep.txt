@@ -1,0 +1,1203 @@
+sourcerercc-runscript java-small > sourcerercc-small-counting-sheep.txt  1,09s user 0,30s system 8% cpu 15,564 total
+
+[Script] Using docker: Docker version 20.10.12, build e91ed5707e
+Sending build context to Docker daemon  5.009MB
+
+Step 1/23 : FROM openjdk:18-alpine3.15
+ ---> c89120dcca4c
+Step 2/23 : ENV HOME=/home/sourcerercc-user
+ ---> Using cache
+ ---> 05afca092b1c
+Step 3/23 : ENV SOURCERERCC_HOME="$HOME/SourcererCC-master"
+ ---> Using cache
+ ---> 554856b87276
+Step 4/23 : RUN addgroup --gid 1000 sourcerercc-user && adduser --uid 1000 --ingroup sourcerercc-user --home "$HOME" --disabled-password sourcerercc-user
+ ---> Using cache
+ ---> 2555f4b698fb
+Step 5/23 : RUN apk add --update --no-cache bash wget zip unzip python3 python2 file mysql-client
+ ---> Using cache
+ ---> e4ec93bbb5df
+Step 6/23 : RUN python3 -m ensurepip
+ ---> Using cache
+ ---> b0102c864d02
+Step 7/23 : RUN python2 -m ensurepip
+ ---> Using cache
+ ---> b5f0e081ab32
+Step 8/23 : RUN pip2 install mysql-connector
+ ---> Using cache
+ ---> dcd60eebc97e
+Step 9/23 : ENV APACHE_ANT_VERSION=1.10.12
+ ---> Using cache
+ ---> b89db3041710
+Step 10/23 : RUN wget http://archive.apache.org/dist/ant/binaries/apache-ant-$APACHE_ANT_VERSION-bin.tar.gz --directory-prefix /opt/ant/
+ ---> Using cache
+ ---> 76165696f367
+Step 11/23 : RUN tar -xvzf /opt/ant/apache-ant-$APACHE_ANT_VERSION-bin.tar.gz --directory /opt/ant/
+ ---> Using cache
+ ---> b8508dd03143
+Step 12/23 : RUN rm -f /opt/ant/apache-ant-$APACHE_ANT_VERSION-bin.tar.gz
+ ---> Using cache
+ ---> 40385929237d
+Step 13/23 : ENV ANT_HOME=/opt/ant/apache-ant-$APACHE_ANT_VERSION
+ ---> Using cache
+ ---> 34b6632a2de7
+Step 14/23 : ENV PATH="${PATH}:${ANT_HOME}/bin"
+ ---> Using cache
+ ---> 364054e919f9
+Step 15/23 : WORKDIR "$HOME"
+ ---> Using cache
+ ---> d7fba5e3ae78
+Step 16/23 : RUN wget https://github.com/Mondego/SourcererCC/archive/refs/heads/master.zip --directory-prefix "$HOME"
+ ---> Using cache
+ ---> fd9e3453f63e
+Step 17/23 : RUN unzip master.zip
+ ---> Using cache
+ ---> 98536186b065
+Step 18/23 : RUN rm -rf master.zip
+ ---> Using cache
+ ---> 9372e015848a
+Step 19/23 : RUN chown -R -c sourcerercc-user "$SOURCERERCC_HOME"
+ ---> Using cache
+ ---> 35403dc6a4c7
+Step 20/23 : RUN sed -i "s|FILE_projects_list =.*|FILE_projects_list=$HOME/input.lst|" "$SOURCERERCC_HOME/tokenizers/file-level/config.ini" && sed -i "s|File_extensions =.*|File_extensions = .cpp .hpp .c .h .java|" "$SOURCERERCC_HOME/tokenizers/file-level/config.ini"
+ ---> Using cache
+ ---> 4f19e71ea899
+Step 21/23 : COPY run_sourcerercc.sh sql/initialize.sql sql/query.sql /
+ ---> Using cache
+ ---> f3f8a605dee6
+Step 22/23 : USER sourcerercc-user
+ ---> Using cache
+ ---> 3a4bafa321da
+Step 23/23 : ENTRYPOINT [ "/bin/bash", "/run_sourcerercc.sh" ]
+ ---> Using cache
+ ---> 93c7be268b3e
+Successfully built 93c7be268b3e
+Successfully tagged sourcerercc_alpine-sourcerercc:latest
+Attaching to sourcerercc_mysql-db-sourcerercc_1, sourcerercc_alpine-sourcerercc_1
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15 16:32:21+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.37-1debian10 started.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15 16:32:21+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[36malpine-sourcerercc_1    |[0m [VARDUMP] CC_ARG=/home/sourcerercc-user/data/java-small; MYSQL_HOST=mysql-db-sourcerercc; PROJECTS_LIST=;
+[36malpine-sourcerercc_1    |[0m Step 1: run the tokenizer
+[36malpine-sourcerercc_1    |[0m      1.1: zipping all projects as necessary
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15 16:32:21+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.37-1debian10 started.
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/data/java-small/Abdelrhman.fathy: directory
+[36malpine-sourcerercc_1    |[0m          > Zipping necessary
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.152175Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.153252Z 0 [Note] mysqld (mysqld 5.7.37) starting as process 1 ...
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Abdelrhman.fathy.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Abdelrhman.fathy/ (stored 0%)
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.155492Z 0 [Note] InnoDB: PUNCH HOLE support available
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.155502Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.155506Z 0 [Note] InnoDB: Uses event mutexes
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.155508Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.155511Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.155513Z 0 [Note] InnoDB: Using Linux native AIO
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Anonymouse.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Anonymouse/ (stored 0%)
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.155700Z 0 [Note] InnoDB: Number of pools: 1
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Azertl.zip
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.155773Z 0 [Note] InnoDB: Using CPU crc32 instructions
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.156896Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.165506Z 0 [Note] InnoDB: Completed initialization of buffer pool
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Azertl/ (stored 0%)
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.166696Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/BrijS.zip
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.177942Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/BrijS/ (stored 0%)
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.184240Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.184270Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/ByungWook.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/ByungWook/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/CDJ.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/CDJ/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Chihwa.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Chihwa/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/ChrisJEkd.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/ChrisJEkd/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/ClubberBon.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/ClubberBon/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/CoderKhushal.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/CoderKhushal/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/CodingMonkey.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/CodingMonkey/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Crayola.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Crayola/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/DasMoeh.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/DasMoeh/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Elzankalony.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Elzankalony/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Fatality2412.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Fatality2412/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Hooman202.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Hooman202/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/JJD.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/JJD/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Jyoti273.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Jyoti273/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Kamesh46.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Kamesh46/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Kps1211.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Kps1211/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Krzysztof.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Krzysztof/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Leo007.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Leo007/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Lilin.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Lilin/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/MARRY.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/MARRY/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Maisttro017.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Maisttro017/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Malinda.UCSC.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Malinda.UCSC/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/MarkVasin.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/MarkVasin/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/MaulikRaviya.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/MaulikRaviya/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Mrboolean.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Mrboolean/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/NPN.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/NPN/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/NRR.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/NRR/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Nadal.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Nadal/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/NarasimhaVelagaleti.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/NarasimhaVelagaleti/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Navi9926.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Navi9926/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/PinPinx.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/PinPinx/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Samychan.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Samychan/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/SapFire.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/SapFire/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Shaily.Roy.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Shaily.Roy/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Shub.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Shub/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Sofiage.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Sofiage/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Stefan456.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Stefan456/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Takunda.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Takunda/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Tekai..zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Tekai./ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Toluene.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Toluene/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Tyomka.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Tyomka/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Undavia.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Undavia/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Varun.Otaku.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Varun.Otaku/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/YiCheng.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/YiCheng/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Zvir.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/Zvir/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/adao7000.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/adao7000/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/admqueiroga.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/admqueiroga/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/anasmak.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/anasmak/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/anish153.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/anish153/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/atharaaa.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/atharaaa/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/borealyx.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/borealyx/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/byann.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/byann/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/deepak.sharma.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/deepak.sharma/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/egaeus.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/egaeus/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/eporter.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/eporter/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/hadesthanos.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/hadesthanos/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/harlamod.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/harlamod/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/helenie.z.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/helenie.z/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/hra078.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/hra078/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/i.m.no.geek.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/i.m.no.geek/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/issath.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/issath/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/itisevgeny.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/itisevgeny/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/jporcelli.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/jporcelli/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/ka13ar.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/ka13ar/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/kabhi.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/kabhi/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/katalma.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/katalma/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/lcynot.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/lcynot/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/m0nsterb.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/m0nsterb/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/mahmud.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/mahmud/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/maskedman1231.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/maskedman1231/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/masterdungeon2.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/masterdungeon2/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/nabil.sunesara.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/nabil.sunesara/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/nanditha.a.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/nanditha.a/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/neelamgt.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/neelamgt/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/nisrina.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/nisrina/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/od3d.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/od3d/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/oko.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/oko/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/patkovskyi.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/patkovskyi/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/peter707.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/peter707/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/pomo.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/pomo/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/rahooligan.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/rahooligan/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/ranchor.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/ranchor/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/rishabh179.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/rishabh179/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/rjctlance.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/rjctlance/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/robthemonster.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/robthemonster/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/sergon146.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/sergon146/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/sg696.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/sg696/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/shibendusaha.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/shibendusaha/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/sil2046.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/sil2046/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/slowe.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/slowe/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/smartdumpling.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/smartdumpling/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/tim.miller.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/tim.miller/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/vedipen.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/vedipen/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/vjkr.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/vjkr/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/vyasnee.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/vyasnee/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/zizo.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/java-small/zizo/ (stored 0%)
+[36malpine-sourcerercc_1    |[0m      1.2: running the tokenizer
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.256750Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.257167Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.257173Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.257358Z 0 [Note] InnoDB: Waiting for purge to start
+[36malpine-sourcerercc_1    |[0m ' zip ' format
+[36malpine-sourcerercc_1    |[0m *** Starting priority projects...
+[36malpine-sourcerercc_1    |[0m *** Starting regular projects...
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <1,/home/sourcerercc-user/input/Abdelrhman.fathy.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Abdelrhman.fathy.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Abdelrhman.fathy.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <1,/home/sourcerercc-user/input/Abdelrhman.fathy.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000977micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <2,/home/sourcerercc-user/input/Anonymouse.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Anonymouse.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Anonymouse.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <2,/home/sourcerercc-user/input/Anonymouse.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000271micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <3,/home/sourcerercc-user/input/Azertl.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Azertl.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Azertl.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <3,/home/sourcerercc-user/input/Azertl.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000979micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <4,/home/sourcerercc-user/input/BrijS.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/BrijS.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/BrijS.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <4,/home/sourcerercc-user/input/BrijS.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000280micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <5,/home/sourcerercc-user/input/ByungWook.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/ByungWook.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/ByungWook.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <5,/home/sourcerercc-user/input/ByungWook.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000991micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <6,/home/sourcerercc-user/input/CDJ.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/CDJ.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/CDJ.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <6,/home/sourcerercc-user/input/CDJ.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000263micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <7,/home/sourcerercc-user/input/Chihwa.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Chihwa.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Chihwa.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <7,/home/sourcerercc-user/input/Chihwa.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000973micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <8,/home/sourcerercc-user/input/ChrisJEkd.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/ChrisJEkd.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/ChrisJEkd.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <8,/home/sourcerercc-user/input/ChrisJEkd.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000254micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <9,/home/sourcerercc-user/input/ClubberBon.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/ClubberBon.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/ClubberBon.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <9,/home/sourcerercc-user/input/ClubberBon.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000964micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <10,/home/sourcerercc-user/input/CoderKhushal.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/CoderKhushal.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/CoderKhushal.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <10,/home/sourcerercc-user/input/CoderKhushal.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000252micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <11,/home/sourcerercc-user/input/CodingMonkey.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/CodingMonkey.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/CodingMonkey.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <11,/home/sourcerercc-user/input/CodingMonkey.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000942micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <12,/home/sourcerercc-user/input/Crayola.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Crayola.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Crayola.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <12,/home/sourcerercc-user/input/Crayola.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000232micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <13,/home/sourcerercc-user/input/DasMoeh.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/DasMoeh.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/DasMoeh.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <13,/home/sourcerercc-user/input/DasMoeh.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000941micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <14,/home/sourcerercc-user/input/Elzankalony.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Elzankalony.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Elzankalony.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <14,/home/sourcerercc-user/input/Elzankalony.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000236micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <15,/home/sourcerercc-user/input/Fatality2412.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Fatality2412.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Fatality2412.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <15,/home/sourcerercc-user/input/Fatality2412.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000989micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <16,/home/sourcerercc-user/input/Hooman202.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Hooman202.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Hooman202.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <16,/home/sourcerercc-user/input/Hooman202.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000273micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.307473Z 0 [Note] InnoDB: 5.7.37 started; log sequence number 12660038
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.307584Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.307688Z 0 [Note] Plugin 'FEDERATED' is disabled.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.308531Z 0 [Note] InnoDB: Buffer pool(s) load completed at 220315 16:32:22
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <17,/home/sourcerercc-user/input/JJD.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/JJD.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/JJD.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <17,/home/sourcerercc-user/input/JJD.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001104micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <18,/home/sourcerercc-user/input/Jyoti273.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Jyoti273.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Jyoti273.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <18,/home/sourcerercc-user/input/Jyoti273.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000302micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.311415Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.311429Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.311432Z 0 [Warning] A deprecated TLS version TLSv1 is enabled. Please use TLSv1.2 or higher.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.311435Z 0 [Warning] A deprecated TLS version TLSv1.1 is enabled. Please use TLSv1.2 or higher.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.312016Z 0 [Warning] CA certificate ca.pem is self signed.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.312039Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.312310Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.312329Z 0 [Note] IPv6 is available.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.312335Z 0 [Note]   - '::' resolves to '::';
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.312344Z 0 [Note] Server socket created on IP: '::'.
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <19,/home/sourcerercc-user/input/Kamesh46.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Kamesh46.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Kamesh46.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <19,/home/sourcerercc-user/input/Kamesh46.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001052micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <20,/home/sourcerercc-user/input/Kps1211.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Kps1211.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Kps1211.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <20,/home/sourcerercc-user/input/Kps1211.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000280micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.315377Z 0 [Warning] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <21,/home/sourcerercc-user/input/Krzysztof.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Krzysztof.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Krzysztof.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <21,/home/sourcerercc-user/input/Krzysztof.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001118micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <22,/home/sourcerercc-user/input/Leo007.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Leo007.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Leo007.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <22,/home/sourcerercc-user/input/Leo007.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000287micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <23,/home/sourcerercc-user/input/Lilin.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Lilin.zip
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.321739Z 0 [Note] Event Scheduler: Loaded 0 events
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T16:32:22.321898Z 0 [Note] mysqld: ready for connections.
+[33mmysql-db-sourcerercc_1  |[0m Version: '5.7.37'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Lilin.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <23,/home/sourcerercc-user/input/Lilin.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001214micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <24,/home/sourcerercc-user/input/MARRY.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/MARRY.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/MARRY.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <24,/home/sourcerercc-user/input/MARRY.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000348micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <25,/home/sourcerercc-user/input/Maisttro017.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Maisttro017.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Maisttro017.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <25,/home/sourcerercc-user/input/Maisttro017.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001231micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <26,/home/sourcerercc-user/input/Malinda.UCSC.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Malinda.UCSC.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Malinda.UCSC.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <26,/home/sourcerercc-user/input/Malinda.UCSC.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000325micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <27,/home/sourcerercc-user/input/MarkVasin.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/MarkVasin.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/MarkVasin.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <27,/home/sourcerercc-user/input/MarkVasin.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001198micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <28,/home/sourcerercc-user/input/MaulikRaviya.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/MaulikRaviya.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/MaulikRaviya.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <28,/home/sourcerercc-user/input/MaulikRaviya.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000304micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <29,/home/sourcerercc-user/input/Mrboolean.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Mrboolean.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Mrboolean.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <29,/home/sourcerercc-user/input/Mrboolean.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001369micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <30,/home/sourcerercc-user/input/NPN.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/NPN.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/NPN.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <30,/home/sourcerercc-user/input/NPN.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000390micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <31,/home/sourcerercc-user/input/NRR.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/NRR.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/NRR.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <31,/home/sourcerercc-user/input/NRR.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001329micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <32,/home/sourcerercc-user/input/Nadal.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Nadal.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Nadal.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <32,/home/sourcerercc-user/input/Nadal.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000391micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <33,/home/sourcerercc-user/input/NarasimhaVelagaleti.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/NarasimhaVelagaleti.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/NarasimhaVelagaleti.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <33,/home/sourcerercc-user/input/NarasimhaVelagaleti.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001500micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <34,/home/sourcerercc-user/input/Navi9926.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Navi9926.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Navi9926.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <34,/home/sourcerercc-user/input/Navi9926.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000375micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <35,/home/sourcerercc-user/input/PinPinx.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/PinPinx.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/PinPinx.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <35,/home/sourcerercc-user/input/PinPinx.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001650micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <36,/home/sourcerercc-user/input/Samychan.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Samychan.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Samychan.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <36,/home/sourcerercc-user/input/Samychan.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000501micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <37,/home/sourcerercc-user/input/SapFire.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/SapFire.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/SapFire.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <37,/home/sourcerercc-user/input/SapFire.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001727micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <38,/home/sourcerercc-user/input/Shaily.Roy.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Shaily.Roy.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Shaily.Roy.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <38,/home/sourcerercc-user/input/Shaily.Roy.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000436micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <39,/home/sourcerercc-user/input/Shub.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Shub.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Shub.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <39,/home/sourcerercc-user/input/Shub.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001976micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <40,/home/sourcerercc-user/input/Sofiage.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Sofiage.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Sofiage.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <40,/home/sourcerercc-user/input/Sofiage.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000593micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <41,/home/sourcerercc-user/input/Stefan456.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Stefan456.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Stefan456.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <41,/home/sourcerercc-user/input/Stefan456.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.002351micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <42,/home/sourcerercc-user/input/Takunda.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Takunda.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Takunda.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <42,/home/sourcerercc-user/input/Takunda.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000644micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <43,/home/sourcerercc-user/input/Tekai..zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Tekai..zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Tekai..zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <43,/home/sourcerercc-user/input/Tekai..zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.003062micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <44,/home/sourcerercc-user/input/Toluene.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Toluene.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Toluene.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <44,/home/sourcerercc-user/input/Toluene.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000978micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <45,/home/sourcerercc-user/input/Tyomka.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Tyomka.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Tyomka.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <45,/home/sourcerercc-user/input/Tyomka.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.003949micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <46,/home/sourcerercc-user/input/Undavia.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Undavia.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Undavia.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <46,/home/sourcerercc-user/input/Undavia.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001262micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <47,/home/sourcerercc-user/input/Varun.Otaku.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Varun.Otaku.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Varun.Otaku.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <47,/home/sourcerercc-user/input/Varun.Otaku.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004812micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <48,/home/sourcerercc-user/input/YiCheng.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/YiCheng.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/YiCheng.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <48,/home/sourcerercc-user/input/YiCheng.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001336micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <49,/home/sourcerercc-user/input/Zvir.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Zvir.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Zvir.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <49,/home/sourcerercc-user/input/Zvir.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004995micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <50,/home/sourcerercc-user/input/adao7000.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/adao7000.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/adao7000.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <50,/home/sourcerercc-user/input/adao7000.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001307micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <51,/home/sourcerercc-user/input/admqueiroga.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/admqueiroga.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/admqueiroga.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <51,/home/sourcerercc-user/input/admqueiroga.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.006262micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <52,/home/sourcerercc-user/input/anasmak.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/anasmak.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/anasmak.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <52,/home/sourcerercc-user/input/anasmak.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001596micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <53,/home/sourcerercc-user/input/anish153.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/anish153.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/anish153.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <53,/home/sourcerercc-user/input/anish153.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004857micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <54,/home/sourcerercc-user/input/atharaaa.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/atharaaa.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/atharaaa.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <54,/home/sourcerercc-user/input/atharaaa.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001251micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <55,/home/sourcerercc-user/input/borealyx.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/borealyx.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/borealyx.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <55,/home/sourcerercc-user/input/borealyx.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.005932micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <56,/home/sourcerercc-user/input/byann.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/byann.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/byann.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <56,/home/sourcerercc-user/input/byann.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001754micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <57,/home/sourcerercc-user/input/deepak.sharma.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/deepak.sharma.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/deepak.sharma.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <57,/home/sourcerercc-user/input/deepak.sharma.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004744micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <58,/home/sourcerercc-user/input/egaeus.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/egaeus.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/egaeus.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <58,/home/sourcerercc-user/input/egaeus.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001305micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <59,/home/sourcerercc-user/input/eporter.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/eporter.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/eporter.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <59,/home/sourcerercc-user/input/eporter.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.003399micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <60,/home/sourcerercc-user/input/hadesthanos.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/hadesthanos.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/hadesthanos.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <60,/home/sourcerercc-user/input/hadesthanos.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000922micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <61,/home/sourcerercc-user/input/harlamod.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/harlamod.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/harlamod.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <61,/home/sourcerercc-user/input/harlamod.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.003487micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <62,/home/sourcerercc-user/input/helenie.z.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/helenie.z.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/helenie.z.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <62,/home/sourcerercc-user/input/helenie.z.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000909micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <63,/home/sourcerercc-user/input/hra078.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/hra078.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/hra078.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <63,/home/sourcerercc-user/input/hra078.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.003381micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <64,/home/sourcerercc-user/input/i.m.no.geek.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/i.m.no.geek.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/i.m.no.geek.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <64,/home/sourcerercc-user/input/i.m.no.geek.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000895micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <65,/home/sourcerercc-user/input/issath.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/issath.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/issath.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <65,/home/sourcerercc-user/input/issath.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.003463micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <66,/home/sourcerercc-user/input/itisevgeny.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/itisevgeny.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/itisevgeny.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <66,/home/sourcerercc-user/input/itisevgeny.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000944micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <67,/home/sourcerercc-user/input/jporcelli.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/jporcelli.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/jporcelli.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <67,/home/sourcerercc-user/input/jporcelli.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.003471micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <68,/home/sourcerercc-user/input/ka13ar.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/ka13ar.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/ka13ar.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <68,/home/sourcerercc-user/input/ka13ar.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001264micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <69,/home/sourcerercc-user/input/kabhi.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/kabhi.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/kabhi.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <69,/home/sourcerercc-user/input/kabhi.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004838micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <70,/home/sourcerercc-user/input/katalma.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/katalma.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/katalma.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <70,/home/sourcerercc-user/input/katalma.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001344micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <71,/home/sourcerercc-user/input/lcynot.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/lcynot.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/lcynot.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <71,/home/sourcerercc-user/input/lcynot.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004623micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <72,/home/sourcerercc-user/input/m0nsterb.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/m0nsterb.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/m0nsterb.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <72,/home/sourcerercc-user/input/m0nsterb.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001233micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <73,/home/sourcerercc-user/input/mahmud.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/mahmud.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/mahmud.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <73,/home/sourcerercc-user/input/mahmud.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004720micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <74,/home/sourcerercc-user/input/maskedman1231.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/maskedman1231.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/maskedman1231.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <74,/home/sourcerercc-user/input/maskedman1231.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001472micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <75,/home/sourcerercc-user/input/masterdungeon2.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/masterdungeon2.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/masterdungeon2.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <75,/home/sourcerercc-user/input/masterdungeon2.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004744micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <76,/home/sourcerercc-user/input/nabil.sunesara.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/nabil.sunesara.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/nabil.sunesara.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <76,/home/sourcerercc-user/input/nabil.sunesara.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001443micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <77,/home/sourcerercc-user/input/nanditha.a.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/nanditha.a.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/nanditha.a.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <77,/home/sourcerercc-user/input/nanditha.a.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004727micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <78,/home/sourcerercc-user/input/neelamgt.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/neelamgt.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/neelamgt.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <78,/home/sourcerercc-user/input/neelamgt.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001396micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <79,/home/sourcerercc-user/input/nisrina.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/nisrina.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/nisrina.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <79,/home/sourcerercc-user/input/nisrina.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004972micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <80,/home/sourcerercc-user/input/od3d.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/od3d.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/od3d.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <80,/home/sourcerercc-user/input/od3d.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001317micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <81,/home/sourcerercc-user/input/oko.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/oko.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/oko.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <81,/home/sourcerercc-user/input/oko.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.005102micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <82,/home/sourcerercc-user/input/patkovskyi.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/patkovskyi.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/patkovskyi.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <82,/home/sourcerercc-user/input/patkovskyi.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001430micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <83,/home/sourcerercc-user/input/peter707.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/peter707.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/peter707.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <83,/home/sourcerercc-user/input/peter707.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.005102micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <84,/home/sourcerercc-user/input/pomo.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/pomo.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/pomo.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <84,/home/sourcerercc-user/input/pomo.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001557micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <85,/home/sourcerercc-user/input/rahooligan.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/rahooligan.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/rahooligan.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <85,/home/sourcerercc-user/input/rahooligan.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004717micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <86,/home/sourcerercc-user/input/ranchor.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/ranchor.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/ranchor.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <86,/home/sourcerercc-user/input/ranchor.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001365micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <87,/home/sourcerercc-user/input/rishabh179.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/rishabh179.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/rishabh179.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <87,/home/sourcerercc-user/input/rishabh179.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004812micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <88,/home/sourcerercc-user/input/rjctlance.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/rjctlance.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/rjctlance.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <88,/home/sourcerercc-user/input/rjctlance.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001296micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <89,/home/sourcerercc-user/input/robthemonster.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/robthemonster.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/robthemonster.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <89,/home/sourcerercc-user/input/robthemonster.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004929micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <90,/home/sourcerercc-user/input/sergon146.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/sergon146.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/sergon146.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <90,/home/sourcerercc-user/input/sergon146.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001374micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <91,/home/sourcerercc-user/input/sg696.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/sg696.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/sg696.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <91,/home/sourcerercc-user/input/sg696.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004740micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <92,/home/sourcerercc-user/input/shibendusaha.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/shibendusaha.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/shibendusaha.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <92,/home/sourcerercc-user/input/shibendusaha.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001334micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <93,/home/sourcerercc-user/input/sil2046.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/sil2046.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/sil2046.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <93,/home/sourcerercc-user/input/sil2046.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004846micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <94,/home/sourcerercc-user/input/slowe.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/slowe.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/slowe.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <94,/home/sourcerercc-user/input/slowe.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001347micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <95,/home/sourcerercc-user/input/smartdumpling.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/smartdumpling.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/smartdumpling.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <95,/home/sourcerercc-user/input/smartdumpling.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004868micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <96,/home/sourcerercc-user/input/tim.miller.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/tim.miller.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/tim.miller.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <96,/home/sourcerercc-user/input/tim.miller.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001401micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <97,/home/sourcerercc-user/input/vedipen.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/vedipen.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/vedipen.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <97,/home/sourcerercc-user/input/vedipen.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004734micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <98,/home/sourcerercc-user/input/vjkr.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/vjkr.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/vjkr.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <98,/home/sourcerercc-user/input/vjkr.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001321micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <99,/home/sourcerercc-user/input/vyasnee.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/vyasnee.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/vyasnee.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <99,/home/sourcerercc-user/input/vyasnee.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.004999micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <100,/home/sourcerercc-user/input/zizo.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/zizo.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/zizo.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <100,/home/sourcerercc-user/input/zizo.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001568micros | Zip: 0 Read: 0 Separators: 0micros Tokens: 0micros Write: 0micros Hash: 0 regex: 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 0 files in 0s.
+[36malpine-sourcerercc_1    |[0m *** No more projects to process. Waiting for children to finish...
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 0 files processed (1). Current total: 0
+[36malpine-sourcerercc_1    |[0m *** All done. 0 files in 0:00:00.589876
+[36malpine-sourcerercc_1    |[0m Step 2: prepare SourcererCC
+[36malpine-sourcerercc_1    |[0m      2.1: Find distinct token hashes
+[36malpine-sourcerercc_1    |[0m Searching on  files_tokens/files-tokens-0.tokens
+[36malpine-sourcerercc_1    |[0m Searching on  files_stats/files-stats-0.stats
+[36malpine-sourcerercc_1    |[0m      2.2: analyze token hashes
+[36malpine-sourcerercc_1    |[0m search will be carried out with 2 nodes
+[36malpine-sourcerercc_1    |[0m loading previous run state
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/SourcererCC-master/clone-detector/scriptinator_metadata.scc doesn't exist, creating one with state EXECUTE_1
+[36malpine-sourcerercc_1    |[0m previous run state 0
+[36malpine-sourcerercc_1    |[0m running new command /home/sourcerercc-user/SourcererCC-master/clone-detector/execute.sh 1
+[36malpine-sourcerercc_1    |[0m ('current state: ', '1')
+[36malpine-sourcerercc_1    |[0m ('flushing current state', '1')
+[36malpine-sourcerercc_1    |[0m running new command /home/sourcerercc-user/SourcererCC-master/clone-detector/backup-gtpm.sh
+[36malpine-sourcerercc_1    |[0m running new command /home/sourcerercc-user/SourcererCC-master/clone-detector/runnodes.sh init 1
+[36malpine-sourcerercc_1    |[0m ('current state: ', '2')
+[36malpine-sourcerercc_1    |[0m ('flushing current state', '2')
+[36malpine-sourcerercc_1    |[0m running new command /home/sourcerercc-user/SourcererCC-master/clone-detector/runnodes.sh index 1
+[36malpine-sourcerercc_1    |[0m ('current state: ', '3')
+[36malpine-sourcerercc_1    |[0m ('flushing current state', '3')
+[36malpine-sourcerercc_1    |[0m running new command /home/sourcerercc-user/SourcererCC-master/clone-detector/move-index.sh
+[36malpine-sourcerercc_1    |[0m ('current state: ', '4')
+[36malpine-sourcerercc_1    |[0m ('flushing current state', '4')
+[36malpine-sourcerercc_1    |[0m running new command /home/sourcerercc-user/SourcererCC-master/clone-detector/execute.sh 2
+[36malpine-sourcerercc_1    |[0m ('current state: ', '5')
+[36malpine-sourcerercc_1    |[0m ('flushing current state', '5')
+[36malpine-sourcerercc_1    |[0m running new command /home/sourcerercc-user/SourcererCC-master/clone-detector/runnodes.sh search 2
+[36malpine-sourcerercc_1    |[0m ('current state: ', '0')
+[36malpine-sourcerercc_1    |[0m ('flushing current state', '0')
+[36malpine-sourcerercc_1    |[0m SUCCESS: Search Completed on all nodes
+[36malpine-sourcerercc_1    |[0m      2.3: group the pairs
+[36malpine-sourcerercc_1    |[0m cat: can't open 'NODE_*/output8.0/query_*': No such file or directory
+[36malpine-sourcerercc_1    |[0m Step 3: import the database
+[36malpine-sourcerercc_1    |[0m      3.1: configure docker host
+[36malpine-sourcerercc_1    |[0m      3.2: prepare the database
+[36malpine-sourcerercc_1    |[0m      3.3: import the database
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting DB: oopslaDB with user:p
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) ### Importing files output from tokenizer
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) ## Warming up token values
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Getting info from /home/sourcerercc-user/input/files_tokens/files-tokens-0.tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) ## Import into database
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) ## Importing projects
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Importing from /home/sourcerercc-user/input/bookkeeping_projs/bookkeeping-proj-0.projs
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) ## Importing files and stats
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Importing from /home/sourcerercc-user/input/files_stats/files-stats-0.stats
+[36malpine-sourcerercc_1    |[0m      3.4: find clones in the database
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) DROP TABLE IF EXISTS `projectClones`;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) CREATE TABLE `projectClones` (
+[36malpine-sourcerercc_1    |[0m                        id                  INT(6)       UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+[36malpine-sourcerercc_1    |[0m                        cloneId             INT(6)       UNSIGNED NOT NULL,
+[36malpine-sourcerercc_1    |[0m                        cloneClonedFiles    INT(6)       UNSIGNED NOT NULL,
+[36malpine-sourcerercc_1    |[0m                        cloneTotalFiles     INT(6)       UNSIGNED NOT NULL,
+[36malpine-sourcerercc_1    |[0m                        cloneCloningPercent DECIMAL(6,3) UNSIGNED NOT NULL,
+[36malpine-sourcerercc_1    |[0m                        hostId              INT(6)       UNSIGNED NOT NULL,
+[36malpine-sourcerercc_1    |[0m                        hostAffectedFiles   INT(6)       UNSIGNED NOT NULL,
+[36malpine-sourcerercc_1    |[0m                        hostTotalFiles      INT(6)       UNSIGNED NOT NULL,
+[36malpine-sourcerercc_1    |[0m                        hostAffectedPercent DECIMAL(6,3) UNSIGNED NOT NULL,
+[36malpine-sourcerercc_1    |[0m                        INDEX(cloneId),
+[36malpine-sourcerercc_1    |[0m                        INDEX(cloneTotalFiles),
+[36malpine-sourcerercc_1    |[0m                        INDEX(cloneCloningPercent),
+[36malpine-sourcerercc_1    |[0m                        INDEX(hostId),
+[36malpine-sourcerercc_1    |[0m                        INDEX(hostTotalFiles),
+[36malpine-sourcerercc_1    |[0m                        INDEX(hostAffectedPercent),
+[36malpine-sourcerercc_1    |[0m                        UNIQUE INDEX pair (cloneId, hostId)
+[36malpine-sourcerercc_1    |[0m                        ) ENGINE = MYISAM;
+[36malpine-sourcerercc_1    |[0m [DEBUG] (MainThread) Loading project file counts...
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT projectId, COUNT(*) FROM files GROUP BY projectId;
+[36malpine-sourcerercc_1    |[0m [DEBUG] (MainThread) Loading project file counts... done
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) ### Calculating and Importing project clones
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting process 1
+[36malpine-sourcerercc_1    |[0m      3.5: query the database
+[36malpine-sourcerercc_1    |[0m projectId	projectPath	projectUrl
+[36malpine-sourcerercc_1    |[0m 1	/home/sourcerercc-user/input/Abdelrhman.fathy.zip	NULL
+[36malpine-sourcerercc_1    |[0m 2	/home/sourcerercc-user/input/Anonymouse.zip	NULL
+[36malpine-sourcerercc_1    |[0m 3	/home/sourcerercc-user/input/Azertl.zip	NULL
+[36malpine-sourcerercc_1    |[0m 4	/home/sourcerercc-user/input/BrijS.zip	NULL
+[36malpine-sourcerercc_1    |[0m 5	/home/sourcerercc-user/input/ByungWook.zip	NULL
+[36malpine-sourcerercc_1    |[0m 6	/home/sourcerercc-user/input/CDJ.zip	NULL
+[36malpine-sourcerercc_1    |[0m 7	/home/sourcerercc-user/input/Chihwa.zip	NULL
+[36malpine-sourcerercc_1    |[0m 8	/home/sourcerercc-user/input/ChrisJEkd.zip	NULL
+[36malpine-sourcerercc_1    |[0m 9	/home/sourcerercc-user/input/ClubberBon.zip	NULL
+[36malpine-sourcerercc_1    |[0m 10	/home/sourcerercc-user/input/CoderKhushal.zip	NULL
+[36malpine-sourcerercc_1    |[0m 11	/home/sourcerercc-user/input/CodingMonkey.zip	NULL
+[36malpine-sourcerercc_1    |[0m 12	/home/sourcerercc-user/input/Crayola.zip	NULL
+[36malpine-sourcerercc_1    |[0m 13	/home/sourcerercc-user/input/DasMoeh.zip	NULL
+[36malpine-sourcerercc_1    |[0m 14	/home/sourcerercc-user/input/Elzankalony.zip	NULL
+[36malpine-sourcerercc_1    |[0m 15	/home/sourcerercc-user/input/Fatality2412.zip	NULL
+[36malpine-sourcerercc_1    |[0m 16	/home/sourcerercc-user/input/Hooman202.zip	NULL
+[36malpine-sourcerercc_1    |[0m 17	/home/sourcerercc-user/input/JJD.zip	NULL
+[36malpine-sourcerercc_1    |[0m 18	/home/sourcerercc-user/input/Jyoti273.zip	NULL
+[36malpine-sourcerercc_1    |[0m 19	/home/sourcerercc-user/input/Kamesh46.zip	NULL
+[36malpine-sourcerercc_1    |[0m 20	/home/sourcerercc-user/input/Kps1211.zip	NULL
+[36malpine-sourcerercc_1    |[0m 21	/home/sourcerercc-user/input/Krzysztof.zip	NULL
+[36malpine-sourcerercc_1    |[0m 22	/home/sourcerercc-user/input/Leo007.zip	NULL
+[36malpine-sourcerercc_1    |[0m 23	/home/sourcerercc-user/input/Lilin.zip	NULL
+[36malpine-sourcerercc_1    |[0m 24	/home/sourcerercc-user/input/MARRY.zip	NULL
+[36malpine-sourcerercc_1    |[0m 25	/home/sourcerercc-user/input/Maisttro017.zip	NULL
+[36malpine-sourcerercc_1    |[0m 26	/home/sourcerercc-user/input/Malinda.UCSC.zip	NULL
+[36malpine-sourcerercc_1    |[0m 27	/home/sourcerercc-user/input/MarkVasin.zip	NULL
+[36malpine-sourcerercc_1    |[0m 28	/home/sourcerercc-user/input/MaulikRaviya.zip	NULL
+[36malpine-sourcerercc_1    |[0m 29	/home/sourcerercc-user/input/Mrboolean.zip	NULL
+[36malpine-sourcerercc_1    |[0m 30	/home/sourcerercc-user/input/NPN.zip	NULL
+[36malpine-sourcerercc_1    |[0m 31	/home/sourcerercc-user/input/NRR.zip	NULL
+[36malpine-sourcerercc_1    |[0m 32	/home/sourcerercc-user/input/Nadal.zip	NULL
+[36malpine-sourcerercc_1    |[0m 33	/home/sourcerercc-user/input/NarasimhaVelagaleti.zip	NULL
+[36malpine-sourcerercc_1    |[0m 34	/home/sourcerercc-user/input/Navi9926.zip	NULL
+[36malpine-sourcerercc_1    |[0m 35	/home/sourcerercc-user/input/PinPinx.zip	NULL
+[36malpine-sourcerercc_1    |[0m 36	/home/sourcerercc-user/input/Samychan.zip	NULL
+[36malpine-sourcerercc_1    |[0m 37	/home/sourcerercc-user/input/SapFire.zip	NULL
+[36malpine-sourcerercc_1    |[0m 38	/home/sourcerercc-user/input/Shaily.Roy.zip	NULL
+[36malpine-sourcerercc_1    |[0m 39	/home/sourcerercc-user/input/Shub.zip	NULL
+[36malpine-sourcerercc_1    |[0m 40	/home/sourcerercc-user/input/Sofiage.zip	NULL
+[36malpine-sourcerercc_1    |[0m 41	/home/sourcerercc-user/input/Stefan456.zip	NULL
+[36malpine-sourcerercc_1    |[0m 42	/home/sourcerercc-user/input/Takunda.zip	NULL
+[36malpine-sourcerercc_1    |[0m 43	/home/sourcerercc-user/input/Tekai..zip	NULL
+[36malpine-sourcerercc_1    |[0m 44	/home/sourcerercc-user/input/Toluene.zip	NULL
+[36malpine-sourcerercc_1    |[0m 45	/home/sourcerercc-user/input/Tyomka.zip	NULL
+[36malpine-sourcerercc_1    |[0m 46	/home/sourcerercc-user/input/Undavia.zip	NULL
+[36malpine-sourcerercc_1    |[0m 47	/home/sourcerercc-user/input/Varun.Otaku.zip	NULL
+[36malpine-sourcerercc_1    |[0m 48	/home/sourcerercc-user/input/YiCheng.zip	NULL
+[36malpine-sourcerercc_1    |[0m 49	/home/sourcerercc-user/input/Zvir.zip	NULL
+[36malpine-sourcerercc_1    |[0m 50	/home/sourcerercc-user/input/adao7000.zip	NULL
+[36malpine-sourcerercc_1    |[0m 51	/home/sourcerercc-user/input/admqueiroga.zip	NULL
+[36malpine-sourcerercc_1    |[0m 52	/home/sourcerercc-user/input/anasmak.zip	NULL
+[36malpine-sourcerercc_1    |[0m 53	/home/sourcerercc-user/input/anish153.zip	NULL
+[36malpine-sourcerercc_1    |[0m 54	/home/sourcerercc-user/input/atharaaa.zip	NULL
+[36malpine-sourcerercc_1    |[0m 55	/home/sourcerercc-user/input/borealyx.zip	NULL
+[36malpine-sourcerercc_1    |[0m 56	/home/sourcerercc-user/input/byann.zip	NULL
+[36malpine-sourcerercc_1    |[0m 57	/home/sourcerercc-user/input/deepak.sharma.zip	NULL
+[36malpine-sourcerercc_1    |[0m 58	/home/sourcerercc-user/input/egaeus.zip	NULL
+[36malpine-sourcerercc_1    |[0m 59	/home/sourcerercc-user/input/eporter.zip	NULL
+[36malpine-sourcerercc_1    |[0m 60	/home/sourcerercc-user/input/hadesthanos.zip	NULL
+[36malpine-sourcerercc_1    |[0m 61	/home/sourcerercc-user/input/harlamod.zip	NULL
+[36malpine-sourcerercc_1    |[0m 62	/home/sourcerercc-user/input/helenie.z.zip	NULL
+[36malpine-sourcerercc_1    |[0m 63	/home/sourcerercc-user/input/hra078.zip	NULL
+[36malpine-sourcerercc_1    |[0m 64	/home/sourcerercc-user/input/i.m.no.geek.zip	NULL
+[36malpine-sourcerercc_1    |[0m 65	/home/sourcerercc-user/input/issath.zip	NULL
+[36malpine-sourcerercc_1    |[0m 66	/home/sourcerercc-user/input/itisevgeny.zip	NULL
+[36malpine-sourcerercc_1    |[0m 67	/home/sourcerercc-user/input/jporcelli.zip	NULL
+[36malpine-sourcerercc_1    |[0m 68	/home/sourcerercc-user/input/ka13ar.zip	NULL
+[36malpine-sourcerercc_1    |[0m 69	/home/sourcerercc-user/input/kabhi.zip	NULL
+[36malpine-sourcerercc_1    |[0m 70	/home/sourcerercc-user/input/katalma.zip	NULL
+[36malpine-sourcerercc_1    |[0m 71	/home/sourcerercc-user/input/lcynot.zip	NULL
+[36malpine-sourcerercc_1    |[0m 72	/home/sourcerercc-user/input/m0nsterb.zip	NULL
+[36malpine-sourcerercc_1    |[0m 73	/home/sourcerercc-user/input/mahmud.zip	NULL
+[36malpine-sourcerercc_1    |[0m 74	/home/sourcerercc-user/input/maskedman1231.zip	NULL
+[36malpine-sourcerercc_1    |[0m 75	/home/sourcerercc-user/input/masterdungeon2.zip	NULL
+[36malpine-sourcerercc_1    |[0m 76	/home/sourcerercc-user/input/nabil.sunesara.zip	NULL
+[36malpine-sourcerercc_1    |[0m 77	/home/sourcerercc-user/input/nanditha.a.zip	NULL
+[36malpine-sourcerercc_1    |[0m 78	/home/sourcerercc-user/input/neelamgt.zip	NULL
+[36malpine-sourcerercc_1    |[0m 79	/home/sourcerercc-user/input/nisrina.zip	NULL
+[36malpine-sourcerercc_1    |[0m 80	/home/sourcerercc-user/input/od3d.zip	NULL
+[36malpine-sourcerercc_1    |[0m 81	/home/sourcerercc-user/input/oko.zip	NULL
+[36malpine-sourcerercc_1    |[0m 82	/home/sourcerercc-user/input/patkovskyi.zip	NULL
+[36malpine-sourcerercc_1    |[0m 83	/home/sourcerercc-user/input/peter707.zip	NULL
+[36malpine-sourcerercc_1    |[0m 84	/home/sourcerercc-user/input/pomo.zip	NULL
+[36malpine-sourcerercc_1    |[0m 85	/home/sourcerercc-user/input/rahooligan.zip	NULL
+[36malpine-sourcerercc_1    |[0m 86	/home/sourcerercc-user/input/ranchor.zip	NULL
+[36malpine-sourcerercc_1    |[0m 87	/home/sourcerercc-user/input/rishabh179.zip	NULL
+[36malpine-sourcerercc_1    |[0m 88	/home/sourcerercc-user/input/rjctlance.zip	NULL
+[36malpine-sourcerercc_1    |[0m 89	/home/sourcerercc-user/input/robthemonster.zip	NULL
+[36malpine-sourcerercc_1    |[0m 90	/home/sourcerercc-user/input/sergon146.zip	NULL
+[36malpine-sourcerercc_1    |[0m 91	/home/sourcerercc-user/input/sg696.zip	NULL
+[36malpine-sourcerercc_1    |[0m 92	/home/sourcerercc-user/input/shibendusaha.zip	NULL
+[36malpine-sourcerercc_1    |[0m 93	/home/sourcerercc-user/input/sil2046.zip	NULL
+[36malpine-sourcerercc_1    |[0m 94	/home/sourcerercc-user/input/slowe.zip	NULL
+[36malpine-sourcerercc_1    |[0m 95	/home/sourcerercc-user/input/smartdumpling.zip	NULL
+[36malpine-sourcerercc_1    |[0m 96	/home/sourcerercc-user/input/tim.miller.zip	NULL
+[36malpine-sourcerercc_1    |[0m 97	/home/sourcerercc-user/input/vedipen.zip	NULL
+[36malpine-sourcerercc_1    |[0m 98	/home/sourcerercc-user/input/vjkr.zip	NULL
+[36malpine-sourcerercc_1    |[0m 99	/home/sourcerercc-user/input/vyasnee.zip	NULL
+[36malpine-sourcerercc_1    |[0m 100	/home/sourcerercc-user/input/zizo.zip	NULL
+[36malpine-sourcerercc_1    |[0m [Warning] No result pairs found!
+[36msourcerercc_alpine-sourcerercc_1 exited with code 0
+[0mAborting on container exit...

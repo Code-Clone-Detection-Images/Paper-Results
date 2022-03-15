@@ -1,0 +1,893 @@
+<html>
+<head>
+    <title>NiCad6 Clone Report</title>
+    <style type="text/css">
+        body {font-family:sans-serif;}
+        table {background-color:white; border:0px; padding:0px; border-spacing:4px; width:auto; margin-left:30px; margin-right:auto;}
+        td {background-color:rgba(192,212,238,0.8); border:0px; padding:8px; width:auto; vertical-align:top; border-radius:8px}
+        pre {background-color:white; padding:4px;}
+        a {color:darkblue;}
+    </style>
+</head>
+<body>
+<h2>NiCad6 Clone Report</h2>
+<table>
+<tr style="font-size:14pt">
+<td><b>System:</b> &nbsp; sub</td>
+<td><b>Clone pairs:</b> &nbsp; 12</td>
+<td><b>Clone classes:</b> &nbsp; 12</td>
+</tr>
+<tr style="font-size:12pt">
+<td style="background-color:white">Clone type: &nbsp; 3-2</td>
+<td style="background-color:white">Granularity: &nbsp; functions-blind</td>
+<td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
+<td style="background-color:white">Clone size: &nbsp; 10 - 2500 lines</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 169</td>
+</tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 2 fragments, nominal size 19 lines, similarity 100%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag2')" href="javascript:;">
+sub/RayaBurong25.1/000000000022c3f2/000000000022c3f2.c: 12-32
+</a>
+<div class="mid" id="frag2" style="display:none"><pre>
+int chkrow(int N)
+{
+    int i, j;
+    int f[105];
+    int ret = 0, dup;
+    for (i = 0; i &lt; N; i++)
+    {
+        for (j = 1; j &lt;= N; j++)
+            f[j] = 0;
+        dup = 0;
+        for (j = 0; j &lt; N; j++)
+        {
+            f[A[i][j]]++;
+            if (f[A[i][j]] &gt; 1)
+                dup++;
+        }
+        if (dup)
+            ret++;
+    }
+    return ret;
+}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag3')" href="javascript:;">
+sub/RayaBurong25.1/000000000022c3f2/000000000022c3f2.c: 33-53
+</a>
+<div class="mid" id="frag3" style="display:none"><pre>
+int chkcol(int N)
+{
+    int i, j;
+    int f[105];
+    int ret = 0, dup;
+    for (i = 0; i &lt; N; i++)
+    {
+        for (j = 1; j &lt;= N; j++)
+            f[j] = 0;
+        dup = 0;
+        for (j = 0; j &lt; N; j++)
+        {
+            f[A[j][i]]++;
+            if (f[A[j][i]] &gt; 1)
+                dup++;
+        }
+        if (dup)
+            ret++;
+    }
+    return ret;
+}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 2:</b> &nbsp; 2 fragments, nominal size 11 lines, similarity 75%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag10')" href="javascript:;">
+sub/az/00000000002a47be/00000000002a47be.c: 30-42
+</a>
+<div class="mid" id="frag10" style="display:none"><pre>
+int trace(int *ar,int p)
+{
+    int q,r,tra=0;
+    for(r=0;r&lt;p;r++)
+    {
+        for(q=0;q&lt;p;q++)
+        {
+            if(r==q)
+                tra=tra+*(ar+r*p+q);
+        }
+    }
+    return tra;
+}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag15')" href="javascript:;">
+sub/amrita_codejam/0000000000236944/0000000000236944.c: 57-69
+</a>
+<div class="mid" id="frag15" style="display:none"><pre>
+int Trace(int A[100][100], int N)
+{
+	int i,j,k=0;
+	for(i=0; i&lt;N; i++)
+	{
+		for(j=0; j&lt;N; j++)
+		{
+			if(i==j)
+				k=k+A[i][j];
+		}
+	}
+	return k;
+}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 3:</b> &nbsp; 2 fragments, nominal size 20 lines, similarity 100%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag11')" href="javascript:;">
+sub/az/00000000002a47be/00000000002a47be.c: 44-64
+</a>
+<div class="mid" id="frag11" style="display:none"><pre>
+int repeated_row(int*ar,int n)
+{
+    int q,r,j,flag=0,count=0;
+    for(q=0;q&lt;n;q++)
+    {   flag=0;
+        for(r=0;r&lt;n;r++)
+        {
+               for(j=r+1;j&lt;n;j++)
+            {
+                if(*(ar+q*n+r)==*(ar+q*n+j))
+                {flag=1; break;}
+            }
+            if(flag==1)
+            {   count++;
+           // flag=0;
+                break;
+            }
+        }
+    }
+    return count;
+}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag12')" href="javascript:;">
+sub/az/00000000002a47be/00000000002a47be.c: 66-86
+</a>
+<div class="mid" id="frag12" style="display:none"><pre>
+int repeated_col(int*ar,int n)
+{
+    int q,r,j,flag=0,count=0;
+    for(r=0;r&lt;n;r++)
+    {   flag=0;
+        for(q=0;q&lt;n;q++)
+        {
+               for(j=r+1;j&lt;n;j++)
+            {
+                if(*(ar+q*n+r)==*(ar+q*n+j))
+                {flag=1; break;}
+            }
+            if(flag==1)
+            {   count++;
+           // flag=0;
+                break;
+            }
+        }
+    }
+    return count;
+}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 4:</b> &nbsp; 2 fragments, nominal size 22 lines, similarity 100%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag14')" href="javascript:;">
+sub/amrita_codejam/0000000000236944/0000000000236944.c: 30-56
+</a>
+<div class="mid" id="frag14" style="display:none"><pre>
+int rowRepeat(int A[100][100], int N)
+{
+	int i,j,k,r=0,srch,flag,jpos;
+	for(i=0; i&lt;N; i++)
+	{
+		flag=0;
+		for(j=0; j&lt;N; j++)
+		{
+			srch=A[i][j];
+			jpos=j;
+			for(k=0; k&lt;N; k++)
+			{
+				if((k!=jpos)&amp;&amp;(srch==A[i][k]))
+				{
+					flag=1;
+					break;
+				}
+			}
+			if(flag==1)
+			{
+				r++;
+				break;
+			}
+		}
+	}
+	return r;
+}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag16')" href="javascript:;">
+sub/amrita_codejam/0000000000236944/0000000000236944.c: 70-96
+</a>
+<div class="mid" id="frag16" style="display:none"><pre>
+int colRepeat(int A[100][100], int N)
+{
+	int i,j,k,c=0,srch,flag,jpos;
+	for(i=0; i&lt;N; i++)
+	{
+		flag=0;
+		for(j=0; j&lt;N; j++)
+		{
+			srch=A[j][i];
+			jpos=j;
+			for(k=0; k&lt;N; k++)
+			{
+				if((k!=jpos)&amp;&amp;(srch==A[k][i]))
+				{
+					flag=1;
+					break;
+				}
+			}
+			if(flag==1)
+			{
+				c++;
+				break;
+			}
+		}
+	}
+	return c;
+}	
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 5:</b> &nbsp; 2 fragments, nominal size 14 lines, similarity 100%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag18')" href="javascript:;">
+sub/Vic357/000000000028ba8f/000000000028ba8f.c: 11-23
+</a>
+<div class="mid" id="frag18" style="display:none"><pre>
+int getRows(int **matrix,int size){
+    int no=0;
+    for(int i=0;i&lt;size;i++){
+        int ok=1;
+        for(int j=0;j&lt;size-1;j++)
+            for(int k=j+1;k&lt;size;k++)
+                if(matrix[i][j]==matrix[i][k])
+                    ok=0;
+    if(ok==0)
+        no++;
+    }
+    return no;
+}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag19')" href="javascript:;">
+sub/Vic357/000000000028ba8f/000000000028ba8f.c: 25-37
+</a>
+<div class="mid" id="frag19" style="display:none"><pre>
+int getColumns(int **matrix,int size){
+    int no=0;
+    for(int i=0;i&lt;size;i++){
+        int ok=1;
+        for(int j=0;j&lt;size-1;j++)
+            for(int k=j+1;k&lt;size;k++)
+                if(matrix[j][i]==matrix[k][i])
+                    ok=0;
+    if(ok==0)
+        no++;
+    }
+    return no;
+}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 6:</b> &nbsp; 2 fragments, nominal size 11 lines, similarity 71%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag26')" href="javascript:;">
+sub/paipim/000000000026b646/000000000026b646.c: 29-38
+</a>
+<div class="mid" id="frag26" style="display:none"><pre>
+int checkRow(int* row, int size){
+    for (int j = 0; j &lt; size; j++){
+        for (int k = j+1; k &lt; size; k++){
+            if (row[j] == row[k]) {
+                return 1;
+            }
+        } 
+    }
+    return 0;
+}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag27')" href="javascript:;">
+sub/paipim/000000000026b646/000000000026b646.c: 40-47
+</a>
+<div class="mid" id="frag27" style="display:none"><pre>
+int checkCol(int** matrix, int size, int col){
+    for (int i = 0; i &lt; size; i++){
+        for (int k = i+1; k &lt; size; k++){
+            if (matrix[i][col] == matrix[k][col]) return 1;
+        } 
+    }
+    return 0;
+}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 7:</b> &nbsp; 2 fragments, nominal size 23 lines, similarity 100%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag35')" href="javascript:;">
+sub/Gurdev/0000000000283b3b/0000000000283b3b.c: 18-47
+</a>
+<div class="mid" id="frag35" style="display:none"><pre>
+int checkRepeatCol(int size)
+{
+    int count=0;
+    int* ptr = (int*)(malloc(sizeof(int)*size));
+    for(int i=0;i&lt;size;i++)
+    {
+        ptr[i]=i+1;
+    }
+    for(int c=0;c&lt;size;c++)
+    {
+        for(int r=0;r&lt;size;r++)
+        {
+            if(ptr[arr[r][c]-1]!=0)
+            {
+                ptr[arr[r][c]-1]=0;
+            }
+            else
+            {
+                count++;
+                break;
+            }
+        }
+        //After one row transverse reset the array
+        for(int i=0;i&lt;size;i++)
+            ptr[i]=i+1;
+    }
+    free(ptr);
+    return count;
+  
+}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag36')" href="javascript:;">
+sub/Gurdev/0000000000283b3b/0000000000283b3b.c: 48-76
+</a>
+<div class="mid" id="frag36" style="display:none"><pre>
+int checkRepeatRow(int size)
+{
+    int count=0;
+    int* ptr = (int*)(malloc(sizeof(int)*size));
+    for(int i=0;i&lt;size;i++)
+    {
+        ptr[i]=i+1;
+    }
+    for(int r=0;r&lt;size;r++)
+    {
+        for(int c=0;c&lt;size;c++)
+        {
+            if(ptr[arr[r][c]-1]!=0)
+            {
+                ptr[arr[r][c]-1]=0;
+            }
+            else
+            {
+                count++;
+                break;
+            }
+        }
+        //After one row transverse reset the array
+        for(int i=0;i&lt;size;i++)
+            ptr[i]=i+1;
+    }
+    free(ptr);
+    return count;
+}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 8:</b> &nbsp; 2 fragments, nominal size 50 lines, similarity 72%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag39')" href="javascript:;">
+sub/Javal0112/000000000024cf9d/000000000024cf9d.c: 2-63
+</a>
+<div class="mid" id="frag39" style="display:none"><pre>
+int main()
+{
+    int i,j,t,k,n,m,flag,r,c,trace,tr;
+    scanf("%d",&amp;t);
+    for(k=0;k&lt;t;k++)
+    {
+        scanf("%d",&amp;n);
+        int a[n][n];
+        for(i=0;i&lt;n;i++)
+        {
+            for(j=0;j&lt;n;j++)
+            {
+                scanf("%d",&amp;a[i][j]);
+            }
+        }
+        r=0;
+        for(i=0;i&lt;n;i++)
+        {
+            flag=0;
+            for(j=0;j&lt;n;j++)
+            {
+                for(m=j+1;m&lt;n;m++)
+                {
+                    if(a[i][j]==a[i][m])
+                    {
+                        flag=1;
+                    }
+                }
+            }
+            if(flag==1)
+            {
+                r++;   
+            }
+        }
+        c=0;
+        for(i=0;i&lt;n;i++)
+        {
+            flag=0;
+            for(j=0;j&lt;n;j++)
+            {
+                for(m=j+1;m&lt;n;m++)
+                {
+                    if(a[j][i]==a[m][i])
+                    {
+                        flag=1;
+                    }
+                }
+            }
+            if(flag==1)
+            {
+                c++;   
+            }
+        }
+        trace=0;
+        tr=0;
+        for(i=0;i&lt;n;i++)
+        {
+            tr=tr+a[i][i];
+        }
+        printf("%d %d %d\n",tr,r,c);
+    }
+}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag64')" href="javascript:;">
+sub/jayroy9825/000000000024853a/000000000024853a.c: 2-65
+</a>
+<div class="mid" id="frag64" style="display:none"><pre>
+int main()
+{
+int t,T,i;
+int acol[20],arow[20],asum[20];
+scanf("%d",&amp;t);
+for(T=0;T&lt;t;T++){
+int k,l,i,j,sum=0,flag=0,row=0,col=0,flag1=0,q,r;
+int n;
+scanf("%d",&amp;n);
+int a[n][n];
+
+for(k=0;k&lt;n;k++){
+	for(j=0;j&lt;n;j++){
+		scanf("%d",&amp;a[k][j]);
+	}
+}
+
+for(k=0;k&lt;n;k++){
+	sum=sum+a[k][k];
+	flag=0;
+	
+	for(j=0;j&lt;n;j++){
+		
+		for(l=j+1;l&lt;n;l++){
+			if (a[k][j]==a[k][l])
+			{
+				flag=1;
+			}
+			}
+	}
+
+	if (flag==1)
+	{
+		row++;
+	}
+}
+
+	for(j=0;j&lt;n;j++){
+		flag1=0;
+for(q=0;q&lt;n;q++){
+			for(r=q+1;r&lt;n;r++){
+				if (a[q][j]==a[r][j])
+				{
+					flag1=1;
+				}
+			}
+		}
+	if (flag1==1)
+	{
+		col++;
+	}
+}
+arow[T]=row;
+acol[T]=col;
+asum[T]=sum;
+}
+for(i=0;i&lt;t;i++){
+
+	printf("Case #%d: %d %d %d\n",(i+1),asum[i],arow[i],acol[i]);
+}
+
+
+return 0;
+}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 9:</b> &nbsp; 2 fragments, nominal size 14 lines, similarity 81%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag47')" href="javascript:;">
+sub/EduPatriots/0000000000226a6c/0000000000226a6c.c: 49-65
+</a>
+<div class="mid" id="frag47" style="display:none"><pre>
+int partition (int arr[], int low, int high) 
+{ 
+    int j;
+	int pivot = arr[high];
+    int i = (low - 1); 
+  
+    for (j = low; j &lt;= high- 1; j++) 
+    { 
+        if (arr[j] &lt; pivot) 
+        { 
+            i++;   
+            swap(&amp;arr[i], &amp;arr[j]); 
+        } 
+    } 
+    swap(&amp;arr[i + 1], &amp;arr[high]); 
+    return (i + 1); 
+} 
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag131')" href="javascript:;">
+sub/fosablanca/0000000000247bfc/0000000000247bfc.c: 9-25
+</a>
+<div class="mid" id="frag131" style="display:none"><pre>
+int partition (int arr[], int low, int high) 
+{ 
+    int pivot = arr[high];    // pivot 
+    int i = (low - 1);  // Index of smaller element 
+  
+    for (int j = low; j &lt;= high- 1; j++) 
+    { 
+        // If current element is smaller than the pivot 
+        if (arr[j] &lt; pivot) 
+        { 
+            i++;    // increment index of smaller element 
+            swap(&amp;arr[i], &amp;arr[j]); 
+        } 
+    } 
+    swap(&amp;arr[i + 1], &amp;arr[high]); 
+    return (i + 1); 
+} 
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 10:</b> &nbsp; 2 fragments, nominal size 19 lines, similarity 100%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag66')" href="javascript:;">
+sub/code.avi/000000000026c874/000000000026c874.c: 3-27
+</a>
+<div class="mid" id="frag66" style="display:none"><pre>
+void repeatedr(int arr[100][100],int t)
+{
+    int i,c,j,p,repe=0;
+        int k[100];
+        
+        for(i=0;i&lt;t;i++)
+         {
+             for(c=0;c&lt;t;c++)
+            {
+              k[c]=0;
+            }
+            for(j=0;j&lt;t;j++)
+            {
+                p=arr[i][j];
+                k[p-1]++;
+                if(k[p-1]&gt;1)
+                {
+                    repe++;
+                    break;
+                }
+            }
+            
+         }
+         printf("%d ",repe);
+}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag67')" href="javascript:;">
+sub/code.avi/000000000026c874/000000000026c874.c: 28-52
+</a>
+<div class="mid" id="frag67" style="display:none"><pre>
+void repeatedc(int arr[100][100],int t)
+    {
+        int i,c,j,p,repe=0;
+        int k[100];
+        
+        for(i=0;i&lt;t;i++)
+         {
+             for(c=0;c&lt;t;c++)
+            {
+              k[c]=0;
+            }
+            for(j=0;j&lt;t;j++)
+            {
+                p=arr[j][i];
+                k[p-1]++;
+                if(k[p-1]&gt;1)
+                {
+                    repe++;
+                    break;
+                }
+            }
+            
+         }
+         printf("%d\n",repe);
+    }
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 11:</b> &nbsp; 2 fragments, nominal size 10 lines, similarity 85%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag103')" href="javascript:;">
+sub/wailzineddine/000000000026f35f/000000000026f35f.c: 5-11
+</a>
+<div class="mid" id="frag103" style="display:none"><pre>
+    bool rep(int mat[],int n) {
+        for(int i=0;i&lt;n;i++){
+            for(int j=i+1;j&lt;n;j++){
+                if(mat[i]==mat[j])return true;
+            }
+        }return false;
+    }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag122')" href="javascript:;">
+sub/prati2121/0000000000237be6/0000000000237be6.c: 5-17
+</a>
+<div class="mid" id="frag122" style="display:none"><pre>
+bool check(int arr[],int n)
+{
+    for(int i=0;i&lt;n-1;i++)
+    {
+     for(int j=i+1;j&lt;n;j++)
+     {
+         if(arr[i]==arr[j])
+          return false;
+          
+     }
+    }
+    return true;
+}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 12:</b> &nbsp; 2 fragments, nominal size 20 lines, similarity 92%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag115')" href="javascript:;">
+sub/scoutOP/000000000022e4d2/000000000022e4d2.c: 3-31
+</a>
+<div class="mid" id="frag115" style="display:none"><pre>
+int check_col(int n,int arr[n][n])
+{
+    int i,j,k,c=0,status=1;
+
+  for(j=0;j&lt;n;j++)
+    {
+
+
+    for(i=0;i&lt;n;i++)
+    {
+        if(status==0)
+            break;
+        for(k=i+1;k&lt;n;k++)
+        {
+          if(arr[i][j]==arr[k][j])
+          {
+              c=c+1;
+              status=0;
+              break;
+          }
+
+        }//k;
+
+
+    }//i:
+    status=1;
+    }//end of j:
+  return c;
+}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag116')" href="javascript:;">
+sub/scoutOP/000000000022e4d2/000000000022e4d2.c: 34-62
+</a>
+<div class="mid" id="frag116" style="display:none"><pre>
+int check_row(int n,int arr[n][n])
+{
+    int i,j,k,r=0,status=1;
+
+  for(j=0;j&lt;n;j++)
+    {
+
+
+    for(i=0;i&lt;n;i++)
+    {
+        if(status==0)
+           {break;}
+        for(k=i+1;k&lt;n;k++)
+        {
+          if(arr[j][i]==arr[j][k])
+          {
+              r=r+1;
+              status=0;
+              break;
+          }
+
+        }//k;
+
+
+    }//i:
+    status=1;
+    }//end of j:
+  return r;
+}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<script language="JavaScript">
+function ShowHide(divId) { 
+    if(document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display='block';
+    } else { 
+        document.getElementById(divId).style.display = 'none';
+    } 
+}
+</script>
+</body>
+</html>

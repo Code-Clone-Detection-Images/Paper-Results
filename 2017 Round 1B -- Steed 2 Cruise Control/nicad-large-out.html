@@ -1,0 +1,292 @@
+<html>
+<head>
+    <title>NiCad6 Clone Report</title>
+    <style type="text/css">
+        body {font-family:sans-serif;}
+        table {background-color:white; border:0px; padding:0px; border-spacing:4px; width:auto; margin-left:30px; margin-right:auto;}
+        td {background-color:rgba(192,212,238,0.8); border:0px; padding:8px; width:auto; vertical-align:top; border-radius:8px}
+        pre {background-color:white; padding:4px;}
+        a {color:darkblue;}
+    </style>
+</head>
+<body>
+<h2>NiCad6 Clone Report</h2>
+<table>
+<tr style="font-size:14pt">
+<td><b>System:</b> &nbsp; sub</td>
+<td><b>Clone pairs:</b> &nbsp; 6</td>
+<td><b>Clone classes:</b> &nbsp; 2</td>
+</tr>
+<tr style="font-size:12pt">
+<td style="background-color:white">Clone type: &nbsp; 3-2</td>
+<td style="background-color:white">Granularity: &nbsp; functions-blind</td>
+<td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
+<td style="background-color:white">Clone size: &nbsp; 10 - 2500 lines</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 230</td>
+</tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 2 fragments, nominal size 25 lines, similarity 90%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag14')" href="javascript:;">
+sub/vaibhav0000patel/1/M55ZkvWY0BBsPA4xfB9U2gDIG.java: 10-44
+</a>
+<div class="mid" id="frag14" style="display:none"><pre>
+     public static void main(String args[])
+     {
+         Scanner scan=new Scanner(System.in);
+         double test,d,a,b;
+         int n,i,s=1;
+         test=scan.nextInt();
+         
+         while(test!=0)
+         {
+             d=scan.nextInt();
+             n=scan.nextInt();
+             
+             double[] x=new double[n];
+                 for(i=0;i&lt;n;i++)
+                 {
+                     a=scan.nextInt();
+                     b=scan.nextInt();
+ 
+                     x[i]=(d-a)/b;
+                 }
+         
+             System.out.print("\nCase #"+s+":"+" ");
+             Arrays.sort(x);
+             
+             double z=d/x[n-1];
+             
+             DecimalFormat df = new DecimalFormat(".000000");
+             df.setRoundingMode(RoundingMode.DOWN);
+             System.out.print(df.format(z));
+             s = s + 1 ;
+             
+             test = test-1;
+         }
+         scan.close();
+     }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag178')" href="javascript:;">
+sub/ds258/1/WWijeSlhz2GUeVblNdLZmAElE.java: 9-45
+</a>
+<div class="mid" id="frag178" style="display:none"><pre>
+ 	public static void main(String args[])
+ 	{
+ 		Scanner scan=new Scanner(System.in);
+ 		double t,d,WWijeSlhz2GUeVblNdLZmAElE,b;
+ 		int n,i,s=1;
+ 		t=scan.nextInt();
+ 		
+ 		while(t!=0)
+ 		{
+ 			d=scan.nextInt();
+ 			n=scan.nextInt();
+ 			
+ 			double[] x=new double[n];
+ 
+ 			for(i=0;i&lt;n;i++)
+ 			{
+ 				WWijeSlhz2GUeVblNdLZmAElE=scan.nextInt();
+ 				b=scan.nextInt();
+ 				
+ 				x[i]=(d-WWijeSlhz2GUeVblNdLZmAElE)/b;
+ 			}
+ 		
+ 			System.out.print("\nCase #"+s+":"+" ");
+ 
+ 			Arrays.sort(x);
+ 		    
+ 			double z=d/x[n-1];
+ 			
+ 			DecimalFormat df = new DecimalFormat(".000000");
+ 			df.setRoundingMode(RoundingMode.DOWN); // Note this extra step
+ 			System.out.print(df.format(z));
+ 
+ 			s++;
+ 			t--;
+ 		}
+ 		scan.close();
+ 	}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 2:</b> &nbsp; 5 fragments, nominal size 18 lines, similarity 71%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag22')" href="javascript:;">
+sub/Mimvdb/1/CaXhr3QDXgc2GQJxxf81HqlZ5.java: 7-32
+</a>
+<div class="mid" id="frag22" style="display:none"><pre>
+ 	public static void main(String[] args) {
+ 		Scanner in = new Scanner(System.in);
+ 
+ 		int testCases = in.nextInt();
+ 
+ 		for (int i = 0; i &lt; testCases; i++) {
+ 			int destination = in.nextInt();
+ 			int horseCount = in.nextInt();
+ 
+ 			double maxTimeTilFinish = 0.0;
+ 
+ 			for (int j = 0; j &lt; horseCount; j++) {
+ 				int startPos = in.nextInt();
+ 				int speed = in.nextInt();
+ 
+ 				double timeTilFinish = (destination - startPos) / (double)speed;
+ 
+ 				if (timeTilFinish &gt; maxTimeTilFinish) {
+ 					maxTimeTilFinish = timeTilFinish;
+ 				}
+ 			}
+ 
+ 			// output
+ 			System.out.println("Case #" + (i+1) + ": " + (float)(destination / maxTimeTilFinish));
+ 		}
+ 	}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag127')" href="javascript:;">
+sub/zihanw/1/DQJod0WiFyDWlivQoVjbcKU2v.java: 6-23
+</a>
+<div class="mid" id="frag127" style="display:none"><pre>
+     public static void main(String[] args) {
+         Scanner sc = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+         int t = sc.nextInt();
+         for (int i = 1; i &lt;= t ; i++) {
+             int miles = sc.nextInt();
+             int horses = sc.nextInt();
+             double maxTime = 0;
+             for (int j = 0; j &lt; horses; j++) {
+                 int start = sc.nextInt();
+                 int sp = sc.nextInt();
+                 double time = (miles - start + 0.0) / sp;
+                 if (time &gt; maxTime){
+                     maxTime = time;
+                 }
+             }
+             System.out.println("Case #" + i + ": " + miles / maxTime);
+         }
+     }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag163')" href="javascript:;">
+sub/Eula/1/LXetm9DECAQmk2zH0dhngITjj.java: 4-22
+</a>
+<div class="mid" id="frag163" style="display:none"><pre>
+   public static void main(String[] args) {
+     Scanner in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+     int t = in.nextInt();  // Scanner has functions to read ints, longs, strings, chars, etc.
+     for (int i = 1; i &lt;= t; ++i) {
+       int dist = in.nextInt();
+       int horse = in.nextInt();
+       double maxTime = 0; 
+       for (int x = 0; x &lt; horse; x++){
+     	  int p = in.nextInt();
+     	  int s = in.nextInt(); 
+     	  double time = (dist - p) / (double)s; 
+     	  if (time &gt; maxTime){
+     		  maxTime = time; 
+     	  }
+       }
+       
+       System.out.println("Case #" + i + ": " + (dist/maxTime));
+     }
+   }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag217')" href="javascript:;">
+sub/Chunlok/1/Bb6f7Bg6LSfMj5sjbtMn2uPFI.java: 4-30
+</a>
+<div class="mid" id="frag217" style="display:none"><pre>
+     public static void main(String[] args) {
+         Scanner in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+         int t = in.nextInt();  // Scanner has functions to read ints, longs, strings, chars, etc.
+         for (int i = 1; i &lt;= t; ++i) {
+             int n = in.nextInt();
+             int k = in.nextInt();
+             double minTime = 0;
+             for (int j = 0; j &lt; k; j++) {
+                 //for each horse
+                 int kilo = in.nextInt();
+                 int speed = in.nextInt();
+                 double time = (n - kilo) / (double) speed;
+                 if (minTime &lt; time) {
+                     minTime = time;
+                 }
+             }
+ 
+             double yourSpeed =  n / minTime;
+ 
+ 
+ 
+ 
+             System.out.println("Case #" + i + ": " + String.format("%.6f", yourSpeed));
+         }
+ 
+ 
+     }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag229')" href="javascript:;">
+sub/flocsy/1/QDMLGJsvKB9t8b0ajuO5vK54S.java: 14-34
+</a>
+<div class="mid" id="frag229" style="display:none"><pre>
+     public static void main(String[] args) {
+         Scanner in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+ 
+         int t = in.nextInt();
+         for (int i = 1; i &lt;= t; ++i) {
+             double maxTime = 0;
+             int d = in.nextInt();
+             int n = in.nextInt();
+             for (int j = 1; j&lt;= n; ++j) {
+                 int k = in.nextInt();
+                 int s = in.nextInt();
+                 double time = horse(d, k, s);
+                 if (time &gt; maxTime) {
+ //                    System.out.println("Case #" + i + ": " + maxTime + " =&gt; " + time);
+                     maxTime = time;
+                 }
+             }
+ //            System.out.println("Case #" + i + ": " + (maxTime/d));
+             System.out.printf("Case #%d: %.6f\n", i, (d/maxTime));
+         }
+     }
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<script language="JavaScript">
+function ShowHide(divId) { 
+    if(document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display='block';
+    } else { 
+        document.getElementById(divId).style.display = 'none';
+    } 
+}
+</script>
+</body>
+</html>

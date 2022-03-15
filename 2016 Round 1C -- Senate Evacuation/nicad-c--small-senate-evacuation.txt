@@ -1,0 +1,136 @@
+nicad-runscript c-small c > nicad-c--small-senate-evacuation.txt  0,15s user 0,09s system 3% cpu 6,454 total
+
+[Script] Using docker: Docker version 20.10.12, build e91ed5707e
+./nicad6 functions "c" "/home/nicad-user/data/sub"
+
+NiCad Clone Detector v6.2 (13.11.20)
+
+config=./config/default.cfg
+system=/home/nicad-user/data/sub
+threshold=0.30
+granularity=functions
+language=c
+transform=none
+rename=blind
+filter=none
+abstract=none
+normalize=none
+cluster=yes
+report=yes
+include=
+exclude=
+
+Tue Mar 15 16:52:35 UTC 2022
+
+Extracting functions from c files in /home/nicad-user/data/sub
+
+*** Warning: 3 source files failed to parse
+
+Extracted 214 functions
+
+Applying blind renaming to extracted functions from c files in /home/nicad-user/data/sub
+
+Finding clones between 10 and 2500 lines at UPI threshold 0.30
+
+Found 2 clone pairs
+
+Clustering clone pairs into classes
+
+Clustered clone pairs into 2 classes
+
+Getting original sources for clones
+
+Making HTML reports
+
+Done.
+
+Detailed log in /home/nicad-user/data/sub_functions-clones-2022-03-15-16:52:35.log
+Results in /home/nicad-user/data/sub_functions-blind-clones/
+Report in /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes-withsource.html
+
+Tue Mar 15 16:52:41 UTC 2022
+
+[Logs] -----------------------------------------------
+Tue Mar 15 16:52:35 UTC 2022
+./txl/c-extract-functions.x ALL.c >> /home/nicad-user/data/sub_functions.xml
+[/tmp/_home_nicad-user_data_sub_Imme_0_A.c-ifdefed, c-extract-functions.txl] : TXL0192E line 15 of /tmp/_home_nicad-user_data_sub_Imme_0_A.c-ifdefed - Syntax error at or near:
+	; vector < pair < >>> int <<< , int > > partidos
+[/tmp/_home_nicad-user_data_sub_vadi_0_solve.c-ifdefed, c-extract-functions.txl] : TXL0192E line 3 of /tmp/_home_nicad-user_data_sub_vadi_0_solve.c-ifdefed - Syntax error at or near:
+	; set < pair < >>> int <<< , int > > s
+[/tmp/_home_nicad-user_data_sub_ubergeek_0_A.c-ifdefed, c-extract-functions.txl] : TXL0192E line 35 of /tmp/_home_nicad-user_data_sub_ubergeek_0_A.c-ifdefed - Syntax error at or near:
+	long LL ; typedef vector >>> < <<< int > VI ; typedef
+
+Tue Mar 15 16:52:40 UTC 2022
+
+Tue Mar 15 16:52:40 UTC 2022
+./tools/streamprocess.x './txl/c-rename-blind-functions.x stdin' < /home/nicad-user/data/sub_functions.xml > /home/nicad-user/data/sub_functions-blind.xml
+
+real	0m0.421s
+user	0m0.393s
+sys	0m0.025s
+
+Tue Mar 15 16:52:41 UTC 2022
+
+Tue Mar 15 16:52:41 UTC 2022
+./tools/clonepairs.x /home/nicad-user/data/sub_functions-blind.xml 0.30 10 2500 > /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30.xml
+Processing /home/nicad-user/data/sub_functions-blind.xml with difference threshold 30%, clone size 10 .. 2500 lines
+Reading pcs . done.
+Total 214/6000000 potential clones of 10 lines or more
+Used 4876/100000000 total pc lines
+Used 44340/600000000 unique line text chars
+ and 1266/12000000 unique lines
+Sorting pcs . done.
+Finding clones  done.
+Total 3998 pc comparisons
+Pruning embedded clone pairs .. done.
+Pruned 0 embedded clone pairs
+Found 2 clone pairs
+Generating XML output . done.
+
+
+real	0m0.021s
+user	0m0.012s
+sys	0m0.009s
+
+Tue Mar 15 16:52:41 UTC 2022
+
+Tue Mar 15 16:52:41 UTC 2022
+./tools/cloneclasses.x /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30.xml > /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes.xml
+Processing /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30.xml
+Reading clone pairs . done.
+Total 2 pairs
+Sorting pairs . done.
+Indexing pairs . done.
+Computing classes . done.
+Clustered clone pairs into 2 classes
+Generating XML output . done.
+
+
+real	0m0.027s
+user	0m0.010s
+sys	0m0.017s
+
+Tue Mar 15 16:52:41 UTC 2022
+
+Tue Mar 15 16:52:41 UTC 2022
+./tools/getsource.x /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes.xml /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes-withsource.xml
+/home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes.xml
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+
+Tue Mar 15 16:52:41 UTC 2022
+
+Tue Mar 15 16:52:41 UTC 2022
+./tools/tohtmlpairs.x /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes-withsource.xml /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes-withsource.html
+functions-blind
+30%
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+
+Tue Mar 15 16:52:41 UTC 2022
+
+[Output] See: "sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes-withsource.html"

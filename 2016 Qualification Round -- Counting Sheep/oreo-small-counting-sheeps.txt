@@ -1,0 +1,534 @@
+oreo-runscript java-small > oreo-small-counting-sheeps.txt  0,05s user 0,06s system 0% cpu 3:05,83 total
+
+[Script] Using docker: Docker version 20.10.12, build e91ed5707e
+Step 1: setup metric
+Buildfile: /home/oreo-user/oreo/java-parser/build.xml
+
+clean:
+   [delete] Deleting directory /home/oreo-user/oreo/java-parser/build
+   [delete] Deleting directory /home/oreo-user/oreo/java-parser/dist
+
+compile:
+    [mkdir] Created dir: /home/oreo-user/oreo/java-parser/build/classes
+    [mkdir] Created dir: /home/oreo-user/oreo/java-parser/dist
+    [javac] Compiling 18 source files to /home/oreo-user/oreo/java-parser/build/classes
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+JarMetric:
+      [jar] Building jar: /home/oreo-user/oreo/java-parser/dist/metricCalculator.jar
+
+metric:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+Step 2: run the metric calculation [/home/oreo-user/data/java-small]
+> /home/oreo-user/data/java-small/anish153
+> /home/oreo-user/data/java-small/harlamod
+> /home/oreo-user/data/java-small/adao7000
+> /home/oreo-user/data/java-small/od3d
+> /home/oreo-user/data/java-small/NRR
+> /home/oreo-user/data/java-small/itisevgeny
+> /home/oreo-user/data/java-small/patkovskyi
+> /home/oreo-user/data/java-small/shibendusaha
+> /home/oreo-user/data/java-small/smartdumpling
+> /home/oreo-user/data/java-small/lcynot
+> /home/oreo-user/data/java-small/sg696
+> /home/oreo-user/data/java-small/MarkVasin
+> /home/oreo-user/data/java-small/Sofiage
+> /home/oreo-user/data/java-small/Kps1211
+> /home/oreo-user/data/java-small/CoderKhushal
+> /home/oreo-user/data/java-small/Navi9926
+> /home/oreo-user/data/java-small/vjkr
+> /home/oreo-user/data/java-small/Takunda
+> /home/oreo-user/data/java-small/Tyomka
+> /home/oreo-user/data/java-small/deepak.sharma
+> /home/oreo-user/data/java-small/Varun.Otaku
+> /home/oreo-user/data/java-small/issath
+> /home/oreo-user/data/java-small/SapFire
+> /home/oreo-user/data/java-small/katalma
+> /home/oreo-user/data/java-small/slowe
+> /home/oreo-user/data/java-small/hadesthanos
+> /home/oreo-user/data/java-small/Undavia
+> /home/oreo-user/data/java-small/Azertl
+> /home/oreo-user/data/java-small/Tekai.
+> /home/oreo-user/data/java-small/rahooligan
+> /home/oreo-user/data/java-small/BrijS
+> /home/oreo-user/data/java-small/oko
+> /home/oreo-user/data/java-small/mahmud
+> /home/oreo-user/data/java-small/Abdelrhman.fathy
+> /home/oreo-user/data/java-small/Maisttro017
+> /home/oreo-user/data/java-small/masterdungeon2
+> /home/oreo-user/data/java-small/borealyx
+> /home/oreo-user/data/java-small/kabhi
+> /home/oreo-user/data/java-small/Hooman202
+> /home/oreo-user/data/java-small/CDJ
+> /home/oreo-user/data/java-small/admqueiroga
+> /home/oreo-user/data/java-small/Kamesh46
+> /home/oreo-user/data/java-small/CodingMonkey
+> /home/oreo-user/data/java-small/sil2046
+> /home/oreo-user/data/java-small/MaulikRaviya
+> /home/oreo-user/data/java-small/nisrina
+> /home/oreo-user/data/java-small/vedipen
+> /home/oreo-user/data/java-small/Fatality2412
+> /home/oreo-user/data/java-small/neelamgt
+> /home/oreo-user/data/java-small/Anonymouse
+> /home/oreo-user/data/java-small/Jyoti273
+> /home/oreo-user/data/java-small/i.m.no.geek
+> /home/oreo-user/data/java-small/YiCheng
+> /home/oreo-user/data/java-small/MARRY
+> /home/oreo-user/data/java-small/Krzysztof
+> /home/oreo-user/data/java-small/Lilin
+> /home/oreo-user/data/java-small/sergon146
+> /home/oreo-user/data/java-small/robthemonster
+> /home/oreo-user/data/java-small/NPN
+> /home/oreo-user/data/java-small/ChrisJEkd
+> /home/oreo-user/data/java-small/Nadal
+> /home/oreo-user/data/java-small/Crayola
+> /home/oreo-user/data/java-small/PinPinx
+> /home/oreo-user/data/java-small/zizo
+> /home/oreo-user/data/java-small/atharaaa
+> /home/oreo-user/data/java-small/JJD
+> /home/oreo-user/data/java-small/vyasnee
+> /home/oreo-user/data/java-small/ka13ar
+> /home/oreo-user/data/java-small/egaeus
+> /home/oreo-user/data/java-small/eporter
+> /home/oreo-user/data/java-small/anasmak
+> /home/oreo-user/data/java-small/Elzankalony
+> /home/oreo-user/data/java-small/Leo007
+> /home/oreo-user/data/java-small/Shaily.Roy
+> /home/oreo-user/data/java-small/nanditha.a
+> /home/oreo-user/data/java-small/DasMoeh
+> /home/oreo-user/data/java-small/rjctlance
+> /home/oreo-user/data/java-small/helenie.z
+> /home/oreo-user/data/java-small/maskedman1231
+> /home/oreo-user/data/java-small/ClubberBon
+> /home/oreo-user/data/java-small/Samychan
+> /home/oreo-user/data/java-small/Chihwa
+> /home/oreo-user/data/java-small/pomo
+> /home/oreo-user/data/java-small/byann
+> /home/oreo-user/data/java-small/m0nsterb
+> /home/oreo-user/data/java-small/nabil.sunesara
+> /home/oreo-user/data/java-small/Zvir
+> /home/oreo-user/data/java-small/peter707
+> /home/oreo-user/data/java-small/jporcelli
+> /home/oreo-user/data/java-small/tim.miller
+> /home/oreo-user/data/java-small/hra078
+> /home/oreo-user/data/java-small/Stefan456
+> /home/oreo-user/data/java-small/Shub
+> /home/oreo-user/data/java-small/ByungWook
+> /home/oreo-user/data/java-small/Toluene
+> /home/oreo-user/data/java-small/rishabh179
+> /home/oreo-user/data/java-small/NarasimhaVelagaleti
+> /home/oreo-user/data/java-small/ranchor
+> /home/oreo-user/data/java-small/Malinda.UCSC
+> /home/oreo-user/data/java-small/Mrboolean
+running new command java -jar ../java-parser/dist/metricCalculator.jar /home/oreo-user/oreo/python_scripts/output/1.txt dir
+[Waiting] Waiting for './1_metric_output' [0/20]
+[Ljava.lang.String;@6d6f6e28
+Writing To: 1_metric_output/mlcc_input.file
+length
+println()
+processing directory: /home/oreo-user/data/java-small/anish153
+checking:/home/oreo-user/data/java-small/anish153
+checking:/home/oreo-user/data/java-small/anish153/0
+Added: /home/oreo-user/data/java-small/anish153/0/AUt1LWOKwPDW4mSWzdIeN8ViU.java
+Metricalizing AUt1LWOKwPDW4mSWzdIeN8ViU.java
+[Dummy wait for population]
+Step 3: Setting Up Oreo
+     3.1: file for clone-detector
+Blocks file:
+0,AUt1LWOKwPDW4mSWzdIeN8ViU.java,6,17,main,50,28,948db1825e57771ded57ec938616af17,11,11001@#@3,8,29,1311.6548686844449,10,8,1,1,5,4,0,0,0,37,9,17,2,40,1,0,0,2,0,2@#@nextLine():2,parseInt():2,format():2,findNum():1,in:1,out:2@#@println():2@#@_@main@_:1@#@11
+0,AUt1LWOKwPDW4mSWzdIeN8ViU.java,19,38,findNum,46,20,70aa87458ba00258f05c024faa63e762,11,11002@#@5,13,25,2786.3137138648344,0,0,1,1,10,4,0,0,0,41,15,19,3,44,3,3,0,7,0,0@#@check():1,arrayAccess[]:1,arrayBinaryAccess[]:1@#@@#@_@findNum@_:1@#@15
+0,AUt1LWOKwPDW4mSWzdIeN8ViU.java,40,48,check,21,13,b96277e31feda877629b69b425ef87b5,11,11003@#@3,5,15,281.2961228838133,0,0,0,1,3,1,0,0,0,16,6,8,3,15,1,1,0,2,0,0@#@arrayAccess[]:2@#@@#@_@check@_:1@#@8
+0,JrduZmu28VEPVjTMMgfxkGEUw.java,44,51,main,29,24,8e978ab80fcdb2d0a3d4e5f7242b9425,12,12004@#@2,5,24,440.15640006923104,6,4,0,1,3,3,0,0,0,22,3,10,2,21,1,0,0,1,0,3@#@valueOf():1,readLines():1,solve():1,out:1@#@println():1@#@_@main@_:1@#@7
+0,JrduZmu28VEPVjTMMgfxkGEUw.java,53,67,solve,45,22,4549d16a901cda4681970254d8e84b04,12,12005@#@5,12,29,3322.85900066726,3,1,1,1,12,3,0,0,0,38,16,19,3,41,2,1,0,6,0,0@#@valueOf():1,alldigitsFound():1,arrayBinaryAccess[]:1@#@@#@_@solve@_:1@#@16
+0,JrduZmu28VEPVjTMMgfxkGEUw.java,69,76,alldigitsFound,20,13,3438324e645986bfdc56a9ed1d48556b,12,12006@#@3,5,16,276.0,0,0,0,1,3,1,0,0,0,16,6,7,3,14,1,2,0,1,0,0@#@arrayAccess[]:1@#@length:1@#@_@alldigitsFound@_:1@#@8
+0,JrduZmu28VEPVjTMMgfxkGEUw.java,78,91,readLines,55,30,56879e5d8c8d7d8140308413e40f31c8,12,12007@#@2,12,32,3780.0,14,7,0,1,12,6,0,0,0,41,13,22,2,40,1,0,0,1,2,0@#@valueOf():1,add():1,toArray():1,readLine():2,close():1,size():1@#@@#@_@readLines@_:1@#@14
+0,EMrLs0zjMCTYro9lLdvugCSeD.java,13,52,main,111,53,69c9a814ec9a3114afb5950e0e79c926,13,13008@#@7,29,58,14234.893818159999,16,12,1,1,18,12,0,2,0,90,29,45,6,92,3,0,0,7,0,7@#@printStackTrace():2,getDigits():1,add():1,flush():1,nextInt():2,write():2,createNewFile():1,size():1,close():2@#@@#@_@main@_:1@#@38
+0,EMrLs0zjMCTYro9lLdvugCSeD.java,54,61,getDigits,24,14,76b8cae8c3311730ef5412381786c218,13,13009@#@2,6,15,609.4749329149289,5,1,0,1,6,1,0,0,0,18,6,8,2,16,1,0,0,3,0,0@#@add():1@#@@#@_@getDigits@_:1@#@8
+0,A0ms2cgKHdYBcwsIDcKYZ24k7.java,9,23,main,77,39,a1338ba8bb00df16946a1b79f792fbed,14,140010@#@2,13,44,8647.73968392148,13,10,1,1,16,7,0,0,0,59,18,40,2,76,1,0,0,6,0,6@#@solveQ1():1,toString():1,flush():1,parseInt():2,readLine():2,write():1,close():2,out:1,arrayAccess[]:2@#@println():1@#@_@main@_:1@#@15
+0,A0ms2cgKHdYBcwsIDcKYZ24k7.java,25,50,solveQ1,77,31,4a4c4ba240caafc873c81a76c861dbf6,14,140011@#@5,22,38,6538.917681750707,3,12,1,1,14,3,0,0,0,57,23,32,3,71,2,0,0,19,0,0@#@solveQ1():1,add():10,remove():1,size():1@#@@#@_@solveQ1@_:1@#@26
+0,BixxvcUpdud8r7E69u9RoVimX.java,8,40,main,98,50,b09a2da90ef4581ccf4ffddb5f404807,15,150012@#@5,23,57,13019.010511615705,13,9,1,1,18,11,0,0,0,79,24,45,5,88,3,1,1,6,0,8@#@charAt():1,equals():1,check():1,flush():1,readLine():2,length():1,close():1,arrayBinaryAccess[]:1@#@println():2@#@_@main@_:1@#@29
+0,BixxvcUpdud8r7E69u9RoVimX.java,42,48,check,21,14,d7a48406d5ff23f5d463691fa0b532d0,15,150013@#@3,5,16,276.0,0,0,0,1,3,1,0,0,0,16,6,7,2,14,1,2,0,1,0,0@#@arrayAccess[]:1@#@length:1@#@_@check@_:1@#@7
+0,Dhv0TPzNpPTPLG6ugB8kQgGZg.java,5,14,main,42,27,aac11ef48fcac42d7c08117f18c40574,16,160014@#@2,7,28,942.2415647232904,8,3,1,1,4,5,0,0,0,32,8,17,2,32,1,0,0,1,0,2@#@nextInt():1,nextLong():1,solve():1,in:1,out:1@#@println():1@#@_@main@_:1@#@9
+0,Dhv0TPzNpPTPLG6ugB8kQgGZg.java,16,33,solve,48,28,8abb2e37c3fa316ddeb7102d07c155ca,16,160015@#@5,11,31,1634.884782427669,7,4,0,1,6,4,0,0,0,37,11,18,3,36,2,0,0,3,0,3@#@valueOf():1,toCharArray():1,add():1,size():1,MAX_VALUE:1@#@@#@_@solve@_:1@#@15
+0,E47BUgZIvhPm2pytNjxzfiDDz.java,7,19,getDigits,30,16,7e273fdd3c30639fb88581e6de662e32,17,170016@#@3,8,18,1067.500800369232,6,2,0,1,8,1,0,0,0,23,7,9,2,20,1,0,0,5,0,0@#@add():2@#@@#@_@getDigits@_:1@#@11
+0,E47BUgZIvhPm2pytNjxzfiDDz.java,21,34,countToSleep,34,22,bba7a6fcc722b6e485fe95b9aa1a5ebf,17,170017@#@3,9,23,814.2411520902624,6,3,1,1,5,2,0,0,0,24,7,12,2,22,1,0,0,3,0,1@#@getDigits():1,toString():1,addAll():1,size():1@#@@#@_@countToSleep@_:1@#@12
+0,E47BUgZIvhPm2pytNjxzfiDDz.java,37,48,main,39,23,4f60b481f4dc1c44b83a309f10da0a0d,17,170018@#@2,8,23,1556.1053128836124,6,4,1,1,8,5,0,0,0,30,9,13,2,28,1,0,0,1,0,1@#@printf():1,nextInt():2,countToSleep():1,close():1,in:1,out:1@#@@#@_@main@_:1@#@10
+0,RuSs6PSYETwBP4B2mlCNPcYEo.java,8,48,main,86,45,5146aadb2d35b158bc4b920a5d5bff1b,18,180019@#@6,16,50,9662.281796894327,12,10,0,1,16,9,0,0,0,71,21,36,4,77,3,1,0,7,0,4@#@valueOf():1,put():1,charAt():1,nextInt():1,length():1,nextLong():1,size():2,in:1,out:2@#@println():2@#@_@main@_:1@#@22
+0,DGigAHOeDC8Ak2ClaPULhjTip.java,16,38,solvea,52,22,bb63dcb6b81afb12edc02e5e990e33a4,19,190020@#@5,14,27,3651.753601661544,4,2,0,1,12,4,0,0,0,43,14,21,3,43,2,0,0,11,0,0@#@add():1,size():1@#@@#@_@solvea@_:1@#@18
+0,DGigAHOeDC8Ak2ClaPULhjTip.java,39,62,main,71,36,a4d22e76594813fe8880face73832c53,19,190021@#@3,15,38,4460.738386427048,10,8,1,1,10,6,0,0,0,56,17,29,3,66,1,0,0,4,0,7@#@solvea():1,nextInt():2,write():2,close():1,out:3@#@println():3@#@_@main@_:1@#@19
+0,QoWQSte2MlyA5vS1VNDODgjei.java,8,37,main,86,43,d851acfe167c845e046e0d9d40fd0af6,110,1100022@#@5,18,51,10255.745018284464,10,6,1,1,16,11,0,0,0,73,22,40,4,85,3,2,0,7,0,3@#@valueOf():2,toCharArray():1,check():1,nextInt():2,in:1,out:1,arrayBinaryAccess[]:1@#@println():1@#@_@main@_:1@#@24
+0,QoWQSte2MlyA5vS1VNDODgjei.java,39,45,check,17,13,1da98d29e52749053ae59bc182b61c53,110,1100023@#@3,5,11,51.89147427955947,0,0,0,1,1,1,0,0,0,12,2,3,2,7,1,2,0,1,0,0@#@@#@@#@_@check@_:1@#@7
+0,EaFGp5SA2yjeOLUsqDoAmC0uj.java,12,65,main,137,52,628146c8a9f356c9642456ef7710bee2,111,1110024@#@8,27,59,18000.887731047234,22,13,0,1,18,14,0,0,0,114,37,56,5,123,5,0,0,15,0,4@#@elementAt():1,add():3,parseInt():2,containsAll():1,readLine():2,clear():1,size():1,in:1,out:2@#@println():2@#@_@main@_:1@#@36
+0,XT5vkYvoBuRvf4YOGpzDYHr0L.java,9,34,main,87,42,d53330f101adfd1cdc7ce2af51c94cd3,112,1120025@#@6,19,47,8476.302587660075,10,7,1,1,14,10,0,0,0,73,21,36,5,77,3,2,1,5,0,4@#@valueOf():1,charAt():1,nextInt():2,areAllTrue():1,length():1,in:1,out:2,arrayAccess[]:1@#@println():2@#@_@main@_:1@#@26
+0,XT5vkYvoBuRvf4YOGpzDYHr0L.java,36,39,areAllTrue,16,11,1e36d22df520471317ca5e781434719b,112,1120026@#@3,5,9,44.37895002019238,0,0,0,1,1,1,0,0,0,11,2,3,1,6,1,2,0,0,0,0@#@@#@@#@_@areAllTrue@_:1@#@5
+0,IBfuuUOuNS5i51O90KDam7xRh.java,8,48,startCounting,88,28,a15eac17b872d67c95236160282d0f50,113,1130027@#@7,27,37,12580.829877993916,2,2,0,1,21,9,0,0,0,83,31,32,4,91,2,3,0,21,0,0@#@toString():1,length():1,arrayAccess[]:2@#@@#@_@startCounting@_:1@#@34
+0,IBfuuUOuNS5i51O90KDam7xRh.java,52,68,main,57,30,ab26db14160168c318b5f930cfd28aa7,113,1130028@#@3,11,32,1360.0,10,5,0,1,4,6,0,0,0,45,12,23,2,48,1,0,0,2,0,4@#@nextInt():2,startCounting():1,in:1,out:2@#@println():2@#@_@main@_:1@#@14
+0,FjgyNCniapHcEdQxZBCSEhnAo.java,22,78,main,133,44,8c2c7541ec21ee6d37e869e5fab36034,114,1140029@#@10,31,53,22012.398306886374,12,4,0,1,21,12,0,0,0,123,43,60,5,142,6,7,0,15,0,5@#@nextInt():2,in:1,out:2,arrayAccess[]:7,arrayBinaryAccess[]:1@#@println():2@#@_@main@_:1@#@40
+0,Rg4fFk4tVpHvzmJWEJsS3JrRK.java,4,26,main,87,45,d9c5f28a35a7515171db673e35ed4f9d,115,1150030@#@4,17,50,9481.678398821537,19,8,1,1,16,8,0,0,0,68,17,37,4,74,2,0,0,5,0,6@#@setIn():1,setOut():1,getNum():1,nextInt():2,addAll():1,size():1,in:1,out:2@#@println():2@#@_@main@_:1@#@22
+0,Rg4fFk4tVpHvzmJWEJsS3JrRK.java,27,34,getNum,24,14,76b8cae8c3311730ef5412381786c218,115,1150031@#@2,6,15,609.4749329149289,5,1,0,1,6,1,0,0,0,18,6,8,2,16,1,0,0,3,0,0@#@add():1@#@@#@_@getNum@_:1@#@8
+0,EnNC5PY9nWRj4lmPYxUUvgiUR.java,6,20,main,38,21,6f82fd0443f0b84050174a965ced0f02,116,1160032@#@2,9,22,1534.0444768112302,5,3,1,1,8,4,0,0,0,30,10,13,2,31,1,0,0,1,0,1@#@countingSheep():1,nextInt():2,in:1,out:1,arrayAccess[]:1@#@println():1@#@_@main@_:1@#@11
+0,EnNC5PY9nWRj4lmPYxUUvgiUR.java,22,65,countingSheep,99,40,11a4adc98ecfc1bdb8a49fe38bd4ef17,116,1160033@#@7,27,48,10555.579126362987,3,4,1,1,14,9,0,0,0,91,38,44,5,115,3,4,0,9,0,6@#@isFull():1,toCharArray():1,fill():1,out:2,arrayAccess[]:5@#@length:2,println():2@#@_@countingSheep@_:1@#@33
+0,EnNC5PY9nWRj4lmPYxUUvgiUR.java,67,77,isFull,16,11,99c5da675944b178621bc42c14282273,116,1160034@#@3,5,9,44.37895002019238,0,0,0,1,1,1,0,0,0,11,2,3,3,6,1,2,0,0,0,0@#@@#@@#@_@isFull@_:1@#@8
+0,OpUZcAjwBXGObwVFdcjE2PzlY.java,7,33,count,52,26,0e1688f613aa878432426902bff8d23d,117,1170035@#@5,16,30,2993.2032633211966,6,4,0,1,10,4,0,0,0,44,13,17,4,43,2,1,0,6,0,1@#@print():2,add():1,size():1,out:2@#@@#@_@count@_:1@#@21
+0,OpUZcAjwBXGObwVFdcjE2PzlY.java,35,45,main,45,28,57ec36849fdae61be94e82a7103b4cba,117,1170036@#@2,8,29,971.5961990255146,9,4,1,1,4,4,0,0,0,34,7,16,2,33,1,0,0,1,0,3@#@print():1,count():1,nextInt():2,in:1,out:2@#@println():1@#@_@main@_:1@#@10
+0,T5OjiidDcxK1kRmD8QLeCWt4B.java,11,23,main,40,29,77770558d4931a0da2a2265d8135da21,118,1180037@#@2,6,30,863.6127448270993,8,4,1,1,4,3,0,0,0,30,9,14,2,29,1,0,0,2,0,0@#@parseLong():1,parseInt():1,readLine():2,calculate():1,in:1@#@@#@_@main@_:1@#@8
+0,T5OjiidDcxK1kRmD8QLeCWt4B.java,25,45,calculate,61,30,3dd3afdd55e6722d752055ef91bb53de,118,1180038@#@4,10,36,5428.421251514428,6,5,1,3,14,2,0,0,0,51,21,24,3,60,1,0,0,3,0,6@#@put():1,split():1,calculate():1,size():1,out:2,arrayAccess[]:2@#@length:1,println():2@#@_@calculate@_:1@#@14
+0,IAUoOjFyOgbZieZ5yp3FwUKom.java,10,23,main,52,31,e23ab98424dc0ea77c7eb5630fb837dc,119,1190039@#@2,8,32,1475.0,9,6,1,1,5,5,0,0,0,37,9,22,2,39,1,0,0,2,0,5@#@parseInt():2,readLine():2,solve():1,close():1@#@println():1@#@_@main@_:1@#@10
+0,IAUoOjFyOgbZieZ5yp3FwUKom.java,25,37,solve,30,16,8dca9221c13d9442b7aea847aaf1404f,119,1190040@#@3,9,21,1229.848878378053,1,0,1,1,8,2,0,0,0,24,7,11,2,24,1,0,0,5,0,2@#@digitsMask():1@#@@#@_@solve@_:1@#@11
+0,IAUoOjFyOgbZieZ5yp3FwUKom.java,39,47,digitsMask,20,11,f4afed31963a342f11a207cd17c58d4f,119,1190041@#@2,6,14,525.4149792439493,0,0,0,1,6,1,0,0,0,16,5,7,2,16,1,0,0,5,0,0@#@@#@@#@_@digitsMask@_:1@#@8
+0,BtFOczytDEQ6ccPDbTwr4W3su.java,9,60,main,133,52,5fe7e65241b25d6c50d5822664c20dac,120,1200042@#@8,29,60,19610.876777420282,18,14,1,1,20,11,0,0,0,113,35,53,4,132,3,1,0,21,0,5@#@charAt():2,toString():1,parseInt():2,exit():2,readLine():2,isAwake():1,length():1,getNumericValue():2,in:1,out:2,arrayAccess[]:2@#@println():2@#@_@main@_:1@#@35
+0,BtFOczytDEQ6ccPDbTwr4W3su.java,62,71,isAwake,21,14,e9a443726752baeb6e25c45bacc9cb1d,120,1200043@#@3,5,16,276.0,0,0,0,1,3,1,0,0,0,16,4,7,2,14,1,2,0,3,0,0@#@arrayAccess[]:1@#@@#@_@isAwake@_:1@#@7
+0,ShJ4mXLbCWNqCTlmlqY2eRX3W.java,15,33,main,59,33,7016b639c6406acb150a45d4782df332,121,1210044@#@3,10,35,2185.074565218556,9,9,1,1,6,4,0,0,0,44,12,27,3,56,1,0,0,4,0,5@#@nextLine():2,parseInt():2,trim():2,solve():1,close():1,out:2@#@println():2@#@_@main@_:1@#@14
+0,ShJ4mXLbCWNqCTlmlqY2eRX3W.java,35,54,solve,73,29,aa90c43f8399243bd01792bcd9861ab9,121,1210045@#@4,16,32,8280.0,5,7,0,1,18,9,0,0,2,61,24,31,3,64,3,0,0,6,0,2@#@charAt():2,add():2,length():2,size():1@#@@#@_@solve@_:1@#@20
+0,IkFlr8M3UNluuydqDUNAh8jsC.java,12,65,main,154,63,7d71a76f41cd75f4b8107c7b1dd758d9,122,1220046@#@11,37,67,18149.738857849654,23,18,2,1,16,13,0,2,0,126,37,61,6,132,2,2,0,6,4,10@#@printStackTrace():2,valueOf():2,multiply():1,updateSet():2,nextInt():2,longValue():3,close():2,size():2,in:1,out:4@#@println():4@#@_@main@_:1@#@51
+0,IkFlr8M3UNluuydqDUNAh8jsC.java,67,76,updateSet,32,21,fc54e12e445e347388f8ba0967f50588,122,1220047@#@2,6,20,570.4945085251319,6,6,0,2,4,2,0,0,1,23,8,10,2,22,1,0,0,2,0,0@#@valueOf():1,doubleValue():1,add():1,remainder():1,divide():1,longValue():1@#@@#@_@updateSet@_:1@#@8
+0,UfjcN6Sfr8W7SFN1kXPAkF2Ak.java,5,12,isFound,25,18,4fb80a3fdb67951842ffdeb7b5c762ea,123,1230048@#@3,5,19,331.33834604859965,1,2,0,2,3,1,0,0,0,18,6,8,3,15,1,2,0,1,0,0@#@charAt():1,length():1@#@@#@_@isFound@_:1@#@8
+0,UfjcN6Sfr8W7SFN1kXPAkF2Ak.java,14,49,findNumber,118,28,68bf304b3bc207c143ff9c42d02b5d2f,123,1230049@#@10,26,33,22851.105360693793,5,8,0,1,30,11,0,0,0,105,41,46,4,116,5,15,0,11,0,0@#@valueOf():2,parseInt():2,length():2,substring():2,arrayAccess[]:4@#@length:2@#@_@findNumber@_:1@#@36
+0,UfjcN6Sfr8W7SFN1kXPAkF2Ak.java,50,63,main,48,29,f2af0168cd3094d3109e5133e34232de,123,1230050@#@3,10,31,1461.4879115641284,7,4,1,1,5,5,0,0,0,39,11,20,3,44,1,0,0,3,0,4@#@valueOf():1,nextInt():2,findNumber():1,in:1,out:1@#@println():1@#@_@main@_:1@#@14
+0,KBmsKxjdArLLF5mRiefrzJ7z5.java,15,20,main,9,9,22d0604ccb54694287c918502363e1e1,124,1240051@#@1,2,6,0.0,1,1,0,1,0,0,0,0,0,5,0,1,1,3,0,0,0,0,0,2@#@readAndSolve():1@#@@#@_@main@_:1@#@3
+0,KBmsKxjdArLLF5mRiefrzJ7z5.java,26,51,readAndSolve,77,40,844747991c881391e35cff72d0b23990,124,1240052@#@3,19,42,6082.534052894442,14,7,1,2,12,7,0,1,0,61,21,33,3,64,1,0,0,3,3,3@#@printStackTrace():1,parseInt():1,readLine():2,write():1,solve():1,close():2@#@@#@_@readAndSolve@_:1@#@24
+0,KBmsKxjdArLLF5mRiefrzJ7z5.java,53,70,solve,60,25,62cfea67e82c4070a53f054722d39f45,124,1240053@#@4,14,29,4080.7040359071616,4,2,2,1,12,5,0,0,0,50,16,20,2,52,1,1,0,14,0,0@#@evaluate():1,toString():1,parseLong():1,calculate():1@#@@#@_@solve@_:1@#@18
+0,KBmsKxjdArLLF5mRiefrzJ7z5.java,72,81,calculate,27,14,547d25c97652443158a663cbbb5707e1,124,1240054@#@2,8,16,744.0,0,0,0,2,6,2,0,0,1,23,8,8,2,22,1,0,0,4,0,0@#@arrayAccess[]:1@#@@#@_@calculate@_:1@#@10
+0,KBmsKxjdArLLF5mRiefrzJ7z5.java,83,89,evaluate,23,13,d80c2930e88e8127694c5a3539ff8588,124,1240055@#@2,5,16,648.0,0,0,0,1,6,2,0,0,0,19,8,8,2,18,1,0,0,3,0,0@#@arrayAccess[]:1@#@length:1@#@_@evaluate@_:1@#@7
+0,U0vY1YZcY94ISYhteKB2XKdxA.java,6,57,main,137,36,7487e6a48c02c3a1b8e387a5aafab1ce,125,1250056@#@11,36,48,38804.3194550106,6,4,0,1,36,12,0,0,0,129,55,64,5,150,5,2,0,21,0,2@#@printf():2,nextInt():2,in:1,out:2,arrayAccess[]:15,arrayBinaryAccess[]:1@#@@#@_@main@_:1@#@45
+0,PQqSDkHrEVxnUKziuUZrCOzlx.java,6,46,main,112,48,fdc773298cb13a6acc7934532a6c440e,126,1260057@#@8,28,53,12738.895090948556,16,12,0,1,16,12,0,0,0,92,33,47,7,97,3,1,0,7,0,6@#@valueOf():2,add():1,contains():2,flush():1,nextInt():2,close():2@#@println():2@#@_@main@_:1@#@37
+0,Tn3VmHPySKMQlgpxV9i38xv6h.java,11,35,main,121,59,03731a906140199b7c816cae2781c167,127,1270058@#@6,22,66,16053.910781016053,14,9,0,1,16,11,0,0,0,105,38,61,4,129,3,1,1,15,0,5@#@toCharArray():1,toString():1,parseInt():2,readLine():2,write():2,close():1,in:1,out:1,arrayAccess[]:11,arrayBinaryAccess[]:1@#@length:1@#@_@main@_:1@#@28
+0,Jus4mW5hUQ1VROqzBLS1Xps7o.java,6,21,main,54,27,d816776517cee4a2719872b73e5037fe,128,1280059@#@3,9,29,3254.8472667354736,8,5,1,1,10,6,0,0,0,44,14,23,2,51,2,0,0,3,0,2@#@nextLine():2,run():1,parseInt():2,in:1,out:1,arrayAccess[]:2@#@println():1@#@_@main@_:1@#@12
+0,Jus4mW5hUQ1VROqzBLS1Xps7o.java,25,40,run,45,21,6632da61a51b4f27a3d92e6e2ebeab16,128,1280060@#@3,10,22,1783.772647454919,5,3,1,1,8,3,0,0,0,36,10,14,2,38,1,10,0,1,0,1@#@toString():2,equals():1,updateEncountered():1@#@@#@_@run@_:1@#@12
+0,Jus4mW5hUQ1VROqzBLS1Xps7o.java,42,54,updateEncountered,42,24,88793da9e955b4e3a0848ef3c65c261d,128,1280061@#@4,8,26,2397.2242562519573,3,3,0,1,10,3,0,0,0,33,14,18,3,36,2,3,0,2,0,0@#@toCharArray():1,toString():1,parseInt():1,arrayAccess[]:3@#@length:2@#@_@updateEncountered@_:1@#@12
+0,OioQ8QELiWl8c8hpSPYCQd5CN.java,14,17,main,12,10,6a852e519178c6e9983a03a0d4e1e755,129,1290062@#@1,3,8,30.0,3,1,0,1,1,1,0,0,0,7,1,3,1,4,0,0,0,0,0,0@#@run():1@#@@#@_@main@_:1@#@4
+0,OioQ8QELiWl8c8hpSPYCQd5CN.java,19,49,run,86,44,374a13fda8ca41e62d25cd9119267913,129,1290063@#@5,19,47,7543.131660578232,13,11,5,0,14,6,0,2,0,64,18,33,4,71,1,0,0,2,4,4@#@log():2,getName():2,solvePuzzle():1,nextInt():2,newLine():1,write():2,getLogger():2,getClass():2,close():2,SEVERE:2@#@@#@_@run@_:1@#@27
+0,OioQ8QELiWl8c8hpSPYCQd5CN.java,51,73,solvePuzzle,50,24,1f255e58815d843f165ea0182ceaa430,129,1290064@#@4,13,30,3650.7266031327376,3,1,2,1,12,4,0,0,1,43,17,19,3,46,1,0,0,7,0,2@#@debug():1,pow():1,check():1@#@@#@_@solvePuzzle@_:1@#@17
+0,OioQ8QELiWl8c8hpSPYCQd5CN.java,75,86,check,40,15,e0a90858659bec483d593db49e9ff02b,129,1290065@#@2,10,20,2748.7462683483627,1,1,0,2,12,3,0,0,1,36,14,17,2,40,1,0,0,8,0,0@#@pow():1@#@@#@_@check@_:1@#@12
+0,OioQ8QELiWl8c8hpSPYCQd5CN.java,88,90,debug,21,15,4414be597dd0384b86017169a5f2ba95,129,1290066@#@1,2,15,195.34452978042594,2,2,0,3,2,0,0,0,0,17,4,8,1,19,0,0,0,0,0,3@#@toBinaryString():1,out:1@#@println():1@#@_@debug@_:1@#@3
+0,IAjIHw2XIybXbL2gBXVuxBG1W.java,5,50,main,101,37,870c28852266f8077b1c69590f2ce5ee,130,1300067@#@9,28,46,15891.287747576027,6,4,0,1,21,10,0,0,0,93,32,44,5,104,4,4,0,13,0,4@#@nextInt():2,in:1,out:2,arrayAccess[]:1,arrayBinaryAccess[]:2@#@println():2@#@_@main@_:1@#@37
+0,XRGytknCBSQoUrxFFOw99gM67.java,11,53,main,139,57,1b765a65227d64166a9618e879d25722,131,1310068@#@9,33,65,21800.971483163004,14,11,0,1,20,16,0,0,0,123,37,58,5,131,4,11,0,12,0,4@#@valueOf():1,charAt():1,print():1,parseInt():2,readLine():2,fill():1,length():1,out:3,arrayAccess[]:3@#@println():2@#@_@main@_:1@#@41
+0,Juxb2157RP0Cus7CMAHqmS8iH.java,16,31,getLastNumber,43,23,100910a7490ccd0542f8cdedc484e3af,132,1320069@#@3,11,22,1641.0708356585253,9,4,1,1,8,4,0,0,0,30,10,16,2,28,1,0,0,1,0,3@#@cardinality():1,toString():1,equals():1,add():1,setBitsForEachDigit():1@#@@#@_@getLastNumber@_:1@#@14
+0,Juxb2157RP0Cus7CMAHqmS8iH.java,33,39,setBitsForEachDigit,28,18,307cbf308eea0e6b75113982e64b0464,132,1320070@#@2,5,19,395.0572587502534,2,3,0,2,3,3,0,0,0,22,8,9,2,20,1,0,1,1,0,0@#@charAt():1,set():1,length():1@#@@#@_@setBitsForEachDigit@_:1@#@7
+0,Juxb2157RP0Cus7CMAHqmS8iH.java,41,56,runTests,77,47,ab48b7d6bee360287d646bdaeccb29ab,132,1320071@#@2,13,47,2699.530181915332,21,11,1,2,6,6,0,1,0,61,12,20,2,57,0,0,0,1,0,10@#@printStackTrace():1,toList():1,collect():1,parseInt():1,lines():1,remove():1,write():1,get():2,processBody():1,TRUNCATE_EXISTING:1,CREATE:1,out:2@#@println():2@#@_@runTests@_:1@#@16
+0,Juxb2157RP0Cus7CMAHqmS8iH.java,58,68,processBody,42,25,788b7b9550282bc89d3edd249b2ecaf8,132,1320072@#@2,9,26,921.2861847556542,8,5,1,2,4,3,0,0,0,33,9,16,2,35,1,0,0,2,0,4@#@getLastNumber():1,isEmpty():1,add():1,remove():1,out:2@#@println():2@#@_@processBody@_:1@#@11
+0,Juxb2157RP0Cus7CMAHqmS8iH.java,70,72,main,9,9,22d0604ccb54694287c918502363e1e1,132,1320073@#@1,2,6,0.0,1,1,0,1,0,0,0,0,0,5,0,1,1,3,0,0,0,0,0,2@#@runTests():1@#@@#@_@main@_:1@#@3
+0,Sk1IeFwDYu3mYheZKtSSfNFD2.java,11,83,main,124,52,6f0c522be0c2bd0ea4a89a2129d44ccf,133,1330074@#@6,26,57,15538.818997734872,23,21,0,1,18,10,0,0,0,96,28,52,5,112,3,0,0,5,0,11@#@valueOf():7,print():2,toCharArray():1,add():1,contains():1,nextInt():2,write():4,size():1,close():1,in:1,out:3@#@println():1@#@_@main@_:1@#@32
+0,Y9PhplVZ43AkYF4U3BL0q2qcA.java,8,17,main,45,30,0c2d2b15759434268510bacedad4357f,134,1340075@#@2,6,31,1030.4728325604701,11,6,0,1,4,4,0,0,0,34,7,18,3,36,1,0,0,2,0,2@#@valueOf():2,next():2,checkIfContainsAllNumbers():1,in:1,out:1@#@println():1@#@_@main@_:1@#@9
+0,Y9PhplVZ43AkYF4U3BL0q2qcA.java,19,24,checkIfContainsAllNumbers,23,17,72c409eb1b29c6d75acfa7aea6a01768,134,1340076@#@2,5,15,164.0894050155578,4,1,1,2,2,0,0,0,0,16,5,5,1,11,0,0,0,2,0,1@#@checkNum():1,clear():1@#@@#@_@checkIfContainsAllNumbers@_:1@#@6
+0,Y9PhplVZ43AkYF4U3BL0q2qcA.java,26,37,checkNum,50,21,8feb7bc7e716b0121ad0590609181f3c,134,1340077@#@3,9,28,3576.672062010857,4,3,1,4,12,1,0,0,0,41,18,21,2,47,0,1,0,6,0,1@#@put():1,checkNum():1,size():2@#@@#@_@checkNum@_:1@#@12
+0,OfKs1uXNaV35sLyCgrWOwNiSx.java,8,52,main,123,56,cc25744e6b7e5e94924f77ac50ae8feb,135,1350078@#@8,29,62,15147.475413624212,14,10,0,1,16,12,0,0,0,106,33,53,5,115,4,6,0,8,0,8@#@charAt():1,parseLong():1,flush():2,parseInt():1,readLine():2,write():2,length():1,in:1,out:1,arrayAccess[]:1,arrayBinaryAccess[]:1@#@@#@_@main@_:1@#@37
+0,BvbjfJcLu6Q0ZAwVGgehapTgx.java,5,50,main,155,72,3a0fba6707d02f31425c288048712414,136,1360079@#@6,28,76,18993.6996408685,22,21,0,1,16,17,0,1,0,125,38,65,6,144,2,0,0,6,0,20@#@nextLine():2,toString():1,contains():10,parseInt():2,concat():1,length():1,close():1,err:1,in:1@#@println():3@#@_@main@_:1@#@36
+0,Zmqmzaa4rHp0kZsAjaSvJh9on.java,8,20,solve,48,27,4f9b1ff0b2eeffe3b1bf8f3b8e81f80f,137,1370080@#@2,9,30,1324.8604608143,7,3,3,1,5,5,0,0,0,36,12,18,2,35,1,0,0,2,0,3@#@split():1,parseInt():2,solve():1,close():2,arrayAccess[]:1@#@@#@_@solve@_:1@#@11
+0,Zmqmzaa4rHp0kZsAjaSvJh9on.java,22,40,solve,54,27,45a4073a4aa2ba997a692a655e63e93e,137,1370081@#@4,15,33,4176.758330828799,3,2,1,3,12,4,0,0,0,47,17,22,3,50,2,1,0,6,0,4@#@notAllSeen():1,arrayBinaryAccess[]:1@#@println():2@#@_@solve@_:1@#@19
+0,Zmqmzaa4rHp0kZsAjaSvJh9on.java,42,47,notAllSeen,16,11,99c5da675944b178621bc42c14282273,137,1370082@#@3,5,9,44.37895002019238,0,0,0,1,1,1,0,0,0,11,2,3,3,6,1,2,0,0,0,0@#@@#@@#@_@notAllSeen@_:1@#@8
+0,Zmqmzaa4rHp0kZsAjaSvJh9on.java,49,52,parseInt,14,12,1a701b1085e0d86df34e804c872babdd,137,1370083@#@1,2,10,36.541209043760986,4,2,0,1,1,0,0,0,0,8,1,3,1,4,0,0,0,0,0,0@#@parseInt():1,readLine():1@#@@#@_@parseInt@_:1@#@3
+0,Zmqmzaa4rHp0kZsAjaSvJh9on.java,54,61,parseArray,35,21,128fd175a2f2879b7ea8f69b387bdf60,137,1370084@#@2,6,22,1427.018117963935,4,3,0,1,8,3,0,0,0,28,12,12,2,27,1,0,0,1,0,1@#@split():1,parseInt():1,readLine():1,arrayAccess[]:2@#@length:2@#@_@parseArray@_:1@#@8
+0,Zmqmzaa4rHp0kZsAjaSvJh9on.java,63,66,main,10,10,c583962a450a61bfc0d0595a6faa446d,137,1370085@#@1,2,7,0.0,2,1,0,1,0,0,0,0,0,6,0,1,1,2,0,0,0,0,0,1@#@solve():1@#@@#@_@main@_:1@#@3
+0,TSLEm7xFHz01DNSUhyPh2qfY7.java,8,29,main,59,35,280e18e1d1312be2d428115afe591266,138,1380086@#@5,17,39,1929.1718098847207,5,3,1,1,5,6,0,0,0,51,15,22,3,51,2,2,0,5,0,2@#@nextInt():2,countdigit():1,in:1,out:1@#@println():1@#@_@main@_:1@#@21
+0,TSLEm7xFHz01DNSUhyPh2qfY7.java,30,46,countdigit,42,23,559c9e4bec6ce4e542acfae612f557fd,138,1380087@#@4,12,28,2595.9716579111064,1,1,0,2,10,2,0,0,0,36,13,18,3,40,1,2,0,5,0,2@#@out:1,arrayAccess[]:2@#@println():1@#@_@countdigit@_:1@#@16
+0,CZze17tlEgnVxJbdHNDAeUH7y.java,5,36,main,86,42,e19c7152deab47be4f40ad4496456f24,139,1390088@#@6,19,49,9792.053968136923,10,8,1,1,16,7,0,1,0,72,20,37,6,85,3,1,0,9,0,6@#@check():1,parseInt():2,readLine():2,close():1,out:3,arrayBinaryAccess[]:1@#@println():3@#@_@main@_:1@#@27
+0,CZze17tlEgnVxJbdHNDAeUH7y.java,37,40,check,16,11,1e36d22df520471317ca5e781434719b,139,1390089@#@3,5,9,44.37895002019238,0,0,0,1,1,1,0,0,0,11,2,3,1,6,1,2,0,0,0,0@#@@#@@#@_@check@_:1@#@5
+0,PzRYuvcxrMVTrzPFv7G4WuZdr.java,7,61,main,126,53,27e8e6647f13918b54920705bc8034fb,140,1400090@#@9,33,61,19690.047960708784,11,11,0,1,20,13,0,1,1,109,35,57,6,122,4,1,0,13,0,11@#@printStackTrace():1,valueOf():1,charAt():1,flush():1,nextInt():2,write():2,length():1,close():1,out:1,arrayAccess[]:1,arrayBinaryAccess[]:1@#@println():1@#@_@main@_:1@#@44
+0,DuE0BQHP4FUpWwBIQ1HO0Yt82.java,6,32,main,83,33,79f0a1799c701ac39bc24db56c37edd2,141,1410091@#@5,18,42,9059.093270268319,8,4,1,1,16,7,0,0,0,72,19,33,4,83,3,0,0,18,0,4@#@check():1,nextInt():2,in:1,out:2,arrayBinaryAccess[]:1@#@println():2@#@_@main@_:1@#@23
+0,DuE0BQHP4FUpWwBIQ1HO0Yt82.java,34,41,check,22,14,575ceddfb0b9b9f809cd30f0680aa9cc,141,1410092@#@3,5,16,288.0,0,0,0,1,3,1,0,0,0,17,6,7,3,15,1,2,0,2,0,0@#@arrayAccess[]:1@#@length:1@#@_@check@_:1@#@8
+0,QWh69AbiTrU4PdDwoYKYoOhNe.java,11,53,main,106,51,c339c88927d8b8dd422ab08bbac8a6b9,142,1420093@#@6,24,56,11893.462880373974,18,12,1,1,16,9,0,1,0,83,26,45,5,90,2,0,0,5,3,8@#@print():1,append():4,getAlldigit():1,parseInt():2,readLine():2,addAll():1,close():1,size():1@#@@#@_@main@_:1@#@33
+0,QWh69AbiTrU4PdDwoYKYoOhNe.java,55,63,getAlldigit,25,15,86da27d30e8f6a19dcd4de4a171add79,142,1420094@#@2,6,16,648.0,6,1,0,1,6,1,0,0,0,19,6,8,2,16,1,0,0,3,0,0@#@add():1@#@@#@_@getAlldigit@_:1@#@8
+0,SSHd6mCJTF37peI8cLL3DAPqC.java,11,40,main,96,40,ef25eb4a54aef7f54045a6263670e333,143,1430095@#@7,24,51,12865.060675591352,10,4,1,1,18,9,0,0,0,85,28,41,4,94,3,1,0,8,0,5@#@nextInt():2,isAllFilled():1,in:1,MAX_VALUE:2,out:2,arrayAccess[]:1@#@println():2@#@_@main@_:1@#@31
+0,SSHd6mCJTF37peI8cLL3DAPqC.java,42,47,isAllFilled,16,11,5bee171dd12c85fe476cc02ab485b20f,143,1430096@#@3,5,9,44.37895002019238,0,0,0,1,1,1,0,0,0,11,2,3,2,6,1,2,0,0,0,0@#@@#@@#@_@isAllFilled@_:1@#@7
+0,ENMxAwWhgNBqoC7h5NVP0aTOO.java,4,42,main,129,52,6c5e2b8cead709f9b42d8f770042b813,144,1440097@#@7,27,56,16934.246952719976,18,17,0,1,18,12,0,0,0,103,36,59,6,122,3,4,0,7,0,12@#@charAt():2,toString():1,append():1,contains():1,parseInt():3,newLine():1,readLine():2,write():2,length():2,close():2@#@@#@_@main@_:1@#@34
+0,JS9q3eKY3jNzQju3k7ql3u39l.java,14,64,main,112,45,40f97c6bf18ddafdcd05a2baed662a06,145,1450098@#@11,33,55,16072.180003598554,9,11,2,1,20,10,0,0,0,92,35,47,4,98,4,0,0,10,0,5@#@print():3,exists():1,done():2,nextInt():2,createNewFile():1,close():2,arrayAccess[]:1,arrayBinaryAccess[]:1@#@println():2@#@_@main@_:1@#@39
+0,JS9q3eKY3jNzQju3k7ql3u39l.java,66,72,done,19,14,fc1d0f9d63b8c8b66a3cea0d056230d1,145,1450099@#@3,5,16,252.0,0,0,0,0,3,1,0,0,0,14,4,7,2,14,1,2,0,3,0,0@#@arrayAccess[]:1@#@@#@_@done@_:1@#@6
+0,H3eBCNyQNInr0RDRi35NhzJeZ.java,5,30,main,93,47,49dc4094ce38d7cbe75701a0e415c6b8,146,14600100@#@5,19,52,10762.430187850383,15,10,0,1,16,10,0,0,0,76,25,42,5,85,3,0,0,6,0,6@#@nextLine():2,charAt():1,add():1,parseLong():1,parseInt():1,length():1,size():2,in:1,out:1@#@println():1@#@_@main@_:1@#@25
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,12,14,PZKlWa5LQdBFQKjx6fRTWu1fx,7,5,075523b09a415cdc90445279c4fe98d5,147,14700101@#@1,2,4,0.0,1,0,0,1,0,0,0,0,0,5,1,1,1,4,0,0,0,0,0,0@#@stream:1@#@@#@_@PZKlWa5LQdBFQKjx6fRTWu1fx@_:1@#@3
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,15,29,read,33,18,0fdab4f9ce1326317cac3f0338dff6bd,147,14700102@#@5,11,24,916.9925001442314,3,1,0,0,5,0,2,1,0,26,10,14,3,26,0,0,0,4,0,0@#@read():1,arrayAccess[]:1@#@@#@_@read@_:1@#@15
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,30,48,readInt,46,21,daba847e263f690921c62c4f5ea1ddcd,147,14700103@#@5,16,29,4148.715769838947,1,0,6,0,14,3,1,0,0,36,14,25,2,46,2,0,4,4,0,0@#@read():4,isSpaceChar():2@#@@#@_@readInt@_:1@#@18
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,49,81,readDouble,96,28,cda101310c7329c019ef9cd530f7abe5,147,14700104@#@10,29,39,18979.879367934336,4,2,11,0,27,4,2,0,0,76,31,57,3,109,3,0,13,8,0,0@#@read():6,readInt():2,isSpaceChar():3,pow():2@#@@#@_@readDouble@_:1@#@33
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,82,100,readLong,46,22,ec7c0f94b5baf632affc54f12dae945c,147,14700105@#@5,16,30,4190.484568649675,1,0,6,0,14,3,1,0,0,36,14,25,2,46,2,0,4,4,0,0@#@read():4,isSpaceChar():2@#@@#@_@readLong@_:1@#@18
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,101,105,isSpaceChar,23,14,dc316405f3474a4fc6883f899fe1b664,147,14700106@#@2,4,17,392.39643276003267,0,1,0,1,3,0,0,0,0,18,8,14,1,26,0,0,4,1,1,0@#@isSpaceChar():1@#@@#@_@isSpaceChar@_:1@#@5
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,106,116,readString,27,15,f404434e7fffe37df9b2b7e1b3a5da41,147,14700107@#@3,9,15,937.6537429460445,3,2,5,0,8,2,0,0,0,16,7,14,2,20,2,0,0,0,0,0@#@appendCodePoint():1,read():3,isSpaceChar():2,toString():1@#@@#@_@readString@_:1@#@10
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,117,119,next,5,5,7d90e843b41641da4699468b84762f62,147,14700108@#@1,2,3,4.754887502163469,1,0,1,0,1,0,0,0,0,1,0,2,1,1,0,0,0,0,0,0@#@readString():1@#@@#@_@next@_:1@#@3
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,121,121,isSpaceChar,5,5,08543e2a1b6e0e223d99f40d61568cf6,147,14700109@#@1,1,3,0.0,0,0,0,1,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0@#@@#@@#@_@isSpaceChar@_:1@#@1
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,126,128,OutputWriter,12,9,c696d6ed652de9def2038ff8a348f50f,147,14700110@#@1,2,8,33.0,4,0,0,1,1,0,0,0,0,7,2,4,1,6,0,0,0,0,0,0@#@@#@@#@_@OutputWriter@_:1@#@3
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,129,131,OutputWriter,9,7,1aa059bc3bf38bcbc9c48e9970201c30,147,14700111@#@1,2,6,20.67970000576925,2,0,0,1,1,0,0,0,0,6,1,2,1,5,0,0,0,0,0,0@#@writer:1@#@@#@_@OutputWriter@_:1@#@3
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,132,138,print,23,13,88c34c4253c89f3811f4a09c0cd3bd2c,147,14700112@#@3,5,17,318.8221016175265,1,2,0,1,3,1,0,0,0,19,9,7,2,19,1,0,1,2,0,0@#@print():2,arrayAccess[]:1@#@length:1@#@_@print@_:1@#@7
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,139,142,printLine,9,8,2d79fb0d4db9a8cde842a3d00569e870,147,14700113@#@1,3,6,18.094737505048094,1,1,1,1,1,0,0,0,0,5,2,2,1,4,0,0,0,0,0,0@#@print():1@#@println():1@#@_@printLine@_:1@#@4
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,144,146,close,5,4,c86f2c3ef9083177486814302df1b750,147,14700114@#@1,2,3,0.0,0,1,0,0,0,0,0,0,0,2,1,1,1,2,0,0,0,0,0,0@#@close():1@#@@#@_@close@_:1@#@3
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,148,150,flush,5,4,c86f2c3ef9083177486814302df1b750,147,14700115@#@1,2,3,0.0,0,1,0,0,0,0,0,0,0,2,1,1,1,2,0,0,0,0,0,0@#@flush():1@#@@#@_@flush@_:1@#@3
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,154,159,readIntArray,25,13,4ed99790cccf250ecd8707d3ceb78348,147,14700116@#@2,5,14,639.6356269056773,1,1,0,2,6,2,0,0,0,20,8,8,1,17,1,0,0,1,0,0@#@readInt():1,arrayAccess[]:1@#@@#@_@readIntArray@_:1@#@5
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,160,165,readLongArray,25,14,b2078a503f2f56436e33c87d27b4c2c0,147,14700117@#@2,5,15,656.3576200622311,1,1,0,2,6,2,0,0,0,20,8,8,1,17,1,0,0,1,0,0@#@readLong():1,arrayAccess[]:1@#@@#@_@readLongArray@_:1@#@5
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,169,195,main,94,51,80ad4c38ed4aab7dbf5cb510827b7e84,147,14700118@#@5,20,52,9941.566868438065,19,14,0,1,16,9,0,0,0,72,21,37,5,73,3,0,0,2,0,7@#@printLine():2,nextToken():1,readString():1,readLong():1,toString():1,equals():1,add():2,flush():1,hasMoreTokens():1,replaceAll():1,size():1,close():1,ZERO:1,in:1,out:1@#@@#@_@main@_:1@#@26
+0,Ci6i4zACVcncvfHByEY1NJdMU.java,12,46,main,109,57,7b018430091b48b34c9d2d82e4389aa6,148,14800119@#@6,20,62,15838.16218562909,20,13,0,1,20,10,0,0,1,87,26,46,4,97,4,0,0,7,0,6@#@charAt():1,setOut():1,isEmpty():1,toString():1,add():1,parseLong():1,parseInt():1,readLine():2,remove():1,length():1,out:2@#@println():2@#@_@main@_:1@#@26
+0,Ivn7NyHkniGZ3BARMCAyNVAXI.java,4,29,main,96,51,7609313329ea5f13d0f99c1b7cc65f55,149,14900120@#@6,20,57,12284.066369830947,16,11,0,1,18,10,0,0,1,79,23,38,4,83,4,0,1,5,0,4@#@isEmpty():1,toCharArray():1,toString():1,add():1,parseLong():1,parseInt():1,readLine():2,remove():1,in:1,out:2@#@println():2@#@_@main@_:1@#@26
+0,Nq1IYDS6Ik6rggiSQMKK0ztd8.java,21,69,find,131,49,9565dae560a2384fabcec73ae98e311f,150,15000121@#@12,32,53,12303.573136401752,7,13,0,1,12,4,0,0,0,113,53,66,3,152,1,10,0,1,0,22@#@valueOf():1,contains():10,write():1,close():1@#@@#@_@find@_:1@#@44
+0,Nq1IYDS6Ik6rggiSQMKK0ztd8.java,70,103,main,106,50,70eeb33abe311ec1276bf2539905bd4e,150,15000122@#@3,26,53,9966.581590939968,11,7,1,1,12,7,0,0,0,92,31,53,3,127,1,11,0,7,0,13@#@find():1,nextInt():2,write():2,close():1,in:1,out:2@#@println():2@#@_@main@_:1@#@30
+0,CxrsaCG4ac3sgiVf7TqC9YSGl.java,5,27,main,85,41,40afe42efdc2e815cb2b7ba3a13b766a,151,15100123@#@3,18,43,6576.632882698943,16,11,0,1,12,9,0,0,0,64,20,37,3,69,1,0,0,3,0,7@#@sheepCount():1,parseInt():2,newLine():2,readLine():2,write():2,close():2@#@@#@_@main@_:1@#@22
+0,CxrsaCG4ac3sgiVf7TqC9YSGl.java,29,38,getNumbers,28,14,e64b2faf95434497e882ba199b496175,151,15100124@#@2,8,16,792.0,5,1,0,1,6,2,0,0,0,23,8,10,2,21,1,0,0,4,0,0@#@add():1@#@@#@_@getNumbers@_:1@#@10
+0,CxrsaCG4ac3sgiVf7TqC9YSGl.java,40,57,sheepCount,52,24,9303f51f6d4ee8a3932804cdddd8fe74,151,15100125@#@4,14,29,3672.633632316445,5,4,1,1,12,6,0,0,0,42,15,21,3,40,2,0,0,6,0,0@#@getNumbers():1,add():1,get():1,size():2@#@@#@_@sheepCount@_:1@#@18
+0,CcjK1qSrSM8239MPdLlbJxEUX.java,6,60,main,169,37,20f810846c2889e37cd05b71ad581e65,152,15200126@#@11,40,51,68919.96790495368,8,6,0,1,50,15,0,0,0,159,73,84,6,203,7,0,0,26,0,4@#@print():2,nextInt():2,in:1,out:4,arrayAccess[]:15@#@length:2,println():2@#@_@main@_:1@#@49
+0,Xpr3cDMJ6Tda97Z8NHzIWxiei.java,6,30,main,75,36,1c08a1ae9fb4054209604dab28006819,153,15300127@#@5,15,44,8473.037872125085,12,6,0,1,16,7,0,0,0,62,16,35,5,71,3,0,0,9,0,4@#@add():1,nextInt():2,size():1,in:1,out:2@#@println():2@#@_@main@_:1@#@20
+0,R1r3KkTXHvr6OuOwPq5wpWM2g.java,4,26,main,87,45,d9c5f28a35a7515171db673e35ed4f9d,154,15400128@#@4,17,50,9481.678398821537,19,8,1,1,16,8,0,0,0,68,17,37,4,74,2,0,0,5,0,6@#@setIn():1,setOut():1,getNum():1,nextInt():2,addAll():1,size():1,in:1,out:2@#@println():2@#@_@main@_:1@#@22
+0,R1r3KkTXHvr6OuOwPq5wpWM2g.java,27,34,getNum,24,14,76b8cae8c3311730ef5412381786c218,154,15400129@#@2,6,15,609.4749329149289,5,1,0,1,6,1,0,0,0,18,6,8,2,16,1,0,0,3,0,0@#@add():1@#@@#@_@getNum@_:1@#@8
+0,N5mxIsjjmDtLU5EqVQlhzdTlr.java,13,16,main,17,15,40c61ae3140a96320aa28f74660f8d03,155,15500130@#@1,2,12,50.18947501009619,5,1,0,1,1,0,0,0,0,10,0,4,1,6,0,0,0,0,0,2@#@solve():1@#@@#@_@main@_:1@#@3
+0,N5mxIsjjmDtLU5EqVQlhzdTlr.java,18,36,solve,42,25,9525a60ae90733c79139f10aa0dab86a,155,15500131@#@3,9,27,874.8993003980784,4,6,0,2,4,4,0,0,0,32,12,14,3,30,1,0,0,2,0,2@#@printf():1,count():1,nextInt():2@#@println():2@#@_@solve@_:1@#@13
+0,N5mxIsjjmDtLU5EqVQlhzdTlr.java,38,67,count,49,23,15b3ad1d551eeeabad8269b7d1531828,155,15500132@#@5,15,29,4012.6923019753754,4,4,0,1,14,4,0,0,1,40,14,19,3,43,2,1,0,7,0,0@#@filter():1,isPresent():1,findAny():1,stream():1,arrayAccess[]:1@#@@#@_@count@_:1@#@20
+0,OADYFbqYeWIAKNL7ettUn2Vib.java,15,18,main,9,9,9211d5dbc8018300c497bac1cdbdb7fa,156,15600133@#@1,2,6,0.0,2,0,1,1,0,0,0,0,0,5,0,1,1,1,0,0,0,0,0,0@#@count():1@#@@#@_@main@_:1@#@3
+0,OADYFbqYeWIAKNL7ettUn2Vib.java,20,61,count,133,59,a475b81734bf92a1c3f4540a3c09d26c,156,15600134@#@5,27,62,21720.90814029132,24,30,0,0,24,9,0,0,0,95,40,57,4,120,3,0,0,9,0,5@#@multiply():1,toString():3,equals():1,add():3,collect():2,nextInt():1,get():1,addAll():1,valueOf():3,mapToObj():2,chars():2,nextBigInteger():1,toSet():2,digit():2,clear():1,size():1,close():2@#@println():1@#@_@count@_:1@#@31
+0,TH6MleuQMptNjwcpWq3p9qQMs.java,6,36,main,89,38,0abc8627727fda5684ec2b130bd424e8,157,15700135@#@6,21,46,11334.349133828991,10,8,0,1,18,8,0,0,0,76,26,38,5,89,3,0,0,11,0,4@#@add():1,contains():1,nextInt():2,size():1,clear():1,in:1,out:2@#@println():2@#@_@main@_:1@#@27
+0,KddCu84FNZFhIrTfWh0O0re0y.java,6,51,main,135,50,df47eb36d9155ebcef83c2cbd4d737c2,158,15800136@#@9,32,57,28032.869408075752,11,10,1,1,27,13,0,0,1,118,44,60,6,137,5,6,0,13,0,6@#@valueOf():2,log10():1,getIthDigit():1,floor():1,readLine():2,close():2,arrayAccess[]:3@#@length:2,println():2@#@_@main@_:1@#@41
+0,KddCu84FNZFhIrTfWh0O0re0y.java,53,55,getIthDigit,16,11,8e94abcb2e9dbcc7b727d6108cc362dc,158,15800137@#@1,2,12,121.88872502451932,1,1,0,2,2,0,0,0,1,12,2,5,1,12,0,0,0,3,0,0@#@pow():1@#@@#@_@getIthDigit@_:1@#@3
+0,PDK8VyzIS7Ouhc2pbsmdBfUFp.java,7,59,main,129,54,fa3ff2aef38df502a6c9625d046bd165,159,15900138@#@9,34,62,16397.856638805453,20,15,0,1,18,9,0,3,0,107,26,46,5,109,3,1,0,12,1,10@#@parseInt():2,exit():3,readLine():2,write():2,close():2,out:4@#@println():4@#@_@main@_:1@#@46
+0,Rcvpk5XFNZChGD6UboTO1wH8F.java,16,44,Rcvpk5XFNZChGD6UboTO1wH8F,78,42,61d72f6cfaaa2bcbefb1935160433760,160,16000139@#@5,20,45,3690.525280733542,10,8,3,0,7,2,0,0,0,59,25,37,5,83,2,1,0,5,0,6@#@clearDigitFlags():1,nextLine():2,multiply():1,areAllDigitFlagsSet():1,add():1,setDigitFlags():1,nextInt():1,compareTo():1,in:1,out:2@#@println():2@#@_@Rcvpk5XFNZChGD6UboTO1wH8F@_:1@#@26
+0,Rcvpk5XFNZChGD6UboTO1wH8F.java,46,50,clearDigitFlags,13,10,6b4cf700074742a3cd02fdf6e1fd77e9,160,16000140@#@2,3,12,114.71880002307701,0,0,0,0,2,1,0,0,0,11,4,5,2,12,1,1,0,2,0,0@#@arrayAccess[]:1@#@@#@_@clearDigitFlags@_:1@#@5
+0,Rcvpk5XFNZChGD6UboTO1wH8F.java,52,57,areAllDigitFlagsSet,18,13,fc1d0f9d63b8c8b66a3cea0d056230d1,160,16000141@#@3,5,16,252.0,0,0,0,0,3,1,0,0,0,14,4,7,2,14,1,3,0,2,0,0@#@arrayAccess[]:1@#@@#@_@areAllDigitFlagsSet@_:1@#@7
+0,Rcvpk5XFNZChGD6UboTO1wH8F.java,59,67,setDigitFlags,31,20,930696111ebbc8390723f909eb27acde,160,16000142@#@2,7,22,659.99587955832,3,4,0,1,4,4,0,0,0,25,10,12,2,26,1,1,0,1,0,0@#@charAt():1,toString():1,length():1,getNumericValue():1,arrayAccess[]:1@#@@#@_@setDigitFlags@_:1@#@9
+0,Rcvpk5XFNZChGD6UboTO1wH8F.java,69,71,main,8,8,e7d488a4c542714ec5484cd70d433a0b,160,16000143@#@1,2,5,0.0,2,0,0,1,0,0,0,0,0,4,0,1,1,1,0,0,0,0,0,0@#@@#@@#@_@main@_:1@#@3
+0,JxiXZW4DJW8AMIKuXq2pKgllg.java,11,62,main,157,62,81c25781b7a0bffbc420331e3dac5298,161,16100144@#@10,39,68,22243.58922192874,17,14,0,1,18,16,0,1,0,135,44,68,6,150,4,3,2,12,0,12@#@printStackTrace():1,charAt():2,parseInt():2,readLine():2,write():2,length():1,close():2,out:2,arrayAccess[]:1,arrayBinaryAccess[]:2@#@println():2@#@_@main@_:1@#@48
+0,SGOgi4nerpYQ2HyiSNtEQJjjk.java,12,33,main,56,31,8c8aa49aa9a0a3d890b84e814d81fdbd,162,16200145@#@4,14,33,1614.2061181947051,8,6,0,1,5,3,0,2,0,43,17,21,2,42,1,0,0,3,0,1@#@printStackTrace():2,countSheep():1,nextInt():2,close():1,arrayAccess[]:1@#@@#@_@main@_:1@#@20
+0,SGOgi4nerpYQ2HyiSNtEQJjjk.java,34,59,countSheep,88,35,bb7d23dd9a1f5d4d14c52ca4f7262852,162,16200146@#@7,20,42,8379.661274998194,4,6,0,2,14,7,0,0,0,77,27,34,3,85,3,14,0,6,0,4@#@toString():1,parseInt():1,length():1,substring():1,arrayAccess[]:2@#@length:1,println():2@#@_@countSheep@_:1@#@26
+0,AqMFjBF8QWqw2YRo5MG4CQ9cx.java,7,41,main,122,39,8547b45dc5a65367b5ff7c1c2f48b67a,163,16300147@#@8,25,47,22646.058748289728,17,15,0,1,27,11,0,0,0,100,38,51,5,110,5,0,0,11,0,4@#@add():4,nextInt():2,get():5,size():1,clear():1,in:1,out:2@#@println():2@#@_@main@_:1@#@33
+0,AJj1SAMMiUa4WtNzs6ExAN39J.java,14,35,main,82,39,f256508026595635d5e96ec9ef2303e4,164,16400148@#@5,16,44,10023.516451818077,13,8,3,1,18,7,0,0,0,63,19,39,3,75,1,0,0,8,0,7@#@checkInsomnia():1,getNumberMap():1,add():2,writeFileLines():1,parseInt():2,remove():1,get():1,readFileLines():1,size():1@#@@#@_@main@_:1@#@22
+0,AJj1SAMMiUa4WtNzs6ExAN39J.java,37,58,checkInsomnia,60,26,b5634179f626cc93004d47b7efd9f39e,164,16400149@#@6,16,35,5457.557130029444,3,2,0,2,14,5,0,0,0,52,18,24,4,51,2,1,0,11,0,0@#@put():1,get():1@#@@#@_@checkInsomnia@_:1@#@22
+0,AJj1SAMMiUa4WtNzs6ExAN39J.java,60,66,getNumberMap,28,17,092929df137322a175b29ae5b8398fa9,164,16400150@#@2,5,17,711.2185343775592,9,1,0,0,6,2,0,0,0,22,5,7,2,15,1,1,0,3,0,0@#@put():1@#@@#@_@getNumberMap@_:1@#@7
+0,AJj1SAMMiUa4WtNzs6ExAN39J.java,68,81,readFileLines,35,25,e31bbe72822e9c1ee95f009d48f7b2a6,164,16400151@#@3,9,23,461.4033195178153,10,4,0,1,3,2,0,1,0,25,6,9,3,18,1,0,0,0,0,1@#@hasNextLine():1,nextLine():1,add():1,out:1@#@println():1@#@_@readFileLines@_:1@#@13
+0,AJj1SAMMiUa4WtNzs6ExAN39J.java,83,96,writeFileLines,32,23,46e2a20e481d024a768ad20d384fe45b,164,16400152@#@3,8,21,263.53904536672565,8,3,0,2,2,2,0,1,0,25,6,5,3,16,1,0,0,0,0,1@#@close():1,out:1@#@println():2@#@_@writeFileLines@_:1@#@12
+0,UaUsOgNDaFisQWwjvDeIlkfI6.java,9,22,main,55,29,6f6501e4f2e519013bba402c6b0ec248,165,16500153@#@4,11,32,3300.0,8,4,2,1,10,5,0,0,0,43,11,23,3,47,1,0,0,3,0,4@#@nextInt():2,checkNumber():1,resetSeenSet():1,in:1,out:2@#@println():2@#@_@main@_:1@#@13
+0,UaUsOgNDaFisQWwjvDeIlkfI6.java,24,27,resetSeenSet,14,11,80a406f0d06bfa4e50acf725ad0ac480,165,16500154@#@2,3,12,107.5488750216347,0,1,0,0,2,1,0,0,0,11,4,4,1,11,1,1,0,2,0,0@#@put():1@#@@#@_@resetSeenSet@_:1@#@3
+0,UaUsOgNDaFisQWwjvDeIlkfI6.java,29,35,seenAll,16,13,fd2c1933f7a057fc84ef79fec53277d4,165,16500155@#@3,5,12,107.5488750216347,0,2,0,0,2,1,0,0,0,10,3,5,2,9,1,2,0,0,0,0@#@keySet():1,get():1@#@@#@_@seenAll@_:1@#@7
+0,UaUsOgNDaFisQWwjvDeIlkfI6.java,37,48,checkNumber,34,17,ac6fa4ada4ff4775670d8ea25380c08f,165,16500156@#@4,9,21,1475.8186540536635,0,1,1,1,8,2,0,0,0,28,11,14,3,30,2,1,0,6,0,0@#@put():1,seenAll():1@#@@#@_@checkNumber@_:1@#@12
+0,MAE4UzKOuH3bCRR9IuO9Esugi.java,12,19,getBits,24,15,d40ee100d5ac4a1ec931c3020126ca61,166,16600157@#@2,6,16,624.0,5,1,0,1,6,1,0,0,0,18,6,8,2,16,1,0,0,3,0,0@#@add():1@#@@#@_@getBits@_:1@#@8
+0,MAE4UzKOuH3bCRR9IuO9Esugi.java,21,36,countSheep,44,25,76909e17669cbf38b7d44f68767856fa,166,16600158@#@4,12,27,2377.4437510817343,6,3,1,1,10,5,0,0,0,35,12,15,4,30,2,0,0,3,0,0@#@add():1,contains():1,getBits():1,size():1@#@@#@_@countSheep@_:1@#@16
+0,MAE4UzKOuH3bCRR9IuO9Esugi.java,39,57,main,59,34,5323b807760a67fe46e043ad87a4fef2,166,16600159@#@3,12,36,1809.4737505048092,10,6,1,1,5,6,0,0,0,47,12,23,3,49,1,0,0,2,0,5@#@countSheep():1,parseInt():2,readLine():2,out:2@#@println():2@#@_@main@_:1@#@15
+0,HFbjWUQBqZ7zv5WNpjN0sTx3g.java,17,96,main,194,75,6d587f1068c86d19f6cc8c903f373b43,167,16700160@#@11,45,79,28493.088981760506,37,31,0,1,20,14,0,3,0,150,42,76,6,163,3,0,0,11,0,21@#@printStackTrace():3,multiply():2,intValue():2,toString():1,add():11,contains():1,removeAll():1,parseInt():1,readLine():2,addAll():1,size():2,out:4,arrayAccess[]:1@#@println():4@#@_@main@_:1@#@57
+0,D5ZsGYqfywIoe4NZ4zOcIPslB.java,5,29,main,75,38,a1bdc453695b1a2bbb7b200b49dab2e1,168,16800161@#@5,18,45,8347.616706421106,10,6,0,1,16,8,0,0,0,63,19,32,5,69,3,0,0,8,0,4@#@add():1,nextInt():1,nextLong():1,size():1,in:1,out:2@#@println():2@#@_@main@_:1@#@24
+0,Z4D5jL7vdjTMnaEFxSNOjs7ky.java,5,14,main,54,34,e11032c8adcbbab98aacb128dba8fd1b,169,16900162@#@2,7,37,1969.173372207743,10,8,1,1,6,5,0,0,0,39,8,24,2,44,1,0,0,2,0,5@#@min():1,setOut():1,parseInt():2,trim():2,readLine():2,out:1@#@println():1@#@_@main@_:1@#@9
+0,Z4D5jL7vdjTMnaEFxSNOjs7ky.java,16,27,min,42,14,94fd5b29afa489baf3cace7379c11d02,169,16900163@#@5,10,23,4804.022797332547,0,0,0,1,18,3,0,0,0,38,14,21,2,47,2,0,0,11,0,0@#@@#@@#@_@min@_:1@#@11
+0,MkLayIpzClAJQoLqbQ0rZX9AY.java,11,45,main,113,52,d4700172637e9e56674a5bce3c6f4e71,170,17000164@#@6,29,62,17148.085373914204,12,9,0,1,20,14,0,0,1,98,34,46,6,101,3,1,0,11,0,5@#@valueOf():1,nextInt():2,length():1,substring():1,close():2,out:1,arrayAccess[]:2@#@println():2@#@_@main@_:1@#@34
+0,X47yRzKuwiWiLcFBB7zoxMtzU.java,14,21,getDigits,23,15,fd20d60a883434d3f2f8f72229a663bf,171,17100165@#@2,6,16,288.0,5,1,0,1,3,1,0,0,0,17,5,7,2,14,1,0,0,3,0,0@#@add():1@#@@#@_@getDigits@_:1@#@8
+0,X47yRzKuwiWiLcFBB7zoxMtzU.java,23,34,allDigitsCollected,38,25,6970afd9475c52faf82b76b7379a1087,171,17100166@#@3,11,27,998.5263754543286,5,3,1,1,5,3,0,0,0,28,9,14,2,27,1,0,0,3,0,1@#@getDigits():1,toString():1,addAll():1,size():1@#@@#@_@allDigitsCollected@_:1@#@13
+0,X47yRzKuwiWiLcFBB7zoxMtzU.java,36,64,readStreamOfLinesUsingFilesWithTryBlock,83,47,29f764680b47cefd8d92074c2ea400d0,171,17100167@#@3,15,49,4800.576916718503,15,17,1,0,9,7,0,0,0,59,21,36,3,72,2,0,0,3,0,6@#@allDigitsCollected():1,append():5,toString():1,add():1,getTime():1,toArray():1,getBytes():1,lines():1,write():1,get():3,mapToInt():1,size():1,arrayAccess[]:1@#@length:1@#@_@readStreamOfLinesUsingFilesWithTryBlock@_:1@#@19
+0,X47yRzKuwiWiLcFBB7zoxMtzU.java,66,69,main,9,9,9211d5dbc8018300c497bac1cdbdb7fa,171,17100168@#@1,2,6,0.0,2,0,1,1,0,0,0,0,0,5,0,1,1,1,0,0,0,0,0,0@#@readStreamOfLinesUsingFilesWithTryBlock():1@#@@#@_@main@_:1@#@3
+0,V67t4TSKytzL52qO3WqIyoTco.java,15,38,main,81,44,99725ff6289221445f84e43c97ef8474,172,17200169@#@4,19,49,4008.902828698259,9,6,3,1,7,6,0,0,0,63,24,39,4,77,2,0,0,5,0,8@#@nxtInt():2,combine():1,append():2,toString():1,write():1,close():2@#@@#@_@main@_:1@#@24
+0,V67t4TSKytzL52qO3WqIyoTco.java,40,46,combine,19,11,02fd60b36e58be7d0afcc4f921c58539,172,17200170@#@2,5,13,466.2554044857776,0,0,0,2,6,0,0,0,0,15,5,6,2,16,1,0,0,4,0,0@#@@#@@#@_@combine@_:1@#@7
+0,V67t4TSKytzL52qO3WqIyoTco.java,48,56,nxtTok,26,19,9f495a44de8b4596e076c68c993dc02c,172,17200171@#@3,7,19,458.7761714519072,4,4,0,0,4,1,0,0,0,16,6,11,2,17,1,0,0,0,2,0@#@nextToken():1,trim():1,readLine():1,hasMoreTokens():1@#@@#@_@nxtTok@_:1@#@9
+0,V67t4TSKytzL52qO3WqIyoTco.java,58,60,nxtInt,11,11,c4d5f1a8f3e34f34c6ac209bcdece047,172,17200172@#@1,2,8,24.0,3,1,1,0,1,0,0,0,0,5,0,3,1,3,0,0,0,0,0,0@#@nxtTok():1,parseInt():1@#@@#@_@nxtInt@_:1@#@3
+0,Fs8ZvxGlLMDaLWoJp0gDougdg.java,6,44,main,118,45,2247e7a9c1fe1c81772afd9626b7edf0,173,17300173@#@9,29,55,27056.76345929541,10,8,0,1,30,11,0,0,0,105,36,51,8,119,3,4,0,17,0,4@#@add():1,contains():1,nextInt():2,clear():1,size():1,in:1,out:2@#@println():2@#@_@main@_:1@#@37
+0,NSkZ1Kkl62WtrrhHpH2szGmRP.java,5,60,main,161,57,63299261976fc5d26d9ea5ff4851317c,174,17400174@#@11,35,68,37638.78274745085,14,6,0,1,27,12,0,2,2,148,54,81,7,185,4,3,0,26,0,8@#@nextShort():1,setOut():1,nextInt():1,out:2,arrayAccess[]:13,arrayBinaryAccess[]:3@#@println():3@#@_@main@_:1@#@49
+0,Mb4Cg8lk7GnnQ2wyvIptZziu3.java,6,32,main,89,43,e858deed8e9cbf7948ca76f564e77145,175,17500175@#@6,19,48,10008.252801292314,12,9,0,1,16,10,0,0,0,75,22,37,5,81,3,0,0,9,0,4@#@charAt():1,toString():1,add():1,nextInt():2,length():1,size():1,in:1,out:2@#@println():2@#@_@main@_:1@#@27
+0,JKpMJAgobw2HnROqAcDLlNM9b.java,14,176,main,365,77,8b572a13365b3d2ee99a56ce15492f43,176,17600176@#@29,95,85,138468.48178431892,24,48,0,1,44,13,0,2,0,308,115,183,7,406,4,3,0,54,0,42@#@printStackTrace():2,parallel():2,sum():2,add():1,parseInt():2,newLine():13,readLine():2,write():19,of():2,size():1,out:2,arrayAccess[]:9,arrayBinaryAccess[]:1@#@println():2@#@_@main@_:1@#@123
+0,VZbN89Xbxcli0lUgHheAQq5w3.java,16,30,process,38,21,fd95fc503ccab4da6d8cd27ec8a30101,177,17700177@#@4,12,23,1700.859295477437,2,0,1,1,8,3,0,0,0,31,10,16,3,32,1,3,0,4,0,0@#@contar():1@#@@#@_@process@_:1@#@16
+0,VZbN89Xbxcli0lUgHheAQq5w3.java,32,55,contar,75,29,d35252bd2302cc03ec3182423a90acec,177,17700178@#@7,16,33,9851.70171510706,3,12,0,1,21,6,0,0,0,58,22,35,4,70,2,2,0,8,0,3@#@indexOf():2,charAt():2,add():2,parseInt():2,length():3,size():1@#@@#@_@contar@_:1@#@24
+0,VZbN89Xbxcli0lUgHheAQq5w3.java,57,80,main,93,39,4561db80e319c74503db3f77c0c5f9aa,177,17700179@#@3,16,45,9303.199145182469,16,8,1,1,14,10,0,0,0,77,22,44,3,94,1,0,0,8,0,10@#@next():2,parseInt():2,process():1,out:2,arrayAccess[]:1@#@length:1,println():4@#@_@main@_:1@#@20
+0,N8N4P7H1vgA8hhTpmwNSaOqlI.java,6,54,main,119,48,e92640811819b01794e790466c917ae7,178,17800180@#@9,31,54,12488.105879694727,11,8,0,1,14,14,0,0,0,107,37,48,5,112,4,6,0,7,0,5@#@nextLine():2,charAt():1,parseInt():2,length():1,getNumericValue():1,in:1,out:1,arrayAccess[]:3@#@length:1,println():1@#@_@main@_:1@#@39
+0,LbUzd9ny97wjdTLyd9B4H2QIF.java,6,42,main,97,49,28f85f0516c32a7004d445adcc9099b1,179,17900181@#@5,24,58,14293.473628111276,13,7,0,1,20,11,0,0,1,81,26,41,5,88,3,1,0,8,0,6@#@allTrue():1,flush():1,nextInt():1,newLine():1,write():1,nextLong():1,close():1,arrayAccess[]:1@#@@#@_@main@_:1@#@30
+0,LbUzd9ny97wjdTLyd9B4H2QIF.java,44,51,allTrue,20,13,3438324e645986bfdc56a9ed1d48556b,179,17900182@#@3,5,16,276.0,0,0,0,1,3,1,0,0,0,16,6,7,3,14,1,2,0,1,0,0@#@arrayAccess[]:1@#@length:1@#@_@allTrue@_:1@#@8
+0,Zpil3NOLianuvXKKppqvNUiUm.java,12,45,main,121,54,659bdd210b76ffb287b267ed3def6837,180,18000183@#@6,24,58,16238.323318493629,20,14,0,1,18,12,0,0,0,99,34,55,5,116,4,0,0,8,0,10@#@valueOf():1,forDigit():1,toCharArray():1,add():2,equals():1,flush():1,nextInt():2,write():2,close():1,out:2@#@println():2@#@_@main@_:1@#@31
+0,VZ34lJzqCDxJ2M6C6zCHf1TCG.java,7,56,VZ34lJzqCDxJ2M6C6zCHf1TCG,109,48,390be7bf484c43cde9753229847cd282,181,18100184@#@7,25,57,12575.710870539184,8,4,0,1,14,9,0,0,0,99,33,55,4,124,3,4,0,19,0,4@#@nextInt():2,in:1,out:2,arrayAccess[]:10,arrayBinaryAccess[]:1@#@println():2@#@_@VZ34lJzqCDxJ2M6C6zCHf1TCG@_:1@#@31
+0,Sm8GtxN2QAk9coClFHx9huaPy.java,5,31,main,90,40,c32f4c4afc08a19cf007ad1452824068,182,18200185@#@5,18,44,8483.95673536236,14,9,1,1,14,8,0,0,0,72,26,39,3,82,2,0,0,6,0,5@#@valueOf():1,getMin():1,parseInt():2,format():1,readLine():2,write():1,close():2,arrayAccess[]:4@#@@#@_@main@_:1@#@25
+0,Sm8GtxN2QAk9coClFHx9huaPy.java,33,40,getMin,21,12,17de844f5268acbf2db4b0e3ead2ec70,182,18200186@#@2,6,11,290.592255965533,0,0,1,1,4,2,0,0,0,16,6,5,2,12,1,0,0,1,0,0@#@notCovered():1@#@@#@_@getMin@_:1@#@8
+0,Sm8GtxN2QAk9coClFHx9huaPy.java,42,54,notCovered,37,17,e6cea38ce0a5cc567e98d8cb2c4d3dc6,182,18200187@#@3,9,23,2171.3097389073664,0,0,0,2,10,3,0,0,0,33,14,15,2,34,2,2,0,4,0,0@#@arrayAccess[]:2@#@length:1@#@_@notCovered@_:1@#@12
+0,AtpmAr78O2hHLEfLXsG7dawMk.java,16,31,AtpmAr78O2hHLEfLXsG7dawMk,54,28,8308883feac493c41df21fc65974a77e,183,18300188@#@3,12,28,2307.53036258765,10,3,2,2,8,0,0,1,0,41,9,19,2,45,0,0,0,0,0,0@#@printStackTrace():1,exists():1,parseInt():1,readLine():1,createNewFile():1,pathInput:1,output:4,input:2,pathOutput:1@#@@#@_@AtpmAr78O2hHLEfLXsG7dawMk@_:1@#@15
+0,AtpmAr78O2hHLEfLXsG7dawMk.java,32,34,getCases,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,183,18300189@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getCases@_:1@#@3
+0,AtpmAr78O2hHLEfLXsG7dawMk.java,39,51,getNumber,23,16,6c0e1dee2726f0e2935d5e0884a04dc7,183,18300190@#@3,7,16,288.0,3,4,0,0,3,0,0,2,0,16,6,8,2,15,0,0,0,1,0,0@#@printStackTrace():2,parseInt():1,readLine():1@#@@#@_@getNumber@_:1@#@11
+0,AtpmAr78O2hHLEfLXsG7dawMk.java,52,60,scrivi,20,17,c2fcc77392f58075bb13df39422fc84f,183,18300191@#@2,6,15,140.64806144190666,3,4,0,1,2,0,0,1,0,14,4,4,2,11,0,0,0,0,0,1@#@flush():1,newLine():1,write():1,err:1@#@println():1@#@_@scrivi@_:1@#@9
+0,M7mmLchdJCEuACnAiTJKUFtYy.java,8,14,isFull,21,14,082d30d03ea7ea790c2f0866e3da87c3,184,18400192@#@3,6,17,318.8221016175265,0,0,0,0,3,2,0,0,0,18,8,8,1,18,1,2,0,1,0,0@#@arrayAccess[]:1@#@length:1@#@_@isFull@_:1@#@6
+0,M7mmLchdJCEuACnAiTJKUFtYy.java,16,59,M7mmLchdJCEuACnAiTJKUFtYy,119,49,088ba02c6b279f9c38fb06c0e6ee4420,184,18400193@#@8,32,56,16411.58500973479,11,11,1,2,18,8,0,0,0,104,44,53,4,133,4,3,0,10,0,8@#@charAt():1,isFull():1,getNumber():1,parseInt():1,exit():1,length():1,scrivi():1,getCases():1,err:1,out:3,arrayAccess[]:3@#@println():4@#@_@M7mmLchdJCEuACnAiTJKUFtYy@_:1@#@37
+0,M7mmLchdJCEuACnAiTJKUFtYy.java,60,62,main,12,11,c91da7a5d4dc846c40b826782b6996b8,184,18400194@#@1,2,9,31.699250014423125,3,0,0,1,1,1,0,0,0,8,0,2,1,4,0,0,0,0,0,2@#@@#@@#@_@main@_:1@#@3
+0,HmIQ4JcbtjoN29ewU6wubKktl.java,6,35,main,138,62,8a0292802074f69daa5c26867be3fdc3,185,18500195@#@7,26,70,21697.661879985186,16,19,0,1,20,10,0,0,0,113,40,64,5,137,3,0,0,8,1,19@#@valueOf():1,split():1,append():1,toString():1,contains():10,parseInt():1,readLine():2,out:2,arrayBinaryAccess[]:1@#@length:1,println():2@#@_@main@_:1@#@35
+0,Yt624g4pNEYrq12Wzj3gSPutZ.java,9,56,Yt624g4pNEYrq12Wzj3gSPutZ,98,38,82435b04f82c6ab51c91aebe56843a32,186,18600196@#@7,27,46,9511.573688330176,8,7,0,0,14,11,0,0,0,85,31,38,7,87,3,1,0,11,0,2@#@printf():2,flush():1,nextInt():2,close():2,in:1,out:1,arrayAccess[]:2@#@length:1@#@_@Yt624g4pNEYrq12Wzj3gSPutZ@_:1@#@34
+0,Yt624g4pNEYrq12Wzj3gSPutZ.java,59,61,main,8,8,e7d488a4c542714ec5484cd70d433a0b,186,18600197@#@1,2,5,0.0,2,0,0,1,0,0,0,0,0,4,0,1,1,1,0,0,0,0,0,0@#@@#@@#@_@main@_:1@#@3
+0,QFNHRvlg0SLS8zoFGAa6lfhsW.java,12,57,main,121,57,3cf60ca3115ef5c9aa852a5cd152280b,187,18700198@#@7,27,63,18170.93096743975,20,12,1,1,20,12,0,0,1,100,30,52,6,112,4,3,0,10,0,6@#@put():1,initMap():1,hasNext():1,iterator():1,split():1,getValue():1,equals():1,next():1,entrySet():1,nextLong():2,in:1,out:2,arrayAccess[]:1@#@length:1,println():2@#@_@main@_:1@#@35
+0,QFNHRvlg0SLS8zoFGAa6lfhsW.java,59,63,initMap,19,13,e7be2cfa046c7eaf8a9b9e4ed0a61ede,187,18700199@#@2,3,13,140.6167092893615,3,1,0,1,2,1,0,0,0,15,4,4,2,11,1,0,0,3,0,0@#@put():1@#@@#@_@initMap@_:1@#@5
+0,TBORvYBWV4P5xjXmVvujF3mN0.java,12,14,main,7,7,3cfc8c5bed1c6264671bfb8fec815695,188,18800200@#@1,2,4,0.0,1,0,1,1,0,0,0,0,0,3,0,1,1,1,0,0,0,0,0,0@#@loadAndSolve():1@#@@#@_@main@_:1@#@3
+0,TBORvYBWV4P5xjXmVvujF3mN0.java,16,35,loadAndSolve,57,33,994094dec8ad9b89a7352595ac4243d2,188,18800201@#@4,14,33,1291.364894555764,10,5,1,0,4,6,0,1,0,43,13,21,3,40,1,0,0,2,1,2@#@printStackTrace():1,setOut():1,hasNextInt():1,nextInt():2,solve():1@#@@#@_@loadAndSolve@_:1@#@19
+0,TBORvYBWV4P5xjXmVvujF3mN0.java,37,68,solve,84,39,7f056bc63c225091fd8cc57c0b25ca19,188,18800202@#@7,23,42,6729.612143627894,8,8,0,2,12,7,0,0,0,72,22,32,6,78,2,3,0,4,0,8@#@split():1,add():1,contains():1,size():2,out:3@#@println():3@#@_@solve@_:1@#@30
+0,GCEPD4r2oQMd8rkv5wzAbCock.java,5,32,main,76,38,e179467c8694678bdf31cb52d95aedb5,189,18900203@#@5,18,41,5303.976484571903,7,4,2,1,10,8,0,0,0,66,20,33,4,77,2,0,0,7,0,7@#@allTrue():1,charAdd():1,nextInt():2,in:1,out:2@#@println():2@#@_@main@_:1@#@24
+0,GCEPD4r2oQMd8rkv5wzAbCock.java,34,38,charAdd,22,16,339c8b976c3998995bb97b231c85612a,189,18900204@#@2,3,18,312.7443751081734,1,2,0,2,3,1,0,0,0,17,6,8,2,17,1,1,1,1,0,0@#@charAt():1,length():1,arrayBinaryAccess[]:1@#@@#@_@charAdd@_:1@#@5
+0,GCEPD4r2oQMd8rkv5wzAbCock.java,39,45,allTrue,23,13,1625a8dfdc2385fc2d9e03418a8bd61f,189,18900205@#@2,5,15,632.91627648858,0,0,0,1,6,2,0,0,0,19,9,8,2,18,1,1,0,1,0,0@#@arrayAccess[]:1@#@length:1@#@_@allTrue@_:1@#@7
+0,WF7KDp1Br6mdgNuR5y25zYvMT.java,9,14,check,18,14,c248198182d3d7c8e974182dde9da154,190,19000206@#@3,5,16,240.0,0,0,0,0,3,1,0,0,0,13,4,7,2,13,1,2,0,2,0,0@#@arrayAccess[]:1@#@@#@_@check@_:1@#@7
+0,WF7KDp1Br6mdgNuR5y25zYvMT.java,16,22,mark,28,18,9ee3bc5b1f132128c10933669ad03c26,190,19000207@#@2,5,20,570.4945085251319,2,3,0,1,4,3,0,0,0,22,8,11,2,23,1,1,1,1,0,0@#@valueOf():1,charAt():1,length():1,arrayAccess[]:1@#@@#@_@mark@_:1@#@7
+0,WF7KDp1Br6mdgNuR5y25zYvMT.java,24,50,main,62,30,9e98c51d6030ae82506666235282ffb8,190,19000208@#@5,15,36,5025.1671014019275,3,4,3,1,12,5,0,0,0,52,21,29,3,63,3,1,0,4,0,4@#@mark():2,check():1,nextInt():2,out:2,arrayAccess[]:1@#@length:1,println():2@#@_@main@_:1@#@20
+0,ZJcNmQOrhDdcCxk0YQah22mWa.java,5,13,main,50,26,a61492afe36b22e4d8d3bb5dcfea45ed,191,19100209@#@3,8,30,3189.478887145537,2,3,1,1,10,5,0,0,0,43,19,22,1,55,2,0,0,3,0,3@#@nextInt():2,sheep():1,out:1,arrayAccess[]:2@#@length:2,println():1@#@_@main@_:1@#@7
+0,ZJcNmQOrhDdcCxk0YQah22mWa.java,18,33,sheep,38,19,c01fd3601f761ec13df560b3a03913c5,191,19100210@#@5,12,23,1628.4823041805248,0,0,2,1,8,4,0,0,0,32,11,13,2,29,2,2,0,3,0,0@#@digits():1,allTrue():1,arrayAccess[]:1@#@@#@_@sheep@_:1@#@13
+0,ZJcNmQOrhDdcCxk0YQah22mWa.java,36,41,allTrue,20,13,a0df0746828b50d202abb66c00596ba3,191,19100211@#@3,5,16,276.0,0,0,0,1,3,1,0,0,0,16,6,7,1,14,1,2,0,1,0,0@#@arrayAccess[]:1@#@length:1@#@_@allTrue@_:1@#@5
+0,ZJcNmQOrhDdcCxk0YQah22mWa.java,43,56,digits,44,21,a75568e0f3d21848f551b09a3a29a7bd,191,19100212@#@3,10,26,2538.2374477961903,5,2,0,1,10,4,0,0,1,38,16,16,2,37,2,0,0,4,0,0@#@add():1,toArray():1,arrayAccess[]:2@#@length:2@#@_@digits@_:1@#@11
+0,QaoQ0lTDBP5mfoXM9rFDg0NU7.java,8,35,main,93,51,191091561a36bb445371456a9a09ac75,192,19200213@#@6,24,55,4613.5250513926785,13,8,0,1,7,11,0,0,0,79,24,35,5,74,3,2,0,4,0,5@#@valueOf():1,toCharArray():1,add():1,nextInt():2,size():1,out:2@#@println():2@#@_@main@_:1@#@29
+0,Pottkn6iHJfM03EuIixYZGRwF.java,10,37,main,98,53,d2cb58b697efcb0f5aa0ec03bce7ad12,193,19300214@#@7,17,59,13294.773291557762,15,12,0,1,20,8,0,0,0,80,20,33,5,80,3,0,0,5,0,14@#@valueOf():1,print():1,isEmpty():1,contains():1,nextInt():2,remove():1,get():1,asList():1,size():1,out:3@#@println():2@#@_@main@_:1@#@22
+0,JaUQ55nE6AIcN5JTvES8OTItZ.java,17,25,main,46,28,c2ae65b642d747a09e5277a08286cf89,194,19400215@#@2,7,31,1362.4039853563909,8,4,0,1,5,5,0,0,0,36,9,19,2,40,1,0,0,2,0,3@#@nextInt():2,findAnswer():1,in:1,out:1@#@println():1@#@_@main@_:1@#@9
+0,JaUQ55nE6AIcN5JTvES8OTItZ.java,27,49,findAnswer,52,23,69687870a3c5578093bfad6afffd1add,194,19400216@#@5,16,30,3945.140038869249,0,0,1,1,12,6,0,0,0,46,15,21,3,46,3,2,0,8,0,0@#@allDigitsVisited():1,arrayAccess[]:1@#@@#@_@findAnswer@_:1@#@20
+0,JaUQ55nE6AIcN5JTvES8OTItZ.java,51,58,allDigitsVisited,16,11,5bee171dd12c85fe476cc02ab485b20f,194,19400217@#@3,5,9,44.37895002019238,0,0,0,1,1,1,0,0,0,11,2,3,2,6,1,2,0,0,0,0@#@@#@@#@_@allDigitsVisited@_:1@#@7
+0,UMmiRLDjzPeWCyID5Yr3A12m2.java,4,46,main,99,49,e45f3dad14c97e9da527d756c21f7bdd,195,19500218@#@6,24,53,10997.607272761343,16,10,2,1,16,12,0,0,0,81,26,39,6,81,3,2,0,7,0,1@#@charAt():1,toString():1,add():1,printCase():2,parseInt():2,readLine():2,length():1,size():1,clear():1,in:1@#@@#@_@main@_:1@#@31
+0,UMmiRLDjzPeWCyID5Yr3A12m2.java,48,50,printCase,15,13,60f237c2e206d60f9d077ce5dcddd231,195,19500219@#@1,2,11,51.89147427955947,2,1,0,2,1,0,0,0,0,11,2,4,1,10,0,0,0,0,0,2@#@out:1@#@println():1@#@_@printCase@_:1@#@3
+0,WIUtSGkPj5kHskYoM2Ki84TPM.java,7,45,main,103,49,7917d66ba12e603cb72bb364dd6b667d,196,19600220@#@5,19,58,13777.97130054005,10,7,0,1,16,7,0,0,0,91,30,56,4,124,3,2,0,20,0,5@#@nextLine():2,parseInt():2,fill():1,out:2,arrayAccess[]:10,arrayBinaryAccess[]:1@#@println():2@#@_@main@_:1@#@24
+0,XkygELH3pAJRYW3kAljqIJuG0.java,6,38,main,116,47,fc430241313edcdf81fd44616528854b,197,19700221@#@8,27,56,13937.651812938251,10,5,0,1,16,12,0,0,1,105,39,45,5,112,5,5,0,11,0,7@#@nextInt():1,nextLong():1,close():1,arrayAccess[]:2,arrayBinaryAccess[]:1@#@println():2@#@_@main@_:1@#@35
+0,YYgIbROyB9Uxo1zVlqoPqEx8w.java,8,37,main,64,35,da631a115bca3b72a6d231098ccacbfd,198,19800222@#@6,15,38,3935.945635082689,9,5,1,1,10,6,0,1,0,54,14,21,6,51,1,0,0,5,0,4@#@valueOf():1,printf():2,getSleepingNumber():1,nextInt():2,in:1,out:2@#@@#@_@main@_:1@#@23
+0,YYgIbROyB9Uxo1zVlqoPqEx8w.java,39,63,getSleepingNumber,48,18,01d445ddc8a504b59b444e3b74cb83d1,198,19800223@#@5,15,25,4318.7862564904935,0,0,0,1,15,5,0,0,1,43,16,19,5,44,2,0,0,9,0,0@#@@#@@#@_@getSleepingNumber@_:1@#@20
+0,CP8gtm0m5R6MDllloc2v1wsMM.java,8,19,calculateDigits,25,14,898c4b6cd030945b3780cf8eb11533b2,199,19900224@#@3,8,19,420.54482383091494,0,0,0,1,3,1,0,0,1,23,10,10,3,27,1,0,0,5,0,0@#@arrayAccess[]:2@#@@#@_@calculateDigits@_:1@#@11
+0,CP8gtm0m5R6MDllloc2v1wsMM.java,21,35,doCalculation,30,18,1abdaf915bcae35f5afe0e3176718e62,199,19900225@#@3,12,20,466.76823424783515,0,0,1,1,3,2,0,0,0,26,10,10,2,25,1,1,0,4,0,0@#@calculateDigits():1@#@@#@_@doCalculation@_:1@#@14
+0,CP8gtm0m5R6MDllloc2v1wsMM.java,37,51,main,54,28,a30d671b1f4e35beb3711439ed8f4dd2,199,19900226@#@3,10,30,2590.838234481298,8,4,1,1,8,5,0,0,0,43,11,23,3,48,1,0,0,3,0,5@#@doCalculation():1,nextInt():2,in:1,out:2@#@println():2@#@_@main@_:1@#@14
+0,TzxiCSiiGl7jBd6nlTHe6BIUS.java,9,53,main,103,35,da296b386b8a3c8fb2223385ee7db31a,1100,110000227@#@8,30,44,15592.13670282812,6,4,0,1,21,12,0,0,0,95,33,41,5,102,3,0,0,18,0,1@#@nextInt():2,in:1,out:2,arrayAccess[]:2@#@println():2@#@_@main@_:1@#@38
+0,BZRGc7mXLCIRMHvpuQ19VVcpI.java,30,72,main,113,55,96b8b42bea695f7d511c26957b92ec7d,1101,110100228@#@5,24,59,12800.631275411368,24,14,0,1,16,12,0,0,0,88,30,48,5,93,3,0,0,3,0,7@#@valueOf():2,toCharArray():1,add():1,parseInt():2,readLine():2,write():2,size():1,clear():1,close():2@#@@#@_@main@_:1@#@30
+Step 4: Running Oreo
+search will be carried out with 1 nodes
+loading previous run state
+/home/oreo-user/oreo/clone-detector/scriptinator_metadata.scc doesn't exist, creating one with state EXECUTE_1
+previous run state 0
+running new command /home/oreo-user/oreo/clone-detector/execute.sh 1
+current state:  1
+flushing current state 1
+running new command /home/oreo-user/oreo/clone-detector/backup-gtpm.sh
+running new command /home/oreo-user/oreo/clone-detector/runnodes.sh init 1
+current state:  2
+flushing current state 2
+running new command /home/oreo-user/oreo/clone-detector/runnodes.sh cshard 1
+current state:  3
+flushing current state 3
+running new command /home/oreo-user/oreo/clone-detector/move-index.sh
+current state:  4
+flushing current state 4
+running new command /home/oreo-user/oreo/clone-detector/execute.sh 1
+current state:  5
+flushing current state 5
+nodes are : 1. total shards: 6
+1:1,2,3,4,5,6
+running new command /home/oreo-user/oreo/clone-detector/runnodes.sh search 1
+current state:  0
+flushing current state 0
+SUCCESS: Search Completed on all nodes
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [0/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [1/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [2/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [3/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [4/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [5/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [6/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [7/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [8/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [9/10]
+*****************************************************
+running for ports ranging from 9900 to 9903
+*****************************************************
+[Waiting] Waiting for '/home/oreo-user/oreo/results/predictions' [0/100]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/predictions' [1/100]
+Candidates Dir:
+9900
+9901
+9902
+9903
+Output Dir:
+clonepairs_1_type_31_9900.txt ======================
+0,BixxvcUpdud8r7E69u9RoVimX.java,42,48,0,JrduZmu28VEPVjTMMgfxkGEUw.java,69,76
+0,BtFOczytDEQ6ccPDbTwr4W3su.java,62,71,0,JrduZmu28VEPVjTMMgfxkGEUw.java,69,76
+0,JS9q3eKY3jNzQju3k7ql3u39l.java,66,72,0,DuE0BQHP4FUpWwBIQ1HO0Yt82.java,34,41
+0,CxrsaCG4ac3sgiVf7TqC9YSGl.java,29,38,0,QWh69AbiTrU4PdDwoYKYoOhNe.java,55,63
+0,Rcvpk5XFNZChGD6UboTO1wH8F.java,52,57,0,JrduZmu28VEPVjTMMgfxkGEUw.java,69,76
+0,MAE4UzKOuH3bCRR9IuO9Esugi.java,12,19,0,CxrsaCG4ac3sgiVf7TqC9YSGl.java,29,38
+0,X47yRzKuwiWiLcFBB7zoxMtzU.java,14,21,0,EMrLs0zjMCTYro9lLdvugCSeD.java,54,61
+0,LbUzd9ny97wjdTLyd9B4H2QIF.java,44,51,0,BixxvcUpdud8r7E69u9RoVimX.java,42,48
+0,M7mmLchdJCEuACnAiTJKUFtYy.java,8,14,0,JS9q3eKY3jNzQju3k7ql3u39l.java,66,72
+0,M7mmLchdJCEuACnAiTJKUFtYy.java,8,14,0,BtFOczytDEQ6ccPDbTwr4W3su.java,62,71
+0,M7mmLchdJCEuACnAiTJKUFtYy.java,8,14,0,BixxvcUpdud8r7E69u9RoVimX.java,42,48
+0,WF7KDp1Br6mdgNuR5y25zYvMT.java,16,22,0,Rcvpk5XFNZChGD6UboTO1wH8F.java,59,67
+0,WF7KDp1Br6mdgNuR5y25zYvMT.java,9,14,0,M7mmLchdJCEuACnAiTJKUFtYy.java,8,14
+0,WF7KDp1Br6mdgNuR5y25zYvMT.java,9,14,0,JrduZmu28VEPVjTMMgfxkGEUw.java,69,76
+0,WF7KDp1Br6mdgNuR5y25zYvMT.java,9,14,0,BtFOczytDEQ6ccPDbTwr4W3su.java,62,71
+0,ZJcNmQOrhDdcCxk0YQah22mWa.java,36,41,0,WF7KDp1Br6mdgNuR5y25zYvMT.java,9,14
+0,ZJcNmQOrhDdcCxk0YQah22mWa.java,36,41,0,BtFOczytDEQ6ccPDbTwr4W3su.java,62,71
+0,EnNC5PY9nWRj4lmPYxUUvgiUR.java,6,20,0,E47BUgZIvhPm2pytNjxzfiDDz.java,37,48
+0,ShJ4mXLbCWNqCTlmlqY2eRX3W.java,15,33,0,AUt1LWOKwPDW4mSWzdIeN8ViU.java,6,17
+0,FeTVA1oEwMzETbY8qa4GIiWyT.java,82,100,0,FeTVA1oEwMzETbY8qa4GIiWyT.java,30,48
+0,X47yRzKuwiWiLcFBB7zoxMtzU.java,23,34,0,E47BUgZIvhPm2pytNjxzfiDDz.java,21,34
+0,JaUQ55nE6AIcN5JTvES8OTItZ.java,17,25,0,IBfuuUOuNS5i51O90KDam7xRh.java,52,68
+0,CP8gtm0m5R6MDllloc2v1wsMM.java,37,51,0,UfjcN6Sfr8W7SFN1kXPAkF2Ak.java,50,63
+0,Ivn7NyHkniGZ3BARMCAyNVAXI.java,4,29,0,Ci6i4zACVcncvfHByEY1NJdMU.java,12,46
+0,D5ZsGYqfywIoe4NZ4zOcIPslB.java,5,29,0,RuSs6PSYETwBP4B2mlCNPcYEo.java,8,48
+0,Mb4Cg8lk7GnnQ2wyvIptZziu3.java,6,32,0,Xpr3cDMJ6Tda97Z8NHzIWxiei.java,6,30
+0,BZRGc7mXLCIRMHvpuQ19VVcpI.java,30,72,0,CxrsaCG4ac3sgiVf7TqC9YSGl.java,5,27
+clonepairs_1_type_31_9901.txt ======================
+0,QWh69AbiTrU4PdDwoYKYoOhNe.java,55,63,0,Rg4fFk4tVpHvzmJWEJsS3JrRK.java,27,34
+0,DuE0BQHP4FUpWwBIQ1HO0Yt82.java,34,41,0,BtFOczytDEQ6ccPDbTwr4W3su.java,62,71
+0,JS9q3eKY3jNzQju3k7ql3u39l.java,66,72,0,BtFOczytDEQ6ccPDbTwr4W3su.java,62,71
+0,MAE4UzKOuH3bCRR9IuO9Esugi.java,12,19,0,EMrLs0zjMCTYro9lLdvugCSeD.java,54,61
+0,X47yRzKuwiWiLcFBB7zoxMtzU.java,14,21,0,MAE4UzKOuH3bCRR9IuO9Esugi.java,12,19
+0,MAE4UzKOuH3bCRR9IuO9Esugi.java,12,19,0,R1r3KkTXHvr6OuOwPq5wpWM2g.java,27,34
+0,MAE4UzKOuH3bCRR9IuO9Esugi.java,12,19,0,Rg4fFk4tVpHvzmJWEJsS3JrRK.java,27,34
+0,LbUzd9ny97wjdTLyd9B4H2QIF.java,44,51,0,Rcvpk5XFNZChGD6UboTO1wH8F.java,52,57
+0,M7mmLchdJCEuACnAiTJKUFtYy.java,8,14,0,DuE0BQHP4FUpWwBIQ1HO0Yt82.java,34,41
+0,M7mmLchdJCEuACnAiTJKUFtYy.java,8,14,0,Rcvpk5XFNZChGD6UboTO1wH8F.java,52,57
+0,GCEPD4r2oQMd8rkv5wzAbCock.java,34,38,0,UfjcN6Sfr8W7SFN1kXPAkF2Ak.java,5,12
+0,ZJcNmQOrhDdcCxk0YQah22mWa.java,36,41,0,LbUzd9ny97wjdTLyd9B4H2QIF.java,44,51
+0,GCEPD4r2oQMd8rkv5wzAbCock.java,39,45,0,M7mmLchdJCEuACnAiTJKUFtYy.java,8,14
+0,MAE4UzKOuH3bCRR9IuO9Esugi.java,39,57,0,IAUoOjFyOgbZieZ5yp3FwUKom.java,10,23
+0,UaUsOgNDaFisQWwjvDeIlkfI6.java,9,22,0,UfjcN6Sfr8W7SFN1kXPAkF2Ak.java,50,63
+0,JaUQ55nE6AIcN5JTvES8OTItZ.java,17,25,0,Dhv0TPzNpPTPLG6ugB8kQgGZg.java,5,14
+0,R1r3KkTXHvr6OuOwPq5wpWM2g.java,4,26,0,Xpr3cDMJ6Tda97Z8NHzIWxiei.java,6,30
+0,Mb4Cg8lk7GnnQ2wyvIptZziu3.java,6,32,0,D5ZsGYqfywIoe4NZ4zOcIPslB.java,5,29
+0,Mb4Cg8lk7GnnQ2wyvIptZziu3.java,6,32,0,RuSs6PSYETwBP4B2mlCNPcYEo.java,8,48
+0,WIUtSGkPj5kHskYoM2Ki84TPM.java,7,45,0,Tn3VmHPySKMQlgpxV9i38xv6h.java,11,35
+0,JxiXZW4DJW8AMIKuXq2pKgllg.java,11,62,0,OfKs1uXNaV35sLyCgrWOwNiSx.java,8,52
+0,JxiXZW4DJW8AMIKuXq2pKgllg.java,11,62,0,ENMxAwWhgNBqoC7h5NVP0aTOO.java,4,42
+0,Zpil3NOLianuvXKKppqvNUiUm.java,12,45,0,PzRYuvcxrMVTrzPFv7G4WuZdr.java,7,61
+clonepairs_1_type_31_9902.txt ======================
+0,DuE0BQHP4FUpWwBIQ1HO0Yt82.java,34,41,0,JrduZmu28VEPVjTMMgfxkGEUw.java,69,76
+0,DuE0BQHP4FUpWwBIQ1HO0Yt82.java,34,41,0,BixxvcUpdud8r7E69u9RoVimX.java,42,48
+0,JS9q3eKY3jNzQju3k7ql3u39l.java,66,72,0,JrduZmu28VEPVjTMMgfxkGEUw.java,69,76
+0,JS9q3eKY3jNzQju3k7ql3u39l.java,66,72,0,BixxvcUpdud8r7E69u9RoVimX.java,42,48
+0,CxrsaCG4ac3sgiVf7TqC9YSGl.java,29,38,0,EMrLs0zjMCTYro9lLdvugCSeD.java,54,61
+0,R1r3KkTXHvr6OuOwPq5wpWM2g.java,27,34,0,CxrsaCG4ac3sgiVf7TqC9YSGl.java,29,38
+0,CxrsaCG4ac3sgiVf7TqC9YSGl.java,29,38,0,Rg4fFk4tVpHvzmJWEJsS3JrRK.java,27,34
+0,Rcvpk5XFNZChGD6UboTO1wH8F.java,52,57,0,BixxvcUpdud8r7E69u9RoVimX.java,42,48
+0,X47yRzKuwiWiLcFBB7zoxMtzU.java,14,21,0,QWh69AbiTrU4PdDwoYKYoOhNe.java,55,63
+0,X47yRzKuwiWiLcFBB7zoxMtzU.java,14,21,0,R1r3KkTXHvr6OuOwPq5wpWM2g.java,27,34
+0,LbUzd9ny97wjdTLyd9B4H2QIF.java,44,51,0,BtFOczytDEQ6ccPDbTwr4W3su.java,62,71
+0,LbUzd9ny97wjdTLyd9B4H2QIF.java,44,51,0,DuE0BQHP4FUpWwBIQ1HO0Yt82.java,34,41
+0,WF7KDp1Br6mdgNuR5y25zYvMT.java,9,14,0,LbUzd9ny97wjdTLyd9B4H2QIF.java,44,51
+0,WF7KDp1Br6mdgNuR5y25zYvMT.java,9,14,0,JS9q3eKY3jNzQju3k7ql3u39l.java,66,72
+0,ZJcNmQOrhDdcCxk0YQah22mWa.java,36,41,0,JS9q3eKY3jNzQju3k7ql3u39l.java,66,72
+0,ZJcNmQOrhDdcCxk0YQah22mWa.java,36,41,0,JrduZmu28VEPVjTMMgfxkGEUw.java,69,76
+0,WF7KDp1Br6mdgNuR5y25zYvMT.java,9,14,0,DuE0BQHP4FUpWwBIQ1HO0Yt82.java,34,41
+0,WF7KDp1Br6mdgNuR5y25zYvMT.java,9,14,0,Rcvpk5XFNZChGD6UboTO1wH8F.java,52,57
+0,ZJcNmQOrhDdcCxk0YQah22mWa.java,36,41,0,Rcvpk5XFNZChGD6UboTO1wH8F.java,52,57
+0,ZJcNmQOrhDdcCxk0YQah22mWa.java,36,41,0,BixxvcUpdud8r7E69u9RoVimX.java,42,48
+0,Z4D5jL7vdjTMnaEFxSNOjs7ky.java,5,14,0,MAE4UzKOuH3bCRR9IuO9Esugi.java,39,57
+0,JaUQ55nE6AIcN5JTvES8OTItZ.java,17,25,0,E47BUgZIvhPm2pytNjxzfiDDz.java,37,48
+0,JaUQ55nE6AIcN5JTvES8OTItZ.java,17,25,0,UaUsOgNDaFisQWwjvDeIlkfI6.java,9,22
+0,CP8gtm0m5R6MDllloc2v1wsMM.java,37,51,0,JaUQ55nE6AIcN5JTvES8OTItZ.java,17,25
+0,CP8gtm0m5R6MDllloc2v1wsMM.java,37,51,0,UaUsOgNDaFisQWwjvDeIlkfI6.java,9,22
+0,H3eBCNyQNInr0RDRi35NhzJeZ.java,5,30,0,RuSs6PSYETwBP4B2mlCNPcYEo.java,8,48
+0,TH6MleuQMptNjwcpWq3p9qQMs.java,6,36,0,Xpr3cDMJ6Tda97Z8NHzIWxiei.java,6,30
+0,Mb4Cg8lk7GnnQ2wyvIptZziu3.java,6,32,0,TH6MleuQMptNjwcpWq3p9qQMs.java,6,36
+0,Fs8ZvxGlLMDaLWoJp0gDougdg.java,6,44,0,IAjIHw2XIybXbL2gBXVuxBG1W.java,5,50
+clonepairs_1_type_31_9903.txt ======================
+0,BtFOczytDEQ6ccPDbTwr4W3su.java,62,71,0,BixxvcUpdud8r7E69u9RoVimX.java,42,48
+0,QWh69AbiTrU4PdDwoYKYoOhNe.java,55,63,0,EMrLs0zjMCTYro9lLdvugCSeD.java,54,61
+0,R1r3KkTXHvr6OuOwPq5wpWM2g.java,27,34,0,QWh69AbiTrU4PdDwoYKYoOhNe.java,55,63
+0,Rcvpk5XFNZChGD6UboTO1wH8F.java,52,57,0,BtFOczytDEQ6ccPDbTwr4W3su.java,62,71
+0,Rcvpk5XFNZChGD6UboTO1wH8F.java,52,57,0,DuE0BQHP4FUpWwBIQ1HO0Yt82.java,34,41
+0,MAE4UzKOuH3bCRR9IuO9Esugi.java,12,19,0,QWh69AbiTrU4PdDwoYKYoOhNe.java,55,63
+0,X47yRzKuwiWiLcFBB7zoxMtzU.java,14,21,0,CxrsaCG4ac3sgiVf7TqC9YSGl.java,29,38
+0,X47yRzKuwiWiLcFBB7zoxMtzU.java,14,21,0,Rg4fFk4tVpHvzmJWEJsS3JrRK.java,27,34
+0,LbUzd9ny97wjdTLyd9B4H2QIF.java,44,51,0,JS9q3eKY3jNzQju3k7ql3u39l.java,66,72
+0,M7mmLchdJCEuACnAiTJKUFtYy.java,8,14,0,JrduZmu28VEPVjTMMgfxkGEUw.java,69,76
+0,M7mmLchdJCEuACnAiTJKUFtYy.java,8,14,0,LbUzd9ny97wjdTLyd9B4H2QIF.java,44,51
+0,ZJcNmQOrhDdcCxk0YQah22mWa.java,36,41,0,M7mmLchdJCEuACnAiTJKUFtYy.java,8,14
+0,WF7KDp1Br6mdgNuR5y25zYvMT.java,9,14,0,BixxvcUpdud8r7E69u9RoVimX.java,42,48
+0,ZJcNmQOrhDdcCxk0YQah22mWa.java,36,41,0,DuE0BQHP4FUpWwBIQ1HO0Yt82.java,34,41
+0,OpUZcAjwBXGObwVFdcjE2PzlY.java,35,45,0,IBfuuUOuNS5i51O90KDam7xRh.java,52,68
+0,UfjcN6Sfr8W7SFN1kXPAkF2Ak.java,50,63,0,E47BUgZIvhPm2pytNjxzfiDDz.java,37,48
+0,Zmqmzaa4rHp0kZsAjaSvJh9on.java,8,20,0,IAUoOjFyOgbZieZ5yp3FwUKom.java,10,23
+0,JaUQ55nE6AIcN5JTvES8OTItZ.java,17,25,0,OpUZcAjwBXGObwVFdcjE2PzlY.java,35,45
+0,CP8gtm0m5R6MDllloc2v1wsMM.java,37,51,0,GCEPD4r2oQMd8rkv5wzAbCock.java,5,32
+0,XT5vkYvoBuRvf4YOGpzDYHr0L.java,9,34,0,RuSs6PSYETwBP4B2mlCNPcYEo.java,8,48
+0,D5ZsGYqfywIoe4NZ4zOcIPslB.java,5,29,0,TH6MleuQMptNjwcpWq3p9qQMs.java,6,36
+0,D5ZsGYqfywIoe4NZ4zOcIPslB.java,5,29,0,Xpr3cDMJ6Tda97Z8NHzIWxiei.java,6,30
+0,Mb4Cg8lk7GnnQ2wyvIptZziu3.java,6,32,0,H3eBCNyQNInr0RDRi35NhzJeZ.java,5,30
+0,BZRGc7mXLCIRMHvpuQ19VVcpI.java,30,72,0,Sm8GtxN2QAk9coClFHx9huaPy.java,5,31
+0,WIUtSGkPj5kHskYoM2Ki84TPM.java,7,45,0,VZ34lJzqCDxJ2M6C6zCHf1TCG.java,7,56
+clonepairs_type2_9900.txt ======================
+0,Rcvpk5XFNZChGD6UboTO1wH8F.java,52,57,0,JS9q3eKY3jNzQju3k7ql3u39l.java,66,72
+0,LbUzd9ny97wjdTLyd9B4H2QIF.java,44,51,0,JrduZmu28VEPVjTMMgfxkGEUw.java,69,76
+clonepairs_type2_9901.txt ======================
+0,R1r3KkTXHvr6OuOwPq5wpWM2g.java,27,34,0,Rg4fFk4tVpHvzmJWEJsS3JrRK.java,27,34
+0,R1r3KkTXHvr6OuOwPq5wpWM2g.java,4,26,0,Rg4fFk4tVpHvzmJWEJsS3JrRK.java,4,26
+clonepairs_type2_9902.txt ======================
+0,R1r3KkTXHvr6OuOwPq5wpWM2g.java,27,34,0,EMrLs0zjMCTYro9lLdvugCSeD.java,54,61
+clonepairs_type2_9903.txt ======================
+0,Rg4fFk4tVpHvzmJWEJsS3JrRK.java,27,34,0,EMrLs0zjMCTYro9lLdvugCSeD.java,54,61

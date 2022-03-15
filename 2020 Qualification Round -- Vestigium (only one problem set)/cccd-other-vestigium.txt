@@ -1,0 +1,974 @@
+cccd-runscript c-other > cccd-other-vestigium.txt  0,20s user 0,31s system 1% cpu 44,345 total
+
+[Script] Using docker: Docker version 20.10.12, build e91ed5707e
+[Running] [/home/cccd-user/data/c-other]
+[Running] Copy File to "/home/fedora-user/dk-crest-java/trunk/ dk-crest-java --username dek782@gmail.com/crestClean/sourceFiles/input"
+Creating file structure.......
+Creating Ctag and Crest Information.......
+doing for 1
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//AnkushBurnwal/000000000022f060
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//AnkushBurnwal/000000000022f060/000000000022f060.c.txt  ../sourceFiles/scriptoutput/c-other_copy/AnkushBurnwal/000000000022f060/000000000022f060.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/AnkushBurnwal/000000000022f060/000000000022f060.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 1/ ../sourceFiles/scriptoutput/c-other_copy/AnkushBurnwal/000000000022f060/000000000022f060.c
+doing for 2
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//stubbscroll/000000000021509e
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//stubbscroll/000000000021509e/000000000021509e.c.txt  ../sourceFiles/scriptoutput/c-other_copy/stubbscroll/000000000021509e/000000000021509e.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/stubbscroll/000000000021509e/000000000021509e.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 2/ ../sourceFiles/scriptoutput/c-other_copy/stubbscroll/000000000021509e/000000000021509e.c
+doing for 3
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//code.avi/000000000026c874
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//code.avi/000000000026c874/000000000026c874.c.txt  ../sourceFiles/scriptoutput/c-other_copy/code.avi/000000000026c874/000000000026c874.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/code.avi/000000000026c874/000000000026c874.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 3/ ../sourceFiles/scriptoutput/c-other_copy/code.avi/000000000026c874/000000000026c874.c
+doing for 4
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//pheonixking/0000000000235641
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//pheonixking/0000000000235641/0000000000235641.c.txt  ../sourceFiles/scriptoutput/c-other_copy/pheonixking/0000000000235641/0000000000235641.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/pheonixking/0000000000235641/0000000000235641.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 4/ ../sourceFiles/scriptoutput/c-other_copy/pheonixking/0000000000235641/0000000000235641.c
+doing for 5
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Rishikesh12/000000000025feb4
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Rishikesh12/000000000025feb4/000000000025feb4.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Rishikesh12/000000000025feb4/000000000025feb4.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Rishikesh12/000000000025feb4/000000000025feb4.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 5/ ../sourceFiles/scriptoutput/c-other_copy/Rishikesh12/000000000025feb4/000000000025feb4.c
+doing for 6
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Books/0000000000226dc6
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Books/0000000000226dc6/0000000000226dc6.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Books/0000000000226dc6/0000000000226dc6.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Books/0000000000226dc6/0000000000226dc6.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 6/ ../sourceFiles/scriptoutput/c-other_copy/Books/0000000000226dc6/0000000000226dc6.c
+doing for 7
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//rash23/0000000000217806
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//rash23/0000000000217806/0000000000217806.c.txt  ../sourceFiles/scriptoutput/c-other_copy/rash23/0000000000217806/0000000000217806.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/rash23/0000000000217806/0000000000217806.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 7/ ../sourceFiles/scriptoutput/c-other_copy/rash23/0000000000217806/0000000000217806.c
+doing for 8
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//godchinmay/000000000027ccda
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//godchinmay/000000000027ccda/000000000027ccda.c.txt  ../sourceFiles/scriptoutput/c-other_copy/godchinmay/000000000027ccda/000000000027ccda.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/godchinmay/000000000027ccda/000000000027ccda.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 8/ ../sourceFiles/scriptoutput/c-other_copy/godchinmay/000000000027ccda/000000000027ccda.c
+doing for 9
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Sumanth1727/000000000022ecd3
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Sumanth1727/000000000022ecd3/000000000022ecd3.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Sumanth1727/000000000022ecd3/000000000022ecd3.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Sumanth1727/000000000022ecd3/000000000022ecd3.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 9/ ../sourceFiles/scriptoutput/c-other_copy/Sumanth1727/000000000022ecd3/000000000022ecd3.c
+doing for 10
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//WinCodster/0000000000252264
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//WinCodster/0000000000252264/0000000000252264.c.txt  ../sourceFiles/scriptoutput/c-other_copy/WinCodster/0000000000252264/0000000000252264.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/WinCodster/0000000000252264/0000000000252264.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 10/ ../sourceFiles/scriptoutput/c-other_copy/WinCodster/0000000000252264/0000000000252264.c
+doing for 11
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Rishiy29/000000000021a54e
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Rishiy29/000000000021a54e/000000000021a54e.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Rishiy29/000000000021a54e/000000000021a54e.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Rishiy29/000000000021a54e/000000000021a54e.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 11/ ../sourceFiles/scriptoutput/c-other_copy/Rishiy29/000000000021a54e/000000000021a54e.c
+doing for 12
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//mikeelbyte/00000000002709fc
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//mikeelbyte/00000000002709fc/00000000002709fc.c.txt  ../sourceFiles/scriptoutput/c-other_copy/mikeelbyte/00000000002709fc/00000000002709fc.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/mikeelbyte/00000000002709fc/00000000002709fc.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 12/ ../sourceFiles/scriptoutput/c-other_copy/mikeelbyte/00000000002709fc/00000000002709fc.c
+doing for 13
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//navneettiwari81/0000000000240a4e
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//navneettiwari81/0000000000240a4e/0000000000240a4e.c.txt  ../sourceFiles/scriptoutput/c-other_copy/navneettiwari81/0000000000240a4e/0000000000240a4e.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/navneettiwari81/0000000000240a4e/0000000000240a4e.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 13/ ../sourceFiles/scriptoutput/c-other_copy/navneettiwari81/0000000000240a4e/0000000000240a4e.c
+doing for 14
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Danu4/0000000000241aa2
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Danu4/0000000000241aa2/0000000000241aa2.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Danu4/0000000000241aa2/0000000000241aa2.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Danu4/0000000000241aa2/0000000000241aa2.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 14/ ../sourceFiles/scriptoutput/c-other_copy/Danu4/0000000000241aa2/0000000000241aa2.c
+doing for 15
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//starzodiac/0000000000276b44
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//starzodiac/0000000000276b44/0000000000276b44.c.txt  ../sourceFiles/scriptoutput/c-other_copy/starzodiac/0000000000276b44/0000000000276b44.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/starzodiac/0000000000276b44/0000000000276b44.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 15/ ../sourceFiles/scriptoutput/c-other_copy/starzodiac/0000000000276b44/0000000000276b44.c
+doing for 16
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//tunatone0111/00000000002398e3
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//tunatone0111/00000000002398e3/00000000002398e3.c.txt  ../sourceFiles/scriptoutput/c-other_copy/tunatone0111/00000000002398e3/00000000002398e3.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/tunatone0111/00000000002398e3/00000000002398e3.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 16/ ../sourceFiles/scriptoutput/c-other_copy/tunatone0111/00000000002398e3/00000000002398e3.c
+doing for 17
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Muskan22_99/0000000000287e34
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Muskan22_99/0000000000287e34/0000000000287e34.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Muskan22_99/0000000000287e34/0000000000287e34.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Muskan22_99/0000000000287e34/0000000000287e34.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 17/ ../sourceFiles/scriptoutput/c-other_copy/Muskan22_99/0000000000287e34/0000000000287e34.c
+doing for 18
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//L4NZI/00000000002478d5
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//L4NZI/00000000002478d5/00000000002478d5.c.txt  ../sourceFiles/scriptoutput/c-other_copy/L4NZI/00000000002478d5/00000000002478d5.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/L4NZI/00000000002478d5/00000000002478d5.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 18/ ../sourceFiles/scriptoutput/c-other_copy/L4NZI/00000000002478d5/00000000002478d5.c
+doing for 19
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//RayaBurong25.1/000000000022c3f2
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//RayaBurong25.1/000000000022c3f2/000000000022c3f2.c.txt  ../sourceFiles/scriptoutput/c-other_copy/RayaBurong25.1/000000000022c3f2/000000000022c3f2.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/RayaBurong25.1/000000000022c3f2/000000000022c3f2.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 19/ ../sourceFiles/scriptoutput/c-other_copy/RayaBurong25.1/000000000022c3f2/000000000022c3f2.c
+doing for 20
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//smevada/0000000000248fac
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//smevada/0000000000248fac/0000000000248fac.c.txt  ../sourceFiles/scriptoutput/c-other_copy/smevada/0000000000248fac/0000000000248fac.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/smevada/0000000000248fac/0000000000248fac.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 20/ ../sourceFiles/scriptoutput/c-other_copy/smevada/0000000000248fac/0000000000248fac.c
+doing for 21
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//amrita_codejam/0000000000236944
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//amrita_codejam/0000000000236944/0000000000236944.c.txt  ../sourceFiles/scriptoutput/c-other_copy/amrita_codejam/0000000000236944/0000000000236944.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/amrita_codejam/0000000000236944/0000000000236944.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 21/ ../sourceFiles/scriptoutput/c-other_copy/amrita_codejam/0000000000236944/0000000000236944.c
+doing for 22
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//DaiLiInYourArea/0000000000283137
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//DaiLiInYourArea/0000000000283137/0000000000283137.c.txt  ../sourceFiles/scriptoutput/c-other_copy/DaiLiInYourArea/0000000000283137/0000000000283137.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/DaiLiInYourArea/0000000000283137/0000000000283137.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 22/ ../sourceFiles/scriptoutput/c-other_copy/DaiLiInYourArea/0000000000283137/0000000000283137.c
+doing for 23
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//keetarpjai/0000000000214146
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//keetarpjai/0000000000214146/0000000000214146.c.txt  ../sourceFiles/scriptoutput/c-other_copy/keetarpjai/0000000000214146/0000000000214146.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/keetarpjai/0000000000214146/0000000000214146.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 23/ ../sourceFiles/scriptoutput/c-other_copy/keetarpjai/0000000000214146/0000000000214146.c
+doing for 24
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Gurdev/0000000000283b3b
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Gurdev/0000000000283b3b/0000000000283b3b.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Gurdev/0000000000283b3b/0000000000283b3b.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Gurdev/0000000000283b3b/0000000000283b3b.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 24/ ../sourceFiles/scriptoutput/c-other_copy/Gurdev/0000000000283b3b/0000000000283b3b.c
+doing for 25
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Neural_Spider/000000000028a458
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Neural_Spider/000000000028a458/000000000028a458.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Neural_Spider/000000000028a458/000000000028a458.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Neural_Spider/000000000028a458/000000000028a458.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 25/ ../sourceFiles/scriptoutput/c-other_copy/Neural_Spider/000000000028a458/000000000028a458.c
+doing for 26
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//nikhilchemistry/0000000000267a57
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//nikhilchemistry/0000000000267a57/0000000000267a57.c.txt  ../sourceFiles/scriptoutput/c-other_copy/nikhilchemistry/0000000000267a57/0000000000267a57.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/nikhilchemistry/0000000000267a57/0000000000267a57.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 26/ ../sourceFiles/scriptoutput/c-other_copy/nikhilchemistry/0000000000267a57/0000000000267a57.c
+doing for 27
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//tejagurram/00000000002246a1
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//tejagurram/00000000002246a1/00000000002246a1.c.txt  ../sourceFiles/scriptoutput/c-other_copy/tejagurram/00000000002246a1/00000000002246a1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/tejagurram/00000000002246a1/00000000002246a1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 27/ ../sourceFiles/scriptoutput/c-other_copy/tejagurram/00000000002246a1/00000000002246a1.c
+doing for 28
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//jayroy9825/000000000024853a
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//jayroy9825/000000000024853a/000000000024853a.c.txt  ../sourceFiles/scriptoutput/c-other_copy/jayroy9825/000000000024853a/000000000024853a.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/jayroy9825/000000000024853a/000000000024853a.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 28/ ../sourceFiles/scriptoutput/c-other_copy/jayroy9825/000000000024853a/000000000024853a.c
+doing for 29
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//smish_/00000000002589de
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//smish_/00000000002589de/00000000002589de.c.txt  ../sourceFiles/scriptoutput/c-other_copy/smish_/00000000002589de/00000000002589de.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/smish_/00000000002589de/00000000002589de.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 29/ ../sourceFiles/scriptoutput/c-other_copy/smish_/00000000002589de/00000000002589de.c
+doing for 30
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//samiparna/000000000023a8f3
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//samiparna/000000000023a8f3/000000000023a8f3.c.txt  ../sourceFiles/scriptoutput/c-other_copy/samiparna/000000000023a8f3/000000000023a8f3.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/samiparna/000000000023a8f3/000000000023a8f3.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 30/ ../sourceFiles/scriptoutput/c-other_copy/samiparna/000000000023a8f3/000000000023a8f3.c
+doing for 31
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Strange_Likhith/000000000023a3b3
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Strange_Likhith/000000000023a3b3/000000000023a3b3.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Strange_Likhith/000000000023a3b3/000000000023a3b3.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Strange_Likhith/000000000023a3b3/000000000023a3b3.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 31/ ../sourceFiles/scriptoutput/c-other_copy/Strange_Likhith/000000000023a3b3/000000000023a3b3.c
+doing for 32
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//mahii26/000000000024a79c
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//mahii26/000000000024a79c/000000000024a79c.c.txt  ../sourceFiles/scriptoutput/c-other_copy/mahii26/000000000024a79c/000000000024a79c.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/mahii26/000000000024a79c/000000000024a79c.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 32/ ../sourceFiles/scriptoutput/c-other_copy/mahii26/000000000024a79c/000000000024a79c.c
+doing for 33
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//sapra24/0000000000243ff9
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//sapra24/0000000000243ff9/0000000000243ff9.c.txt  ../sourceFiles/scriptoutput/c-other_copy/sapra24/0000000000243ff9/0000000000243ff9.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/sapra24/0000000000243ff9/0000000000243ff9.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 33/ ../sourceFiles/scriptoutput/c-other_copy/sapra24/0000000000243ff9/0000000000243ff9.c
+doing for 34
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//gauravpandey/000000000024acbd
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//gauravpandey/000000000024acbd/000000000024acbd.c.txt  ../sourceFiles/scriptoutput/c-other_copy/gauravpandey/000000000024acbd/000000000024acbd.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/gauravpandey/000000000024acbd/000000000024acbd.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 34/ ../sourceFiles/scriptoutput/c-other_copy/gauravpandey/000000000024acbd/000000000024acbd.c
+doing for 35
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//ayushshuklas/0000000000298e4c
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//ayushshuklas/0000000000298e4c/0000000000298e4c.c.txt  ../sourceFiles/scriptoutput/c-other_copy/ayushshuklas/0000000000298e4c/0000000000298e4c.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/ayushshuklas/0000000000298e4c/0000000000298e4c.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 35/ ../sourceFiles/scriptoutput/c-other_copy/ayushshuklas/0000000000298e4c/0000000000298e4c.c
+doing for 36
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//nnez/00000000002203ec
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//nnez/00000000002203ec/00000000002203ec.c.txt  ../sourceFiles/scriptoutput/c-other_copy/nnez/00000000002203ec/00000000002203ec.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/nnez/00000000002203ec/00000000002203ec.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 36/ ../sourceFiles/scriptoutput/c-other_copy/nnez/00000000002203ec/00000000002203ec.c
+doing for 37
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//RANAKUMAR/00000000002216c6
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//RANAKUMAR/00000000002216c6/00000000002216c6.c.txt  ../sourceFiles/scriptoutput/c-other_copy/RANAKUMAR/00000000002216c6/00000000002216c6.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/RANAKUMAR/00000000002216c6/00000000002216c6.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 37/ ../sourceFiles/scriptoutput/c-other_copy/RANAKUMAR/00000000002216c6/00000000002216c6.c
+doing for 38
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//GSITG/0000000000216a9a
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//GSITG/0000000000216a9a/0000000000216a9a.c.txt  ../sourceFiles/scriptoutput/c-other_copy/GSITG/0000000000216a9a/0000000000216a9a.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/GSITG/0000000000216a9a/0000000000216a9a.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 38/ ../sourceFiles/scriptoutput/c-other_copy/GSITG/0000000000216a9a/0000000000216a9a.c
+doing for 39
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//ajpasic/00000000002a3e61
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//ajpasic/00000000002a3e61/00000000002a3e61.c.txt  ../sourceFiles/scriptoutput/c-other_copy/ajpasic/00000000002a3e61/00000000002a3e61.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/ajpasic/00000000002a3e61/00000000002a3e61.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 39/ ../sourceFiles/scriptoutput/c-other_copy/ajpasic/00000000002a3e61/00000000002a3e61.c
+doing for 40
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//hackuwa/0000000000255d38
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//hackuwa/0000000000255d38/0000000000255d38.c.txt  ../sourceFiles/scriptoutput/c-other_copy/hackuwa/0000000000255d38/0000000000255d38.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/hackuwa/0000000000255d38/0000000000255d38.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 40/ ../sourceFiles/scriptoutput/c-other_copy/hackuwa/0000000000255d38/0000000000255d38.c
+doing for 41
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//kumar_ankit/00000000002171e9
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//kumar_ankit/00000000002171e9/00000000002171e9.c.txt  ../sourceFiles/scriptoutput/c-other_copy/kumar_ankit/00000000002171e9/00000000002171e9.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/kumar_ankit/00000000002171e9/00000000002171e9.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 41/ ../sourceFiles/scriptoutput/c-other_copy/kumar_ankit/00000000002171e9/00000000002171e9.c
+doing for 42
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//26Aish/000000000023879f
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//26Aish/000000000023879f/000000000023879f.c.txt  ../sourceFiles/scriptoutput/c-other_copy/26Aish/000000000023879f/000000000023879f.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/26Aish/000000000023879f/000000000023879f.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 42/ ../sourceFiles/scriptoutput/c-other_copy/26Aish/000000000023879f/000000000023879f.c
+doing for 43
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//GauravGosain/000000000028b53d
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//GauravGosain/000000000028b53d/000000000028b53d.c.txt  ../sourceFiles/scriptoutput/c-other_copy/GauravGosain/000000000028b53d/000000000028b53d.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/GauravGosain/000000000028b53d/000000000028b53d.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 43/ ../sourceFiles/scriptoutput/c-other_copy/GauravGosain/000000000028b53d/000000000028b53d.c
+doing for 44
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//2017_sahil_t/000000000021a384
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//2017_sahil_t/000000000021a384/000000000021a384.c.txt  ../sourceFiles/scriptoutput/c-other_copy/2017_sahil_t/000000000021a384/000000000021a384.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/2017_sahil_t/000000000021a384/000000000021a384.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 44/ ../sourceFiles/scriptoutput/c-other_copy/2017_sahil_t/000000000021a384/000000000021a384.c
+doing for 45
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//aaship/0000000000260023
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//aaship/0000000000260023/0000000000260023.c.txt  ../sourceFiles/scriptoutput/c-other_copy/aaship/0000000000260023/0000000000260023.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/aaship/0000000000260023/0000000000260023.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 45/ ../sourceFiles/scriptoutput/c-other_copy/aaship/0000000000260023/0000000000260023.c
+doing for 46
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Deepinder_Singh/00000000002355ad
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Deepinder_Singh/00000000002355ad/00000000002355ad.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Deepinder_Singh/00000000002355ad/00000000002355ad.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Deepinder_Singh/00000000002355ad/00000000002355ad.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 46/ ../sourceFiles/scriptoutput/c-other_copy/Deepinder_Singh/00000000002355ad/00000000002355ad.c
+doing for 47
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//AshwiniSoni/000000000026b503
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//AshwiniSoni/000000000026b503/000000000026b503.c.txt  ../sourceFiles/scriptoutput/c-other_copy/AshwiniSoni/000000000026b503/000000000026b503.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/AshwiniSoni/000000000026b503/000000000026b503.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 47/ ../sourceFiles/scriptoutput/c-other_copy/AshwiniSoni/000000000026b503/000000000026b503.c
+doing for 48
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Suhit1/0000000000214a2c
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Suhit1/0000000000214a2c/0000000000214a2c.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Suhit1/0000000000214a2c/0000000000214a2c.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Suhit1/0000000000214a2c/0000000000214a2c.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 48/ ../sourceFiles/scriptoutput/c-other_copy/Suhit1/0000000000214a2c/0000000000214a2c.c
+doing for 49
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Javal0112/000000000024cf9d
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Javal0112/000000000024cf9d/000000000024cf9d.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Javal0112/000000000024cf9d/000000000024cf9d.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Javal0112/000000000024cf9d/000000000024cf9d.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 49/ ../sourceFiles/scriptoutput/c-other_copy/Javal0112/000000000024cf9d/000000000024cf9d.c
+doing for 50
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//PtP/000000000027c0ce
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//PtP/000000000027c0ce/000000000027c0ce.c.txt  ../sourceFiles/scriptoutput/c-other_copy/PtP/000000000027c0ce/000000000027c0ce.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/PtP/000000000027c0ce/000000000027c0ce.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 50/ ../sourceFiles/scriptoutput/c-other_copy/PtP/000000000027c0ce/000000000027c0ce.c
+doing for 51
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Eligator/0000000000243dad
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Eligator/0000000000243dad/0000000000243dad.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Eligator/0000000000243dad/0000000000243dad.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Eligator/0000000000243dad/0000000000243dad.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 51/ ../sourceFiles/scriptoutput/c-other_copy/Eligator/0000000000243dad/0000000000243dad.c
+doing for 52
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//giridhar19199/0000000000244ede
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//giridhar19199/0000000000244ede/0000000000244ede.c.txt  ../sourceFiles/scriptoutput/c-other_copy/giridhar19199/0000000000244ede/0000000000244ede.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/giridhar19199/0000000000244ede/0000000000244ede.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 52/ ../sourceFiles/scriptoutput/c-other_copy/giridhar19199/0000000000244ede/0000000000244ede.c
+doing for 53
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//prudhvisai21/000000000026b82c
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//prudhvisai21/000000000026b82c/000000000026b82c.c.txt  ../sourceFiles/scriptoutput/c-other_copy/prudhvisai21/000000000026b82c/000000000026b82c.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/prudhvisai21/000000000026b82c/000000000026b82c.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 53/ ../sourceFiles/scriptoutput/c-other_copy/prudhvisai21/000000000026b82c/000000000026b82c.c
+doing for 54
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//shashwat007/000000000027f183
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//shashwat007/000000000027f183/000000000027f183.c.txt  ../sourceFiles/scriptoutput/c-other_copy/shashwat007/000000000027f183/000000000027f183.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/shashwat007/000000000027f183/000000000027f183.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 54/ ../sourceFiles/scriptoutput/c-other_copy/shashwat007/000000000027f183/000000000027f183.c
+doing for 55
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//toava/000000000025ff98
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//toava/000000000025ff98/000000000025ff98.c.txt  ../sourceFiles/scriptoutput/c-other_copy/toava/000000000025ff98/000000000025ff98.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/toava/000000000025ff98/000000000025ff98.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 55/ ../sourceFiles/scriptoutput/c-other_copy/toava/000000000025ff98/000000000025ff98.c
+doing for 56
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Tejusimhadri/000000000023e76e
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Tejusimhadri/000000000023e76e/000000000023e76e.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Tejusimhadri/000000000023e76e/000000000023e76e.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Tejusimhadri/000000000023e76e/000000000023e76e.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 56/ ../sourceFiles/scriptoutput/c-other_copy/Tejusimhadri/000000000023e76e/000000000023e76e.c
+doing for 57
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Ashish333/000000000027a936
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Ashish333/000000000027a936/000000000027a936.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Ashish333/000000000027a936/000000000027a936.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Ashish333/000000000027a936/000000000027a936.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 57/ ../sourceFiles/scriptoutput/c-other_copy/Ashish333/000000000027a936/000000000027a936.c
+doing for 58
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//logic_lover/000000000021c5bd
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//logic_lover/000000000021c5bd/000000000021c5bd.c.txt  ../sourceFiles/scriptoutput/c-other_copy/logic_lover/000000000021c5bd/000000000021c5bd.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/logic_lover/000000000021c5bd/000000000021c5bd.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 58/ ../sourceFiles/scriptoutput/c-other_copy/logic_lover/000000000021c5bd/000000000021c5bd.c
+doing for 59
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//ZevF/000000000027c83f
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//ZevF/000000000027c83f/000000000027c83f.c.txt  ../sourceFiles/scriptoutput/c-other_copy/ZevF/000000000027c83f/000000000027c83f.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/ZevF/000000000027c83f/000000000027c83f.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 59/ ../sourceFiles/scriptoutput/c-other_copy/ZevF/000000000027c83f/000000000027c83f.c
+doing for 60
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Vic357/000000000028ba8f
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Vic357/000000000028ba8f/000000000028ba8f.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Vic357/000000000028ba8f/000000000028ba8f.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Vic357/000000000028ba8f/000000000028ba8f.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 60/ ../sourceFiles/scriptoutput/c-other_copy/Vic357/000000000028ba8f/000000000028ba8f.c
+doing for 61
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Vishnupriya2305/000000000022a806
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Vishnupriya2305/000000000022a806/000000000022a806.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Vishnupriya2305/000000000022a806/000000000022a806.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Vishnupriya2305/000000000022a806/000000000022a806.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 61/ ../sourceFiles/scriptoutput/c-other_copy/Vishnupriya2305/000000000022a806/000000000022a806.c
+doing for 62
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//giaphuctrinhhuu@gmail.com/00000000002288b0
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//giaphuctrinhhuu@gmail.com/00000000002288b0/00000000002288b0.c.txt  ../sourceFiles/scriptoutput/c-other_copy/giaphuctrinhhuu@gmail.com/00000000002288b0/00000000002288b0.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/giaphuctrinhhuu@gmail.com/00000000002288b0/00000000002288b0.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 62/ ../sourceFiles/scriptoutput/c-other_copy/giaphuctrinhhuu@gmail.com/00000000002288b0/00000000002288b0.c
+doing for 63
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Prady9/000000000023be29
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Prady9/000000000023be29/000000000023be29.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Prady9/000000000023be29/000000000023be29.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Prady9/000000000023be29/000000000023be29.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 63/ ../sourceFiles/scriptoutput/c-other_copy/Prady9/000000000023be29/000000000023be29.c
+doing for 64
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Manasa15/0000000000229e68
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Manasa15/0000000000229e68/0000000000229e68.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Manasa15/0000000000229e68/0000000000229e68.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Manasa15/0000000000229e68/0000000000229e68.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 64/ ../sourceFiles/scriptoutput/c-other_copy/Manasa15/0000000000229e68/0000000000229e68.c
+doing for 65
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//paipim/000000000026b646
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//paipim/000000000026b646/000000000026b646.c.txt  ../sourceFiles/scriptoutput/c-other_copy/paipim/000000000026b646/000000000026b646.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/paipim/000000000026b646/000000000026b646.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 65/ ../sourceFiles/scriptoutput/c-other_copy/paipim/000000000026b646/000000000026b646.c
+doing for 66
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//SAKSHI/000000000026410a
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//SAKSHI/000000000026410a/000000000026410a.c.txt  ../sourceFiles/scriptoutput/c-other_copy/SAKSHI/000000000026410a/000000000026410a.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/SAKSHI/000000000026410a/000000000026410a.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 66/ ../sourceFiles/scriptoutput/c-other_copy/SAKSHI/000000000026410a/000000000026410a.c
+doing for 67
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//KaisarShabir/000000000028b385
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//KaisarShabir/000000000028b385/000000000028b385.c.txt  ../sourceFiles/scriptoutput/c-other_copy/KaisarShabir/000000000028b385/000000000028b385.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/KaisarShabir/000000000028b385/000000000028b385.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 67/ ../sourceFiles/scriptoutput/c-other_copy/KaisarShabir/000000000028b385/000000000028b385.c
+doing for 68
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Omkar12345/000000000022b2ee
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Omkar12345/000000000022b2ee/000000000022b2ee.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Omkar12345/000000000022b2ee/000000000022b2ee.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Omkar12345/000000000022b2ee/000000000022b2ee.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 68/ ../sourceFiles/scriptoutput/c-other_copy/Omkar12345/000000000022b2ee/000000000022b2ee.c
+doing for 69
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//scoutOP/000000000022e4d2
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//scoutOP/000000000022e4d2/000000000022e4d2.c.txt  ../sourceFiles/scriptoutput/c-other_copy/scoutOP/000000000022e4d2/000000000022e4d2.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/scoutOP/000000000022e4d2/000000000022e4d2.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 69/ ../sourceFiles/scriptoutput/c-other_copy/scoutOP/000000000022e4d2/000000000022e4d2.c
+doing for 70
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//zero0000/000000000028930a
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//zero0000/000000000028930a/000000000028930a.c.txt  ../sourceFiles/scriptoutput/c-other_copy/zero0000/000000000028930a/000000000028930a.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/zero0000/000000000028930a/000000000028930a.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 70/ ../sourceFiles/scriptoutput/c-other_copy/zero0000/000000000028930a/000000000028930a.c
+doing for 71
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Charann/000000000023030c
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Charann/000000000023030c/000000000023030c.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Charann/000000000023030c/000000000023030c.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Charann/000000000023030c/000000000023030c.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 71/ ../sourceFiles/scriptoutput/c-other_copy/Charann/000000000023030c/000000000023030c.c
+doing for 72
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//krilin4/000000000027c495
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//krilin4/000000000027c495/000000000027c495.c.txt  ../sourceFiles/scriptoutput/c-other_copy/krilin4/000000000027c495/000000000027c495.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/krilin4/000000000027c495/000000000027c495.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 72/ ../sourceFiles/scriptoutput/c-other_copy/krilin4/000000000027c495/000000000027c495.c
+doing for 73
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Sri_Sri/00000000002275ed
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Sri_Sri/00000000002275ed/00000000002275ed.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Sri_Sri/00000000002275ed/00000000002275ed.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Sri_Sri/00000000002275ed/00000000002275ed.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 73/ ../sourceFiles/scriptoutput/c-other_copy/Sri_Sri/00000000002275ed/00000000002275ed.c
+doing for 74
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Sreekharreddy/00000000002352dc
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Sreekharreddy/00000000002352dc/00000000002352dc.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Sreekharreddy/00000000002352dc/00000000002352dc.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Sreekharreddy/00000000002352dc/00000000002352dc.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 74/ ../sourceFiles/scriptoutput/c-other_copy/Sreekharreddy/00000000002352dc/00000000002352dc.c
+doing for 75
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//thamid.tuhin/00000000002394d0
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//thamid.tuhin/00000000002394d0/00000000002394d0.c.txt  ../sourceFiles/scriptoutput/c-other_copy/thamid.tuhin/00000000002394d0/00000000002394d0.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/thamid.tuhin/00000000002394d0/00000000002394d0.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 75/ ../sourceFiles/scriptoutput/c-other_copy/thamid.tuhin/00000000002394d0/00000000002394d0.c
+doing for 76
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//viveksg/000000000027f860
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//viveksg/000000000027f860/000000000027f860.c.txt  ../sourceFiles/scriptoutput/c-other_copy/viveksg/000000000027f860/000000000027f860.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/viveksg/000000000027f860/000000000027f860.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 76/ ../sourceFiles/scriptoutput/c-other_copy/viveksg/000000000027f860/000000000027f860.c
+doing for 77
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//15Vaibhav/000000000024d9f4
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//15Vaibhav/000000000024d9f4/000000000024d9f4.c.txt  ../sourceFiles/scriptoutput/c-other_copy/15Vaibhav/000000000024d9f4/000000000024d9f4.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/15Vaibhav/000000000024d9f4/000000000024d9f4.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 77/ ../sourceFiles/scriptoutput/c-other_copy/15Vaibhav/000000000024d9f4/000000000024d9f4.c
+doing for 78
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//chetanshahajipatil/0000000000224fc6
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//chetanshahajipatil/0000000000224fc6/0000000000224fc6.c.txt  ../sourceFiles/scriptoutput/c-other_copy/chetanshahajipatil/0000000000224fc6/0000000000224fc6.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/chetanshahajipatil/0000000000224fc6/0000000000224fc6.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 78/ ../sourceFiles/scriptoutput/c-other_copy/chetanshahajipatil/0000000000224fc6/0000000000224fc6.c
+doing for 79
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//acutesaloni0498/0000000000273d76
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//acutesaloni0498/0000000000273d76/0000000000273d76.c.txt  ../sourceFiles/scriptoutput/c-other_copy/acutesaloni0498/0000000000273d76/0000000000273d76.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/acutesaloni0498/0000000000273d76/0000000000273d76.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 79/ ../sourceFiles/scriptoutput/c-other_copy/acutesaloni0498/0000000000273d76/0000000000273d76.c
+doing for 80
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//HugoHT.Chan/0000000000218d59
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//HugoHT.Chan/0000000000218d59/0000000000218d59.c.txt  ../sourceFiles/scriptoutput/c-other_copy/HugoHT.Chan/0000000000218d59/0000000000218d59.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/HugoHT.Chan/0000000000218d59/0000000000218d59.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 80/ ../sourceFiles/scriptoutput/c-other_copy/HugoHT.Chan/0000000000218d59/0000000000218d59.c
+doing for 81
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Monna4335/000000000027b505
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Monna4335/000000000027b505/000000000027b505.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Monna4335/000000000027b505/000000000027b505.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Monna4335/000000000027b505/000000000027b505.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 81/ ../sourceFiles/scriptoutput/c-other_copy/Monna4335/000000000027b505/000000000027b505.c
+doing for 82
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//abhishek99/0000000000251dc7
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//abhishek99/0000000000251dc7/0000000000251dc7.c.txt  ../sourceFiles/scriptoutput/c-other_copy/abhishek99/0000000000251dc7/0000000000251dc7.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/abhishek99/0000000000251dc7/0000000000251dc7.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 82/ ../sourceFiles/scriptoutput/c-other_copy/abhishek99/0000000000251dc7/0000000000251dc7.c
+doing for 83
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//haswanth89/0000000000249ae9
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//haswanth89/0000000000249ae9/0000000000249ae9.c.txt  ../sourceFiles/scriptoutput/c-other_copy/haswanth89/0000000000249ae9/0000000000249ae9.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/haswanth89/0000000000249ae9/0000000000249ae9.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 83/ ../sourceFiles/scriptoutput/c-other_copy/haswanth89/0000000000249ae9/0000000000249ae9.c
+doing for 84
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//viratian05/000000000028109b
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//viratian05/000000000028109b/000000000028109b.c.txt  ../sourceFiles/scriptoutput/c-other_copy/viratian05/000000000028109b/000000000028109b.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/viratian05/000000000028109b/000000000028109b.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 84/ ../sourceFiles/scriptoutput/c-other_copy/viratian05/000000000028109b/000000000028109b.c
+doing for 85
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Excelsior8957/000000000028c0a3
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Excelsior8957/000000000028c0a3/000000000028c0a3.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Excelsior8957/000000000028c0a3/000000000028c0a3.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Excelsior8957/000000000028c0a3/000000000028c0a3.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 85/ ../sourceFiles/scriptoutput/c-other_copy/Excelsior8957/000000000028c0a3/000000000028c0a3.c
+doing for 86
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//draconix/00000000002674e2
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//draconix/00000000002674e2/00000000002674e2.c.txt  ../sourceFiles/scriptoutput/c-other_copy/draconix/00000000002674e2/00000000002674e2.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/draconix/00000000002674e2/00000000002674e2.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 86/ ../sourceFiles/scriptoutput/c-other_copy/draconix/00000000002674e2/00000000002674e2.c
+doing for 87
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//dark_titan/000000000028e756
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//dark_titan/000000000028e756/000000000028e756.c.txt  ../sourceFiles/scriptoutput/c-other_copy/dark_titan/000000000028e756/000000000028e756.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/dark_titan/000000000028e756/000000000028e756.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 87/ ../sourceFiles/scriptoutput/c-other_copy/dark_titan/000000000028e756/000000000028e756.c
+doing for 88
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//hendry/000000000021df0d
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//hendry/000000000021df0d/000000000021df0d.c.txt  ../sourceFiles/scriptoutput/c-other_copy/hendry/000000000021df0d/000000000021df0d.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/hendry/000000000021df0d/000000000021df0d.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 88/ ../sourceFiles/scriptoutput/c-other_copy/hendry/000000000021df0d/000000000021df0d.c
+doing for 89
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//fosablanca/0000000000247bfc
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//fosablanca/0000000000247bfc/0000000000247bfc.c.txt  ../sourceFiles/scriptoutput/c-other_copy/fosablanca/0000000000247bfc/0000000000247bfc.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/fosablanca/0000000000247bfc/0000000000247bfc.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 89/ ../sourceFiles/scriptoutput/c-other_copy/fosablanca/0000000000247bfc/0000000000247bfc.c
+doing for 90
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//prati2121/0000000000237be6
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//prati2121/0000000000237be6/0000000000237be6.c.txt  ../sourceFiles/scriptoutput/c-other_copy/prati2121/0000000000237be6/0000000000237be6.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/prati2121/0000000000237be6/0000000000237be6.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 90/ ../sourceFiles/scriptoutput/c-other_copy/prati2121/0000000000237be6/0000000000237be6.c
+doing for 91
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//kkeyan931/0000000000234074
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//kkeyan931/0000000000234074/0000000000234074.c.txt  ../sourceFiles/scriptoutput/c-other_copy/kkeyan931/0000000000234074/0000000000234074.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/kkeyan931/0000000000234074/0000000000234074.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 91/ ../sourceFiles/scriptoutput/c-other_copy/kkeyan931/0000000000234074/0000000000234074.c
+doing for 92
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//riti257/00000000002839df
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//riti257/00000000002839df/00000000002839df.c.txt  ../sourceFiles/scriptoutput/c-other_copy/riti257/00000000002839df/00000000002839df.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/riti257/00000000002839df/00000000002839df.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 92/ ../sourceFiles/scriptoutput/c-other_copy/riti257/00000000002839df/00000000002839df.c
+doing for 93
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//sandra.ayumi/00000000002188a9
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//sandra.ayumi/00000000002188a9/00000000002188a9.c.txt  ../sourceFiles/scriptoutput/c-other_copy/sandra.ayumi/00000000002188a9/00000000002188a9.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/sandra.ayumi/00000000002188a9/00000000002188a9.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 93/ ../sourceFiles/scriptoutput/c-other_copy/sandra.ayumi/00000000002188a9/00000000002188a9.c
+doing for 94
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Gstar@123/00000000002a59dc
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Gstar@123/00000000002a59dc/00000000002a59dc.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Gstar@123/00000000002a59dc/00000000002a59dc.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Gstar@123/00000000002a59dc/00000000002a59dc.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 94/ ../sourceFiles/scriptoutput/c-other_copy/Gstar@123/00000000002a59dc/00000000002a59dc.c
+doing for 95
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//wailzineddine/000000000026f35f
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//wailzineddine/000000000026f35f/000000000026f35f.c.txt  ../sourceFiles/scriptoutput/c-other_copy/wailzineddine/000000000026f35f/000000000026f35f.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/wailzineddine/000000000026f35f/000000000026f35f.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 95/ ../sourceFiles/scriptoutput/c-other_copy/wailzineddine/000000000026f35f/000000000026f35f.c
+doing for 96
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//adzen/00000000002682ac
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//adzen/00000000002682ac/00000000002682ac.c.txt  ../sourceFiles/scriptoutput/c-other_copy/adzen/00000000002682ac/00000000002682ac.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/adzen/00000000002682ac/00000000002682ac.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 96/ ../sourceFiles/scriptoutput/c-other_copy/adzen/00000000002682ac/00000000002682ac.c
+doing for 97
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//santosh13/0000000000265483
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//santosh13/0000000000265483/0000000000265483.c.txt  ../sourceFiles/scriptoutput/c-other_copy/santosh13/0000000000265483/0000000000265483.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/santosh13/0000000000265483/0000000000265483.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 97/ ../sourceFiles/scriptoutput/c-other_copy/santosh13/0000000000265483/0000000000265483.c
+doing for 98
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//yash9274/0000000000245af7
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//yash9274/0000000000245af7/0000000000245af7.c.txt  ../sourceFiles/scriptoutput/c-other_copy/yash9274/0000000000245af7/0000000000245af7.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/yash9274/0000000000245af7/0000000000245af7.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 98/ ../sourceFiles/scriptoutput/c-other_copy/yash9274/0000000000245af7/0000000000245af7.c
+doing for 99
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Moulika/000000000021836c
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Moulika/000000000021836c/000000000021836c.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Moulika/000000000021836c/000000000021836c.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Moulika/000000000021836c/000000000021836c.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 99/ ../sourceFiles/scriptoutput/c-other_copy/Moulika/000000000021836c/000000000021836c.c
+doing for 100
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//urda/000000000022651f
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//urda/000000000022651f/000000000022651f.c.txt  ../sourceFiles/scriptoutput/c-other_copy/urda/000000000022651f/000000000022651f.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/urda/000000000022651f/000000000022651f.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 100/ ../sourceFiles/scriptoutput/c-other_copy/urda/000000000022651f/000000000022651f.c
+doing for 101
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//mainak49/00000000002399de
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//mainak49/00000000002399de/00000000002399de.c.txt  ../sourceFiles/scriptoutput/c-other_copy/mainak49/00000000002399de/00000000002399de.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/mainak49/00000000002399de/00000000002399de.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 101/ ../sourceFiles/scriptoutput/c-other_copy/mainak49/00000000002399de/00000000002399de.c
+doing for 102
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//az/00000000002a47be
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//az/00000000002a47be/00000000002a47be.c.txt  ../sourceFiles/scriptoutput/c-other_copy/az/00000000002a47be/00000000002a47be.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/az/00000000002a47be/00000000002a47be.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 102/ ../sourceFiles/scriptoutput/c-other_copy/az/00000000002a47be/00000000002a47be.c
+doing for 103
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//ugurkkkkkk/00000000002351b1
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//ugurkkkkkk/00000000002351b1/00000000002351b1.c.txt  ../sourceFiles/scriptoutput/c-other_copy/ugurkkkkkk/00000000002351b1/00000000002351b1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/ugurkkkkkk/00000000002351b1/00000000002351b1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 103/ ../sourceFiles/scriptoutput/c-other_copy/ugurkkkkkk/00000000002351b1/00000000002351b1.c
+doing for 104
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//praveens/0000000000215c6a
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//praveens/0000000000215c6a/0000000000215c6a.c.txt  ../sourceFiles/scriptoutput/c-other_copy/praveens/0000000000215c6a/0000000000215c6a.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/praveens/0000000000215c6a/0000000000215c6a.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 104/ ../sourceFiles/scriptoutput/c-other_copy/praveens/0000000000215c6a/0000000000215c6a.c
+doing for 105
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//sowmya_sri/0000000000270c3a
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//sowmya_sri/0000000000270c3a/0000000000270c3a.c.txt  ../sourceFiles/scriptoutput/c-other_copy/sowmya_sri/0000000000270c3a/0000000000270c3a.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/sowmya_sri/0000000000270c3a/0000000000270c3a.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 105/ ../sourceFiles/scriptoutput/c-other_copy/sowmya_sri/0000000000270c3a/0000000000270c3a.c
+doing for 106
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//EduPatriots/0000000000226a6c
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//EduPatriots/0000000000226a6c/0000000000226a6c.c.txt  ../sourceFiles/scriptoutput/c-other_copy/EduPatriots/0000000000226a6c/0000000000226a6c.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/EduPatriots/0000000000226a6c/0000000000226a6c.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 106/ ../sourceFiles/scriptoutput/c-other_copy/EduPatriots/0000000000226a6c/0000000000226a6c.c
+doing for 107
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//darknight00/00000000002485ee
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//darknight00/00000000002485ee/00000000002485ee.c.txt  ../sourceFiles/scriptoutput/c-other_copy/darknight00/00000000002485ee/00000000002485ee.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/darknight00/00000000002485ee/00000000002485ee.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 107/ ../sourceFiles/scriptoutput/c-other_copy/darknight00/00000000002485ee/00000000002485ee.c
+doing for 108
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Aryaman100/00000000002746dd
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Aryaman100/00000000002746dd/00000000002746dd.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Aryaman100/00000000002746dd/00000000002746dd.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Aryaman100/00000000002746dd/00000000002746dd.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 108/ ../sourceFiles/scriptoutput/c-other_copy/Aryaman100/00000000002746dd/00000000002746dd.c
+doing for 109
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Shmily.yn/000000000026341e
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Shmily.yn/000000000026341e/000000000026341e.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Shmily.yn/000000000026341e/000000000026341e.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Shmily.yn/000000000026341e/000000000026341e.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 109/ ../sourceFiles/scriptoutput/c-other_copy/Shmily.yn/000000000026341e/000000000026341e.c
+doing for 110
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//diogovilela/00000000002742ec
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//diogovilela/00000000002742ec/00000000002742ec.c.txt  ../sourceFiles/scriptoutput/c-other_copy/diogovilela/00000000002742ec/00000000002742ec.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/diogovilela/00000000002742ec/00000000002742ec.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 110/ ../sourceFiles/scriptoutput/c-other_copy/diogovilela/00000000002742ec/00000000002742ec.c
+doing for 111
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Orian/000000000025fcc2
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Orian/000000000025fcc2/000000000025fcc2.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Orian/000000000025fcc2/000000000025fcc2.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Orian/000000000025fcc2/000000000025fcc2.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 111/ ../sourceFiles/scriptoutput/c-other_copy/Orian/000000000025fcc2/000000000025fcc2.c
+doing for 112
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Begincoder/000000000022d06f
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Begincoder/000000000022d06f/000000000022d06f.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Begincoder/000000000022d06f/000000000022d06f.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Begincoder/000000000022d06f/000000000022d06f.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 112/ ../sourceFiles/scriptoutput/c-other_copy/Begincoder/000000000022d06f/000000000022d06f.c
+doing for 113
+folder: ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Master_Kun/00000000002997a3
+running ctags -f  ../sourceFiles/scriptoutput/c-other_copy_ctag_output//Master_Kun/00000000002997a3/00000000002997a3.c.txt  ../sourceFiles/scriptoutput/c-other_copy/Master_Kun/00000000002997a3/00000000002997a3.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-other_copy/Master_Kun/00000000002997a3/00000000002997a3.c -dfs 10 2>>../sourceFiles/scriptoutput/c-other_scriptLog.txt
+crest: 113/ ../sourceFiles/scriptoutput/c-other_copy/Master_Kun/00000000002997a3/00000000002997a3.c
+Cil files created:
+102
+Running Java Comparison........
+[Done] Analyze "/home/fedora-user/dk-crest-java/trunk/ dk-crest-java --username dek782@gmail.com/crestClean/bashScripts/../sourceFiles/Reports/c-other_comparisionReport.csv"
+  - type 1
+    - {vic357/000000000028ba8f/000000000028ba8f.getcolumns(), vic357/000000000028ba8f/000000000028ba8f.getrows()} [1.0]
+    - {code/avi/000000000026c874/000000000026c874.repeatedc(), code/avi/000000000026c874/000000000026c874.repeatedr()} [0.0]
+    - {dark_titan/000000000028e756/000000000028e756.main(), vic357/000000000028ba8f/000000000028ba8f.main()} [5.0]
+    - {paipim/000000000026b646/000000000026b646.matrixtrace(), vic357/000000000028ba8f/000000000028ba8f.gettrace()} [5.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.colrepeat(), amrita_codejam/0000000000236944/0000000000236944.rowrepeat()} [8.0]
+    - {gurdev/0000000000283b3b/0000000000283b3b.checkrepeatcol(), gurdev/0000000000283b3b/0000000000283b3b.checkrepeatrow()} [0.0]
+  - type 2
+    - {mainak49/00000000002399de/00000000002399de.main(), sandra/ayumi/00000000002188a9/00000000002188a9.main()} [16.0]
+    - {stubbscroll/000000000021509e/000000000021509e.main(), vic357/000000000028ba8f/000000000028ba8f.main()} [16.0]
+    - {rishiy29/000000000021a54e/000000000021a54e.main(), zero0000/000000000028930a/000000000028930a.main()} [13.0]
+    - {gurdev/0000000000283b3b/0000000000283b3b.caltrace(), vic357/000000000028ba8f/000000000028ba8f.gettrace()} [9.0]
+    - {paipim/000000000026b646/000000000026b646.checkcol(), paipim/000000000026b646/000000000026b646.checkrow()} [12.0]
+    - {paipim/000000000026b646/000000000026b646.repcol(), paipim/000000000026b646/000000000026b646.reprow()} [10.0]
+    - {paipim/000000000026b646/000000000026b646.reprow(), vic357/000000000028ba8f/000000000028ba8f.gettrace()} [12.0]
+    - {dark_titan/000000000028e756/000000000028e756.main(), stubbscroll/000000000021509e/000000000021509e.main()} [16.0]
+    - {deepinder_singh/00000000002355ad/00000000002355ad.main(), shashwat007/000000000027f183/000000000027f183.main()} [17.0]
+    - {deepinder_singh/00000000002355ad/00000000002355ad.main(), zero0000/000000000028930a/000000000028930a.main()} [16.0]
+    - {deepinder_singh/00000000002355ad/00000000002355ad.main(), rishiy29/000000000021a54e/000000000021a54e.main()} [16.0]
+    - {paipim/000000000026b646/000000000026b646.matrixtrace(), paipim/000000000026b646/000000000026b646.repcol()} [17.0]
+    - {gurdev/0000000000283b3b/0000000000283b3b.caltrace(), paipim/000000000026b646/000000000026b646.matrixtrace()} [10.0]
+    - {paipim/000000000026b646/000000000026b646.matrixtrace(), paipim/000000000026b646/000000000026b646.reprow()} [12.0]
+    - {gurdev/0000000000283b3b/0000000000283b3b.intializearr(), paipim/000000000026b646/000000000026b646.fillmatrix()} [9.0]
+  - type 3
+    - {hugoht.main(), samiparna/000000000023a8f3/000000000023a8f3.main()} [24.0]
+    - {master_kun/00000000002997a3/00000000002997a3.main(), samiparna/000000000023a8f3/000000000023a8f3.main()} [20.0]
+    - {mainak49/00000000002399de/00000000002399de.main(), samiparna/000000000023a8f3/000000000023a8f3.main()} [18.0]
+    - {mainak49/00000000002399de/00000000002399de.main(), master_kun/00000000002997a3/00000000002997a3.main()} [20.0]
+    - {master_kun/00000000002997a3/00000000002997a3.main(), sandra/ayumi/00000000002188a9/00000000002188a9.main()} [26.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.rowrepeat(), vic357/000000000028ba8f/000000000028ba8f.getcolumns()} [24.0]
+    - {samiparna/000000000023a8f3/000000000023a8f3.main(), shashwat007/000000000027f183/000000000027f183.main()} [25.0]
+    - {master_kun/00000000002997a3/00000000002997a3.main(), shashwat007/000000000027f183/000000000027f183.main()} [22.0]
+    - {mainak49/00000000002399de/00000000002399de.main(), shashwat007/000000000027f183/000000000027f183.main()} [20.0]
+    - {navneettiwari81/0000000000240a4e/0000000000240a4e.main(), shashwat007/000000000027f183/000000000027f183.main()} [26.0]
+    - {sandra/ayumi/00000000002188a9/00000000002188a9.main(), shashwat007/000000000027f183/000000000027f183.main()} [23.0]
+    - {krilin4/000000000027c495/000000000027c495.main(), stubbscroll/000000000021509e/000000000021509e.main()} [26.0]
+    - {dark_titan/000000000028e756/000000000028e756.init_count(), gurdev/0000000000283b3b/0000000000283b3b.freearray()} [25.0]
+    - {mainak49/00000000002399de/00000000002399de.main(), zero0000/000000000028930a/000000000028930a.main()} [23.0]
+    - {shashwat007/000000000027f183/000000000027f183.main(), zero0000/000000000028930a/000000000028930a.main()} [19.0]
+    - {rishiy29/000000000021a54e/000000000021a54e.main(), samiparna/000000000023a8f3/000000000023a8f3.main()} [24.0]
+    - {mainak49/00000000002399de/00000000002399de.main(), rishiy29/000000000021a54e/000000000021a54e.main()} [23.0]
+    - {rishiy29/000000000021a54e/000000000021a54e.main(), shashwat007/000000000027f183/000000000027f183.main()} [20.0]
+    - {master_kun/00000000002997a3/00000000002997a3.main(), nnez/00000000002203ec/00000000002203ec.main()} [26.0]
+    - {nnez/00000000002203ec/00000000002203ec.main(), toava/000000000025ff98/000000000025ff98.main()} [24.0]
+    - {gurdev/0000000000283b3b/0000000000283b3b.caltrace(), gurdev/0000000000283b3b/0000000000283b3b.freearray()} [21.0]
+    - {gurdev/0000000000283b3b/0000000000283b3b.caltrace(), paipim/000000000026b646/000000000026b646.repcol()} [22.0]
+    - {paipim/000000000026b646/000000000026b646.repcol(), vic357/000000000028ba8f/000000000028ba8f.gettrace()} [18.0]
+    - {paipim/000000000026b646/000000000026b646.checkrow(), paipim/000000000026b646/000000000026b646.fillmatrix()} [26.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.rowrepeat(), vic357/000000000028ba8f/000000000028ba8f.getrows()} [23.0]
+    - {dark_titan/000000000028e756/000000000028e756.solve(), stubbscroll/000000000021509e/000000000021509e.solve()} [22.0]
+    - {logic_lover/000000000021c5bd/000000000021c5bd.main(), nnez/00000000002203ec/00000000002203ec.main()} [19.0]
+    - {gurdev/0000000000283b3b/0000000000283b3b.caltrace(), paipim/000000000026b646/000000000026b646.reprow()} [18.0]
+    - {deepinder_singh/00000000002355ad/00000000002355ad.main(), master_kun/00000000002997a3/00000000002997a3.main()} [25.0]
+    - {deepinder_singh/00000000002355ad/00000000002355ad.main(), mainak49/00000000002399de/00000000002399de.main()} [23.0]
+    - {deepinder_singh/00000000002355ad/00000000002355ad.main(), sandra/ayumi/00000000002188a9/00000000002188a9.main()} [25.0]
+    - {nnez/00000000002203ec/00000000002203ec.main(), riti257/00000000002839df/00000000002839df.main()} [24.0]
+    - {logic_lover/000000000021c5bd/000000000021c5bd.main(), riti257/00000000002839df/00000000002839df.main()} [18.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.trace(), paipim/000000000026b646/000000000026b646.fillmatrix()} [22.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.trace(), paipim/000000000026b646/000000000026b646.checkrow()} [20.0]
+    - {aaship/0000000000260023/0000000000260023.main(), toava/000000000025ff98/000000000025ff98.main()} [26.0]
+    - {aaship/0000000000260023/0000000000260023.main(), nnez/00000000002203ec/00000000002203ec.main()} [22.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.trace(), gurdev/0000000000283b3b/0000000000283b3b.intializearr()} [24.0]
+  - type 4
+    - {hugoht.main(), master_kun/00000000002997a3/00000000002997a3.main()} [30.0]
+    - {paipim/000000000026b646/000000000026b646.repcol(), wincodster/0000000000252264/0000000000252264.repeated()} [35.0]
+    - {navneettiwari81/0000000000240a4e/0000000000240a4e.main(), samiparna/000000000023a8f3/000000000023a8f3.main()} [35.0]
+    - {master_kun/00000000002997a3/00000000002997a3.main(), navneettiwari81/0000000000240a4e/0000000000240a4e.main()} [31.0]
+    - {26aish/000000000023879f/000000000023879f.main(), hugoht.main()} [35.0]
+    - {samiparna/000000000023a8f3/000000000023a8f3.main(), toava/000000000025ff98/000000000025ff98.main()} [34.0]
+    - {hugoht.main(), toava/000000000025ff98/000000000025ff98.main()} [33.0]
+    - {master_kun/00000000002997a3/00000000002997a3.main(), toava/000000000025ff98/000000000025ff98.main()} [34.0]
+    - {mainak49/00000000002399de/00000000002399de.main(), toava/000000000025ff98/000000000025ff98.main()} [33.0]
+    - {26aish/000000000023879f/000000000023879f.main(), toava/000000000025ff98/000000000025ff98.main()} [34.0]
+    - {code/avi/000000000026c874/000000000026c874.repeatedr(), vic357/000000000028ba8f/000000000028ba8f.getcolumns()} [31.0]
+    - {hugoht.main(), sandra/ayumi/00000000002188a9/00000000002188a9.main()} [32.0]
+    - {navneettiwari81/0000000000240a4e/0000000000240a4e.main(), sandra/ayumi/00000000002188a9/00000000002188a9.main()} [35.0]
+    - {edupatriots/0000000000226a6c/0000000000226a6c.partition(), wincodster/0000000000252264/0000000000252264.repeated()} [35.0]
+    - {gsitg/0000000000216a9a/0000000000216a9a.main(), samiparna/000000000023a8f3/000000000023a8f3.main()} [35.0]
+    - {gsitg/0000000000216a9a/0000000000216a9a.main(), master_kun/00000000002997a3/00000000002997a3.main()} [35.0]
+    - {gsitg/0000000000216a9a/0000000000216a9a.main(), mainak49/00000000002399de/00000000002399de.main()} [31.0]
+    - {gsitg/0000000000216a9a/0000000000216a9a.main(), navneettiwari81/0000000000240a4e/0000000000240a4e.main()} [34.0]
+    - {gsitg/0000000000216a9a/0000000000216a9a.main(), toava/000000000025ff98/000000000025ff98.main()} [33.0]
+    - {gsitg/0000000000216a9a/0000000000216a9a.main(), sandra/ayumi/00000000002188a9/00000000002188a9.main()} [32.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.rowrepeat(), code/avi/000000000026c874/000000000026c874.repeatedr()} [33.0]
+    - {krilin4/000000000027c495/000000000027c495.main(), vic357/000000000028ba8f/000000000028ba8f.main()} [33.0]
+    - {hugoht.main(), shashwat007/000000000027f183/000000000027f183.main()} [30.0]
+    - {shashwat007/000000000027f183/000000000027f183.main(), toava/000000000025ff98/000000000025ff98.main()} [32.0]
+    - {gsitg/0000000000216a9a/0000000000216a9a.main(), shashwat007/000000000027f183/000000000027f183.main()} [35.0]
+    - {dark_titan/000000000028e756/000000000028e756.init_count(), paipim/000000000026b646/000000000026b646.repcol()} [34.0]
+    - {toava/000000000025ff98/000000000025ff98.main(), zero0000/000000000028930a/000000000028930a.main()} [32.0]
+    - {starzodiac/0000000000276b44/0000000000276b44.main(), zero0000/000000000028930a/000000000028930a.main()} [33.0]
+    - {gsitg/0000000000216a9a/0000000000216a9a.main(), zero0000/000000000028930a/000000000028930a.main()} [34.0]
+    - {dark_titan/000000000028e756/000000000028e756.solve(), sandra/ayumi/00000000002188a9/00000000002188a9.main()} [33.0]
+    - {rishiy29/000000000021a54e/000000000021a54e.main(), toava/000000000025ff98/000000000025ff98.main()} [35.0]
+    - {rishiy29/000000000021a54e/000000000021a54e.main(), starzodiac/0000000000276b44/0000000000276b44.main()} [35.0]
+    - {gsitg/0000000000216a9a/0000000000216a9a.main(), rishiy29/000000000021a54e/000000000021a54e.main()} [35.0]
+    - {paipim/000000000026b646/000000000026b646.checkcol(), vic357/000000000028ba8f/000000000028ba8f.getcolumns()} [32.0]
+    - {code/avi/000000000026c874/000000000026c874.repeatedr(), paipim/000000000026b646/000000000026b646.checkcol()} [32.0]
+    - {paipim/000000000026b646/000000000026b646.checkcol(), paipim/000000000026b646/000000000026b646.fillmatrix()} [32.0]
+    - {mainak49/00000000002399de/00000000002399de.main(), nnez/00000000002203ec/00000000002203ec.main()} [30.0]
+    - {navneettiwari81/0000000000240a4e/0000000000240a4e.main(), nnez/00000000002203ec/00000000002203ec.main()} [32.0]
+    - {26aish/000000000023879f/000000000023879f.main(), nnez/00000000002203ec/00000000002203ec.main()} [35.0]
+    - {nnez/00000000002203ec/00000000002203ec.main(), sandra/ayumi/00000000002188a9/00000000002188a9.main()} [31.0]
+    - {nnez/00000000002203ec/00000000002203ec.main(), rishiy29/000000000021a54e/000000000021a54e.main()} [32.0]
+    - {dark_titan/000000000028e756/000000000028e756.init_count(), gurdev/0000000000283b3b/0000000000283b3b.caltrace()} [31.0]
+    - {vic357/000000000028ba8f/000000000028ba8f.gettrace(), wincodster/0000000000252264/0000000000252264.repeated()} [35.0]
+    - {dark_titan/000000000028e756/000000000028e756.init_count(), vic357/000000000028ba8f/000000000028ba8f.gettrace()} [34.0]
+    - {mainak49/00000000002399de/00000000002399de.main(), monna4335/000000000027b505/000000000027b505.main()} [32.0]
+    - {monna4335/000000000027b505/000000000027b505.main(), shashwat007/000000000027f183/000000000027f183.main()} [32.0]
+    - {monna4335/000000000027b505/000000000027b505.main(), zero0000/000000000028930a/000000000028930a.main()} [32.0]
+    - {dark_titan/000000000028e756/000000000028e756.solve(), monna4335/000000000027b505/000000000027b505.main()} [35.0]
+    - {monna4335/000000000027b505/000000000027b505.main(), rishiy29/000000000021a54e/000000000021a54e.main()} [30.0]
+    - {paipim/000000000026b646/000000000026b646.checkrow(), wincodster/0000000000252264/0000000000252264.repeated()} [33.0]
+    - {code/avi/000000000026c874/000000000026c874.repeatedr(), vic357/000000000028ba8f/000000000028ba8f.getrows()} [31.0]
+    - {paipim/000000000026b646/000000000026b646.checkcol(), vic357/000000000028ba8f/000000000028ba8f.getrows()} [32.0]
+    - {mainak49/00000000002399de/00000000002399de.main(), stubbscroll/000000000021509e/000000000021509e.solve()} [31.0]
+    - {sandra/ayumi/00000000002188a9/00000000002188a9.main(), stubbscroll/000000000021509e/000000000021509e.solve()} [33.0]
+    - {rishiy29/000000000021a54e/000000000021a54e.main(), stubbscroll/000000000021509e/000000000021509e.solve()} [35.0]
+    - {monna4335/000000000027b505/000000000027b505.main(), stubbscroll/000000000021509e/000000000021509e.solve()} [32.0]
+    - {code/avi/000000000026c874/000000000026c874.repeatedc(), vic357/000000000028ba8f/000000000028ba8f.getcolumns()} [31.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.rowrepeat(), code/avi/000000000026c874/000000000026c874.repeatedc()} [33.0]
+    - {code/avi/000000000026c874/000000000026c874.repeatedc(), paipim/000000000026b646/000000000026b646.checkcol()} [32.0]
+    - {code/avi/000000000026c874/000000000026c874.repeatedc(), vic357/000000000028ba8f/000000000028ba8f.getrows()} [31.0]
+    - {logic_lover/000000000021c5bd/000000000021c5bd.main(), samiparna/000000000023a8f3/000000000023a8f3.main()} [30.0]
+    - {logic_lover/000000000021c5bd/000000000021c5bd.main(), master_kun/00000000002997a3/00000000002997a3.main()} [31.0]
+    - {logic_lover/000000000021c5bd/000000000021c5bd.main(), toava/000000000025ff98/000000000025ff98.main()} [34.0]
+    - {logic_lover/000000000021c5bd/000000000021c5bd.main(), sandra/ayumi/00000000002188a9/00000000002188a9.main()} [32.0]
+    - {gsitg/0000000000216a9a/0000000000216a9a.main(), logic_lover/000000000021c5bd/000000000021c5bd.main()} [32.0]
+    - {gurdev/0000000000283b3b/0000000000283b3b.freearray(), paipim/000000000026b646/000000000026b646.reprow()} [30.0]
+    - {paipim/000000000026b646/000000000026b646.reprow(), wincodster/0000000000252264/0000000000252264.repeated()} [35.0]
+    - {books/0000000000226dc6/0000000000226dc6.main(), hugoht.main()} [35.0]
+    - {books/0000000000226dc6/0000000000226dc6.main(), mainak49/00000000002399de/00000000002399de.main()} [35.0]
+    - {books/0000000000226dc6/0000000000226dc6.main(), gsitg/0000000000216a9a/0000000000216a9a.main()} [34.0]
+    - {books/0000000000226dc6/0000000000226dc6.main(), nnez/00000000002203ec/00000000002203ec.main()} [35.0]
+    - {adzen/00000000002682ac/00000000002682ac.main(), books/0000000000226dc6/0000000000226dc6.main()} [34.0]
+    - {dark_titan/000000000028e756/000000000028e756.main(), krilin4/000000000027c495/000000000027c495.main()} [34.0]
+    - {deepinder_singh/00000000002355ad/00000000002355ad.main(), samiparna/000000000023a8f3/000000000023a8f3.main()} [31.0]
+    - {deepinder_singh/00000000002355ad/00000000002355ad.main(), hugoht.main()} [33.0]
+    - {deepinder_singh/00000000002355ad/00000000002355ad.main(), navneettiwari81/0000000000240a4e/0000000000240a4e.main()} [32.0]
+    - {deepinder_singh/00000000002355ad/00000000002355ad.main(), toava/000000000025ff98/000000000025ff98.main()} [35.0]
+    - {deepinder_singh/00000000002355ad/00000000002355ad.main(), nnez/00000000002203ec/00000000002203ec.main()} [31.0]
+    - {deepinder_singh/00000000002355ad/00000000002355ad.main(), monna4335/000000000027b505/000000000027b505.main()} [31.0]
+    - {deepinder_singh/00000000002355ad/00000000002355ad.main(), stubbscroll/000000000021509e/000000000021509e.solve()} [35.0]
+    - {deepinder_singh/00000000002355ad/00000000002355ad.main(), logic_lover/000000000021c5bd/000000000021c5bd.main()} [31.0]
+    - {ajpasic/00000000002a3e61/00000000002a3e61.main(), edupatriots/0000000000226a6c/0000000000226a6c.main()} [34.0]
+    - {ajpasic/00000000002a3e61/00000000002a3e61.main(), mainak49/00000000002399de/00000000002399de.main()} [34.0]
+    - {ajpasic/00000000002a3e61/00000000002a3e61.main(), starzodiac/0000000000276b44/0000000000276b44.main()} [32.0]
+    - {ajpasic/00000000002a3e61/00000000002a3e61.main(), shashwat007/000000000027f183/000000000027f183.main()} [35.0]
+    - {ajpasic/00000000002a3e61/00000000002a3e61.main(), zero0000/000000000028930a/000000000028930a.main()} [30.0]
+    - {ajpasic/00000000002a3e61/00000000002a3e61.main(), deepinder_singh/00000000002355ad/00000000002355ad.main()} [32.0]
+    - {riti257/00000000002839df/00000000002839df.main(), sandra/ayumi/00000000002188a9/00000000002188a9.main()} [30.0]
+    - {gsitg/0000000000216a9a/0000000000216a9a.main(), riti257/00000000002839df/00000000002839df.main()} [34.0]
+    - {monna4335/000000000027b505/000000000027b505.main(), riti257/00000000002839df/00000000002839df.main()} [34.0]
+    - {deepinder_singh/00000000002355ad/00000000002355ad.main(), riti257/00000000002839df/00000000002839df.main()} [31.0]
+    - {vic357/000000000028ba8f/000000000028ba8f.main(), viveksg/000000000027f860/000000000027f860.reset()} [31.0]
+    - {dark_titan/000000000028e756/000000000028e756.main(), viveksg/000000000027f860/000000000027f860.reset()} [32.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.trace(), wincodster/0000000000252264/0000000000252264.repeated()} [34.0]
+    - {dark_titan/000000000028e756/000000000028e756.init_count(), paipim/000000000026b646/000000000026b646.matrixtrace()} [34.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.colrepeat(), vic357/000000000028ba8f/000000000028ba8f.getcolumns()} [30.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.colrepeat(), vic357/000000000028ba8f/000000000028ba8f.getrows()} [30.0]
+    - {danu4/0000000000241aa2/0000000000241aa2.eval(), krilin4/000000000027c495/000000000027c495.escribir_salida()} [31.0]
+    - {gurdev/0000000000283b3b/0000000000283b3b.main(), paipim/000000000026b646/000000000026b646.main()} [34.0]
+    - {aaship/0000000000260023/0000000000260023.main(), hugoht.main()} [33.0]
+    - {aaship/0000000000260023/0000000000260023.main(), master_kun/00000000002997a3/00000000002997a3.main()} [35.0]
+    - {aaship/0000000000260023/0000000000260023.main(), mainak49/00000000002399de/00000000002399de.main()} [34.0]
+    - {aaship/0000000000260023/0000000000260023.main(), sandra/ayumi/00000000002188a9/00000000002188a9.main()} [35.0]
+    - {aaship/0000000000260023/0000000000260023.main(), gsitg/0000000000216a9a/0000000000216a9a.main()} [32.0]
+    - {aaship/0000000000260023/0000000000260023.main(), shashwat007/000000000027f183/000000000027f183.main()} [33.0]
+    - {aaship/0000000000260023/0000000000260023.main(), zero0000/000000000028930a/000000000028930a.main()} [34.0]
+    - {aaship/0000000000260023/0000000000260023.main(), logic_lover/000000000021c5bd/000000000021c5bd.main()} [30.0]
+    - {aaship/0000000000260023/0000000000260023.main(), deepinder_singh/00000000002355ad/00000000002355ad.main()} [35.0]
+    - {aaship/0000000000260023/0000000000260023.main(), riti257/00000000002839df/00000000002839df.main()} [32.0]
+    - {krilin4/000000000027c495/000000000027c495.leer_filas_y_columnas(), vic357/000000000028ba8f/000000000028ba8f.problem()} [33.0]
+    - {gurdev/0000000000283b3b/0000000000283b3b.intializearr(), paipim/000000000026b646/000000000026b646.checkrow()} [30.0]
+  - others
+    - {gurdev/0000000000283b3b/0000000000283b3b.checkrepeatrow(), vic357/000000000028ba8f/000000000028ba8f.getcolumns()} [39.0]
+    - {edupatriots/0000000000226a6c/0000000000226a6c.main(), mainak49/00000000002399de/00000000002399de.main()} [38.0]
+    - {hugoht.main(), navneettiwari81/0000000000240a4e/0000000000240a4e.main()} [36.0]
+    - {26aish/000000000023879f/000000000023879f.main(), samiparna/000000000023a8f3/000000000023a8f3.main()} [38.0]
+    - {26aish/000000000023879f/000000000023879f.main(), master_kun/00000000002997a3/00000000002997a3.main()} [39.0]
+    - {26aish/000000000023879f/000000000023879f.main(), mainak49/00000000002399de/00000000002399de.main()} [38.0]
+    - {navneettiwari81/0000000000240a4e/0000000000240a4e.main(), toava/000000000025ff98/000000000025ff98.main()} [38.0]
+    - {mainak49/00000000002399de/00000000002399de.main(), starzodiac/0000000000276b44/0000000000276b44.main()} [37.0]
+    - {sandra/ayumi/00000000002188a9/00000000002188a9.main(), toava/000000000025ff98/000000000025ff98.main()} [36.0]
+    - {edupatriots/0000000000226a6c/0000000000226a6c.partition(), paipim/000000000026b646/000000000026b646.repcol()} [39.0]
+    - {26aish/000000000023879f/000000000023879f.main(), gsitg/0000000000216a9a/0000000000216a9a.main()} [38.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.rowrepeat(), gurdev/0000000000283b3b/0000000000283b3b.checkrepeatrow()} [39.0]
+    - {26aish/000000000023879f/000000000023879f.main(), shashwat007/000000000027f183/000000000027f183.main()} [37.0]
+    - {shashwat007/000000000027f183/000000000027f183.main(), starzodiac/0000000000276b44/0000000000276b44.main()} [36.0]
+    - {stubbscroll/000000000021509e/000000000021509e.main(), viveksg/000000000027f860/000000000027f860.main()} [36.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.main(), wincodster/0000000000252264/0000000000252264.main()} [37.0]
+    - {code/avi/000000000026c874/000000000026c874.main(), wincodster/0000000000252264/0000000000252264.main()} [38.0]
+    - {edupatriots/0000000000226a6c/0000000000226a6c.main(), zero0000/000000000028930a/000000000028930a.main()} [37.0]
+    - {26aish/000000000023879f/000000000023879f.main(), zero0000/000000000028930a/000000000028930a.main()} [37.0]
+    - {dark_titan/000000000028e756/000000000028e756.solve(), master_kun/00000000002997a3/00000000002997a3.main()} [39.0]
+    - {dark_titan/000000000028e756/000000000028e756.solve(), mainak49/00000000002399de/00000000002399de.main()} [39.0]
+    - {dark_titan/000000000028e756/000000000028e756.solve(), shashwat007/000000000027f183/000000000027f183.main()} [39.0]
+    - {dark_titan/000000000028e756/000000000028e756.solve(), zero0000/000000000028930a/000000000028930a.main()} [39.0]
+    - {edupatriots/0000000000226a6c/0000000000226a6c.main(), rishiy29/000000000021a54e/000000000021a54e.main()} [37.0]
+    - {26aish/000000000023879f/000000000023879f.main(), rishiy29/000000000021a54e/000000000021a54e.main()} [37.0]
+    - {dark_titan/000000000028e756/000000000028e756.solve(), rishiy29/000000000021a54e/000000000021a54e.main()} [38.0]
+    - {paipim/000000000026b646/000000000026b646.fillmatrix(), wincodster/0000000000252264/0000000000252264.repeated()} [37.0]
+    - {paipim/000000000026b646/000000000026b646.checkcol(), wincodster/0000000000252264/0000000000252264.repeated()} [39.0]
+    - {edupatriots/0000000000226a6c/0000000000226a6c.partition(), paipim/000000000026b646/000000000026b646.checkcol()} [39.0]
+    - {dark_titan/000000000028e756/000000000028e756.solve(), nnez/00000000002203ec/00000000002203ec.main()} [39.0]
+    - {gurdev/0000000000283b3b/0000000000283b3b.caltrace(), wincodster/0000000000252264/0000000000252264.repeated()} [37.0]
+    - {edupatriots/0000000000226a6c/0000000000226a6c.partition(), vic357/000000000028ba8f/000000000028ba8f.gettrace()} [38.0]
+    - {paipim/000000000026b646/000000000026b646.fillmatrix(), vic357/000000000028ba8f/000000000028ba8f.gettrace()} [39.0]
+    - {monna4335/000000000027b505/000000000027b505.main(), samiparna/000000000023a8f3/000000000023a8f3.main()} [37.0]
+    - {master_kun/00000000002997a3/00000000002997a3.main(), monna4335/000000000027b505/000000000027b505.main()} [38.0]
+    - {monna4335/000000000027b505/000000000027b505.main(), navneettiwari81/0000000000240a4e/0000000000240a4e.main()} [36.0]
+    - {monna4335/000000000027b505/000000000027b505.main(), toava/000000000025ff98/000000000025ff98.main()} [39.0]
+    - {monna4335/000000000027b505/000000000027b505.main(), starzodiac/0000000000276b44/0000000000276b44.main()} [39.0]
+    - {monna4335/000000000027b505/000000000027b505.main(), sandra/ayumi/00000000002188a9/00000000002188a9.main()} [36.0]
+    - {paipim/000000000026b646/000000000026b646.checkrow(), vic357/000000000028ba8f/000000000028ba8f.getcolumns()} [37.0]
+    - {code/avi/000000000026c874/000000000026c874.repeatedr(), paipim/000000000026b646/000000000026b646.checkrow()} [37.0]
+    - {edupatriots/0000000000226a6c/0000000000226a6c.partition(), paipim/000000000026b646/000000000026b646.checkrow()} [37.0]
+    - {gurdev/0000000000283b3b/0000000000283b3b.checkrepeatrow(), vic357/000000000028ba8f/000000000028ba8f.getrows()} [39.0]
+    - {paipim/000000000026b646/000000000026b646.checkrow(), vic357/000000000028ba8f/000000000028ba8f.getrows()} [37.0]
+    - {shashwat007/000000000027f183/000000000027f183.main(), stubbscroll/000000000021509e/000000000021509e.solve()} [38.0]
+    - {stubbscroll/000000000021509e/000000000021509e.solve(), zero0000/000000000028930a/000000000028930a.main()} [37.0]
+    - {adzen/00000000002682ac/00000000002682ac.main(), samiparna/000000000023a8f3/000000000023a8f3.main()} [39.0]
+    - {adzen/00000000002682ac/00000000002682ac.main(), hugoht.main()} [38.0]
+    - {adzen/00000000002682ac/00000000002682ac.main(), code/avi/000000000026c874/000000000026c874.main()} [36.0]
+    - {adzen/00000000002682ac/00000000002682ac.main(), gsitg/0000000000216a9a/0000000000216a9a.main()} [39.0]
+    - {code/avi/000000000026c874/000000000026c874.repeatedc(), paipim/000000000026b646/000000000026b646.checkrow()} [37.0]
+    - {logic_lover/000000000021c5bd/000000000021c5bd.main(), monna4335/000000000027b505/000000000027b505.main()} [36.0]
+    - {logic_lover/000000000021c5bd/000000000021c5bd.main(), stubbscroll/000000000021509e/000000000021509e.solve()} [39.0]
+    - {gurdev/0000000000283b3b/0000000000283b3b.main(), wincodster/0000000000252264/0000000000252264.main()} [38.0]
+    - {edupatriots/0000000000226a6c/0000000000226a6c.partition(), paipim/000000000026b646/000000000026b646.reprow()} [36.0]
+    - {dark_titan/000000000028e756/000000000028e756.init_count(), paipim/000000000026b646/000000000026b646.reprow()} [37.0]
+    - {paipim/000000000026b646/000000000026b646.fillmatrix(), paipim/000000000026b646/000000000026b646.reprow()} [37.0]
+    - {books/0000000000226dc6/0000000000226dc6.main(), master_kun/00000000002997a3/00000000002997a3.main()} [37.0]
+    - {books/0000000000226dc6/0000000000226dc6.main(), navneettiwari81/0000000000240a4e/0000000000240a4e.main()} [38.0]
+    - {books/0000000000226dc6/0000000000226dc6.main(), sandra/ayumi/00000000002188a9/00000000002188a9.main()} [37.0]
+    - {books/0000000000226dc6/0000000000226dc6.main(), shashwat007/000000000027f183/000000000027f183.main()} [37.0]
+    - {books/0000000000226dc6/0000000000226dc6.main(), rishiy29/000000000021a54e/000000000021a54e.main()} [38.0]
+    - {books/0000000000226dc6/0000000000226dc6.main(), logic_lover/000000000021c5bd/000000000021c5bd.main()} [38.0]
+    - {26aish/000000000023879f/000000000023879f.main(), deepinder_singh/00000000002355ad/00000000002355ad.main()} [37.0]
+    - {deepinder_singh/00000000002355ad/00000000002355ad.main(), starzodiac/0000000000276b44/0000000000276b44.main()} [36.0]
+    - {deepinder_singh/00000000002355ad/00000000002355ad.main(), gsitg/0000000000216a9a/0000000000216a9a.main()} [36.0]
+    - {dark_titan/000000000028e756/000000000028e756.solve(), deepinder_singh/00000000002355ad/00000000002355ad.main()} [37.0]
+    - {ajpasic/00000000002a3e61/00000000002a3e61.main(), master_kun/00000000002997a3/00000000002997a3.main()} [37.0]
+    - {26aish/000000000023879f/000000000023879f.main(), ajpasic/00000000002a3e61/00000000002a3e61.main()} [36.0]
+    - {ajpasic/00000000002a3e61/00000000002a3e61.main(), toava/000000000025ff98/000000000025ff98.main()} [37.0]
+    - {ajpasic/00000000002a3e61/00000000002a3e61.main(), sandra/ayumi/00000000002188a9/00000000002188a9.main()} [39.0]
+    - {ajpasic/00000000002a3e61/00000000002a3e61.main(), nnez/00000000002203ec/00000000002203ec.main()} [39.0]
+    - {ajpasic/00000000002a3e61/00000000002a3e61.main(), monna4335/000000000027b505/000000000027b505.main()} [38.0]
+    - {ajpasic/00000000002a3e61/00000000002a3e61.main(), logic_lover/000000000021c5bd/000000000021c5bd.main()} [37.0]
+    - {riti257/00000000002839df/00000000002839df.main(), toava/000000000025ff98/000000000025ff98.main()} [36.0]
+    - {books/0000000000226dc6/0000000000226dc6.main(), riti257/00000000002839df/00000000002839df.main()} [39.0]
+    - {ajpasic/00000000002a3e61/00000000002a3e61.main(), riti257/00000000002839df/00000000002839df.main()} [37.0]
+    - {stubbscroll/000000000021509e/000000000021509e.main(), viveksg/000000000027f860/000000000027f860.reset()} [38.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.trace(), code/avi/000000000026c874/000000000026c874.repeatedr()} [38.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.trace(), edupatriots/0000000000226a6c/0000000000226a6c.partition()} [38.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.trace(), vic357/000000000028ba8f/000000000028ba8f.gettrace()} [39.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.trace(), code/avi/000000000026c874/000000000026c874.repeatedc()} [38.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.trace(), paipim/000000000026b646/000000000026b646.reprow()} [39.0]
+    - {paipim/000000000026b646/000000000026b646.matrixtrace(), wincodster/0000000000252264/0000000000252264.repeated()} [36.0]
+    - {edupatriots/0000000000226a6c/0000000000226a6c.partition(), paipim/000000000026b646/000000000026b646.matrixtrace()} [38.0]
+    - {paipim/000000000026b646/000000000026b646.fillmatrix(), paipim/000000000026b646/000000000026b646.matrixtrace()} [37.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.colrepeat(), code/avi/000000000026c874/000000000026c874.repeatedr()} [37.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.colrepeat(), code/avi/000000000026c874/000000000026c874.repeatedc()} [37.0]
+    - {danu4/0000000000241aa2/0000000000241aa2.eval(), wincodster/0000000000252264/0000000000252264.compute()} [37.0]
+    - {danu4/0000000000241aa2/0000000000241aa2.eval(), dark_titan/000000000028e756/000000000028e756.solve()} [39.0]
+    - {krilin4/000000000027c495/000000000027c495.main(), paipim/000000000026b646/000000000026b646.main()} [36.0]
+    - {gurdev/0000000000283b3b/0000000000283b3b.checkrepeatcol(), vic357/000000000028ba8f/000000000028ba8f.getcolumns()} [39.0]
+    - {amrita_codejam/0000000000236944/0000000000236944.rowrepeat(), gurdev/0000000000283b3b/0000000000283b3b.checkrepeatcol()} [39.0]
+    - {gurdev/0000000000283b3b/0000000000283b3b.checkrepeatcol(), vic357/000000000028ba8f/000000000028ba8f.getrows()} [39.0]
+    - {aaship/0000000000260023/0000000000260023.main(), samiparna/000000000023a8f3/000000000023a8f3.main()} [37.0]
+    - {aaship/0000000000260023/0000000000260023.main(), navneettiwari81/0000000000240a4e/0000000000240a4e.main()} [36.0]
+    - {26aish/000000000023879f/000000000023879f.main(), aaship/0000000000260023/0000000000260023.main()} [39.0]
+    - {aaship/0000000000260023/0000000000260023.main(), rishiy29/000000000021a54e/000000000021a54e.main()} [37.0]
+    - {aaship/0000000000260023/0000000000260023.main(), books/0000000000226dc6/0000000000226dc6.main()} [37.0]
+    - {gurdev/0000000000283b3b/0000000000283b3b.intializearr(), paipim/000000000026b646/000000000026b646.checkcol()} [36.0]
+    - {gurdev/0000000000283b3b/0000000000283b3b.caltrace(), gurdev/0000000000283b3b/0000000000283b3b.intializearr()} [39.0]
+======= Clones =======
+Type-1: 6
+Type-2: 15
+Type-3: 38
+Type-4: 111
+Clones: 170 --- Others: 101
+Max-Dist: 39.0
+Min-Dist: 0.0
+/home/fedora-user/dk-crest-java/trunk/ dk-crest-java --username dek782@gmail.com/crestClean/bashScripts/../sourceFiles/Reports/c-other_comparisionReport.csv

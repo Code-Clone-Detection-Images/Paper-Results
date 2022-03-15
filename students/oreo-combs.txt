@@ -1,0 +1,399 @@
+oreo-runscript Combinations > oreo-combs.txt  0,04s user 0,04s system 0% cpu 3:07,06 total
+
+[Script] Using docker: Docker version 20.10.12, build e91ed5707e
+Step 1: setup metric
+Buildfile: /home/oreo-user/oreo/java-parser/build.xml
+
+clean:
+   [delete] Deleting directory /home/oreo-user/oreo/java-parser/build
+   [delete] Deleting directory /home/oreo-user/oreo/java-parser/dist
+
+compile:
+    [mkdir] Created dir: /home/oreo-user/oreo/java-parser/build/classes
+    [mkdir] Created dir: /home/oreo-user/oreo/java-parser/dist
+    [javac] Compiling 18 source files to /home/oreo-user/oreo/java-parser/build/classes
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+JarMetric:
+      [jar] Building jar: /home/oreo-user/oreo/java-parser/dist/metricCalculator.jar
+
+metric:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+Step 2: run the metric calculation [/home/oreo-user/data/Combinations]
+> /home/oreo-user/data/Combinations/a
+running new command java -jar ../java-parser/dist/metricCalculator.jar /home/oreo-user/oreo/python_scripts/output/1.txt dir
+[Waiting] Waiting for './1_metric_output' [0/20]
+[Ljava.lang.String;@6d6f6e28
+Writing To: 1_metric_output/mlcc_input.file
+length
+println()
+processing directory: /home/oreo-user/data/Combinations/a
+checking:/home/oreo-user/data/Combinations/a
+Added: /home/oreo-user/data/Combinations/a/OF3yQYaVBKwZRziuSBjiFn76G.java
+Added: /home/oreo-user/data/Combinations/a/Px0HRbss5XjsGzrJA92eYdjO9.java
+Added: /home/oreo-user/data/Combinations/a/Ei1al8NNmzeBmE6G2uzMnUU6m.java
+Added: /home/oreo-user/data/Combinations/a/BSNRqLQuLxA3FFdOgGVjx6Bf2.java
+Added: /home/oreo-user/data/Combinations/a/VHRsQYthtC837Ydh8zSqJ0ptK.java
+Added: /home/oreo-user/data/Combinations/a/VCM0YsoBiMjjLudqhIfOZgXtr.java
+Added: /home/oreo-user/data/Combinations/a/YWphf4XGYjS8bSEiNdJRYJRzi.java
+Added: /home/oreo-user/data/Combinations/a/SRXtVoMM9BWIiK0yg944DtJ9z.java
+Added: /home/oreo-user/data/Combinations/a/UcB2rLvnGYKZX4wY8oNotqaHO.java
+Added: /home/oreo-user/data/Combinations/a/BIjYyL012HuyrVOhK7mitnjZD.java
+Added: /home/oreo-user/data/Combinations/a/X7b8C1pk3uvKKJdapwCDHW7vy.java
+Added: /home/oreo-user/data/Combinations/a/EujpaFUayyiNJRl21q3SiF22Q.java
+Added: /home/oreo-user/data/Combinations/a/IFTl4hEcGtwzSTOSly86kXyLx.java
+Added: /home/oreo-user/data/Combinations/a/MdpDlZWnyKi87y3Ec93UQMbia.java
+Added: /home/oreo-user/data/Combinations/a/TJL8ZP7uWFLhoxp44g1DTnXlj.java
+Added: /home/oreo-user/data/Combinations/a/S36q1bRMRYIpv3O1b7PLJxYIF.java
+Added: /home/oreo-user/data/Combinations/a/GPqBr5YvhVTI63UeYIhioldNf.java
+Added: /home/oreo-user/data/Combinations/a/HMGHn2tdhoIl2pZuu2r89whOg.java
+Added: /home/oreo-user/data/Combinations/a/ZWVF7URDCRKni9W8vNrRfXEqA.java
+Added: /home/oreo-user/data/Combinations/a/SGmibl1SujHb2XgSnDAvscQod.java
+Added: /home/oreo-user/data/Combinations/a/NLnI7Mzlr5VlJadF8pjIQCNXk.java
+Metricalizing OF3yQYaVBKwZRziuSBjiFn76G.java
+Visiting done.
+writing a,OF3yQYaVBKwZRziuSBjiFn76G.java,5,8,main,13,12,2c7dc67d7c8d4931b8eb48c05f6d2b8f,11,11001@#@1,2,9,0.0,1,0,1,1,0,0,0,0,0,9,0,1,1,8,0,0,0,5,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@3
+
+writing a,OF3yQYaVBKwZRziuSBjiFn76G.java,10,13,printCombinations,14,9,6353220bd2ffe767af1f48140775bd48,11,11002@#@1,2,6,0.0,0,0,1,2,0,0,0,0,0,10,3,1,1,6,0,0,0,1,0,0@#@printCombinationHelper():1@#@@#@_@printCombinations@_:1@#@3
+
+writing a,OF3yQYaVBKwZRziuSBjiFn76G.java,15,28,printCombinationHelper,41,21,20d5470ed3c97445a710c0e0a80a21bb,11,11003@#@3,7,26,2209.2066675263136,2,2,1,4,10,1,0,0,0,34,15,13,2,33,1,0,0,3,0,0@#@toString():1,printCombinationHelper():1,out:1,arrayAccess[]:2@#@length:1,println():1@#@_@printCombinationHelper@_:1@#@10
+
+Metricalizing Px0HRbss5XjsGzrJA92eYdjO9.java
+Visiting done.
+writing a,Px0HRbss5XjsGzrJA92eYdjO9.java,3,8,printCombinations,19,11,8821410ab14daf25fb75121b687573fc,12,12004@#@2,3,9,107.77745004903863,0,0,1,2,2,0,0,0,0,15,6,2,2,11,0,0,0,2,0,0@#@wahnsinnig():1@#@length:1@#@_@printCombinations@_:1@#@5
+
+writing a,Px0HRbss5XjsGzrJA92eYdjO9.java,10,21,wahnsinnig,47,23,6eab799fbd14d80241b002817f2a95ce,12,12005@#@3,6,27,2567.6392511682734,3,3,1,5,10,1,0,0,0,40,17,14,3,39,1,0,0,3,0,2@#@toString():1,wahnsinnig():1,replaceAll():1,out:1,arrayAccess[]:2@#@length:1,println():1@#@_@wahnsinnig@_:1@#@10
+
+writing a,Px0HRbss5XjsGzrJA92eYdjO9.java,23,26,main,17,15,5c2ae26494641cdabd82dc51597d1667,12,12006@#@1,3,13,55.506595772116384,1,0,1,1,1,1,0,0,0,13,1,2,1,11,0,0,0,7,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@4
+
+Metricalizing Ei1al8NNmzeBmE6G2uzMnUU6m.java
+Visiting done.
+writing a,Ei1al8NNmzeBmE6G2uzMnUU6m.java,2,5,main,15,13,236df1b20b630d77d0e309a540cdc101,13,13007@#@1,3,11,44.97261104228487,1,0,1,1,1,1,0,0,0,11,1,2,1,9,0,0,0,5,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@4
+
+writing a,Ei1al8NNmzeBmE6G2uzMnUU6m.java,6,14,printCombinations,23,17,206e7071c2d4d2d192b7cc38ef09c310,13,13008@#@2,5,15,164.0894050155578,1,1,1,2,2,0,0,0,0,17,6,4,2,14,0,0,0,1,0,2@#@help():1,out:1@#@length:1,println():1@#@_@printCombinations@_:1@#@8
+
+writing a,Ei1al8NNmzeBmE6G2uzMnUU6m.java,15,31,help,53,20,d72cfaa8db2ae635c48f6a70ccd4321e,13,13009@#@4,7,26,2961.277022428889,2,1,2,5,10,1,0,0,0,47,25,16,3,47,1,0,0,3,0,1@#@help():2,out:1,arrayAccess[]:2@#@length:2,println():1@#@_@help@_:1@#@12
+
+Metricalizing BSNRqLQuLxA3FFdOgGVjx6Bf2.java
+Visiting done.
+writing a,BSNRqLQuLxA3FFdOgGVjx6Bf2.java,2,9,main,31,21,ed65676f5557ad709d8c54f3270fd385,14,140010@#@1,7,19,131.68575291675114,3,2,1,1,1,3,0,0,0,25,5,6,1,23,0,0,0,5,0,2@#@printCombination():1,out:2@#@length:1,println():2@#@_@main@_:1@#@8
+
+writing a,BSNRqLQuLxA3FFdOgGVjx6Bf2.java,11,23,BSNRqLQuLxA3FFdOgGVjx6Bf2,62,24,b44b2746e2547856636b30169ba39f8a,14,140011@#@4,9,32,8190.0,3,2,1,6,21,2,0,0,0,55,25,23,2,57,2,0,0,4,0,2@#@print():1,BSNRqLQuLxA3FFdOgGVjx6Bf2():1,out:2,arrayAccess[]:3@#@println():1@#@_@BSNRqLQuLxA3FFdOgGVjx6Bf2@_:1@#@11
+
+writing a,BSNRqLQuLxA3FFdOgGVjx6Bf2.java,25,28,printCombination,22,12,0caee18fa5fd7b97dd6ef2444a4b17b9,14,140012@#@1,3,11,145.2961279827665,1,0,1,3,2,1,0,0,0,18,5,3,1,12,0,0,0,3,0,0@#@BSNRqLQuLxA3FFdOgGVjx6Bf2():1@#@@#@_@printCombination@_:1@#@4
+
+Metricalizing VHRsQYthtC837Ydh8zSqJ0ptK.java
+Visiting done.
+writing a,VHRsQYthtC837Ydh8zSqJ0ptK.java,10,13,main,17,14,d9440bc272fedd368dbc7e59393e5e5e,15,150013@#@1,3,12,53.77443751081735,1,0,1,1,1,1,0,0,0,13,1,2,1,11,0,0,0,6,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@4
+
+writing a,VHRsQYthtC837Ydh8zSqJ0ptK.java,15,19,printCombinations,16,11,1e122b80a210e7ea7d1f2876684bb20c,15,150014@#@2,3,9,44.37895002019238,0,0,1,2,1,0,0,0,0,12,5,2,2,8,0,0,0,0,0,1@#@nextPlace():1@#@length:1@#@_@printCombinations@_:1@#@5
+
+writing a,VHRsQYthtC837Ydh8zSqJ0ptK.java,21,35,nextPlace,54,24,bd3557933d66558ab70b3c6df67dcb0a,15,150015@#@5,9,32,5040.0,3,3,1,3,14,2,0,0,0,47,20,25,3,58,1,0,0,5,0,5@#@equals():1,contains():1,nextPlace():1,out:1,arrayAccess[]:4@#@length:1,println():1@#@_@nextPlace@_:1@#@13
+
+Metricalizing VCM0YsoBiMjjLudqhIfOZgXtr.java
+Visiting done.
+writing a,VCM0YsoBiMjjLudqhIfOZgXtr.java,7,22,printCombinations,62,22,670f74fa7858353b5503be288fdb6b82,16,160016@#@6,14,27,6333.51015288174,2,6,0,2,18,1,0,0,0,52,29,22,2,62,1,0,0,7,0,0@#@copyOfRange():2,toString():1,printCombinations():2,out:1,arrayAccess[]:2@#@length:4,println():1@#@_@printCombinations@_:1@#@17
+
+writing a,VCM0YsoBiMjjLudqhIfOZgXtr.java,24,26,main,13,12,2c7dc67d7c8d4931b8eb48c05f6d2b8f,16,160017@#@1,2,9,0.0,1,0,1,1,0,0,0,0,0,9,0,1,1,8,0,0,0,5,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@3
+
+Metricalizing YWphf4XGYjS8bSEiNdJRYJRzi.java
+Visiting done.
+writing a,YWphf4XGYjS8bSEiNdJRYJRzi.java,7,19,combinations_recursive,48,21,36a8caac1475d047e507f0ff69f70edc,17,170018@#@3,6,28,2740.1923055728344,2,2,1,6,10,1,0,0,0,43,20,14,3,41,1,0,0,3,0,0@#@toString():1,combinations_recursive():1,out:1,arrayAccess[]:2@#@length:1,println():1@#@_@combinations_recursive@_:1@#@10
+
+writing a,YWphf4XGYjS8bSEiNdJRYJRzi.java,20,27,printCombination,32,20,ac9a4aa0b193656030be65c5cd7b1a41,17,170019@#@1,6,19,280.3632158872766,4,2,1,2,2,3,0,0,0,26,6,7,1,21,0,0,0,2,0,1@#@nextBoolean():1,combinations_recursive():1,in:1,out:1@#@println():1@#@_@printCombination@_:1@#@7
+
+writing a,YWphf4XGYjS8bSEiNdJRYJRzi.java,28,32,main,18,14,3c581028b4892556a5f83e118462fc34,17,170020@#@1,4,12,60.94436251225966,1,0,1,1,1,2,0,0,0,14,2,3,1,11,0,0,0,5,0,0@#@printCombination():1@#@@#@_@main@_:1@#@5
+
+Metricalizing SRXtVoMM9BWIiK0yg944DtJ9z.java
+Visiting done.
+writing a,SRXtVoMM9BWIiK0yg944DtJ9z.java,4,7,main,15,13,236df1b20b630d77d0e309a540cdc101,18,180021@#@1,3,11,44.97261104228487,1,0,1,1,1,1,0,0,0,11,1,2,1,9,0,0,0,5,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@4
+
+writing a,SRXtVoMM9BWIiK0yg944DtJ9z.java,10,14,printCombinations,16,10,e48d5ce55fe1eac36cce3418d7c44382,18,180022@#@2,3,10,49.82892142331044,0,0,1,2,1,0,0,0,0,12,5,3,2,10,0,0,0,0,0,1@#@printCombinations():1@#@length:1@#@_@printCombinations@_:1@#@5
+
+writing a,SRXtVoMM9BWIiK0yg944DtJ9z.java,16,29,printCombinations,43,20,85e5fbdfbc678d8b1755903b04c810ba,18,180023@#@4,8,26,2491.233050614779,3,1,1,3,10,2,0,0,0,38,16,15,4,39,1,0,0,5,0,1@#@printCombinations():1,out:1,arrayAccess[]:3@#@length:1,println():1@#@_@printCombinations@_:1@#@13
+
+Metricalizing UcB2rLvnGYKZX4wY8oNotqaHO.java
+Visiting done.
+writing a,UcB2rLvnGYKZX4wY8oNotqaHO.java,3,7,main,21,16,f68e894031eb638ab10328094b56c6b9,19,190024@#@1,4,14,76.14709844115208,1,0,1,1,1,2,0,0,0,17,2,3,1,14,0,0,0,7,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@5
+
+writing a,UcB2rLvnGYKZX4wY8oNotqaHO.java,9,12,printCombinations,20,13,07738f8556b3ed3bb59f6868867a7d32,19,190025@#@2,4,13,148.0175887256437,0,0,1,2,2,0,0,0,0,15,6,5,1,13,0,0,0,2,0,1@#@printForEach():1@#@length:1@#@_@printCombinations@_:1@#@5
+
+writing a,UcB2rLvnGYKZX4wY8oNotqaHO.java,14,21,printForEach,42,18,ed6891843e661f3ec09a7da236996345,19,190026@#@3,7,20,1270.6468598968845,2,1,2,4,6,0,0,0,0,35,17,14,1,37,0,0,0,4,0,1@#@printForEach():2,out:1,arrayAccess[]:2@#@length:1,println():1@#@_@printForEach@_:1@#@9
+
+Metricalizing BIjYyL012HuyrVOhK7mitnjZD.java
+Visiting done.
+writing a,BIjYyL012HuyrVOhK7mitnjZD.java,5,22,findCombinations,47,22,3b953895975c0c3bd26e8fbddc100e4c,110,1100027@#@4,8,28,3115.1659894933273,2,2,1,5,12,1,0,0,0,40,18,14,3,37,1,0,0,3,0,0@#@toString():1,findCombinations():1,out:1,arrayAccess[]:1,arrayBinaryAccess[]:1@#@length:1,println():1@#@_@findCombinations@_:1@#@14
+
+writing a,BIjYyL012HuyrVOhK7mitnjZD.java,24,27,printCombinations,18,10,95cb6d9f8766d99a2cab0c65b0794664,110,1100028@#@1,3,8,96.0,0,0,1,2,2,1,0,0,0,14,4,2,1,9,0,0,0,2,0,0@#@findCombinations():1@#@@#@_@printCombinations@_:1@#@4
+
+writing a,BIjYyL012HuyrVOhK7mitnjZD.java,29,38,main,30,21,43cd23d6b601b287a142f916e96d915b,110,1100029@#@1,6,19,123.18989788986397,2,1,2,1,1,2,0,0,0,24,2,5,1,24,0,0,0,12,0,1@#@printCombinations():2,out:1@#@println():1@#@_@main@_:1@#@7
+
+Metricalizing X7b8C1pk3uvKKJdapwCDHW7vy.java
+Visiting done.
+writing a,X7b8C1pk3uvKKJdapwCDHW7vy.java,5,9,printCombinations,22,13,b155d5bd5e1643aab60648b0e69604cb,111,1110030@#@1,4,11,145.2961279827665,0,0,1,2,2,2,0,0,0,18,5,3,1,12,0,1,0,2,0,0@#@printCombinations_recursive():1@#@@#@_@printCombinations@_:1@#@5
+
+writing a,X7b8C1pk3uvKKJdapwCDHW7vy.java,10,16,printCombinations_recursive,49,22,83eee76a023d94b2830d40a5d27b7d88,111,1110031@#@3,6,28,2740.1923055728344,2,2,1,6,10,1,0,0,0,43,20,14,2,41,1,0,0,3,0,0@#@toString():1,printCombinations_recursive():1,out:1,arrayAccess[]:2@#@length:1,println():1@#@_@printCombinations_recursive@_:1@#@9
+
+Metricalizing EujpaFUayyiNJRl21q3SiF22Q.java
+Visiting done.
+writing a,EujpaFUayyiNJRl21q3SiF22Q.java,3,6,printCombinations,14,11,3672af725300b7b6c8c025b6bade4631,112,1120032@#@1,3,8,33.0,0,0,1,2,1,0,0,0,0,9,2,2,1,5,0,0,0,1,0,1@#@determinCombinations():1@#@@#@_@printCombinations@_:1@#@4
+
+writing a,EujpaFUayyiNJRl21q3SiF22Q.java,8,27,determinCombinations,48,21,d2759dcd432d97dccc35917a4544daad,112,1120033@#@4,9,30,3984.395163634117,2,2,1,4,14,1,0,0,0,39,18,19,2,41,1,0,0,4,0,1@#@determinCombinations():1,length():1,out:1,arrayAccess[]:1@#@length:2,println():1@#@_@determinCombinations@_:1@#@13
+
+writing a,EujpaFUayyiNJRl21q3SiF22Q.java,30,39,main,37,26,bb90187d7b689ae71e108da9864f2908,112,1120034@#@2,6,27,570.5865002596163,3,2,1,1,3,2,0,0,0,31,7,9,2,33,1,0,0,10,0,2@#@printCombinations():1,out:2@#@length:1,println():2@#@_@main@_:1@#@8
+
+Metricalizing IFTl4hEcGtwzSTOSly86kXyLx.java
+Visiting done.
+writing a,IFTl4hEcGtwzSTOSly86kXyLx.java,4,6,printCombinations,14,9,6353220bd2ffe767af1f48140775bd48,113,1130035@#@1,2,6,0.0,0,0,1,2,0,0,0,0,0,10,3,1,1,6,0,0,0,1,0,0@#@combinations():1@#@@#@_@printCombinations@_:1@#@3
+
+writing a,IFTl4hEcGtwzSTOSly86kXyLx.java,8,17,combinations,39,20,3907bb9f5e1a2b6914b85a129b1ea2c7,113,1130036@#@3,6,24,1613.9068002538472,2,2,1,4,8,1,0,0,0,33,15,11,3,31,1,0,0,2,0,0@#@toString():1,combinations():1,out:1,arrayAccess[]:2@#@length:1,println():1@#@_@combinations@_:1@#@10
+
+writing a,IFTl4hEcGtwzSTOSly86kXyLx.java,19,22,main,15,13,236df1b20b630d77d0e309a540cdc101,113,1130037@#@1,3,11,44.97261104228487,1,0,1,1,1,1,0,0,0,11,1,2,1,9,0,0,0,5,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@4
+
+Metricalizing MdpDlZWnyKi87y3Ec93UQMbia.java
+Visiting done.
+writing a,MdpDlZWnyKi87y3Ec93UQMbia.java,5,14,printCombinations,43,20,a6c754100fe4a583a85891706cff574f,114,1140038@#@3,7,26,2444.228653433368,2,2,1,4,10,1,0,0,0,37,18,15,2,38,1,0,0,3,0,0@#@toString():1,printCombinations():1,out:1,arrayAccess[]:1,arrayBinaryAccess[]:1@#@length:2,println():1@#@_@printCombinations@_:1@#@10
+
+writing a,MdpDlZWnyKi87y3Ec93UQMbia.java,15,21,main,31,23,2f15bada479ee3be608d57110e542443,114,1140039@#@1,6,21,272.32368021228314,4,2,1,1,2,3,0,0,0,24,5,7,1,22,0,0,0,6,0,0@#@nextInt():1,printCombinations():1,close():1,in:1@#@@#@_@main@_:1@#@7
+
+Metricalizing TJL8ZP7uWFLhoxp44g1DTnXlj.java
+Visiting done.
+writing a,TJL8ZP7uWFLhoxp44g1DTnXlj.java,15,37,printCombinations,48,19,1db6adaa1bb5b6784b1ae930b83851d8,115,1150040@#@4,8,24,2274.141400357694,1,1,1,2,8,2,0,0,0,43,20,19,3,50,1,0,0,6,0,2@#@printCombinations():1,out:1,arrayAccess[]:3,arrayBinaryAccess[]:1@#@length:4,println():1@#@_@printCombinations@_:1@#@12
+
+writing a,TJL8ZP7uWFLhoxp44g1DTnXlj.java,40,45,main,20,17,56818141384916919b53ad24ffb63a08,115,1150041@#@1,4,15,70.32403072095333,2,1,1,1,1,1,0,0,0,15,1,3,1,14,0,0,0,5,0,1@#@printCombinations():1,out:1@#@println():1@#@_@main@_:1@#@5
+
+Metricalizing S36q1bRMRYIpv3O1b7PLJxYIF.java
+Visiting done.
+writing a,S36q1bRMRYIpv3O1b7PLJxYIF.java,10,13,main,14,11,cd720e6855a9e290d2ac038687339104,116,1160042@#@1,3,9,38.03910001730775,1,1,0,1,1,1,0,0,0,10,4,2,1,7,0,0,0,0,0,0@#@calculateCombinations():1@#@length:1@#@_@main@_:1@#@4
+
+writing a,S36q1bRMRYIpv3O1b7PLJxYIF.java,17,31,calculateCombinations,30,15,b413ee3d78602ba2e66fc4d9546ae804,116,1160043@#@3,8,19,1223.4031238717525,0,0,2,2,8,1,0,0,0,25,14,11,3,27,1,0,0,2,0,0@#@calculateCombinations():1,printArr():1,arrayAccess[]:2@#@length:1@#@_@calculateCombinations@_:1@#@11
+
+writing a,S36q1bRMRYIpv3O1b7PLJxYIF.java,35,71,printArr,58,23,20b0ce949174ee56882824e05b6e8fb7,116,1160044@#@6,21,32,5390.0,2,2,1,1,14,0,0,0,0,47,25,30,2,68,0,0,0,8,0,2@#@print():1,printArr():1,out:2,arrayAccess[]:1@#@length:2,println():1@#@_@printArr@_:1@#@28
+
+Metricalizing GPqBr5YvhVTI63UeYIhioldNf.java
+Visiting done.
+writing a,GPqBr5YvhVTI63UeYIhioldNf.java,2,47,printCombinations,129,22,74198b84f970b5c2a11f0a1bd1606545,117,1170045@#@9,32,30,38229.58463038597,6,6,5,2,49,6,0,0,0,110,57,49,2,131,0,0,0,16,0,1@#@print():1,arraycopy():4,printCombinations():5,out:2,arrayBinaryAccess[]:1@#@length:1,println():1@#@_@printCombinations@_:1@#@36
+
+writing a,GPqBr5YvhVTI63UeYIhioldNf.java,49,52,main,16,14,6cc3a75e849e85ed26473b58fdd35bef,117,1170046@#@1,3,12,50.18947501009619,1,0,1,1,1,1,0,0,0,12,1,2,1,10,0,0,0,6,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@4
+
+Metricalizing HMGHn2tdhoIl2pZuu2r89whOg.java
+Visiting done.
+writing a,HMGHn2tdhoIl2pZuu2r89whOg.java,12,14,main,13,12,2c7dc67d7c8d4931b8eb48c05f6d2b8f,118,1180047@#@1,2,9,0.0,1,0,1,1,0,0,0,0,0,9,0,1,1,8,0,0,0,5,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@3
+
+writing a,HMGHn2tdhoIl2pZuu2r89whOg.java,16,18,printCombinations,13,7,6353220bd2ffe767af1f48140775bd48,118,1180048@#@1,2,6,0.0,0,0,1,2,0,0,0,0,0,10,3,1,1,6,0,0,0,1,0,0@#@printCombinations():1@#@@#@_@printCombinations@_:1@#@3
+
+writing a,HMGHn2tdhoIl2pZuu2r89whOg.java,21,32,printCombinations,43,21,f293900054184a246d85fd3487ded2a9,118,1180049@#@3,7,26,2350.2198590705466,2,2,1,4,10,1,0,0,0,36,17,14,2,36,1,0,0,3,0,0@#@toString():1,printCombinations():1,out:1,arrayAccess[]:1,arrayBinaryAccess[]:1@#@length:2,println():1@#@_@printCombinations@_:1@#@10
+
+Metricalizing ZWVF7URDCRKni9W8vNrRfXEqA.java
+Visiting done.
+writing a,ZWVF7URDCRKni9W8vNrRfXEqA.java,5,10,printCombinations,23,17,b6ed38affaca3ae96b4fdfdeef9fabc4,119,1190050@#@2,5,16,176.0,2,1,1,2,2,1,0,0,0,18,6,4,2,14,0,0,0,0,0,2@#@recursiveprintCombinations():1,out:1@#@length:1,println():1@#@_@printCombinations@_:1@#@7
+
+writing a,ZWVF7URDCRKni9W8vNrRfXEqA.java,12,21,recursiveprintCombinations,46,23,8ba6d80c594c9676768ee978dd43ded8,119,1190051@#@3,7,28,2644.045207131682,3,2,1,3,10,3,0,0,0,40,17,15,3,40,1,0,0,5,0,1@#@copyOfRange():1,recursiveprintCombinations():1,out:1,arrayAccess[]:1@#@length:2,println():1@#@_@recursiveprintCombinations@_:1@#@10
+
+writing a,ZWVF7URDCRKni9W8vNrRfXEqA.java,23,44,main,87,26,8c2f8122975ca28e74bd8cf0adf456f8,119,1190052@#@1,21,25,2730.587439587538,7,6,6,1,6,8,0,0,0,72,18,26,1,81,0,0,0,15,0,6@#@printCombinations():6,out:6@#@println():6@#@_@main@_:1@#@22
+
+Metricalizing SGmibl1SujHb2XgSnDAvscQod.java
+Visiting done.
+writing a,SGmibl1SujHb2XgSnDAvscQod.java,4,8,main,18,14,3c581028b4892556a5f83e118462fc34,120,1200053@#@1,4,12,60.94436251225966,1,0,1,1,1,2,0,0,0,14,2,3,1,11,0,0,0,5,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@5
+
+writing a,SGmibl1SujHb2XgSnDAvscQod.java,10,22,printCombinations,32,18,56ad3b2ba1455890314724dd468dbe8c,120,1200054@#@2,7,17,523.1952436800435,2,2,1,2,4,2,0,0,0,26,10,6,2,22,0,0,0,0,0,1@#@sort():1,rly2():1,out:1@#@length:1,println():1@#@_@printCombinations@_:1@#@10
+
+writing a,SGmibl1SujHb2XgSnDAvscQod.java,24,57,rly2,97,23,6e55c88f19cb8f2d4367f67b8471cfc0,120,1200055@#@6,17,29,16517.13538343375,2,2,1,4,25,3,0,0,0,91,57,45,4,118,1,0,0,11,0,0@#@rly2():1,toString():1,out:1,arrayAccess[]:3,arrayBinaryAccess[]:10@#@length:10,println():1@#@_@rly2@_:1@#@22
+
+Metricalizing NLnI7Mzlr5VlJadF8pjIQCNXk.java
+Visiting done.
+writing a,NLnI7Mzlr5VlJadF8pjIQCNXk.java,11,15,main,15,13,236df1b20b630d77d0e309a540cdc101,121,1210056@#@1,3,11,44.97261104228487,1,0,1,1,1,1,0,0,0,11,1,2,1,9,0,0,0,5,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@4
+
+writing a,NLnI7Mzlr5VlJadF8pjIQCNXk.java,17,35,combination,58,22,e270b71f7d13fc97acd88aa137934d4d,121,1210057@#@4,11,28,3317.0748962197467,2,2,2,5,10,1,0,0,0,50,24,19,2,51,1,0,0,4,0,2@#@print():1,combination():2,out:2,arrayAccess[]:3@#@length:1,println():1@#@_@combination@_:1@#@12
+
+writing a,NLnI7Mzlr5VlJadF8pjIQCNXk.java,37,54,printCombinations,40,20,98ba4c2e144d2309106324f4f226aaf2,121,1210058@#@3,10,20,1063.1943113422913,3,3,1,2,6,2,0,0,0,31,11,10,2,28,0,0,0,2,0,1@#@toString():1,combination():1,out:2@#@length:1,println():2@#@_@printCombinations@_:1@#@13
+
+done!
+[Dummy wait for population]
+Step 3: Setting Up Oreo
+     3.1: file for clone-detector
+Blocks file:
+a,OF3yQYaVBKwZRziuSBjiFn76G.java,5,8,main,13,12,2c7dc67d7c8d4931b8eb48c05f6d2b8f,11,11001@#@1,2,9,0.0,1,0,1,1,0,0,0,0,0,9,0,1,1,8,0,0,0,5,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@3
+a,OF3yQYaVBKwZRziuSBjiFn76G.java,10,13,printCombinations,14,9,6353220bd2ffe767af1f48140775bd48,11,11002@#@1,2,6,0.0,0,0,1,2,0,0,0,0,0,10,3,1,1,6,0,0,0,1,0,0@#@printCombinationHelper():1@#@@#@_@printCombinations@_:1@#@3
+a,OF3yQYaVBKwZRziuSBjiFn76G.java,15,28,printCombinationHelper,41,21,20d5470ed3c97445a710c0e0a80a21bb,11,11003@#@3,7,26,2209.2066675263136,2,2,1,4,10,1,0,0,0,34,15,13,2,33,1,0,0,3,0,0@#@toString():1,printCombinationHelper():1,out:1,arrayAccess[]:2@#@length:1,println():1@#@_@printCombinationHelper@_:1@#@10
+a,Px0HRbss5XjsGzrJA92eYdjO9.java,3,8,printCombinations,19,11,8821410ab14daf25fb75121b687573fc,12,12004@#@2,3,9,107.77745004903863,0,0,1,2,2,0,0,0,0,15,6,2,2,11,0,0,0,2,0,0@#@wahnsinnig():1@#@length:1@#@_@printCombinations@_:1@#@5
+a,Px0HRbss5XjsGzrJA92eYdjO9.java,10,21,wahnsinnig,47,23,6eab799fbd14d80241b002817f2a95ce,12,12005@#@3,6,27,2567.6392511682734,3,3,1,5,10,1,0,0,0,40,17,14,3,39,1,0,0,3,0,2@#@toString():1,wahnsinnig():1,replaceAll():1,out:1,arrayAccess[]:2@#@length:1,println():1@#@_@wahnsinnig@_:1@#@10
+a,Px0HRbss5XjsGzrJA92eYdjO9.java,23,26,main,17,15,5c2ae26494641cdabd82dc51597d1667,12,12006@#@1,3,13,55.506595772116384,1,0,1,1,1,1,0,0,0,13,1,2,1,11,0,0,0,7,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@4
+a,Ei1al8NNmzeBmE6G2uzMnUU6m.java,2,5,main,15,13,236df1b20b630d77d0e309a540cdc101,13,13007@#@1,3,11,44.97261104228487,1,0,1,1,1,1,0,0,0,11,1,2,1,9,0,0,0,5,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@4
+a,Ei1al8NNmzeBmE6G2uzMnUU6m.java,6,14,printCombinations,23,17,206e7071c2d4d2d192b7cc38ef09c310,13,13008@#@2,5,15,164.0894050155578,1,1,1,2,2,0,0,0,0,17,6,4,2,14,0,0,0,1,0,2@#@help():1,out:1@#@length:1,println():1@#@_@printCombinations@_:1@#@8
+a,Ei1al8NNmzeBmE6G2uzMnUU6m.java,15,31,help,53,20,d72cfaa8db2ae635c48f6a70ccd4321e,13,13009@#@4,7,26,2961.277022428889,2,1,2,5,10,1,0,0,0,47,25,16,3,47,1,0,0,3,0,1@#@help():2,out:1,arrayAccess[]:2@#@length:2,println():1@#@_@help@_:1@#@12
+a,BSNRqLQuLxA3FFdOgGVjx6Bf2.java,2,9,main,31,21,ed65676f5557ad709d8c54f3270fd385,14,140010@#@1,7,19,131.68575291675114,3,2,1,1,1,3,0,0,0,25,5,6,1,23,0,0,0,5,0,2@#@printCombination():1,out:2@#@length:1,println():2@#@_@main@_:1@#@8
+a,BSNRqLQuLxA3FFdOgGVjx6Bf2.java,11,23,BSNRqLQuLxA3FFdOgGVjx6Bf2,62,24,b44b2746e2547856636b30169ba39f8a,14,140011@#@4,9,32,8190.0,3,2,1,6,21,2,0,0,0,55,25,23,2,57,2,0,0,4,0,2@#@print():1,BSNRqLQuLxA3FFdOgGVjx6Bf2():1,out:2,arrayAccess[]:3@#@println():1@#@_@BSNRqLQuLxA3FFdOgGVjx6Bf2@_:1@#@11
+a,BSNRqLQuLxA3FFdOgGVjx6Bf2.java,25,28,printCombination,22,12,0caee18fa5fd7b97dd6ef2444a4b17b9,14,140012@#@1,3,11,145.2961279827665,1,0,1,3,2,1,0,0,0,18,5,3,1,12,0,0,0,3,0,0@#@BSNRqLQuLxA3FFdOgGVjx6Bf2():1@#@@#@_@printCombination@_:1@#@4
+a,VHRsQYthtC837Ydh8zSqJ0ptK.java,10,13,main,17,14,d9440bc272fedd368dbc7e59393e5e5e,15,150013@#@1,3,12,53.77443751081735,1,0,1,1,1,1,0,0,0,13,1,2,1,11,0,0,0,6,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@4
+a,VHRsQYthtC837Ydh8zSqJ0ptK.java,15,19,printCombinations,16,11,1e122b80a210e7ea7d1f2876684bb20c,15,150014@#@2,3,9,44.37895002019238,0,0,1,2,1,0,0,0,0,12,5,2,2,8,0,0,0,0,0,1@#@nextPlace():1@#@length:1@#@_@printCombinations@_:1@#@5
+a,VHRsQYthtC837Ydh8zSqJ0ptK.java,21,35,nextPlace,54,24,bd3557933d66558ab70b3c6df67dcb0a,15,150015@#@5,9,32,5040.0,3,3,1,3,14,2,0,0,0,47,20,25,3,58,1,0,0,5,0,5@#@equals():1,contains():1,nextPlace():1,out:1,arrayAccess[]:4@#@length:1,println():1@#@_@nextPlace@_:1@#@13
+a,VCM0YsoBiMjjLudqhIfOZgXtr.java,7,22,printCombinations,62,22,670f74fa7858353b5503be288fdb6b82,16,160016@#@6,14,27,6333.51015288174,2,6,0,2,18,1,0,0,0,52,29,22,2,62,1,0,0,7,0,0@#@copyOfRange():2,toString():1,printCombinations():2,out:1,arrayAccess[]:2@#@length:4,println():1@#@_@printCombinations@_:1@#@17
+a,VCM0YsoBiMjjLudqhIfOZgXtr.java,24,26,main,13,12,2c7dc67d7c8d4931b8eb48c05f6d2b8f,16,160017@#@1,2,9,0.0,1,0,1,1,0,0,0,0,0,9,0,1,1,8,0,0,0,5,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@3
+a,YWphf4XGYjS8bSEiNdJRYJRzi.java,7,19,combinations_recursive,48,21,36a8caac1475d047e507f0ff69f70edc,17,170018@#@3,6,28,2740.1923055728344,2,2,1,6,10,1,0,0,0,43,20,14,3,41,1,0,0,3,0,0@#@toString():1,combinations_recursive():1,out:1,arrayAccess[]:2@#@length:1,println():1@#@_@combinations_recursive@_:1@#@10
+a,YWphf4XGYjS8bSEiNdJRYJRzi.java,20,27,printCombination,32,20,ac9a4aa0b193656030be65c5cd7b1a41,17,170019@#@1,6,19,280.3632158872766,4,2,1,2,2,3,0,0,0,26,6,7,1,21,0,0,0,2,0,1@#@nextBoolean():1,combinations_recursive():1,in:1,out:1@#@println():1@#@_@printCombination@_:1@#@7
+a,YWphf4XGYjS8bSEiNdJRYJRzi.java,28,32,main,18,14,3c581028b4892556a5f83e118462fc34,17,170020@#@1,4,12,60.94436251225966,1,0,1,1,1,2,0,0,0,14,2,3,1,11,0,0,0,5,0,0@#@printCombination():1@#@@#@_@main@_:1@#@5
+a,SRXtVoMM9BWIiK0yg944DtJ9z.java,4,7,main,15,13,236df1b20b630d77d0e309a540cdc101,18,180021@#@1,3,11,44.97261104228487,1,0,1,1,1,1,0,0,0,11,1,2,1,9,0,0,0,5,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@4
+a,SRXtVoMM9BWIiK0yg944DtJ9z.java,10,14,printCombinations,16,10,e48d5ce55fe1eac36cce3418d7c44382,18,180022@#@2,3,10,49.82892142331044,0,0,1,2,1,0,0,0,0,12,5,3,2,10,0,0,0,0,0,1@#@printCombinations():1@#@length:1@#@_@printCombinations@_:1@#@5
+a,SRXtVoMM9BWIiK0yg944DtJ9z.java,16,29,printCombinations,43,20,85e5fbdfbc678d8b1755903b04c810ba,18,180023@#@4,8,26,2491.233050614779,3,1,1,3,10,2,0,0,0,38,16,15,4,39,1,0,0,5,0,1@#@printCombinations():1,out:1,arrayAccess[]:3@#@length:1,println():1@#@_@printCombinations@_:1@#@13
+a,UcB2rLvnGYKZX4wY8oNotqaHO.java,3,7,main,21,16,f68e894031eb638ab10328094b56c6b9,19,190024@#@1,4,14,76.14709844115208,1,0,1,1,1,2,0,0,0,17,2,3,1,14,0,0,0,7,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@5
+a,UcB2rLvnGYKZX4wY8oNotqaHO.java,9,12,printCombinations,20,13,07738f8556b3ed3bb59f6868867a7d32,19,190025@#@2,4,13,148.0175887256437,0,0,1,2,2,0,0,0,0,15,6,5,1,13,0,0,0,2,0,1@#@printForEach():1@#@length:1@#@_@printCombinations@_:1@#@5
+a,UcB2rLvnGYKZX4wY8oNotqaHO.java,14,21,printForEach,42,18,ed6891843e661f3ec09a7da236996345,19,190026@#@3,7,20,1270.6468598968845,2,1,2,4,6,0,0,0,0,35,17,14,1,37,0,0,0,4,0,1@#@printForEach():2,out:1,arrayAccess[]:2@#@length:1,println():1@#@_@printForEach@_:1@#@9
+a,BIjYyL012HuyrVOhK7mitnjZD.java,5,22,findCombinations,47,22,3b953895975c0c3bd26e8fbddc100e4c,110,1100027@#@4,8,28,3115.1659894933273,2,2,1,5,12,1,0,0,0,40,18,14,3,37,1,0,0,3,0,0@#@toString():1,findCombinations():1,out:1,arrayAccess[]:1,arrayBinaryAccess[]:1@#@length:1,println():1@#@_@findCombinations@_:1@#@14
+a,BIjYyL012HuyrVOhK7mitnjZD.java,24,27,printCombinations,18,10,95cb6d9f8766d99a2cab0c65b0794664,110,1100028@#@1,3,8,96.0,0,0,1,2,2,1,0,0,0,14,4,2,1,9,0,0,0,2,0,0@#@findCombinations():1@#@@#@_@printCombinations@_:1@#@4
+a,BIjYyL012HuyrVOhK7mitnjZD.java,29,38,main,30,21,43cd23d6b601b287a142f916e96d915b,110,1100029@#@1,6,19,123.18989788986397,2,1,2,1,1,2,0,0,0,24,2,5,1,24,0,0,0,12,0,1@#@printCombinations():2,out:1@#@println():1@#@_@main@_:1@#@7
+a,X7b8C1pk3uvKKJdapwCDHW7vy.java,5,9,printCombinations,22,13,b155d5bd5e1643aab60648b0e69604cb,111,1110030@#@1,4,11,145.2961279827665,0,0,1,2,2,2,0,0,0,18,5,3,1,12,0,1,0,2,0,0@#@printCombinations_recursive():1@#@@#@_@printCombinations@_:1@#@5
+a,X7b8C1pk3uvKKJdapwCDHW7vy.java,10,16,printCombinations_recursive,49,22,83eee76a023d94b2830d40a5d27b7d88,111,1110031@#@3,6,28,2740.1923055728344,2,2,1,6,10,1,0,0,0,43,20,14,2,41,1,0,0,3,0,0@#@toString():1,printCombinations_recursive():1,out:1,arrayAccess[]:2@#@length:1,println():1@#@_@printCombinations_recursive@_:1@#@9
+a,EujpaFUayyiNJRl21q3SiF22Q.java,3,6,printCombinations,14,11,3672af725300b7b6c8c025b6bade4631,112,1120032@#@1,3,8,33.0,0,0,1,2,1,0,0,0,0,9,2,2,1,5,0,0,0,1,0,1@#@determinCombinations():1@#@@#@_@printCombinations@_:1@#@4
+a,EujpaFUayyiNJRl21q3SiF22Q.java,8,27,determinCombinations,48,21,d2759dcd432d97dccc35917a4544daad,112,1120033@#@4,9,30,3984.395163634117,2,2,1,4,14,1,0,0,0,39,18,19,2,41,1,0,0,4,0,1@#@determinCombinations():1,length():1,out:1,arrayAccess[]:1@#@length:2,println():1@#@_@determinCombinations@_:1@#@13
+a,EujpaFUayyiNJRl21q3SiF22Q.java,30,39,main,37,26,bb90187d7b689ae71e108da9864f2908,112,1120034@#@2,6,27,570.5865002596163,3,2,1,1,3,2,0,0,0,31,7,9,2,33,1,0,0,10,0,2@#@printCombinations():1,out:2@#@length:1,println():2@#@_@main@_:1@#@8
+a,IFTl4hEcGtwzSTOSly86kXyLx.java,4,6,printCombinations,14,9,6353220bd2ffe767af1f48140775bd48,113,1130035@#@1,2,6,0.0,0,0,1,2,0,0,0,0,0,10,3,1,1,6,0,0,0,1,0,0@#@combinations():1@#@@#@_@printCombinations@_:1@#@3
+a,IFTl4hEcGtwzSTOSly86kXyLx.java,8,17,combinations,39,20,3907bb9f5e1a2b6914b85a129b1ea2c7,113,1130036@#@3,6,24,1613.9068002538472,2,2,1,4,8,1,0,0,0,33,15,11,3,31,1,0,0,2,0,0@#@toString():1,combinations():1,out:1,arrayAccess[]:2@#@length:1,println():1@#@_@combinations@_:1@#@10
+a,IFTl4hEcGtwzSTOSly86kXyLx.java,19,22,main,15,13,236df1b20b630d77d0e309a540cdc101,113,1130037@#@1,3,11,44.97261104228487,1,0,1,1,1,1,0,0,0,11,1,2,1,9,0,0,0,5,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@4
+a,MdpDlZWnyKi87y3Ec93UQMbia.java,5,14,printCombinations,43,20,a6c754100fe4a583a85891706cff574f,114,1140038@#@3,7,26,2444.228653433368,2,2,1,4,10,1,0,0,0,37,18,15,2,38,1,0,0,3,0,0@#@toString():1,printCombinations():1,out:1,arrayAccess[]:1,arrayBinaryAccess[]:1@#@length:2,println():1@#@_@printCombinations@_:1@#@10
+a,MdpDlZWnyKi87y3Ec93UQMbia.java,15,21,main,31,23,2f15bada479ee3be608d57110e542443,114,1140039@#@1,6,21,272.32368021228314,4,2,1,1,2,3,0,0,0,24,5,7,1,22,0,0,0,6,0,0@#@nextInt():1,printCombinations():1,close():1,in:1@#@@#@_@main@_:1@#@7
+a,TJL8ZP7uWFLhoxp44g1DTnXlj.java,15,37,printCombinations,48,19,1db6adaa1bb5b6784b1ae930b83851d8,115,1150040@#@4,8,24,2274.141400357694,1,1,1,2,8,2,0,0,0,43,20,19,3,50,1,0,0,6,0,2@#@printCombinations():1,out:1,arrayAccess[]:3,arrayBinaryAccess[]:1@#@length:4,println():1@#@_@printCombinations@_:1@#@12
+a,TJL8ZP7uWFLhoxp44g1DTnXlj.java,40,45,main,20,17,56818141384916919b53ad24ffb63a08,115,1150041@#@1,4,15,70.32403072095333,2,1,1,1,1,1,0,0,0,15,1,3,1,14,0,0,0,5,0,1@#@printCombinations():1,out:1@#@println():1@#@_@main@_:1@#@5
+a,S36q1bRMRYIpv3O1b7PLJxYIF.java,10,13,main,14,11,cd720e6855a9e290d2ac038687339104,116,1160042@#@1,3,9,38.03910001730775,1,1,0,1,1,1,0,0,0,10,4,2,1,7,0,0,0,0,0,0@#@calculateCombinations():1@#@length:1@#@_@main@_:1@#@4
+a,S36q1bRMRYIpv3O1b7PLJxYIF.java,17,31,calculateCombinations,30,15,b413ee3d78602ba2e66fc4d9546ae804,116,1160043@#@3,8,19,1223.4031238717525,0,0,2,2,8,1,0,0,0,25,14,11,3,27,1,0,0,2,0,0@#@calculateCombinations():1,printArr():1,arrayAccess[]:2@#@length:1@#@_@calculateCombinations@_:1@#@11
+a,S36q1bRMRYIpv3O1b7PLJxYIF.java,35,71,printArr,58,23,20b0ce949174ee56882824e05b6e8fb7,116,1160044@#@6,21,32,5390.0,2,2,1,1,14,0,0,0,0,47,25,30,2,68,0,0,0,8,0,2@#@print():1,printArr():1,out:2,arrayAccess[]:1@#@length:2,println():1@#@_@printArr@_:1@#@28
+a,GPqBr5YvhVTI63UeYIhioldNf.java,2,47,printCombinations,129,22,74198b84f970b5c2a11f0a1bd1606545,117,1170045@#@9,32,30,38229.58463038597,6,6,5,2,49,6,0,0,0,110,57,49,2,131,0,0,0,16,0,1@#@print():1,arraycopy():4,printCombinations():5,out:2,arrayBinaryAccess[]:1@#@length:1,println():1@#@_@printCombinations@_:1@#@36
+a,GPqBr5YvhVTI63UeYIhioldNf.java,49,52,main,16,14,6cc3a75e849e85ed26473b58fdd35bef,117,1170046@#@1,3,12,50.18947501009619,1,0,1,1,1,1,0,0,0,12,1,2,1,10,0,0,0,6,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@4
+a,HMGHn2tdhoIl2pZuu2r89whOg.java,12,14,main,13,12,2c7dc67d7c8d4931b8eb48c05f6d2b8f,118,1180047@#@1,2,9,0.0,1,0,1,1,0,0,0,0,0,9,0,1,1,8,0,0,0,5,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@3
+a,HMGHn2tdhoIl2pZuu2r89whOg.java,16,18,printCombinations,13,7,6353220bd2ffe767af1f48140775bd48,118,1180048@#@1,2,6,0.0,0,0,1,2,0,0,0,0,0,10,3,1,1,6,0,0,0,1,0,0@#@printCombinations():1@#@@#@_@printCombinations@_:1@#@3
+a,HMGHn2tdhoIl2pZuu2r89whOg.java,21,32,printCombinations,43,21,f293900054184a246d85fd3487ded2a9,118,1180049@#@3,7,26,2350.2198590705466,2,2,1,4,10,1,0,0,0,36,17,14,2,36,1,0,0,3,0,0@#@toString():1,printCombinations():1,out:1,arrayAccess[]:1,arrayBinaryAccess[]:1@#@length:2,println():1@#@_@printCombinations@_:1@#@10
+a,ZWVF7URDCRKni9W8vNrRfXEqA.java,5,10,printCombinations,23,17,b6ed38affaca3ae96b4fdfdeef9fabc4,119,1190050@#@2,5,16,176.0,2,1,1,2,2,1,0,0,0,18,6,4,2,14,0,0,0,0,0,2@#@recursiveprintCombinations():1,out:1@#@length:1,println():1@#@_@printCombinations@_:1@#@7
+a,ZWVF7URDCRKni9W8vNrRfXEqA.java,12,21,recursiveprintCombinations,46,23,8ba6d80c594c9676768ee978dd43ded8,119,1190051@#@3,7,28,2644.045207131682,3,2,1,3,10,3,0,0,0,40,17,15,3,40,1,0,0,5,0,1@#@copyOfRange():1,recursiveprintCombinations():1,out:1,arrayAccess[]:1@#@length:2,println():1@#@_@recursiveprintCombinations@_:1@#@10
+a,ZWVF7URDCRKni9W8vNrRfXEqA.java,23,44,main,87,26,8c2f8122975ca28e74bd8cf0adf456f8,119,1190052@#@1,21,25,2730.587439587538,7,6,6,1,6,8,0,0,0,72,18,26,1,81,0,0,0,15,0,6@#@printCombinations():6,out:6@#@println():6@#@_@main@_:1@#@22
+a,SGmibl1SujHb2XgSnDAvscQod.java,4,8,main,18,14,3c581028b4892556a5f83e118462fc34,120,1200053@#@1,4,12,60.94436251225966,1,0,1,1,1,2,0,0,0,14,2,3,1,11,0,0,0,5,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@5
+a,SGmibl1SujHb2XgSnDAvscQod.java,10,22,printCombinations,32,18,56ad3b2ba1455890314724dd468dbe8c,120,1200054@#@2,7,17,523.1952436800435,2,2,1,2,4,2,0,0,0,26,10,6,2,22,0,0,0,0,0,1@#@sort():1,rly2():1,out:1@#@length:1,println():1@#@_@printCombinations@_:1@#@10
+a,SGmibl1SujHb2XgSnDAvscQod.java,24,57,rly2,97,23,6e55c88f19cb8f2d4367f67b8471cfc0,120,1200055@#@6,17,29,16517.13538343375,2,2,1,4,25,3,0,0,0,91,57,45,4,118,1,0,0,11,0,0@#@rly2():1,toString():1,out:1,arrayAccess[]:3,arrayBinaryAccess[]:10@#@length:10,println():1@#@_@rly2@_:1@#@22
+a,NLnI7Mzlr5VlJadF8pjIQCNXk.java,11,15,main,15,13,236df1b20b630d77d0e309a540cdc101,121,1210056@#@1,3,11,44.97261104228487,1,0,1,1,1,1,0,0,0,11,1,2,1,9,0,0,0,5,0,0@#@printCombinations():1@#@@#@_@main@_:1@#@4
+a,NLnI7Mzlr5VlJadF8pjIQCNXk.java,17,35,combination,58,22,e270b71f7d13fc97acd88aa137934d4d,121,1210057@#@4,11,28,3317.0748962197467,2,2,2,5,10,1,0,0,0,50,24,19,2,51,1,0,0,4,0,2@#@print():1,combination():2,out:2,arrayAccess[]:3@#@length:1,println():1@#@_@combination@_:1@#@12
+a,NLnI7Mzlr5VlJadF8pjIQCNXk.java,37,54,printCombinations,40,20,98ba4c2e144d2309106324f4f226aaf2,121,1210058@#@3,10,20,1063.1943113422913,3,3,1,2,6,2,0,0,0,31,11,10,2,28,0,0,0,2,0,1@#@toString():1,combination():1,out:2@#@length:1,println():2@#@_@printCombinations@_:1@#@13
+Step 4: Running Oreo
+search will be carried out with 1 nodes
+loading previous run state
+/home/oreo-user/oreo/clone-detector/scriptinator_metadata.scc doesn't exist, creating one with state EXECUTE_1
+previous run state 0
+running new command /home/oreo-user/oreo/clone-detector/execute.sh 1
+current state:  1
+flushing current state 1
+running new command /home/oreo-user/oreo/clone-detector/backup-gtpm.sh
+running new command /home/oreo-user/oreo/clone-detector/runnodes.sh init 1
+current state:  2
+flushing current state 2
+running new command /home/oreo-user/oreo/clone-detector/runnodes.sh cshard 1
+current state:  3
+flushing current state 3
+running new command /home/oreo-user/oreo/clone-detector/move-index.sh
+current state:  4
+flushing current state 4
+running new command /home/oreo-user/oreo/clone-detector/execute.sh 1
+current state:  5
+flushing current state 5
+nodes are : 1. total shards: 6
+1:1,2,3,4,5,6
+running new command /home/oreo-user/oreo/clone-detector/runnodes.sh search 1
+current state:  0
+flushing current state 0
+SUCCESS: Search Completed on all nodes
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [0/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [1/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [2/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [3/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [4/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [5/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [6/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [7/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [8/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [9/10]
+*****************************************************
+running for ports ranging from 9900 to 9903
+*****************************************************
+[Waiting] Waiting for '/home/oreo-user/oreo/results/predictions' [0/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/predictions' [1/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/predictions' [2/10]
+Candidates Dir:
+9900
+9901
+9902
+9903
+Output Dir:
+clonepairs_1_type_31_9900.txt ======================
+a,VHRsQYthtC837Ydh8zSqJ0ptK.java,10,13,a,Px0HRbss5XjsGzrJA92eYdjO9.java,23,26
+a,Ei1al8NNmzeBmE6G2uzMnUU6m.java,2,5,a,Px0HRbss5XjsGzrJA92eYdjO9.java,23,26
+a,SRXtVoMM9BWIiK0yg944DtJ9z.java,4,7,a,VHRsQYthtC837Ydh8zSqJ0ptK.java,10,13
+a,IFTl4hEcGtwzSTOSly86kXyLx.java,19,22,a,UcB2rLvnGYKZX4wY8oNotqaHO.java,3,7
+a,SGmibl1SujHb2XgSnDAvscQod.java,4,8,a,IFTl4hEcGtwzSTOSly86kXyLx.java,19,22
+a,SGmibl1SujHb2XgSnDAvscQod.java,4,8,a,Px0HRbss5XjsGzrJA92eYdjO9.java,23,26
+a,GPqBr5YvhVTI63UeYIhioldNf.java,49,52,a,VHRsQYthtC837Ydh8zSqJ0ptK.java,10,13
+a,NLnI7Mzlr5VlJadF8pjIQCNXk.java,11,15,a,SGmibl1SujHb2XgSnDAvscQod.java,4,8
+a,SGmibl1SujHb2XgSnDAvscQod.java,4,8,a,Ei1al8NNmzeBmE6G2uzMnUU6m.java,2,5
+a,NLnI7Mzlr5VlJadF8pjIQCNXk.java,11,15,a,GPqBr5YvhVTI63UeYIhioldNf.java,49,52
+a,YWphf4XGYjS8bSEiNdJRYJRzi.java,7,19,a,Ei1al8NNmzeBmE6G2uzMnUU6m.java,15,31
+a,X7b8C1pk3uvKKJdapwCDHW7vy.java,10,16,a,BIjYyL012HuyrVOhK7mitnjZD.java,5,22
+a,IFTl4hEcGtwzSTOSly86kXyLx.java,8,17,a,Px0HRbss5XjsGzrJA92eYdjO9.java,10,21
+a,X7b8C1pk3uvKKJdapwCDHW7vy.java,10,16,a,Ei1al8NNmzeBmE6G2uzMnUU6m.java,15,31
+a,X7b8C1pk3uvKKJdapwCDHW7vy.java,10,16,a,OF3yQYaVBKwZRziuSBjiFn76G.java,15,28
+a,MdpDlZWnyKi87y3Ec93UQMbia.java,5,14,a,X7b8C1pk3uvKKJdapwCDHW7vy.java,10,16
+a,HMGHn2tdhoIl2pZuu2r89whOg.java,21,32,a,IFTl4hEcGtwzSTOSly86kXyLx.java,8,17
+clonepairs_1_type_31_9901.txt ======================
+a,SRXtVoMM9BWIiK0yg944DtJ9z.java,4,7,a,Px0HRbss5XjsGzrJA92eYdjO9.java,23,26
+a,UcB2rLvnGYKZX4wY8oNotqaHO.java,3,7,a,VHRsQYthtC837Ydh8zSqJ0ptK.java,10,13
+a,GPqBr5YvhVTI63UeYIhioldNf.java,49,52,a,IFTl4hEcGtwzSTOSly86kXyLx.java,19,22
+a,GPqBr5YvhVTI63UeYIhioldNf.java,49,52,a,UcB2rLvnGYKZX4wY8oNotqaHO.java,3,7
+a,IFTl4hEcGtwzSTOSly86kXyLx.java,19,22,a,VHRsQYthtC837Ydh8zSqJ0ptK.java,10,13
+a,NLnI7Mzlr5VlJadF8pjIQCNXk.java,11,15,a,Px0HRbss5XjsGzrJA92eYdjO9.java,23,26
+a,Px0HRbss5XjsGzrJA92eYdjO9.java,10,21,a,OF3yQYaVBKwZRziuSBjiFn76G.java,15,28
+a,BIjYyL012HuyrVOhK7mitnjZD.java,5,22,a,YWphf4XGYjS8bSEiNdJRYJRzi.java,7,19
+a,BIjYyL012HuyrVOhK7mitnjZD.java,5,22,a,OF3yQYaVBKwZRziuSBjiFn76G.java,15,28
+a,HMGHn2tdhoIl2pZuu2r89whOg.java,21,32,a,X7b8C1pk3uvKKJdapwCDHW7vy.java,10,16
+a,HMGHn2tdhoIl2pZuu2r89whOg.java,21,32,a,BIjYyL012HuyrVOhK7mitnjZD.java,5,22
+a,HMGHn2tdhoIl2pZuu2r89whOg.java,21,32,a,OF3yQYaVBKwZRziuSBjiFn76G.java,15,28
+clonepairs_1_type_31_9902.txt ======================
+a,UcB2rLvnGYKZX4wY8oNotqaHO.java,3,7,a,Ei1al8NNmzeBmE6G2uzMnUU6m.java,2,5
+a,IFTl4hEcGtwzSTOSly86kXyLx.java,19,22,a,Px0HRbss5XjsGzrJA92eYdjO9.java,23,26
+a,TJL8ZP7uWFLhoxp44g1DTnXlj.java,40,45,a,BIjYyL012HuyrVOhK7mitnjZD.java,29,38
+a,GPqBr5YvhVTI63UeYIhioldNf.java,49,52,a,Ei1al8NNmzeBmE6G2uzMnUU6m.java,2,5
+a,SGmibl1SujHb2XgSnDAvscQod.java,4,8,a,UcB2rLvnGYKZX4wY8oNotqaHO.java,3,7
+a,NLnI7Mzlr5VlJadF8pjIQCNXk.java,11,15,a,UcB2rLvnGYKZX4wY8oNotqaHO.java,3,7
+a,SGmibl1SujHb2XgSnDAvscQod.java,4,8,a,SRXtVoMM9BWIiK0yg944DtJ9z.java,4,7
+a,X7b8C1pk3uvKKJdapwCDHW7vy.java,10,16,a,Px0HRbss5XjsGzrJA92eYdjO9.java,10,21
+a,IFTl4hEcGtwzSTOSly86kXyLx.java,8,17,a,BIjYyL012HuyrVOhK7mitnjZD.java,5,22
+a,IFTl4hEcGtwzSTOSly86kXyLx.java,8,17,a,Ei1al8NNmzeBmE6G2uzMnUU6m.java,15,31
+a,MdpDlZWnyKi87y3Ec93UQMbia.java,5,14,a,BIjYyL012HuyrVOhK7mitnjZD.java,5,22
+a,IFTl4hEcGtwzSTOSly86kXyLx.java,8,17,a,SRXtVoMM9BWIiK0yg944DtJ9z.java,16,29
+a,MdpDlZWnyKi87y3Ec93UQMbia.java,5,14,a,OF3yQYaVBKwZRziuSBjiFn76G.java,15,28
+clonepairs_1_type_31_9903.txt ======================
+a,UcB2rLvnGYKZX4wY8oNotqaHO.java,3,7,a,Px0HRbss5XjsGzrJA92eYdjO9.java,23,26
+a,VHRsQYthtC837Ydh8zSqJ0ptK.java,10,13,a,Ei1al8NNmzeBmE6G2uzMnUU6m.java,2,5
+a,UcB2rLvnGYKZX4wY8oNotqaHO.java,3,7,a,SRXtVoMM9BWIiK0yg944DtJ9z.java,4,7
+a,GPqBr5YvhVTI63UeYIhioldNf.java,49,52,a,Px0HRbss5XjsGzrJA92eYdjO9.java,23,26
+a,GPqBr5YvhVTI63UeYIhioldNf.java,49,52,a,SRXtVoMM9BWIiK0yg944DtJ9z.java,4,7
+a,SGmibl1SujHb2XgSnDAvscQod.java,4,8,a,GPqBr5YvhVTI63UeYIhioldNf.java,49,52
+a,NLnI7Mzlr5VlJadF8pjIQCNXk.java,11,15,a,VHRsQYthtC837Ydh8zSqJ0ptK.java,10,13
+a,SGmibl1SujHb2XgSnDAvscQod.java,4,8,a,VHRsQYthtC837Ydh8zSqJ0ptK.java,10,13
+a,YWphf4XGYjS8bSEiNdJRYJRzi.java,7,19,a,Px0HRbss5XjsGzrJA92eYdjO9.java,10,21
+a,YWphf4XGYjS8bSEiNdJRYJRzi.java,7,19,a,OF3yQYaVBKwZRziuSBjiFn76G.java,15,28
+a,X7b8C1pk3uvKKJdapwCDHW7vy.java,10,16,a,YWphf4XGYjS8bSEiNdJRYJRzi.java,7,19
+a,EujpaFUayyiNJRl21q3SiF22Q.java,30,39,a,BIjYyL012HuyrVOhK7mitnjZD.java,29,38
+a,IFTl4hEcGtwzSTOSly86kXyLx.java,8,17,a,YWphf4XGYjS8bSEiNdJRYJRzi.java,7,19
+a,MdpDlZWnyKi87y3Ec93UQMbia.java,5,14,a,IFTl4hEcGtwzSTOSly86kXyLx.java,8,17
+a,IFTl4hEcGtwzSTOSly86kXyLx.java,8,17,a,OF3yQYaVBKwZRziuSBjiFn76G.java,15,28
+a,IFTl4hEcGtwzSTOSly86kXyLx.java,8,17,a,X7b8C1pk3uvKKJdapwCDHW7vy.java,10,16
+a,HMGHn2tdhoIl2pZuu2r89whOg.java,21,32,a,MdpDlZWnyKi87y3Ec93UQMbia.java,5,14
+a,HMGHn2tdhoIl2pZuu2r89whOg.java,21,32,a,YWphf4XGYjS8bSEiNdJRYJRzi.java,7,19
+clonepairs_type2_9900.txt ======================
+a,IFTl4hEcGtwzSTOSly86kXyLx.java,19,22,a,Ei1al8NNmzeBmE6G2uzMnUU6m.java,2,5
+a,NLnI7Mzlr5VlJadF8pjIQCNXk.java,11,15,a,IFTl4hEcGtwzSTOSly86kXyLx.java,19,22
+clonepairs_type2_9901.txt ======================
+a,SRXtVoMM9BWIiK0yg944DtJ9z.java,4,7,a,Ei1al8NNmzeBmE6G2uzMnUU6m.java,2,5
+a,IFTl4hEcGtwzSTOSly86kXyLx.java,19,22,a,SRXtVoMM9BWIiK0yg944DtJ9z.java,4,7
+clonepairs_type2_9902.txt ======================
+a,NLnI7Mzlr5VlJadF8pjIQCNXk.java,11,15,a,SRXtVoMM9BWIiK0yg944DtJ9z.java,4,7
+clonepairs_type2_9903.txt ======================
+a,NLnI7Mzlr5VlJadF8pjIQCNXk.java,11,15,a,Ei1al8NNmzeBmE6G2uzMnUU6m.java,2,5

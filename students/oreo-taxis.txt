@@ -1,0 +1,1297 @@
+oreo-runscript Taxis > oreo-taxis.txt  0,03s user 0,06s system 0% cpu 3:10,33 total
+
+[Script] Using docker: Docker version 20.10.12, build e91ed5707e
+Step 1: setup metric
+Buildfile: /home/oreo-user/oreo/java-parser/build.xml
+
+clean:
+   [delete] Deleting directory /home/oreo-user/oreo/java-parser/build
+   [delete] Deleting directory /home/oreo-user/oreo/java-parser/dist
+
+compile:
+    [mkdir] Created dir: /home/oreo-user/oreo/java-parser/build/classes
+    [mkdir] Created dir: /home/oreo-user/oreo/java-parser/dist
+    [javac] Compiling 18 source files to /home/oreo-user/oreo/java-parser/build/classes
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+JarMetric:
+      [jar] Building jar: /home/oreo-user/oreo/java-parser/dist/metricCalculator.jar
+
+metric:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+Step 2: run the metric calculation [/home/oreo-user/data/Taxis]
+> /home/oreo-user/data/Taxis/a
+running new command java -jar ../java-parser/dist/metricCalculator.jar /home/oreo-user/oreo/python_scripts/output/1.txt dir
+[Waiting] Waiting for './1_metric_output' [0/20]
+[Ljava.lang.String;@6d6f6e28
+Writing To: 1_metric_output/mlcc_input.file
+length
+println()
+processing directory: /home/oreo-user/data/Taxis/a
+checking:/home/oreo-user/data/Taxis/a
+Added: /home/oreo-user/data/Taxis/a/MlxILczEgnctsogTuIyHc4IXX.java
+Added: /home/oreo-user/data/Taxis/a/L6mTynrcqVdsKM5dk8JM1C7WZ.java
+Added: /home/oreo-user/data/Taxis/a/Xc5kZYjA03ZiJobjjVfzXfBxS.java
+Added: /home/oreo-user/data/Taxis/a/CHoSgQHrZtdObJCIILCg9NCNo.java
+Added: /home/oreo-user/data/Taxis/a/UDNGhLn09kT7QYKQrhIo2bi9G.java
+Added: /home/oreo-user/data/Taxis/a/FMdgGWDlvOGvjLyupPON2zFBV.java
+Added: /home/oreo-user/data/Taxis/a/OPgtMNQ4V3ceg7927dPHX1Pj6.java
+Added: /home/oreo-user/data/Taxis/a/GPYf063qrOqXAO8qXB7sGLE8d.java
+Added: /home/oreo-user/data/Taxis/a/UQ343vHfeAOWPriIL4Xru5XMC.java
+Added: /home/oreo-user/data/Taxis/a/IaljG2SZMe6I8nZCWp6ofFVOS.java
+Added: /home/oreo-user/data/Taxis/a/NCdeERn0tNiGOzng398GOAKfm.java
+Added: /home/oreo-user/data/Taxis/a/Gk1v1U3LQto7TPPwZ9HsWEHH0.java
+Added: /home/oreo-user/data/Taxis/a/NpqsFLFY0Tf85TgQ5c8URolNr.java
+Added: /home/oreo-user/data/Taxis/a/X3L5yqKRE6s4IBEljxYi8s2gf.java
+Added: /home/oreo-user/data/Taxis/a/CHy9tzZMsUit409DPRN5zId8A.java
+Added: /home/oreo-user/data/Taxis/a/QJ7DJjCXmAg6Wltw7HRX6zFzI.java
+Added: /home/oreo-user/data/Taxis/a/Z2YE4AGGGFMWhGTOJF9QPVXy2.java
+Added: /home/oreo-user/data/Taxis/a/Vg3Lw8sbXbWjTXB4QkHk1CztY.java
+Added: /home/oreo-user/data/Taxis/a/IFcTWHlwWyw3I7uBJibW5ZwtK.java
+Added: /home/oreo-user/data/Taxis/a/FLHyjHb9dZ9SuC5GfHaCKe0IK.java
+Added: /home/oreo-user/data/Taxis/a/VUTi3tcXbl4dR0FmsuzUErX0E.java
+Added: /home/oreo-user/data/Taxis/a/SnOt9Q25W4q3dK0QOEtnmN5BU.java
+Added: /home/oreo-user/data/Taxis/a/NYs33OaJgnHVlC5gxbP4TA6U8.java
+Added: /home/oreo-user/data/Taxis/a/SSHGivHlZWTTsOAgQjj8BokSs.java
+Added: /home/oreo-user/data/Taxis/a/KpDaNc2yULGxB1v5wlL6E3OD6.java
+Added: /home/oreo-user/data/Taxis/a/ZmB1ce4Z4bRirnJRrzLxHP71W.java
+Added: /home/oreo-user/data/Taxis/a/Buh7lFTuRLvglBJw8PsygWcl6.java
+Added: /home/oreo-user/data/Taxis/a/XvLggiA0U2816f7k8OxJUfOXy.java
+Added: /home/oreo-user/data/Taxis/a/TJI8zHEYT5LRvCsA7gYIbH7Qr.java
+Added: /home/oreo-user/data/Taxis/a/FtCQI3pKD6eoKxuVTmSOIkofM.java
+Added: /home/oreo-user/data/Taxis/a/VHoij57foVaRucJAXnKwrz7wN.java
+Added: /home/oreo-user/data/Taxis/a/J3RowPmOg2qHO6eYLC41Vw6ZT.java
+Added: /home/oreo-user/data/Taxis/a/YsupfvRpv05mUddNkhNYEbFQV.java
+Added: /home/oreo-user/data/Taxis/a/BurWPjfKUNx1S9i3g1wyEPZBd.java
+Added: /home/oreo-user/data/Taxis/a/Uu1D7w3RecnGQxb3TIRXGYISR.java
+Added: /home/oreo-user/data/Taxis/a/Pa7PrkpPjGwWMMWvOA5Q9YvAz.java
+Added: /home/oreo-user/data/Taxis/a/ZjiHWBeSJaY57W8OtdJVl0r6N.java
+Added: /home/oreo-user/data/Taxis/a/RfEdRPSHraxPMDLm5sbIcTlok.java
+Added: /home/oreo-user/data/Taxis/a/HgFHNYF701UjmVfji9nbpuMbs.java
+Added: /home/oreo-user/data/Taxis/a/EUgx06Dz7it6F409dFTDp5Rir.java
+Added: /home/oreo-user/data/Taxis/a/XnNdE6JJPrvKHbpJWwvViC0wh.java
+Added: /home/oreo-user/data/Taxis/a/OF1DO93HThbXM779gK7EAfnII.java
+Added: /home/oreo-user/data/Taxis/a/Ojq0tK9rUXUKcYmM6llCDBToA.java
+Added: /home/oreo-user/data/Taxis/a/DeiG0PYckvUo6zECg9qhtOj2W.java
+Added: /home/oreo-user/data/Taxis/a/KAm50pBuMLGt50EmuWIMfsmII.java
+Added: /home/oreo-user/data/Taxis/a/RdW3cjQxvKlk0JGvJO6uvjnoi.java
+Metricalizing MlxILczEgnctsogTuIyHc4IXX.java
+Visiting done.
+writing a,MlxILczEgnctsogTuIyHc4IXX.java,14,18,MlxILczEgnctsogTuIyHc4IXX,17,7,610cbdc041e7a23e7754df45b354d544,11,11001@#@1,4,6,0.0,0,0,0,3,0,0,0,0,0,15,3,3,1,12,0,0,0,0,0,0@#@tankInhalt:1,taxometerStand:1,gesamtEinnahmen:1@#@@#@_@MlxILczEgnctsogTuIyHc4IXX@_:1@#@5
+
+writing a,MlxILczEgnctsogTuIyHc4IXX.java,21,32,drive,53,23,4fa126f5750b0629ce578d88300538a8,11,11002@#@2,10,28,3365.1484454403226,7,7,0,1,10,1,0,0,0,43,14,27,2,71,0,0,0,10,0,3@#@round():4,out:3@#@println():3@#@_@drive@_:1@#@12
+
+writing a,MlxILczEgnctsogTuIyHc4IXX.java,35,46,pay,30,21,0e48614383666af96a4d4945b4c78652,11,11003@#@3,9,24,660.2346001038466,2,2,0,1,4,1,0,0,0,25,9,11,3,29,0,2,0,3,0,1@#@round():1,out:1@#@println():1@#@_@pay@_:1@#@12
+
+writing a,MlxILczEgnctsogTuIyHc4IXX.java,49,57,refill,19,13,a929b7ee33e07af35d132d463a94d031,11,11004@#@2,5,17,282.03493604627346,1,1,0,1,3,0,0,0,0,16,9,7,2,20,0,0,0,0,0,1@#@out:1@#@println():1@#@_@refill@_:1@#@8
+
+writing a,MlxILczEgnctsogTuIyHc4IXX.java,59,83,taxiProcess,69,33,e98ca17cc0ecbe9f94d4499409142d13,11,11005@#@4,18,34,3815.5971309377546,11,13,0,1,10,5,0,0,0,53,12,22,4,58,2,2,0,2,0,5@#@pay():1,refill():1,nextDouble():3,exit():1,drive():1,in:1,out:6@#@println():6@#@_@taxiProcess@_:1@#@23
+
+writing a,MlxILczEgnctsogTuIyHc4IXX.java,86,112,main,89,41,0663f3cc9b101a51a1ba08e28b48320b,11,11006@#@2,18,44,5732.403199569162,15,14,0,1,10,5,0,0,1,70,15,35,2,90,1,0,0,3,0,15@#@taxiProcess():1,nextDouble():4,in:1,out:9@#@println():9@#@_@main@_:1@#@20
+
+Metricalizing L6mTynrcqVdsKM5dk8JM1C7WZ.java
+Visiting done.
+writing a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,13,21,L6mTynrcqVdsKM5dk8JM1C7WZ,31,13,f1aec636fc40aa8f7312da402d2ff52f,12,12007@#@1,8,12,0.0,0,0,0,4,0,0,0,0,0,29,5,7,1,28,0,0,0,2,0,0@#@kilometerPrice:1,tankVolume:1,totalRevenue:1,tank:1,taxometer:1,fuelConsumption:1,basePrice:1@#@@#@_@L6mTynrcqVdsKM5dk8JM1C7WZ@_:1@#@9
+
+writing a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,23,37,drive,30,18,d86d436d29c34f44f9dd9060cf0ce3cf,12,12008@#@2,8,22,659.99587955832,2,2,0,1,4,0,0,0,0,24,11,13,2,33,0,0,0,3,0,2@#@out:2@#@println():2@#@_@drive@_:1@#@11
+
+writing a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,39,51,pay,23,16,90b8f6aa1a70a6895ef01b0624f7dcb0,12,12009@#@3,8,18,312.7443751081734,1,1,0,1,3,0,0,0,0,18,7,7,3,18,0,2,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@12
+
+writing a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,53,62,refill,21,10,1c21b2d3a4c14f1e42fde0fe3178225f,12,120010@#@2,6,15,679.7989636358823,0,0,0,1,6,0,0,0,0,19,14,10,2,28,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@9
+
+writing a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,64,100,main,52,30,3be96199377aa03cc1f9dcefb5c62be2,12,120011@#@1,7,29,889.0105221083459,7,7,0,1,3,1,0,0,0,41,7,20,1,55,0,0,0,7,0,9@#@pay():1,refill():1,drive():1,totalRevenue:2,tank:2,out:4@#@println():4@#@_@main@_:1@#@8
+
+Metricalizing Xc5kZYjA03ZiJobjjVfzXfBxS.java
+Visiting done.
+writing a,Xc5kZYjA03ZiJobjjVfzXfBxS.java,14,19,Xc5kZYjA03ZiJobjjVfzXfBxS,12,8,846990ff570bbafb2828fa2444760468,13,130012@#@1,4,7,0.0,0,0,0,0,0,0,0,0,0,10,0,3,1,13,0,0,0,2,0,0@#@tankvolumen:1,taxostand:1,tankinhalt:1,einnahmen:1@#@@#@_@Xc5kZYjA03ZiJobjjVfzXfBxS@_:1@#@5
+
+writing a,Xc5kZYjA03ZiJobjjVfzXfBxS.java,21,26,checkTankinhalt,16,13,07a135a6234cc604c85dee5618452743,13,130013@#@2,4,14,129.45006734995852,0,0,0,1,2,0,0,0,0,12,1,5,2,13,0,2,0,1,0,0@#@verbrauch:1,tankinhalt:1@#@@#@_@checkTankinhalt@_:1@#@6
+
+writing a,Xc5kZYjA03ZiJobjjVfzXfBxS.java,29,37,drive,27,15,7f01eb28ae401e64dbda1c563bc452ff,13,130014@#@2,6,19,1087.4694434415578,0,0,1,1,8,0,0,0,0,22,3,10,2,30,0,0,0,2,0,0@#@checkTankinhalt():1,taxostand:2,verbrauch:1,grundpreis:1,kmPreis:1,tankinhalt:1@#@@#@_@drive@_:1@#@8
+
+writing a,Xc5kZYjA03ZiJobjjVfzXfBxS.java,41,51,pay,35,19,6d106cc78762b03424a198b17f00ce7b,13,130015@#@3,8,23,1483.7283215867003,1,1,0,1,8,0,0,0,0,30,3,11,2,36,0,2,0,1,0,1@#@taxostand:3,grundpreis:2,kmPreis:2,einnahmen:1,out:1@#@println():1@#@_@pay@_:1@#@10
+
+writing a,Xc5kZYjA03ZiJobjjVfzXfBxS.java,54,62,refill,19,12,a590bf12e1124beb95c26238500ba0a9,13,130016@#@3,5,15,187.53074858920888,0,0,0,1,2,0,0,0,0,17,10,7,2,18,1,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@9
+
+Metricalizing CHoSgQHrZtdObJCIILCg9NCNo.java
+Visiting done.
+writing a,CHoSgQHrZtdObJCIILCg9NCNo.java,12,20,CHoSgQHrZtdObJCIILCg9NCNo,37,11,3c43f71db9f8cdb8b4e4871a460c982c,14,140017@#@1,8,10,0.0,0,0,0,7,0,0,0,0,0,35,7,7,1,28,0,0,0,0,0,0@#@kraftstoffverbrauch:1,kilometerpreis:1,tankvolumen:1,gesamteinnahmen:1,grundpreis:1,taxometer:1,tankinhalt:1@#@@#@_@CHoSgQHrZtdObJCIILCg9NCNo@_:1@#@9
+
+writing a,CHoSgQHrZtdObJCIILCg9NCNo.java,23,37,drive,31,18,d36f77c1143b0859bc5a6ee5e6877939,14,140018@#@2,9,22,713.5090589819675,1,1,0,1,4,1,0,0,0,26,14,14,2,36,0,0,0,3,0,1@#@out:1@#@println():1@#@_@drive@_:1@#@12
+
+writing a,CHoSgQHrZtdObJCIILCg9NCNo.java,39,57,pay,35,17,a09dfbbb70aca7a89e27a338fe6ad9da,14,140019@#@3,12,19,1044.990168307122,2,2,0,1,6,0,0,0,0,28,12,13,2,33,0,3,0,2,0,2@#@out:2@#@println():2@#@_@pay@_:1@#@15
+
+writing a,CHoSgQHrZtdObJCIILCg9NCNo.java,61,76,refill,31,16,34461ecd5c5990224b734bef7eb8b40b,14,140020@#@2,9,20,1011.3311742036428,2,2,0,1,6,1,0,0,0,27,14,12,2,36,0,0,0,1,0,2@#@out:2@#@println():2@#@_@refill@_:1@#@12
+
+Metricalizing UDNGhLn09kT7QYKQrhIo2bi9G.java
+Visiting done.
+writing a,UDNGhLn09kT7QYKQrhIo2bi9G.java,10,15,UDNGhLn09kT7QYKQrhIo2bi9G,22,8,8c3734e62da8bcb4e7fbdcda068b72bd,15,150021@#@1,5,7,0.0,0,0,0,4,0,0,0,0,0,20,4,4,1,16,0,0,0,0,0,0@#@fuelEfficiency:1,kilometerPrice:1,tankCapacity:1,basePrice:1@#@@#@_@UDNGhLn09kT7QYKQrhIo2bi9G@_:1@#@6
+
+writing a,UDNGhLn09kT7QYKQrhIo2bi9G.java,17,25,drive,23,14,48825d11cd8032a4c5127e5dcba216a6,15,150022@#@2,7,19,492.7595915594559,0,0,0,1,4,1,0,0,0,19,11,10,2,21,0,0,0,2,0,0@#@@#@@#@_@drive@_:1@#@9
+
+writing a,UDNGhLn09kT7QYKQrhIo2bi9G.java,27,37,pay,28,17,c43ca33fad6c661da20488ff78fe9389,15,150023@#@3,9,20,440.83666567851105,1,1,0,1,3,2,0,0,0,24,11,10,2,23,0,0,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@11
+
+writing a,UDNGhLn09kT7QYKQrhIo2bi9G.java,39,45,refill,24,13,c99f3d514311faa25d44e8144ff64807,15,150024@#@1,6,17,735.7433114250612,1,1,0,1,6,3,0,0,0,21,11,9,1,21,0,0,0,0,0,0@#@max():1@#@@#@_@refill@_:1@#@7
+
+writing a,UDNGhLn09kT7QYKQrhIo2bi9G.java,47,55,main,34,28,91ed2957d1cbb9749c0fcd3cdf47fb17,15,150025@#@1,6,28,692.259108776295,4,4,0,1,4,3,0,0,0,26,5,10,1,26,0,0,0,7,0,2@#@pay():1,refill():1,drive():1,out:1@#@println():1@#@_@main@_:1@#@7
+
+Metricalizing FMdgGWDlvOGvjLyupPON2zFBV.java
+Visiting done.
+writing a,FMdgGWDlvOGvjLyupPON2zFBV.java,26,31,FMdgGWDlvOGvjLyupPON2zFBV,14,9,daa3835899c2d91699ad983e0c6a3933,16,160026@#@1,4,8,0.0,0,0,0,3,0,0,0,0,0,12,6,3,1,9,0,0,0,0,0,0@#@@#@@#@_@FMdgGWDlvOGvjLyupPON2zFBV@_:1@#@5
+
+writing a,FMdgGWDlvOGvjLyupPON2zFBV.java,42,56,drive,28,19,00f3c97693b3318e2d783d2741db9434,16,160027@#@2,7,22,468.2403199569162,3,1,0,1,3,1,0,0,0,24,10,11,2,29,0,0,0,1,0,1@#@kraftstoffverbrauch:1,tankvolumen:1,out:1@#@println():1@#@_@drive@_:1@#@10
+
+writing a,FMdgGWDlvOGvjLyupPON2zFBV.java,59,79,pay,42,20,7f54e409fec2bd132ee0c494fa04c2e8,16,160028@#@3,15,22,1444.8558444384844,1,1,0,1,6,3,0,0,0,38,18,16,2,42,0,4,0,2,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@18
+
+writing a,FMdgGWDlvOGvjLyupPON2zFBV.java,82,106,refill,28,12,dd10c52b67bc25666345f6d8f499fe51,16,160029@#@4,9,17,907.4167507575755,0,0,0,1,6,2,0,0,0,26,16,11,3,27,2,0,0,0,0,0@#@@#@@#@_@refill@_:1@#@13
+
+writing a,FMdgGWDlvOGvjLyupPON2zFBV.java,117,142,main,22,17,4c496985c8dc2e20a26be2b44a9308f2,16,160030@#@1,5,15,156.27562382434076,3,3,0,1,2,1,0,0,0,15,3,5,1,14,0,0,0,6,0,0@#@pay():1,refill():1,drive():1@#@@#@_@main@_:1@#@6
+
+Metricalizing OPgtMNQ4V3ceg7927dPHX1Pj6.java
+Visiting done.
+writing a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,15,19,OPgtMNQ4V3ceg7927dPHX1Pj6,11,8,937a214f9dcebebc691fd03a151634aa,17,170031@#@1,4,7,0.0,0,0,0,0,0,0,0,0,0,9,1,3,1,12,0,0,0,2,0,0@#@taxometer:1,tankinhalt:1,einnahmen:1@#@@#@_@OPgtMNQ4V3ceg7927dPHX1Pj6@_:1@#@5
+
+writing a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,22,32,drive,23,14,9f7a077226a7d4ba4e63daab24d4d581,17,170032@#@2,7,18,362.7834751254811,0,0,0,1,3,1,0,0,0,19,11,10,2,22,0,0,0,2,0,0@#@@#@@#@_@drive@_:1@#@10
+
+writing a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,35,50,pay,29,16,cba959403fd3d95cd1aa78c8a6110d3d,17,170033@#@3,11,18,412.82257514278893,1,1,0,1,3,0,0,0,0,23,10,10,2,25,0,3,0,2,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@14
+
+writing a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,53,60,refill,15,9,607f64da949d93a781bde137b6dae045,17,170034@#@2,4,13,210.92506393404224,0,0,0,1,3,0,0,0,0,13,9,6,2,16,0,0,0,0,0,0@#@@#@@#@_@refill@_:1@#@7
+
+Metricalizing GPYf063qrOqXAO8qXB7sGLE8d.java
+Visiting done.
+writing a,GPYf063qrOqXAO8qXB7sGLE8d.java,16,20,GPYf063qrOqXAO8qXB7sGLE8d,11,8,937a214f9dcebebc691fd03a151634aa,18,180035@#@1,4,7,0.0,0,0,0,0,0,0,0,0,0,9,1,3,1,12,0,0,0,2,0,0@#@totalIncome:1,tanklevel:1,taxometer:1@#@@#@_@GPYf063qrOqXAO8qXB7sGLE8d@_:1@#@5
+
+writing a,GPYf063qrOqXAO8qXB7sGLE8d.java,22,31,drive,24,13,1799b27db39e2516e9f7c8c947c31b1a,18,180036@#@2,7,16,744.0,0,0,0,1,6,2,0,0,0,21,13,10,2,22,0,0,0,0,0,0@#@@#@@#@_@drive@_:1@#@9
+
+writing a,GPYf063qrOqXAO8qXB7sGLE8d.java,33,49,pay,40,18,9da9c03fb454bd3a129ebc98b536ea01,18,180037@#@3,12,21,1396.7569404436458,1,1,0,1,6,1,0,0,0,34,19,19,2,44,0,3,0,2,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@15
+
+writing a,GPYf063qrOqXAO8qXB7sGLE8d.java,51,62,refill,27,12,7e7f17d2987ce5e1b4451136d1136d9e,18,180038@#@2,8,16,888.0,0,0,0,1,6,2,0,0,0,25,16,12,2,29,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@11
+
+writing a,GPYf063qrOqXAO8qXB7sGLE8d.java,64,124,main,178,51,8a68d0a9e25cf3ba73489ab31a0da0cf,18,180039@#@8,37,53,21136.026477338208,28,36,0,1,18,7,0,0,0,137,36,68,6,179,3,6,0,0,0,22@#@pay():2,refill():1,equals():2,next():7,parseDouble():6,drive():2,totalIncome:3,tanklevel:4,in:1,out:16@#@println():16@#@_@main@_:1@#@47
+
+Metricalizing UQ343vHfeAOWPriIL4Xru5XMC.java
+Visiting done.
+writing a,UQ343vHfeAOWPriIL4Xru5XMC.java,11,15,UQ343vHfeAOWPriIL4Xru5XMC,13,8,70ae88bd887b4caeb1c8c2626cde27e5,19,190040@#@1,4,7,0.0,0,0,0,1,0,0,0,0,0,11,1,3,1,12,0,0,0,2,0,0@#@taxometerstand:1,gesamteinnahmen:1,tankinhalt:1@#@@#@_@UQ343vHfeAOWPriIL4Xru5XMC@_:1@#@5
+
+writing a,UQ343vHfeAOWPriIL4Xru5XMC.java,17,25,drive,25,14,fa514ea0dd3acdbb2f0e5e9efe46da28,19,190041@#@2,6,21,790.6171361001769,0,0,0,1,5,0,0,0,0,21,13,15,2,32,0,0,0,4,0,0@#@@#@@#@_@drive@_:1@#@9
+
+writing a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38,pay,25,17,bfdd7333e8e416a5e0848ecbc311f8c6,19,190042@#@3,8,20,376.0077442552005,1,1,0,1,3,0,0,0,0,20,9,9,3,22,0,2,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@12
+
+writing a,UQ343vHfeAOWPriIL4Xru5XMC.java,40,48,refill,21,10,6286a51aee31333c42c967ffe5129925,19,190043@#@2,6,14,662.4797564380231,0,0,0,1,6,0,0,0,0,19,14,10,2,26,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@9
+
+writing a,UQ343vHfeAOWPriIL4Xru5XMC.java,50,64,main,52,34,923b319aed5cd2fec32f9c05f559f4b4,19,190044@#@4,11,38,2277.600540834516,7,7,0,1,7,2,0,0,0,41,9,21,3,51,2,0,0,9,0,3@#@pay():1,refill():1,random():1,round():1,drive():1,gesamteinnahmen:2,tankinhalt:1,out:2@#@println():2@#@_@main@_:1@#@15
+
+Metricalizing IaljG2SZMe6I8nZCWp6ofFVOS.java
+Visiting done.
+writing a,IaljG2SZMe6I8nZCWp6ofFVOS.java,19,25,IaljG2SZMe6I8nZCWp6ofFVOS,17,7,610cbdc041e7a23e7754df45b354d544,110,1100045@#@1,4,6,0.0,0,0,0,3,0,0,0,0,0,15,3,3,1,12,0,0,0,0,0,0@#@TaxometerStand:1,GesamtEinnahmen:1,Tankinhalt:1@#@@#@_@IaljG2SZMe6I8nZCWp6ofFVOS@_:1@#@5
+
+writing a,IaljG2SZMe6I8nZCWp6ofFVOS.java,29,58,drive,54,23,611921b7264a877a8529d60fdac89f28,110,1100046@#@2,14,26,1663.9556602219468,9,9,0,1,6,0,0,0,0,42,10,17,2,54,0,0,0,1,0,9@#@out:9@#@println():9@#@_@drive@_:1@#@17
+
+writing a,IaljG2SZMe6I8nZCWp6ofFVOS.java,60,85,pay,46,26,fe258b1e4f74b9e8fcc7f23cf02032e6,110,1100047@#@3,12,29,1088.1877429085762,6,4,0,1,4,2,0,0,0,38,13,18,2,45,1,1,0,2,0,4@#@nextDouble():1,in:1,out:3@#@println():3@#@_@pay@_:1@#@16
+
+writing a,IaljG2SZMe6I8nZCWp6ofFVOS.java,88,112,refill,31,15,a68bc20a5075e9598b3700422dde59c2,110,1100048@#@4,10,19,943.0399079844759,2,2,0,1,6,1,0,0,0,27,13,10,4,30,0,0,0,0,0,2@#@out:2@#@println():2@#@_@refill@_:1@#@15
+
+writing a,IaljG2SZMe6I8nZCWp6ofFVOS.java,115,154,main,104,44,11f3cedbf46e7c4c86ed499021a28e2f,110,1100049@#@4,22,46,6462.567488586706,16,16,0,1,10,4,0,0,0,83,21,34,3,101,2,1,0,4,0,11@#@pay():1,refill():1,nextDouble():3,drive():1,in:1,TaxometerStand:3,GesamtEinnahmen:2,Tankinhalt:3,out:10@#@println():10@#@_@main@_:1@#@26
+
+Metricalizing NCdeERn0tNiGOzng398GOAKfm.java
+Visiting done.
+writing a,NCdeERn0tNiGOzng398GOAKfm.java,27,31,NCdeERn0tNiGOzng398GOAKfm,8,7,0174a9fda02c40539c7c73cb35965885,111,1110050@#@1,4,6,0.0,0,0,0,0,0,0,0,0,0,6,4,3,1,9,0,0,0,2,0,0@#@@#@@#@_@NCdeERn0tNiGOzng398GOAKfm@_:1@#@5
+
+writing a,NCdeERn0tNiGOzng398GOAKfm.java,34,45,drive,41,19,f7a0e84f59af3c45dc70a83852fd80d8,111,1110051@#@2,9,23,1809.4247824228053,3,3,0,1,8,0,0,0,0,34,9,16,2,44,0,0,0,2,0,3@#@taxoMeter:3,curFule:2,out:3@#@println():3@#@_@drive@_:1@#@11
+
+writing a,NCdeERn0tNiGOzng398GOAKfm.java,47,57,pay,23,16,63c1c2c2b1c3fcc5449856b99d7616c6,111,1110052@#@3,8,18,312.7443751081734,1,1,0,1,3,0,0,0,0,18,7,7,2,18,0,2,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@11
+
+writing a,NCdeERn0tNiGOzng398GOAKfm.java,59,70,refill,27,15,df4494277b51ad7b5fb2df940327f7b2,111,1110053@#@2,8,21,1229.848878378053,1,1,0,1,8,1,0,0,0,24,14,11,2,30,0,0,0,1,0,1@#@out:1@#@println():1@#@_@refill@_:1@#@11
+
+writing a,NCdeERn0tNiGOzng398GOAKfm.java,72,100,main,102,49,802c6219d1f9512ffe0e2f0464dacd76,111,1110054@#@4,21,54,10635.03210399809,13,14,0,1,14,6,0,0,2,84,23,48,3,119,2,0,0,12,0,10@#@pay():1,refill():2,random():5,drive():1,taxoMeter:1,totalRev:1,out:5@#@println():5@#@_@main@_:1@#@25
+
+Metricalizing Gk1v1U3LQto7TPPwZ9HsWEHH0.java
+Visiting done.
+writing a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,11,20,Gk1v1U3LQto7TPPwZ9HsWEHH0,25,15,50ae7945ddca5e6feff756aaaafea069,112,1120055@#@1,8,14,0.0,0,0,0,0,0,0,0,0,0,23,0,7,1,30,0,0,0,5,0,0@#@kilometerPrice:1,tankVolume:2,tankFullness:1,totalRevenue:1,taxometer:1,gasUsage:1,basePrice:2@#@@#@_@Gk1v1U3LQto7TPPwZ9HsWEHH0@_:1@#@9
+
+writing a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,22,24,hasEnoughFuel,12,10,2c478ab1d8708ea7e76c398bc0eabd24,112,1120056@#@1,2,10,43.18506523353572,0,0,0,1,1,0,0,0,0,9,1,4,1,9,0,0,0,1,0,0@#@tankFullness:1,gasUsage:1@#@@#@_@hasEnoughFuel@_:1@#@3
+
+writing a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,26,34,drive,26,15,d30603cdcbcdc6e8bcc78a4f48c77234,112,1120057@#@2,6,17,367.8716557125306,0,0,1,1,3,0,0,0,0,21,3,9,2,24,0,0,0,2,0,0@#@hasEnoughFuel():1,kilometerPrice:1,tankFullness:1,taxometer:2,gasUsage:1,basePrice:1@#@@#@_@drive@_:1@#@9
+
+writing a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,36,46,pay,33,19,f7ad19736919ee62e4afddfef06f8ecf,112,1120058@#@3,9,23,687.581417320666,1,1,0,1,4,1,0,0,0,28,5,10,2,30,0,2,0,3,0,1@#@printf():1,totalRevenue:1,taxometer:2,basePrice:1,out:1@#@@#@_@pay@_:1@#@12
+
+writing a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,48,57,refill,31,12,a3d13e6b44dd92a0fe8d1fa40118b613,112,1120059@#@2,7,17,931.9415278050774,0,0,0,1,6,1,0,0,0,29,4,9,2,33,0,0,0,1,0,0@#@tankVolume:2,tankFullness:3,totalRevenue:4@#@@#@_@refill@_:1@#@10
+
+Metricalizing NpqsFLFY0Tf85TgQ5c8URolNr.java
+Visiting done.
+writing a,NpqsFLFY0Tf85TgQ5c8URolNr.java,15,18,NpqsFLFY0Tf85TgQ5c8URolNr,11,5,f858eb8daab5638f1b43bb2d04904d25,113,1130060@#@1,3,5,0.0,0,0,0,2,0,0,0,0,0,10,2,2,1,8,0,0,0,0,0,0@#@revenue:1,tank:1@#@@#@_@NpqsFLFY0Tf85TgQ5c8URolNr@_:1@#@4
+
+writing a,NpqsFLFY0Tf85TgQ5c8URolNr.java,22,35,drive,33,17,275f1f5d5e88a7294d3fd129d2738acc,113,1130061@#@3,10,20,1115.0574484809397,1,1,0,1,6,0,0,0,0,28,17,15,3,36,0,0,0,3,0,1@#@out:1@#@println():1@#@_@drive@_:1@#@14
+
+writing a,NpqsFLFY0Tf85TgQ5c8URolNr.java,39,50,pay,27,16,53901d5939b160a8a1056f42ea9e16d7,113,1130062@#@3,8,22,735.8062170751541,1,1,0,1,5,0,0,0,0,22,10,11,3,27,0,2,0,2,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@12
+
+writing a,NpqsFLFY0Tf85TgQ5c8URolNr.java,54,66,refill,26,11,e38bc5afc8c9720768261f978761b0d7,113,1130063@#@3,8,16,840.0,0,0,0,1,6,1,0,0,0,24,16,11,3,29,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@12
+
+writing a,NpqsFLFY0Tf85TgQ5c8URolNr.java,68,70,getRevenue,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,113,1130064@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getRevenue@_:1@#@3
+
+writing a,NpqsFLFY0Tf85TgQ5c8URolNr.java,72,74,getTank,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,113,1130065@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTank@_:1@#@3
+
+writing a,NpqsFLFY0Tf85TgQ5c8URolNr.java,76,78,getPrice,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,113,1130066@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getPrice@_:1@#@3
+
+Metricalizing X3L5yqKRE6s4IBEljxYi8s2gf.java
+Visiting done.
+writing a,X3L5yqKRE6s4IBEljxYi8s2gf.java,21,30,X3L5yqKRE6s4IBEljxYi8s2gf,37,11,3c43f71db9f8cdb8b4e4871a460c982c,114,1140067@#@1,8,10,0.0,0,0,0,7,0,0,0,0,0,35,7,7,1,28,0,0,0,0,0,0@#@TANKVOLUMEN:1,GRUNDPREIS:1,gesamteinnahmen:1,KRAFTSTOFFVERBRAUCH:1,taxometer:1,tankinhalt:1,KILOMETERPREIS:1@#@@#@_@X3L5yqKRE6s4IBEljxYi8s2gf@_:1@#@9
+
+writing a,X3L5yqKRE6s4IBEljxYi8s2gf.java,35,52,drive,38,20,bdf2b1d5053dadf5ea9c7c403899725e,114,1140068@#@2,10,25,1783.2407768734943,2,2,0,1,8,1,0,0,0,33,10,15,2,44,0,0,0,3,0,2@#@taxometer:2,tankinhalt:2,out:2@#@println():2@#@_@drive@_:1@#@14
+
+writing a,X3L5yqKRE6s4IBEljxYi8s2gf.java,55,68,pay,39,19,73800882c539a956368f51153a27de2b,114,1140069@#@4,10,24,1650.5865002596165,2,2,0,1,8,0,0,0,0,33,5,12,2,38,0,2,0,1,0,3@#@gesamteinnahmen:1,taxometer:5,out:2@#@println():2@#@_@pay@_:1@#@12
+
+writing a,X3L5yqKRE6s4IBEljxYi8s2gf.java,71,92,refill,58,21,688e9ad8179da55c8d3bcde9201389c0,114,1140070@#@3,11,29,5829.5771941530875,2,2,0,1,15,2,0,0,0,54,16,26,3,71,0,0,0,2,0,5@#@gesamteinnahmen:5,tankinhalt:4,out:2@#@println():2@#@_@refill@_:1@#@16
+
+writing a,X3L5yqKRE6s4IBEljxYi8s2gf.java,96,145,main,131,60,d28119f2b113e2de5c77c3dee8f8674e,114,1140071@#@6,25,68,19601.630348826096,13,19,0,1,20,4,0,0,0,108,30,53,5,146,3,1,1,13,0,16@#@pay():1,charAt():1,refill():1,print():2,nextDouble():4,next():1,drive():1,TANKVOLUMEN:1,GRUNDPREIS:1,gesamteinnahmen:1,KRAFTSTOFFVERBRAUCH:3,tankinhalt:3,KILOMETERPREIS:1,out:10@#@println():8@#@_@main@_:1@#@31
+
+Metricalizing CHy9tzZMsUit409DPRN5zId8A.java
+Visiting done.
+writing a,CHy9tzZMsUit409DPRN5zId8A.java,15,27,CHy9tzZMsUit409DPRN5zId8A,38,13,fd9f54fa9b18bbc99c760393a47030f7,115,1150072@#@1,10,13,0.0,0,0,0,5,0,0,0,0,0,37,5,9,1,36,0,0,0,4,0,0@#@momentaneEinnahmen:1,trinkgeld:1,kilometerpreis:1,kilometerverbrauch:1,maximalesVolumen:1,gesamteinnahmen:1,grundpreis:1,taxometer:1,tankinhalt:1@#@@#@_@CHy9tzZMsUit409DPRN5zId8A@_:1@#@11
+
+writing a,CHy9tzZMsUit409DPRN5zId8A.java,29,40,drive,42,21,6c26f15b864ade37eefcc385267f41fd,115,1150073@#@2,8,25,2006.145873982681,2,2,0,1,8,0,0,0,0,36,8,18,2,50,0,0,0,2,0,4@#@momentaneEinnahmen:2,kilometerpreis:2,taxometer:1,grundpreis:1,tankinhalt:1,out:2@#@println():2@#@_@drive@_:1@#@11
+
+writing a,CHy9tzZMsUit409DPRN5zId8A.java,42,60,pay,45,23,87a394f32c12ee5372ecc0e100dcae45,115,1150074@#@3,13,27,1046.0752504759632,3,3,0,1,4,0,0,0,0,37,13,18,2,47,0,3,0,1,0,5@#@gesamteinnahmen:2,out:3@#@println():3@#@_@pay@_:1@#@15
+
+writing a,CHy9tzZMsUit409DPRN5zId8A.java,62,89,refill,72,28,a17191fc5a90f3f1032a106801512441,115,1150075@#@2,14,33,3753.0292248026894,6,6,0,1,8,3,0,0,0,64,11,29,2,84,0,0,0,1,0,9@#@format():1,maximalesVolumen:2,gesamteinnahmen:4,tankinhalt:5,out:5@#@println():5@#@_@refill@_:1@#@17
+
+Metricalizing QJ7DJjCXmAg6Wltw7HRX6zFzI.java
+Visiting done.
+writing a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,13,37,main,67,31,f0e701fbdffd4eec7ebf50d413f113ca,116,1160076@#@2,13,32,2880.0,8,13,0,1,8,3,0,0,0,50,17,22,2,61,1,0,0,12,0,0@#@pay():4,refill():1,drive():3,out:5@#@println():5@#@_@main@_:1@#@15
+
+writing a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,39,48,QJ7DJjCXmAg6Wltw7HRX6zFzI,28,12,f58d683cb03e5b0ce4825455d05049e5,116,1160077@#@1,8,11,0.0,0,0,0,4,0,0,0,0,0,26,9,7,1,25,0,0,0,1,0,0@#@kraftstoffverbrauch:1,kilometerpreis:1,tankvolumen:1,grundpreis:1@#@@#@_@QJ7DJjCXmAg6Wltw7HRX6zFzI@_:1@#@9
+
+writing a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,53,63,drive,24,13,b3e6c3c6753a9c061ca861c92c203edd,116,1160078@#@2,7,17,760.2680884725632,0,0,0,1,6,1,0,0,0,20,11,11,1,25,0,0,0,3,0,0@#@@#@@#@_@drive@_:1@#@8
+
+writing a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,65,77,pay,27,16,355348e264518c50802704c1e098cfec,116,1160079@#@3,8,22,735.8062170751541,1,1,0,1,5,0,0,0,0,22,12,11,1,27,0,2,0,0,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@9
+
+writing a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,79,89,refill,23,10,842b0be943300dcd13a6db1aa5d25a6c,116,1160080@#@2,7,16,720.0,0,0,0,1,6,2,0,0,0,21,13,9,1,22,0,0,0,0,0,0@#@@#@@#@_@refill@_:1@#@8
+
+Metricalizing Z2YE4AGGGFMWhGTOJF9QPVXy2.java
+Visiting done.
+writing a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,10,18,Z2YE4AGGGFMWhGTOJF9QPVXy2,28,12,05c30f1c23862be8f8a26bf55bfa505f,117,1170081@#@1,8,11,0.0,0,0,0,4,0,0,0,0,0,26,8,7,1,25,0,0,0,2,0,0@#@kilometerpreis:1,tankvolumen:1,verbrauch:1,grundpreis:1@#@@#@_@Z2YE4AGGGFMWhGTOJF9QPVXy2@_:1@#@9
+
+writing a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,20,27,drive,26,13,dae5cf2e67ef801d34ea45372f109093,117,1170082@#@2,6,17,907.4167507575755,0,0,0,1,6,0,0,0,0,22,14,15,2,36,0,0,0,4,0,0@#@@#@@#@_@drive@_:1@#@8
+
+writing a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,29,39,pay,23,16,90b8f6aa1a70a6895ef01b0624f7dcb0,117,1170083@#@3,8,18,312.7443751081734,1,1,0,1,3,0,0,0,0,18,7,7,3,18,0,2,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@11
+
+writing a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,41,46,refill,16,9,dbbf02c492d3ea753920ad55bbc76b67,117,1170084@#@2,4,12,301.13685006057716,0,0,0,1,4,0,0,0,0,14,10,7,2,19,0,0,0,0,0,0@#@@#@@#@_@refill@_:1@#@6
+
+writing a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,48,53,ausgeben,21,12,ef1e92f8eded135a85055c91aa7f116f,117,1170085@#@1,5,11,76.10749561002055,4,4,0,0,1,0,0,0,0,15,3,7,1,21,0,0,0,0,0,3@#@out:4@#@println():4@#@_@ausgeben@_:1@#@6
+
+writing a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,55,63,main,29,20,07bd9381eb8ba3f88fd10df038832c1d,117,1170086@#@1,8,18,337.7639251168273,3,6,0,1,3,1,0,0,0,19,6,8,1,21,0,0,0,7,0,0@#@pay():1,refill():1,drive():1,ausgeben():3@#@@#@_@main@_:1@#@9
+
+Metricalizing Vg3Lw8sbXbWjTXB4QkHk1CztY.java
+Visiting done.
+writing a,Vg3Lw8sbXbWjTXB4QkHk1CztY.java,18,20,Vg3Lw8sbXbWjTXB4QkHk1CztY,6,5,093048d6c5effc09eb623bd09d8e54ba,118,1180087@#@1,2,4,0.0,0,0,0,1,0,0,0,0,0,4,2,1,1,3,0,0,0,0,0,0@#@@#@@#@_@Vg3Lw8sbXbWjTXB4QkHk1CztY@_:1@#@3
+
+writing a,Vg3Lw8sbXbWjTXB4QkHk1CztY.java,24,33,drive,21,13,64b375c5aa4f955974de06a18c62c2e5,118,1180088@#@2,6,17,331.08449014127757,0,0,0,1,3,1,0,0,0,18,11,9,2,22,0,0,0,1,0,0@#@@#@@#@_@drive@_:1@#@8
+
+writing a,Vg3Lw8sbXbWjTXB4QkHk1CztY.java,35,50,pay,29,16,495109fc0c99c8190455297a58bad2a3,118,1180089@#@3,11,18,412.82257514278893,1,1,0,1,3,0,0,0,0,23,10,10,3,25,0,3,0,2,0,1@#@print():1,out:1@#@@#@_@pay@_:1@#@16
+
+writing a,Vg3Lw8sbXbWjTXB4QkHk1CztY.java,54,59,refill,13,9,ddcb5ca5f4e1c3a212bb2e3d865c42f5,118,1180090@#@2,4,12,114.71880002307701,0,0,0,1,2,0,0,0,0,11,7,5,2,12,1,0,0,0,0,0@#@@#@@#@_@refill@_:1@#@6
+
+writing a,Vg3Lw8sbXbWjTXB4QkHk1CztY.java,62,66,Status,18,12,1b3504eebc7cc4c91e4e1109fb773731,118,1180091@#@1,4,11,65.72920075410866,3,3,0,0,1,0,0,0,0,13,3,6,1,18,0,0,0,0,0,3@#@out:3@#@println():3@#@_@Status@_:1@#@5
+
+writing a,Vg3Lw8sbXbWjTXB4QkHk1CztY.java,68,81,main,40,26,9395bcc971b18fba6dee0648f1a881a6,118,1180092@#@2,8,25,743.0169903639559,9,7,0,1,4,2,0,0,1,28,4,12,2,30,1,1,0,1,0,3@#@pay():1,nextDouble():1,nextInt():1,drive():1,in:1,out:3@#@println():3@#@_@main@_:1@#@10
+
+Metricalizing IFcTWHlwWyw3I7uBJibW5ZwtK.java
+Visiting done.
+writing a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,11,19,IFcTWHlwWyw3I7uBJibW5ZwtK,37,11,3c43f71db9f8cdb8b4e4871a460c982c,119,1190093@#@1,8,10,0.0,0,0,0,7,0,0,0,0,0,35,7,7,1,28,0,0,0,0,0,0@#@totalIncome:1,fuelLevel:1,basicPrice:1,pricePerKm:1,currentPrice:1,tankCapacity:1,fuelConsumption:1@#@@#@_@IFcTWHlwWyw3I7uBJibW5ZwtK@_:1@#@9
+
+writing a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,21,31,drive,27,17,b143e3e6e560da38615bcbb0ea3d47b9,119,1190094@#@2,8,20,427.8708813938489,1,1,0,1,3,1,0,0,0,22,12,11,2,25,0,0,0,1,0,1@#@out:1@#@println():1@#@_@drive@_:1@#@11
+
+writing a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,33,44,pay,25,17,eaee43416ad09ca0d93fc865b79c7fc0,119,1190095@#@3,8,19,344.0821285889304,1,1,0,2,3,0,0,0,0,20,7,7,3,18,0,2,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@12
+
+writing a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,46,58,refill,34,17,4d62539e2fe5d1a2d502966506516cca,119,1190096@#@2,10,22,1534.0444768112302,2,2,0,1,8,2,0,0,0,30,15,13,2,35,0,0,0,1,0,2@#@out:2@#@println():2@#@_@refill@_:1@#@13
+
+writing a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,60,70,main,44,30,c797fe42f1b51a16e3677b83352690ab,119,1190097@#@2,8,29,655.8274343422223,6,6,0,1,3,2,0,0,0,34,5,11,2,36,0,0,0,10,0,4@#@pay():1,refill():1,drive():1,out:3@#@println():3@#@_@main@_:1@#@11
+
+Metricalizing FLHyjHb9dZ9SuC5GfHaCKe0IK.java
+Visiting done.
+writing a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,18,28,FLHyjHb9dZ9SuC5GfHaCKe0IK,28,11,2156ddcee132f31f06dfaf1d349d7ae5,120,1200098@#@1,8,11,0.0,0,0,0,4,0,0,0,0,0,27,7,7,1,26,0,0,0,2,0,0@#@kmPrice:1,tankVolume:1,tankContent:1,fuelConsumption:1,basePrice:1@#@@#@_@FLHyjHb9dZ9SuC5GfHaCKe0IK@_:1@#@9
+
+writing a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,31,70,main,110,48,de958ded14208651cd51197d99f43508,120,1200099@#@4,25,48,8176.385101055774,20,24,0,1,12,4,0,0,0,81,23,41,3,106,2,1,0,5,0,11@#@pay():2,refill():1,equalsIgnoreCase():1,next():5,exit():1,parseDouble():4,drive():1,close():1,in:1,totalRevenue:1,out:8@#@println():8@#@_@main@_:1@#@29
+
+writing a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,74,87,drive,32,21,da1945b62ba52b9cbdedce880565fec6,120,12000100@#@2,8,26,987.0923408096294,2,2,0,1,5,1,0,0,0,27,12,15,2,36,0,0,0,4,0,2@#@exit():1,out:1@#@println():1@#@_@drive@_:1@#@10
+
+writing a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,90,106,pay,23,16,63c1c2c2b1c3fcc5449856b99d7616c6,120,12000101@#@3,8,18,312.7443751081734,1,1,0,1,3,0,0,0,0,18,7,7,2,18,0,2,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@11
+
+writing a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,109,127,refill,38,18,dbec7320518f0d99a0efc3b68b20a376,120,12000102@#@2,10,23,1954.1787650166295,1,1,0,1,8,2,0,0,0,35,21,19,2,46,0,0,0,0,0,4@#@out:1@#@println():1@#@_@refill@_:1@#@13
+
+Metricalizing VUTi3tcXbl4dR0FmsuzUErX0E.java
+Visiting done.
+writing a,VUTi3tcXbl4dR0FmsuzUErX0E.java,18,24,VUTi3tcXbl4dR0FmsuzUErX0E,22,13,6658f7877970d6ce4b42939474206ab7,121,12100103@#@1,6,12,0.0,0,0,0,5,0,0,0,0,0,20,10,5,1,15,0,0,0,0,0,0@#@@#@@#@_@VUTi3tcXbl4dR0FmsuzUErX0E@_:1@#@7
+
+writing a,VUTi3tcXbl4dR0FmsuzUErX0E.java,27,42,drive,36,24,e186f1daced8b854e0433eb922c56179,121,12100104@#@3,9,27,974.7519379435112,4,4,0,1,5,1,0,0,0,27,11,14,3,31,0,0,0,3,0,1@#@doubleValue():2,setScale():1,HALF_UP:1,out:1@#@println():1@#@_@drive@_:1@#@12
+
+writing a,VUTi3tcXbl4dR0FmsuzUErX0E.java,45,59,pay,26,17,dd93f0c08edb8081b6dc6e4bb27ee304,121,12100105@#@3,8,21,544.6473604245663,1,1,0,1,4,0,0,0,0,21,9,10,3,25,0,2,0,1,0,2@#@out:1@#@println():1@#@_@pay@_:1@#@12
+
+writing a,VUTi3tcXbl4dR0FmsuzUErX0E.java,62,75,refill,24,11,3914547df95063aed5c47379a97b621d,121,12100106@#@2,7,16,792.0,0,0,0,1,6,1,0,0,0,22,15,11,2,28,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@10
+
+writing a,VUTi3tcXbl4dR0FmsuzUErX0E.java,77,166,main,208,68,1bddf4eda30135b6f389c2f4d5a2bca5,121,12100107@#@13,56,68,13757.666021225768,38,30,0,1,10,6,0,7,0,172,27,54,4,168,1,2,0,11,0,26@#@pay():1,refill():1,readLine():4,parseDouble():3,drive():1,err:7,in:1,taxometer:1,tankinhalt:1,out:13@#@println():20@#@_@main@_:1@#@78
+
+Metricalizing SnOt9Q25W4q3dK0QOEtnmN5BU.java
+Visiting done.
+writing a,SnOt9Q25W4q3dK0QOEtnmN5BU.java,14,24,SnOt9Q25W4q3dK0QOEtnmN5BU,38,15,f7834104169b2e69d9b29dd859e3f954,122,12200108@#@1,10,15,0.0,0,0,0,5,0,0,0,0,0,37,5,9,1,36,0,0,0,4,0,0@#@income:1,priceKilometer:1,taxometers:1,fuel:1,fuelConsume_oneKM:1,maxTankVolume:1,currentPrice:1,tip:1,basePrice:1@#@@#@_@SnOt9Q25W4q3dK0QOEtnmN5BU@_:1@#@11
+
+writing a,SnOt9Q25W4q3dK0QOEtnmN5BU.java,26,36,drive,37,20,829d988b32d24ebe6865d14c126bf3bd,122,12200109@#@2,8,24,898.6526501413467,2,2,0,1,4,0,0,0,0,31,13,18,2,45,0,0,0,2,0,4@#@taxometers:1,fuel:1,out:2@#@println():2@#@_@drive@_:1@#@11
+
+writing a,SnOt9Q25W4q3dK0QOEtnmN5BU.java,38,51,pay,42,22,200cfeecc38cd1b6cc036e9b7918cdeb,122,12200110@#@3,12,26,958.8897025007828,3,3,0,1,4,0,0,0,0,34,12,17,2,43,0,3,0,1,0,5@#@income:1,out:3@#@println():3@#@_@pay@_:1@#@14
+
+writing a,SnOt9Q25W4q3dK0QOEtnmN5BU.java,53,79,refill,84,25,0ad4de85f1f430c7e82e1e1256f2472f,122,12200111@#@2,14,30,6653.743647645151,5,5,0,1,12,3,0,0,0,77,9,36,2,105,0,0,0,2,0,10@#@income:6,fuel:8,maxTankVolume:4,out:5@#@println():5@#@_@refill@_:1@#@17
+
+Metricalizing NYs33OaJgnHVlC5gxbP4TA6U8.java
+Visiting done.
+writing a,NYs33OaJgnHVlC5gxbP4TA6U8.java,21,25,NYs33OaJgnHVlC5gxbP4TA6U8,17,7,610cbdc041e7a23e7754df45b354d544,123,12300112@#@1,4,6,0.0,0,0,0,3,0,0,0,0,0,15,3,3,1,12,0,0,0,0,0,0@#@taximeter:1,totalRevenue:1,inTank:1@#@@#@_@NYs33OaJgnHVlC5gxbP4TA6U8@_:1@#@5
+
+writing a,NYs33OaJgnHVlC5gxbP4TA6U8.java,27,52,drive,59,26,ef60b4d7a9cbf8ce916ff2df7d0b34ee,123,12300113@#@3,16,31,3864.273122101763,4,4,1,1,10,2,0,0,0,51,25,27,3,70,0,0,0,3,0,6@#@refill():1,out:4@#@println():4@#@_@drive@_:1@#@21
+
+writing a,NYs33OaJgnHVlC5gxbP4TA6U8.java,54,69,pay,31,18,3ddc986a2c6d1aafe490aaab0a9a8f00,123,12300114@#@3,10,20,427.8708813938489,3,3,0,1,3,0,0,0,0,24,7,9,2,26,0,2,0,1,0,3@#@out:3@#@println():3@#@_@pay@_:1@#@13
+
+writing a,NYs33OaJgnHVlC5gxbP4TA6U8.java,71,91,refill,48,21,3bb73a0051b53fabd2243ce79537c520,123,12300115@#@2,14,27,2472.541501125004,2,2,0,1,8,4,0,0,0,44,22,21,2,54,0,0,0,2,0,4@#@out:2@#@println():2@#@_@refill@_:1@#@17
+
+writing a,NYs33OaJgnHVlC5gxbP4TA6U8.java,93,100,getUserInput,23,20,b7fb551a6182abe03264746bc2644f20,123,12300116@#@2,6,18,262.70527509086565,4,5,0,0,3,1,0,0,0,14,3,7,2,16,0,0,0,1,0,2@#@nextLine():1,equals():1,exit():1,parseDouble():1,out:1@#@println():1@#@_@getUserInput@_:1@#@8
+
+writing a,NYs33OaJgnHVlC5gxbP4TA6U8.java,102,125,main,64,33,54ef099e0ffefa92380f8979b9dac32e,123,12300117@#@4,16,34,2930.378596560196,10,7,2,1,8,3,0,0,0,50,10,22,4,57,2,1,0,6,0,6@#@pay():1,getUserInput():2,drive():1,in:1,out:5@#@println():5@#@_@main@_:1@#@21
+
+Metricalizing SSHGivHlZWTTsOAgQjj8BokSs.java
+Visiting done.
+writing a,SSHGivHlZWTTsOAgQjj8BokSs.java,16,18,setTankCapacity,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,124,12400118@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@tankCapacity:1@#@@#@_@setTankCapacity@_:1@#@3
+
+writing a,SSHGivHlZWTTsOAgQjj8BokSs.java,20,22,setTaxometer,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,124,12400119@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@taxometer:1@#@@#@_@setTaxometer@_:1@#@3
+
+writing a,SSHGivHlZWTTsOAgQjj8BokSs.java,24,26,setTotalRevenue,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,124,12400120@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@totalRevenue:1@#@@#@_@setTotalRevenue@_:1@#@3
+
+writing a,SSHGivHlZWTTsOAgQjj8BokSs.java,29,31,getTankCapacity,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,124,12400121@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTankCapacity@_:1@#@3
+
+writing a,SSHGivHlZWTTsOAgQjj8BokSs.java,33,35,getTaxometer,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,124,12400122@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTaxometer@_:1@#@3
+
+writing a,SSHGivHlZWTTsOAgQjj8BokSs.java,37,39,getTotalRevenue,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,124,12400123@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTotalRevenue@_:1@#@3
+
+writing a,SSHGivHlZWTTsOAgQjj8BokSs.java,42,47,toString,19,19,b709690c803603cabe0a58e3ae724f5a,124,12400124@#@1,2,18,129.26767504471167,1,0,0,0,1,0,0,0,0,16,7,15,1,30,0,0,0,0,0,8@#@@#@@#@_@toString@_:1@#@3
+
+writing a,SSHGivHlZWTTsOAgQjj8BokSs.java,50,60,SSHGivHlZWTTsOAgQjj8BokSs,38,12,688304eba7f8308d0d0cfa8c9f2dc3b7,124,12400125@#@1,8,12,473.2150500951926,0,0,0,7,3,0,0,0,0,36,7,8,1,30,0,0,0,1,0,0@#@tankVolumeInLitre:1,kilometerPrice:1,tankCapacity:1,totalRevenue:1,taxometer:1,fuelConsumption:1,basePrice:1@#@@#@_@SSHGivHlZWTTsOAgQjj8BokSs@_:1@#@9
+
+writing a,SSHGivHlZWTTsOAgQjj8BokSs.java,64,74,drive,21,14,c173e486f976484b7f80edc07aca53fa,124,12400126@#@2,6,17,408.746284125034,0,0,2,1,4,1,0,0,0,16,10,9,2,18,0,0,0,0,0,0@#@setTankCapacity():1,setTaxometer():1@#@@#@_@drive@_:1@#@8
+
+writing a,SSHGivHlZWTTsOAgQjj8BokSs.java,77,89,pay,26,17,4de5cf5103bdcb29d4bcf8ef3959e85a,124,12400127@#@3,8,20,518.6313713864835,1,1,1,1,4,0,0,0,0,20,8,10,3,24,0,2,0,1,0,2@#@setTotalRevenue():1,out:1@#@println():1@#@_@pay@_:1@#@11
+
+writing a,SSHGivHlZWTTsOAgQjj8BokSs.java,92,108,refill,30,13,8171ade5a7ae1e59625c0442ec6f53b7,124,12400128@#@3,9,20,1417.592415123055,0,0,0,1,8,2,0,0,0,28,17,13,3,32,1,0,0,2,0,0@#@@#@@#@_@refill@_:1@#@13
+
+writing a,SSHGivHlZWTTsOAgQjj8BokSs.java,110,133,main,89,45,a83b66738973b3676ca7e2c8340a3f32,124,12400129@#@1,14,44,6114.563412873773,10,15,0,1,10,4,0,0,0,70,15,42,1,100,0,0,0,10,0,19@#@pay():1,refill():1,getTaxometer():1,getTankCapacity():2,getTotalRevenue():2,drive():1,out:7@#@println():7@#@_@main@_:1@#@15
+
+Metricalizing KpDaNc2yULGxB1v5wlL6E3OD6.java
+Visiting done.
+writing a,KpDaNc2yULGxB1v5wlL6E3OD6.java,14,26,main,36,27,3d41345f567ecfa0e5111c4b485f8379,125,12500130@#@1,8,26,549.9514470225079,7,4,0,1,3,4,0,0,0,28,3,11,1,27,0,0,0,6,0,2@#@pay():1,refill():1,drive():1,out:1@#@println():1@#@_@main@_:1@#@9
+
+writing a,KpDaNc2yULGxB1v5wlL6E3OD6.java,29,33,KpDaNc2yULGxB1v5wlL6E3OD6,13,9,160eda4f075810278b0f482f277a1eca,125,12500131@#@1,4,9,0.0,0,0,0,3,0,0,0,0,0,12,6,3,1,9,0,0,0,0,0,0@#@@#@@#@_@KpDaNc2yULGxB1v5wlL6E3OD6@_:1@#@5
+
+writing a,KpDaNc2yULGxB1v5wlL6E3OD6.java,35,45,drive,28,17,8ce024758bc8ca7e0dfcf3c5de8a97fa,125,12500132@#@2,7,21,650.0629785712566,1,1,0,1,4,0,0,0,0,23,13,14,2,35,0,0,0,3,0,1@#@out:1@#@println():1@#@_@drive@_:1@#@10
+
+writing a,KpDaNc2yULGxB1v5wlL6E3OD6.java,47,58,pay,26,17,7d1f130472c8803f8581f10482119c91,125,12500133@#@3,8,21,544.6473604245663,1,1,0,1,4,0,0,0,0,21,9,10,3,27,0,2,0,1,0,2@#@out:1@#@println():1@#@_@pay@_:1@#@11
+
+writing a,KpDaNc2yULGxB1v5wlL6E3OD6.java,60,72,refill,33,17,a4c3134bb6848d92e6d1aede7bef56be,125,12500134@#@2,8,23,1628.4823041805248,2,2,0,1,8,0,0,0,0,29,16,16,2,44,0,0,0,1,0,4@#@out:2@#@println():2@#@_@refill@_:1@#@11
+
+Metricalizing ZmB1ce4Z4bRirnJRrzLxHP71W.java
+Visiting done.
+writing a,ZmB1ce4Z4bRirnJRrzLxHP71W.java,10,18,ZmB1ce4Z4bRirnJRrzLxHP71W,33,12,6f1710c5bec0ba980089d63ae05aa068,126,12600135@#@1,8,11,0.0,0,0,0,5,0,0,0,0,0,31,5,7,1,28,0,0,0,2,0,0@#@kmPrice:1,balance:1,tankContent:1,currentPrice:1,tankCapacity:1,fuelConsumption:1,basePrice:1@#@@#@_@ZmB1ce4Z4bRirnJRrzLxHP71W@_:1@#@9
+
+writing a,ZmB1ce4Z4bRirnJRrzLxHP71W.java,20,31,drive,36,15,5793d093403217fff65489d005949d9e,126,12600136@#@3,8,21,1616.3728115825838,0,0,0,1,8,0,0,0,0,31,3,15,1,38,0,0,0,5,0,0@#@kmPrice:1,tankContent:2,currentPrice:3,fuelConsumption:2,basePrice:1@#@@#@_@drive@_:1@#@9
+
+writing a,ZmB1ce4Z4bRirnJRrzLxHP71W.java,33,44,pay,30,17,2bb7eb7a86165855242b3d8ff880cb44,126,12600137@#@3,8,19,420.54482383091494,1,1,0,1,3,0,0,0,0,25,4,8,1,26,0,2,0,1,0,1@#@printf():1,balance:1,currentPrice:4,out:1@#@@#@_@pay@_:1@#@9
+
+writing a,ZmB1ce4Z4bRirnJRrzLxHP71W.java,46,59,refill,37,14,c62f9ec79c0831af6a1ccc45a9088510,126,12600138@#@3,9,19,2344.855987420859,0,0,0,1,12,1,0,0,0,34,5,12,2,38,0,0,0,2,0,0@#@balance:4,tankContent:3,currentPrice:1,tankCapacity:2@#@@#@_@refill@_:1@#@12
+
+writing a,ZmB1ce4Z4bRirnJRrzLxHP71W.java,61,69,main,41,30,b4236e48694c41d39534fffe2d1e7ad4,126,12600139@#@2,8,30,804.730057679797,5,7,0,1,4,1,0,0,0,30,5,11,1,34,0,0,0,11,0,3@#@pay():2,refill():1,drive():2,out:2@#@println():2@#@_@main@_:1@#@9
+
+Metricalizing Buh7lFTuRLvglBJw8PsygWcl6.java
+Visiting done.
+writing a,Buh7lFTuRLvglBJw8PsygWcl6.java,14,24,Buh7lFTuRLvglBJw8PsygWcl6,38,15,f7834104169b2e69d9b29dd859e3f954,127,12700140@#@1,10,15,0.0,0,0,0,5,0,0,0,0,0,37,5,9,1,36,0,0,0,4,0,0@#@income:1,priceKilometer:1,taxometers:1,fuel:1,fuelConsume_oneKM:1,maxTankVolume:1,currentPrice:1,tip:1,basePrice:1@#@@#@_@Buh7lFTuRLvglBJw8PsygWcl6@_:1@#@11
+
+writing a,Buh7lFTuRLvglBJw8PsygWcl6.java,26,36,drive,42,20,92b165f7d10133dcc96fba6744e58792,127,12700141@#@2,8,24,1980.70380031154,2,2,0,1,8,0,0,0,0,36,8,18,2,50,0,0,0,2,0,4@#@priceKilometer:2,taxometers:1,fuel:1,currentPrice:2,basePrice:1,out:2@#@println():2@#@_@drive@_:1@#@11
+
+writing a,Buh7lFTuRLvglBJw8PsygWcl6.java,38,52,pay,45,22,be7057ca65081f51f56a0f789f5e4c1e,127,12700142@#@3,13,26,2068.1934759820806,3,3,0,1,8,0,0,0,0,37,13,18,2,47,0,3,0,1,0,5@#@income:2,out:3@#@println():3@#@_@pay@_:1@#@15
+
+writing a,Buh7lFTuRLvglBJw8PsygWcl6.java,54,78,refill,83,29,4dba72b06efbc2405d6ad89bff6f6619,127,12700143@#@2,14,34,6776.500504545453,6,6,0,1,12,3,0,0,0,75,10,36,2,103,0,0,0,3,0,11@#@format():1,income:4,fuel:7,maxTankVolume:4,out:5@#@println():5@#@_@refill@_:1@#@17
+
+Metricalizing XvLggiA0U2816f7k8OxJUfOXy.java
+Visiting done.
+writing a,XvLggiA0U2816f7k8OxJUfOXy.java,18,24,XvLggiA0U2816f7k8OxJUfOXy,14,9,daa3835899c2d91699ad983e0c6a3933,128,12800144@#@1,4,8,0.0,0,0,0,3,0,0,0,0,0,12,6,3,1,9,0,0,0,0,0,0@#@@#@@#@_@XvLggiA0U2816f7k8OxJUfOXy@_:1@#@5
+
+writing a,XvLggiA0U2816f7k8OxJUfOXy.java,28,37,drive,23,14,633d3eedb330603be9ef2818ef441a6d,128,12800145@#@1,6,16,324.0,2,2,0,1,3,0,0,0,0,18,9,9,1,23,0,0,0,0,0,2@#@out:2@#@println():2@#@_@drive@_:1@#@7
+
+writing a,XvLggiA0U2816f7k8OxJUfOXy.java,39,73,pay,55,27,3e98ebc1d45694cb59654959a7bda1a5,128,12800146@#@3,14,30,2708.603608775902,7,5,0,1,8,2,0,0,0,46,17,23,2,58,1,1,0,2,0,6@#@nextDouble():1,in:1,out:4@#@println():4@#@_@pay@_:1@#@18
+
+writing a,XvLggiA0U2816f7k8OxJUfOXy.java,76,102,refill,41,20,1be562afc0ad488a1c1fdc302287de6d,128,12800147@#@5,11,24,1375.488750216347,3,3,0,1,6,2,0,0,0,36,15,14,5,39,1,0,0,1,0,3@#@out:3@#@println():3@#@_@refill@_:1@#@17
+
+writing a,XvLggiA0U2816f7k8OxJUfOXy.java,103,108,printState,20,15,514388e17ff7cbfbbba13830025e45e3,128,12800148@#@1,2,16,216.0,3,3,0,0,2,0,0,0,0,15,3,12,1,26,0,0,0,4,0,3@#@round():2,out:1@#@println():1@#@_@printState@_:1@#@3
+
+writing a,XvLggiA0U2816f7k8OxJUfOXy.java,111,162,main,111,49,be5c876dc3e1c9293e322a978b7fe9e8,128,12800149@#@5,26,53,11364.194181853389,18,21,0,1,16,4,0,0,0,85,20,39,3,107,2,1,0,9,0,11@#@pay():1,refill():1,print():1,nextDouble():3,printState():3,round():2,drive():1,in:1,taxameter:1,tankinhalt:2,out:10@#@println():9@#@_@main@_:1@#@31
+
+Metricalizing TJI8zHEYT5LRvCsA7gYIbH7Qr.java
+Visiting done.
+writing a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,14,23,TJI8zHEYT5LRvCsA7gYIbH7Qr,28,12,05c30f1c23862be8f8a26bf55bfa505f,129,12900150@#@1,8,11,0.0,0,0,0,4,0,0,0,0,0,26,8,7,1,25,0,0,0,2,0,0@#@kraftstoffverbrauch:1,kilometerpreis:1,tankvolumen:1,grundpreis:1@#@@#@_@TJI8zHEYT5LRvCsA7gYIbH7Qr@_:1@#@9
+
+writing a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,25,27,getTankinhalt,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,129,12900151@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTankinhalt@_:1@#@3
+
+writing a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,28,30,getTaxometer,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,129,12900152@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTaxometer@_:1@#@3
+
+writing a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,31,33,getGesamteinnahmen,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,129,12900153@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getGesamteinnahmen@_:1@#@3
+
+writing a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,35,44,drive,26,15,9fa7095734cfe0fefff2d2275c751547,129,12900154@#@2,7,21,632.4937088801415,0,0,0,1,4,1,0,0,0,22,12,14,2,33,0,0,0,4,0,0@#@@#@@#@_@drive@_:1@#@10
+
+writing a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,46,56,pay,23,16,63c1c2c2b1c3fcc5449856b99d7616c6,129,12900155@#@3,8,18,312.7443751081734,1,1,0,1,3,0,0,0,0,18,7,7,2,18,0,2,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@10
+
+writing a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,58,67,refill,22,10,d79bd344f6b1ed7597212204518502a8,129,12900156@#@2,6,15,726.6816507831845,0,0,0,1,6,0,0,0,0,20,14,11,2,31,0,0,0,2,0,0@#@@#@@#@_@refill@_:1@#@9
+
+writing a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,69,178,main,247,52,a25fafe55c246e8d22a6da19980847e5,129,12900157@#@5,45,52,33860.61192575809,38,58,0,1,20,2,0,0,0,185,29,112,1,286,0,0,0,15,0,59@#@getGesamteinnahmen():6,pay():2,refill():1,getTaxometer():6,getTankinhalt():6,drive():2,out:35@#@println():35@#@_@main@_:1@#@50
+
+Metricalizing FtCQI3pKD6eoKxuVTmSOIkofM.java
+Visiting done.
+writing a,FtCQI3pKD6eoKxuVTmSOIkofM.java,25,29,FtCQI3pKD6eoKxuVTmSOIkofM,12,8,846990ff570bbafb2828fa2444760468,130,13000158@#@1,4,7,0.0,0,0,0,0,0,0,0,0,0,10,0,3,1,13,0,0,0,2,0,0@#@earnings:1,taxometerValue:1,fuelCapacity:1,tankCapacity:1@#@@#@_@FtCQI3pKD6eoKxuVTmSOIkofM@_:1@#@5
+
+writing a,FtCQI3pKD6eoKxuVTmSOIkofM.java,36,41,checkFuelCapacity,16,13,07a135a6234cc604c85dee5618452743,130,13000159@#@2,4,14,129.45006734995852,0,0,0,1,2,0,0,0,0,12,1,5,2,13,0,2,0,1,0,0@#@fuelCapacity:1,consumption:1@#@@#@_@checkFuelCapacity@_:1@#@6
+
+writing a,FtCQI3pKD6eoKxuVTmSOIkofM.java,48,59,drive,35,17,244fee33edb532e43ade1b2e02302352,130,13000160@#@2,7,25,2507.682342478351,0,0,1,1,12,1,0,0,0,30,5,15,2,39,0,0,0,4,0,0@#@checkFuelCapacity():1,taxometerValue:3,kilometerPrice:1,fuelCapacity:1,consumption:1,basePrice:1@#@@#@_@drive@_:1@#@9
+
+writing a,FtCQI3pKD6eoKxuVTmSOIkofM.java,66,76,pay,27,17,65369cbd9b323737ed1445492c2453b6,130,13000161@#@3,8,19,369.5696936695919,1,1,0,1,3,0,0,0,0,22,3,7,2,22,0,2,0,1,0,1@#@earnings:1,taxometerValue:3,out:1@#@println():1@#@_@pay@_:1@#@10
+
+writing a,FtCQI3pKD6eoKxuVTmSOIkofM.java,84,104,refill,48,22,21feecbdef817ab31764ddc5db06caa4,130,13000162@#@4,12,27,2244.3069010211575,2,2,0,1,8,2,0,0,0,42,6,17,2,47,0,0,0,2,0,4@#@earnings:1,taxometerValue:1,fuelCapacity:5,tankCapacity:1,out:2@#@println():2@#@_@refill@_:1@#@17
+
+Metricalizing VHoij57foVaRucJAXnKwrz7wN.java
+Visiting done.
+writing a,VHoij57foVaRucJAXnKwrz7wN.java,21,29,VHoij57foVaRucJAXnKwrz7wN,29,13,2d67d59cd150a16d3371f9f2c90eba1f,131,13100163@#@1,8,12,0.0,0,0,0,4,0,0,0,0,0,27,7,7,1,26,0,0,0,2,0,0@#@kraftstoffverbrauch:1,kilometerpreis:1,tankvolumen:2,grundpreis:1@#@@#@_@VHoij57foVaRucJAXnKwrz7wN@_:1@#@9
+
+writing a,VHoij57foVaRucJAXnKwrz7wN.java,34,46,drive,50,20,6e7aaf5b06a1d458dc73bd8c110ae9e9,131,13100164@#@2,10,25,2303.352670128263,3,3,0,1,8,1,0,0,0,44,6,18,2,56,0,0,0,3,0,3@#@kraftstoffverbrauch:2,kilometerpreis:1,taxometer:2,grundpreis:1,tankinhalt:4,out:3@#@println():3@#@_@drive@_:1@#@13
+
+writing a,VHoij57foVaRucJAXnKwrz7wN.java,48,66,pay,59,21,bb78990f5439591e8cdba70c45bdfb7f,131,13100165@#@4,17,25,2006.1458739826808,3,3,0,1,6,2,0,0,0,53,12,19,2,61,0,4,0,2,0,3@#@gesamteinnahmen:4,taxometer:3,grundpreis:1,out:3@#@println():3@#@_@pay@_:1@#@19
+
+writing a,VHoij57foVaRucJAXnKwrz7wN.java,68,78,refill,45,17,ad45c0cf5edde530c2e7fe9e742686bb,131,13100166@#@2,8,21,2292.789694690513,1,1,0,1,9,1,0,0,0,42,5,16,2,52,0,0,0,1,0,2@#@tankvolumen:2,gesamteinnahmen:6,tankinhalt:5,out:1@#@println():1@#@_@refill@_:1@#@11
+
+writing a,VHoij57foVaRucJAXnKwrz7wN.java,81,89,main,23,19,4c7e5b25bfe6d3bb5be2ebc6f6b2d69d,131,13100167@#@1,5,17,171.67343933251428,3,3,0,1,2,1,0,0,0,16,3,5,1,15,0,0,0,7,0,0@#@pay():1,refill():1,drive():1@#@@#@_@main@_:1@#@6
+
+Metricalizing J3RowPmOg2qHO6eYLC41Vw6ZT.java
+Visiting done.
+writing a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,6,15,J3RowPmOg2qHO6eYLC41Vw6ZT,16,14,2cadda523c3a5d2141498ed3a5c43f59,132,13200168@#@1,8,13,0.0,0,0,0,0,0,0,0,0,0,14,7,7,1,21,0,0,0,7,0,0@#@@#@@#@_@J3RowPmOg2qHO6eYLC41Vw6ZT@_:1@#@9
+
+writing a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,17,26,drive,23,17,d58b9c6d33a029c379a54f20e6901593,132,13200169@#@2,6,20,363.04195997053847,1,1,0,1,3,1,0,0,0,19,9,9,2,21,0,0,0,1,0,1@#@out:1@#@println():1@#@_@drive@_:1@#@9
+
+writing a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,28,44,pay,31,16,884a878e0b97811532181b1b3d3a9a0f,132,13200170@#@3,11,18,925.7233503201933,1,1,0,1,6,0,0,0,0,25,12,12,2,29,0,3,0,2,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@14
+
+writing a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,46,58,refill,30,13,adb34354acd42bd9d973a4362c341a7c,132,13200171@#@2,9,17,1005.5158589475836,0,0,0,1,6,3,0,0,0,28,17,13,2,31,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@12
+
+writing a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,60,77,main,52,28,2dedf5f531cbd800c2fca6840ed15005,132,13200172@#@3,11,28,1076.8475025409032,8,9,0,1,4,1,0,0,0,39,6,17,2,48,0,2,0,4,0,7@#@pay():2,refill():1,drive():1,gesamteinnahmen:1,tankinhalt:1,out:5@#@println():5@#@_@main@_:1@#@16
+
+Metricalizing YsupfvRpv05mUddNkhNYEbFQV.java
+Visiting done.
+writing a,YsupfvRpv05mUddNkhNYEbFQV.java,11,20,YsupfvRpv05mUddNkhNYEbFQV,37,13,8b1548a4620c96a89748c6dc71e5b324,133,13300173@#@1,8,12,0.0,0,0,0,7,0,0,0,0,0,35,7,7,1,28,0,0,0,0,0,0@#@kilometerpreis:1,tankvolumen:1,verbrauch:1,taxometer:1,grundpreis:1,tankinhalt:1,einnahmen:1@#@@#@_@YsupfvRpv05mUddNkhNYEbFQV@_:1@#@9
+
+writing a,YsupfvRpv05mUddNkhNYEbFQV.java,22,33,drive,34,21,9519f0d3465fb515b1b123854e546d59,133,13300174@#@2,8,26,1034.0967379910403,2,2,0,1,5,1,0,0,0,28,10,16,2,37,0,0,0,4,0,1@#@ceil():1,taxometer:1,tankinhalt:1,out:1@#@println():1@#@_@drive@_:1@#@11
+
+writing a,YsupfvRpv05mUddNkhNYEbFQV.java,35,46,pay,25,17,be2b8af07a347341a52626aa8ad86a0d,133,13300175@#@3,8,19,344.0821285889304,1,1,0,1,3,0,0,0,0,20,5,7,3,20,0,2,0,1,0,1@#@taxometer:1,einnahmen:1,out:1@#@println():1@#@_@pay@_:1@#@12
+
+writing a,YsupfvRpv05mUddNkhNYEbFQV.java,48,58,refill,34,17,c7daa7fa415cd76277e08e6cad2c5e89,133,13300176@#@2,8,22,1534.0444768112302,2,2,0,1,8,0,0,0,0,30,10,13,2,39,0,0,0,1,0,3@#@tankinhalt:2,einnahmen:2,out:2@#@println():2@#@_@refill@_:1@#@11
+
+Metricalizing BurWPjfKUNx1S9i3g1wyEPZBd.java
+Visiting done.
+writing a,BurWPjfKUNx1S9i3g1wyEPZBd.java,18,20,getTankInhalt,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,134,13400177@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTankInhalt@_:1@#@3
+
+writing a,BurWPjfKUNx1S9i3g1wyEPZBd.java,22,24,setTankInhalt,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,134,13400178@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@tankInhalt:1@#@@#@_@setTankInhalt@_:1@#@3
+
+writing a,BurWPjfKUNx1S9i3g1wyEPZBd.java,29,31,getTaxometerStand,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,134,13400179@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTaxometerStand@_:1@#@3
+
+writing a,BurWPjfKUNx1S9i3g1wyEPZBd.java,33,35,setTaxometerStand,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,134,13400180@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@taxometerStand:1@#@@#@_@setTaxometerStand@_:1@#@3
+
+writing a,BurWPjfKUNx1S9i3g1wyEPZBd.java,40,42,getGesamteinnahmen,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,134,13400181@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getGesamteinnahmen@_:1@#@3
+
+writing a,BurWPjfKUNx1S9i3g1wyEPZBd.java,44,46,setGesamteinnahmen,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,134,13400182@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@gesamteinnahmen:1@#@@#@_@setGesamteinnahmen@_:1@#@3
+
+writing a,BurWPjfKUNx1S9i3g1wyEPZBd.java,49,56,BurWPjfKUNx1S9i3g1wyEPZBd,22,8,8c3734e62da8bcb4e7fbdcda068b72bd,134,13400183@#@1,5,7,0.0,0,0,0,4,0,0,0,0,0,20,4,4,1,16,0,0,0,0,0,0@#@kilometerpreis:1,grundpreis:1,verbrauch100km:1,tankVolumen:1@#@@#@_@BurWPjfKUNx1S9i3g1wyEPZBd@_:1@#@6
+
+writing a,BurWPjfKUNx1S9i3g1wyEPZBd.java,59,70,drive,26,14,32edcdc1c64bcdec3c115e8174b3adc0,134,13400184@#@2,9,17,809.3176425675672,0,0,0,1,6,2,0,0,0,23,14,10,2,27,0,0,0,1,0,0@#@@#@@#@_@drive@_:1@#@12
+
+writing a,BurWPjfKUNx1S9i3g1wyEPZBd.java,79,86,refill,16,10,980a5f7a713a89291837eb1001251436,134,13400185@#@1,6,11,124.53953827094271,0,0,0,1,2,2,0,0,0,13,6,5,1,12,0,0,0,0,0,0@#@@#@@#@_@refill@_:1@#@7
+
+writing a,BurWPjfKUNx1S9i3g1wyEPZBd.java,89,100,main,29,23,c1f807094dacbbdd29b6aa8f3dd2b084,134,13400186@#@1,7,21,355.7777112450796,3,5,0,1,3,1,0,0,0,20,5,7,1,21,0,0,0,9,0,0@#@setTankInhalt():1,refill():1,setTaxometerStand():1,drive():1,setGesamteinnahmen():1@#@@#@_@main@_:1@#@8
+
+Metricalizing Uu1D7w3RecnGQxb3TIRXGYISR.java
+Visiting done.
+writing a,Uu1D7w3RecnGQxb3TIRXGYISR.java,11,20,Uu1D7w3RecnGQxb3TIRXGYISR,37,16,36b4d1b4c71bfaa6f6969f75bb3c1682,135,13500187@#@1,8,15,0.0,0,0,0,7,0,0,0,0,0,35,7,7,1,28,0,0,0,0,0,0@#@tank_capacity:1,BASE_PRICE:1,PRICE_PER_KILOMETER:1,total_revenue:1,taxometer:1,FUEL_CONSUMPTION:1,TANK_VOLUME:1@#@@#@_@Uu1D7w3RecnGQxb3TIRXGYISR@_:1@#@9
+
+writing a,Uu1D7w3RecnGQxb3TIRXGYISR.java,22,34,drive,29,19,99c08f00726288edf8034c3faf5e545f,135,13500188@#@2,7,23,687.581417320666,1,1,0,1,4,0,0,0,1,24,12,14,2,35,0,0,0,4,0,1@#@out:1@#@println():1@#@_@drive@_:1@#@10
+
+writing a,Uu1D7w3RecnGQxb3TIRXGYISR.java,36,47,pay,27,17,aaaeeab78835f329f1bacb3f55243a56,135,13500189@#@3,9,19,369.5696936695919,2,2,0,1,3,0,0,0,0,21,7,8,3,22,0,2,0,1,0,2@#@out:2@#@println():2@#@_@pay@_:1@#@12
+
+writing a,Uu1D7w3RecnGQxb3TIRXGYISR.java,49,69,refill,43,18,401740716e0aacbe2b37795ee5d222d3,135,13500190@#@3,10,25,2786.3137138648344,3,3,0,1,10,0,0,0,0,38,22,22,3,59,1,0,0,2,0,3@#@out:3@#@println():3@#@_@refill@_:1@#@14
+
+writing a,Uu1D7w3RecnGQxb3TIRXGYISR.java,71,80,main,50,27,a933a7ff50131b02c7f9d7c4d7c362a0,135,13500191@#@1,9,26,719.1672768755872,6,10,0,1,3,1,0,0,0,36,7,15,1,45,0,0,0,14,0,3@#@pay():3,refill():1,drive():3,out:3@#@println():3@#@_@main@_:1@#@10
+
+Metricalizing Pa7PrkpPjGwWMMWvOA5Q9YvAz.java
+Visiting done.
+writing a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,10,18,Pa7PrkpPjGwWMMWvOA5Q9YvAz,16,14,24a15ad7d37cca459198f6d02c34e3f3,136,13600192@#@1,8,13,0.0,0,0,0,0,0,0,0,0,0,14,8,7,1,21,0,0,0,6,0,0@#@@#@@#@_@Pa7PrkpPjGwWMMWvOA5Q9YvAz@_:1@#@9
+
+writing a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,20,30,drive,38,20,e2a5366fe1b40b56c4a8700517db1824,136,13600193@#@1,8,23,1737.0477911258931,4,4,0,1,8,1,0,0,0,31,15,17,1,42,0,0,0,0,0,4@#@min():1,out:3@#@println():3@#@_@drive@_:1@#@9
+
+writing a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,32,46,pay,37,21,a5ed5980623cb8697980aa862a693d05,136,13600194@#@3,10,24,825.2932501298083,3,3,0,1,4,1,0,0,0,30,11,15,3,36,0,2,0,2,0,3@#@round():1,out:2@#@println():2@#@_@pay@_:1@#@14
+
+writing a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,48,66,refill,52,20,6c5bc4718435f66fb77408a2d0bb9785,136,13600195@#@3,14,25,2526.25776723745,4,4,0,1,8,2,0,0,0,46,22,22,2,59,0,0,0,2,0,5@#@out:4@#@println():4@#@_@refill@_:1@#@18
+
+writing a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,68,73,printStatus,18,12,1b3504eebc7cc4c91e4e1109fb773731,136,13600196@#@1,4,11,65.72920075410866,3,3,0,0,1,0,0,0,0,13,3,6,1,18,0,0,0,0,0,3@#@out:3@#@println():3@#@_@printStatus@_:1@#@5
+
+Metricalizing ZjiHWBeSJaY57W8OtdJVl0r6N.java
+Visiting done.
+writing a,ZjiHWBeSJaY57W8OtdJVl0r6N.java,11,17,ZjiHWBeSJaY57W8OtdJVl0r6N,27,13,ad92f93fcc697cdf44f151a15e03cd57,137,13700197@#@1,4,15,546.9646833851926,3,3,0,3,4,0,0,0,0,22,7,13,1,29,0,0,0,6,0,0@#@round():3@#@@#@_@ZjiHWBeSJaY57W8OtdJVl0r6N@_:1@#@5
+
+writing a,ZjiHWBeSJaY57W8OtdJVl0r6N.java,19,30,drive,33,18,c327a8aeb6699506a720954ae5f22350,137,13700198@#@2,7,21,1510.9571934358937,3,3,0,1,8,0,0,0,0,26,11,17,2,39,0,0,0,6,0,1@#@round():2,out:1@#@println():1@#@_@drive@_:1@#@9
+
+writing a,ZjiHWBeSJaY57W8OtdJVl0r6N.java,32,56,pay,59,25,60b5c754a5d88325a547565818e04e9d,137,13700199@#@3,14,31,3864.273122101763,6,6,0,1,10,0,0,0,0,48,18,30,2,72,0,3,0,7,0,6@#@round():3,out:3@#@println():3@#@_@pay@_:1@#@17
+
+writing a,ZjiHWBeSJaY57W8OtdJVl0r6N.java,58,84,refill,76,26,8577748992a883e5ec01583e4f83fe25,137,13700200@#@3,14,32,7950.0,9,9,0,1,15,2,0,0,0,64,23,42,2,99,0,0,0,11,0,8@#@round():5,out:4@#@println():4@#@_@refill@_:1@#@18
+
+writing a,ZjiHWBeSJaY57W8OtdJVl0r6N.java,85,99,main,41,25,f553503743583177a8b672907200b64f,137,13700201@#@1,10,23,529.2567488586706,5,8,0,1,3,1,0,0,0,29,8,10,1,33,0,0,0,9,0,0@#@pay():1,refill():2,drive():3,Preis:1,Einnahmen:1,out:2@#@println():2@#@_@main@_:1@#@11
+
+Metricalizing RfEdRPSHraxPMDLm5sbIcTlok.java
+Visiting done.
+writing a,RfEdRPSHraxPMDLm5sbIcTlok.java,15,18,RfEdRPSHraxPMDLm5sbIcTlok,12,6,f858eb8daab5638f1b43bb2d04904d25,138,13800202@#@1,3,5,0.0,0,0,0,2,0,0,0,0,0,10,2,2,1,8,0,0,0,0,0,0@#@gesamteinnahme:1,tankinhalt:1@#@@#@_@RfEdRPSHraxPMDLm5sbIcTlok@_:1@#@4
+
+writing a,RfEdRPSHraxPMDLm5sbIcTlok.java,20,26,status,34,17,4e30cc6fcc4b35b7afffc6c242d9ba50,138,13800203@#@1,6,18,325.2541501125003,7,7,0,0,2,0,0,0,0,25,3,14,1,38,0,0,0,4,0,5@#@round():2,out:5@#@println():5@#@_@status@_:1@#@7
+
+writing a,RfEdRPSHraxPMDLm5sbIcTlok.java,28,39,drive,40,22,d51415093ff285de67b613710d33631b,138,13800204@#@2,9,27,1283.8196255841367,3,3,0,1,5,0,0,0,0,33,15,21,2,50,0,0,0,5,0,4@#@round():1,out:2@#@println():2@#@_@drive@_:1@#@11
+
+writing a,RfEdRPSHraxPMDLm5sbIcTlok.java,41,51,pay,23,16,d9dae93aa17bfa2c92f1a0696d5ef891,138,13800205@#@3,8,18,312.7443751081734,1,1,0,1,3,0,0,0,0,18,8,7,2,18,0,2,0,0,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@11
+
+writing a,RfEdRPSHraxPMDLm5sbIcTlok.java,53,64,refill,35,18,d69d2ea7c836851350e5cf485381b2c6,138,13800206@#@2,9,24,1723.945900271155,2,2,0,1,8,1,0,0,0,31,16,16,2,42,0,0,0,1,0,4@#@out:2@#@println():2@#@_@refill@_:1@#@12
+
+writing a,RfEdRPSHraxPMDLm5sbIcTlok.java,66,85,main,49,31,5b93557f3bc89589fb55179745cb6b80,138,13800207@#@3,12,31,1089.9231882851127,5,7,0,1,4,4,0,0,0,38,10,17,2,41,0,0,0,6,0,4@#@pay():1,refill():1,status():2,drive():1,out:2@#@println():2@#@_@main@_:1@#@15
+
+Metricalizing HgFHNYF701UjmVfji9nbpuMbs.java
+Visiting done.
+writing a,HgFHNYF701UjmVfji9nbpuMbs.java,11,21,HgFHNYF701UjmVfji9nbpuMbs,25,15,50ae7945ddca5e6feff756aaaafea069,139,13900208@#@1,8,14,0.0,0,0,0,0,0,0,0,0,0,23,0,7,1,30,0,0,0,5,0,0@#@kilometerPrice:1,tankVolume:2,tankFullness:1,totalRevenue:1,taxometer:1,gasUsage:1,basePrice:2@#@@#@_@HgFHNYF701UjmVfji9nbpuMbs@_:1@#@9
+
+writing a,HgFHNYF701UjmVfji9nbpuMbs.java,23,25,hasEnoughFuel,12,10,2c478ab1d8708ea7e76c398bc0eabd24,139,13900209@#@1,2,10,43.18506523353572,0,0,0,1,1,0,0,0,0,9,1,4,1,9,0,0,0,1,0,0@#@tankFullness:1,gasUsage:1@#@@#@_@hasEnoughFuel@_:1@#@3
+
+writing a,HgFHNYF701UjmVfji9nbpuMbs.java,28,37,drive,26,15,d30603cdcbcdc6e8bcc78a4f48c77234,139,13900210@#@2,6,17,367.8716557125306,0,0,1,1,3,0,0,0,0,21,3,9,2,24,0,0,0,2,0,0@#@hasEnoughFuel():1,kilometerPrice:1,tankFullness:1,taxometer:2,gasUsage:1,basePrice:1@#@@#@_@drive@_:1@#@9
+
+writing a,HgFHNYF701UjmVfji9nbpuMbs.java,40,51,pay,33,19,f7ad19736919ee62e4afddfef06f8ecf,139,13900211@#@3,9,23,687.581417320666,1,1,0,1,4,1,0,0,0,28,5,10,2,30,0,2,0,3,0,1@#@printf():1,totalRevenue:1,taxometer:2,basePrice:1,out:1@#@@#@_@pay@_:1@#@12
+
+writing a,HgFHNYF701UjmVfji9nbpuMbs.java,54,63,refill,31,12,a3d13e6b44dd92a0fe8d1fa40118b613,139,13900212@#@2,7,17,931.9415278050774,0,0,0,1,6,1,0,0,0,29,4,9,2,33,0,0,0,1,0,0@#@tankVolume:2,tankFullness:3,totalRevenue:4@#@@#@_@refill@_:1@#@10
+
+Metricalizing EUgx06Dz7it6F409dFTDp5Rir.java
+Visiting done.
+writing a,EUgx06Dz7it6F409dFTDp5Rir.java,15,24,EUgx06Dz7it6F409dFTDp5Rir,23,15,6c2c7e6158853279822a3257cb5101d5,140,14000213@#@1,8,14,0.0,0,0,0,0,0,0,0,0,0,21,0,7,1,28,0,0,0,7,0,0@#@kilometerPreis:1,grundPreis:1,currentTankInhalt:1,gesamtEinnahmen:1,taxometer:1,kraftstoffVerbrauch:1,tankVolumen:1@#@@#@_@EUgx06Dz7it6F409dFTDp5Rir@_:1@#@9
+
+writing a,EUgx06Dz7it6F409dFTDp5Rir.java,26,34,drive,24,13,6e6ffd6caa15bd138c97ecf76e347d19,140,14000214@#@2,6,14,571.1032383086406,0,0,3,1,6,0,0,0,0,17,3,8,2,19,0,0,0,1,0,0@#@reichweiteAusreichend():1,verbrauchterKraftstoff():1,calculateFahrpreis():1,currentTankInhalt:1,taxometer:2@#@@#@_@drive@_:1@#@9
+
+writing a,EUgx06Dz7it6F409dFTDp5Rir.java,36,38,verbrauchterKraftstoff,10,8,a91f35f75c9fdeccb67c8713943827a8,140,14000215@#@1,2,8,30.0,0,0,0,1,1,0,0,0,0,7,1,3,1,6,0,0,0,1,0,0@#@kraftstoffVerbrauch:1@#@@#@_@verbrauchterKraftstoff@_:1@#@3
+
+writing a,EUgx06Dz7it6F409dFTDp5Rir.java,40,42,reichweiteAusreichend,14,12,e6eb7aeba440f6c99c80feaa20245c60,140,14000216@#@1,2,13,111.01319154423277,0,0,1,1,2,0,0,0,0,10,1,5,1,11,0,2,0,1,0,0@#@verbrauchterKraftstoff():1,currentTankInhalt:1@#@@#@_@reichweiteAusreichend@_:1@#@3
+
+writing a,EUgx06Dz7it6F409dFTDp5Rir.java,44,50,calculateFahrpreis,21,16,bfa5ae7dab4472ec4c836119fde71381,140,14000217@#@1,3,17,269.7725475225225,3,2,0,1,3,1,0,0,0,15,2,7,1,17,0,0,0,1,0,0@#@doubleValue():1,setScale():1,kilometerPreis:1,grundPreis:1,CEILING:1@#@@#@_@calculateFahrpreis@_:1@#@4
+
+writing a,EUgx06Dz7it6F409dFTDp5Rir.java,52,63,pay,26,17,355bcbc06a4da96c9daf9df807323ca6,140,14000218@#@3,8,17,318.8221016175265,1,1,2,1,3,0,0,0,0,19,3,7,2,19,0,2,0,0,0,1@#@updateGesamtEinnahme():1,resetTaxiometer():1,taxometer:2,out:1@#@println():1@#@_@pay@_:1@#@11
+
+writing a,EUgx06Dz7it6F409dFTDp5Rir.java,65,67,updateGesamtEinnahme,8,7,8410f92531d7e924d6c9d08bc6ffcb29,140,14000219@#@1,2,6,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@gesamtEinnahmen:1@#@@#@_@updateGesamtEinnahme@_:1@#@3
+
+writing a,EUgx06Dz7it6F409dFTDp5Rir.java,69,71,resetTaxiometer,6,6,351cc2115a06eb93ea3bdfc0f04b3b74,140,14000220@#@1,2,5,0.0,0,0,0,0,0,0,0,0,0,4,0,1,1,4,0,0,0,1,0,0@#@taxometer:1@#@@#@_@resetTaxiometer@_:1@#@3
+
+writing a,EUgx06Dz7it6F409dFTDp5Rir.java,73,79,refill,17,11,b5dfdcc36ee1bdc6e406c3766665ec89,140,14000221@#@2,4,10,212.6033980727912,0,0,3,1,4,0,0,0,0,12,3,4,2,12,0,0,0,0,0,0@#@fullRefillPrice():1,refillWithMaxGesamtEinnahme():1,refillFull():1,gesamtEinnahmen:1@#@@#@_@refill@_:1@#@7
+
+writing a,EUgx06Dz7it6F409dFTDp5Rir.java,81,83,literTilFull,8,7,44c1005d8c5ee85a00d702c51ceaaac8,140,14000222@#@1,2,6,18.094737505048094,0,0,0,0,1,0,0,0,0,5,0,2,1,5,0,0,0,0,0,0@#@currentTankInhalt:1,tankVolumen:1@#@@#@_@literTilFull@_:1@#@3
+
+writing a,EUgx06Dz7it6F409dFTDp5Rir.java,85,90,fullRefillPrice,19,15,f6e27c09051908d37cc3fef95651b20e,140,14000223@#@1,3,15,222.69276394968557,3,2,1,1,3,1,0,0,0,12,2,7,1,12,0,0,0,1,0,0@#@doubleValue():1,literTilFull():1,setScale():1,CEILING:1@#@@#@_@fullRefillPrice@_:1@#@4
+
+writing a,EUgx06Dz7it6F409dFTDp5Rir.java,92,96,refillWithMaxGesamtEinnahme,16,10,d33e36f8efdcaa87188aeb07a5669a83,140,14000224@#@1,4,11,62.26976913547136,0,0,0,1,1,1,0,0,0,14,2,4,1,13,0,0,0,1,0,0@#@currentTankInhalt:1,gesamtEinnahmen:2@#@@#@_@refillWithMaxGesamtEinnahme@_:1@#@5
+
+writing a,EUgx06Dz7it6F409dFTDp5Rir.java,98,101,refillFull,14,10,6d8261a3a490a8e04898e07b5f31cc4c,140,14000225@#@1,3,10,46.50699332842308,0,0,1,1,1,0,0,0,0,11,1,3,1,11,0,0,0,0,0,0@#@fullRefillPrice():1,currentTankInhalt:1,gesamtEinnahmen:1,tankVolumen:1@#@@#@_@refillFull@_:1@#@4
+
+writing a,EUgx06Dz7it6F409dFTDp5Rir.java,103,105,getCurrentTankInhalt,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,140,14000226@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getCurrentTankInhalt@_:1@#@3
+
+writing a,EUgx06Dz7it6F409dFTDp5Rir.java,107,109,getGesamtEinnahmen,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,140,14000227@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getGesamtEinnahmen@_:1@#@3
+
+writing a,EUgx06Dz7it6F409dFTDp5Rir.java,111,113,getTaxometer,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,140,14000228@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTaxometer@_:1@#@3
+
+writing a,EUgx06Dz7it6F409dFTDp5Rir.java,115,161,main,145,53,dccb1b65cfe5ad837dcc5df8f6b6c64b,140,14000229@#@6,37,55,14707.779111206735,25,29,0,1,16,8,0,0,0,111,19,48,5,131,2,2,0,1,0,22@#@pay():1,print():4,refill():1,nextDouble():3,equals():2,next():1,drive():1,getGesamtEinnahmen():1,close():1,in:1,out:18@#@println():14@#@_@main@_:1@#@45
+
+Metricalizing XnNdE6JJPrvKHbpJWwvViC0wh.java
+Visiting done.
+writing a,XnNdE6JJPrvKHbpJWwvViC0wh.java,17,26,XnNdE6JJPrvKHbpJWwvViC0wh,38,13,87f588a54b40cb0214976a0c1faac8c1,141,14100230@#@1,8,13,488.45804279462413,0,0,0,7,3,0,0,0,0,36,7,8,1,30,0,0,0,1,0,0@#@kilometerPreis:1,tankvolumen:1,gesamtEinnahmen:1,grundpreis:1,taxometer:1,tankinhalt:1,kraftstoffVerbrauch:1@#@@#@_@XnNdE6JJPrvKHbpJWwvViC0wh@_:1@#@9
+
+writing a,XnNdE6JJPrvKHbpJWwvViC0wh.java,30,32,getGesamtEinnahmen,6,6,58036d83f30295ae7752c663c8f44191,141,14100231@#@1,2,4,0.0,0,0,0,0,0,0,0,0,0,3,0,1,1,2,0,0,0,0,0,0@#@gesamtEinnahmen:1@#@@#@_@getGesamtEinnahmen@_:1@#@3
+
+writing a,XnNdE6JJPrvKHbpJWwvViC0wh.java,34,36,getTaxoMeter,6,6,58036d83f30295ae7752c663c8f44191,141,14100232@#@1,2,4,0.0,0,0,0,0,0,0,0,0,0,3,0,1,1,2,0,0,0,0,0,0@#@taxometer:1@#@@#@_@getTaxoMeter@_:1@#@3
+
+writing a,XnNdE6JJPrvKHbpJWwvViC0wh.java,38,40,getTankinhalt,6,6,58036d83f30295ae7752c663c8f44191,141,14100233@#@1,2,4,0.0,0,0,0,0,0,0,0,0,0,3,0,1,1,2,0,0,0,0,0,0@#@tankinhalt:1@#@@#@_@getTankinhalt@_:1@#@3
+
+writing a,XnNdE6JJPrvKHbpJWwvViC0wh.java,42,44,getTankvolumen,6,6,58036d83f30295ae7752c663c8f44191,141,14100234@#@1,2,4,0.0,0,0,0,0,0,0,0,0,0,3,0,1,1,2,0,0,0,0,0,0@#@tankvolumen:1@#@@#@_@getTankvolumen@_:1@#@3
+
+writing a,XnNdE6JJPrvKHbpJWwvViC0wh.java,46,48,getKraftstoffVerbrauch,6,6,58036d83f30295ae7752c663c8f44191,141,14100235@#@1,2,4,0.0,0,0,0,0,0,0,0,0,0,3,0,1,1,2,0,0,0,0,0,0@#@kraftstoffVerbrauch:1@#@@#@_@getKraftstoffVerbrauch@_:1@#@3
+
+writing a,XnNdE6JJPrvKHbpJWwvViC0wh.java,50,52,getKilometerPreis,6,6,58036d83f30295ae7752c663c8f44191,141,14100236@#@1,2,4,0.0,0,0,0,0,0,0,0,0,0,3,0,1,1,2,0,0,0,0,0,0@#@kilometerPreis:1@#@@#@_@getKilometerPreis@_:1@#@3
+
+writing a,XnNdE6JJPrvKHbpJWwvViC0wh.java,54,56,getGrundpreis,6,6,58036d83f30295ae7752c663c8f44191,141,14100237@#@1,2,4,0.0,0,0,0,0,0,0,0,0,0,3,0,1,1,2,0,0,0,0,0,0@#@grundpreis:1@#@@#@_@getGrundpreis@_:1@#@3
+
+writing a,XnNdE6JJPrvKHbpJWwvViC0wh.java,58,70,drive,31,18,7ee1b1596607b61a8e7c81219c3411d9,141,14100238@#@3,8,22,2087.013997522255,2,2,8,1,12,0,0,0,0,18,7,21,2,37,0,0,0,0,0,2@#@getGrundpreis():1,getKraftstoffVerbrauch():3,getKilometerPreis():1,getTankinhalt():2,getTaxoMeter():1,out:2@#@println():2@#@_@drive@_:1@#@10
+
+writing a,XnNdE6JJPrvKHbpJWwvViC0wh.java,72,83,pay,23,15,1fbde2448acbe4057d8fcf9e661d70f7,141,14100239@#@3,7,16,288.0,2,2,2,1,3,0,0,0,0,16,4,8,3,18,0,1,0,0,0,2@#@print():2,getTaxoMeter():2,out:2@#@@#@_@pay@_:1@#@10
+
+writing a,XnNdE6JJPrvKHbpJWwvViC0wh.java,85,94,refill,28,11,1786714de61349478c67c9fa8194c347,141,14100240@#@3,7,17,1675.8597649126395,0,0,11,1,10,0,0,0,0,15,10,26,2,41,0,0,0,0,0,0@#@getTankinhalt():3,getTankvolumen():4,getGesamtEinnahmen():4@#@@#@_@refill@_:1@#@9
+
+writing a,XnNdE6JJPrvKHbpJWwvViC0wh.java,96,99,getInput,10,8,ab35be0c0ce1f937ef5b1c6d70790adb,141,14100241@#@1,3,6,20.67970000576925,2,1,0,0,1,1,0,0,0,5,2,3,1,4,0,0,0,0,0,0@#@nextLine():1@#@@#@_@getInput@_:1@#@4
+
+writing a,XnNdE6JJPrvKHbpJWwvViC0wh.java,102,129,main,91,44,fab33377fcdb89aa3e953279899fad8c,141,14100242@#@4,20,44,6420.291583517461,17,19,4,1,12,2,0,0,0,63,10,35,3,86,1,2,0,10,0,7@#@pay():1,refill():1,getInput():4,parseInt():2,getTankinhalt():2,parseDouble():2,drive():1,getGesamtEinnahmen():2,in:1,out:8@#@println():8@#@_@main@_:1@#@24
+
+Metricalizing OF1DO93HThbXM779gK7EAfnII.java
+Visiting done.
+writing a,OF1DO93HThbXM779gK7EAfnII.java,11,20,OF1DO93HThbXM779gK7EAfnII,28,11,a0eb6392f6bf1cd2bc9f8b4b91b9180a,142,14200243@#@1,8,10,0.0,0,0,0,4,0,0,0,0,0,26,10,7,1,25,0,0,0,0,0,0@#@kraftstoffverbrauch:1,kilometerpreis:1,tankvolumen:1,grundpreis:1@#@@#@_@OF1DO93HThbXM779gK7EAfnII@_:1@#@9
+
+writing a,OF1DO93HThbXM779gK7EAfnII.java,22,29,drive,20,12,665a313a116b2f8608c0e946f300aedc,142,14200244@#@2,6,15,293.0167946706389,0,0,0,1,3,1,0,0,0,17,10,8,2,19,0,0,0,1,0,0@#@@#@@#@_@drive@_:1@#@8
+
+writing a,OF1DO93HThbXM779gK7EAfnII.java,31,43,pay,23,16,ee453a2d9066ec1c6d46ed7244460acd,142,14200245@#@3,8,18,312.7443751081734,1,1,0,1,3,0,0,0,0,18,8,7,3,18,0,2,0,0,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@12
+
+writing a,OF1DO93HThbXM779gK7EAfnII.java,44,55,refill,28,13,d421207eeca310667791243079dc36dc,142,14200246@#@2,9,18,925.7233503201933,0,0,0,1,6,3,0,0,0,26,15,11,2,27,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@12
+
+Metricalizing Ojq0tK9rUXUKcYmM6llCDBToA.java
+Visiting done.
+writing a,Ojq0tK9rUXUKcYmM6llCDBToA.java,3,11,main,41,23,f0e8cd18c0a86d3f937eda1ab50611c2,143,14300247@#@1,7,21,513.9011384651151,7,9,0,1,3,1,0,0,0,28,5,11,1,33,0,0,0,9,0,0@#@pay():2,refill():1,drive():2,out:4@#@println():4@#@_@main@_:1@#@8
+
+writing a,Ojq0tK9rUXUKcYmM6llCDBToA.java,18,27,Ojq0tK9rUXUKcYmM6llCDBToA,31,16,0155fddb862b59e5cc0fa8efecc5f241,143,14300248@#@1,8,15,0.0,0,0,0,4,0,0,0,0,0,29,5,7,1,28,0,0,0,2,0,0@#@GAS_CONSUMPTION:1,BASE_PRICE:1,currentTank:1,PRICE_PER_KILOMETER:1,totalRevenue:1,taxometer:1,TANK_VOLUME:1@#@@#@_@Ojq0tK9rUXUKcYmM6llCDBToA@_:1@#@9
+
+writing a,Ojq0tK9rUXUKcYmM6llCDBToA.java,29,39,drive,25,14,afbb6285b05c1df1ff513ce2aa77787e,143,14300249@#@2,8,18,387.803025134135,0,0,0,1,3,2,0,0,0,21,11,10,1,21,0,0,0,2,0,0@#@@#@@#@_@drive@_:1@#@9
+
+writing a,Ojq0tK9rUXUKcYmM6llCDBToA.java,41,53,pay,27,18,8f3f158192ea361549c014b110ff1601,143,14300250@#@3,9,21,408.48552031842473,1,1,0,1,3,1,0,0,0,22,9,9,2,22,0,2,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@11
+
+writing a,Ojq0tK9rUXUKcYmM6llCDBToA.java,55,60,refill,21,12,8d9b6de20f775b0c3b87ab528a7e7315,143,14300251@#@1,5,16,624.0,1,1,0,1,6,2,0,0,0,18,10,8,1,19,0,0,0,0,0,0@#@min():1@#@@#@_@refill@_:1@#@6
+
+Metricalizing DeiG0PYckvUo6zECg9qhtOj2W.java
+Visiting done.
+writing a,DeiG0PYckvUo6zECg9qhtOj2W.java,13,21,DeiG0PYckvUo6zECg9qhtOj2W,22,13,91400e5e5f0672c09893af63962434f4,144,14400252@#@1,7,12,0.0,0,0,0,4,0,0,0,0,0,20,12,6,1,18,0,0,0,0,0,0@#@@#@@#@_@DeiG0PYckvUo6zECg9qhtOj2W@_:1@#@8
+
+writing a,DeiG0PYckvUo6zECg9qhtOj2W.java,24,34,drive,24,13,8ebc0184def1a8bbada9b950dcae8c1f,144,14400253@#@2,7,17,784.7928655200653,0,0,0,1,6,1,0,0,0,21,12,11,2,28,0,0,0,3,0,0@#@@#@@#@_@drive@_:1@#@9
+
+writing a,DeiG0PYckvUo6zECg9qhtOj2W.java,36,48,pay,26,17,4f6770ee4c38cfddac85e4e2217b84da,144,14400254@#@3,8,21,544.6473604245663,1,1,0,1,4,0,0,0,0,21,10,10,3,25,0,2,0,0,0,2@#@out:1@#@println():1@#@_@pay@_:1@#@11
+
+writing a,DeiG0PYckvUo6zECg9qhtOj2W.java,50,62,refill,23,11,2ab70700c91f0a307a9290b25afbfa9a,144,14400255@#@2,7,16,744.0,0,0,0,1,6,1,0,0,0,21,14,10,2,25,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@10
+
+writing a,DeiG0PYckvUo6zECg9qhtOj2W.java,64,66,getTankLevel,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,144,14400256@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTankLevel@_:1@#@3
+
+writing a,DeiG0PYckvUo6zECg9qhtOj2W.java,67,69,getRevenue,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,144,14400257@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getRevenue@_:1@#@3
+
+Metricalizing KAm50pBuMLGt50EmuWIMfsmII.java
+Visiting done.
+writing a,KAm50pBuMLGt50EmuWIMfsmII.java,13,15,getPrice,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,145,14500258@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getPrice@_:1@#@3
+
+writing a,KAm50pBuMLGt50EmuWIMfsmII.java,16,18,getKilometerPrice,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,145,14500259@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getKilometerPrice@_:1@#@3
+
+writing a,KAm50pBuMLGt50EmuWIMfsmII.java,19,21,getConsumption,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,145,14500260@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getConsumption@_:1@#@3
+
+writing a,KAm50pBuMLGt50EmuWIMfsmII.java,22,24,getVolume,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,145,14500261@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getVolume@_:1@#@3
+
+writing a,KAm50pBuMLGt50EmuWIMfsmII.java,26,28,getContent,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,145,14500262@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getContent@_:1@#@3
+
+writing a,KAm50pBuMLGt50EmuWIMfsmII.java,29,31,getTaxometer,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,145,14500263@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTaxometer@_:1@#@3
+
+writing a,KAm50pBuMLGt50EmuWIMfsmII.java,32,34,getIncome,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,145,14500264@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getIncome@_:1@#@3
+
+writing a,KAm50pBuMLGt50EmuWIMfsmII.java,37,39,setContent,7,6,47bd449bb2546ec651f536f76a77cfab,145,14500265@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,5,2,1,1,3,0,0,0,0,0,0@#@@#@@#@_@setContent@_:1@#@3
+
+writing a,KAm50pBuMLGt50EmuWIMfsmII.java,40,42,setTaxometer,7,6,47bd449bb2546ec651f536f76a77cfab,145,14500266@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,5,2,1,1,3,0,0,0,0,0,0@#@@#@@#@_@setTaxometer@_:1@#@3
+
+writing a,KAm50pBuMLGt50EmuWIMfsmII.java,43,45,setIncome,7,6,47bd449bb2546ec651f536f76a77cfab,145,14500267@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,5,2,1,1,3,0,0,0,0,0,0@#@@#@@#@_@setIncome@_:1@#@3
+
+writing a,KAm50pBuMLGt50EmuWIMfsmII.java,48,56,KAm50pBuMLGt50EmuWIMfsmII,30,17,8d8667b69252f8bfa5396c01b3f7cd52,145,14500268@#@1,8,16,0.0,0,0,0,7,0,0,0,0,0,28,14,7,1,21,0,0,0,0,0,0@#@@#@@#@_@KAm50pBuMLGt50EmuWIMfsmII@_:1@#@9
+
+writing a,KAm50pBuMLGt50EmuWIMfsmII.java,59,73,drive,27,17,a26b4481eab8d5c87df333f4f40bfb93,145,14500269@#@2,7,21,632.4937088801415,1,1,0,1,4,0,0,0,0,23,13,13,2,33,0,0,0,3,0,1@#@out:1@#@println():1@#@_@drive@_:1@#@10
+
+writing a,KAm50pBuMLGt50EmuWIMfsmII.java,75,84,pay,27,17,0723be1acb93c88056dd9c1829381086,145,14500270@#@3,8,20,427.8708813938489,1,1,0,1,3,0,0,0,0,22,10,11,1,27,0,2,0,1,0,2@#@out:1@#@println():1@#@_@pay@_:1@#@9
+
+writing a,KAm50pBuMLGt50EmuWIMfsmII.java,86,100,refill,41,17,9e1ab8352c0b61eac902841cf1fa0008,145,14500271@#@2,10,21,1528.5264631270088,2,2,0,1,6,1,0,0,0,37,22,21,2,56,0,0,0,1,0,4@#@out:2@#@println():2@#@_@refill@_:1@#@13
+
+writing a,KAm50pBuMLGt50EmuWIMfsmII.java,102,120,main,53,35,2fba713a839bf8e1d62313ed4e80e18a,145,14500272@#@2,10,35,1169.4765278634522,11,8,0,1,4,3,0,0,0,41,2,16,1,46,0,1,0,10,0,5@#@pay():1,refill():1,drive():1,getContent():1,out:4@#@println():4@#@_@main@_:1@#@12
+
+Metricalizing RdW3cjQxvKlk0JGvJO6uvjnoi.java
+Visiting done.
+writing a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,13,17,RdW3cjQxvKlk0JGvJO6uvjnoi,16,6,610cbdc041e7a23e7754df45b354d544,146,14600273@#@1,4,6,0.0,0,0,0,3,0,0,0,0,0,15,3,3,1,12,0,0,0,0,0,0@#@gesamteinnahmen:1,taxometer:1,tankinhalt:1@#@@#@_@RdW3cjQxvKlk0JGvJO6uvjnoi@_:1@#@5
+
+writing a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,22,24,setTankinhalt,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,146,14600274@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@tankinhalt:1@#@@#@_@setTankinhalt@_:1@#@3
+
+writing a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,26,28,setTaxometer,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,146,14600275@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@taxometer:1@#@@#@_@setTaxometer@_:1@#@3
+
+writing a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,30,32,setGesamteinnahmen,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,146,14600276@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@gesamteinnahmen:1@#@@#@_@setGesamteinnahmen@_:1@#@3
+
+writing a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,35,44,drive,27,17,ee66f9d531980bc85b0edc61c514c5c0,146,14600277@#@2,7,21,614.9244391890265,1,1,0,1,4,0,0,0,0,22,12,13,2,31,0,0,0,3,0,1@#@out:1@#@println():1@#@_@drive@_:1@#@9
+
+writing a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,47,60,pay,28,17,480e35281289de2cc920363310762a51,146,14600278@#@3,9,19,395.0572587502534,2,2,0,1,3,0,0,0,0,22,8,9,2,24,0,2,0,1,0,2@#@out:2@#@println():2@#@_@pay@_:1@#@12
+
+writing a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,63,71,refill,23,10,1c0e82f8980f750a09c47d392d4c365d,146,14600279@#@2,6,14,753.8562745674055,0,0,0,1,6,0,0,0,0,21,16,12,2,31,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@9
+
+writing a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,73,146,main,154,40,1ef1783d5df76c7706cb24d68d25f1fc,146,14600280@#@9,49,40,19158.941141594507,7,27,0,1,20,5,0,0,0,123,67,57,2,162,0,0,0,22,0,4@#@pay():8,refill():4,setTankinhalt():2,drive():8,setGesamteinnahmen():1,out:4@#@println():4@#@_@main@_:1@#@58
+
+done!
+[Dummy wait for population]
+Step 3: Setting Up Oreo
+     3.1: file for clone-detector
+Blocks file:
+a,MlxILczEgnctsogTuIyHc4IXX.java,14,18,MlxILczEgnctsogTuIyHc4IXX,17,7,610cbdc041e7a23e7754df45b354d544,11,11001@#@1,4,6,0.0,0,0,0,3,0,0,0,0,0,15,3,3,1,12,0,0,0,0,0,0@#@tankInhalt:1,taxometerStand:1,gesamtEinnahmen:1@#@@#@_@MlxILczEgnctsogTuIyHc4IXX@_:1@#@5
+a,MlxILczEgnctsogTuIyHc4IXX.java,21,32,drive,53,23,4fa126f5750b0629ce578d88300538a8,11,11002@#@2,10,28,3365.1484454403226,7,7,0,1,10,1,0,0,0,43,14,27,2,71,0,0,0,10,0,3@#@round():4,out:3@#@println():3@#@_@drive@_:1@#@12
+a,MlxILczEgnctsogTuIyHc4IXX.java,35,46,pay,30,21,0e48614383666af96a4d4945b4c78652,11,11003@#@3,9,24,660.2346001038466,2,2,0,1,4,1,0,0,0,25,9,11,3,29,0,2,0,3,0,1@#@round():1,out:1@#@println():1@#@_@pay@_:1@#@12
+a,MlxILczEgnctsogTuIyHc4IXX.java,49,57,refill,19,13,a929b7ee33e07af35d132d463a94d031,11,11004@#@2,5,17,282.03493604627346,1,1,0,1,3,0,0,0,0,16,9,7,2,20,0,0,0,0,0,1@#@out:1@#@println():1@#@_@refill@_:1@#@8
+a,MlxILczEgnctsogTuIyHc4IXX.java,59,83,taxiProcess,69,33,e98ca17cc0ecbe9f94d4499409142d13,11,11005@#@4,18,34,3815.5971309377546,11,13,0,1,10,5,0,0,0,53,12,22,4,58,2,2,0,2,0,5@#@pay():1,refill():1,nextDouble():3,exit():1,drive():1,in:1,out:6@#@println():6@#@_@taxiProcess@_:1@#@23
+a,MlxILczEgnctsogTuIyHc4IXX.java,86,112,main,89,41,0663f3cc9b101a51a1ba08e28b48320b,11,11006@#@2,18,44,5732.403199569162,15,14,0,1,10,5,0,0,1,70,15,35,2,90,1,0,0,3,0,15@#@taxiProcess():1,nextDouble():4,in:1,out:9@#@println():9@#@_@main@_:1@#@20
+a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,13,21,L6mTynrcqVdsKM5dk8JM1C7WZ,31,13,f1aec636fc40aa8f7312da402d2ff52f,12,12007@#@1,8,12,0.0,0,0,0,4,0,0,0,0,0,29,5,7,1,28,0,0,0,2,0,0@#@kilometerPrice:1,tankVolume:1,totalRevenue:1,tank:1,taxometer:1,fuelConsumption:1,basePrice:1@#@@#@_@L6mTynrcqVdsKM5dk8JM1C7WZ@_:1@#@9
+a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,23,37,drive,30,18,d86d436d29c34f44f9dd9060cf0ce3cf,12,12008@#@2,8,22,659.99587955832,2,2,0,1,4,0,0,0,0,24,11,13,2,33,0,0,0,3,0,2@#@out:2@#@println():2@#@_@drive@_:1@#@11
+a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,39,51,pay,23,16,90b8f6aa1a70a6895ef01b0624f7dcb0,12,12009@#@3,8,18,312.7443751081734,1,1,0,1,3,0,0,0,0,18,7,7,3,18,0,2,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@12
+a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,53,62,refill,21,10,1c21b2d3a4c14f1e42fde0fe3178225f,12,120010@#@2,6,15,679.7989636358823,0,0,0,1,6,0,0,0,0,19,14,10,2,28,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@9
+a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,64,100,main,52,30,3be96199377aa03cc1f9dcefb5c62be2,12,120011@#@1,7,29,889.0105221083459,7,7,0,1,3,1,0,0,0,41,7,20,1,55,0,0,0,7,0,9@#@pay():1,refill():1,drive():1,totalRevenue:2,tank:2,out:4@#@println():4@#@_@main@_:1@#@8
+a,Xc5kZYjA03ZiJobjjVfzXfBxS.java,14,19,Xc5kZYjA03ZiJobjjVfzXfBxS,12,8,846990ff570bbafb2828fa2444760468,13,130012@#@1,4,7,0.0,0,0,0,0,0,0,0,0,0,10,0,3,1,13,0,0,0,2,0,0@#@tankvolumen:1,taxostand:1,tankinhalt:1,einnahmen:1@#@@#@_@Xc5kZYjA03ZiJobjjVfzXfBxS@_:1@#@5
+a,Xc5kZYjA03ZiJobjjVfzXfBxS.java,21,26,checkTankinhalt,16,13,07a135a6234cc604c85dee5618452743,13,130013@#@2,4,14,129.45006734995852,0,0,0,1,2,0,0,0,0,12,1,5,2,13,0,2,0,1,0,0@#@verbrauch:1,tankinhalt:1@#@@#@_@checkTankinhalt@_:1@#@6
+a,Xc5kZYjA03ZiJobjjVfzXfBxS.java,29,37,drive,27,15,7f01eb28ae401e64dbda1c563bc452ff,13,130014@#@2,6,19,1087.4694434415578,0,0,1,1,8,0,0,0,0,22,3,10,2,30,0,0,0,2,0,0@#@checkTankinhalt():1,taxostand:2,verbrauch:1,grundpreis:1,kmPreis:1,tankinhalt:1@#@@#@_@drive@_:1@#@8
+a,Xc5kZYjA03ZiJobjjVfzXfBxS.java,41,51,pay,35,19,6d106cc78762b03424a198b17f00ce7b,13,130015@#@3,8,23,1483.7283215867003,1,1,0,1,8,0,0,0,0,30,3,11,2,36,0,2,0,1,0,1@#@taxostand:3,grundpreis:2,kmPreis:2,einnahmen:1,out:1@#@println():1@#@_@pay@_:1@#@10
+a,Xc5kZYjA03ZiJobjjVfzXfBxS.java,54,62,refill,19,12,a590bf12e1124beb95c26238500ba0a9,13,130016@#@3,5,15,187.53074858920888,0,0,0,1,2,0,0,0,0,17,10,7,2,18,1,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@9
+a,CHoSgQHrZtdObJCIILCg9NCNo.java,12,20,CHoSgQHrZtdObJCIILCg9NCNo,37,11,3c43f71db9f8cdb8b4e4871a460c982c,14,140017@#@1,8,10,0.0,0,0,0,7,0,0,0,0,0,35,7,7,1,28,0,0,0,0,0,0@#@kraftstoffverbrauch:1,kilometerpreis:1,tankvolumen:1,gesamteinnahmen:1,grundpreis:1,taxometer:1,tankinhalt:1@#@@#@_@CHoSgQHrZtdObJCIILCg9NCNo@_:1@#@9
+a,CHoSgQHrZtdObJCIILCg9NCNo.java,23,37,drive,31,18,d36f77c1143b0859bc5a6ee5e6877939,14,140018@#@2,9,22,713.5090589819675,1,1,0,1,4,1,0,0,0,26,14,14,2,36,0,0,0,3,0,1@#@out:1@#@println():1@#@_@drive@_:1@#@12
+a,CHoSgQHrZtdObJCIILCg9NCNo.java,39,57,pay,35,17,a09dfbbb70aca7a89e27a338fe6ad9da,14,140019@#@3,12,19,1044.990168307122,2,2,0,1,6,0,0,0,0,28,12,13,2,33,0,3,0,2,0,2@#@out:2@#@println():2@#@_@pay@_:1@#@15
+a,CHoSgQHrZtdObJCIILCg9NCNo.java,61,76,refill,31,16,34461ecd5c5990224b734bef7eb8b40b,14,140020@#@2,9,20,1011.3311742036428,2,2,0,1,6,1,0,0,0,27,14,12,2,36,0,0,0,1,0,2@#@out:2@#@println():2@#@_@refill@_:1@#@12
+a,UDNGhLn09kT7QYKQrhIo2bi9G.java,10,15,UDNGhLn09kT7QYKQrhIo2bi9G,22,8,8c3734e62da8bcb4e7fbdcda068b72bd,15,150021@#@1,5,7,0.0,0,0,0,4,0,0,0,0,0,20,4,4,1,16,0,0,0,0,0,0@#@fuelEfficiency:1,kilometerPrice:1,tankCapacity:1,basePrice:1@#@@#@_@UDNGhLn09kT7QYKQrhIo2bi9G@_:1@#@6
+a,UDNGhLn09kT7QYKQrhIo2bi9G.java,17,25,drive,23,14,48825d11cd8032a4c5127e5dcba216a6,15,150022@#@2,7,19,492.7595915594559,0,0,0,1,4,1,0,0,0,19,11,10,2,21,0,0,0,2,0,0@#@@#@@#@_@drive@_:1@#@9
+a,UDNGhLn09kT7QYKQrhIo2bi9G.java,27,37,pay,28,17,c43ca33fad6c661da20488ff78fe9389,15,150023@#@3,9,20,440.83666567851105,1,1,0,1,3,2,0,0,0,24,11,10,2,23,0,0,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@11
+a,UDNGhLn09kT7QYKQrhIo2bi9G.java,39,45,refill,24,13,c99f3d514311faa25d44e8144ff64807,15,150024@#@1,6,17,735.7433114250612,1,1,0,1,6,3,0,0,0,21,11,9,1,21,0,0,0,0,0,0@#@max():1@#@@#@_@refill@_:1@#@7
+a,UDNGhLn09kT7QYKQrhIo2bi9G.java,47,55,main,34,28,91ed2957d1cbb9749c0fcd3cdf47fb17,15,150025@#@1,6,28,692.259108776295,4,4,0,1,4,3,0,0,0,26,5,10,1,26,0,0,0,7,0,2@#@pay():1,refill():1,drive():1,out:1@#@println():1@#@_@main@_:1@#@7
+a,FMdgGWDlvOGvjLyupPON2zFBV.java,26,31,FMdgGWDlvOGvjLyupPON2zFBV,14,9,daa3835899c2d91699ad983e0c6a3933,16,160026@#@1,4,8,0.0,0,0,0,3,0,0,0,0,0,12,6,3,1,9,0,0,0,0,0,0@#@@#@@#@_@FMdgGWDlvOGvjLyupPON2zFBV@_:1@#@5
+a,FMdgGWDlvOGvjLyupPON2zFBV.java,42,56,drive,28,19,00f3c97693b3318e2d783d2741db9434,16,160027@#@2,7,22,468.2403199569162,3,1,0,1,3,1,0,0,0,24,10,11,2,29,0,0,0,1,0,1@#@kraftstoffverbrauch:1,tankvolumen:1,out:1@#@println():1@#@_@drive@_:1@#@10
+a,FMdgGWDlvOGvjLyupPON2zFBV.java,59,79,pay,42,20,7f54e409fec2bd132ee0c494fa04c2e8,16,160028@#@3,15,22,1444.8558444384844,1,1,0,1,6,3,0,0,0,38,18,16,2,42,0,4,0,2,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@18
+a,FMdgGWDlvOGvjLyupPON2zFBV.java,82,106,refill,28,12,dd10c52b67bc25666345f6d8f499fe51,16,160029@#@4,9,17,907.4167507575755,0,0,0,1,6,2,0,0,0,26,16,11,3,27,2,0,0,0,0,0@#@@#@@#@_@refill@_:1@#@13
+a,FMdgGWDlvOGvjLyupPON2zFBV.java,117,142,main,22,17,4c496985c8dc2e20a26be2b44a9308f2,16,160030@#@1,5,15,156.27562382434076,3,3,0,1,2,1,0,0,0,15,3,5,1,14,0,0,0,6,0,0@#@pay():1,refill():1,drive():1@#@@#@_@main@_:1@#@6
+a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,15,19,OPgtMNQ4V3ceg7927dPHX1Pj6,11,8,937a214f9dcebebc691fd03a151634aa,17,170031@#@1,4,7,0.0,0,0,0,0,0,0,0,0,0,9,1,3,1,12,0,0,0,2,0,0@#@taxometer:1,tankinhalt:1,einnahmen:1@#@@#@_@OPgtMNQ4V3ceg7927dPHX1Pj6@_:1@#@5
+a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,22,32,drive,23,14,9f7a077226a7d4ba4e63daab24d4d581,17,170032@#@2,7,18,362.7834751254811,0,0,0,1,3,1,0,0,0,19,11,10,2,22,0,0,0,2,0,0@#@@#@@#@_@drive@_:1@#@10
+a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,35,50,pay,29,16,cba959403fd3d95cd1aa78c8a6110d3d,17,170033@#@3,11,18,412.82257514278893,1,1,0,1,3,0,0,0,0,23,10,10,2,25,0,3,0,2,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@14
+a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,53,60,refill,15,9,607f64da949d93a781bde137b6dae045,17,170034@#@2,4,13,210.92506393404224,0,0,0,1,3,0,0,0,0,13,9,6,2,16,0,0,0,0,0,0@#@@#@@#@_@refill@_:1@#@7
+a,GPYf063qrOqXAO8qXB7sGLE8d.java,16,20,GPYf063qrOqXAO8qXB7sGLE8d,11,8,937a214f9dcebebc691fd03a151634aa,18,180035@#@1,4,7,0.0,0,0,0,0,0,0,0,0,0,9,1,3,1,12,0,0,0,2,0,0@#@totalIncome:1,tanklevel:1,taxometer:1@#@@#@_@GPYf063qrOqXAO8qXB7sGLE8d@_:1@#@5
+a,GPYf063qrOqXAO8qXB7sGLE8d.java,22,31,drive,24,13,1799b27db39e2516e9f7c8c947c31b1a,18,180036@#@2,7,16,744.0,0,0,0,1,6,2,0,0,0,21,13,10,2,22,0,0,0,0,0,0@#@@#@@#@_@drive@_:1@#@9
+a,GPYf063qrOqXAO8qXB7sGLE8d.java,33,49,pay,40,18,9da9c03fb454bd3a129ebc98b536ea01,18,180037@#@3,12,21,1396.7569404436458,1,1,0,1,6,1,0,0,0,34,19,19,2,44,0,3,0,2,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@15
+a,GPYf063qrOqXAO8qXB7sGLE8d.java,51,62,refill,27,12,7e7f17d2987ce5e1b4451136d1136d9e,18,180038@#@2,8,16,888.0,0,0,0,1,6,2,0,0,0,25,16,12,2,29,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@11
+a,GPYf063qrOqXAO8qXB7sGLE8d.java,64,124,main,178,51,8a68d0a9e25cf3ba73489ab31a0da0cf,18,180039@#@8,37,53,21136.026477338208,28,36,0,1,18,7,0,0,0,137,36,68,6,179,3,6,0,0,0,22@#@pay():2,refill():1,equals():2,next():7,parseDouble():6,drive():2,totalIncome:3,tanklevel:4,in:1,out:16@#@println():16@#@_@main@_:1@#@47
+a,UQ343vHfeAOWPriIL4Xru5XMC.java,11,15,UQ343vHfeAOWPriIL4Xru5XMC,13,8,70ae88bd887b4caeb1c8c2626cde27e5,19,190040@#@1,4,7,0.0,0,0,0,1,0,0,0,0,0,11,1,3,1,12,0,0,0,2,0,0@#@taxometerstand:1,gesamteinnahmen:1,tankinhalt:1@#@@#@_@UQ343vHfeAOWPriIL4Xru5XMC@_:1@#@5
+a,UQ343vHfeAOWPriIL4Xru5XMC.java,17,25,drive,25,14,fa514ea0dd3acdbb2f0e5e9efe46da28,19,190041@#@2,6,21,790.6171361001769,0,0,0,1,5,0,0,0,0,21,13,15,2,32,0,0,0,4,0,0@#@@#@@#@_@drive@_:1@#@9
+a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38,pay,25,17,bfdd7333e8e416a5e0848ecbc311f8c6,19,190042@#@3,8,20,376.0077442552005,1,1,0,1,3,0,0,0,0,20,9,9,3,22,0,2,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@12
+a,UQ343vHfeAOWPriIL4Xru5XMC.java,40,48,refill,21,10,6286a51aee31333c42c967ffe5129925,19,190043@#@2,6,14,662.4797564380231,0,0,0,1,6,0,0,0,0,19,14,10,2,26,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@9
+a,UQ343vHfeAOWPriIL4Xru5XMC.java,50,64,main,52,34,923b319aed5cd2fec32f9c05f559f4b4,19,190044@#@4,11,38,2277.600540834516,7,7,0,1,7,2,0,0,0,41,9,21,3,51,2,0,0,9,0,3@#@pay():1,refill():1,random():1,round():1,drive():1,gesamteinnahmen:2,tankinhalt:1,out:2@#@println():2@#@_@main@_:1@#@15
+a,IaljG2SZMe6I8nZCWp6ofFVOS.java,19,25,IaljG2SZMe6I8nZCWp6ofFVOS,17,7,610cbdc041e7a23e7754df45b354d544,110,1100045@#@1,4,6,0.0,0,0,0,3,0,0,0,0,0,15,3,3,1,12,0,0,0,0,0,0@#@TaxometerStand:1,GesamtEinnahmen:1,Tankinhalt:1@#@@#@_@IaljG2SZMe6I8nZCWp6ofFVOS@_:1@#@5
+a,IaljG2SZMe6I8nZCWp6ofFVOS.java,29,58,drive,54,23,611921b7264a877a8529d60fdac89f28,110,1100046@#@2,14,26,1663.9556602219468,9,9,0,1,6,0,0,0,0,42,10,17,2,54,0,0,0,1,0,9@#@out:9@#@println():9@#@_@drive@_:1@#@17
+a,IaljG2SZMe6I8nZCWp6ofFVOS.java,60,85,pay,46,26,fe258b1e4f74b9e8fcc7f23cf02032e6,110,1100047@#@3,12,29,1088.1877429085762,6,4,0,1,4,2,0,0,0,38,13,18,2,45,1,1,0,2,0,4@#@nextDouble():1,in:1,out:3@#@println():3@#@_@pay@_:1@#@16
+a,IaljG2SZMe6I8nZCWp6ofFVOS.java,88,112,refill,31,15,a68bc20a5075e9598b3700422dde59c2,110,1100048@#@4,10,19,943.0399079844759,2,2,0,1,6,1,0,0,0,27,13,10,4,30,0,0,0,0,0,2@#@out:2@#@println():2@#@_@refill@_:1@#@15
+a,IaljG2SZMe6I8nZCWp6ofFVOS.java,115,154,main,104,44,11f3cedbf46e7c4c86ed499021a28e2f,110,1100049@#@4,22,46,6462.567488586706,16,16,0,1,10,4,0,0,0,83,21,34,3,101,2,1,0,4,0,11@#@pay():1,refill():1,nextDouble():3,drive():1,in:1,TaxometerStand:3,GesamtEinnahmen:2,Tankinhalt:3,out:10@#@println():10@#@_@main@_:1@#@26
+a,NCdeERn0tNiGOzng398GOAKfm.java,27,31,NCdeERn0tNiGOzng398GOAKfm,8,7,0174a9fda02c40539c7c73cb35965885,111,1110050@#@1,4,6,0.0,0,0,0,0,0,0,0,0,0,6,4,3,1,9,0,0,0,2,0,0@#@@#@@#@_@NCdeERn0tNiGOzng398GOAKfm@_:1@#@5
+a,NCdeERn0tNiGOzng398GOAKfm.java,34,45,drive,41,19,f7a0e84f59af3c45dc70a83852fd80d8,111,1110051@#@2,9,23,1809.4247824228053,3,3,0,1,8,0,0,0,0,34,9,16,2,44,0,0,0,2,0,3@#@taxoMeter:3,curFule:2,out:3@#@println():3@#@_@drive@_:1@#@11
+a,NCdeERn0tNiGOzng398GOAKfm.java,47,57,pay,23,16,63c1c2c2b1c3fcc5449856b99d7616c6,111,1110052@#@3,8,18,312.7443751081734,1,1,0,1,3,0,0,0,0,18,7,7,2,18,0,2,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@11
+a,NCdeERn0tNiGOzng398GOAKfm.java,59,70,refill,27,15,df4494277b51ad7b5fb2df940327f7b2,111,1110053@#@2,8,21,1229.848878378053,1,1,0,1,8,1,0,0,0,24,14,11,2,30,0,0,0,1,0,1@#@out:1@#@println():1@#@_@refill@_:1@#@11
+a,NCdeERn0tNiGOzng398GOAKfm.java,72,100,main,102,49,802c6219d1f9512ffe0e2f0464dacd76,111,1110054@#@4,21,54,10635.03210399809,13,14,0,1,14,6,0,0,2,84,23,48,3,119,2,0,0,12,0,10@#@pay():1,refill():2,random():5,drive():1,taxoMeter:1,totalRev:1,out:5@#@println():5@#@_@main@_:1@#@25
+a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,11,20,Gk1v1U3LQto7TPPwZ9HsWEHH0,25,15,50ae7945ddca5e6feff756aaaafea069,112,1120055@#@1,8,14,0.0,0,0,0,0,0,0,0,0,0,23,0,7,1,30,0,0,0,5,0,0@#@kilometerPrice:1,tankVolume:2,tankFullness:1,totalRevenue:1,taxometer:1,gasUsage:1,basePrice:2@#@@#@_@Gk1v1U3LQto7TPPwZ9HsWEHH0@_:1@#@9
+a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,22,24,hasEnoughFuel,12,10,2c478ab1d8708ea7e76c398bc0eabd24,112,1120056@#@1,2,10,43.18506523353572,0,0,0,1,1,0,0,0,0,9,1,4,1,9,0,0,0,1,0,0@#@tankFullness:1,gasUsage:1@#@@#@_@hasEnoughFuel@_:1@#@3
+a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,26,34,drive,26,15,d30603cdcbcdc6e8bcc78a4f48c77234,112,1120057@#@2,6,17,367.8716557125306,0,0,1,1,3,0,0,0,0,21,3,9,2,24,0,0,0,2,0,0@#@hasEnoughFuel():1,kilometerPrice:1,tankFullness:1,taxometer:2,gasUsage:1,basePrice:1@#@@#@_@drive@_:1@#@9
+a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,36,46,pay,33,19,f7ad19736919ee62e4afddfef06f8ecf,112,1120058@#@3,9,23,687.581417320666,1,1,0,1,4,1,0,0,0,28,5,10,2,30,0,2,0,3,0,1@#@printf():1,totalRevenue:1,taxometer:2,basePrice:1,out:1@#@@#@_@pay@_:1@#@12
+a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,48,57,refill,31,12,a3d13e6b44dd92a0fe8d1fa40118b613,112,1120059@#@2,7,17,931.9415278050774,0,0,0,1,6,1,0,0,0,29,4,9,2,33,0,0,0,1,0,0@#@tankVolume:2,tankFullness:3,totalRevenue:4@#@@#@_@refill@_:1@#@10
+a,NpqsFLFY0Tf85TgQ5c8URolNr.java,15,18,NpqsFLFY0Tf85TgQ5c8URolNr,11,5,f858eb8daab5638f1b43bb2d04904d25,113,1130060@#@1,3,5,0.0,0,0,0,2,0,0,0,0,0,10,2,2,1,8,0,0,0,0,0,0@#@revenue:1,tank:1@#@@#@_@NpqsFLFY0Tf85TgQ5c8URolNr@_:1@#@4
+a,NpqsFLFY0Tf85TgQ5c8URolNr.java,22,35,drive,33,17,275f1f5d5e88a7294d3fd129d2738acc,113,1130061@#@3,10,20,1115.0574484809397,1,1,0,1,6,0,0,0,0,28,17,15,3,36,0,0,0,3,0,1@#@out:1@#@println():1@#@_@drive@_:1@#@14
+a,NpqsFLFY0Tf85TgQ5c8URolNr.java,39,50,pay,27,16,53901d5939b160a8a1056f42ea9e16d7,113,1130062@#@3,8,22,735.8062170751541,1,1,0,1,5,0,0,0,0,22,10,11,3,27,0,2,0,2,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@12
+a,NpqsFLFY0Tf85TgQ5c8URolNr.java,54,66,refill,26,11,e38bc5afc8c9720768261f978761b0d7,113,1130063@#@3,8,16,840.0,0,0,0,1,6,1,0,0,0,24,16,11,3,29,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@12
+a,NpqsFLFY0Tf85TgQ5c8URolNr.java,68,70,getRevenue,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,113,1130064@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getRevenue@_:1@#@3
+a,NpqsFLFY0Tf85TgQ5c8URolNr.java,72,74,getTank,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,113,1130065@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTank@_:1@#@3
+a,NpqsFLFY0Tf85TgQ5c8URolNr.java,76,78,getPrice,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,113,1130066@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getPrice@_:1@#@3
+a,X3L5yqKRE6s4IBEljxYi8s2gf.java,21,30,X3L5yqKRE6s4IBEljxYi8s2gf,37,11,3c43f71db9f8cdb8b4e4871a460c982c,114,1140067@#@1,8,10,0.0,0,0,0,7,0,0,0,0,0,35,7,7,1,28,0,0,0,0,0,0@#@TANKVOLUMEN:1,GRUNDPREIS:1,gesamteinnahmen:1,KRAFTSTOFFVERBRAUCH:1,taxometer:1,tankinhalt:1,KILOMETERPREIS:1@#@@#@_@X3L5yqKRE6s4IBEljxYi8s2gf@_:1@#@9
+a,X3L5yqKRE6s4IBEljxYi8s2gf.java,35,52,drive,38,20,bdf2b1d5053dadf5ea9c7c403899725e,114,1140068@#@2,10,25,1783.2407768734943,2,2,0,1,8,1,0,0,0,33,10,15,2,44,0,0,0,3,0,2@#@taxometer:2,tankinhalt:2,out:2@#@println():2@#@_@drive@_:1@#@14
+a,X3L5yqKRE6s4IBEljxYi8s2gf.java,55,68,pay,39,19,73800882c539a956368f51153a27de2b,114,1140069@#@4,10,24,1650.5865002596165,2,2,0,1,8,0,0,0,0,33,5,12,2,38,0,2,0,1,0,3@#@gesamteinnahmen:1,taxometer:5,out:2@#@println():2@#@_@pay@_:1@#@12
+a,X3L5yqKRE6s4IBEljxYi8s2gf.java,71,92,refill,58,21,688e9ad8179da55c8d3bcde9201389c0,114,1140070@#@3,11,29,5829.5771941530875,2,2,0,1,15,2,0,0,0,54,16,26,3,71,0,0,0,2,0,5@#@gesamteinnahmen:5,tankinhalt:4,out:2@#@println():2@#@_@refill@_:1@#@16
+a,X3L5yqKRE6s4IBEljxYi8s2gf.java,96,145,main,131,60,d28119f2b113e2de5c77c3dee8f8674e,114,1140071@#@6,25,68,19601.630348826096,13,19,0,1,20,4,0,0,0,108,30,53,5,146,3,1,1,13,0,16@#@pay():1,charAt():1,refill():1,print():2,nextDouble():4,next():1,drive():1,TANKVOLUMEN:1,GRUNDPREIS:1,gesamteinnahmen:1,KRAFTSTOFFVERBRAUCH:3,tankinhalt:3,KILOMETERPREIS:1,out:10@#@println():8@#@_@main@_:1@#@31
+a,CHy9tzZMsUit409DPRN5zId8A.java,15,27,CHy9tzZMsUit409DPRN5zId8A,38,13,fd9f54fa9b18bbc99c760393a47030f7,115,1150072@#@1,10,13,0.0,0,0,0,5,0,0,0,0,0,37,5,9,1,36,0,0,0,4,0,0@#@momentaneEinnahmen:1,trinkgeld:1,kilometerpreis:1,kilometerverbrauch:1,maximalesVolumen:1,gesamteinnahmen:1,grundpreis:1,taxometer:1,tankinhalt:1@#@@#@_@CHy9tzZMsUit409DPRN5zId8A@_:1@#@11
+a,CHy9tzZMsUit409DPRN5zId8A.java,29,40,drive,42,21,6c26f15b864ade37eefcc385267f41fd,115,1150073@#@2,8,25,2006.145873982681,2,2,0,1,8,0,0,0,0,36,8,18,2,50,0,0,0,2,0,4@#@momentaneEinnahmen:2,kilometerpreis:2,taxometer:1,grundpreis:1,tankinhalt:1,out:2@#@println():2@#@_@drive@_:1@#@11
+a,CHy9tzZMsUit409DPRN5zId8A.java,42,60,pay,45,23,87a394f32c12ee5372ecc0e100dcae45,115,1150074@#@3,13,27,1046.0752504759632,3,3,0,1,4,0,0,0,0,37,13,18,2,47,0,3,0,1,0,5@#@gesamteinnahmen:2,out:3@#@println():3@#@_@pay@_:1@#@15
+a,CHy9tzZMsUit409DPRN5zId8A.java,62,89,refill,72,28,a17191fc5a90f3f1032a106801512441,115,1150075@#@2,14,33,3753.0292248026894,6,6,0,1,8,3,0,0,0,64,11,29,2,84,0,0,0,1,0,9@#@format():1,maximalesVolumen:2,gesamteinnahmen:4,tankinhalt:5,out:5@#@println():5@#@_@refill@_:1@#@17
+a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,13,37,main,67,31,f0e701fbdffd4eec7ebf50d413f113ca,116,1160076@#@2,13,32,2880.0,8,13,0,1,8,3,0,0,0,50,17,22,2,61,1,0,0,12,0,0@#@pay():4,refill():1,drive():3,out:5@#@println():5@#@_@main@_:1@#@15
+a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,39,48,QJ7DJjCXmAg6Wltw7HRX6zFzI,28,12,f58d683cb03e5b0ce4825455d05049e5,116,1160077@#@1,8,11,0.0,0,0,0,4,0,0,0,0,0,26,9,7,1,25,0,0,0,1,0,0@#@kraftstoffverbrauch:1,kilometerpreis:1,tankvolumen:1,grundpreis:1@#@@#@_@QJ7DJjCXmAg6Wltw7HRX6zFzI@_:1@#@9
+a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,53,63,drive,24,13,b3e6c3c6753a9c061ca861c92c203edd,116,1160078@#@2,7,17,760.2680884725632,0,0,0,1,6,1,0,0,0,20,11,11,1,25,0,0,0,3,0,0@#@@#@@#@_@drive@_:1@#@8
+a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,65,77,pay,27,16,355348e264518c50802704c1e098cfec,116,1160079@#@3,8,22,735.8062170751541,1,1,0,1,5,0,0,0,0,22,12,11,1,27,0,2,0,0,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@9
+a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,79,89,refill,23,10,842b0be943300dcd13a6db1aa5d25a6c,116,1160080@#@2,7,16,720.0,0,0,0,1,6,2,0,0,0,21,13,9,1,22,0,0,0,0,0,0@#@@#@@#@_@refill@_:1@#@8
+a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,10,18,Z2YE4AGGGFMWhGTOJF9QPVXy2,28,12,05c30f1c23862be8f8a26bf55bfa505f,117,1170081@#@1,8,11,0.0,0,0,0,4,0,0,0,0,0,26,8,7,1,25,0,0,0,2,0,0@#@kilometerpreis:1,tankvolumen:1,verbrauch:1,grundpreis:1@#@@#@_@Z2YE4AGGGFMWhGTOJF9QPVXy2@_:1@#@9
+a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,20,27,drive,26,13,dae5cf2e67ef801d34ea45372f109093,117,1170082@#@2,6,17,907.4167507575755,0,0,0,1,6,0,0,0,0,22,14,15,2,36,0,0,0,4,0,0@#@@#@@#@_@drive@_:1@#@8
+a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,29,39,pay,23,16,90b8f6aa1a70a6895ef01b0624f7dcb0,117,1170083@#@3,8,18,312.7443751081734,1,1,0,1,3,0,0,0,0,18,7,7,3,18,0,2,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@11
+a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,41,46,refill,16,9,dbbf02c492d3ea753920ad55bbc76b67,117,1170084@#@2,4,12,301.13685006057716,0,0,0,1,4,0,0,0,0,14,10,7,2,19,0,0,0,0,0,0@#@@#@@#@_@refill@_:1@#@6
+a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,48,53,ausgeben,21,12,ef1e92f8eded135a85055c91aa7f116f,117,1170085@#@1,5,11,76.10749561002055,4,4,0,0,1,0,0,0,0,15,3,7,1,21,0,0,0,0,0,3@#@out:4@#@println():4@#@_@ausgeben@_:1@#@6
+a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,55,63,main,29,20,07bd9381eb8ba3f88fd10df038832c1d,117,1170086@#@1,8,18,337.7639251168273,3,6,0,1,3,1,0,0,0,19,6,8,1,21,0,0,0,7,0,0@#@pay():1,refill():1,drive():1,ausgeben():3@#@@#@_@main@_:1@#@9
+a,Vg3Lw8sbXbWjTXB4QkHk1CztY.java,18,20,Vg3Lw8sbXbWjTXB4QkHk1CztY,6,5,093048d6c5effc09eb623bd09d8e54ba,118,1180087@#@1,2,4,0.0,0,0,0,1,0,0,0,0,0,4,2,1,1,3,0,0,0,0,0,0@#@@#@@#@_@Vg3Lw8sbXbWjTXB4QkHk1CztY@_:1@#@3
+a,Vg3Lw8sbXbWjTXB4QkHk1CztY.java,24,33,drive,21,13,64b375c5aa4f955974de06a18c62c2e5,118,1180088@#@2,6,17,331.08449014127757,0,0,0,1,3,1,0,0,0,18,11,9,2,22,0,0,0,1,0,0@#@@#@@#@_@drive@_:1@#@8
+a,Vg3Lw8sbXbWjTXB4QkHk1CztY.java,35,50,pay,29,16,495109fc0c99c8190455297a58bad2a3,118,1180089@#@3,11,18,412.82257514278893,1,1,0,1,3,0,0,0,0,23,10,10,3,25,0,3,0,2,0,1@#@print():1,out:1@#@@#@_@pay@_:1@#@16
+a,Vg3Lw8sbXbWjTXB4QkHk1CztY.java,54,59,refill,13,9,ddcb5ca5f4e1c3a212bb2e3d865c42f5,118,1180090@#@2,4,12,114.71880002307701,0,0,0,1,2,0,0,0,0,11,7,5,2,12,1,0,0,0,0,0@#@@#@@#@_@refill@_:1@#@6
+a,Vg3Lw8sbXbWjTXB4QkHk1CztY.java,62,66,Status,18,12,1b3504eebc7cc4c91e4e1109fb773731,118,1180091@#@1,4,11,65.72920075410866,3,3,0,0,1,0,0,0,0,13,3,6,1,18,0,0,0,0,0,3@#@out:3@#@println():3@#@_@Status@_:1@#@5
+a,Vg3Lw8sbXbWjTXB4QkHk1CztY.java,68,81,main,40,26,9395bcc971b18fba6dee0648f1a881a6,118,1180092@#@2,8,25,743.0169903639559,9,7,0,1,4,2,0,0,1,28,4,12,2,30,1,1,0,1,0,3@#@pay():1,nextDouble():1,nextInt():1,drive():1,in:1,out:3@#@println():3@#@_@main@_:1@#@10
+a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,11,19,IFcTWHlwWyw3I7uBJibW5ZwtK,37,11,3c43f71db9f8cdb8b4e4871a460c982c,119,1190093@#@1,8,10,0.0,0,0,0,7,0,0,0,0,0,35,7,7,1,28,0,0,0,0,0,0@#@totalIncome:1,fuelLevel:1,basicPrice:1,pricePerKm:1,currentPrice:1,tankCapacity:1,fuelConsumption:1@#@@#@_@IFcTWHlwWyw3I7uBJibW5ZwtK@_:1@#@9
+a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,21,31,drive,27,17,b143e3e6e560da38615bcbb0ea3d47b9,119,1190094@#@2,8,20,427.8708813938489,1,1,0,1,3,1,0,0,0,22,12,11,2,25,0,0,0,1,0,1@#@out:1@#@println():1@#@_@drive@_:1@#@11
+a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,33,44,pay,25,17,eaee43416ad09ca0d93fc865b79c7fc0,119,1190095@#@3,8,19,344.0821285889304,1,1,0,2,3,0,0,0,0,20,7,7,3,18,0,2,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@12
+a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,46,58,refill,34,17,4d62539e2fe5d1a2d502966506516cca,119,1190096@#@2,10,22,1534.0444768112302,2,2,0,1,8,2,0,0,0,30,15,13,2,35,0,0,0,1,0,2@#@out:2@#@println():2@#@_@refill@_:1@#@13
+a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,60,70,main,44,30,c797fe42f1b51a16e3677b83352690ab,119,1190097@#@2,8,29,655.8274343422223,6,6,0,1,3,2,0,0,0,34,5,11,2,36,0,0,0,10,0,4@#@pay():1,refill():1,drive():1,out:3@#@println():3@#@_@main@_:1@#@11
+a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,18,28,FLHyjHb9dZ9SuC5GfHaCKe0IK,28,11,2156ddcee132f31f06dfaf1d349d7ae5,120,1200098@#@1,8,11,0.0,0,0,0,4,0,0,0,0,0,27,7,7,1,26,0,0,0,2,0,0@#@kmPrice:1,tankVolume:1,tankContent:1,fuelConsumption:1,basePrice:1@#@@#@_@FLHyjHb9dZ9SuC5GfHaCKe0IK@_:1@#@9
+a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,31,70,main,110,48,de958ded14208651cd51197d99f43508,120,1200099@#@4,25,48,8176.385101055774,20,24,0,1,12,4,0,0,0,81,23,41,3,106,2,1,0,5,0,11@#@pay():2,refill():1,equalsIgnoreCase():1,next():5,exit():1,parseDouble():4,drive():1,close():1,in:1,totalRevenue:1,out:8@#@println():8@#@_@main@_:1@#@29
+a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,74,87,drive,32,21,da1945b62ba52b9cbdedce880565fec6,120,12000100@#@2,8,26,987.0923408096294,2,2,0,1,5,1,0,0,0,27,12,15,2,36,0,0,0,4,0,2@#@exit():1,out:1@#@println():1@#@_@drive@_:1@#@10
+a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,90,106,pay,23,16,63c1c2c2b1c3fcc5449856b99d7616c6,120,12000101@#@3,8,18,312.7443751081734,1,1,0,1,3,0,0,0,0,18,7,7,2,18,0,2,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@11
+a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,109,127,refill,38,18,dbec7320518f0d99a0efc3b68b20a376,120,12000102@#@2,10,23,1954.1787650166295,1,1,0,1,8,2,0,0,0,35,21,19,2,46,0,0,0,0,0,4@#@out:1@#@println():1@#@_@refill@_:1@#@13
+a,VUTi3tcXbl4dR0FmsuzUErX0E.java,18,24,VUTi3tcXbl4dR0FmsuzUErX0E,22,13,6658f7877970d6ce4b42939474206ab7,121,12100103@#@1,6,12,0.0,0,0,0,5,0,0,0,0,0,20,10,5,1,15,0,0,0,0,0,0@#@@#@@#@_@VUTi3tcXbl4dR0FmsuzUErX0E@_:1@#@7
+a,VUTi3tcXbl4dR0FmsuzUErX0E.java,27,42,drive,36,24,e186f1daced8b854e0433eb922c56179,121,12100104@#@3,9,27,974.7519379435112,4,4,0,1,5,1,0,0,0,27,11,14,3,31,0,0,0,3,0,1@#@doubleValue():2,setScale():1,HALF_UP:1,out:1@#@println():1@#@_@drive@_:1@#@12
+a,VUTi3tcXbl4dR0FmsuzUErX0E.java,45,59,pay,26,17,dd93f0c08edb8081b6dc6e4bb27ee304,121,12100105@#@3,8,21,544.6473604245663,1,1,0,1,4,0,0,0,0,21,9,10,3,25,0,2,0,1,0,2@#@out:1@#@println():1@#@_@pay@_:1@#@12
+a,VUTi3tcXbl4dR0FmsuzUErX0E.java,62,75,refill,24,11,3914547df95063aed5c47379a97b621d,121,12100106@#@2,7,16,792.0,0,0,0,1,6,1,0,0,0,22,15,11,2,28,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@10
+a,VUTi3tcXbl4dR0FmsuzUErX0E.java,77,166,main,208,68,1bddf4eda30135b6f389c2f4d5a2bca5,121,12100107@#@13,56,68,13757.666021225768,38,30,0,1,10,6,0,7,0,172,27,54,4,168,1,2,0,11,0,26@#@pay():1,refill():1,readLine():4,parseDouble():3,drive():1,err:7,in:1,taxometer:1,tankinhalt:1,out:13@#@println():20@#@_@main@_:1@#@78
+a,SnOt9Q25W4q3dK0QOEtnmN5BU.java,14,24,SnOt9Q25W4q3dK0QOEtnmN5BU,38,15,f7834104169b2e69d9b29dd859e3f954,122,12200108@#@1,10,15,0.0,0,0,0,5,0,0,0,0,0,37,5,9,1,36,0,0,0,4,0,0@#@income:1,priceKilometer:1,taxometers:1,fuel:1,fuelConsume_oneKM:1,maxTankVolume:1,currentPrice:1,tip:1,basePrice:1@#@@#@_@SnOt9Q25W4q3dK0QOEtnmN5BU@_:1@#@11
+a,SnOt9Q25W4q3dK0QOEtnmN5BU.java,26,36,drive,37,20,829d988b32d24ebe6865d14c126bf3bd,122,12200109@#@2,8,24,898.6526501413467,2,2,0,1,4,0,0,0,0,31,13,18,2,45,0,0,0,2,0,4@#@taxometers:1,fuel:1,out:2@#@println():2@#@_@drive@_:1@#@11
+a,SnOt9Q25W4q3dK0QOEtnmN5BU.java,38,51,pay,42,22,200cfeecc38cd1b6cc036e9b7918cdeb,122,12200110@#@3,12,26,958.8897025007828,3,3,0,1,4,0,0,0,0,34,12,17,2,43,0,3,0,1,0,5@#@income:1,out:3@#@println():3@#@_@pay@_:1@#@14
+a,SnOt9Q25W4q3dK0QOEtnmN5BU.java,53,79,refill,84,25,0ad4de85f1f430c7e82e1e1256f2472f,122,12200111@#@2,14,30,6653.743647645151,5,5,0,1,12,3,0,0,0,77,9,36,2,105,0,0,0,2,0,10@#@income:6,fuel:8,maxTankVolume:4,out:5@#@println():5@#@_@refill@_:1@#@17
+a,NYs33OaJgnHVlC5gxbP4TA6U8.java,21,25,NYs33OaJgnHVlC5gxbP4TA6U8,17,7,610cbdc041e7a23e7754df45b354d544,123,12300112@#@1,4,6,0.0,0,0,0,3,0,0,0,0,0,15,3,3,1,12,0,0,0,0,0,0@#@taximeter:1,totalRevenue:1,inTank:1@#@@#@_@NYs33OaJgnHVlC5gxbP4TA6U8@_:1@#@5
+a,NYs33OaJgnHVlC5gxbP4TA6U8.java,27,52,drive,59,26,ef60b4d7a9cbf8ce916ff2df7d0b34ee,123,12300113@#@3,16,31,3864.273122101763,4,4,1,1,10,2,0,0,0,51,25,27,3,70,0,0,0,3,0,6@#@refill():1,out:4@#@println():4@#@_@drive@_:1@#@21
+a,NYs33OaJgnHVlC5gxbP4TA6U8.java,54,69,pay,31,18,3ddc986a2c6d1aafe490aaab0a9a8f00,123,12300114@#@3,10,20,427.8708813938489,3,3,0,1,3,0,0,0,0,24,7,9,2,26,0,2,0,1,0,3@#@out:3@#@println():3@#@_@pay@_:1@#@13
+a,NYs33OaJgnHVlC5gxbP4TA6U8.java,71,91,refill,48,21,3bb73a0051b53fabd2243ce79537c520,123,12300115@#@2,14,27,2472.541501125004,2,2,0,1,8,4,0,0,0,44,22,21,2,54,0,0,0,2,0,4@#@out:2@#@println():2@#@_@refill@_:1@#@17
+a,NYs33OaJgnHVlC5gxbP4TA6U8.java,93,100,getUserInput,23,20,b7fb551a6182abe03264746bc2644f20,123,12300116@#@2,6,18,262.70527509086565,4,5,0,0,3,1,0,0,0,14,3,7,2,16,0,0,0,1,0,2@#@nextLine():1,equals():1,exit():1,parseDouble():1,out:1@#@println():1@#@_@getUserInput@_:1@#@8
+a,NYs33OaJgnHVlC5gxbP4TA6U8.java,102,125,main,64,33,54ef099e0ffefa92380f8979b9dac32e,123,12300117@#@4,16,34,2930.378596560196,10,7,2,1,8,3,0,0,0,50,10,22,4,57,2,1,0,6,0,6@#@pay():1,getUserInput():2,drive():1,in:1,out:5@#@println():5@#@_@main@_:1@#@21
+a,SSHGivHlZWTTsOAgQjj8BokSs.java,16,18,setTankCapacity,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,124,12400118@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@tankCapacity:1@#@@#@_@setTankCapacity@_:1@#@3
+a,SSHGivHlZWTTsOAgQjj8BokSs.java,20,22,setTaxometer,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,124,12400119@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@taxometer:1@#@@#@_@setTaxometer@_:1@#@3
+a,SSHGivHlZWTTsOAgQjj8BokSs.java,24,26,setTotalRevenue,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,124,12400120@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@totalRevenue:1@#@@#@_@setTotalRevenue@_:1@#@3
+a,SSHGivHlZWTTsOAgQjj8BokSs.java,29,31,getTankCapacity,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,124,12400121@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTankCapacity@_:1@#@3
+a,SSHGivHlZWTTsOAgQjj8BokSs.java,33,35,getTaxometer,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,124,12400122@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTaxometer@_:1@#@3
+a,SSHGivHlZWTTsOAgQjj8BokSs.java,37,39,getTotalRevenue,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,124,12400123@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTotalRevenue@_:1@#@3
+a,SSHGivHlZWTTsOAgQjj8BokSs.java,42,47,toString,19,19,b709690c803603cabe0a58e3ae724f5a,124,12400124@#@1,2,18,129.26767504471167,1,0,0,0,1,0,0,0,0,16,7,15,1,30,0,0,0,0,0,8@#@@#@@#@_@toString@_:1@#@3
+a,SSHGivHlZWTTsOAgQjj8BokSs.java,50,60,SSHGivHlZWTTsOAgQjj8BokSs,38,12,688304eba7f8308d0d0cfa8c9f2dc3b7,124,12400125@#@1,8,12,473.2150500951926,0,0,0,7,3,0,0,0,0,36,7,8,1,30,0,0,0,1,0,0@#@tankVolumeInLitre:1,kilometerPrice:1,tankCapacity:1,totalRevenue:1,taxometer:1,fuelConsumption:1,basePrice:1@#@@#@_@SSHGivHlZWTTsOAgQjj8BokSs@_:1@#@9
+a,SSHGivHlZWTTsOAgQjj8BokSs.java,64,74,drive,21,14,c173e486f976484b7f80edc07aca53fa,124,12400126@#@2,6,17,408.746284125034,0,0,2,1,4,1,0,0,0,16,10,9,2,18,0,0,0,0,0,0@#@setTankCapacity():1,setTaxometer():1@#@@#@_@drive@_:1@#@8
+a,SSHGivHlZWTTsOAgQjj8BokSs.java,77,89,pay,26,17,4de5cf5103bdcb29d4bcf8ef3959e85a,124,12400127@#@3,8,20,518.6313713864835,1,1,1,1,4,0,0,0,0,20,8,10,3,24,0,2,0,1,0,2@#@setTotalRevenue():1,out:1@#@println():1@#@_@pay@_:1@#@11
+a,SSHGivHlZWTTsOAgQjj8BokSs.java,92,108,refill,30,13,8171ade5a7ae1e59625c0442ec6f53b7,124,12400128@#@3,9,20,1417.592415123055,0,0,0,1,8,2,0,0,0,28,17,13,3,32,1,0,0,2,0,0@#@@#@@#@_@refill@_:1@#@13
+a,SSHGivHlZWTTsOAgQjj8BokSs.java,110,133,main,89,45,a83b66738973b3676ca7e2c8340a3f32,124,12400129@#@1,14,44,6114.563412873773,10,15,0,1,10,4,0,0,0,70,15,42,1,100,0,0,0,10,0,19@#@pay():1,refill():1,getTaxometer():1,getTankCapacity():2,getTotalRevenue():2,drive():1,out:7@#@println():7@#@_@main@_:1@#@15
+a,KpDaNc2yULGxB1v5wlL6E3OD6.java,14,26,main,36,27,3d41345f567ecfa0e5111c4b485f8379,125,12500130@#@1,8,26,549.9514470225079,7,4,0,1,3,4,0,0,0,28,3,11,1,27,0,0,0,6,0,2@#@pay():1,refill():1,drive():1,out:1@#@println():1@#@_@main@_:1@#@9
+a,KpDaNc2yULGxB1v5wlL6E3OD6.java,29,33,KpDaNc2yULGxB1v5wlL6E3OD6,13,9,160eda4f075810278b0f482f277a1eca,125,12500131@#@1,4,9,0.0,0,0,0,3,0,0,0,0,0,12,6,3,1,9,0,0,0,0,0,0@#@@#@@#@_@KpDaNc2yULGxB1v5wlL6E3OD6@_:1@#@5
+a,KpDaNc2yULGxB1v5wlL6E3OD6.java,35,45,drive,28,17,8ce024758bc8ca7e0dfcf3c5de8a97fa,125,12500132@#@2,7,21,650.0629785712566,1,1,0,1,4,0,0,0,0,23,13,14,2,35,0,0,0,3,0,1@#@out:1@#@println():1@#@_@drive@_:1@#@10
+a,KpDaNc2yULGxB1v5wlL6E3OD6.java,47,58,pay,26,17,7d1f130472c8803f8581f10482119c91,125,12500133@#@3,8,21,544.6473604245663,1,1,0,1,4,0,0,0,0,21,9,10,3,27,0,2,0,1,0,2@#@out:1@#@println():1@#@_@pay@_:1@#@11
+a,KpDaNc2yULGxB1v5wlL6E3OD6.java,60,72,refill,33,17,a4c3134bb6848d92e6d1aede7bef56be,125,12500134@#@2,8,23,1628.4823041805248,2,2,0,1,8,0,0,0,0,29,16,16,2,44,0,0,0,1,0,4@#@out:2@#@println():2@#@_@refill@_:1@#@11
+a,ZmB1ce4Z4bRirnJRrzLxHP71W.java,10,18,ZmB1ce4Z4bRirnJRrzLxHP71W,33,12,6f1710c5bec0ba980089d63ae05aa068,126,12600135@#@1,8,11,0.0,0,0,0,5,0,0,0,0,0,31,5,7,1,28,0,0,0,2,0,0@#@kmPrice:1,balance:1,tankContent:1,currentPrice:1,tankCapacity:1,fuelConsumption:1,basePrice:1@#@@#@_@ZmB1ce4Z4bRirnJRrzLxHP71W@_:1@#@9
+a,ZmB1ce4Z4bRirnJRrzLxHP71W.java,20,31,drive,36,15,5793d093403217fff65489d005949d9e,126,12600136@#@3,8,21,1616.3728115825838,0,0,0,1,8,0,0,0,0,31,3,15,1,38,0,0,0,5,0,0@#@kmPrice:1,tankContent:2,currentPrice:3,fuelConsumption:2,basePrice:1@#@@#@_@drive@_:1@#@9
+a,ZmB1ce4Z4bRirnJRrzLxHP71W.java,33,44,pay,30,17,2bb7eb7a86165855242b3d8ff880cb44,126,12600137@#@3,8,19,420.54482383091494,1,1,0,1,3,0,0,0,0,25,4,8,1,26,0,2,0,1,0,1@#@printf():1,balance:1,currentPrice:4,out:1@#@@#@_@pay@_:1@#@9
+a,ZmB1ce4Z4bRirnJRrzLxHP71W.java,46,59,refill,37,14,c62f9ec79c0831af6a1ccc45a9088510,126,12600138@#@3,9,19,2344.855987420859,0,0,0,1,12,1,0,0,0,34,5,12,2,38,0,0,0,2,0,0@#@balance:4,tankContent:3,currentPrice:1,tankCapacity:2@#@@#@_@refill@_:1@#@12
+a,ZmB1ce4Z4bRirnJRrzLxHP71W.java,61,69,main,41,30,b4236e48694c41d39534fffe2d1e7ad4,126,12600139@#@2,8,30,804.730057679797,5,7,0,1,4,1,0,0,0,30,5,11,1,34,0,0,0,11,0,3@#@pay():2,refill():1,drive():2,out:2@#@println():2@#@_@main@_:1@#@9
+a,Buh7lFTuRLvglBJw8PsygWcl6.java,14,24,Buh7lFTuRLvglBJw8PsygWcl6,38,15,f7834104169b2e69d9b29dd859e3f954,127,12700140@#@1,10,15,0.0,0,0,0,5,0,0,0,0,0,37,5,9,1,36,0,0,0,4,0,0@#@income:1,priceKilometer:1,taxometers:1,fuel:1,fuelConsume_oneKM:1,maxTankVolume:1,currentPrice:1,tip:1,basePrice:1@#@@#@_@Buh7lFTuRLvglBJw8PsygWcl6@_:1@#@11
+a,Buh7lFTuRLvglBJw8PsygWcl6.java,26,36,drive,42,20,92b165f7d10133dcc96fba6744e58792,127,12700141@#@2,8,24,1980.70380031154,2,2,0,1,8,0,0,0,0,36,8,18,2,50,0,0,0,2,0,4@#@priceKilometer:2,taxometers:1,fuel:1,currentPrice:2,basePrice:1,out:2@#@println():2@#@_@drive@_:1@#@11
+a,Buh7lFTuRLvglBJw8PsygWcl6.java,38,52,pay,45,22,be7057ca65081f51f56a0f789f5e4c1e,127,12700142@#@3,13,26,2068.1934759820806,3,3,0,1,8,0,0,0,0,37,13,18,2,47,0,3,0,1,0,5@#@income:2,out:3@#@println():3@#@_@pay@_:1@#@15
+a,Buh7lFTuRLvglBJw8PsygWcl6.java,54,78,refill,83,29,4dba72b06efbc2405d6ad89bff6f6619,127,12700143@#@2,14,34,6776.500504545453,6,6,0,1,12,3,0,0,0,75,10,36,2,103,0,0,0,3,0,11@#@format():1,income:4,fuel:7,maxTankVolume:4,out:5@#@println():5@#@_@refill@_:1@#@17
+a,XvLggiA0U2816f7k8OxJUfOXy.java,18,24,XvLggiA0U2816f7k8OxJUfOXy,14,9,daa3835899c2d91699ad983e0c6a3933,128,12800144@#@1,4,8,0.0,0,0,0,3,0,0,0,0,0,12,6,3,1,9,0,0,0,0,0,0@#@@#@@#@_@XvLggiA0U2816f7k8OxJUfOXy@_:1@#@5
+a,XvLggiA0U2816f7k8OxJUfOXy.java,28,37,drive,23,14,633d3eedb330603be9ef2818ef441a6d,128,12800145@#@1,6,16,324.0,2,2,0,1,3,0,0,0,0,18,9,9,1,23,0,0,0,0,0,2@#@out:2@#@println():2@#@_@drive@_:1@#@7
+a,XvLggiA0U2816f7k8OxJUfOXy.java,39,73,pay,55,27,3e98ebc1d45694cb59654959a7bda1a5,128,12800146@#@3,14,30,2708.603608775902,7,5,0,1,8,2,0,0,0,46,17,23,2,58,1,1,0,2,0,6@#@nextDouble():1,in:1,out:4@#@println():4@#@_@pay@_:1@#@18
+a,XvLggiA0U2816f7k8OxJUfOXy.java,76,102,refill,41,20,1be562afc0ad488a1c1fdc302287de6d,128,12800147@#@5,11,24,1375.488750216347,3,3,0,1,6,2,0,0,0,36,15,14,5,39,1,0,0,1,0,3@#@out:3@#@println():3@#@_@refill@_:1@#@17
+a,XvLggiA0U2816f7k8OxJUfOXy.java,103,108,printState,20,15,514388e17ff7cbfbbba13830025e45e3,128,12800148@#@1,2,16,216.0,3,3,0,0,2,0,0,0,0,15,3,12,1,26,0,0,0,4,0,3@#@round():2,out:1@#@println():1@#@_@printState@_:1@#@3
+a,XvLggiA0U2816f7k8OxJUfOXy.java,111,162,main,111,49,be5c876dc3e1c9293e322a978b7fe9e8,128,12800149@#@5,26,53,11364.194181853389,18,21,0,1,16,4,0,0,0,85,20,39,3,107,2,1,0,9,0,11@#@pay():1,refill():1,print():1,nextDouble():3,printState():3,round():2,drive():1,in:1,taxameter:1,tankinhalt:2,out:10@#@println():9@#@_@main@_:1@#@31
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,14,23,TJI8zHEYT5LRvCsA7gYIbH7Qr,28,12,05c30f1c23862be8f8a26bf55bfa505f,129,12900150@#@1,8,11,0.0,0,0,0,4,0,0,0,0,0,26,8,7,1,25,0,0,0,2,0,0@#@kraftstoffverbrauch:1,kilometerpreis:1,tankvolumen:1,grundpreis:1@#@@#@_@TJI8zHEYT5LRvCsA7gYIbH7Qr@_:1@#@9
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,25,27,getTankinhalt,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,129,12900151@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTankinhalt@_:1@#@3
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,28,30,getTaxometer,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,129,12900152@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTaxometer@_:1@#@3
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,31,33,getGesamteinnahmen,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,129,12900153@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getGesamteinnahmen@_:1@#@3
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,35,44,drive,26,15,9fa7095734cfe0fefff2d2275c751547,129,12900154@#@2,7,21,632.4937088801415,0,0,0,1,4,1,0,0,0,22,12,14,2,33,0,0,0,4,0,0@#@@#@@#@_@drive@_:1@#@10
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,46,56,pay,23,16,63c1c2c2b1c3fcc5449856b99d7616c6,129,12900155@#@3,8,18,312.7443751081734,1,1,0,1,3,0,0,0,0,18,7,7,2,18,0,2,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@10
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,58,67,refill,22,10,d79bd344f6b1ed7597212204518502a8,129,12900156@#@2,6,15,726.6816507831845,0,0,0,1,6,0,0,0,0,20,14,11,2,31,0,0,0,2,0,0@#@@#@@#@_@refill@_:1@#@9
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,69,178,main,247,52,a25fafe55c246e8d22a6da19980847e5,129,12900157@#@5,45,52,33860.61192575809,38,58,0,1,20,2,0,0,0,185,29,112,1,286,0,0,0,15,0,59@#@getGesamteinnahmen():6,pay():2,refill():1,getTaxometer():6,getTankinhalt():6,drive():2,out:35@#@println():35@#@_@main@_:1@#@50
+a,FtCQI3pKD6eoKxuVTmSOIkofM.java,25,29,FtCQI3pKD6eoKxuVTmSOIkofM,12,8,846990ff570bbafb2828fa2444760468,130,13000158@#@1,4,7,0.0,0,0,0,0,0,0,0,0,0,10,0,3,1,13,0,0,0,2,0,0@#@earnings:1,taxometerValue:1,fuelCapacity:1,tankCapacity:1@#@@#@_@FtCQI3pKD6eoKxuVTmSOIkofM@_:1@#@5
+a,FtCQI3pKD6eoKxuVTmSOIkofM.java,36,41,checkFuelCapacity,16,13,07a135a6234cc604c85dee5618452743,130,13000159@#@2,4,14,129.45006734995852,0,0,0,1,2,0,0,0,0,12,1,5,2,13,0,2,0,1,0,0@#@fuelCapacity:1,consumption:1@#@@#@_@checkFuelCapacity@_:1@#@6
+a,FtCQI3pKD6eoKxuVTmSOIkofM.java,48,59,drive,35,17,244fee33edb532e43ade1b2e02302352,130,13000160@#@2,7,25,2507.682342478351,0,0,1,1,12,1,0,0,0,30,5,15,2,39,0,0,0,4,0,0@#@checkFuelCapacity():1,taxometerValue:3,kilometerPrice:1,fuelCapacity:1,consumption:1,basePrice:1@#@@#@_@drive@_:1@#@9
+a,FtCQI3pKD6eoKxuVTmSOIkofM.java,66,76,pay,27,17,65369cbd9b323737ed1445492c2453b6,130,13000161@#@3,8,19,369.5696936695919,1,1,0,1,3,0,0,0,0,22,3,7,2,22,0,2,0,1,0,1@#@earnings:1,taxometerValue:3,out:1@#@println():1@#@_@pay@_:1@#@10
+a,FtCQI3pKD6eoKxuVTmSOIkofM.java,84,104,refill,48,22,21feecbdef817ab31764ddc5db06caa4,130,13000162@#@4,12,27,2244.3069010211575,2,2,0,1,8,2,0,0,0,42,6,17,2,47,0,0,0,2,0,4@#@earnings:1,taxometerValue:1,fuelCapacity:5,tankCapacity:1,out:2@#@println():2@#@_@refill@_:1@#@17
+a,VHoij57foVaRucJAXnKwrz7wN.java,21,29,VHoij57foVaRucJAXnKwrz7wN,29,13,2d67d59cd150a16d3371f9f2c90eba1f,131,13100163@#@1,8,12,0.0,0,0,0,4,0,0,0,0,0,27,7,7,1,26,0,0,0,2,0,0@#@kraftstoffverbrauch:1,kilometerpreis:1,tankvolumen:2,grundpreis:1@#@@#@_@VHoij57foVaRucJAXnKwrz7wN@_:1@#@9
+a,VHoij57foVaRucJAXnKwrz7wN.java,34,46,drive,50,20,6e7aaf5b06a1d458dc73bd8c110ae9e9,131,13100164@#@2,10,25,2303.352670128263,3,3,0,1,8,1,0,0,0,44,6,18,2,56,0,0,0,3,0,3@#@kraftstoffverbrauch:2,kilometerpreis:1,taxometer:2,grundpreis:1,tankinhalt:4,out:3@#@println():3@#@_@drive@_:1@#@13
+a,VHoij57foVaRucJAXnKwrz7wN.java,48,66,pay,59,21,bb78990f5439591e8cdba70c45bdfb7f,131,13100165@#@4,17,25,2006.1458739826808,3,3,0,1,6,2,0,0,0,53,12,19,2,61,0,4,0,2,0,3@#@gesamteinnahmen:4,taxometer:3,grundpreis:1,out:3@#@println():3@#@_@pay@_:1@#@19
+a,VHoij57foVaRucJAXnKwrz7wN.java,68,78,refill,45,17,ad45c0cf5edde530c2e7fe9e742686bb,131,13100166@#@2,8,21,2292.789694690513,1,1,0,1,9,1,0,0,0,42,5,16,2,52,0,0,0,1,0,2@#@tankvolumen:2,gesamteinnahmen:6,tankinhalt:5,out:1@#@println():1@#@_@refill@_:1@#@11
+a,VHoij57foVaRucJAXnKwrz7wN.java,81,89,main,23,19,4c7e5b25bfe6d3bb5be2ebc6f6b2d69d,131,13100167@#@1,5,17,171.67343933251428,3,3,0,1,2,1,0,0,0,16,3,5,1,15,0,0,0,7,0,0@#@pay():1,refill():1,drive():1@#@@#@_@main@_:1@#@6
+a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,6,15,J3RowPmOg2qHO6eYLC41Vw6ZT,16,14,2cadda523c3a5d2141498ed3a5c43f59,132,13200168@#@1,8,13,0.0,0,0,0,0,0,0,0,0,0,14,7,7,1,21,0,0,0,7,0,0@#@@#@@#@_@J3RowPmOg2qHO6eYLC41Vw6ZT@_:1@#@9
+a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,17,26,drive,23,17,d58b9c6d33a029c379a54f20e6901593,132,13200169@#@2,6,20,363.04195997053847,1,1,0,1,3,1,0,0,0,19,9,9,2,21,0,0,0,1,0,1@#@out:1@#@println():1@#@_@drive@_:1@#@9
+a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,28,44,pay,31,16,884a878e0b97811532181b1b3d3a9a0f,132,13200170@#@3,11,18,925.7233503201933,1,1,0,1,6,0,0,0,0,25,12,12,2,29,0,3,0,2,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@14
+a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,46,58,refill,30,13,adb34354acd42bd9d973a4362c341a7c,132,13200171@#@2,9,17,1005.5158589475836,0,0,0,1,6,3,0,0,0,28,17,13,2,31,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@12
+a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,60,77,main,52,28,2dedf5f531cbd800c2fca6840ed15005,132,13200172@#@3,11,28,1076.8475025409032,8,9,0,1,4,1,0,0,0,39,6,17,2,48,0,2,0,4,0,7@#@pay():2,refill():1,drive():1,gesamteinnahmen:1,tankinhalt:1,out:5@#@println():5@#@_@main@_:1@#@16
+a,YsupfvRpv05mUddNkhNYEbFQV.java,11,20,YsupfvRpv05mUddNkhNYEbFQV,37,13,8b1548a4620c96a89748c6dc71e5b324,133,13300173@#@1,8,12,0.0,0,0,0,7,0,0,0,0,0,35,7,7,1,28,0,0,0,0,0,0@#@kilometerpreis:1,tankvolumen:1,verbrauch:1,taxometer:1,grundpreis:1,tankinhalt:1,einnahmen:1@#@@#@_@YsupfvRpv05mUddNkhNYEbFQV@_:1@#@9
+a,YsupfvRpv05mUddNkhNYEbFQV.java,22,33,drive,34,21,9519f0d3465fb515b1b123854e546d59,133,13300174@#@2,8,26,1034.0967379910403,2,2,0,1,5,1,0,0,0,28,10,16,2,37,0,0,0,4,0,1@#@ceil():1,taxometer:1,tankinhalt:1,out:1@#@println():1@#@_@drive@_:1@#@11
+a,YsupfvRpv05mUddNkhNYEbFQV.java,35,46,pay,25,17,be2b8af07a347341a52626aa8ad86a0d,133,13300175@#@3,8,19,344.0821285889304,1,1,0,1,3,0,0,0,0,20,5,7,3,20,0,2,0,1,0,1@#@taxometer:1,einnahmen:1,out:1@#@println():1@#@_@pay@_:1@#@12
+a,YsupfvRpv05mUddNkhNYEbFQV.java,48,58,refill,34,17,c7daa7fa415cd76277e08e6cad2c5e89,133,13300176@#@2,8,22,1534.0444768112302,2,2,0,1,8,0,0,0,0,30,10,13,2,39,0,0,0,1,0,3@#@tankinhalt:2,einnahmen:2,out:2@#@println():2@#@_@refill@_:1@#@11
+a,BurWPjfKUNx1S9i3g1wyEPZBd.java,18,20,getTankInhalt,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,134,13400177@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTankInhalt@_:1@#@3
+a,BurWPjfKUNx1S9i3g1wyEPZBd.java,22,24,setTankInhalt,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,134,13400178@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@tankInhalt:1@#@@#@_@setTankInhalt@_:1@#@3
+a,BurWPjfKUNx1S9i3g1wyEPZBd.java,29,31,getTaxometerStand,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,134,13400179@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTaxometerStand@_:1@#@3
+a,BurWPjfKUNx1S9i3g1wyEPZBd.java,33,35,setTaxometerStand,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,134,13400180@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@taxometerStand:1@#@@#@_@setTaxometerStand@_:1@#@3
+a,BurWPjfKUNx1S9i3g1wyEPZBd.java,40,42,getGesamteinnahmen,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,134,13400181@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getGesamteinnahmen@_:1@#@3
+a,BurWPjfKUNx1S9i3g1wyEPZBd.java,44,46,setGesamteinnahmen,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,134,13400182@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@gesamteinnahmen:1@#@@#@_@setGesamteinnahmen@_:1@#@3
+a,BurWPjfKUNx1S9i3g1wyEPZBd.java,49,56,BurWPjfKUNx1S9i3g1wyEPZBd,22,8,8c3734e62da8bcb4e7fbdcda068b72bd,134,13400183@#@1,5,7,0.0,0,0,0,4,0,0,0,0,0,20,4,4,1,16,0,0,0,0,0,0@#@kilometerpreis:1,grundpreis:1,verbrauch100km:1,tankVolumen:1@#@@#@_@BurWPjfKUNx1S9i3g1wyEPZBd@_:1@#@6
+a,BurWPjfKUNx1S9i3g1wyEPZBd.java,59,70,drive,26,14,32edcdc1c64bcdec3c115e8174b3adc0,134,13400184@#@2,9,17,809.3176425675672,0,0,0,1,6,2,0,0,0,23,14,10,2,27,0,0,0,1,0,0@#@@#@@#@_@drive@_:1@#@12
+a,BurWPjfKUNx1S9i3g1wyEPZBd.java,79,86,refill,16,10,980a5f7a713a89291837eb1001251436,134,13400185@#@1,6,11,124.53953827094271,0,0,0,1,2,2,0,0,0,13,6,5,1,12,0,0,0,0,0,0@#@@#@@#@_@refill@_:1@#@7
+a,BurWPjfKUNx1S9i3g1wyEPZBd.java,89,100,main,29,23,c1f807094dacbbdd29b6aa8f3dd2b084,134,13400186@#@1,7,21,355.7777112450796,3,5,0,1,3,1,0,0,0,20,5,7,1,21,0,0,0,9,0,0@#@setTankInhalt():1,refill():1,setTaxometerStand():1,drive():1,setGesamteinnahmen():1@#@@#@_@main@_:1@#@8
+a,Uu1D7w3RecnGQxb3TIRXGYISR.java,11,20,Uu1D7w3RecnGQxb3TIRXGYISR,37,16,36b4d1b4c71bfaa6f6969f75bb3c1682,135,13500187@#@1,8,15,0.0,0,0,0,7,0,0,0,0,0,35,7,7,1,28,0,0,0,0,0,0@#@tank_capacity:1,BASE_PRICE:1,PRICE_PER_KILOMETER:1,total_revenue:1,taxometer:1,FUEL_CONSUMPTION:1,TANK_VOLUME:1@#@@#@_@Uu1D7w3RecnGQxb3TIRXGYISR@_:1@#@9
+a,Uu1D7w3RecnGQxb3TIRXGYISR.java,22,34,drive,29,19,99c08f00726288edf8034c3faf5e545f,135,13500188@#@2,7,23,687.581417320666,1,1,0,1,4,0,0,0,1,24,12,14,2,35,0,0,0,4,0,1@#@out:1@#@println():1@#@_@drive@_:1@#@10
+a,Uu1D7w3RecnGQxb3TIRXGYISR.java,36,47,pay,27,17,aaaeeab78835f329f1bacb3f55243a56,135,13500189@#@3,9,19,369.5696936695919,2,2,0,1,3,0,0,0,0,21,7,8,3,22,0,2,0,1,0,2@#@out:2@#@println():2@#@_@pay@_:1@#@12
+a,Uu1D7w3RecnGQxb3TIRXGYISR.java,49,69,refill,43,18,401740716e0aacbe2b37795ee5d222d3,135,13500190@#@3,10,25,2786.3137138648344,3,3,0,1,10,0,0,0,0,38,22,22,3,59,1,0,0,2,0,3@#@out:3@#@println():3@#@_@refill@_:1@#@14
+a,Uu1D7w3RecnGQxb3TIRXGYISR.java,71,80,main,50,27,a933a7ff50131b02c7f9d7c4d7c362a0,135,13500191@#@1,9,26,719.1672768755872,6,10,0,1,3,1,0,0,0,36,7,15,1,45,0,0,0,14,0,3@#@pay():3,refill():1,drive():3,out:3@#@println():3@#@_@main@_:1@#@10
+a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,10,18,Pa7PrkpPjGwWMMWvOA5Q9YvAz,16,14,24a15ad7d37cca459198f6d02c34e3f3,136,13600192@#@1,8,13,0.0,0,0,0,0,0,0,0,0,0,14,8,7,1,21,0,0,0,6,0,0@#@@#@@#@_@Pa7PrkpPjGwWMMWvOA5Q9YvAz@_:1@#@9
+a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,20,30,drive,38,20,e2a5366fe1b40b56c4a8700517db1824,136,13600193@#@1,8,23,1737.0477911258931,4,4,0,1,8,1,0,0,0,31,15,17,1,42,0,0,0,0,0,4@#@min():1,out:3@#@println():3@#@_@drive@_:1@#@9
+a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,32,46,pay,37,21,a5ed5980623cb8697980aa862a693d05,136,13600194@#@3,10,24,825.2932501298083,3,3,0,1,4,1,0,0,0,30,11,15,3,36,0,2,0,2,0,3@#@round():1,out:2@#@println():2@#@_@pay@_:1@#@14
+a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,48,66,refill,52,20,6c5bc4718435f66fb77408a2d0bb9785,136,13600195@#@3,14,25,2526.25776723745,4,4,0,1,8,2,0,0,0,46,22,22,2,59,0,0,0,2,0,5@#@out:4@#@println():4@#@_@refill@_:1@#@18
+a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,68,73,printStatus,18,12,1b3504eebc7cc4c91e4e1109fb773731,136,13600196@#@1,4,11,65.72920075410866,3,3,0,0,1,0,0,0,0,13,3,6,1,18,0,0,0,0,0,3@#@out:3@#@println():3@#@_@printStatus@_:1@#@5
+a,ZjiHWBeSJaY57W8OtdJVl0r6N.java,11,17,ZjiHWBeSJaY57W8OtdJVl0r6N,27,13,ad92f93fcc697cdf44f151a15e03cd57,137,13700197@#@1,4,15,546.9646833851926,3,3,0,3,4,0,0,0,0,22,7,13,1,29,0,0,0,6,0,0@#@round():3@#@@#@_@ZjiHWBeSJaY57W8OtdJVl0r6N@_:1@#@5
+a,ZjiHWBeSJaY57W8OtdJVl0r6N.java,19,30,drive,33,18,c327a8aeb6699506a720954ae5f22350,137,13700198@#@2,7,21,1510.9571934358937,3,3,0,1,8,0,0,0,0,26,11,17,2,39,0,0,0,6,0,1@#@round():2,out:1@#@println():1@#@_@drive@_:1@#@9
+a,ZjiHWBeSJaY57W8OtdJVl0r6N.java,32,56,pay,59,25,60b5c754a5d88325a547565818e04e9d,137,13700199@#@3,14,31,3864.273122101763,6,6,0,1,10,0,0,0,0,48,18,30,2,72,0,3,0,7,0,6@#@round():3,out:3@#@println():3@#@_@pay@_:1@#@17
+a,ZjiHWBeSJaY57W8OtdJVl0r6N.java,58,84,refill,76,26,8577748992a883e5ec01583e4f83fe25,137,13700200@#@3,14,32,7950.0,9,9,0,1,15,2,0,0,0,64,23,42,2,99,0,0,0,11,0,8@#@round():5,out:4@#@println():4@#@_@refill@_:1@#@18
+a,ZjiHWBeSJaY57W8OtdJVl0r6N.java,85,99,main,41,25,f553503743583177a8b672907200b64f,137,13700201@#@1,10,23,529.2567488586706,5,8,0,1,3,1,0,0,0,29,8,10,1,33,0,0,0,9,0,0@#@pay():1,refill():2,drive():3,Preis:1,Einnahmen:1,out:2@#@println():2@#@_@main@_:1@#@11
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,15,18,RfEdRPSHraxPMDLm5sbIcTlok,12,6,f858eb8daab5638f1b43bb2d04904d25,138,13800202@#@1,3,5,0.0,0,0,0,2,0,0,0,0,0,10,2,2,1,8,0,0,0,0,0,0@#@gesamteinnahme:1,tankinhalt:1@#@@#@_@RfEdRPSHraxPMDLm5sbIcTlok@_:1@#@4
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,20,26,status,34,17,4e30cc6fcc4b35b7afffc6c242d9ba50,138,13800203@#@1,6,18,325.2541501125003,7,7,0,0,2,0,0,0,0,25,3,14,1,38,0,0,0,4,0,5@#@round():2,out:5@#@println():5@#@_@status@_:1@#@7
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,28,39,drive,40,22,d51415093ff285de67b613710d33631b,138,13800204@#@2,9,27,1283.8196255841367,3,3,0,1,5,0,0,0,0,33,15,21,2,50,0,0,0,5,0,4@#@round():1,out:2@#@println():2@#@_@drive@_:1@#@11
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,41,51,pay,23,16,d9dae93aa17bfa2c92f1a0696d5ef891,138,13800205@#@3,8,18,312.7443751081734,1,1,0,1,3,0,0,0,0,18,8,7,2,18,0,2,0,0,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@11
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,53,64,refill,35,18,d69d2ea7c836851350e5cf485381b2c6,138,13800206@#@2,9,24,1723.945900271155,2,2,0,1,8,1,0,0,0,31,16,16,2,42,0,0,0,1,0,4@#@out:2@#@println():2@#@_@refill@_:1@#@12
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,66,85,main,49,31,5b93557f3bc89589fb55179745cb6b80,138,13800207@#@3,12,31,1089.9231882851127,5,7,0,1,4,4,0,0,0,38,10,17,2,41,0,0,0,6,0,4@#@pay():1,refill():1,status():2,drive():1,out:2@#@println():2@#@_@main@_:1@#@15
+a,HgFHNYF701UjmVfji9nbpuMbs.java,11,21,HgFHNYF701UjmVfji9nbpuMbs,25,15,50ae7945ddca5e6feff756aaaafea069,139,13900208@#@1,8,14,0.0,0,0,0,0,0,0,0,0,0,23,0,7,1,30,0,0,0,5,0,0@#@kilometerPrice:1,tankVolume:2,tankFullness:1,totalRevenue:1,taxometer:1,gasUsage:1,basePrice:2@#@@#@_@HgFHNYF701UjmVfji9nbpuMbs@_:1@#@9
+a,HgFHNYF701UjmVfji9nbpuMbs.java,23,25,hasEnoughFuel,12,10,2c478ab1d8708ea7e76c398bc0eabd24,139,13900209@#@1,2,10,43.18506523353572,0,0,0,1,1,0,0,0,0,9,1,4,1,9,0,0,0,1,0,0@#@tankFullness:1,gasUsage:1@#@@#@_@hasEnoughFuel@_:1@#@3
+a,HgFHNYF701UjmVfji9nbpuMbs.java,28,37,drive,26,15,d30603cdcbcdc6e8bcc78a4f48c77234,139,13900210@#@2,6,17,367.8716557125306,0,0,1,1,3,0,0,0,0,21,3,9,2,24,0,0,0,2,0,0@#@hasEnoughFuel():1,kilometerPrice:1,tankFullness:1,taxometer:2,gasUsage:1,basePrice:1@#@@#@_@drive@_:1@#@9
+a,HgFHNYF701UjmVfji9nbpuMbs.java,40,51,pay,33,19,f7ad19736919ee62e4afddfef06f8ecf,139,13900211@#@3,9,23,687.581417320666,1,1,0,1,4,1,0,0,0,28,5,10,2,30,0,2,0,3,0,1@#@printf():1,totalRevenue:1,taxometer:2,basePrice:1,out:1@#@@#@_@pay@_:1@#@12
+a,HgFHNYF701UjmVfji9nbpuMbs.java,54,63,refill,31,12,a3d13e6b44dd92a0fe8d1fa40118b613,139,13900212@#@2,7,17,931.9415278050774,0,0,0,1,6,1,0,0,0,29,4,9,2,33,0,0,0,1,0,0@#@tankVolume:2,tankFullness:3,totalRevenue:4@#@@#@_@refill@_:1@#@10
+a,EUgx06Dz7it6F409dFTDp5Rir.java,15,24,EUgx06Dz7it6F409dFTDp5Rir,23,15,6c2c7e6158853279822a3257cb5101d5,140,14000213@#@1,8,14,0.0,0,0,0,0,0,0,0,0,0,21,0,7,1,28,0,0,0,7,0,0@#@kilometerPreis:1,grundPreis:1,currentTankInhalt:1,gesamtEinnahmen:1,taxometer:1,kraftstoffVerbrauch:1,tankVolumen:1@#@@#@_@EUgx06Dz7it6F409dFTDp5Rir@_:1@#@9
+a,EUgx06Dz7it6F409dFTDp5Rir.java,26,34,drive,24,13,6e6ffd6caa15bd138c97ecf76e347d19,140,14000214@#@2,6,14,571.1032383086406,0,0,3,1,6,0,0,0,0,17,3,8,2,19,0,0,0,1,0,0@#@reichweiteAusreichend():1,verbrauchterKraftstoff():1,calculateFahrpreis():1,currentTankInhalt:1,taxometer:2@#@@#@_@drive@_:1@#@9
+a,EUgx06Dz7it6F409dFTDp5Rir.java,36,38,verbrauchterKraftstoff,10,8,a91f35f75c9fdeccb67c8713943827a8,140,14000215@#@1,2,8,30.0,0,0,0,1,1,0,0,0,0,7,1,3,1,6,0,0,0,1,0,0@#@kraftstoffVerbrauch:1@#@@#@_@verbrauchterKraftstoff@_:1@#@3
+a,EUgx06Dz7it6F409dFTDp5Rir.java,40,42,reichweiteAusreichend,14,12,e6eb7aeba440f6c99c80feaa20245c60,140,14000216@#@1,2,13,111.01319154423277,0,0,1,1,2,0,0,0,0,10,1,5,1,11,0,2,0,1,0,0@#@verbrauchterKraftstoff():1,currentTankInhalt:1@#@@#@_@reichweiteAusreichend@_:1@#@3
+a,EUgx06Dz7it6F409dFTDp5Rir.java,44,50,calculateFahrpreis,21,16,bfa5ae7dab4472ec4c836119fde71381,140,14000217@#@1,3,17,269.7725475225225,3,2,0,1,3,1,0,0,0,15,2,7,1,17,0,0,0,1,0,0@#@doubleValue():1,setScale():1,kilometerPreis:1,grundPreis:1,CEILING:1@#@@#@_@calculateFahrpreis@_:1@#@4
+a,EUgx06Dz7it6F409dFTDp5Rir.java,52,63,pay,26,17,355bcbc06a4da96c9daf9df807323ca6,140,14000218@#@3,8,17,318.8221016175265,1,1,2,1,3,0,0,0,0,19,3,7,2,19,0,2,0,0,0,1@#@updateGesamtEinnahme():1,resetTaxiometer():1,taxometer:2,out:1@#@println():1@#@_@pay@_:1@#@11
+a,EUgx06Dz7it6F409dFTDp5Rir.java,65,67,updateGesamtEinnahme,8,7,8410f92531d7e924d6c9d08bc6ffcb29,140,14000219@#@1,2,6,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@gesamtEinnahmen:1@#@@#@_@updateGesamtEinnahme@_:1@#@3
+a,EUgx06Dz7it6F409dFTDp5Rir.java,69,71,resetTaxiometer,6,6,351cc2115a06eb93ea3bdfc0f04b3b74,140,14000220@#@1,2,5,0.0,0,0,0,0,0,0,0,0,0,4,0,1,1,4,0,0,0,1,0,0@#@taxometer:1@#@@#@_@resetTaxiometer@_:1@#@3
+a,EUgx06Dz7it6F409dFTDp5Rir.java,73,79,refill,17,11,b5dfdcc36ee1bdc6e406c3766665ec89,140,14000221@#@2,4,10,212.6033980727912,0,0,3,1,4,0,0,0,0,12,3,4,2,12,0,0,0,0,0,0@#@fullRefillPrice():1,refillWithMaxGesamtEinnahme():1,refillFull():1,gesamtEinnahmen:1@#@@#@_@refill@_:1@#@7
+a,EUgx06Dz7it6F409dFTDp5Rir.java,81,83,literTilFull,8,7,44c1005d8c5ee85a00d702c51ceaaac8,140,14000222@#@1,2,6,18.094737505048094,0,0,0,0,1,0,0,0,0,5,0,2,1,5,0,0,0,0,0,0@#@currentTankInhalt:1,tankVolumen:1@#@@#@_@literTilFull@_:1@#@3
+a,EUgx06Dz7it6F409dFTDp5Rir.java,85,90,fullRefillPrice,19,15,f6e27c09051908d37cc3fef95651b20e,140,14000223@#@1,3,15,222.69276394968557,3,2,1,1,3,1,0,0,0,12,2,7,1,12,0,0,0,1,0,0@#@doubleValue():1,literTilFull():1,setScale():1,CEILING:1@#@@#@_@fullRefillPrice@_:1@#@4
+a,EUgx06Dz7it6F409dFTDp5Rir.java,92,96,refillWithMaxGesamtEinnahme,16,10,d33e36f8efdcaa87188aeb07a5669a83,140,14000224@#@1,4,11,62.26976913547136,0,0,0,1,1,1,0,0,0,14,2,4,1,13,0,0,0,1,0,0@#@currentTankInhalt:1,gesamtEinnahmen:2@#@@#@_@refillWithMaxGesamtEinnahme@_:1@#@5
+a,EUgx06Dz7it6F409dFTDp5Rir.java,98,101,refillFull,14,10,6d8261a3a490a8e04898e07b5f31cc4c,140,14000225@#@1,3,10,46.50699332842308,0,0,1,1,1,0,0,0,0,11,1,3,1,11,0,0,0,0,0,0@#@fullRefillPrice():1,currentTankInhalt:1,gesamtEinnahmen:1,tankVolumen:1@#@@#@_@refillFull@_:1@#@4
+a,EUgx06Dz7it6F409dFTDp5Rir.java,103,105,getCurrentTankInhalt,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,140,14000226@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getCurrentTankInhalt@_:1@#@3
+a,EUgx06Dz7it6F409dFTDp5Rir.java,107,109,getGesamtEinnahmen,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,140,14000227@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getGesamtEinnahmen@_:1@#@3
+a,EUgx06Dz7it6F409dFTDp5Rir.java,111,113,getTaxometer,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,140,14000228@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTaxometer@_:1@#@3
+a,EUgx06Dz7it6F409dFTDp5Rir.java,115,161,main,145,53,dccb1b65cfe5ad837dcc5df8f6b6c64b,140,14000229@#@6,37,55,14707.779111206735,25,29,0,1,16,8,0,0,0,111,19,48,5,131,2,2,0,1,0,22@#@pay():1,print():4,refill():1,nextDouble():3,equals():2,next():1,drive():1,getGesamtEinnahmen():1,close():1,in:1,out:18@#@println():14@#@_@main@_:1@#@45
+a,XnNdE6JJPrvKHbpJWwvViC0wh.java,17,26,XnNdE6JJPrvKHbpJWwvViC0wh,38,13,87f588a54b40cb0214976a0c1faac8c1,141,14100230@#@1,8,13,488.45804279462413,0,0,0,7,3,0,0,0,0,36,7,8,1,30,0,0,0,1,0,0@#@kilometerPreis:1,tankvolumen:1,gesamtEinnahmen:1,grundpreis:1,taxometer:1,tankinhalt:1,kraftstoffVerbrauch:1@#@@#@_@XnNdE6JJPrvKHbpJWwvViC0wh@_:1@#@9
+a,XnNdE6JJPrvKHbpJWwvViC0wh.java,30,32,getGesamtEinnahmen,6,6,58036d83f30295ae7752c663c8f44191,141,14100231@#@1,2,4,0.0,0,0,0,0,0,0,0,0,0,3,0,1,1,2,0,0,0,0,0,0@#@gesamtEinnahmen:1@#@@#@_@getGesamtEinnahmen@_:1@#@3
+a,XnNdE6JJPrvKHbpJWwvViC0wh.java,34,36,getTaxoMeter,6,6,58036d83f30295ae7752c663c8f44191,141,14100232@#@1,2,4,0.0,0,0,0,0,0,0,0,0,0,3,0,1,1,2,0,0,0,0,0,0@#@taxometer:1@#@@#@_@getTaxoMeter@_:1@#@3
+a,XnNdE6JJPrvKHbpJWwvViC0wh.java,38,40,getTankinhalt,6,6,58036d83f30295ae7752c663c8f44191,141,14100233@#@1,2,4,0.0,0,0,0,0,0,0,0,0,0,3,0,1,1,2,0,0,0,0,0,0@#@tankinhalt:1@#@@#@_@getTankinhalt@_:1@#@3
+a,XnNdE6JJPrvKHbpJWwvViC0wh.java,42,44,getTankvolumen,6,6,58036d83f30295ae7752c663c8f44191,141,14100234@#@1,2,4,0.0,0,0,0,0,0,0,0,0,0,3,0,1,1,2,0,0,0,0,0,0@#@tankvolumen:1@#@@#@_@getTankvolumen@_:1@#@3
+a,XnNdE6JJPrvKHbpJWwvViC0wh.java,46,48,getKraftstoffVerbrauch,6,6,58036d83f30295ae7752c663c8f44191,141,14100235@#@1,2,4,0.0,0,0,0,0,0,0,0,0,0,3,0,1,1,2,0,0,0,0,0,0@#@kraftstoffVerbrauch:1@#@@#@_@getKraftstoffVerbrauch@_:1@#@3
+a,XnNdE6JJPrvKHbpJWwvViC0wh.java,50,52,getKilometerPreis,6,6,58036d83f30295ae7752c663c8f44191,141,14100236@#@1,2,4,0.0,0,0,0,0,0,0,0,0,0,3,0,1,1,2,0,0,0,0,0,0@#@kilometerPreis:1@#@@#@_@getKilometerPreis@_:1@#@3
+a,XnNdE6JJPrvKHbpJWwvViC0wh.java,54,56,getGrundpreis,6,6,58036d83f30295ae7752c663c8f44191,141,14100237@#@1,2,4,0.0,0,0,0,0,0,0,0,0,0,3,0,1,1,2,0,0,0,0,0,0@#@grundpreis:1@#@@#@_@getGrundpreis@_:1@#@3
+a,XnNdE6JJPrvKHbpJWwvViC0wh.java,58,70,drive,31,18,7ee1b1596607b61a8e7c81219c3411d9,141,14100238@#@3,8,22,2087.013997522255,2,2,8,1,12,0,0,0,0,18,7,21,2,37,0,0,0,0,0,2@#@getGrundpreis():1,getKraftstoffVerbrauch():3,getKilometerPreis():1,getTankinhalt():2,getTaxoMeter():1,out:2@#@println():2@#@_@drive@_:1@#@10
+a,XnNdE6JJPrvKHbpJWwvViC0wh.java,72,83,pay,23,15,1fbde2448acbe4057d8fcf9e661d70f7,141,14100239@#@3,7,16,288.0,2,2,2,1,3,0,0,0,0,16,4,8,3,18,0,1,0,0,0,2@#@print():2,getTaxoMeter():2,out:2@#@@#@_@pay@_:1@#@10
+a,XnNdE6JJPrvKHbpJWwvViC0wh.java,85,94,refill,28,11,1786714de61349478c67c9fa8194c347,141,14100240@#@3,7,17,1675.8597649126395,0,0,11,1,10,0,0,0,0,15,10,26,2,41,0,0,0,0,0,0@#@getTankinhalt():3,getTankvolumen():4,getGesamtEinnahmen():4@#@@#@_@refill@_:1@#@9
+a,XnNdE6JJPrvKHbpJWwvViC0wh.java,96,99,getInput,10,8,ab35be0c0ce1f937ef5b1c6d70790adb,141,14100241@#@1,3,6,20.67970000576925,2,1,0,0,1,1,0,0,0,5,2,3,1,4,0,0,0,0,0,0@#@nextLine():1@#@@#@_@getInput@_:1@#@4
+a,XnNdE6JJPrvKHbpJWwvViC0wh.java,102,129,main,91,44,fab33377fcdb89aa3e953279899fad8c,141,14100242@#@4,20,44,6420.291583517461,17,19,4,1,12,2,0,0,0,63,10,35,3,86,1,2,0,10,0,7@#@pay():1,refill():1,getInput():4,parseInt():2,getTankinhalt():2,parseDouble():2,drive():1,getGesamtEinnahmen():2,in:1,out:8@#@println():8@#@_@main@_:1@#@24
+a,OF1DO93HThbXM779gK7EAfnII.java,11,20,OF1DO93HThbXM779gK7EAfnII,28,11,a0eb6392f6bf1cd2bc9f8b4b91b9180a,142,14200243@#@1,8,10,0.0,0,0,0,4,0,0,0,0,0,26,10,7,1,25,0,0,0,0,0,0@#@kraftstoffverbrauch:1,kilometerpreis:1,tankvolumen:1,grundpreis:1@#@@#@_@OF1DO93HThbXM779gK7EAfnII@_:1@#@9
+a,OF1DO93HThbXM779gK7EAfnII.java,22,29,drive,20,12,665a313a116b2f8608c0e946f300aedc,142,14200244@#@2,6,15,293.0167946706389,0,0,0,1,3,1,0,0,0,17,10,8,2,19,0,0,0,1,0,0@#@@#@@#@_@drive@_:1@#@8
+a,OF1DO93HThbXM779gK7EAfnII.java,31,43,pay,23,16,ee453a2d9066ec1c6d46ed7244460acd,142,14200245@#@3,8,18,312.7443751081734,1,1,0,1,3,0,0,0,0,18,8,7,3,18,0,2,0,0,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@12
+a,OF1DO93HThbXM779gK7EAfnII.java,44,55,refill,28,13,d421207eeca310667791243079dc36dc,142,14200246@#@2,9,18,925.7233503201933,0,0,0,1,6,3,0,0,0,26,15,11,2,27,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@12
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,3,11,main,41,23,f0e8cd18c0a86d3f937eda1ab50611c2,143,14300247@#@1,7,21,513.9011384651151,7,9,0,1,3,1,0,0,0,28,5,11,1,33,0,0,0,9,0,0@#@pay():2,refill():1,drive():2,out:4@#@println():4@#@_@main@_:1@#@8
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,18,27,Ojq0tK9rUXUKcYmM6llCDBToA,31,16,0155fddb862b59e5cc0fa8efecc5f241,143,14300248@#@1,8,15,0.0,0,0,0,4,0,0,0,0,0,29,5,7,1,28,0,0,0,2,0,0@#@GAS_CONSUMPTION:1,BASE_PRICE:1,currentTank:1,PRICE_PER_KILOMETER:1,totalRevenue:1,taxometer:1,TANK_VOLUME:1@#@@#@_@Ojq0tK9rUXUKcYmM6llCDBToA@_:1@#@9
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,29,39,drive,25,14,afbb6285b05c1df1ff513ce2aa77787e,143,14300249@#@2,8,18,387.803025134135,0,0,0,1,3,2,0,0,0,21,11,10,1,21,0,0,0,2,0,0@#@@#@@#@_@drive@_:1@#@9
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,41,53,pay,27,18,8f3f158192ea361549c014b110ff1601,143,14300250@#@3,9,21,408.48552031842473,1,1,0,1,3,1,0,0,0,22,9,9,2,22,0,2,0,1,0,1@#@out:1@#@println():1@#@_@pay@_:1@#@11
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,55,60,refill,21,12,8d9b6de20f775b0c3b87ab528a7e7315,143,14300251@#@1,5,16,624.0,1,1,0,1,6,2,0,0,0,18,10,8,1,19,0,0,0,0,0,0@#@min():1@#@@#@_@refill@_:1@#@6
+a,DeiG0PYckvUo6zECg9qhtOj2W.java,13,21,DeiG0PYckvUo6zECg9qhtOj2W,22,13,91400e5e5f0672c09893af63962434f4,144,14400252@#@1,7,12,0.0,0,0,0,4,0,0,0,0,0,20,12,6,1,18,0,0,0,0,0,0@#@@#@@#@_@DeiG0PYckvUo6zECg9qhtOj2W@_:1@#@8
+a,DeiG0PYckvUo6zECg9qhtOj2W.java,24,34,drive,24,13,8ebc0184def1a8bbada9b950dcae8c1f,144,14400253@#@2,7,17,784.7928655200653,0,0,0,1,6,1,0,0,0,21,12,11,2,28,0,0,0,3,0,0@#@@#@@#@_@drive@_:1@#@9
+a,DeiG0PYckvUo6zECg9qhtOj2W.java,36,48,pay,26,17,4f6770ee4c38cfddac85e4e2217b84da,144,14400254@#@3,8,21,544.6473604245663,1,1,0,1,4,0,0,0,0,21,10,10,3,25,0,2,0,0,0,2@#@out:1@#@println():1@#@_@pay@_:1@#@11
+a,DeiG0PYckvUo6zECg9qhtOj2W.java,50,62,refill,23,11,2ab70700c91f0a307a9290b25afbfa9a,144,14400255@#@2,7,16,744.0,0,0,0,1,6,1,0,0,0,21,14,10,2,25,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@10
+a,DeiG0PYckvUo6zECg9qhtOj2W.java,64,66,getTankLevel,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,144,14400256@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTankLevel@_:1@#@3
+a,DeiG0PYckvUo6zECg9qhtOj2W.java,67,69,getRevenue,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,144,14400257@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getRevenue@_:1@#@3
+a,KAm50pBuMLGt50EmuWIMfsmII.java,13,15,getPrice,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,145,14500258@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getPrice@_:1@#@3
+a,KAm50pBuMLGt50EmuWIMfsmII.java,16,18,getKilometerPrice,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,145,14500259@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getKilometerPrice@_:1@#@3
+a,KAm50pBuMLGt50EmuWIMfsmII.java,19,21,getConsumption,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,145,14500260@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getConsumption@_:1@#@3
+a,KAm50pBuMLGt50EmuWIMfsmII.java,22,24,getVolume,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,145,14500261@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getVolume@_:1@#@3
+a,KAm50pBuMLGt50EmuWIMfsmII.java,26,28,getContent,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,145,14500262@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getContent@_:1@#@3
+a,KAm50pBuMLGt50EmuWIMfsmII.java,29,31,getTaxometer,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,145,14500263@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getTaxometer@_:1@#@3
+a,KAm50pBuMLGt50EmuWIMfsmII.java,32,34,getIncome,5,5,7526d8c0f56f33ebd6b67c0a9d1faf60,145,14500264@#@1,2,3,0.0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,0,0,0,0,0,0@#@@#@@#@_@getIncome@_:1@#@3
+a,KAm50pBuMLGt50EmuWIMfsmII.java,37,39,setContent,7,6,47bd449bb2546ec651f536f76a77cfab,145,14500265@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,5,2,1,1,3,0,0,0,0,0,0@#@@#@@#@_@setContent@_:1@#@3
+a,KAm50pBuMLGt50EmuWIMfsmII.java,40,42,setTaxometer,7,6,47bd449bb2546ec651f536f76a77cfab,145,14500266@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,5,2,1,1,3,0,0,0,0,0,0@#@@#@@#@_@setTaxometer@_:1@#@3
+a,KAm50pBuMLGt50EmuWIMfsmII.java,43,45,setIncome,7,6,47bd449bb2546ec651f536f76a77cfab,145,14500267@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,5,2,1,1,3,0,0,0,0,0,0@#@@#@@#@_@setIncome@_:1@#@3
+a,KAm50pBuMLGt50EmuWIMfsmII.java,48,56,KAm50pBuMLGt50EmuWIMfsmII,30,17,8d8667b69252f8bfa5396c01b3f7cd52,145,14500268@#@1,8,16,0.0,0,0,0,7,0,0,0,0,0,28,14,7,1,21,0,0,0,0,0,0@#@@#@@#@_@KAm50pBuMLGt50EmuWIMfsmII@_:1@#@9
+a,KAm50pBuMLGt50EmuWIMfsmII.java,59,73,drive,27,17,a26b4481eab8d5c87df333f4f40bfb93,145,14500269@#@2,7,21,632.4937088801415,1,1,0,1,4,0,0,0,0,23,13,13,2,33,0,0,0,3,0,1@#@out:1@#@println():1@#@_@drive@_:1@#@10
+a,KAm50pBuMLGt50EmuWIMfsmII.java,75,84,pay,27,17,0723be1acb93c88056dd9c1829381086,145,14500270@#@3,8,20,427.8708813938489,1,1,0,1,3,0,0,0,0,22,10,11,1,27,0,2,0,1,0,2@#@out:1@#@println():1@#@_@pay@_:1@#@9
+a,KAm50pBuMLGt50EmuWIMfsmII.java,86,100,refill,41,17,9e1ab8352c0b61eac902841cf1fa0008,145,14500271@#@2,10,21,1528.5264631270088,2,2,0,1,6,1,0,0,0,37,22,21,2,56,0,0,0,1,0,4@#@out:2@#@println():2@#@_@refill@_:1@#@13
+a,KAm50pBuMLGt50EmuWIMfsmII.java,102,120,main,53,35,2fba713a839bf8e1d62313ed4e80e18a,145,14500272@#@2,10,35,1169.4765278634522,11,8,0,1,4,3,0,0,0,41,2,16,1,46,0,1,0,10,0,5@#@pay():1,refill():1,drive():1,getContent():1,out:4@#@println():4@#@_@main@_:1@#@12
+a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,13,17,RdW3cjQxvKlk0JGvJO6uvjnoi,16,6,610cbdc041e7a23e7754df45b354d544,146,14600273@#@1,4,6,0.0,0,0,0,3,0,0,0,0,0,15,3,3,1,12,0,0,0,0,0,0@#@gesamteinnahmen:1,taxometer:1,tankinhalt:1@#@@#@_@RdW3cjQxvKlk0JGvJO6uvjnoi@_:1@#@5
+a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,22,24,setTankinhalt,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,146,14600274@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@tankinhalt:1@#@@#@_@setTankinhalt@_:1@#@3
+a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,26,28,setTaxometer,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,146,14600275@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@taxometer:1@#@@#@_@setTaxometer@_:1@#@3
+a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,30,32,setGesamteinnahmen,8,6,60dcbe255448e4cd3c0b0c54cd85be8b,146,14600276@#@1,2,5,0.0,0,0,0,1,0,0,0,0,0,6,1,1,1,4,0,0,0,0,0,0@#@gesamteinnahmen:1@#@@#@_@setGesamteinnahmen@_:1@#@3
+a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,35,44,drive,27,17,ee66f9d531980bc85b0edc61c514c5c0,146,14600277@#@2,7,21,614.9244391890265,1,1,0,1,4,0,0,0,0,22,12,13,2,31,0,0,0,3,0,1@#@out:1@#@println():1@#@_@drive@_:1@#@9
+a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,47,60,pay,28,17,480e35281289de2cc920363310762a51,146,14600278@#@3,9,19,395.0572587502534,2,2,0,1,3,0,0,0,0,22,8,9,2,24,0,2,0,1,0,2@#@out:2@#@println():2@#@_@pay@_:1@#@12
+a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,63,71,refill,23,10,1c0e82f8980f750a09c47d392d4c365d,146,14600279@#@2,6,14,753.8562745674055,0,0,0,1,6,0,0,0,0,21,16,12,2,31,0,0,0,1,0,0@#@@#@@#@_@refill@_:1@#@9
+a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,73,146,main,154,40,1ef1783d5df76c7706cb24d68d25f1fc,146,14600280@#@9,49,40,19158.941141594507,7,27,0,1,20,5,0,0,0,123,67,57,2,162,0,0,0,22,0,4@#@pay():8,refill():4,setTankinhalt():2,drive():8,setGesamteinnahmen():1,out:4@#@println():4@#@_@main@_:1@#@58
+Step 4: Running Oreo
+search will be carried out with 1 nodes
+loading previous run state
+/home/oreo-user/oreo/clone-detector/scriptinator_metadata.scc doesn't exist, creating one with state EXECUTE_1
+previous run state 0
+running new command /home/oreo-user/oreo/clone-detector/execute.sh 1
+current state:  1
+flushing current state 1
+running new command /home/oreo-user/oreo/clone-detector/backup-gtpm.sh
+running new command /home/oreo-user/oreo/clone-detector/runnodes.sh init 1
+current state:  2
+flushing current state 2
+running new command /home/oreo-user/oreo/clone-detector/runnodes.sh cshard 1
+current state:  3
+flushing current state 3
+running new command /home/oreo-user/oreo/clone-detector/move-index.sh
+current state:  4
+flushing current state 4
+running new command /home/oreo-user/oreo/clone-detector/execute.sh 1
+current state:  5
+flushing current state 5
+nodes are : 1. total shards: 6
+1:1,2,3,4,5,6
+running new command /home/oreo-user/oreo/clone-detector/runnodes.sh search 1
+current state:  0
+flushing current state 0
+SUCCESS: Search Completed on all nodes
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [0/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [1/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [2/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [3/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [4/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [5/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [6/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [7/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [8/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/candidates' [9/10]
+*****************************************************
+running for ports ranging from 9900 to 9903
+*****************************************************
+[Waiting] Waiting for '/home/oreo-user/oreo/results/predictions' [0/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/predictions' [1/10]
+[Waiting] Waiting for '/home/oreo-user/oreo/results/predictions' [2/10]
+Candidates Dir:
+9900
+9901
+9902
+9903
+Output Dir:
+clonepairs_1_type_31_9900.txt ======================
+a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38,a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,35,50
+a,NCdeERn0tNiGOzng398GOAKfm.java,47,57,a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38
+a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,39,48,a,CHoSgQHrZtdObJCIILCg9NCNo.java,12,20
+a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,29,39,a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38
+a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,21,31,a,UDNGhLn09kT7QYKQrhIo2bi9G.java,27,37
+a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,33,44,a,NCdeERn0tNiGOzng398GOAKfm.java,47,57
+a,VUTi3tcXbl4dR0FmsuzUErX0E.java,45,59,a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,14,23,a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,39,48
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,46,56,a,KpDaNc2yULGxB1v5wlL6E3OD6.java,47,58
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,46,56,a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,35,50
+a,Uu1D7w3RecnGQxb3TIRXGYISR.java,22,34,a,KpDaNc2yULGxB1v5wlL6E3OD6.java,35,45
+a,Uu1D7w3RecnGQxb3TIRXGYISR.java,36,47,a,CHoSgQHrZtdObJCIILCg9NCNo.java,39,57
+a,HgFHNYF701UjmVfji9nbpuMbs.java,11,21,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,13,21
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,41,51,a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38
+a,OF1DO93HThbXM779gK7EAfnII.java,31,43,a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,90,106
+a,OF1DO93HThbXM779gK7EAfnII.java,31,43,a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38
+a,OF1DO93HThbXM779gK7EAfnII.java,31,43,a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,33,44
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,41,53,a,VUTi3tcXbl4dR0FmsuzUErX0E.java,45,59
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,41,53,a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,90,106
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,41,53,a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,41,53,a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,33,44
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,41,53,a,OF1DO93HThbXM779gK7EAfnII.java,31,43
+a,OF1DO93HThbXM779gK7EAfnII.java,31,43,a,RfEdRPSHraxPMDLm5sbIcTlok.java,41,51
+a,OF1DO93HThbXM779gK7EAfnII.java,31,43,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,39,51
+a,DeiG0PYckvUo6zECg9qhtOj2W.java,36,48,a,VUTi3tcXbl4dR0FmsuzUErX0E.java,45,59
+a,OF1DO93HThbXM779gK7EAfnII.java,31,43,a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,46,56
+a,KAm50pBuMLGt50EmuWIMfsmII.java,75,84,a,Ojq0tK9rUXUKcYmM6llCDBToA.java,41,53
+a,DeiG0PYckvUo6zECg9qhtOj2W.java,36,48,a,OF1DO93HThbXM779gK7EAfnII.java,31,43
+a,KAm50pBuMLGt50EmuWIMfsmII.java,59,73,a,Uu1D7w3RecnGQxb3TIRXGYISR.java,22,34
+a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,47,60,a,CHoSgQHrZtdObJCIILCg9NCNo.java,39,57
+a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,35,44,a,CHoSgQHrZtdObJCIILCg9NCNo.java,23,37
+a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,35,44,a,KAm50pBuMLGt50EmuWIMfsmII.java,59,73
+a,KAm50pBuMLGt50EmuWIMfsmII.java,75,84,a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,28,44
+a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,46,58,a,IaljG2SZMe6I8nZCWp6ofFVOS.java,88,112
+a,SnOt9Q25W4q3dK0QOEtnmN5BU.java,38,51,a,CHy9tzZMsUit409DPRN5zId8A.java,42,60
+a,ZmB1ce4Z4bRirnJRrzLxHP71W.java,20,31,a,ZmB1ce4Z4bRirnJRrzLxHP71W.java,10,18
+a,NYs33OaJgnHVlC5gxbP4TA6U8.java,71,91,a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,46,58
+a,ZmB1ce4Z4bRirnJRrzLxHP71W.java,61,69,a,UDNGhLn09kT7QYKQrhIo2bi9G.java,47,55
+a,VHoij57foVaRucJAXnKwrz7wN.java,68,78,a,CHy9tzZMsUit409DPRN5zId8A.java,62,89
+a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,28,44,a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,46,56
+a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,48,66,a,NYs33OaJgnHVlC5gxbP4TA6U8.java,27,52
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,3,11,a,Uu1D7w3RecnGQxb3TIRXGYISR.java,71,80
+a,KAm50pBuMLGt50EmuWIMfsmII.java,86,100,a,RfEdRPSHraxPMDLm5sbIcTlok.java,53,64
+a,KAm50pBuMLGt50EmuWIMfsmII.java,86,100,a,CHoSgQHrZtdObJCIILCg9NCNo.java,61,76
+clonepairs_1_type_31_9901.txt ======================
+a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,35,50,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,39,51
+a,NCdeERn0tNiGOzng398GOAKfm.java,47,57,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,39,51
+a,NCdeERn0tNiGOzng398GOAKfm.java,59,70,a,CHoSgQHrZtdObJCIILCg9NCNo.java,23,37
+a,NpqsFLFY0Tf85TgQ5c8URolNr.java,39,50,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,39,51
+a,NpqsFLFY0Tf85TgQ5c8URolNr.java,39,50,a,NCdeERn0tNiGOzng398GOAKfm.java,47,57
+a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,65,77,a,NpqsFLFY0Tf85TgQ5c8URolNr.java,39,50
+a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,29,39,a,NCdeERn0tNiGOzng398GOAKfm.java,47,57
+a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,33,44,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,39,51
+a,VUTi3tcXbl4dR0FmsuzUErX0E.java,45,59,a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,29,39
+a,VUTi3tcXbl4dR0FmsuzUErX0E.java,45,59,a,NCdeERn0tNiGOzng398GOAKfm.java,47,57
+a,KpDaNc2yULGxB1v5wlL6E3OD6.java,47,58,a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,29,39
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,14,23,a,CHoSgQHrZtdObJCIILCg9NCNo.java,12,20
+a,VHoij57foVaRucJAXnKwrz7wN.java,21,29,a,CHoSgQHrZtdObJCIILCg9NCNo.java,12,20
+a,KpDaNc2yULGxB1v5wlL6E3OD6.java,47,58,a,NpqsFLFY0Tf85TgQ5c8URolNr.java,39,50
+a,KpDaNc2yULGxB1v5wlL6E3OD6.java,47,58,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,39,51
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,46,56,a,NpqsFLFY0Tf85TgQ5c8URolNr.java,39,50
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,41,51,a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,35,50
+a,HgFHNYF701UjmVfji9nbpuMbs.java,11,21,a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,26,34
+a,HgFHNYF701UjmVfji9nbpuMbs.java,28,37,a,HgFHNYF701UjmVfji9nbpuMbs.java,11,21
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,41,51,a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,90,106
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,41,51,a,NpqsFLFY0Tf85TgQ5c8URolNr.java,39,50
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,41,51,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,39,51
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,41,51,a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,46,56
+a,OF1DO93HThbXM779gK7EAfnII.java,11,20,a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,10,18
+a,OF1DO93HThbXM779gK7EAfnII.java,31,43,a,KpDaNc2yULGxB1v5wlL6E3OD6.java,47,58
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,41,53,a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,29,39
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,41,53,a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,46,56
+a,DeiG0PYckvUo6zECg9qhtOj2W.java,36,48,a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,65,77
+a,DeiG0PYckvUo6zECg9qhtOj2W.java,36,48,a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,29,39
+a,DeiG0PYckvUo6zECg9qhtOj2W.java,36,48,a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38
+a,DeiG0PYckvUo6zECg9qhtOj2W.java,36,48,a,RfEdRPSHraxPMDLm5sbIcTlok.java,41,51
+a,KAm50pBuMLGt50EmuWIMfsmII.java,75,84,a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,65,77
+a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,47,60,a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,32,46
+a,KAm50pBuMLGt50EmuWIMfsmII.java,75,84,a,VUTi3tcXbl4dR0FmsuzUErX0E.java,45,59
+a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,47,60,a,Uu1D7w3RecnGQxb3TIRXGYISR.java,36,47
+a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,35,44,a,Uu1D7w3RecnGQxb3TIRXGYISR.java,22,34
+a,KAm50pBuMLGt50EmuWIMfsmII.java,75,84,a,NCdeERn0tNiGOzng398GOAKfm.java,47,57
+a,KAm50pBuMLGt50EmuWIMfsmII.java,75,84,a,NpqsFLFY0Tf85TgQ5c8URolNr.java,39,50
+a,KAm50pBuMLGt50EmuWIMfsmII.java,75,84,a,RfEdRPSHraxPMDLm5sbIcTlok.java,41,51
+a,KAm50pBuMLGt50EmuWIMfsmII.java,75,84,a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,46,56
+a,CHoSgQHrZtdObJCIILCg9NCNo.java,23,37,a,MlxILczEgnctsogTuIyHc4IXX.java,49,57
+a,NYs33OaJgnHVlC5gxbP4TA6U8.java,54,69,a,SnOt9Q25W4q3dK0QOEtnmN5BU.java,38,51
+a,NYs33OaJgnHVlC5gxbP4TA6U8.java,54,69,a,CHy9tzZMsUit409DPRN5zId8A.java,42,60
+a,ZmB1ce4Z4bRirnJRrzLxHP71W.java,10,18,a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,18,28
+a,XvLggiA0U2816f7k8OxJUfOXy.java,76,102,a,IaljG2SZMe6I8nZCWp6ofFVOS.java,88,112
+a,Buh7lFTuRLvglBJw8PsygWcl6.java,38,52,a,CHy9tzZMsUit409DPRN5zId8A.java,42,60
+a,YsupfvRpv05mUddNkhNYEbFQV.java,11,20,a,CHoSgQHrZtdObJCIILCg9NCNo.java,12,20
+a,YsupfvRpv05mUddNkhNYEbFQV.java,48,58,a,X3L5yqKRE6s4IBEljxYi8s2gf.java,35,52
+a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,28,44,a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,35,50
+a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,28,44,a,GPYf063qrOqXAO8qXB7sGLE8d.java,33,49
+a,Uu1D7w3RecnGQxb3TIRXGYISR.java,49,69,a,KpDaNc2yULGxB1v5wlL6E3OD6.java,60,72
+a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,28,44,a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,90,106
+a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,28,44,a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38
+a,Uu1D7w3RecnGQxb3TIRXGYISR.java,71,80,a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,60,70
+a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,20,30,a,Uu1D7w3RecnGQxb3TIRXGYISR.java,49,69
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,53,64,a,NYs33OaJgnHVlC5gxbP4TA6U8.java,71,91
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,28,39,a,ZjiHWBeSJaY57W8OtdJVl0r6N.java,19,30
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,28,39,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,23,37
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,18,27,a,Uu1D7w3RecnGQxb3TIRXGYISR.java,11,20
+a,KAm50pBuMLGt50EmuWIMfsmII.java,86,100,a,KpDaNc2yULGxB1v5wlL6E3OD6.java,60,72
+a,KAm50pBuMLGt50EmuWIMfsmII.java,86,100,a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,46,58
+a,Buh7lFTuRLvglBJw8PsygWcl6.java,54,78,a,SnOt9Q25W4q3dK0QOEtnmN5BU.java,53,79
+clonepairs_1_type_31_9902.txt ======================
+a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,39,51
+a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,26,34,a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,11,20
+a,NCdeERn0tNiGOzng398GOAKfm.java,59,70,a,MlxILczEgnctsogTuIyHc4IXX.java,49,57
+a,NpqsFLFY0Tf85TgQ5c8URolNr.java,39,50,a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,35,50
+a,NpqsFLFY0Tf85TgQ5c8URolNr.java,39,50,a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38
+a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,10,18,a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,39,48
+a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,29,39,a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,35,50
+a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,33,44,a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,29,39
+a,VUTi3tcXbl4dR0FmsuzUErX0E.java,45,59,a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,90,106
+a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,90,106,a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,29,39
+a,VUTi3tcXbl4dR0FmsuzUErX0E.java,45,59,a,NpqsFLFY0Tf85TgQ5c8URolNr.java,39,50
+a,VUTi3tcXbl4dR0FmsuzUErX0E.java,45,59,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,39,51
+a,KpDaNc2yULGxB1v5wlL6E3OD6.java,35,45,a,MlxILczEgnctsogTuIyHc4IXX.java,49,57
+a,KpDaNc2yULGxB1v5wlL6E3OD6.java,47,58,a,VUTi3tcXbl4dR0FmsuzUErX0E.java,45,59
+a,XvLggiA0U2816f7k8OxJUfOXy.java,28,37,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,23,37
+a,KpDaNc2yULGxB1v5wlL6E3OD6.java,47,58,a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38
+a,VHoij57foVaRucJAXnKwrz7wN.java,21,29,a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,39,48
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,46,56,a,VUTi3tcXbl4dR0FmsuzUErX0E.java,45,59
+a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,17,26,a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,21,31
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,46,56,a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,46,56,a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,33,44
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,46,56,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,39,51
+a,Uu1D7w3RecnGQxb3TIRXGYISR.java,36,47,a,NYs33OaJgnHVlC5gxbP4TA6U8.java,54,69
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,41,51,a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,65,77
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,41,51,a,VUTi3tcXbl4dR0FmsuzUErX0E.java,45,59
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,41,51,a,NCdeERn0tNiGOzng398GOAKfm.java,47,57
+a,EUgx06Dz7it6F409dFTDp5Rir.java,85,90,a,EUgx06Dz7it6F409dFTDp5Rir.java,44,50
+a,OF1DO93HThbXM779gK7EAfnII.java,11,20,a,CHoSgQHrZtdObJCIILCg9NCNo.java,12,20
+a,OF1DO93HThbXM779gK7EAfnII.java,11,20,a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,39,48
+a,OF1DO93HThbXM779gK7EAfnII.java,31,43,a,VUTi3tcXbl4dR0FmsuzUErX0E.java,45,59
+a,OF1DO93HThbXM779gK7EAfnII.java,31,43,a,NCdeERn0tNiGOzng398GOAKfm.java,47,57
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,41,53,a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,35,50
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,41,53,a,NCdeERn0tNiGOzng398GOAKfm.java,47,57
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,41,53,a,RfEdRPSHraxPMDLm5sbIcTlok.java,41,51
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,41,53,a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,28,44
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,41,53,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,39,51
+a,OF1DO93HThbXM779gK7EAfnII.java,31,43,a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,28,44
+a,KAm50pBuMLGt50EmuWIMfsmII.java,75,84,a,KpDaNc2yULGxB1v5wlL6E3OD6.java,47,58
+a,KAm50pBuMLGt50EmuWIMfsmII.java,59,73,a,KpDaNc2yULGxB1v5wlL6E3OD6.java,35,45
+a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,35,44,a,KpDaNc2yULGxB1v5wlL6E3OD6.java,35,45
+a,KAm50pBuMLGt50EmuWIMfsmII.java,75,84,a,DeiG0PYckvUo6zECg9qhtOj2W.java,36,48
+a,KAm50pBuMLGt50EmuWIMfsmII.java,75,84,a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,35,50
+a,RdW3cjQxvKlk0JGvJO6uvjnoi.java,47,60,a,NYs33OaJgnHVlC5gxbP4TA6U8.java,54,69
+a,KAm50pBuMLGt50EmuWIMfsmII.java,75,84,a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,90,106
+a,KAm50pBuMLGt50EmuWIMfsmII.java,75,84,a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38
+a,KAm50pBuMLGt50EmuWIMfsmII.java,59,73,a,MlxILczEgnctsogTuIyHc4IXX.java,49,57
+a,CHy9tzZMsUit409DPRN5zId8A.java,15,27,a,CHoSgQHrZtdObJCIILCg9NCNo.java,12,20
+a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,60,70,a,UDNGhLn09kT7QYKQrhIo2bi9G.java,47,55
+a,Buh7lFTuRLvglBJw8PsygWcl6.java,38,52,a,SnOt9Q25W4q3dK0QOEtnmN5BU.java,38,51
+a,ZmB1ce4Z4bRirnJRrzLxHP71W.java,61,69,a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,60,70
+a,XvLggiA0U2816f7k8OxJUfOXy.java,39,73,a,IaljG2SZMe6I8nZCWp6ofFVOS.java,60,85
+a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,28,44,a,FMdgGWDlvOGvjLyupPON2zFBV.java,59,79
+a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,28,44,a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,65,77
+a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,28,44,a,NCdeERn0tNiGOzng398GOAKfm.java,47,57
+a,Uu1D7w3RecnGQxb3TIRXGYISR.java,71,80,a,ZmB1ce4Z4bRirnJRrzLxHP71W.java,61,69
+a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,32,46,a,NYs33OaJgnHVlC5gxbP4TA6U8.java,54,69
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,53,64,a,KpDaNc2yULGxB1v5wlL6E3OD6.java,60,72
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,53,64,a,CHoSgQHrZtdObJCIILCg9NCNo.java,61,76
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,28,39,a,KpDaNc2yULGxB1v5wlL6E3OD6.java,60,72
+a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,32,46,a,MlxILczEgnctsogTuIyHc4IXX.java,35,46
+a,XnNdE6JJPrvKHbpJWwvViC0wh.java,17,26,a,CHoSgQHrZtdObJCIILCg9NCNo.java,12,20
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,3,11,a,ZjiHWBeSJaY57W8OtdJVl0r6N.java,85,99
+a,Ojq0tK9rUXUKcYmM6llCDBToA.java,3,11,a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,60,70
+clonepairs_1_type_31_9903.txt ======================
+a,NCdeERn0tNiGOzng398GOAKfm.java,47,57,a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,35,50
+a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,11,20,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,13,21
+a,QJ7DJjCXmAg6Wltw7HRX6zFzI.java,65,77,a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,35,50
+a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,29,39,a,NpqsFLFY0Tf85TgQ5c8URolNr.java,39,50
+a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,33,44,a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38
+a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,90,106,a,UQ343vHfeAOWPriIL4Xru5XMC.java,27,38
+a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,90,106,a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,33,44
+a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,90,106,a,NpqsFLFY0Tf85TgQ5c8URolNr.java,39,50
+a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,90,106,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,39,51
+a,VUTi3tcXbl4dR0FmsuzUErX0E.java,45,59,a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,33,44
+a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,90,106,a,OPgtMNQ4V3ceg7927dPHX1Pj6.java,35,50
+a,KpDaNc2yULGxB1v5wlL6E3OD6.java,35,45,a,CHoSgQHrZtdObJCIILCg9NCNo.java,23,37
+a,VHoij57foVaRucJAXnKwrz7wN.java,21,29,a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,10,18
+a,VHoij57foVaRucJAXnKwrz7wN.java,81,89,a,FMdgGWDlvOGvjLyupPON2zFBV.java,117,142
+a,VHoij57foVaRucJAXnKwrz7wN.java,21,29,a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,14,23
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,46,56,a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,29,39
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,41,51,a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,29,39
+a,HgFHNYF701UjmVfji9nbpuMbs.java,28,37,a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,11,20
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,41,51,a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,28,44
+a,OF1DO93HThbXM779gK7EAfnII.java,11,20,a,VHoij57foVaRucJAXnKwrz7wN.java,21,29
+a,OF1DO93HThbXM779gK7EAfnII.java,11,20,a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,14,23
+a,OF1DO93HThbXM779gK7EAfnII.java,31,43,a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,29,39
+a,OF1DO93HThbXM779gK7EAfnII.java,31,43,a,NpqsFLFY0Tf85TgQ5c8URolNr.java,39,50
+a,DeiG0PYckvUo6zECg9qhtOj2W.java,36,48,a,KpDaNc2yULGxB1v5wlL6E3OD6.java,47,58
+a,DeiG0PYckvUo6zECg9qhtOj2W.java,36,48,a,NpqsFLFY0Tf85TgQ5c8URolNr.java,39,50
+a,DeiG0PYckvUo6zECg9qhtOj2W.java,36,48,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,39,51
+a,KAm50pBuMLGt50EmuWIMfsmII.java,59,73,a,CHoSgQHrZtdObJCIILCg9NCNo.java,23,37
+a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,46,58,a,CHoSgQHrZtdObJCIILCg9NCNo.java,61,76
+a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,109,127,a,NCdeERn0tNiGOzng398GOAKfm.java,59,70
+a,NYs33OaJgnHVlC5gxbP4TA6U8.java,54,69,a,CHoSgQHrZtdObJCIILCg9NCNo.java,39,57
+a,SSHGivHlZWTTsOAgQjj8BokSs.java,50,60,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,13,21
+a,GPYf063qrOqXAO8qXB7sGLE8d.java,33,49,a,FMdgGWDlvOGvjLyupPON2zFBV.java,59,79
+a,KpDaNc2yULGxB1v5wlL6E3OD6.java,60,72,a,CHoSgQHrZtdObJCIILCg9NCNo.java,61,76
+a,YsupfvRpv05mUddNkhNYEbFQV.java,11,20,a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,10,18
+a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,28,44,a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,29,39
+a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,28,44,a,NpqsFLFY0Tf85TgQ5c8URolNr.java,39,50
+a,J3RowPmOg2qHO6eYLC41Vw6ZT.java,28,44,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,39,51
+a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,32,46,a,Uu1D7w3RecnGQxb3TIRXGYISR.java,36,47
+a,ZjiHWBeSJaY57W8OtdJVl0r6N.java,85,99,a,Uu1D7w3RecnGQxb3TIRXGYISR.java,71,80
+a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,32,46,a,CHoSgQHrZtdObJCIILCg9NCNo.java,39,57
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,53,64,a,IFcTWHlwWyw3I7uBJibW5ZwtK.java,46,58
+a,RfEdRPSHraxPMDLm5sbIcTlok.java,53,64,a,RfEdRPSHraxPMDLm5sbIcTlok.java,28,39
+a,XnNdE6JJPrvKHbpJWwvViC0wh.java,17,26,a,YsupfvRpv05mUddNkhNYEbFQV.java,11,20
+clonepairs_type2_9900.txt ======================
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,14,23,a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,10,18
+a,HgFHNYF701UjmVfji9nbpuMbs.java,11,21,a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,11,20
+a,HgFHNYF701UjmVfji9nbpuMbs.java,40,51,a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,36,46
+clonepairs_type2_9901.txt ======================
+a,Z2YE4AGGGFMWhGTOJF9QPVXy2.java,29,39,a,L6mTynrcqVdsKM5dk8JM1C7WZ.java,39,51
+a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,90,106,a,NCdeERn0tNiGOzng398GOAKfm.java,47,57
+a,HgFHNYF701UjmVfji9nbpuMbs.java,28,37,a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,26,34
+clonepairs_type2_9902.txt ======================
+a,Pa7PrkpPjGwWMMWvOA5Q9YvAz.java,68,73,a,Vg3Lw8sbXbWjTXB4QkHk1CztY.java,62,66
+a,Buh7lFTuRLvglBJw8PsygWcl6.java,14,24,a,SnOt9Q25W4q3dK0QOEtnmN5BU.java,14,24
+clonepairs_type2_9903.txt ======================
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,46,56,a,NCdeERn0tNiGOzng398GOAKfm.java,47,57
+a,TJI8zHEYT5LRvCsA7gYIbH7Qr.java,46,56,a,FLHyjHb9dZ9SuC5GfHaCKe0IK.java,90,106
+a,HgFHNYF701UjmVfji9nbpuMbs.java,54,63,a,Gk1v1U3LQto7TPPwZ9HsWEHH0.java,48,57

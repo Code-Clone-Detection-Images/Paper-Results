@@ -1,0 +1,105 @@
+<html>
+<head>
+    <title>NiCad6 Clone Report</title>
+    <style type="text/css">
+        body {font-family:sans-serif;}
+        table {background-color:white; border:0px; padding:0px; border-spacing:4px; width:auto; margin-left:30px; margin-right:auto;}
+        td {background-color:rgba(192,212,238,0.8); border:0px; padding:8px; width:auto; vertical-align:top; border-radius:8px}
+        pre {background-color:white; padding:4px;}
+        a {color:darkblue;}
+    </style>
+</head>
+<body>
+<h2>NiCad6 Clone Report</h2>
+<table>
+<tr style="font-size:14pt">
+<td><b>System:</b> &nbsp; sub</td>
+<td><b>Clone pairs:</b> &nbsp; 1</td>
+<td><b>Clone classes:</b> &nbsp; 1</td>
+</tr>
+<tr style="font-size:12pt">
+<td style="background-color:white">Clone type: &nbsp; 3-2</td>
+<td style="background-color:white">Granularity: &nbsp; functions-blind</td>
+<td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
+<td style="background-color:white">Clone size: &nbsp; 10 - 2500 lines</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 150</td>
+</tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 2 fragments, nominal size 22 lines, similarity 70%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag43')" href="javascript:;">
+sub/miura/1/A.c: 3-23
+</a>
+<div class="mid" id="frag43" style="display:none"><pre>
+ int main()
+ {
+     int T;
+     scanf("%d", &amp;T);
+     for(int i = 0; i &lt; T; i++) {
+         int D, N;
+         scanf("%d %d", &amp;D, &amp;N);
+         double max = 0;
+         for(int j = 0; j &lt; N; j++) {
+             int S, K;
+             scanf("%d %d", &amp;K, &amp;S);
+             int d = D - K;
+             double t = (double)d / S;
+             if(max &lt; t) {
+                 max = t;
+             }
+         }
+         printf("Case #%d: %.6f\n", i+1, D / max);
+     }
+     return 0;
+ }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag117')" href="javascript:;">
+sub/Fallacyman/1/Q1.c: 3-23
+</a>
+<div class="mid" id="frag117" style="display:none"><pre>
+ int main(){
+ 	int repeat;
+ 	scanf("%d",&amp;repeat);
+ 	for(int i=0; i&lt;repeat;i++){
+ 		int destination, horses;
+ 		scanf("%d %d", &amp;destination, &amp;horses);
+ 		int start[horses], speed[horses];
+ 		for(int j=0; j&lt;horses;j++){
+ 			scanf("%d %d", &amp;start[j], &amp;speed[j]);
+ 		}
+ 		double minspeed=100000000000000;
+ 		for(int j=0; j&lt;horses;j++){
+ 			double conspeed=destination*(float)speed[j]/(destination-start[j]);
+ 			if(conspeed&lt;minspeed){
+ 				minspeed=conspeed;
+ 			}
+ 		}
+ 		printf("Case #%d: %f\n",i+1, minspeed);
+ 	}
+ 	return 0;
+ }
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<script language="JavaScript">
+function ShowHide(divId) { 
+    if(document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display='block';
+    } else { 
+        document.getElementById(divId).style.display = 'none';
+    } 
+}
+</script>
+</body>
+</html>

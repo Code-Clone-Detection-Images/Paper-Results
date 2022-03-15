@@ -1,0 +1,879 @@
+<html>
+<head>
+    <title>NiCad6 Clone Report</title>
+    <style type="text/css">
+        body {font-family:sans-serif;}
+        table {background-color:white; border:0px; padding:0px; border-spacing:4px; width:auto; margin-left:30px; margin-right:auto;}
+        td {background-color:rgba(192,212,238,0.8); border:0px; padding:8px; width:auto; vertical-align:top; border-radius:8px}
+        pre {background-color:white; padding:4px;}
+        a {color:darkblue;}
+    </style>
+</head>
+<body>
+<h2>NiCad6 Clone Report</h2>
+<table>
+<tr style="font-size:14pt">
+<td><b>System:</b> &nbsp; sub</td>
+<td><b>Clone pairs:</b> &nbsp; 20</td>
+<td><b>Clone classes:</b> &nbsp; 8</td>
+</tr>
+<tr style="font-size:12pt">
+<td style="background-color:white">Clone type: &nbsp; 3-2</td>
+<td style="background-color:white">Granularity: &nbsp; functions-blind</td>
+<td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
+<td style="background-color:white">Clone size: &nbsp; 10 - 2500 lines</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 181</td>
+</tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 6 fragments, nominal size 43 lines, similarity 70%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag2')" href="javascript:;">
+sub/badsara/0000000000218391/Nyu9LzQ90s3rdNQ6wJKXJroJa.java: 7-49
+</a>
+<div class="mid" id="frag2" style="display:none"><pre>
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int T=sc.nextInt();
+        StringBuilder sb=new StringBuilder();
+        for(int t=1;t&lt;=T;t++){
+            int n=sc.nextInt();
+            int[][] a=new int[n][n];
+            int r=0,c=0;
+            int sum=0;
+            for(int i=0;i&lt;n;i++){
+                for(int j=0;j&lt;n;j++){
+                    a[i][j]=sc.nextInt();
+                    if(i==j){
+                        sum+=a[i][j];
+                    }
+                }
+            }
+            for(int i=0;i&lt;n;i++){
+                Set&lt;Integer&gt; st=new HashSet&lt;&gt;();
+                for(int j=0;j&lt;n;j++){
+                    if(st.contains(a[i][j])){
+                        r++;
+                        break;
+                    }
+                    st.add(a[i][j]);
+                }
+            }
+            for(int i=0;i&lt;n;i++){
+                Set&lt;Integer&gt; st=new HashSet&lt;&gt;();
+                for(int j=0;j&lt;n;j++){
+                    if(st.contains(a[j][i])){
+                        c++;
+                        break;
+                    }
+                    st.add(a[j][i]);
+                }
+            }
+            sb.append("Case #").append(t).append(": ").append(sum).append(" ");
+            sb.append(r).append(" ").append(c).append("\n");
+        }
+        out.println(sb);
+        out.close();
+    }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag37')" href="javascript:;">
+sub/Andro/0000000000216078/Gkc1qJiCEfyXZ03DjGmpx4dZx.java: 15-57
+</a>
+<div class="mid" id="frag37" style="display:none"><pre>
+    public void solve(FastReader in,OutputWriter out) {
+        int t=in.nextInt();
+        for(int ca=1;ca&lt;=t;ca++){
+            int n=in.nextInt();
+            int[][] ar= new int[n][n];
+            int k=0;
+            for(int i=0; i&lt;n;i++){
+                for(int j=0; j&lt;n;j++){
+                    ar[i][j]=in.nextInt();
+                    if(i==j){
+                        k+= ar[i][j];
+                    }
+                }
+            }
+            int r=0;
+            for(int i=0; i&lt;n;i++){
+                HashSet&lt;Integer&gt; set= new HashSet&lt;&gt;();
+                for(int j=0; j&lt;n;j++){
+                    if(set.contains(ar[i][j])){
+                        r++;
+                        break;
+                    }
+                    else {
+                        set.add(ar[i][j]);
+                    }
+                }
+            }
+            int c=0;
+            for(int i=0; i&lt;n;i++){
+                HashSet&lt;Integer&gt; set= new HashSet&lt;&gt;();
+                for(int j=0; j&lt;n;j++){
+                    if(set.contains(ar[j][i])){
+                        c++;
+                        break;
+                    }
+                    else {
+                        set.add(ar[j][i]);
+                    }
+                }
+            }
+            out.println("Case #"+ca+": "+k+" "+r+" "+c);
+        }
+    }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag109')" href="javascript:;">
+sub/Ruoying/0000000000232324/ANlHXqS9mzUoZ7RJmZnJInFzS.java: 3-50
+</a>
+<div class="mid" id="frag109" style="display:none"><pre>
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int TC = sc.nextInt();
+        for(int tc = 1; tc &lt;= TC; tc++){
+            //init for this test case
+            int N = sc.nextInt();
+            int matrix[][] = new int[N][N];
+            int k = 0;
+            int r = 0;
+            int c = 0;
+            //input
+            for(int i = 0; i &lt; N; i++){
+                for(int j = 0; j &lt; N; j++){
+                    matrix[i][j] = sc.nextInt();
+                }
+            }
+            //calculate k
+            for(int index = 0; index &lt; N; index++){
+                k += matrix[index][index];
+            }
+            //calculate r
+            for(int row = 0; row &lt; N; row++){
+                ArrayList&lt;Integer&gt; line = new ArrayList&lt;Integer&gt;();
+                for(int j = 0; j &lt; N; j++){
+                    if(line.contains(matrix[row][j])){
+                        r++;
+                        break;
+                    }else{
+                        line.add(matrix[row][j]);
+                    }
+                }
+            }
+            //calculate c
+            for(int col = 0; col &lt; N; col++){
+                ArrayList&lt;Integer&gt; line = new ArrayList&lt;Integer&gt;();
+                for(int i = 0; i &lt; N; i++){
+                    if(line.contains(matrix[i][col])){
+                        c++;
+                        break;
+                    }else{
+                        line.add(matrix[i][col]);
+                    }
+                }
+            }
+            //output
+            System.out.println("Case #" + tc + ": " + k + " " + r + " " + c);
+        }
+    }
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag66')" href="javascript:;">
+sub/jaaannnaaa/0000000000245c44/HVINcASt3GNu1zYzHyuttk3EK.java: 4-52
+</a>
+<div class="mid" id="frag66" style="display:none"><pre>
+    public static void main(String[] args) {
+        Scanner in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+
+        int t = in.nextInt(); // Scanner has functions to read ints, longs, strings, chars, etc.
+
+        for (int tt = 1; tt &lt;= t; ++tt) {
+            int n = in.nextInt();
+
+            int[][] a = new int[n][n];
+            for (int i = 0; i &lt; n; i++) {
+                for (int j = 0; j &lt; n; j++) {
+                    a[i][j] = in.nextInt();
+                }
+            }
+            
+            int rows = 0;
+            for (int i = 0; i &lt; n; i++) {
+                HashSet&lt;Integer&gt; set = new HashSet&lt;&gt;();
+                for (int j = 0; j &lt; n; j++) {
+                    if (set.contains(a[i][j])) {
+                        rows++;
+                        break;
+                    }
+                    set.add(a[i][j]);
+                }
+            }
+
+            int cols = 0;
+            for (int j = 0; j &lt; n; j++) {
+                HashSet&lt;Integer&gt; set = new HashSet&lt;&gt;();
+                for (int i = 0; i &lt; n; i++) {
+                    if (set.contains(a[i][j])) {
+                        cols++;
+                        break;
+                    }
+                    set.add(a[i][j]);
+                }
+            }
+
+            int trace = 0;
+            for (int i = 0; i &lt; n; i++) {
+                trace += a[i][i];
+            }
+
+            System.out.println("Case #" + tt + ": " + trace + " " + rows + " " + cols);
+        }
+
+        in.close();
+    }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag110')" href="javascript:;">
+sub/amaretto/000000000022bc47/Fqn2tojbgWZMxmoaLmB9NFsTk.java: 3-48
+</a>
+<div class="mid" id="frag110" style="display:none"><pre>
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        int t = s.nextInt();
+        for(int test=1; test&lt;=t; test++){
+        int n = s.nextInt();
+        int arr[][] = new int[n][n];
+        int sum=0;
+        for(int i=0; i&lt;n; i++){
+            for(int j=0; j&lt;n; j++){
+                arr[i][j]=s.nextInt();
+                if(i==j){
+                    sum+=arr[i][j];
+                }
+            }
+        }
+        int a1=0;
+        int a2=0;
+        for(int i=0; i&lt;n; i++){
+            HashSet&lt;Integer&gt; set = new HashSet&lt;&gt;();
+            boolean ret=false;
+            for(int j=0; j&lt;n; j++){
+                if(set.contains(arr[i][j])){
+                    ret=true;
+                    a1++;
+                    break;
+                }else{
+                    set.add(arr[i][j]);
+                }
+            }
+        }
+        for(int i=0; i&lt;n; i++){
+            HashSet&lt;Integer&gt; set = new HashSet&lt;&gt;();
+            boolean ret=false;
+            for(int j=0; j&lt;n; j++){
+                if(set.contains(arr[j][i])){
+                    ret=true;
+                    a2++;
+                    break;
+                }else{
+                    set.add(arr[j][i]);
+                }
+            }
+        }
+        System.out.println("Case #"+test+": "+sum+" "+a1+" "+a2);
+        }
+    }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag100')" href="javascript:;">
+sub/sestupinan/000000000021ef61/Ysv83ulMWah6bIfHG3EJoBDj7.java: 4-54
+</a>
+<div class="mid" id="frag100" style="display:none"><pre>
+	public static void main(String[] args) {
+		Scanner in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+		int t = in.nextInt(); // Scanner has functions to read ints, longs, strings, chars, etc.
+		for (int i = 1; i &lt;= t; i++) {
+			int n = in.nextInt();
+			int[][] matrix = new int[n][n];
+			for (int j = 0; j &lt; n; j++) 
+			{
+				for(int k = 0; k &lt; n; k++)
+				{
+					int l = in.nextInt();
+					matrix[j][k] = l;
+				}
+			}
+			int k = 0;
+			int r = 0;
+			int c = 0;
+			for (int j = 0; j &lt; n; j++) {
+				k+=matrix[j][j];
+			}
+			for (int j = 0; j &lt; n; j++) {
+				ArrayList&lt;Integer&gt; s= new ArrayList&lt;Integer&gt;();
+				for (int j2 = 0; j2 &lt; n; j2++) {
+					if(s.contains(matrix[j][j2]))
+					{
+						r++;
+						break;
+					}
+					else
+					{
+						s.add(matrix[j][j2]);
+					}
+				}
+			}
+			for (int j = 0; j &lt; n; j++) {
+				ArrayList&lt;Integer&gt; s= new ArrayList&lt;Integer&gt;();
+				for (int j2 = 0; j2 &lt; n; j2++) {
+					if(s.contains(matrix[j2][j]))
+					{
+						c++;
+						break;
+					}
+					else
+					{
+						s.add(matrix[j2][j]);
+					}
+				}
+			}
+			System.out.println("Case #" + i + ": " + k + " " + r + " "+ c);
+		}
+	}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 2:</b> &nbsp; 4 fragments, nominal size 16 lines, similarity 81%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag5')" href="javascript:;">
+sub/yeorinim2sida/0000000000213213/PMU1qLMhoAJ5Q0dZiyT2HoBjb.java: 34-49
+</a>
+<div class="mid" id="frag5" style="display:none"><pre>
+    static int rowDup(Set&lt;Integer&gt; dup, int[][] square) {
+        int nDups = 0;
+        for (int ir = 0; ir &lt; square.length; ir++) {
+            dup.clear();
+            for (int ic = 0; ic &lt; square.length; ic++) {
+                if(dup.contains(square[ir][ic])) {
+                    nDups ++;
+                    break;
+                } else {
+                    dup.add(square[ir][ic]);
+                }
+            }
+            
+        }
+        return nDups;
+    }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag77')" href="javascript:;">
+sub/ajs0031/000000000025deca/U3HL4zvjYZO2kcjNKWPoL7L37.java: 28-42
+</a>
+<div class="mid" id="frag77" style="display:none"><pre>
+  public static int getNumRepeatedRows(int[][] matrix) {
+	  int count = 0;
+	  HashSet&lt;Integer&gt; cache = new HashSet&lt;Integer&gt;();
+	  for(int row = 0; row &lt; matrix.length; row++) {
+		  cache.clear();
+		  for(int col = 0; col &lt; matrix.length; col++) {
+			  if(cache.contains(matrix[row][col])) {
+				  count++;
+				  break;
+			  }
+			  cache.add(matrix[row][col]);
+		  }
+	  }
+	  return count;
+  }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag78')" href="javascript:;">
+sub/ajs0031/000000000025deca/U3HL4zvjYZO2kcjNKWPoL7L37.java: 44-58
+</a>
+<div class="mid" id="frag78" style="display:none"><pre>
+  public static int getNumRepeatedCols(int[][] matrix) {
+	  int count = 0;
+	  HashSet&lt;Integer&gt; cache = new HashSet&lt;Integer&gt;();
+	  for(int col = 0; col &lt; matrix.length; col++) {
+		  cache.clear();
+		  for(int row = 0; row &lt; matrix.length; row++) {
+		   if(cache.contains(matrix[row][col])) {
+				  count++;
+				  break;
+			  }
+			  cache.add(matrix[row][col]);
+		  }
+	  }
+	  return count;
+  }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag6')" href="javascript:;">
+sub/yeorinim2sida/0000000000213213/PMU1qLMhoAJ5Q0dZiyT2HoBjb.java: 51-65
+</a>
+<div class="mid" id="frag6" style="display:none"><pre>
+    static int colDup(Set&lt;Integer&gt; dup, int[][] square) {
+        int nDups = 0;
+        for (int ic = 0; ic &lt; square.length; ic++) {
+            dup.clear();
+            for (int ir = 0; ir &lt; square.length; ir++) {
+                if(dup.contains(square[ir][ic])) {
+                    nDups ++;
+                    break;
+                } else {
+                    dup.add(square[ir][ic]);
+                }
+            }
+        }
+        return nDups;
+    }
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 3:</b> &nbsp; 2 fragments, nominal size 18 lines, similarity 84%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag8')" href="javascript:;">
+sub/AgentSmith/00000000002763bd/ZUFtSyqfJMsEChoREh6yB879h.java: 23-45
+</a>
+<div class="mid" id="frag8" style="display:none"><pre>
+    private static int duplicateRowsOfMatrix(int[][] arr, int size)
+    {
+        Hashtable&lt;Integer,Integer&gt; integerHashtable = new Hashtable&lt;&gt;();
+        int count=0;
+        for(int i=0;i&lt;size;i++)
+        {
+            int[] row =arr[i];
+
+            for(int j=0;j&lt;row.length;j++) {
+
+                if(integerHashtable.containsKey(row[j])) {
+                    count++;
+                    break;
+                } else {
+                    integerHashtable.put(row[j],1);
+                }
+            }
+
+            integerHashtable.clear();
+        }
+
+        return count;
+    }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag151')" href="javascript:;">
+sub/King101/00000000002967f2/FisbljpaddkyWba1Wr6YSXb5z.java: 57-79
+</a>
+<div class="mid" id="frag151" style="display:none"><pre>
+    public static int row_duplicate(int arr[][],int size)
+    {
+        Hashtable&lt;Integer,Integer&gt; h=new Hashtable&lt;&gt;();
+        int count=0;
+        for(int i=0;i&lt;size;i++)
+        {
+            int row[]=arr[i];
+            for(int j=0;j&lt;row.length;j++)
+            {
+                if(h.containsKey(row[j]))
+                {
+                    count++;
+                    break;
+                }
+                else
+                {
+                    h.put(row[j],1);
+                }
+            }
+            h.clear();
+        }
+        return count;
+    }
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 4:</b> &nbsp; 2 fragments, nominal size 18 lines, similarity 92%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag9')" href="javascript:;">
+sub/AgentSmith/00000000002763bd/ZUFtSyqfJMsEChoREh6yB879h.java: 47-71
+</a>
+<div class="mid" id="frag9" style="display:none"><pre>
+    private static int duplicateColumnsOfMatrix(int[][] arr, int size)
+    {
+        Hashtable&lt;Integer,Integer&gt; integerHashtable = new Hashtable&lt;&gt;();
+        int count=0;
+
+        for(int i=0; i&lt;size; i++) {
+
+            for(int j=0; j&lt;size; j++) {
+
+                int element = arr[j][i];
+
+                if(integerHashtable.containsKey(element )) {
+                    count++;
+                    break;
+                }
+                else {
+                    integerHashtable.put(element ,1);
+                }
+            }
+            integerHashtable.clear();
+        }
+
+        return count;
+
+    }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag152')" href="javascript:;">
+sub/King101/00000000002967f2/FisbljpaddkyWba1Wr6YSXb5z.java: 81-103
+</a>
+<div class="mid" id="frag152" style="display:none"><pre>
+    public static int col_duplicate(int arr[][],int size)
+    {
+        Hashtable&lt;Integer,Integer&gt; h=new Hashtable&lt;&gt;();
+        int count=0;
+        for(int i=0;i&lt;size;i++)
+        {
+            for(int j=0;j&lt;size;j++)
+            {
+                int ele=arr[j][i];
+                if(h.containsKey(ele))
+                {
+                    count++;
+                    break;
+                }
+                else
+                {
+                    h.put(ele,1);
+                }
+            }
+            h.clear();
+        }
+        return count;
+    }
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 5:</b> &nbsp; 3 fragments, nominal size 14 lines, similarity 80%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag75')" href="javascript:;">
+sub/ajs0031/000000000025deca/U3HL4zvjYZO2kcjNKWPoL7L37.java: 5-18
+</a>
+<div class="mid" id="frag75" style="display:none"><pre>
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+    int numCases = scanner.nextInt();  // Scanner has functions to read ints, longs, strings, chars, etc.
+    for (int curCase = 1; curCase &lt;= numCases; curCase++) {
+    	int size = scanner.nextInt();
+    	int[][] matrix = new int[size][size];
+    	for(int row = 0; row &lt; size; row++) {
+    		for(int col = 0; col &lt; size; col++) {
+    			matrix[row][col] = scanner.nextInt();
+    		}
+    	}
+    	System.out.println("Case #" + curCase + ": " + getTrace(matrix) + " " + getNumRepeatedRows(matrix) + " " + getNumRepeatedCols(matrix));
+    }
+  }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag157')" href="javascript:;">
+sub/eNJay/000000000023c6b3/Qc2lYqtI0UGyRwsMG2T3Rftwz.java: 6-22
+</a>
+<div class="mid" id="frag157" style="display:none"><pre>
+  public static void main(String[] args) {
+    Scanner in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+    int t = in.nextInt();  // Scanner has functions to read ints, longs, strings, chars, etc.
+    for (int i = 1; i &lt;= t; ++i) {
+      int n = in.nextInt();
+      
+      int[][] M = new int[n][n];
+      
+      for(int j=0; j&lt;n; j++){
+          for(int k=0; k&lt;n; k++){
+              M[j][k] = in.nextInt();
+          }
+      }
+      
+      findTrace(M, i);
+    }
+  }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag129')" href="javascript:;">
+sub/Shohini/0000000000270fdb/XwziRckxXpndTeXkzdR8IcfZI.java: 4-22
+</a>
+<div class="mid" id="frag129" style="display:none"><pre>
+  public static void main(String[] args) {
+      
+    Scanner in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+    int t = in.nextInt();  
+    for (int k = 1; k &lt;= t; ++k) {
+        int n = in.nextInt();
+     
+        int[][] mat = new int[n][n];
+        
+        for(int i=0; i&lt;n; i++) {
+            for(int j=0; j&lt;n; j++) {
+                mat[i][j] = in.nextInt();
+            }
+        }
+        
+        process(mat, n, k);
+      
+    }
+  }
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 6:</b> &nbsp; 2 fragments, nominal size 15 lines, similarity 100%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag93')" href="javascript:;">
+sub/tagantroy/00000000002527e7/VV0Rq9kkRL4v5Y6coxU5HEAAr.java: 36-50
+</a>
+<div class="mid" id="frag93" style="display:none"><pre>
+    private static int checkRows(int[][] matrix) {
+        int n = matrix.length;
+        int result = 0;
+        for (int r = 0; r &lt; n; r++) {
+            HashSet&lt;Integer&gt; set = new HashSet&lt;&gt;();
+            boolean containsDuplicates = false;
+            for (int c = 0; c &lt; n; c++) {
+                int val = matrix[r][c];
+                if (set.contains(val)) containsDuplicates = true;
+                set.add(val);
+            }
+            if (containsDuplicates) result++;
+        }
+        return result;
+    }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag94')" href="javascript:;">
+sub/tagantroy/00000000002527e7/VV0Rq9kkRL4v5Y6coxU5HEAAr.java: 52-66
+</a>
+<div class="mid" id="frag94" style="display:none"><pre>
+    private static int checkCols(int[][] matrix) {
+        int n = matrix.length;
+        int result = 0;
+        for (int c = 0; c &lt; n; c++) {
+            HashSet&lt;Integer&gt; set = new HashSet&lt;&gt;();
+            boolean containsDuplicates = false;
+            for (int r = 0; r &lt; n; r++) {
+                int val = matrix[r][c];
+                if (set.contains(val)) containsDuplicates = true;
+                set.add(val);
+            }
+            if (containsDuplicates) result++;
+        }
+        return result;
+    }
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 7:</b> &nbsp; 2 fragments, nominal size 20 lines, similarity 100%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag106')" href="javascript:;">
+sub/HobbesOS/0000000000212974/I5V8WXqexChveU44OzbdxRvSk.java: 45-64
+</a>
+<div class="mid" id="frag106" style="display:none"><pre>
+    public static int repeatedElementRows() {
+        boolean isRepeatedElement = false;
+        int repeatedElementRows = 0;
+        for(int row = 0; row &lt; matrix.length; row++) {
+            for(int colOne = 0; colOne &lt; matrix.length; colOne++) {
+                for(int colTwo = 0; colTwo &lt; matrix.length; colTwo++) {
+                    if(colOne != colTwo) {
+                        if(matrix[row][colOne] == matrix[row][colTwo]) {
+                            isRepeatedElement = true;
+                        }
+                    }
+                }
+            }
+            if(isRepeatedElement) {
+                isRepeatedElement = false;
+                repeatedElementRows++;
+            }
+        }
+        return repeatedElementRows;
+    }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag107')" href="javascript:;">
+sub/HobbesOS/0000000000212974/I5V8WXqexChveU44OzbdxRvSk.java: 66-85
+</a>
+<div class="mid" id="frag107" style="display:none"><pre>
+    public static int repeatedElementCols() {
+        boolean isRepeatedElement = false;
+        int repeatedElementCols = 0;
+        for(int col = 0; col &lt; matrix.length; col++) {
+            for(int rowOne = 0; rowOne &lt; matrix.length; rowOne++) {
+                for(int rowTwo = 0; rowTwo &lt; matrix.length; rowTwo++) {
+                    if(rowOne != rowTwo) {
+                        if(matrix[rowOne][col] == matrix[rowTwo][col]) {
+                            isRepeatedElement = true;
+                        }
+                    }
+                }
+            }
+            if(isRepeatedElement) {
+                isRepeatedElement = false;
+                repeatedElementCols++;
+            }
+        }
+        return repeatedElementCols;
+    }
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 8:</b> &nbsp; 2 fragments, nominal size 18 lines, similarity 100%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag178')" href="javascript:;">
+sub/Simplificent/00000000002700ab/Wi2nTjT6Xok94oaoaYAY8qRi4.java: 47-64
+</a>
+<div class="mid" id="frag178" style="display:none"><pre>
+    private static int columnsWithDuplicatesIn(int[][] matrix, final int N) {
+        int result = 0;
+        for (int j = 0; j &lt; N; j++) {
+            Set&lt;Integer&gt; haveSeen = new HashSet&lt;&gt;();
+            int dups = 0;
+            for (int i = 0; i &lt; N; i++) {
+                int element = matrix[i][j];
+                if (haveSeen.contains(element)) {
+                    dups++;
+                }
+                haveSeen.add(element);
+            }
+            if (dups &gt; 0) {
+                result++;
+            }
+        }
+        return result;
+    }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag179')" href="javascript:;">
+sub/Simplificent/00000000002700ab/Wi2nTjT6Xok94oaoaYAY8qRi4.java: 66-83
+</a>
+<div class="mid" id="frag179" style="display:none"><pre>
+    private static int rowsWithDuplicatesIn(int[][] matrix, final int N) {
+        int result = 0;
+        for (int i = 0; i &lt; N; i++) {
+            Set&lt;Integer&gt; haveSeen = new HashSet&lt;&gt;();
+            int dups = 0;
+            for (int j = 0; j &lt; N; j++) {
+                int element = matrix[i][j];
+                if (haveSeen.contains(element)) {
+                    dups++;
+                }
+                haveSeen.add(element);
+            }
+            if (dups &gt; 0) {
+                result++;
+            }
+        }
+        return result;
+    }
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<script language="JavaScript">
+function ShowHide(divId) { 
+    if(document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display='block';
+    } else { 
+        document.getElementById(divId).style.display = 'none';
+    } 
+}
+</script>
+</body>
+</html>

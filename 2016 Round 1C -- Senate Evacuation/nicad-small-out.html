@@ -1,0 +1,1039 @@
+<html>
+<head>
+    <title>NiCad6 Clone Report</title>
+    <style type="text/css">
+        body {font-family:sans-serif;}
+        table {background-color:white; border:0px; padding:0px; border-spacing:4px; width:auto; margin-left:30px; margin-right:auto;}
+        td {background-color:rgba(192,212,238,0.8); border:0px; padding:8px; width:auto; vertical-align:top; border-radius:8px}
+        pre {background-color:white; padding:4px;}
+        a {color:darkblue;}
+    </style>
+</head>
+<body>
+<h2>NiCad6 Clone Report</h2>
+<table>
+<tr style="font-size:14pt">
+<td><b>System:</b> &nbsp; sub</td>
+<td><b>Clone pairs:</b> &nbsp; 35</td>
+<td><b>Clone classes:</b> &nbsp; 12</td>
+</tr>
+<tr style="font-size:12pt">
+<td style="background-color:white">Clone type: &nbsp; 3-2</td>
+<td style="background-color:white">Granularity: &nbsp; functions-blind</td>
+<td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
+<td style="background-color:white">Clone size: &nbsp; 10 - 2500 lines</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 392</td>
+</tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 8 fragments, nominal size 11 lines, similarity 75%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag55')" href="javascript:;">
+sub/Kektus/0/QOuC464RJ1b8QIqyFf2t11irX.java: 86-96
+</a>
+<div class="mid" id="frag55" style="display:none"><pre>
+     static int greatest(int[] arr) {
+         int n = 0;
+         int m = arr[0];
+         for(int i = 1;i &lt; arr.length;i++) {
+             if(arr[i] &gt; m) {
+                 m = arr[i];
+                 n = i;
+             }
+         }
+         return n;
+     }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag328')" href="javascript:;">
+sub/Tylu/0/AISLakZquRKT2UkLMFuy1lvdI.java: 63-73
+</a>
+<div class="mid" id="frag328" style="display:none"><pre>
+ 	private static int getBigger(int[] tab) {
+ 		int max = tab[0];
+ 		int index = 0;
+ 		for (int i = 0; i &lt; tab.length; i++) {
+ 			if (tab[i] &gt; max) {
+ 				max = tab[i];
+ 				index = i;
+ 			}
+ 		}
+ 		return index;
+ 	}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag165')" href="javascript:;">
+sub/edrabc/0/TVyiBbXBDJdJWSYmV6hG7onKu.java: 46-56
+</a>
+<div class="mid" id="frag165" style="display:none"><pre>
+     private int findMax(int[] p) {
+         int max = 0;
+         int pos = 0;
+         for (int i = 0; i &lt; p.length; i++) {
+             if (p[i] &gt; max) {
+                 max = p[i];
+                 pos = i;
+             }
+         }
+         return pos;
+     }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag217')" href="javascript:;">
+sub/jaat/0/XndJ2yYeKrZWsM0iorPSNdpS4.java: 50-63
+</a>
+<div class="mid" id="frag217" style="display:none"><pre>
+ 	private static int findMax(int[] _input) {
+ 		
+ 		int maxCanditates = 0;
+ 		int maxCandiatesParty = 0;
+ 		
+ 		for (int i = 0; i &lt; _input.length; i++) {
+ 			if (_input[i] &gt; maxCanditates) {
+ 				maxCanditates = _input[i];
+ 				maxCandiatesParty = i;
+ 			}
+ 		}
+ 		
+ 		return maxCandiatesParty;
+ 	}
+</pre></div>
+</td>
+</tr><tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag290')" href="javascript:;">
+sub/hemalpandya/0/YTFQeEJIMCPlJafpNpB4pwaxf.java: 76-86
+</a>
+<div class="mid" id="frag290" style="display:none"><pre>
+ 	public static int getMax(int[] array) {
+ 		int max = array[0];
+ 		int index = 0;
+ 		for (int i = 1; i &lt; array.length; i++) {
+ 			if (array[i] &gt; max) {
+ 				max = array[i];
+ 				index = i;
+ 			}
+ 		}
+ 		return index;
+ 	}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag202')" href="javascript:;">
+sub/mini.bajaj/0/EZYts0wYMq1WA0aYncfqvgUSU.java: 50-63
+</a>
+<div class="mid" id="frag202" style="display:none"><pre>
+ 	private static int findMax(int[] _input) {
+ 		
+ 		int maxCanditates = 0;
+ 		int maxCandiatesParty = 0;
+ 		
+ 		for (int i = 0; i &lt; _input.length; i++) {
+ 			if (_input[i] &gt; maxCanditates) {
+ 				maxCanditates = _input[i];
+ 				maxCandiatesParty = i;
+ 			}
+ 		}
+ 		
+ 		return maxCandiatesParty;
+ 	}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag148')" href="javascript:;">
+sub/emrecagirici/0/VBTkjqDxGOm8Nmg9ltaFyxTga.java: 71-81
+</a>
+<div class="mid" id="frag148" style="display:none"><pre>
+ 	private static int getMaxIndex(int[] list){
+ 		int value = 0;
+ 		int index = 0;
+ 		for(int i=0; i&lt;list.length;i++){
+ 			if(list[i]&gt;value){
+ 				index = i;
+ 				value = list[i];
+ 			}
+ 		}
+ 		return index;
+ 	}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag223')" href="javascript:;">
+sub/XanderZonneveld/0/FqgIfaEhTThyp4vbiszWspcSd.java: 76-88
+</a>
+<div class="mid" id="frag223" style="display:none"><pre>
+ 	public static int findBiggestPartie(int[] partieMembers) {
+ 		int biggestPartie = 0;
+ 		int members = 0;
+ 		
+ 		for(int i = 0; i &lt; partieMembers.length; i++) {
+ 			if(members &lt; partieMembers[i]) {
+ 				members = partieMembers[i];
+ 				biggestPartie = i;
+ 			}
+ 		}
+ 		
+ 		return biggestPartie;
+ 	}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 2:</b> &nbsp; 2 fragments, nominal size 19 lines, similarity 78%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag127')" href="javascript:;">
+sub/abhishek20113/0/TVhoEwMfcrOTGJy3DPEyAUlK8.java: 134-150
+</a>
+<div class="mid" id="frag127" style="display:none"><pre>
+     int inti() {
+         int num = 0, b;
+         boolean minus = false;
+         while ((b = readByte()) != -1 &amp;&amp; !((b &gt;= '0' &amp;&amp; b &lt;= '9') || b == '-'));
+         if (b == '-') {
+             minus = true;
+             b = readByte();
+         }
+         while (true) {
+             if (b &gt;= '0' &amp;&amp; b &lt;= '9') {
+                 num = num * 10 + (b - '0');
+             } else {
+                 return minus ? -num : num;
+             }
+             b = readByte();
+         }
+     }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag128')" href="javascript:;">
+sub/abhishek20113/0/TVhoEwMfcrOTGJy3DPEyAUlK8.java: 152-169
+</a>
+<div class="mid" id="frag128" style="display:none"><pre>
+     long loni() {
+         long num = 0;
+         int b;
+         boolean minus = false;
+         while ((b = readByte()) != -1 &amp;&amp; !((b &gt;= '0' &amp;&amp; b &lt;= '9') || b == '-'));
+         if (b == '-') {
+             minus = true;
+             b = readByte();
+         }
+         while (true) {
+             if (b &gt;= '0' &amp;&amp; b &lt;= '9') {
+                 num = num * 10 + (b - '0');
+             } else {
+                 return minus ? -num : num;
+             }
+             b = readByte();
+         }
+     }
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 3:</b> &nbsp; 3 fragments, nominal size 11 lines, similarity 75%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag152')" href="javascript:;">
+sub/SIven/0/VgUdPv7cxr1iVB08x5YXQqdPA.java: 53-63
+</a>
+<div class="mid" id="frag152" style="display:none"><pre>
+ 	private static int getMaxIndex(List&lt;Integer&gt; senators2) {
+ 		int index = 0;
+ 		int max = Integer.MIN_VALUE;
+ 		for (int i = 0; i &lt; senators2.size(); i++) {
+ 			if (senators2.get(i) &gt; max) {
+ 				index = i;
+ 				max = senators2.get(i);
+ 			}
+ 		}
+ 		return index;
+ 	}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag375')" href="javascript:;">
+sub/HotSauce/0/Yi8dQhuV8SmLYOzxrRAwWwDp5.java: 72-82
+</a>
+<div class="mid" id="frag375" style="display:none"><pre>
+     private static int findMax(final List&lt;Integer&gt; parties) {
+         int max = 0;
+         int position = -1;
+         for (int i = 0; i &lt; parties.size(); i++) {
+             if (parties.get(i) &gt; max) {
+                 position = i;
+                 max = parties.get(i);
+             }
+         }
+         return position;
+     }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag374')" href="javascript:;">
+sub/HotSauce/0/Yi8dQhuV8SmLYOzxrRAwWwDp5.java: 60-70
+</a>
+<div class="mid" id="frag374" style="display:none"><pre>
+     private static int find2ndMax(List&lt;Integer&gt; parties, int maxPosition) {
+         int max = 0;
+         int position = -1;
+         for (int i = 0; i &lt; parties.size(); i++) {
+             if (i != maxPosition &amp;&amp; parties.get(i) &gt; max) {
+                 position = i;
+                 max = parties.get(i);
+             }
+         }
+         return position;
+     }
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 4:</b> &nbsp; 2 fragments, nominal size 10 lines, similarity 100%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag171')" href="javascript:;">
+sub/getsugaTensho/0/BJOILSUYmKunKg5dPpHmePghz.java: 51-60
+</a>
+<div class="mid" id="frag171" style="display:none"><pre>
+ 	public static int maxLoc(int array[]){
+ 		int max=-1,loc=-1;
+ 		for (int i = 0; i &lt; array.length; i++) {
+ 			if(max&lt;array[i]){
+ 				max=array[i];
+ 				loc=i;
+ 			}
+ 		}
+ 		return loc;
+ 	}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag172')" href="javascript:;">
+sub/getsugaTensho/0/BJOILSUYmKunKg5dPpHmePghz.java: 61-70
+</a>
+<div class="mid" id="frag172" style="display:none"><pre>
+ 	public static int max(int array[]){
+ 		int max=-1,loc=-1;
+ 		for (int i = 0; i &lt; array.length; i++) {
+ 			if(max&lt;array[i]){
+ 				max=array[i];
+ 				loc=i;
+ 			}
+ 		}
+ 		return max;
+ 	}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 5:</b> &nbsp; 2 fragments, nominal size 50 lines, similarity 78%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag191')" href="javascript:;">
+sub/SriramKiran/0/SZEXBPReg8ZGYrt6l9MFVcPR4.java: 13-91
+</a>
+<div class="mid" id="frag191" style="display:none"><pre>
+     public static void main(String[] args) {
+ 
+         String inPutFile = "/Users/KiRaN/Desktop/CodeBase/Google_CodeBase/SheepSleep/src/small.in";
+         String outPutFile = "/Users/KiRaN/Desktop/CodeBase/Google_CodeBase/SheepSleep/src/small.out";
+         
+ //        String inPutFile = "/Users/KiRaN/Desktop/CodeBase/Google_CodeBase/SheepSleep/src/large.in";
+ //        String outPutFile = "/Users/KiRaN/Desktop/CodeBase/Google_CodeBase/SheepSleep/src/large.out";
+         
+         
+         try {
+ 
+             BufferedReader bufferedReader = new BufferedReader(new FileReader(inPutFile));
+             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outPutFile));
+ 
+             // Total number of test cases
+             int noOfTestCases = Integer.valueOf(bufferedReader.readLine());
+             
+             int k = 0;
+              for(int i = 0; i &lt; 26; i++){
+                   alpha[i] = (char)(65 + (k++));
+             }
+             
+             for (int testCase = 0; testCase &lt; noOfTestCases; testCase++){
+                 
+                 int numParties = Integer.parseInt(bufferedReader.readLine());
+                 String[] partyTotals=bufferedReader.readLine().split(" ");
+                 Map&lt;Integer,Integer&gt; partyTotalValues = new HashMap&lt;&gt;();
+                 int currentCountInHall = 0;
+                 
+                 
+                 for(int i=0; i&lt;numParties; i++){
+                     partyTotalValues.put(i, Integer.valueOf(partyTotals[i]));
+                     currentCountInHall+=Integer.valueOf(partyTotals[i]);
+                 }
+                 
+                 List&lt;String&gt; outputCombination = new ArrayList&lt;&gt;();
+                 ArrayList&lt;Integer&gt; currMemberCount = new ArrayList&lt;Integer&gt;(partyTotalValues.values());
+                 while((sum(currMemberCount)/2) &gt;= getMaxValue(currMemberCount) &amp;&amp; getMaxValue(currMemberCount)!=0 ) {
+                     List&lt;Integer&gt; maxIndiceValues = maxIndices(currMemberCount);
+                     maxIndiceValues.stream().forEach(index -&gt; {
+                         int currentCountOfParty = partyTotalValues.get(index);
+                         partyTotalValues.put(index, currentCountOfParty-1);
+                         outputCombination.add(String.valueOf(alpha[index]));
+                     });
+                     outputCombination.add(" ");
+                     currMemberCount = new ArrayList&lt;Integer&gt;(partyTotalValues.values());
+                 }
+                 
+                 String outputString = "";
+                 for(String str: outputCombination) {
+                     outputString = outputString.concat(str);
+                 }
+                 
+                 bufferedWriter.write("Case #" + (testCase + 1) + ": " + outputString.trim());
+                 System.out.print("Case #" + (testCase + 1) + ": " + outputString.trim());
+                 bufferedWriter.write("\n");
+                 System.out.print("\n");
+             }
+                 
+             bufferedReader.close();
+             bufferedWriter.close();
+ 
+         } catch (FileNotFoundException fileNotFoundException) {
+ 
+             System.out.println("Some Exception: " + fileNotFoundException.getMessage());
+             fileNotFoundException.printStackTrace();
+ 
+         } catch (IOException ioException) {
+ 
+             System.out.println("Some Exception: " + ioException.getMessage());
+             ioException.printStackTrace();
+ 
+         } catch (Exception exception) {
+             
+             System.out.println("Some Exception: " + exception.getMessage());
+             exception.printStackTrace();
+         }
+ 
+     }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag281')" href="javascript:;">
+sub/Moshin/0/UJpsO7KPk2H12HAbxOowItRZ4.java: 10-75
+</a>
+<div class="mid" id="frag281" style="display:none"><pre>
+     public static void main(String[] args) {
+ 
+ 		String in = "/Users/Moshin/Code Jam//small.in";
+ 		String out = "/Users/Moshin/Code Jam/small.out";
+ //		String in = "/Users/Moshin/Code Jam/large.in";
+ //		String out = "/Users/Moshin/Code Jam/large.out";        
+         
+         try {
+ 
+         	
+             BufferedReader bufferedReader = new BufferedReader(new FileReader(in));
+             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(out));
+ 
+             char[] a = new char[26];
+ 
+             // Total number of test cases
+             int noOfTestCases = Integer.valueOf(bufferedReader.readLine());
+             
+             int k = 0;
+              for(int i = 0; i &lt; 26; i++){
+                   a[i] = (char)(65 + (k++));
+             }
+             
+             for (int testCase = 0; testCase &lt; noOfTestCases; testCase++){
+                 
+                 int numParties = Integer.parseInt(bufferedReader.readLine());
+                 String[] partyTotals=bufferedReader.readLine().split(" ");
+                 Map&lt;Integer,Integer&gt; partyTotalValues = new HashMap&lt;&gt;();
+                 
+                 
+                 for(int i=0; i&lt;numParties; i++){
+                     partyTotalValues.put(i, Integer.valueOf(partyTotals[i]));
+                 }
+                 
+                 List&lt;String&gt; oc = new ArrayList&lt;&gt;();
+                 ArrayList&lt;Integer&gt; cmc = new ArrayList&lt;Integer&gt;(partyTotalValues.values());
+                 while((sum(cmc)/2) &gt;= getMaxValue(cmc) &amp;&amp; getMaxValue(cmc)!=0 ) {
+                     List&lt;Integer&gt; maxIndiceValues = maxIndices(cmc);
+                     maxIndiceValues.stream().forEach(index -&gt; {
+                         int currentCountOfParty = partyTotalValues.get(index);
+                         partyTotalValues.put(index, currentCountOfParty-1);
+                         oc.add(String.valueOf(a[index]));
+                     });
+                     oc.add(" ");
+                     cmc = new ArrayList&lt;Integer&gt;(partyTotalValues.values());
+                 }
+                 
+                 String outputString = "";
+                 for(String str: oc) {
+                     outputString = outputString.concat(str);
+                 }
+                 
+                 bufferedWriter.write("Case #" + (testCase + 1) + ": " + outputString.trim());
+                 System.out.print("Case #" + (testCase + 1) + ": " + outputString.trim());
+                 bufferedWriter.write("\n");
+                 System.out.print("\n");
+             }
+                 
+             bufferedReader.close();
+             bufferedWriter.close();
+ 
+         }catch (Exception exception) {
+             
+         }
+ 
+     }
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 6:</b> &nbsp; 2 fragments, nominal size 24 lines, similarity 100%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag193')" href="javascript:;">
+sub/SriramKiran/0/SZEXBPReg8ZGYrt6l9MFVcPR4.java: 99-125
+</a>
+<div class="mid" id="frag193" style="display:none"><pre>
+     public static ArrayList&lt;Integer&gt; maxIndices(ArrayList&lt;Integer&gt; list) {
+         ArrayList&lt;Integer&gt; indices = new ArrayList&lt;Integer&gt;();
+         int max =  getMaxValue(list);
+         int total = sum(list);
+         boolean sendTwo = false;
+         
+         if(total%2 == 0) {
+             sendTwo = true;
+         }
+         
+         for (int i = 0; i &lt; list.size(); i++) {
+             
+             if(max==1 &amp;&amp; list.get(i) == max) {
+                 indices.add(i);
+                 if(!sendTwo) {
+                     break;
+                 }
+             } else if(list.get(i) == max) {
+                indices.add(i);
+             }
+             if(indices.size() == 2) {
+                 break;
+             }
+          }
+ 
+          return indices;
+     }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag283')" href="javascript:;">
+sub/Moshin/0/UJpsO7KPk2H12HAbxOowItRZ4.java: 83-109
+</a>
+<div class="mid" id="frag283" style="display:none"><pre>
+     public static ArrayList&lt;Integer&gt; maxIndices(ArrayList&lt;Integer&gt; list) {
+         ArrayList&lt;Integer&gt; indices = new ArrayList&lt;Integer&gt;();
+         int max =  getMaxValue(list);
+         int total = sum(list);
+         boolean sendTwo = false;
+         
+         if(total%2 == 0) {
+             sendTwo = true;
+         }
+         
+         for (int i = 0; i &lt; list.size(); i++) {
+             
+             if(max==1 &amp;&amp; list.get(i) == max) {
+                 indices.add(i);
+                 if(!sendTwo) {
+                     break;
+                 }
+             } else if(list.get(i) == max) {
+                indices.add(i);
+             }
+             if(indices.size() == 2) {
+                 break;
+             }
+          }
+ 
+          return indices;
+     }
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 7:</b> &nbsp; 2 fragments, nominal size 26 lines, similarity 100%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag201')" href="javascript:;">
+sub/mini.bajaj/0/EZYts0wYMq1WA0aYncfqvgUSU.java: 8-48
+</a>
+<div class="mid" id="frag201" style="display:none"><pre>
+ 	private static String evacuate(int[] _parties) {
+ 		
+ 		StringBuffer output = new StringBuffer();
+ 		
+ 		int total = 0;
+ 		int maxCandiatesParty = -1;
+ 		
+ 		for (int i = 0; i &lt; _parties.length; i++) {
+ 			total += _parties[i];
+ 		}
+ 		
+ 		while (total &gt; 0) {
+ 			
+ 			maxCandiatesParty = findMax(_parties);
+ 			
+ 			// evacuate maximum one
+ 			_parties[maxCandiatesParty]--;
+ 			total--;
+ 			output.append((char) ('A' + maxCandiatesParty));
+ 			
+ 			// find max again.
+ 			maxCandiatesParty = findMax(_parties);
+ 			
+ 			_parties[maxCandiatesParty]--;
+ 			total--;
+ 			
+ 			if (isMajority(_parties, total)) {
+ 				// revert
+ 				total++;
+ 				_parties[maxCandiatesParty]++;
+ 				output.append(" ");
+ 				continue;
+ 			}
+ 			
+ 			output.append((char) ('A' + maxCandiatesParty));
+ 			output.append(" ");
+ 		}
+ 		
+ 		return output.toString();
+ 		
+ 	}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag216')" href="javascript:;">
+sub/jaat/0/XndJ2yYeKrZWsM0iorPSNdpS4.java: 8-48
+</a>
+<div class="mid" id="frag216" style="display:none"><pre>
+ 	private static String evacuate(int[] _parties) {
+ 		
+ 		StringBuffer output = new StringBuffer();
+ 		
+ 		int total = 0;
+ 		int maxCandiatesParty = -1;
+ 		
+ 		for (int i = 0; i &lt; _parties.length; i++) {
+ 			total += _parties[i];
+ 		}
+ 		
+ 		while (total &gt; 0) {
+ 			
+ 			maxCandiatesParty = findMax(_parties);
+ 			
+ 			// evacuate maximum one
+ 			_parties[maxCandiatesParty]--;
+ 			total--;
+ 			output.append((char) ('A' + maxCandiatesParty));
+ 			
+ 			// find max again.
+ 			maxCandiatesParty = findMax(_parties);
+ 			
+ 			_parties[maxCandiatesParty]--;
+ 			total--;
+ 			
+ 			if (isMajority(_parties, total)) {
+ 				// revert
+ 				total++;
+ 				_parties[maxCandiatesParty]++;
+ 				output.append(" ");
+ 				continue;
+ 			}
+ 			
+ 			output.append((char) ('A' + maxCandiatesParty));
+ 			output.append(" ");
+ 		}
+ 		
+ 		return output.toString();
+ 		
+ 	}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 8:</b> &nbsp; 2 fragments, nominal size 29 lines, similarity 100%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag204')" href="javascript:;">
+sub/mini.bajaj/0/EZYts0wYMq1WA0aYncfqvgUSU.java: 75-116
+</a>
+<div class="mid" id="frag204" style="display:none"><pre>
+ 	public static void main(String[] args) {
+ 		
+ 		String fileName = args[0];
+ 		
+ 		BufferedReader reader = null;
+ 		
+ 		try {
+ 			reader = new BufferedReader(new FileReader(new File(fileName)));
+ 			
+ 			String line = reader.readLine();
+ 			
+ 			int totalTestCases = Integer.parseInt(line);
+ 			
+ 			for (int i = 1; i &lt;= totalTestCases; i++) {
+ 				
+ 				int noOfParties = Integer.parseInt(reader.readLine());
+ 				
+ 				String partyInfo = reader.readLine();
+ 				
+ 				int[] parties = new int[noOfParties];
+ 				
+ 				int index = 0;
+ 				for (String party : partyInfo.split(" ")) {
+ 					parties[index] = Integer.parseInt(party);
+ 					index++;
+ 				}
+ 				
+ 				System.out.println(String.format("Case #%d: %s", i, evacuate(parties)));
+ 			}
+ 		
+ 		} catch (IOException e) {
+ 			e.printStackTrace();
+ 		} finally {
+ 			if (reader != null) {
+ 				try {
+ 					reader.close();
+ 				} catch (IOException e) {
+ 					
+ 				}	
+ 			}
+ 		}
+ 	}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag219')" href="javascript:;">
+sub/jaat/0/XndJ2yYeKrZWsM0iorPSNdpS4.java: 75-116
+</a>
+<div class="mid" id="frag219" style="display:none"><pre>
+ 	public static void main(String[] args) {
+ 		
+ 		String fileName = args[0];
+ 		
+ 		BufferedReader reader = null;
+ 		
+ 		try {
+ 			reader = new BufferedReader(new FileReader(new File(fileName)));
+ 			
+ 			String line = reader.readLine();
+ 			
+ 			int totalTestCases = Integer.parseInt(line);
+ 			
+ 			for (int i = 1; i &lt;= totalTestCases; i++) {
+ 				
+ 				int noOfParties = Integer.parseInt(reader.readLine());
+ 				
+ 				String partyInfo = reader.readLine();
+ 				
+ 				int[] parties = new int[noOfParties];
+ 				
+ 				int index = 0;
+ 				for (String party : partyInfo.split(" ")) {
+ 					parties[index] = Integer.parseInt(party);
+ 					index++;
+ 				}
+ 				
+ 				System.out.println(String.format("Case #%d: %s", i, evacuate(parties)));
+ 			}
+ 		
+ 		} catch (IOException e) {
+ 			e.printStackTrace();
+ 		} finally {
+ 			if (reader != null) {
+ 				try {
+ 					reader.close();
+ 				} catch (IOException e) {
+ 					
+ 				}	
+ 			}
+ 		}
+ 	}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 9:</b> &nbsp; 2 fragments, nominal size 10 lines, similarity 87%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag211')" href="javascript:;">
+sub/fanKarpaty/0/QtXAFXn3Q8yvPEDtyxp9wjQJz.java: 20-31
+</a>
+<div class="mid" id="frag211" style="display:none"><pre>
+ 	private static int readInt() {
+ 		try {
+ 			return Integer.parseInt(br.readLine());
+ 		} catch (NumberFormatException e) {
+ 			// TODO Auto-generated catch block
+ 			e.printStackTrace();
+ 		} catch (IOException e) {
+ 			// TODO Auto-generated catch block
+ 			e.printStackTrace();
+ 		}
+ 		return 0;
+ 	}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag212')" href="javascript:;">
+sub/fanKarpaty/0/QtXAFXn3Q8yvPEDtyxp9wjQJz.java: 33-44
+</a>
+<div class="mid" id="frag212" style="display:none"><pre>
+ 	private static double readDouble() {
+ 		try {
+ 			return Double.parseDouble(br.readLine());
+ 		} catch (NumberFormatException e) {
+ 			// TODO Auto-generated catch block
+ 			e.printStackTrace();
+ 		} catch (IOException e) {
+ 			// TODO Auto-generated catch block
+ 			e.printStackTrace();
+ 		}
+ 		return 0;
+ 	}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 10:</b> &nbsp; 2 fragments, nominal size 17 lines, similarity 85%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag230')" href="javascript:;">
+sub/a3636tako/0/M7d9gv9ZnV9lomGUh7Abxzjub.java: 74-90
+</a>
+<div class="mid" id="frag230" style="display:none"><pre>
+ 	public static int nextInt(){
+ 		int num = 0;
+ 		String str = next();
+ 		boolean minus = false;
+ 		int i = 0;
+ 		if(str.charAt(0) == '-'){
+ 			minus = true;
+ 			i++;
+ 		}
+ 		int len = str.length();
+ 		for(;i &lt; len; i++){
+ 			char c = str.charAt(i);
+ 			if(!('0' &lt;= c &amp;&amp; c &lt;= '9')) throw new RuntimeException();
+ 			num = num * 10 + (c - '0');
+ 		}
+ 		return minus ? -num : num;
+ 	}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag231')" href="javascript:;">
+sub/a3636tako/0/M7d9gv9ZnV9lomGUh7Abxzjub.java: 92-108
+</a>
+<div class="mid" id="frag231" style="display:none"><pre>
+ 	public static long nextLong(){
+ 		long num = 0;
+ 		String str = next();
+ 		boolean minus = false;
+ 		int i = 0;
+ 		if(str.charAt(0) == '-'){
+ 			minus = true;
+ 			i++;
+ 		}
+ 		int len = str.length();
+ 		for(;i &lt; len; i++){
+ 			char c = str.charAt(i);
+ 			if(!('0' &lt;= c &amp;&amp; c &lt;= '9')) throw new RuntimeException();
+ 			num = num * 10l + (c - '0');
+ 		}
+ 		return minus ? -num : num;
+ 	}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 11:</b> &nbsp; 2 fragments, nominal size 12 lines, similarity 77%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag251')" href="javascript:;">
+sub/sush1985/0/XWvTbHtPPUY70b1F0n5XBTgir.java: 96-107
+</a>
+<div class="mid" id="frag251" style="display:none"><pre>
+     public static int getPartyWithHighestSenators(int [] senator) {
+         int max = Integer.MIN_VALUE;
+         int partyWithMaxSenators = -1;
+         for(int i = 0; i &lt; senator.length; i++) {
+             int count = senator[i];
+             if(count &gt; max) {
+                 max = count;
+                 partyWithMaxSenators = i;
+             }
+         }
+         return partyWithMaxSenators;
+     }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag252')" href="javascript:;">
+sub/sush1985/0/XWvTbHtPPUY70b1F0n5XBTgir.java: 109-120
+</a>
+<div class="mid" id="frag252" style="display:none"><pre>
+     public static int getPartyWithSecondHighestSenator(int [] senator, int partyWithMaxSenator) {
+         int max = Integer.MIN_VALUE;
+         int partyWithMaxSenators = -1;
+         for(int i = 0; i &lt; senator.length; i++) {
+             int count = senator[i];
+             if(count &gt; max &amp;&amp; i != partyWithMaxSenator) {
+                 max = count;
+                 partyWithMaxSenators = i;
+             }
+         }
+         return partyWithMaxSenators;
+     }
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 12:</b> &nbsp; 2 fragments, nominal size 10 lines, similarity 71%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag304')" href="javascript:;">
+sub/GodZ/0/F8oMwmLqhJJjrGTzcJhC30Any.java: 43-52
+</a>
+<div class="mid" id="frag304" style="display:none"><pre>
+ 	private boolean oddSenators() {
+ 		int count = 0;
+ 		for (Integer party : parties) {
+ 			count += party;
+ 		}
+ 		if (count % 2 == 0) {
+ 			return false;
+ 		}
+ 		return true;
+ 	}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag305')" href="javascript:;">
+sub/GodZ/0/F8oMwmLqhJJjrGTzcJhC30Any.java: 54-63
+</a>
+<div class="mid" id="frag305" style="display:none"><pre>
+ 	private boolean senatorsPresent() {
+ 		int count = 0;
+ 		for (Integer party : parties) {
+ 			count += party;
+ 		}
+ 		if (count &gt; 0) {
+ 			return true;
+ 		}
+ 		return false;
+ 	}
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<script language="JavaScript">
+function ShowHide(divId) { 
+    if(document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display='block';
+    } else { 
+        document.getElementById(divId).style.display = 'none';
+    } 
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,4147 @@
+agec-runscript java-large > agec-large-the-last-word.txt  0,17s user 0,09s system 1% cpu 17,140 total
+
+[Script] Using docker: Docker version 20.10.12, build e91ed5707e
+Running on /home/agec-user/data/java-large
+Step 1: produce and disassemble java jar files
+     1.1: prepare all java files
+     1.2: compile java files
+     1.3: produce classlist
+     1.4: produce jar
+added manifest
+adding: A3PJQOma8oHsX3yca6t0a2Oms.class(in = 1635) (out= 915)(deflated 44%)
+adding: AReuNAAB0acUDYaAzqbBZgiy0.class(in = 2032) (out= 1112)(deflated 45%)
+adding: Aks9gE2FNsbPWslHNxGvxR1sN.class(in = 1847) (out= 1117)(deflated 39%)
+adding: BaqPgzGb6nJZA1wIY4LtTzA3w.class(in = 1937) (out= 1128)(deflated 41%)
+adding: BsQglKr7wLJszwxrrbSX0NTTu.class(in = 1620) (out= 907)(deflated 44%)
+adding: Codechef.class(in = 1667) (out= 898)(deflated 46%)
+adding: DKB9ZPUYhWoTMhdJH5HACYbzA.class(in = 2547) (out= 1372)(deflated 46%)
+adding: DaOnXB7loVPxByth0Vt30dlv4.class(in = 1577) (out= 868)(deflated 44%)
+adding: ELr4DBC2luQnAbmUX4Z6LYNBN.class(in = 2043) (out= 1123)(deflated 45%)
+adding: ET8n9q8JRqmBMX5ycA1sIcIEi.class(in = 1846) (out= 1017)(deflated 44%)
+adding: Eehmc5cA17DkRwhUMkZVmV327.class(in = 1659) (out= 924)(deflated 44%)
+adding: EoHDEM73Mj4tEUxctrEMbCktc.class(in = 2008) (out= 1098)(deflated 45%)
+adding: FjsD8JCsgV77Wmkg2jAjGXcJ5.class(in = 2322) (out= 1234)(deflated 46%)
+adding: Fvlwp2s8Z4tWHHSpBPI1kZlGQ.class(in = 2689) (out= 1463)(deflated 45%)
+adding: G7C4PJz5Rz3ErimU7VJDqjXd7.class(in = 1846) (out= 1060)(deflated 42%)
+adding: HnOTnveSZc2M6Lt86ZefCKOo4/(in = 0) (out= 0)(stored 0%)
+adding: HnOTnveSZc2M6Lt86ZefCKOo4/HnOTnveSZc2M6Lt86ZefCKOo4.class(in = 3710) (out= 1835)(deflated 50%)
+adding: HzRz8mZnHMO3M2uxzPG29U7Wg.class(in = 2190) (out= 1226)(deflated 44%)
+adding: IHAPoeIB6uDLas6irIILjWYQS.class(in = 2040) (out= 1168)(deflated 42%)
+adding: IJN4tLWISdLJIJpqzetneXfHz.class(in = 1928) (out= 1106)(deflated 42%)
+adding: IePHMqtIwsYKHV7AHPG5vpp0a/(in = 0) (out= 0)(stored 0%)
+adding: IePHMqtIwsYKHV7AHPG5vpp0a/IePHMqtIwsYKHV7AHPG5vpp0a.class(in = 1837) (out= 998)(deflated 45%)
+adding: Isj3ECv96yrb92EQTpn97gHl9.class(in = 2134) (out= 1187)(deflated 44%)
+adding: Jefq9rB10nVxFMHQuN9CdJMUR.class(in = 2044) (out= 1153)(deflated 43%)
+adding: K6kboEDuTSndwW5uh9KefhRDM.class(in = 1306) (out= 777)(deflated 40%)
+adding: LHPIyaUu8f1ULyA3BbqMNIoUZ.class(in = 1627) (out= 908)(deflated 44%)
+adding: LWSYIechZCT5a1TqEUYt2aW2d.class(in = 1829) (out= 994)(deflated 45%)
+adding: Lfu6HuA5AebUjYNZ6D8wsgQdC.class(in = 2369) (out= 1345)(deflated 43%)
+adding: LlGdskKFV12UlHyUs4yUU6WNn.class(in = 1753) (out= 969)(deflated 44%)
+adding: M0OtQWQJ2q2ahH0FUWnwm9KSY.class(in = 1807) (out= 1086)(deflated 39%)
+adding: MnfH4971SHIsOw7y5FS3iNKgU.class(in = 2011) (out= 1132)(deflated 43%)
+adding: N4QFyaGIIrBuSwJrKjSCMtUMN.class(in = 1350) (out= 807)(deflated 40%)
+adding: NINAJ6zWEAXQRPma5wu8qAkdd.class(in = 1831) (out= 1054)(deflated 42%)
+adding: NLDc4JkgwQTEd3swXWXfOWl9d.class(in = 1534) (out= 854)(deflated 44%)
+adding: NVvNv3sNk8N9q01lG7d6SwnNc.class(in = 1495) (out= 884)(deflated 40%)
+adding: NfCXsW97Rdn8SuMuhYtmiF9LR.class(in = 2736) (out= 1520)(deflated 44%)
+adding: NhFpHPW88iM5QFLkibkwBPJ9d.class(in = 2361) (out= 1271)(deflated 46%)
+adding: O1fI4iVnjO7nLrd5xra4eLPoL.class(in = 1858) (out= 1000)(deflated 46%)
+adding: OmKal4zI8BOuxCZbJ8YSar5TX.class(in = 3159) (out= 1679)(deflated 46%)
+adding: Oyohpk5OpmcGAAXwua9hKxJcc.class(in = 1962) (out= 1088)(deflated 44%)
+adding: PcUg7rxtSEwxFlqdEFnN8gvdP.class(in = 2304) (out= 1311)(deflated 43%)
+adding: Q4Yvf8PdzyHgVExa9GgHs1J97.class(in = 1621) (out= 904)(deflated 44%)
+adding: QZyD6mjvgudFTGFCJDz9qsuuy.class(in = 1570) (out= 872)(deflated 44%)
+adding: QjBaN7MByskBg7kTHX8cMTBQW.class(in = 2763) (out= 1558)(deflated 43%)
+adding: Qr14oulyocxvwTxKoPHtZP7h3.class(in = 1960) (out= 1099)(deflated 43%)
+adding: QrCVDQJYOFTXMnWVXBUMv1Pio.class(in = 2413) (out= 1348)(deflated 44%)
+adding: QvS9i8bUyGOrumpkDqlfLweiR.class(in = 2298) (out= 1339)(deflated 41%)
+adding: R723UYFgRSGCs8MpZTtl3Ru2w.class(in = 1950) (out= 1108)(deflated 43%)
+adding: RSWotT9HwA8GeCL2q9NtEdma3.class(in = 1967) (out= 1096)(deflated 44%)
+adding: Round1/(in = 0) (out= 0)(stored 0%)
+adding: Round1/HEtWRxrH4jK0B7LXcBFvBEO2U.class(in = 1817) (out= 1021)(deflated 43%)
+adding: Round1/FzBWmutT3CZKGvz4Huyn6BWNh.class(in = 1994) (out= 1083)(deflated 45%)
+adding: Round1A/(in = 0) (out= 0)(stored 0%)
+adding: Round1A/ToWW5tasgRFeWSgXbR9RDbdGM.class(in = 1659) (out= 922)(deflated 44%)
+adding: SF3EgSKyseHKbqzBEgWRk5Azi.class(in = 1769) (out= 991)(deflated 43%)
+adding: TheLastWord/(in = 0) (out= 0)(stored 0%)
+adding: TheLastWord/Mm3PfYUj59XLF4QkrHR21QqLN.class(in = 1783) (out= 1013)(deflated 43%)
+adding: V8pdr1HqZeGe48opkZKnm5GN7.class(in = 2380) (out= 1350)(deflated 43%)
+adding: VFTFxe7ZklMmSPyz66kbQlnjh.class(in = 2636) (out= 1569)(deflated 40%)
+adding: WYQ9fDkIoc2JuQTpuoZvbOoBN.class(in = 3063) (out= 1783)(deflated 41%)
+adding: WjF9wI64hHVkP8DaDwOfGWi8G.class(in = 1624) (out= 885)(deflated 45%)
+adding: Wp0POUOTrkXKSuCkRmkNeBJLN.class(in = 3095) (out= 1711)(deflated 44%)
+adding: X3ZQ8IaTJuFXF5wydW7uBer0D.class(in = 2357) (out= 1221)(deflated 48%)
+adding: X4ktrhZOBxLkITveTyRRUaUC4.class(in = 1704) (out= 943)(deflated 44%)
+adding: XQqBMkIPbpU4VwfGJjbGJSqJY.class(in = 1505) (out= 912)(deflated 39%)
+adding: XnNhCfuKvLaCJmHeUrAmLWATQ.class(in = 1807) (out= 1003)(deflated 44%)
+adding: Y9shRswsxACJYJ84hxbS5Z7PO.class(in = 1809) (out= 1010)(deflated 44%)
+adding: YaZGW8vwpzXxOwxexrMMPUd7O.class(in = 1534) (out= 846)(deflated 44%)
+adding: YwPWevNTeYSwtrf0OauWSdqSw.class(in = 1752) (out= 990)(deflated 43%)
+adding: YywHVeuP3frWxFjKo5ckCJ8b3.class(in = 1669) (out= 943)(deflated 43%)
+adding: Z4AdHVwbXrLI8qckywUXuyUVT.class(in = 2714) (out= 1518)(deflated 44%)
+adding: Z7iYxk5y1OHHVYYpRWwOMxafV.class(in = 3014) (out= 1577)(deflated 47%)
+adding: ZRc4dYaqeMQWjexsnMopPKRRX.class(in = 2199) (out= 1221)(deflated 44%)
+adding: ZYiIT6HaQbvJKo6afNovC2en0.class(in = 1587) (out= 875)(deflated 44%)
+adding: ZbQX7bZqsLR5HTLM0AknSsy2z.class(in = 2017) (out= 1124)(deflated 44%)
+adding: Zqf4cBIOjEulFOTLjQ7Rj4LLX.class(in = 1800) (out= 1011)(deflated 43%)
+adding: cj/(in = 0) (out= 0)(stored 0%)
+adding: cj/y2016/(in = 0) (out= 0)(stored 0%)
+adding: cj/y2016/r1a/(in = 0) (out= 0)(stored 0%)
+adding: cj/y2016/r1a/M24twIRPK5Bz0W2QSLGfiyk1v.class(in = 2723) (out= 1486)(deflated 45%)
+adding: cj2016/(in = 0) (out= 0)(stored 0%)
+adding: cj2016/r1a/(in = 0) (out= 0)(stored 0%)
+adding: cj2016/r1a/VB0aXwMqmdnkbqagKLOdh5XGE.class(in = 2605) (out= 1418)(deflated 45%)
+adding: codeJam/(in = 0) (out= 0)(stored 0%)
+adding: codeJam/LshLSw7Zlg9sNWsd2r1kvRfkH.class(in = 1874) (out= 1057)(deflated 43%)
+adding: code_jam/(in = 0) (out= 0)(stored 0%)
+adding: code_jam/Q1DuniAakyqIJRodWWLo2pdYw.class(in = 1589) (out= 872)(deflated 45%)
+adding: codejam/(in = 0) (out= 0)(stored 0%)
+adding: codejam/R2KYgOGdlm1Ond12UuNqiVsuF.class(in = 1759) (out= 1015)(deflated 42%)
+adding: codejamfirst/(in = 0) (out= 0)(stored 0%)
+adding: codejamfirst/Yd9NugyGERJ5M56m3TRkmHhFZ.class(in = 1775) (out= 1012)(deflated 42%)
+adding: com/(in = 0) (out= 0)(stored 0%)
+adding: com/nitto/(in = 0) (out= 0)(stored 0%)
+adding: com/nitto/VYfue7SuLNNaoZrtL2SlOLdyO.class(in = 1602) (out= 953)(deflated 40%)
+adding: com/donguyen/(in = 0) (out= 0)(stored 0%)
+adding: com/donguyen/googlecodejam/(in = 0) (out= 0)(stored 0%)
+adding: com/donguyen/googlecodejam/codejam2016/(in = 0) (out= 0)(stored 0%)
+adding: com/donguyen/googlecodejam/codejam2016/Kd7MAgg5brUVZDYbOB4QXfe0V.class(in = 2046) (out= 1196)(deflated 41%)
+adding: com/jam/(in = 0) (out= 0)(stored 0%)
+adding: com/jam/solutions/(in = 0) (out= 0)(stored 0%)
+adding: com/jam/solutions/GsH8iJKn7rzVks8PmiqV1amQW.class(in = 2370) (out= 1268)(deflated 46%)
+adding: com/jam/system/(in = 0) (out= 0)(stored 0%)
+adding: com/jam/system/round1a/(in = 0) (out= 0)(stored 0%)
+adding: com/jam/system/round1a/AJS0J8mLpqPr1gp9ziyLWD2xW.class(in = 1924) (out= 1074)(deflated 44%)
+adding: com/jam1A/(in = 0) (out= 0)(stored 0%)
+adding: com/jam1A/Q1/(in = 0) (out= 0)(stored 0%)
+adding: com/jam1A/Q1/FNCanfpmUX72yY8OXc97Osn8S.class(in = 1640) (out= 927)(deflated 43%)
+adding: com/jam1A/Q1/WwVNzo9UzzPu0v8ekRaEIaWJ7.class(in = 1214) (out= 692)(deflated 42%)
+adding: com/google/(in = 0) (out= 0)(stored 0%)
+adding: com/google/codejam/(in = 0) (out= 0)(stored 0%)
+adding: com/google/codejam/ZMyctia4pZfOSN0Q5SGTzoBVv.class(in = 2179) (out= 1226)(deflated 43%)
+adding: com/company/(in = 0) (out= 0)(stored 0%)
+adding: com/company/HB8H3POG4G3C3NrkSWYW8bZ1c.class(in = 1798) (out= 1008)(deflated 43%)
+adding: com/tiennt4/(in = 0) (out= 0)(stored 0%)
+adding: com/tiennt4/BNGZx8p2OWAYI0yyGCXBg9wZO.class(in = 2356) (out= 1325)(deflated 43%)
+adding: com/algos/(in = 0) (out= 0)(stored 0%)
+adding: com/algos/HUlPrZVpAIkQnP8ij9RPpXIYl.class(in = 1820) (out= 973)(deflated 46%)
+adding: gcj16_the_last_word/(in = 0) (out= 0)(stored 0%)
+adding: gcj16_the_last_word/D6zNGOS206nZTEkstO68iUqpf.class(in = 2107) (out= 1168)(deflated 44%)
+adding: gcj2016/(in = 0) (out= 0)(stored 0%)
+adding: gcj2016/r1a/(in = 0) (out= 0)(stored 0%)
+adding: gcj2016/r1a/DX5G3wUVifyUfmPwJi1ynJBZU.class(in = 3222) (out= 1733)(deflated 46%)
+adding: gcj2016r1a/(in = 0) (out= 0)(stored 0%)
+adding: gcj2016r1a/Nko8DchIRdpbpY71B9XUDexfi.class(in = 1670) (out= 959)(deflated 42%)
+adding: googleCodeJam/(in = 0) (out= 0)(stored 0%)
+adding: googleCodeJam/GuBpGaxAxOCUE1kgD2lFUhXKX.class(in = 1856) (out= 1073)(deflated 42%)
+adding: jam/(in = 0) (out= 0)(stored 0%)
+adding: jam/D6AxEEBrSclSORszJJZyFd1eq.class(in = 1788) (out= 962)(deflated 46%)
+adding: javaapplication1/(in = 0) (out= 0)(stored 0%)
+adding: javaapplication1/EU4cjtdU16wWXCc31FSpO99rM.class(in = 1632) (out= 931)(deflated 42%)
+adding: lastWord/(in = 0) (out= 0)(stored 0%)
+adding: lastWord/Z2mmo4wSzTl5UzKWV8Qo7VJc4.class(in = 1962) (out= 1147)(deflated 41%)
+adding: leetcode/(in = 0) (out= 0)(stored 0%)
+adding: leetcode/Va4I9EXDv8FMvTAAKLDbx4eJ5.class(in = 2278) (out= 1275)(deflated 44%)
+adding: problemA/(in = 0) (out= 0)(stored 0%)
+adding: problemA/JzEriwPQyBqMjGTFjLZ4HY6HN.class(in = 1916) (out= 1084)(deflated 43%)
+adding: round1/(in = 0) (out= 0)(stored 0%)
+adding: round1/Ql80UCDTAhhgLC6wuAMBrLh5q.class(in = 1733) (out= 971)(deflated 43%)
+adding: round1A/(in = 0) (out= 0)(stored 0%)
+adding: round1A/NUffkpRAPooWeyXJP3u9x0kIh.class(in = 1465) (out= 893)(deflated 39%)
+adding: round1a/(in = 0) (out= 0)(stored 0%)
+adding: round1a/a/(in = 0) (out= 0)(stored 0%)
+adding: round1a/a/Gca1Z1ofZqh0TWezlA4guY0zz.class(in = 1950) (out= 1103)(deflated 43%)
+adding: subA/(in = 0) (out= 0)(stored 0%)
+adding: subA/LC235TjXM7owAN0iZ2eOipqvZ.class(in = 1724) (out= 985)(deflated 42%)
+adding: the/(in = 0) (out= 0)(stored 0%)
+adding: the/last/(in = 0) (out= 0)(stored 0%)
+adding: the/last/word/(in = 0) (out= 0)(stored 0%)
+adding: the/last/word/R33j1bUooAH0Nct45QQLRLogY$1.class(in = 489) (out= 326)(deflated 33%)
+adding: the/last/word/R33j1bUooAH0Nct45QQLRLogY.class(in = 2384) (out= 1293)(deflated 45%)
+adding: toshico/(in = 0) (out= 0)(stored 0%)
+adding: toshico/gcj_2016/(in = 0) (out= 0)(stored 0%)
+adding: toshico/gcj_2016/round_1a/(in = 0) (out= 0)(stored 0%)
+adding: toshico/gcj_2016/round_1a/J8jp3Fartz8olmoI7SpiDVWbd.class(in = 2102) (out= 1273)(deflated 39%)
+     1.5: disassemble jar
+Step 2: Generate ngram
+Step 3: Detect clones in ngram
+Step 4: Decode clones
+Step 5: Calculate clone metrics
+Step 6: Cleanup
+=====Clones detected:=====
+# --ngram-size=6
+# --max-branch=-1
+# --max-call-depth=-1
+# --max-method-definition=-1
+
+ope:
+  java/io/File."<init>":(Ljava/lang/String;)V
+  java/util/Scanner."<init>":(Ljava/io/File;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  MnfH4971SHIsOw7y5FS3iNKgU.java: 15 >1 // main:([Ljava/lang/String;)V
+  Y9shRswsxACJYJ84hxbS5Z7PO.java: 29 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/io/File."<init>":(Ljava/lang/String;)V
+  java/io/FileWriter."<init>":(Ljava/io/File;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.java: 12 >1 // main:([Ljava/lang/String;)V
+  PcUg7rxtSEwxFlqdEFnN8gvdP.java: 22 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+loc:
+  Eehmc5cA17DkRwhUMkZVmV327.java: 10 >0 // Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;
+  NLDc4JkgwQTEd3swXWXfOWl9d.java: 10 >0 // main:([Ljava/lang/String;)V
+  Q4Yvf8PdzyHgVExa9GgHs1J97.java: 8 >0 // main:([Ljava/lang/String;)V
+  WjF9wI64hHVkP8DaDwOfGWi8G.java: 10 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+loc:
+  DaOnXB7loVPxByth0Vt30dlv4.java: 11 >0 // main:([Ljava/lang/String;)V
+  RSWotT9HwA8GeCL2q9NtEdma3.java: 12 >0 // doMain:()V
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  substring:(II)Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  compareTo:(Ljava/lang/String;)I
+loc:
+  QZyD6mjvgudFTGFCJDz9qsuuy.java: 11 >1 // main:([Ljava/lang/String;)V
+  Y9shRswsxACJYJ84hxbS5Z7PO.java: 35 >2 // main:([Ljava/lang/String;)V
+
+ope:
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+  println:(Ljava/lang/String;)V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  BsQglKr7wLJszwxrrbSX0NTTu.java: 20 >1 // main:([Ljava/lang/String;)V
+  DaOnXB7loVPxByth0Vt30dlv4.java: 14 >1 // main:([Ljava/lang/String;)V
+  XnNhCfuKvLaCJmHeUrAmLWATQ.java: 25 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  charAt:(I)C
+  charAt:(I)C
+  compareTo:(Ljava/lang/String;)I
+  charAt:(I)C
+  placeBefore:(Ljava/lang/String;C)Ljava/lang/String;
+  write:(Ljava/lang/String;)V
+loc:
+  NhFpHPW88iM5QFLkibkwBPJ9d.java: 16 >0 // solve:(Ljava/util/Scanner;Ljava/io/PrintWriter;)V
+  NhFpHPW88iM5QFLkibkwBPJ9d.java: 18 >0 // solve:(Ljava/util/Scanner;Ljava/io/PrintWriter;)V
+
+ope:
+  charAt:(I)C
+  charAt:(I)C
+  println:(Ljava/lang/String;)V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  XnNhCfuKvLaCJmHeUrAmLWATQ.java: 25 >1 // main:([Ljava/lang/String;)V
+  XnNhCfuKvLaCJmHeUrAmLWATQ.java: 27 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  charAt:(I)C
+  charAt:(I)C
+  write:(Ljava/lang/String;)V
+  newLine:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  G7C4PJz5Rz3ErimU7VJDqjXd7.java: 21 >1 // main:([Ljava/lang/String;)V
+  HzRz8mZnHMO3M2uxzPG29U7Wg.java: 34 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+  java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+loc:
+  Eehmc5cA17DkRwhUMkZVmV327.java: 12 >0 // Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;
+  Q4Yvf8PdzyHgVExa9GgHs1J97.java: 9 >0 // main:([Ljava/lang/String;)V
+
+ope:
+  charAt:(I)C
+  java/lang/Character.valueOf:(C)Ljava/lang/Character;
+  compareTo:(Ljava/lang/Character;)I
+  toString:()Ljava/lang/String;
+  concat:(Ljava/lang/String;)Ljava/lang/String;
+  write:(Ljava/lang/String;)V
+loc:
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.java: 34 >0 // main:([Ljava/lang/String;)V
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.java: 38 >0 // main:([Ljava/lang/String;)V
+
+ope:
+  charAt:(I)C
+  print:(Ljava/lang/String;)V
+  println:()V
+  flush:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  RSWotT9HwA8GeCL2q9NtEdma3.java: 16 >1 // doMain:()V
+  RSWotT9HwA8GeCL2q9NtEdma3.java: 18 >1 // doMain:()V
+
+ope:
+  charAt:(I)C
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  java/io/FileOutputStream."<init>":(Ljava/lang/String;)V
+  java/io/OutputStreamWriter."<init>":(Ljava/io/OutputStream;Ljava/lang/String;)V
+  java/io/BufferedWriter."<init>":(Ljava/io/Writer;)V
+  java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+loc:
+  ZbQX7bZqsLR5HTLM0AknSsy2z.java: 17 >0 // main:([Ljava/lang/String;)V
+  ZbQX7bZqsLR5HTLM0AknSsy2z.java: 19 >0 // main:([Ljava/lang/String;)V
+
+ope:
+  charAt:(I)C
+  write:(Ljava/lang/String;)V
+  println:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  Qr14oulyocxvwTxKoPHtZP7h3.java: 39 >1 // main:([Ljava/lang/String;)V
+  Qr14oulyocxvwTxKoPHtZP7h3.java: 44 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  charAt:(I)C
+  write:(Ljava/lang/String;)V
+  newLine:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  HzRz8mZnHMO3M2uxzPG29U7Wg.java: 31 >1 // main:([Ljava/lang/String;)V
+  HzRz8mZnHMO3M2uxzPG29U7Wg.java: 35 >1 // main:([Ljava/lang/String;)V
+  HzRz8mZnHMO3M2uxzPG29U7Wg.java: 38 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  charAt:(I)C
+  java/lang/String.valueOf:(C)Ljava/lang/String;
+  println:(Ljava/lang/String;)V
+  flush:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  VFTFxe7ZklMmSPyz66kbQlnjh.java: 31 >1 // main:([Ljava/lang/String;)V
+  VFTFxe7ZklMmSPyz66kbQlnjh.java: 36 >1 // main:([Ljava/lang/String;)V
+  VFTFxe7ZklMmSPyz66kbQlnjh.java: 40 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+  java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+  printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+loc:
+  Eehmc5cA17DkRwhUMkZVmV327.java: 14 >0 // Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;
+  Q4Yvf8PdzyHgVExa9GgHs1J97.java: 10 >0 // main:([Ljava/lang/String;)V
+
+ope:
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+  println:(Ljava/lang/String;)V
+  flush:()V
+loc:
+  BsQglKr7wLJszwxrrbSX0NTTu.java: 15 >1 // main:([Ljava/lang/String;)V
+  DaOnXB7loVPxByth0Vt30dlv4.java: 13 >1 // main:([Ljava/lang/String;)V
+  XnNhCfuKvLaCJmHeUrAmLWATQ.java: 23 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  println:(Ljava/lang/String;)V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  MnfH4971SHIsOw7y5FS3iNKgU.java: 25 >1 // main:([Ljava/lang/String;)V
+  XnNhCfuKvLaCJmHeUrAmLWATQ.java: 23 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+loc:
+  A3PJQOma8oHsX3yca6t0a2Oms.java: 6 >0 // main:([Ljava/lang/String;)V
+  Eehmc5cA17DkRwhUMkZVmV327.java: 7 >0 // Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;
+  K6kboEDuTSndwW5uh9KefhRDM.java: 7 >1 // main:([Ljava/lang/String;)V
+  NLDc4JkgwQTEd3swXWXfOWl9d.java: 6 >0 // main:([Ljava/lang/String;)V
+  WjF9wI64hHVkP8DaDwOfGWi8G.java: 7 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  substring:(II)Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+loc:
+  QZyD6mjvgudFTGFCJDz9qsuuy.java: 7 >0 // main:([Ljava/lang/String;)V
+  Y9shRswsxACJYJ84hxbS5Z7PO.java: 32 >2 // main:([Ljava/lang/String;)V
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.java: 13 >1 // main:([Ljava/lang/String;)V
+  NINAJ6zWEAXQRPma5wu8qAkdd.java: 19 >1 // main:([Ljava/lang/String;)V
+  ZYiIT6HaQbvJKo6afNovC2en0.java: 23 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+loc:
+  Codechef.java: 15 >0 // main:([Ljava/lang/String;)V
+  MnfH4971SHIsOw7y5FS3iNKgU.java: 21 >0 // main:([Ljava/lang/String;)V
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  length:()I
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.java: 13 >1 // main:([Ljava/lang/String;)V
+  NINAJ6zWEAXQRPma5wu8qAkdd.java: 19 >1 // main:([Ljava/lang/String;)V
+  QrCVDQJYOFTXMnWVXBUMv1Pio.java: 47 >1 // run:()V
+  ZYiIT6HaQbvJKo6afNovC2en0.java: 23 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  substring:(II)Ljava/lang/String;
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.java: 13 >1 // main:([Ljava/lang/String;)V
+  NINAJ6zWEAXQRPma5wu8qAkdd.java: 19 >1 // main:([Ljava/lang/String;)V
+  YaZGW8vwpzXxOwxexrMMPUd7O.java: 6 >0 // main:([Ljava/lang/String;)V
+  ZYiIT6HaQbvJKo6afNovC2en0.java: 23 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  readLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+loc:
+  ELr4DBC2luQnAbmUX4Z6LYNBN.java: 35 >1 // main:([Ljava/lang/String;)V
+  ZbQX7bZqsLR5HTLM0AknSsy2z.java: 13 >0 // main:([Ljava/lang/String;)V
+
+ope:
+  readLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  readLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  NVvNv3sNk8N9q01lG7d6SwnNc.java: 9 >0 // main:([Ljava/lang/String;)V
+  ZbQX7bZqsLR5HTLM0AknSsy2z.java: 10 >0 // main:([Ljava/lang/String;)V
+
+ope:
+  java/lang/Character.valueOf:(C)Ljava/lang/Character;
+  add:(Ljava/lang/Object;)Z
+  size:()I
+  iterator:()Ljava/util/Iterator;
+  hasNext:()Z
+  next:()Ljava/lang/Object;
+loc:
+  DKB9ZPUYhWoTMhdJH5HACYbzA.java: 19 >2 // main:([Ljava/lang/String;)V
+  V8pdr1HqZeGe48opkZKnm5GN7.java: 30 >0 // main:([Ljava/lang/String;)V
+  V8pdr1HqZeGe48opkZKnm5GN7.java: 35 >0 // main:([Ljava/lang/String;)V
+
+ope:
+  java/lang/Character.valueOf:(C)Ljava/lang/Character;
+  add:(Ljava/lang/Object;)Z
+  size:()I
+  iterator:()Ljava/util/Iterator;
+  hasNext:()Z
+  write:(Ljava/lang/String;)V
+loc:
+  V8pdr1HqZeGe48opkZKnm5GN7.java: 30 >0 // main:([Ljava/lang/String;)V
+  V8pdr1HqZeGe48opkZKnm5GN7.java: 35 >0 // main:([Ljava/lang/String;)V
+
+ope:
+  java/lang/Character.valueOf:(C)Ljava/lang/Character;
+  compareTo:(Ljava/lang/Character;)I
+  toString:()Ljava/lang/String;
+  concat:(Ljava/lang/String;)Ljava/lang/String;
+  write:(Ljava/lang/String;)V
+  flush:()V
+loc:
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.java: 34 >1 // main:([Ljava/lang/String;)V
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.java: 38 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  toString:()Ljava/lang/String;
+  concat:(Ljava/lang/String;)Ljava/lang/String;
+  write:(Ljava/lang/String;)V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.java: 35 >1 // main:([Ljava/lang/String;)V
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.java: 39 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  substring:(II)Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+  println:(Ljava/lang/String;)V
+loc:
+  DaOnXB7loVPxByth0Vt30dlv4.java: 12 >0 // main:([Ljava/lang/String;)V
+  XnNhCfuKvLaCJmHeUrAmLWATQ.java: 22 >0 // main:([Ljava/lang/String;)V
+
+ope:
+  java/io/FileReader."<init>":(Ljava/lang/String;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  java/io/FileWriter."<init>":(Ljava/lang/String;)V
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+loc:
+  NhFpHPW88iM5QFLkibkwBPJ9d.java: 35 >1 // main:([Ljava/lang/String;)V
+  RSWotT9HwA8GeCL2q9NtEdma3.java: 7 >1 // doMain:()V
+  VFTFxe7ZklMmSPyz66kbQlnjh.java: 18 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/io/FileReader."<init>":(Ljava/lang/String;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  java/io/FileWriter."<init>":(Ljava/lang/String;)V
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+loc:
+  NhFpHPW88iM5QFLkibkwBPJ9d.java: 35 >0 // main:([Ljava/lang/String;)V
+  VFTFxe7ZklMmSPyz66kbQlnjh.java: 18 >0 // main:([Ljava/lang/String;)V
+
+ope:
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+loc:
+  AReuNAAB0acUDYaAzqbBZgiy0.java: 11 >1 // main:([Ljava/lang/String;)V
+  LlGdskKFV12UlHyUs4yUU6WNn.java: 29 >1 // main:([Ljava/lang/String;)V
+  NINAJ6zWEAXQRPma5wu8qAkdd.java: 14 >1 // main:([Ljava/lang/String;)V
+  QrCVDQJYOFTXMnWVXBUMv1Pio.java: 45 >1 // run:()V
+  X4ktrhZOBxLkITveTyRRUaUC4.java: 7 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.read:()I
+  isAlNum:(I)Z
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.read:()I
+  isAlNum:(I)Z
+loc:
+  AReuNAAB0acUDYaAzqbBZgiy0.java: 11 >1 // main:([Ljava/lang/String;)V
+  X4ktrhZOBxLkITveTyRRUaUC4.java: 7 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+loc:
+  NINAJ6zWEAXQRPma5wu8qAkdd.java: 14 >1 // main:([Ljava/lang/String;)V
+  QrCVDQJYOFTXMnWVXBUMv1Pio.java: 45 >1 // run:()V
+
+ope:
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  java/io/FileWriter."<init>":(Ljava/lang/String;)V
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+loc:
+  NhFpHPW88iM5QFLkibkwBPJ9d.java: 35 >1 // main:([Ljava/lang/String;)V
+  RSWotT9HwA8GeCL2q9NtEdma3.java: 7 >1 // doMain:()V
+  VFTFxe7ZklMmSPyz66kbQlnjh.java: 18 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/io/FileWriter."<init>":(Ljava/lang/String;)V
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  NhFpHPW88iM5QFLkibkwBPJ9d.java: 36 >1 // main:([Ljava/lang/String;)V
+  RSWotT9HwA8GeCL2q9NtEdma3.java: 8 >1 // doMain:()V
+  VFTFxe7ZklMmSPyz66kbQlnjh.java: 19 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+loc:
+  NhFpHPW88iM5QFLkibkwBPJ9d.java: 36 >1 // main:([Ljava/lang/String;)V
+  RSWotT9HwA8GeCL2q9NtEdma3.java: 8 >1 // doMain:()V
+  VFTFxe7ZklMmSPyz66kbQlnjh.java: 20 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  readLine:()Ljava/lang/String;
+  java/util/StringTokenizer."<init>":(Ljava/lang/String;)V
+  nextToken:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  readLine:()Ljava/lang/String;
+loc:
+  IHAPoeIB6uDLas6irIILjWYQS.java: 12 >0 // main:([Ljava/lang/String;)V
+  Isj3ECv96yrb92EQTpn97gHl9.java: 18 >0 // main:([Ljava/lang/String;)V
+
+ope:
+  java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+loc:
+  A3PJQOma8oHsX3yca6t0a2Oms.java: 5 >1 // main:([Ljava/lang/String;)V
+  Codechef.java: 13 >1 // main:([Ljava/lang/String;)V
+  DaOnXB7loVPxByth0Vt30dlv4.java: 6 >1 // main:([Ljava/lang/String;)V
+  K6kboEDuTSndwW5uh9KefhRDM.java: 5 >1 // main:([Ljava/lang/String;)V
+  LHPIyaUu8f1ULyA3BbqMNIoUZ.java: 12 >1 // main:([Ljava/lang/String;)V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.java: 14 >1 // main:([Ljava/lang/String;)V
+  NLDc4JkgwQTEd3swXWXfOWl9d.java: 5 >1 // main:([Ljava/lang/String;)V
+  QZyD6mjvgudFTGFCJDz9qsuuy.java: 6 >1 // main:([Ljava/lang/String;)V
+  SF3EgSKyseHKbqzBEgWRk5Azi.java: 6 >1 // main:([Ljava/lang/String;)V
+  WjF9wI64hHVkP8DaDwOfGWi8G.java: 6 >1 // main:([Ljava/lang/String;)V
+  XQqBMkIPbpU4VwfGJjbGJSqJY.java: 14 >1 // solve:()V
+  YaZGW8vwpzXxOwxexrMMPUd7O.java: 5 >1 // main:([Ljava/lang/String;)V
+  YwPWevNTeYSwtrf0OauWSdqSw.java: 11 >1 // main:([Ljava/lang/String;)V
+  YywHVeuP3frWxFjKo5ckCJ8b3.java: 38 >1 // main:([Ljava/lang/String;)V
+  ZYiIT6HaQbvJKo6afNovC2en0.java: 22 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  A3PJQOma8oHsX3yca6t0a2Oms.java: 5 >0 // main:([Ljava/lang/String;)V
+  K6kboEDuTSndwW5uh9KefhRDM.java: 5 >1 // main:([Ljava/lang/String;)V
+  NLDc4JkgwQTEd3swXWXfOWl9d.java: 5 >0 // main:([Ljava/lang/String;)V
+  WjF9wI64hHVkP8DaDwOfGWi8G.java: 6 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.read:()I
+  isAlNum:(I)Z
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.read:()I
+  isAlNum:(I)Z
+loc:
+  A3PJQOma8oHsX3yca6t0a2Oms.java: 5 >1 // main:([Ljava/lang/String;)V
+  DaOnXB7loVPxByth0Vt30dlv4.java: 6 >1 // main:([Ljava/lang/String;)V
+  K6kboEDuTSndwW5uh9KefhRDM.java: 5 >1 // main:([Ljava/lang/String;)V
+  LHPIyaUu8f1ULyA3BbqMNIoUZ.java: 12 >1 // main:([Ljava/lang/String;)V
+  NLDc4JkgwQTEd3swXWXfOWl9d.java: 5 >1 // main:([Ljava/lang/String;)V
+  QZyD6mjvgudFTGFCJDz9qsuuy.java: 6 >1 // main:([Ljava/lang/String;)V
+  SF3EgSKyseHKbqzBEgWRk5Azi.java: 6 >1 // main:([Ljava/lang/String;)V
+  WjF9wI64hHVkP8DaDwOfGWi8G.java: 6 >1 // main:([Ljava/lang/String;)V
+  XQqBMkIPbpU4VwfGJjbGJSqJY.java: 14 >1 // solve:()V
+  YywHVeuP3frWxFjKo5ckCJ8b3.java: 38 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+loc:
+  Codechef.java: 13 >0 // main:([Ljava/lang/String;)V
+  ZYiIT6HaQbvJKo6afNovC2en0.java: 22 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+loc:
+  YaZGW8vwpzXxOwxexrMMPUd7O.java: 5 >0 // main:([Ljava/lang/String;)V
+  ZYiIT6HaQbvJKo6afNovC2en0.java: 22 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  readLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  readLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+loc:
+  NVvNv3sNk8N9q01lG7d6SwnNc.java: 8 >0 // main:([Ljava/lang/String;)V
+  ZbQX7bZqsLR5HTLM0AknSsy2z.java: 9 >0 // main:([Ljava/lang/String;)V
+
+ope:
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  readLine:()Ljava/lang/String;
+  java/lang/Integer.valueOf:(Ljava/lang/String;)Ljava/lang/Integer;
+  intValue:()I
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  BaqPgzGb6nJZA1wIY4LtTzA3w.java: 15 >1 // main:([Ljava/lang/String;)V
+  QjBaN7MByskBg7kTHX8cMTBQW.java: 21 >1 // main:([Ljava/lang/String;)V
+  Z4AdHVwbXrLI8qckywUXuyUVT.java: 17 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  AReuNAAB0acUDYaAzqbBZgiy0.java: 11 >1 // main:([Ljava/lang/String;)V
+  LlGdskKFV12UlHyUs4yUU6WNn.java: 29 >1 // main:([Ljava/lang/String;)V
+  X4ktrhZOBxLkITveTyRRUaUC4.java: 7 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.read:()I
+  isAlNum:(I)Z
+  java/lang/RuntimeException."<init>":()V
+loc:
+  AReuNAAB0acUDYaAzqbBZgiy0.java: 11 >2 // main:([Ljava/lang/String;)V
+  X4ktrhZOBxLkITveTyRRUaUC4.java: 7 >2 // main:([Ljava/lang/String;)V
+
+ope:
+  java/io/InputStreamReader."<init>":(Ljava/io/InputStream;)V
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  readLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  readLine:()Ljava/lang/String;
+  charAt:(I)C
+loc:
+  LWSYIechZCT5a1TqEUYt2aW2d.java: 10 >0 // main:([Ljava/lang/String;)V
+  NVvNv3sNk8N9q01lG7d6SwnNc.java: 8 >0 // main:([Ljava/lang/String;)V
+
+ope:
+  java/io/InputStreamReader."<init>":(Ljava/io/InputStream;)V
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+loc:
+  AReuNAAB0acUDYaAzqbBZgiy0.java: 11 >1 // main:([Ljava/lang/String;)V
+  LlGdskKFV12UlHyUs4yUU6WNn.java: 29 >1 // main:([Ljava/lang/String;)V
+  X4ktrhZOBxLkITveTyRRUaUC4.java: 7 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/io/InputStreamReader."<init>":(Ljava/io/InputStream;)V
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  length:()I
+loc:
+  AReuNAAB0acUDYaAzqbBZgiy0.java: 11 >0 // main:([Ljava/lang/String;)V
+  X4ktrhZOBxLkITveTyRRUaUC4.java: 7 >0 // main:([Ljava/lang/String;)V
+
+ope:
+  add:(Ljava/lang/Object;)Z
+  size:()I
+  iterator:()Ljava/util/Iterator;
+  hasNext:()Z
+  next:()Ljava/lang/Object;
+  write:(Ljava/lang/String;)V
+loc:
+  V8pdr1HqZeGe48opkZKnm5GN7.java: 30 >0 // main:([Ljava/lang/String;)V
+  V8pdr1HqZeGe48opkZKnm5GN7.java: 35 >0 // main:([Ljava/lang/String;)V
+
+ope:
+  java/util/Scanner."<init>":(Ljava/io/File;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+loc:
+  MnfH4971SHIsOw7y5FS3iNKgU.java: 15 >1 // main:([Ljava/lang/String;)V
+  Y9shRswsxACJYJ84hxbS5Z7PO.java: 30 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/io/PrintWriter."<init>":(Ljava/lang/String;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+loc:
+  BsQglKr7wLJszwxrrbSX0NTTu.java: 10 >1 // main:([Ljava/lang/String;)V
+  R723UYFgRSGCs8MpZTtl3Ru2w.java: 9 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  nextLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+loc:
+  N4QFyaGIIrBuSwJrKjSCMtUMN.java: 24 >1 // main:([Ljava/lang/String;)V
+  Oyohpk5OpmcGAAXwua9hKxJcc.java: 19 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.java: 17 >2 // main:([Ljava/lang/String;)V
+  NINAJ6zWEAXQRPma5wu8qAkdd.java: 22 >2 // main:([Ljava/lang/String;)V
+  ZYiIT6HaQbvJKo6afNovC2en0.java: 26 >2 // main:([Ljava/lang/String;)V
+
+ope:
+  nextLine:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  substring:(II)Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  compareTo:(Ljava/lang/String;)I
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.java: 17 >2 // main:([Ljava/lang/String;)V
+  NINAJ6zWEAXQRPma5wu8qAkdd.java: 22 >2 // main:([Ljava/lang/String;)V
+  O1fI4iVnjO7nLrd5xra4eLPoL.java: 17 >1 // main:([Ljava/lang/String;)V
+  YaZGW8vwpzXxOwxexrMMPUd7O.java: 9 >0 // main:([Ljava/lang/String;)V
+  ZYiIT6HaQbvJKo6afNovC2en0.java: 26 >2 // main:([Ljava/lang/String;)V
+
+ope:
+  nextLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  nextLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  ET8n9q8JRqmBMX5ycA1sIcIEi.java: 14 >1 // main:([Ljava/lang/String;)V
+  Oyohpk5OpmcGAAXwua9hKxJcc.java: 17 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  nextLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+loc:
+  EoHDEM73Mj4tEUxctrEMbCktc.java: 17 >0 // main:([Ljava/lang/String;)V
+  Oyohpk5OpmcGAAXwua9hKxJcc.java: 17 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.java: 15 >1 // main:([Ljava/lang/String;)V
+  NINAJ6zWEAXQRPma5wu8qAkdd.java: 20 >1 // main:([Ljava/lang/String;)V
+  QrCVDQJYOFTXMnWVXBUMv1Pio.java: 48 >1 // run:()V
+  ZYiIT6HaQbvJKo6afNovC2en0.java: 24 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I
+  charAt:(I)C
+  substring:(II)Ljava/lang/String;
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.java: 15 >1 // main:([Ljava/lang/String;)V
+  NINAJ6zWEAXQRPma5wu8qAkdd.java: 20 >1 // main:([Ljava/lang/String;)V
+  ZYiIT6HaQbvJKo6afNovC2en0.java: 24 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  substring:(II)Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.java: 15 >2 // main:([Ljava/lang/String;)V
+  NINAJ6zWEAXQRPma5wu8qAkdd.java: 20 >2 // main:([Ljava/lang/String;)V
+  YaZGW8vwpzXxOwxexrMMPUd7O.java: 7 >0 // main:([Ljava/lang/String;)V
+  ZYiIT6HaQbvJKo6afNovC2en0.java: 24 >2 // main:([Ljava/lang/String;)V
+
+ope:
+  java/io/BufferedWriter."<init>":(Ljava/io/Writer;)V
+  readLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  HzRz8mZnHMO3M2uxzPG29U7Wg.java: 19 >1 // main:([Ljava/lang/String;)V
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.java: 16 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/io/FileWriter."<init>":(Ljava/io/File;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.java: 12 >1 // main:([Ljava/lang/String;)V
+  PcUg7rxtSEwxFlqdEFnN8gvdP.java: 22 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  compareTo:(Ljava/lang/Character;)I
+  toString:()Ljava/lang/String;
+  concat:(Ljava/lang/String;)Ljava/lang/String;
+  write:(Ljava/lang/String;)V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.java: 34 >1 // main:([Ljava/lang/String;)V
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.java: 38 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/io/PrintWriter."<init>":(Ljava/io/File;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+loc:
+  Qr14oulyocxvwTxKoPHtZP7h3.java: 26 >1 // main:([Ljava/lang/String;)V
+  QvS9i8bUyGOrumpkDqlfLweiR.java: 14 >1 // main:([Ljava/lang/String;)V
+
+ope:
+  java/lang/String.valueOf:(C)Ljava/lang/String;
+  println:(Ljava/lang/String;)V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  VFTFxe7ZklMmSPyz66kbQlnjh.java: 31 >1 // main:([Ljava/lang/String;)V
+  VFTFxe7ZklMmSPyz66kbQlnjh.java: 36 >1 // main:([Ljava/lang/String;)V
+  VFTFxe7ZklMmSPyz66kbQlnjh.java: 40 >1 // main:([Ljava/lang/String;)V
+
+=====Clone metrics:=====
+# --ngram-size=6
+# --max-branch=-1
+# --max-call-depth=-1
+# --max-method-definition=-1
+
+metric-clat= 4
+metric-max-depth= 1
+ope:
+  java/io/File."<init>":(Ljava/lang/String;)V
+  java/util/Scanner."<init>":(Ljava/io/File;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+trace:
+  MnfH4971SHIsOw7y5FS3iNKgU.main:([Ljava/lang/String;)V,45 >0
+  MnfH4971SHIsOw7y5FS3iNKgU.main:([Ljava/lang/String;)V,48 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+trace:
+  Y9shRswsxACJYJ84hxbS5Z7PO.main:([Ljava/lang/String;)V,6 >0
+  Y9shRswsxACJYJ84hxbS5Z7PO.main:([Ljava/lang/String;)V,15 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+
+metric-clat= 4
+metric-max-depth= 1
+ope:
+  java/io/File."<init>":(Ljava/lang/String;)V
+  java/io/FileWriter."<init>":(Ljava/io/File;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+trace:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,28 >0
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,31 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+trace:
+  PcUg7rxtSEwxFlqdEFnN8gvdP.main:([Ljava/lang/String;)V,33 >0
+  PcUg7rxtSEwxFlqdEFnN8gvdP.main:([Ljava/lang/String;)V,36 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+
+metric-clat= 0
+metric-max-depth= 1
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+trace:
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,17 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,25 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,42 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,52 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,58 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,68 >0
+trace:
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,17 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,25 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,42 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,52 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,58 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,89 >0
+trace:
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,28 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,36 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,48 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,60 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,70 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,86 >0
+trace:
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,27 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,35 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,52 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,62 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,68 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,78 >0
+trace:
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,27 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,35 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,52 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,62 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,68 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,99 >0
+trace:
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,30 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,2 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,28 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,36 >1
+trace:
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,30 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,2 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,28 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,52 >1
+
+metric-clat= 0
+metric-max-depth= 0
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+trace:
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,64 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,73 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,85 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,95 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,101 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,111 >0
+trace:
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,64 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,73 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,85 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,95 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,101 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,132 >0
+trace:
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,26 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,33 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,44 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,53 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,59 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,69 >0
+trace:
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,26 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,33 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,44 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,53 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,59 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,89 >0
+
+metric-clat= 0
+metric-max-depth= 2
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  substring:(II)Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  compareTo:(Ljava/lang/String;)I
+trace:
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,24 >0
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,37 >0
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,49 >0
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,63 >0
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,83 >0
+  QZyD6mjvgudFTGFCJDz9qsuuy.min:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;,2 >1
+trace:
+  Y9shRswsxACJYJ84hxbS5Z7PO.main:([Ljava/lang/String;)V,36 >0
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,3 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.whereToPut:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;,3 >2
+  Y9shRswsxACJYJ84hxbS5Z7PO.whereToPut:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;,9 >2
+
+metric-clat= 2
+metric-max-depth= 1
+ope:
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+  println:(Ljava/lang/String;)V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+trace:
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,92 >0
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,98 >0
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,108 >0
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,157 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,92 >0
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,98 >0
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,129 >0
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,157 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,53 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,59 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,69 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,119 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,53 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,59 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,89 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,119 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,106 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,117 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,127 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,177 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+
+metric-clat= 1
+metric-max-depth= 0
+ope:
+  charAt:(I)C
+  charAt:(I)C
+  compareTo:(Ljava/lang/String;)I
+  charAt:(I)C
+  placeBefore:(Ljava/lang/String;C)Ljava/lang/String;
+  write:(Ljava/lang/String;)V
+trace:
+  NhFpHPW88iM5QFLkibkwBPJ9d.solve:(Ljava/util/Scanner;Ljava/io/PrintWriter;)V,38 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.solve:(Ljava/util/Scanner;Ljava/io/PrintWriter;)V,49 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.solve:(Ljava/util/Scanner;Ljava/io/PrintWriter;)V,57 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.solve:(Ljava/util/Scanner;Ljava/io/PrintWriter;)V,69 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.solve:(Ljava/util/Scanner;Ljava/io/PrintWriter;)V,72 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.solve:(Ljava/util/Scanner;Ljava/io/PrintWriter;)V,153 >0
+trace:
+  NhFpHPW88iM5QFLkibkwBPJ9d.solve:(Ljava/util/Scanner;Ljava/io/PrintWriter;)V,83 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.solve:(Ljava/util/Scanner;Ljava/io/PrintWriter;)V,94 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.solve:(Ljava/util/Scanner;Ljava/io/PrintWriter;)V,102 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.solve:(Ljava/util/Scanner;Ljava/io/PrintWriter;)V,131 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.solve:(Ljava/util/Scanner;Ljava/io/PrintWriter;)V,134 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.solve:(Ljava/util/Scanner;Ljava/io/PrintWriter;)V,153 >0
+
+metric-clat= 4
+metric-max-depth= 1
+ope:
+  charAt:(I)C
+  charAt:(I)C
+  println:(Ljava/lang/String;)V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+trace:
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,106 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,149 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,177 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,188 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,117 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,127 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,177 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,188 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+
+metric-clat= 2
+metric-max-depth= 1
+ope:
+  charAt:(I)C
+  charAt:(I)C
+  write:(Ljava/lang/String;)V
+  newLine:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+trace:
+  G7C4PJz5Rz3ErimU7VJDqjXd7.main:([Ljava/lang/String;)V,138 >0
+  G7C4PJz5Rz3ErimU7VJDqjXd7.main:([Ljava/lang/String;)V,160 >0
+  G7C4PJz5Rz3ErimU7VJDqjXd7.main:([Ljava/lang/String;)V,207 >0
+  G7C4PJz5Rz3ErimU7VJDqjXd7.main:([Ljava/lang/String;)V,211 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  G7C4PJz5Rz3ErimU7VJDqjXd7.main:([Ljava/lang/String;)V,138 >0
+  G7C4PJz5Rz3ErimU7VJDqjXd7.main:([Ljava/lang/String;)V,179 >0
+  G7C4PJz5Rz3ErimU7VJDqjXd7.main:([Ljava/lang/String;)V,207 >0
+  G7C4PJz5Rz3ErimU7VJDqjXd7.main:([Ljava/lang/String;)V,211 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,147 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,157 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,207 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,212 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,147 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,178 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,207 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,212 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+
+metric-clat= 0
+metric-max-depth= 0
+ope:
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+  java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+trace:
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,25 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,42 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,52 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,58 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,68 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,119 >0
+trace:
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,25 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,42 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,52 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,58 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,89 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,119 >0
+trace:
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,35 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,52 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,62 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,68 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,78 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,127 >0
+trace:
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,35 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,52 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,62 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,68 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,99 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,127 >0
+
+metric-clat= 1
+metric-max-depth= 0
+ope:
+  charAt:(I)C
+  java/lang/Character.valueOf:(C)Ljava/lang/Character;
+  compareTo:(Ljava/lang/Character;)I
+  toString:()Ljava/lang/String;
+  concat:(Ljava/lang/String;)Ljava/lang/String;
+  write:(Ljava/lang/String;)V
+trace:
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,137 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,140 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,143 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,153 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,156 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,219 >0
+trace:
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,169 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,172 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,175 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,183 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,188 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,219 >0
+
+metric-clat= 5
+metric-max-depth= 1
+ope:
+  charAt:(I)C
+  print:(Ljava/lang/String;)V
+  println:()V
+  flush:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+trace:
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,111 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,160 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,164 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,174 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,132 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,160 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,164 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,174 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+
+metric-clat= 5
+metric-max-depth= 0
+ope:
+  charAt:(I)C
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  java/io/FileOutputStream."<init>":(Ljava/lang/String;)V
+  java/io/OutputStreamWriter."<init>":(Ljava/io/OutputStream;Ljava/lang/String;)V
+  java/io/BufferedWriter."<init>":(Ljava/io/Writer;)V
+  java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+trace:
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,112 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,141 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,158 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,163 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,166 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,192 >0
+trace:
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,91 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,141 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,158 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,163 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,166 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,192 >0
+
+metric-clat= 5
+metric-max-depth= 1
+ope:
+  charAt:(I)C
+  write:(Ljava/lang/String;)V
+  println:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+trace:
+  Qr14oulyocxvwTxKoPHtZP7h3.main:([Ljava/lang/String;)V,135 >0
+  Qr14oulyocxvwTxKoPHtZP7h3.main:([Ljava/lang/String;)V,197 >0
+  Qr14oulyocxvwTxKoPHtZP7h3.main:([Ljava/lang/String;)V,202 >0
+  Qr14oulyocxvwTxKoPHtZP7h3.main:([Ljava/lang/String;)V,220 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  Qr14oulyocxvwTxKoPHtZP7h3.main:([Ljava/lang/String;)V,168 >0
+  Qr14oulyocxvwTxKoPHtZP7h3.main:([Ljava/lang/String;)V,197 >0
+  Qr14oulyocxvwTxKoPHtZP7h3.main:([Ljava/lang/String;)V,202 >0
+  Qr14oulyocxvwTxKoPHtZP7h3.main:([Ljava/lang/String;)V,220 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+
+metric-clat= 5
+metric-max-depth= 1
+ope:
+  charAt:(I)C
+  write:(Ljava/lang/String;)V
+  newLine:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+trace:
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,124 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,207 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,212 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,223 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,157 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,207 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,212 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,223 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,178 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,207 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,212 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,223 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+
+metric-clat= 4
+metric-max-depth= 1
+ope:
+  charAt:(I)C
+  java/lang/String.valueOf:(C)Ljava/lang/String;
+  println:(Ljava/lang/String;)V
+  flush:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+trace:
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,106 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,109 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,197 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,208 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,143 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,146 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,197 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,208 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,167 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,170 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,197 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,208 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+
+metric-clat= 0
+metric-max-depth= 0
+ope:
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+  java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+  printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+trace:
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,42 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,52 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,58 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,68 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,119 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,128 >0
+trace:
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,42 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,52 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,58 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,89 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,119 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,128 >0
+trace:
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,52 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,62 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,68 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,78 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,127 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,136 >0
+trace:
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,52 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,62 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,68 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,99 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,127 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,136 >0
+
+metric-clat= 1
+metric-max-depth= 1
+ope:
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+  println:(Ljava/lang/String;)V
+  flush:()V
+trace:
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,58 >0
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,92 >0
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,98 >0
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,108 >0
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,157 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+trace:
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,58 >0
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,92 >0
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,98 >0
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,129 >0
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,157 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+trace:
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,44 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,53 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,59 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,69 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,119 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+trace:
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,44 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,53 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,59 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,89 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,119 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+trace:
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,93 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,106 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,117 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,127 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,177 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+
+metric-clat= 2
+metric-max-depth= 1
+ope:
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  println:(Ljava/lang/String;)V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+trace:
+  MnfH4971SHIsOw7y5FS3iNKgU.main:([Ljava/lang/String;)V,104 >0
+  MnfH4971SHIsOw7y5FS3iNKgU.main:([Ljava/lang/String;)V,114 >0
+  MnfH4971SHIsOw7y5FS3iNKgU.main:([Ljava/lang/String;)V,145 >0
+  MnfH4971SHIsOw7y5FS3iNKgU.main:([Ljava/lang/String;)V,192 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,93 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,106 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,149 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,177 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+
+metric-clat= 0
+metric-max-depth= 1
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+trace:
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,5 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,17 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,25 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,42 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,52 >0
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,58 >0
+trace:
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,12 >0
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,33 >0
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,43 >0
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,57 >0
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,73 >0
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,102 >0
+trace:
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,12 >0
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,33 >0
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,43 >0
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,57 >0
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,73 >0
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,86 >0
+trace:
+  K6kboEDuTSndwW5uh9KefhRDM.main:([Ljava/lang/String;)V,12 >0
+  K6kboEDuTSndwW5uh9KefhRDM.main:([Ljava/lang/String;)V,24 >0
+  K6kboEDuTSndwW5uh9KefhRDM.getWinner:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  K6kboEDuTSndwW5uh9KefhRDM.getWinner:(Ljava/lang/String;)Ljava/lang/String;,19 >1
+  K6kboEDuTSndwW5uh9KefhRDM.getWinner:(Ljava/lang/String;)Ljava/lang/String;,32 >1
+  K6kboEDuTSndwW5uh9KefhRDM.getWinner:(Ljava/lang/String;)Ljava/lang/String;,46 >1
+trace:
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,12 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,28 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,36 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,48 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,60 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,100 >0
+trace:
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,12 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,28 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,36 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,48 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,60 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,70 >0
+trace:
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,12 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,30 >0
+  Oyohpk5OpmcGAAXwua9hKxJcc.lastWord:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  Oyohpk5OpmcGAAXwua9hKxJcc.lastWord:(Ljava/lang/String;)Ljava/lang/String;,22 >1
+  Oyohpk5OpmcGAAXwua9hKxJcc.lastWord:(Ljava/lang/String;)Ljava/lang/String;,30 >1
+  Oyohpk5OpmcGAAXwua9hKxJcc.lastWord:(Ljava/lang/String;)Ljava/lang/String;,45 >1
+trace:
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,12 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,30 >0
+  Oyohpk5OpmcGAAXwua9hKxJcc.lastWord:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  Oyohpk5OpmcGAAXwua9hKxJcc.lastWord:(Ljava/lang/String;)Ljava/lang/String;,22 >1
+  Oyohpk5OpmcGAAXwua9hKxJcc.lastWord:(Ljava/lang/String;)Ljava/lang/String;,30 >1
+  Oyohpk5OpmcGAAXwua9hKxJcc.lastWord:(Ljava/lang/String;)Ljava/lang/String;,58 >1
+trace:
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,12 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,30 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,2 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,28 >1
+
+metric-clat= 0
+metric-max-depth= 2
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  substring:(II)Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+trace:
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,12 >0
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,24 >0
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,37 >0
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,49 >0
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,63 >0
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,83 >0
+trace:
+  Y9shRswsxACJYJ84hxbS5Z7PO.main:([Ljava/lang/String;)V,20 >0
+  Y9shRswsxACJYJ84hxbS5Z7PO.main:([Ljava/lang/String;)V,36 >0
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,3 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.whereToPut:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;,3 >2
+
+metric-clat= 3
+metric-max-depth= 1
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+trace:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,36 >0
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,44 >0
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,55 >0
+  IJN4tLWISdLJIJpqzetneXfHz.solve:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  IJN4tLWISdLJIJpqzetneXfHz.solve:(Ljava/lang/String;)Ljava/lang/String;,22 >1
+  IJN4tLWISdLJIJpqzetneXfHz.solve:(Ljava/lang/String;)Ljava/lang/String;,30 >1
+trace:
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,40 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,45 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,59 >0
+  IJN4tLWISdLJIJpqzetneXfHz.solve:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  IJN4tLWISdLJIJpqzetneXfHz.solve:(Ljava/lang/String;)Ljava/lang/String;,22 >1
+  IJN4tLWISdLJIJpqzetneXfHz.solve:(Ljava/lang/String;)Ljava/lang/String;,30 >1
+trace:
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,12 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,17 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,33 >0
+  IJN4tLWISdLJIJpqzetneXfHz.solve:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  IJN4tLWISdLJIJpqzetneXfHz.solve:(Ljava/lang/String;)Ljava/lang/String;,22 >1
+  IJN4tLWISdLJIJpqzetneXfHz.solve:(Ljava/lang/String;)Ljava/lang/String;,30 >1
+
+metric-clat= 0
+metric-max-depth= 0
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+trace:
+  Codechef.main:([Ljava/lang/String;)V,12 >0
+  Codechef.main:([Ljava/lang/String;)V,17 >0
+  Codechef.main:([Ljava/lang/String;)V,31 >0
+  Codechef.main:([Ljava/lang/String;)V,36 >0
+  Codechef.main:([Ljava/lang/String;)V,43 >0
+  Codechef.main:([Ljava/lang/String;)V,66 >0
+trace:
+  MnfH4971SHIsOw7y5FS3iNKgU.main:([Ljava/lang/String;)V,67 >0
+  MnfH4971SHIsOw7y5FS3iNKgU.main:([Ljava/lang/String;)V,73 >0
+  MnfH4971SHIsOw7y5FS3iNKgU.main:([Ljava/lang/String;)V,88 >0
+  MnfH4971SHIsOw7y5FS3iNKgU.main:([Ljava/lang/String;)V,104 >0
+  MnfH4971SHIsOw7y5FS3iNKgU.main:([Ljava/lang/String;)V,114 >0
+  MnfH4971SHIsOw7y5FS3iNKgU.main:([Ljava/lang/String;)V,145 >0
+
+metric-clat= 0
+metric-max-depth= 2
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  length:()I
+trace:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,36 >0
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,44 >0
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,55 >0
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,1 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,2 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,12 >2
+trace:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,36 >0
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,44 >0
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,55 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,7 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,20 >1
+trace:
+  QrCVDQJYOFTXMnWVXBUMv1Pio.run:()V,40 >0
+  QrCVDQJYOFTXMnWVXBUMv1Pio.run:()V,46 >0
+  QrCVDQJYOFTXMnWVXBUMv1Pio.run:()V,62 >0
+  YywHVeuP3frWxFjKo5ckCJ8b3.solve:()Ljava/lang/String;,10 >1
+  YywHVeuP3frWxFjKo5ckCJ8b3.solve:()Ljava/lang/String;,21 >1
+  YywHVeuP3frWxFjKo5ckCJ8b3.solve:()Ljava/lang/String;,26 >1
+trace:
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,40 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,45 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,59 >0
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,1 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,2 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,12 >2
+trace:
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,40 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,45 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,59 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,7 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,20 >1
+trace:
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,12 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,17 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,33 >0
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,1 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,2 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,12 >2
+trace:
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,12 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,17 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,33 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,7 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,20 >1
+
+metric-clat= 0
+metric-max-depth= 1
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  substring:(II)Ljava/lang/String;
+trace:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,36 >0
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,44 >0
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,55 >0
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,3 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+trace:
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,40 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,45 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,59 >0
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,3 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+trace:
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,12 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,17 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,29 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,42 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,54 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,68 >0
+trace:
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,12 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,17 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,33 >0
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,3 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+
+metric-clat= 0
+metric-max-depth= 1
+ope:
+  readLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+trace:
+  ELr4DBC2luQnAbmUX4Z6LYNBN.main:([Ljava/lang/String;)V,46 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,2 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,28 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,36 >1
+trace:
+  ELr4DBC2luQnAbmUX4Z6LYNBN.main:([Ljava/lang/String;)V,46 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,2 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,28 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,52 >1
+trace:
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,40 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,48 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,65 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,74 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,81 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,112 >0
+trace:
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,40 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,48 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,65 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,74 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,81 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,91 >0
+
+metric-clat= 0
+metric-max-depth= 0
+ope:
+  readLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  readLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+trace:
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,19 >0
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,22 >0
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,43 >0
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,51 >0
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,72 >0
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,82 >0
+trace:
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,18 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,21 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,40 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,48 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,65 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,74 >0
+
+metric-clat= 0
+metric-max-depth= 2
+ope:
+  java/lang/Character.valueOf:(C)Ljava/lang/Character;
+  add:(Ljava/lang/Object;)Z
+  size:()I
+  iterator:()Ljava/util/Iterator;
+  hasNext:()Z
+  next:()Ljava/lang/Object;
+trace:
+  DKB9ZPUYhWoTMhdJH5HACYbzA.main:([Ljava/lang/String;)V,108 >0
+  DKB9ZPUYhWoTMhdJH5HACYbzA.main:([Ljava/lang/String;)V,111 >0
+  DKB9ZPUYhWoTMhdJH5HACYbzA.getStringRepresentation:(Ljava/util/List;)Ljava/lang/String;,5 >2
+  DKB9ZPUYhWoTMhdJH5HACYbzA.getStringRepresentation:(Ljava/util/List;)Ljava/lang/String;,15 >2
+  DKB9ZPUYhWoTMhdJH5HACYbzA.getStringRepresentation:(Ljava/util/List;)Ljava/lang/String;,22 >2
+  DKB9ZPUYhWoTMhdJH5HACYbzA.getStringRepresentation:(Ljava/util/List;)Ljava/lang/String;,31 >2
+trace:
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,114 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,117 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,187 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,197 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,204 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,214 >0
+trace:
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,168 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,171 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,187 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,197 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,204 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,214 >0
+
+metric-clat= 4
+metric-max-depth= 0
+ope:
+  java/lang/Character.valueOf:(C)Ljava/lang/Character;
+  add:(Ljava/lang/Object;)Z
+  size:()I
+  iterator:()Ljava/util/Iterator;
+  hasNext:()Z
+  write:(Ljava/lang/String;)V
+trace:
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,114 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,117 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,187 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,197 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,204 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,255 >0
+trace:
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,168 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,171 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,187 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,197 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,204 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,255 >0
+
+metric-clat= 2
+metric-max-depth= 1
+ope:
+  java/lang/Character.valueOf:(C)Ljava/lang/Character;
+  compareTo:(Ljava/lang/Character;)I
+  toString:()Ljava/lang/String;
+  concat:(Ljava/lang/String;)Ljava/lang/String;
+  write:(Ljava/lang/String;)V
+  flush:()V
+trace:
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,140 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,143 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,153 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,156 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,219 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+trace:
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,172 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,175 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,183 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,188 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,219 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+
+metric-clat= 4
+metric-max-depth= 1
+ope:
+  toString:()Ljava/lang/String;
+  concat:(Ljava/lang/String;)Ljava/lang/String;
+  write:(Ljava/lang/String;)V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+trace:
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,153 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,156 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,219 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,229 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,183 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,188 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,219 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,229 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+
+metric-clat= 0
+metric-max-depth= 0
+ope:
+  substring:(II)Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+  println:(Ljava/lang/String;)V
+trace:
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,33 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,44 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,53 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,59 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,69 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,119 >0
+trace:
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,33 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,44 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,53 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,59 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,89 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,119 >0
+trace:
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,81 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,93 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,106 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,117 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,127 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,177 >0
+
+metric-clat= 2
+metric-max-depth= 1
+ope:
+  java/io/FileReader."<init>":(Ljava/lang/String;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  java/io/FileWriter."<init>":(Ljava/lang/String;)V
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+trace:
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,10 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,13 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,27 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,30 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+trace:
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,10 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,13 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,27 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,30 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+trace:
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,22 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,25 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,39 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,48 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+
+metric-clat= 0
+metric-max-depth= 0
+ope:
+  java/io/FileReader."<init>":(Ljava/lang/String;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  java/io/FileWriter."<init>":(Ljava/lang/String;)V
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+trace:
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,10 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,13 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,27 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,30 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,35 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,40 >0
+trace:
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,22 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,25 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,39 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,48 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,54 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,60 >0
+
+metric-clat= 5
+metric-max-depth= 1
+ope:
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+trace:
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,25 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  QrCVDQJYOFTXMnWVXBUMv1Pio.run:()V,35 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  LlGdskKFV12UlHyUs4yUU6WNn.main:([Ljava/lang/String;)V,21 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,27 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,21 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+
+metric-clat= 4
+metric-max-depth= 1
+ope:
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.read:()I
+  isAlNum:(I)Z
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.read:()I
+  isAlNum:(I)Z
+trace:
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,25 >0
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,32 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,0 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,5 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,29 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,34 >1
+trace:
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,21 >0
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,26 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,0 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,5 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,29 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,34 >1
+
+metric-clat= 0
+metric-max-depth= 2
+ope:
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+trace:
+  QrCVDQJYOFTXMnWVXBUMv1Pio.run:()V,35 >0
+  QrCVDQJYOFTXMnWVXBUMv1Pio.run:()V,40 >0
+  QrCVDQJYOFTXMnWVXBUMv1Pio.run:()V,46 >0
+  QrCVDQJYOFTXMnWVXBUMv1Pio.run:()V,62 >0
+  YywHVeuP3frWxFjKo5ckCJ8b3.solve:()Ljava/lang/String;,10 >1
+  YywHVeuP3frWxFjKo5ckCJ8b3.solve:()Ljava/lang/String;,21 >1
+trace:
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,27 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,40 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,45 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,59 >0
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,1 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,2 >2
+trace:
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,27 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,40 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,45 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,59 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,7 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+trace:
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,27 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,40 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,45 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,59 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.solve:(Ljava/lang/String;)Ljava/lang/String;,9 >1
+  ZYiIT6HaQbvJKo6afNovC2en0.solve:(Ljava/lang/String;)Ljava/lang/String;,22 >1
+
+metric-clat= 3
+metric-max-depth= 1
+ope:
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  java/io/FileWriter."<init>":(Ljava/lang/String;)V
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+trace:
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,13 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,27 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,30 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+trace:
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,13 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,27 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,30 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+trace:
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,25 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,39 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,48 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+
+metric-clat= 4
+metric-max-depth= 1
+ope:
+  java/io/FileWriter."<init>":(Ljava/lang/String;)V
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+trace:
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,27 >0
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,30 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+trace:
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,27 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,30 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+trace:
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,39 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,48 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+
+metric-clat= 5
+metric-max-depth= 1
+ope:
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+trace:
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,30 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,30 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,48 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+
+metric-clat= 0
+metric-max-depth= 0
+ope:
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  readLine:()Ljava/lang/String;
+  java/util/StringTokenizer."<init>":(Ljava/lang/String;)V
+  nextToken:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  readLine:()Ljava/lang/String;
+trace:
+  IHAPoeIB6uDLas6irIILjWYQS.main:([Ljava/lang/String;)V,30 >0
+  IHAPoeIB6uDLas6irIILjWYQS.main:([Ljava/lang/String;)V,39 >0
+  IHAPoeIB6uDLas6irIILjWYQS.main:([Ljava/lang/String;)V,42 >0
+  IHAPoeIB6uDLas6irIILjWYQS.main:([Ljava/lang/String;)V,47 >0
+  IHAPoeIB6uDLas6irIILjWYQS.main:([Ljava/lang/String;)V,50 >0
+  IHAPoeIB6uDLas6irIILjWYQS.main:([Ljava/lang/String;)V,70 >0
+trace:
+  Isj3ECv96yrb92EQTpn97gHl9.main:([Ljava/lang/String;)V,37 >0
+  Isj3ECv96yrb92EQTpn97gHl9.main:([Ljava/lang/String;)V,46 >0
+  Isj3ECv96yrb92EQTpn97gHl9.main:([Ljava/lang/String;)V,49 >0
+  Isj3ECv96yrb92EQTpn97gHl9.main:([Ljava/lang/String;)V,54 >0
+  Isj3ECv96yrb92EQTpn97gHl9.main:([Ljava/lang/String;)V,57 >0
+  Isj3ECv96yrb92EQTpn97gHl9.main:([Ljava/lang/String;)V,77 >0
+
+metric-clat= 5
+metric-max-depth= 1
+ope:
+  java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+trace:
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,7 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  Codechef.main:([Ljava/lang/String;)V,7 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,7 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  K6kboEDuTSndwW5uh9KefhRDM.main:([Ljava/lang/String;)V,7 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  LHPIyaUu8f1ULyA3BbqMNIoUZ.main:([Ljava/lang/String;)V,7 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.main:([Ljava/lang/String;)V,13 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,7 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,7 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  SF3EgSKyseHKbqzBEgWRk5Azi.main:([Ljava/lang/String;)V,7 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  XQqBMkIPbpU4VwfGJjbGJSqJY.solve:()V,14 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,7 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,7 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  YwPWevNTeYSwtrf0OauWSdqSw.main:([Ljava/lang/String;)V,23 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  YywHVeuP3frWxFjKo5ckCJ8b3.main:([Ljava/lang/String;)V,7 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,7 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+
+metric-clat= 0
+metric-max-depth= 1
+ope:
+  java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+trace:
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,7 >0
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,12 >0
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,33 >0
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,43 >0
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,57 >0
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,73 >0
+trace:
+  K6kboEDuTSndwW5uh9KefhRDM.main:([Ljava/lang/String;)V,7 >0
+  K6kboEDuTSndwW5uh9KefhRDM.main:([Ljava/lang/String;)V,12 >0
+  K6kboEDuTSndwW5uh9KefhRDM.main:([Ljava/lang/String;)V,24 >0
+  K6kboEDuTSndwW5uh9KefhRDM.getWinner:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  K6kboEDuTSndwW5uh9KefhRDM.getWinner:(Ljava/lang/String;)Ljava/lang/String;,19 >1
+  K6kboEDuTSndwW5uh9KefhRDM.getWinner:(Ljava/lang/String;)Ljava/lang/String;,32 >1
+trace:
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,7 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,12 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,28 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,36 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,48 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,60 >0
+trace:
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,7 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,12 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,30 >0
+  Oyohpk5OpmcGAAXwua9hKxJcc.lastWord:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  Oyohpk5OpmcGAAXwua9hKxJcc.lastWord:(Ljava/lang/String;)Ljava/lang/String;,22 >1
+  Oyohpk5OpmcGAAXwua9hKxJcc.lastWord:(Ljava/lang/String;)Ljava/lang/String;,30 >1
+trace:
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,7 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,12 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,30 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,2 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+
+metric-clat= 4
+metric-max-depth= 1
+ope:
+  java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.read:()I
+  isAlNum:(I)Z
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.read:()I
+  isAlNum:(I)Z
+trace:
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,7 >0
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,12 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,0 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,5 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,29 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,34 >1
+trace:
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,7 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,12 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,0 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,5 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,29 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,34 >1
+trace:
+  K6kboEDuTSndwW5uh9KefhRDM.main:([Ljava/lang/String;)V,7 >0
+  K6kboEDuTSndwW5uh9KefhRDM.main:([Ljava/lang/String;)V,12 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,0 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,5 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,29 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,34 >1
+trace:
+  LHPIyaUu8f1ULyA3BbqMNIoUZ.main:([Ljava/lang/String;)V,7 >0
+  LHPIyaUu8f1ULyA3BbqMNIoUZ.main:([Ljava/lang/String;)V,12 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,0 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,5 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,29 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,34 >1
+trace:
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,7 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,12 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,0 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,5 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,29 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,34 >1
+trace:
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,7 >0
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,12 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,0 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,5 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,29 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,34 >1
+trace:
+  SF3EgSKyseHKbqzBEgWRk5Azi.main:([Ljava/lang/String;)V,7 >0
+  SF3EgSKyseHKbqzBEgWRk5Azi.main:([Ljava/lang/String;)V,12 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,0 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,5 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,29 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,34 >1
+trace:
+  XQqBMkIPbpU4VwfGJjbGJSqJY.solve:()V,14 >0
+  XQqBMkIPbpU4VwfGJjbGJSqJY.solve:()V,19 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,0 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,5 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,29 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,34 >1
+trace:
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,7 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,12 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,0 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,5 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,29 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,34 >1
+trace:
+  YywHVeuP3frWxFjKo5ckCJ8b3.main:([Ljava/lang/String;)V,7 >0
+  YywHVeuP3frWxFjKo5ckCJ8b3.main:([Ljava/lang/String;)V,12 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,0 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,5 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,29 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,34 >1
+
+metric-clat= 0
+metric-max-depth= 2
+ope:
+  java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+trace:
+  Codechef.main:([Ljava/lang/String;)V,7 >0
+  Codechef.main:([Ljava/lang/String;)V,12 >0
+  Codechef.main:([Ljava/lang/String;)V,17 >0
+  Codechef.main:([Ljava/lang/String;)V,31 >0
+  Codechef.main:([Ljava/lang/String;)V,36 >0
+  Codechef.main:([Ljava/lang/String;)V,43 >0
+trace:
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,7 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,12 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,17 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,33 >0
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,1 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,2 >2
+trace:
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,7 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,12 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,17 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,33 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,7 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+trace:
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,7 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,12 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,17 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,33 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.solve:(Ljava/lang/String;)Ljava/lang/String;,9 >1
+  ZYiIT6HaQbvJKo6afNovC2en0.solve:(Ljava/lang/String;)Ljava/lang/String;,22 >1
+
+metric-clat= 0
+metric-max-depth= 1
+ope:
+  java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+trace:
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,7 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,12 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,17 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,29 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,42 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,54 >0
+trace:
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,7 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,12 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,17 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,33 >0
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,3 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+
+metric-clat= 0
+metric-max-depth= 0
+ope:
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  readLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  readLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+trace:
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,14 >0
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,19 >0
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,22 >0
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,43 >0
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,51 >0
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,72 >0
+trace:
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,13 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,18 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,21 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,40 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,48 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,65 >0
+
+metric-clat= 2
+metric-max-depth= 1
+ope:
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  readLine:()Ljava/lang/String;
+  java/lang/Integer.valueOf:(Ljava/lang/String;)Ljava/lang/Integer;
+  intValue:()I
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+trace:
+  BaqPgzGb6nJZA1wIY4LtTzA3w.main:([Ljava/lang/String;)V,19 >0
+  BaqPgzGb6nJZA1wIY4LtTzA3w.main:([Ljava/lang/String;)V,32 >0
+  BaqPgzGb6nJZA1wIY4LtTzA3w.main:([Ljava/lang/String;)V,46 >0
+  BaqPgzGb6nJZA1wIY4LtTzA3w.main:([Ljava/lang/String;)V,49 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  QjBaN7MByskBg7kTHX8cMTBQW.main:([Ljava/lang/String;)V,32 >0
+  QjBaN7MByskBg7kTHX8cMTBQW.main:([Ljava/lang/String;)V,42 >0
+  QjBaN7MByskBg7kTHX8cMTBQW.main:([Ljava/lang/String;)V,51 >0
+  QjBaN7MByskBg7kTHX8cMTBQW.main:([Ljava/lang/String;)V,54 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  Z4AdHVwbXrLI8qckywUXuyUVT.main:([Ljava/lang/String;)V,50 >0
+  Z4AdHVwbXrLI8qckywUXuyUVT.main:([Ljava/lang/String;)V,60 >0
+  Z4AdHVwbXrLI8qckywUXuyUVT.main:([Ljava/lang/String;)V,67 >0
+  Z4AdHVwbXrLI8qckywUXuyUVT.main:([Ljava/lang/String;)V,70 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+
+metric-clat= 4
+metric-max-depth= 1
+ope:
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+trace:
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,22 >0
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,25 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+trace:
+  LlGdskKFV12UlHyUs4yUU6WNn.main:([Ljava/lang/String;)V,18 >0
+  LlGdskKFV12UlHyUs4yUU6WNn.main:([Ljava/lang/String;)V,21 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+trace:
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,18 >0
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,21 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+
+metric-clat= 3
+metric-max-depth= 2
+ope:
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.read:()I
+  isAlNum:(I)Z
+  java/lang/RuntimeException."<init>":()V
+trace:
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,22 >0
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,25 >0
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,32 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,0 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,5 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.read:()I,10 >2
+trace:
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,18 >0
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,21 >0
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,26 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,0 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.next:()Ljava/lang/String;,5 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.read:()I,10 >2
+
+metric-clat= 0
+metric-max-depth= 0
+ope:
+  java/io/InputStreamReader."<init>":(Ljava/io/InputStream;)V
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  readLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  readLine:()Ljava/lang/String;
+  charAt:(I)C
+trace:
+  LWSYIechZCT5a1TqEUYt2aW2d.main:([Ljava/lang/String;)V,11 >0
+  LWSYIechZCT5a1TqEUYt2aW2d.main:([Ljava/lang/String;)V,14 >0
+  LWSYIechZCT5a1TqEUYt2aW2d.main:([Ljava/lang/String;)V,19 >0
+  LWSYIechZCT5a1TqEUYt2aW2d.main:([Ljava/lang/String;)V,22 >0
+  LWSYIechZCT5a1TqEUYt2aW2d.main:([Ljava/lang/String;)V,33 >0
+  LWSYIechZCT5a1TqEUYt2aW2d.main:([Ljava/lang/String;)V,41 >0
+trace:
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,11 >0
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,14 >0
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,19 >0
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,22 >0
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,43 >0
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,51 >0
+
+metric-clat= 3
+metric-max-depth= 1
+ope:
+  java/io/InputStreamReader."<init>":(Ljava/io/InputStream;)V
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+trace:
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,19 >0
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,22 >0
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,25 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+trace:
+  LlGdskKFV12UlHyUs4yUU6WNn.main:([Ljava/lang/String;)V,15 >0
+  LlGdskKFV12UlHyUs4yUU6WNn.main:([Ljava/lang/String;)V,18 >0
+  LlGdskKFV12UlHyUs4yUU6WNn.main:([Ljava/lang/String;)V,21 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+trace:
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,15 >0
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,18 >0
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,21 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+
+metric-clat= 0
+metric-max-depth= 0
+ope:
+  java/io/InputStreamReader."<init>":(Ljava/io/InputStream;)V
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  length:()I
+trace:
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,19 >0
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,22 >0
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,25 >0
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,32 >0
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,47 >0
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,52 >0
+trace:
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,15 >0
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,18 >0
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,21 >0
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,26 >0
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,38 >0
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,45 >0
+
+metric-clat= 5
+metric-max-depth= 0
+ope:
+  add:(Ljava/lang/Object;)Z
+  size:()I
+  iterator:()Ljava/util/Iterator;
+  hasNext:()Z
+  next:()Ljava/lang/Object;
+  write:(Ljava/lang/String;)V
+trace:
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,117 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,187 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,197 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,204 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,214 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,255 >0
+trace:
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,171 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,187 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,197 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,204 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,214 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,255 >0
+
+metric-clat= 5
+metric-max-depth= 1
+ope:
+  java/util/Scanner."<init>":(Ljava/io/File;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+trace:
+  MnfH4971SHIsOw7y5FS3iNKgU.main:([Ljava/lang/String;)V,48 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  Y9shRswsxACJYJ84hxbS5Z7PO.main:([Ljava/lang/String;)V,15 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+
+metric-clat= 5
+metric-max-depth= 1
+ope:
+  java/io/PrintWriter."<init>":(Ljava/lang/String;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+trace:
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,23 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  R723UYFgRSGCs8MpZTtl3Ru2w.main:([Ljava/lang/String;)V,17 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+
+metric-clat= 4
+metric-max-depth= 1
+ope:
+  nextLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+trace:
+  N4QFyaGIIrBuSwJrKjSCMtUMN.main:([Ljava/lang/String;)V,30 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,2 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,28 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,36 >1
+trace:
+  N4QFyaGIIrBuSwJrKjSCMtUMN.main:([Ljava/lang/String;)V,30 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,2 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,28 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,52 >1
+trace:
+  Oyohpk5OpmcGAAXwua9hKxJcc.main:([Ljava/lang/String;)V,44 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,2 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,28 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,36 >1
+trace:
+  Oyohpk5OpmcGAAXwua9hKxJcc.main:([Ljava/lang/String;)V,44 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,2 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,28 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,52 >1
+
+metric-clat= 5
+metric-max-depth= 2
+ope:
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+trace:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,55 >0
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,1 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,2 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,12 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,20 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,29 >2
+trace:
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,59 >0
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,1 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,2 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,12 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,20 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,29 >2
+trace:
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,33 >0
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,1 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,2 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,12 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,20 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,29 >2
+
+metric-clat= 0
+metric-max-depth= 2
+ope:
+  nextLine:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  substring:(II)Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  compareTo:(Ljava/lang/String;)I
+trace:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,55 >0
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,3 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.whereToPut:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;,3 >2
+  Y9shRswsxACJYJ84hxbS5Z7PO.whereToPut:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;,9 >2
+trace:
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,59 >0
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,3 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.whereToPut:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;,3 >2
+  Y9shRswsxACJYJ84hxbS5Z7PO.whereToPut:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;,9 >2
+trace:
+  O1fI4iVnjO7nLrd5xra4eLPoL.main:([Ljava/lang/String;)V,59 >0
+  O1fI4iVnjO7nLrd5xra4eLPoL.theLastWord:(Ljava/lang/String;)Ljava/lang/String;,3 >1
+  O1fI4iVnjO7nLrd5xra4eLPoL.theLastWord:(Ljava/lang/String;)Ljava/lang/String;,13 >1
+  O1fI4iVnjO7nLrd5xra4eLPoL.theLastWord:(Ljava/lang/String;)Ljava/lang/String;,26 >1
+  O1fI4iVnjO7nLrd5xra4eLPoL.theLastWord:(Ljava/lang/String;)Ljava/lang/String;,44 >1
+  O1fI4iVnjO7nLrd5xra4eLPoL.theLastWord:(Ljava/lang/String;)Ljava/lang/String;,55 >1
+trace:
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,29 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,42 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,54 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,68 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,75 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,78 >0
+trace:
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,33 >0
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,3 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.whereToPut:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;,3 >2
+  Y9shRswsxACJYJ84hxbS5Z7PO.whereToPut:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;,9 >2
+
+metric-clat= 0
+metric-max-depth= 1
+ope:
+  nextLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  nextLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+trace:
+  ET8n9q8JRqmBMX5ycA1sIcIEi.main:([Ljava/lang/String;)V,33 >0
+  ET8n9q8JRqmBMX5ycA1sIcIEi.main:([Ljava/lang/String;)V,36 >0
+  ET8n9q8JRqmBMX5ycA1sIcIEi.main:([Ljava/lang/String;)V,54 >0
+  ET8n9q8JRqmBMX5ycA1sIcIEi.solution:(Ljava/lang/String;)Ljava/lang/String;,2 >1
+  ET8n9q8JRqmBMX5ycA1sIcIEi.solution:(Ljava/lang/String;)Ljava/lang/String;,7 >1
+  ET8n9q8JRqmBMX5ycA1sIcIEi.solution:(Ljava/lang/String;)Ljava/lang/String;,30 >1
+trace:
+  Oyohpk5OpmcGAAXwua9hKxJcc.main:([Ljava/lang/String;)V,27 >0
+  Oyohpk5OpmcGAAXwua9hKxJcc.main:([Ljava/lang/String;)V,30 >0
+  Oyohpk5OpmcGAAXwua9hKxJcc.main:([Ljava/lang/String;)V,44 >0
+  Oyohpk5OpmcGAAXwua9hKxJcc.lastWord:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  Oyohpk5OpmcGAAXwua9hKxJcc.lastWord:(Ljava/lang/String;)Ljava/lang/String;,22 >1
+  Oyohpk5OpmcGAAXwua9hKxJcc.lastWord:(Ljava/lang/String;)Ljava/lang/String;,30 >1
+trace:
+  Oyohpk5OpmcGAAXwua9hKxJcc.main:([Ljava/lang/String;)V,27 >0
+  Oyohpk5OpmcGAAXwua9hKxJcc.main:([Ljava/lang/String;)V,30 >0
+  Oyohpk5OpmcGAAXwua9hKxJcc.main:([Ljava/lang/String;)V,44 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,2 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.lastWord:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+
+metric-clat= 0
+metric-max-depth= 1
+ope:
+  nextLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+trace:
+  EoHDEM73Mj4tEUxctrEMbCktc.main:([Ljava/lang/String;)V,46 >0
+  EoHDEM73Mj4tEUxctrEMbCktc.main:([Ljava/lang/String;)V,49 >0
+  EoHDEM73Mj4tEUxctrEMbCktc.main:([Ljava/lang/String;)V,65 >0
+  EoHDEM73Mj4tEUxctrEMbCktc.main:([Ljava/lang/String;)V,72 >0
+  EoHDEM73Mj4tEUxctrEMbCktc.main:([Ljava/lang/String;)V,80 >0
+  EoHDEM73Mj4tEUxctrEMbCktc.main:([Ljava/lang/String;)V,104 >0
+trace:
+  Oyohpk5OpmcGAAXwua9hKxJcc.main:([Ljava/lang/String;)V,27 >0
+  Oyohpk5OpmcGAAXwua9hKxJcc.main:([Ljava/lang/String;)V,30 >0
+  Oyohpk5OpmcGAAXwua9hKxJcc.main:([Ljava/lang/String;)V,44 >0
+  N4QFyaGIIrBuSwJrKjSCMtUMN.lastWord:(Ljava/lang/String;)Ljava/lang/String;,12 >1
+  N4QFyaGIIrBuSwJrKjSCMtUMN.lastWord:(Ljava/lang/String;)Ljava/lang/String;,24 >1
+  N4QFyaGIIrBuSwJrKjSCMtUMN.lastWord:(Ljava/lang/String;)Ljava/lang/String;,39 >1
+trace:
+  Oyohpk5OpmcGAAXwua9hKxJcc.main:([Ljava/lang/String;)V,27 >0
+  Oyohpk5OpmcGAAXwua9hKxJcc.main:([Ljava/lang/String;)V,30 >0
+  Oyohpk5OpmcGAAXwua9hKxJcc.main:([Ljava/lang/String;)V,44 >0
+  N4QFyaGIIrBuSwJrKjSCMtUMN.lastWord:(Ljava/lang/String;)Ljava/lang/String;,12 >1
+  N4QFyaGIIrBuSwJrKjSCMtUMN.lastWord:(Ljava/lang/String;)Ljava/lang/String;,24 >1
+  N4QFyaGIIrBuSwJrKjSCMtUMN.lastWord:(Ljava/lang/String;)Ljava/lang/String;,52 >1
+
+metric-clat= 0
+metric-max-depth= 2
+ope:
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+trace:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,44 >0
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,55 >0
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,1 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,2 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,12 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,20 >2
+trace:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,44 >0
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,55 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,7 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,20 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,38 >1
+trace:
+  QrCVDQJYOFTXMnWVXBUMv1Pio.run:()V,46 >0
+  QrCVDQJYOFTXMnWVXBUMv1Pio.run:()V,62 >0
+  YywHVeuP3frWxFjKo5ckCJ8b3.solve:()Ljava/lang/String;,10 >1
+  YywHVeuP3frWxFjKo5ckCJ8b3.solve:()Ljava/lang/String;,21 >1
+  YywHVeuP3frWxFjKo5ckCJ8b3.solve:()Ljava/lang/String;,26 >1
+  YywHVeuP3frWxFjKo5ckCJ8b3.solve:()Ljava/lang/String;,45 >1
+trace:
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,45 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,59 >0
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,1 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,2 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,12 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,20 >2
+trace:
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,45 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,59 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,7 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,20 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,38 >1
+trace:
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,17 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,33 >0
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,1 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,2 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,12 >2
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I,20 >2
+trace:
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,17 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,33 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,7 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,15 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,20 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.solve:(Ljava/lang/String;)Ljava/lang/String;,38 >1
+
+metric-clat= 4
+metric-max-depth= 1
+ope:
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I
+  charAt:(I)C
+  substring:(II)Ljava/lang/String;
+trace:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,44 >0
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,55 >0
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,1 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,17 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,39 >1
+trace:
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,45 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,59 >0
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,1 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,17 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,39 >1
+trace:
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,17 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,33 >0
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,1 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,17 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.solve:(Ljava/lang/String;)Ljava/lang/String;,39 >1
+
+metric-clat= 0
+metric-max-depth= 2
+ope:
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  substring:(II)Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+trace:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,44 >0
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,55 >0
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,3 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.whereToPut:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;,3 >2
+trace:
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,45 >0
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,59 >0
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,3 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.whereToPut:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;,3 >2
+trace:
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,17 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,29 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,42 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,54 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,68 >0
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,75 >0
+trace:
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,17 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,33 >0
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,3 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,11 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.solve:(Ljava/lang/String;)Ljava/lang/String;,23 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.whereToPut:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;,3 >2
+
+metric-clat= 2
+metric-max-depth= 1
+ope:
+  java/io/BufferedWriter."<init>":(Ljava/io/Writer;)V
+  readLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+trace:
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,63 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,70 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,73 >0
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,223 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,39 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,44 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,49 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,229 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+
+metric-clat= 5
+metric-max-depth= 1
+ope:
+  java/io/FileWriter."<init>":(Ljava/io/File;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+trace:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,31 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  PcUg7rxtSEwxFlqdEFnN8gvdP.main:([Ljava/lang/String;)V,36 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+
+metric-clat= 3
+metric-max-depth= 1
+ope:
+  compareTo:(Ljava/lang/Character;)I
+  toString:()Ljava/lang/String;
+  concat:(Ljava/lang/String;)Ljava/lang/String;
+  write:(Ljava/lang/String;)V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+trace:
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,143 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,153 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,156 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,219 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,175 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,183 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,188 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,219 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+
+metric-clat= 5
+metric-max-depth= 1
+ope:
+  java/io/PrintWriter."<init>":(Ljava/io/File;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+trace:
+  Qr14oulyocxvwTxKoPHtZP7h3.main:([Ljava/lang/String;)V,38 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+trace:
+  QvS9i8bUyGOrumpkDqlfLweiR.main:([Ljava/lang/String;)V,44 >0
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,2 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,12 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,26 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,39 >1
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.nextInt:()I,62 >1
+
+metric-clat= 5
+metric-max-depth= 1
+ope:
+  java/lang/String.valueOf:(C)Ljava/lang/String;
+  println:(Ljava/lang/String;)V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+trace:
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,109 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,197 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,208 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,212 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,146 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,197 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,208 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,212 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+trace:
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,170 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,197 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,208 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,212 >0
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,4 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V,11 >1
+
+=====Diagnostics:=====
+# --ngram-size=6
+# --max-branch=-1
+# --max-call-depth=-1
+# --max-method-definition=-1
+
+ope:
+  java/io/File."<init>":(Ljava/lang/String;)V
+  java/util/Scanner."<init>":(Ljava/io/File;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  MnfH4971SHIsOw7y5FS3iNKgU.main:([Ljava/lang/String;)V,45 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.main:([Ljava/lang/String;)V,6 >1
+
+ope:
+  java/io/File."<init>":(Ljava/lang/String;)V
+  java/io/FileWriter."<init>":(Ljava/io/File;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,28 >1
+  PcUg7rxtSEwxFlqdEFnN8gvdP.main:([Ljava/lang/String;)V,33 >1
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+loc:
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,17 >0
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,28 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,27 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,30 >1
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+loc:
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,64 >0
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,26 >0
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  substring:(II)Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  compareTo:(Ljava/lang/String;)I
+loc:
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,24 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.main:([Ljava/lang/String;)V,36 >2
+
+ope:
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+  println:(Ljava/lang/String;)V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,92 >1
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,53 >1
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,106 >1
+
+ope:
+  charAt:(I)C
+  charAt:(I)C
+  compareTo:(Ljava/lang/String;)I
+  charAt:(I)C
+  placeBefore:(Ljava/lang/String;C)Ljava/lang/String;
+  write:(Ljava/lang/String;)V
+loc:
+  NhFpHPW88iM5QFLkibkwBPJ9d.solve:(Ljava/util/Scanner;Ljava/io/PrintWriter;)V,38 >0
+  NhFpHPW88iM5QFLkibkwBPJ9d.solve:(Ljava/util/Scanner;Ljava/io/PrintWriter;)V,83 >0
+
+ope:
+  charAt:(I)C
+  charAt:(I)C
+  println:(Ljava/lang/String;)V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,106 >1
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,117 >1
+
+ope:
+  charAt:(I)C
+  charAt:(I)C
+  write:(Ljava/lang/String;)V
+  newLine:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  G7C4PJz5Rz3ErimU7VJDqjXd7.main:([Ljava/lang/String;)V,138 >1
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,147 >1
+
+ope:
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+  java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+loc:
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,25 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,35 >0
+
+ope:
+  charAt:(I)C
+  java/lang/Character.valueOf:(C)Ljava/lang/Character;
+  compareTo:(Ljava/lang/Character;)I
+  toString:()Ljava/lang/String;
+  concat:(Ljava/lang/String;)Ljava/lang/String;
+  write:(Ljava/lang/String;)V
+loc:
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,137 >0
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,169 >0
+
+ope:
+  charAt:(I)C
+  print:(Ljava/lang/String;)V
+  println:()V
+  flush:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,111 >1
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,132 >1
+
+ope:
+  charAt:(I)C
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  java/io/FileOutputStream."<init>":(Ljava/lang/String;)V
+  java/io/OutputStreamWriter."<init>":(Ljava/io/OutputStream;Ljava/lang/String;)V
+  java/io/BufferedWriter."<init>":(Ljava/io/Writer;)V
+  java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+loc:
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,112 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,91 >0
+
+ope:
+  charAt:(I)C
+  write:(Ljava/lang/String;)V
+  println:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  Qr14oulyocxvwTxKoPHtZP7h3.main:([Ljava/lang/String;)V,135 >1
+  Qr14oulyocxvwTxKoPHtZP7h3.main:([Ljava/lang/String;)V,168 >1
+
+ope:
+  charAt:(I)C
+  write:(Ljava/lang/String;)V
+  newLine:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,124 >1
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,157 >1
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,178 >1
+
+ope:
+  charAt:(I)C
+  java/lang/String.valueOf:(C)Ljava/lang/String;
+  println:(Ljava/lang/String;)V
+  flush:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,106 >1
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,143 >1
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,167 >1
+
+ope:
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+  java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+  printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+loc:
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,42 >0
+  Q4Yvf8PdzyHgVExa9GgHs1J97.main:([Ljava/lang/String;)V,52 >0
+
+ope:
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+  println:(Ljava/lang/String;)V
+  flush:()V
+loc:
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,58 >1
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,44 >1
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,93 >1
+
+ope:
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  println:(Ljava/lang/String;)V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  MnfH4971SHIsOw7y5FS3iNKgU.main:([Ljava/lang/String;)V,104 >1
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,93 >1
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+loc:
+  Eehmc5cA17DkRwhUMkZVmV327.Eehmc5cA17DkRwhUMkZVmV327:(Ljava/util/Scanner;)Lpublic;,5 >0
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,12 >0
+  K6kboEDuTSndwW5uh9KefhRDM.main:([Ljava/lang/String;)V,12 >1
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,12 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,12 >1
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  substring:(II)Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+loc:
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,12 >0
+  Y9shRswsxACJYJ84hxbS5Z7PO.main:([Ljava/lang/String;)V,20 >2
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,36 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,40 >1
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,12 >1
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+loc:
+  Codechef.main:([Ljava/lang/String;)V,12 >0
+  MnfH4971SHIsOw7y5FS3iNKgU.main:([Ljava/lang/String;)V,67 >0
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  length:()I
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,36 >1
+  QrCVDQJYOFTXMnWVXBUMv1Pio.run:()V,40 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,40 >1
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,12 >1
+
+ope:
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  substring:(II)Ljava/lang/String;
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,36 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,40 >1
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,12 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,12 >1
+
+ope:
+  readLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+loc:
+  ELr4DBC2luQnAbmUX4Z6LYNBN.main:([Ljava/lang/String;)V,46 >1
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,40 >0
+
+ope:
+  readLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  readLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,19 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,18 >0
+
+ope:
+  java/lang/Character.valueOf:(C)Ljava/lang/Character;
+  add:(Ljava/lang/Object;)Z
+  size:()I
+  iterator:()Ljava/util/Iterator;
+  hasNext:()Z
+  next:()Ljava/lang/Object;
+loc:
+  DKB9ZPUYhWoTMhdJH5HACYbzA.main:([Ljava/lang/String;)V,108 >2
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,168 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,114 >0
+
+ope:
+  java/lang/Character.valueOf:(C)Ljava/lang/Character;
+  add:(Ljava/lang/Object;)Z
+  size:()I
+  iterator:()Ljava/util/Iterator;
+  hasNext:()Z
+  write:(Ljava/lang/String;)V
+loc:
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,168 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,114 >0
+
+ope:
+  java/lang/Character.valueOf:(C)Ljava/lang/Character;
+  compareTo:(Ljava/lang/Character;)I
+  toString:()Ljava/lang/String;
+  concat:(Ljava/lang/String;)Ljava/lang/String;
+  write:(Ljava/lang/String;)V
+  flush:()V
+loc:
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,140 >1
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,172 >1
+
+ope:
+  toString:()Ljava/lang/String;
+  concat:(Ljava/lang/String;)Ljava/lang/String;
+  write:(Ljava/lang/String;)V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,153 >1
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,183 >1
+
+ope:
+  substring:(II)Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+  println:(Ljava/lang/String;)V
+loc:
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,33 >0
+  XnNhCfuKvLaCJmHeUrAmLWATQ.main:([Ljava/lang/String;)V,81 >0
+
+ope:
+  java/io/FileReader."<init>":(Ljava/lang/String;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  java/io/FileWriter."<init>":(Ljava/lang/String;)V
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+loc:
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,10 >1
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,10 >1
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,22 >1
+
+ope:
+  java/io/FileReader."<init>":(Ljava/lang/String;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  java/io/FileWriter."<init>":(Ljava/lang/String;)V
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+loc:
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,10 >0
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,22 >0
+
+ope:
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+loc:
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,25 >1
+  QrCVDQJYOFTXMnWVXBUMv1Pio.run:()V,35 >1
+  LlGdskKFV12UlHyUs4yUU6WNn.main:([Ljava/lang/String;)V,21 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,27 >1
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,21 >1
+
+ope:
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.read:()I
+  isAlNum:(I)Z
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.read:()I
+  isAlNum:(I)Z
+loc:
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,25 >1
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,21 >1
+
+ope:
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+loc:
+  QrCVDQJYOFTXMnWVXBUMv1Pio.run:()V,35 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,27 >1
+
+ope:
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  java/io/FileWriter."<init>":(Ljava/lang/String;)V
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+loc:
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,13 >1
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,13 >1
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,25 >1
+
+ope:
+  java/io/FileWriter."<init>":(Ljava/lang/String;)V
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,27 >1
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,27 >1
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,39 >1
+
+ope:
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+loc:
+  RSWotT9HwA8GeCL2q9NtEdma3.doMain:()V,30 >1
+  NhFpHPW88iM5QFLkibkwBPJ9d.main:([Ljava/lang/String;)V,30 >1
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,48 >1
+
+ope:
+  java/io/PrintWriter."<init>":(Ljava/io/Writer;)V
+  readLine:()Ljava/lang/String;
+  java/util/StringTokenizer."<init>":(Ljava/lang/String;)V
+  nextToken:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  readLine:()Ljava/lang/String;
+loc:
+  IHAPoeIB6uDLas6irIILjWYQS.main:([Ljava/lang/String;)V,30 >0
+  Isj3ECv96yrb92EQTpn97gHl9.main:([Ljava/lang/String;)V,37 >0
+
+ope:
+  java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+loc:
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,7 >1
+  Codechef.main:([Ljava/lang/String;)V,7 >1
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,7 >1
+  K6kboEDuTSndwW5uh9KefhRDM.main:([Ljava/lang/String;)V,7 >1
+  LHPIyaUu8f1ULyA3BbqMNIoUZ.main:([Ljava/lang/String;)V,7 >1
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.main:([Ljava/lang/String;)V,13 >1
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,7 >1
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,7 >1
+  SF3EgSKyseHKbqzBEgWRk5Azi.main:([Ljava/lang/String;)V,7 >1
+  XQqBMkIPbpU4VwfGJjbGJSqJY.solve:()V,14 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,7 >1
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,7 >1
+  YwPWevNTeYSwtrf0OauWSdqSw.main:([Ljava/lang/String;)V,23 >1
+  YywHVeuP3frWxFjKo5ckCJ8b3.main:([Ljava/lang/String;)V,7 >1
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,7 >1
+
+ope:
+  java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,7 >0
+  K6kboEDuTSndwW5uh9KefhRDM.main:([Ljava/lang/String;)V,7 >1
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,7 >0
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,7 >1
+
+ope:
+  java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.read:()I
+  isAlNum:(I)Z
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.read:()I
+  isAlNum:(I)Z
+loc:
+  A3PJQOma8oHsX3yca6t0a2Oms.main:([Ljava/lang/String;)V,7 >1
+  DaOnXB7loVPxByth0Vt30dlv4.main:([Ljava/lang/String;)V,7 >1
+  K6kboEDuTSndwW5uh9KefhRDM.main:([Ljava/lang/String;)V,7 >1
+  LHPIyaUu8f1ULyA3BbqMNIoUZ.main:([Ljava/lang/String;)V,7 >1
+  NLDc4JkgwQTEd3swXWXfOWl9d.main:([Ljava/lang/String;)V,7 >1
+  QZyD6mjvgudFTGFCJDz9qsuuy.main:([Ljava/lang/String;)V,7 >1
+  SF3EgSKyseHKbqzBEgWRk5Azi.main:([Ljava/lang/String;)V,7 >1
+  XQqBMkIPbpU4VwfGJjbGJSqJY.solve:()V,14 >1
+  WjF9wI64hHVkP8DaDwOfGWi8G.main:([Ljava/lang/String;)V,7 >1
+  YywHVeuP3frWxFjKo5ckCJ8b3.main:([Ljava/lang/String;)V,7 >1
+
+ope:
+  java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+loc:
+  Codechef.main:([Ljava/lang/String;)V,7 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,7 >1
+
+ope:
+  java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+loc:
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,7 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,7 >1
+
+ope:
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  readLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  readLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+loc:
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,14 >0
+  ZbQX7bZqsLR5HTLM0AknSsy2z.main:([Ljava/lang/String;)V,13 >0
+
+ope:
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  readLine:()Ljava/lang/String;
+  java/lang/Integer.valueOf:(Ljava/lang/String;)Ljava/lang/Integer;
+  intValue:()I
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  BaqPgzGb6nJZA1wIY4LtTzA3w.main:([Ljava/lang/String;)V,19 >1
+  QjBaN7MByskBg7kTHX8cMTBQW.main:([Ljava/lang/String;)V,32 >1
+  Z4AdHVwbXrLI8qckywUXuyUVT.main:([Ljava/lang/String;)V,50 >1
+
+ope:
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,22 >1
+  LlGdskKFV12UlHyUs4yUU6WNn.main:([Ljava/lang/String;)V,18 >1
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,18 >1
+
+ope:
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  WYQ9fDkIoc2JuQTpuoZvbOoBN.read:()I
+  isAlNum:(I)Z
+  java/lang/RuntimeException."<init>":()V
+loc:
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,22 >2
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,18 >2
+
+ope:
+  java/io/InputStreamReader."<init>":(Ljava/io/InputStream;)V
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  readLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  readLine:()Ljava/lang/String;
+  charAt:(I)C
+loc:
+  LWSYIechZCT5a1TqEUYt2aW2d.main:([Ljava/lang/String;)V,11 >0
+  NVvNv3sNk8N9q01lG7d6SwnNc.main:([Ljava/lang/String;)V,11 >0
+
+ope:
+  java/io/InputStreamReader."<init>":(Ljava/io/InputStream;)V
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+loc:
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,19 >1
+  LlGdskKFV12UlHyUs4yUU6WNn.main:([Ljava/lang/String;)V,15 >1
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,15 >1
+
+ope:
+  java/io/InputStreamReader."<init>":(Ljava/io/InputStream;)V
+  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+  java/util/Scanner."<init>":(Ljava/lang/Readable;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.nextInt:()I
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  length:()I
+loc:
+  AReuNAAB0acUDYaAzqbBZgiy0.main:([Ljava/lang/String;)V,19 >0
+  X4ktrhZOBxLkITveTyRRUaUC4.main:([Ljava/lang/String;)V,15 >0
+
+ope:
+  add:(Ljava/lang/Object;)Z
+  size:()I
+  iterator:()Ljava/util/Iterator;
+  hasNext:()Z
+  next:()Ljava/lang/Object;
+  write:(Ljava/lang/String;)V
+loc:
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,117 >0
+  V8pdr1HqZeGe48opkZKnm5GN7.main:([Ljava/lang/String;)V,171 >0
+
+ope:
+  java/util/Scanner."<init>":(Ljava/io/File;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+loc:
+  MnfH4971SHIsOw7y5FS3iNKgU.main:([Ljava/lang/String;)V,48 >1
+  Y9shRswsxACJYJ84hxbS5Z7PO.main:([Ljava/lang/String;)V,15 >1
+
+ope:
+  java/io/PrintWriter."<init>":(Ljava/lang/String;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+loc:
+  BsQglKr7wLJszwxrrbSX0NTTu.main:([Ljava/lang/String;)V,23 >1
+  R723UYFgRSGCs8MpZTtl3Ru2w.main:([Ljava/lang/String;)V,17 >1
+
+ope:
+  nextLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+  charAt:(I)C
+loc:
+  N4QFyaGIIrBuSwJrKjSCMtUMN.main:([Ljava/lang/String;)V,30 >1
+  Oyohpk5OpmcGAAXwua9hKxJcc.main:([Ljava/lang/String;)V,44 >1
+
+ope:
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,55 >2
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,59 >2
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,33 >2
+
+ope:
+  nextLine:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  substring:(II)Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  compareTo:(Ljava/lang/String;)I
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,55 >2
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,59 >2
+  O1fI4iVnjO7nLrd5xra4eLPoL.main:([Ljava/lang/String;)V,59 >1
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,29 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,33 >2
+
+ope:
+  nextLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  nextLine:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  ET8n9q8JRqmBMX5ycA1sIcIEi.main:([Ljava/lang/String;)V,33 >1
+  Oyohpk5OpmcGAAXwua9hKxJcc.main:([Ljava/lang/String;)V,27 >1
+
+ope:
+  nextLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  charAt:(I)C
+loc:
+  EoHDEM73Mj4tEUxctrEMbCktc.main:([Ljava/lang/String;)V,46 >0
+  Oyohpk5OpmcGAAXwua9hKxJcc.main:([Ljava/lang/String;)V,27 >1
+
+ope:
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,44 >1
+  QrCVDQJYOFTXMnWVXBUMv1Pio.run:()V,46 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,45 >1
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,17 >1
+
+ope:
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  length:()I
+  Fvlwp2s8Z4tWHHSpBPI1kZlGQ.findLargest:(Ljava/lang/String;)I
+  charAt:(I)C
+  substring:(II)Ljava/lang/String;
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,44 >1
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,45 >1
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,17 >1
+
+ope:
+  nextLine:()Ljava/lang/String;
+  nextLine:()Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+  length:()I
+  substring:(II)Ljava/lang/String;
+  substring:(II)Ljava/lang/String;
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,44 >2
+  NINAJ6zWEAXQRPma5wu8qAkdd.main:([Ljava/lang/String;)V,45 >2
+  YaZGW8vwpzXxOwxexrMMPUd7O.main:([Ljava/lang/String;)V,17 >0
+  ZYiIT6HaQbvJKo6afNovC2en0.main:([Ljava/lang/String;)V,17 >2
+
+ope:
+  java/io/BufferedWriter."<init>":(Ljava/io/Writer;)V
+  readLine:()Ljava/lang/String;
+  java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  HzRz8mZnHMO3M2uxzPG29U7Wg.main:([Ljava/lang/String;)V,63 >1
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,39 >1
+
+ope:
+  java/io/FileWriter."<init>":(Ljava/io/File;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+loc:
+  IJN4tLWISdLJIJpqzetneXfHz.main:([Ljava/lang/String;)V,31 >1
+  PcUg7rxtSEwxFlqdEFnN8gvdP.main:([Ljava/lang/String;)V,36 >1
+
+ope:
+  compareTo:(Ljava/lang/Character;)I
+  toString:()Ljava/lang/String;
+  concat:(Ljava/lang/String;)Ljava/lang/String;
+  write:(Ljava/lang/String;)V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,143 >1
+  Lfu6HuA5AebUjYNZ6D8wsgQdC.main:([Ljava/lang/String;)V,175 >1
+
+ope:
+  java/io/PrintWriter."<init>":(Ljava/io/File;)V
+  Z7iYxk5y1OHHVYYpRWwOMxafV.next:()Ljava/lang/String;
+  charAt:(I)C
+  length:()I
+  charAt:(I)C
+  java/lang/RuntimeException."<init>":()V
+loc:
+  Qr14oulyocxvwTxKoPHtZP7h3.main:([Ljava/lang/String;)V,38 >1
+  QvS9i8bUyGOrumpkDqlfLweiR.main:([Ljava/lang/String;)V,44 >1
+
+ope:
+  java/lang/String.valueOf:(C)Ljava/lang/String;
+  println:(Ljava/lang/String;)V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+  flush:()V
+  M0OtQWQJ2q2ahH0FUWnwm9KSY.close:()V
+loc:
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,109 >1
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,146 >1
+  VFTFxe7ZklMmSPyz66kbQlnjh.main:([Ljava/lang/String;)V,170 >1
+
+# locs of valid ngrams: 1985
+# distinct ope seqs: 1573
+#   sole-location ope seqs: 1504
+#   clone ope seqs: 69

@@ -1,0 +1,713 @@
+cccd-runscript c-small > cccd-small-counting-sheep.txt  0,40s user 0,62s system 2% cpu 38,676 total
+
+[Script] Using docker: Docker version 20.10.12, build e91ed5707e
+[Running] [/home/cccd-user/data/c-small]
+[Running] Copy File to "/home/fedora-user/dk-crest-java/trunk/ dk-crest-java --username dek782@gmail.com/crestClean/sourceFiles/input"
+Creating file structure.......
+Creating Ctag and Crest Information.......
+doing for 1
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//4G./0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//4G./0/coding.c.txt  ../sourceFiles/scriptoutput/c-small_copy/4G./0/coding.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/4G./0/coding.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 1/ ../sourceFiles/scriptoutput/c-small_copy/4G./0/coding.c
+doing for 2
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//braianhal/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//braianhal/0/Counting-Sheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/braianhal/0/Counting-Sheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/braianhal/0/Counting-Sheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 2/ ../sourceFiles/scriptoutput/c-small_copy/braianhal/0/Counting-Sheep.c
+doing for 3
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//algidseas/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//algidseas/0/sheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/algidseas/0/sheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/algidseas/0/sheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 3/ ../sourceFiles/scriptoutput/c-small_copy/algidseas/0/sheep.c
+doing for 4
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//unclejack/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//unclejack/0/Source.c.txt  ../sourceFiles/scriptoutput/c-small_copy/unclejack/0/Source.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/unclejack/0/Source.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 4/ ../sourceFiles/scriptoutput/c-small_copy/unclejack/0/Source.c
+doing for 5
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//slothkingw/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//slothkingw/0/sheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/slothkingw/0/sheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/slothkingw/0/sheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 5/ ../sourceFiles/scriptoutput/c-small_copy/slothkingw/0/sheep.c
+doing for 6
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//kieron/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//kieron/0/prog.c.txt  ../sourceFiles/scriptoutput/c-small_copy/kieron/0/prog.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/kieron/0/prog.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 6/ ../sourceFiles/scriptoutput/c-small_copy/kieron/0/prog.c
+doing for 7
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//piesauce/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//piesauce/0/sheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/piesauce/0/sheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/piesauce/0/sheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 7/ ../sourceFiles/scriptoutput/c-small_copy/piesauce/0/sheep.c
+doing for 8
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Nipun0212/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Nipun0212/0/main.c.txt  ../sourceFiles/scriptoutput/c-small_copy/Nipun0212/0/main.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/Nipun0212/0/main.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 8/ ../sourceFiles/scriptoutput/c-small_copy/Nipun0212/0/main.c
+doing for 9
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//marutsat/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//marutsat/0/countingsheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/marutsat/0/countingsheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/marutsat/0/countingsheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 9/ ../sourceFiles/scriptoutput/c-small_copy/marutsat/0/countingsheep.c
+doing for 10
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//starkarya/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//starkarya/0/codejam1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/starkarya/0/codejam1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/starkarya/0/codejam1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 10/ ../sourceFiles/scriptoutput/c-small_copy/starkarya/0/codejam1.c
+doing for 11
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Madan.Chopra/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Madan.Chopra/0/belatrix.c.txt  ../sourceFiles/scriptoutput/c-small_copy/Madan.Chopra/0/belatrix.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/Madan.Chopra/0/belatrix.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 11/ ../sourceFiles/scriptoutput/c-small_copy/Madan.Chopra/0/belatrix.c
+doing for 12
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//RAZOR/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//RAZOR/0/CountingSheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/RAZOR/0/CountingSheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/RAZOR/0/CountingSheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 12/ ../sourceFiles/scriptoutput/c-small_copy/RAZOR/0/CountingSheep.c
+doing for 13
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//soumyadityac/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//soumyadityac/0/abc.c.txt  ../sourceFiles/scriptoutput/c-small_copy/soumyadityac/0/abc.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/soumyadityac/0/abc.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 13/ ../sourceFiles/scriptoutput/c-small_copy/soumyadityac/0/abc.c
+doing for 14
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//EvgeniSergeev/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//EvgeniSergeev/0/a.c.txt  ../sourceFiles/scriptoutput/c-small_copy/EvgeniSergeev/0/a.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/EvgeniSergeev/0/a.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 14/ ../sourceFiles/scriptoutput/c-small_copy/EvgeniSergeev/0/a.c
+doing for 15
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//masterashish/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//masterashish/0/number.c.txt  ../sourceFiles/scriptoutput/c-small_copy/masterashish/0/number.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/masterashish/0/number.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 15/ ../sourceFiles/scriptoutput/c-small_copy/masterashish/0/number.c
+doing for 16
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//MommyCanCode/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//MommyCanCode/0/ideone_P7Yje1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/MommyCanCode/0/ideone_P7Yje1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/MommyCanCode/0/ideone_P7Yje1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 16/ ../sourceFiles/scriptoutput/c-small_copy/MommyCanCode/0/ideone_P7Yje1.c
+doing for 17
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//mma/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//mma/0/count.c.txt  ../sourceFiles/scriptoutput/c-small_copy/mma/0/count.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/mma/0/count.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 17/ ../sourceFiles/scriptoutput/c-small_copy/mma/0/count.c
+doing for 18
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//blackskygg/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//blackskygg/0/a.c.txt  ../sourceFiles/scriptoutput/c-small_copy/blackskygg/0/a.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/blackskygg/0/a.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 18/ ../sourceFiles/scriptoutput/c-small_copy/blackskygg/0/a.c
+doing for 19
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Blastthecode347./0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Blastthecode347./0/codejam1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/Blastthecode347./0/codejam1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/Blastthecode347./0/codejam1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 19/ ../sourceFiles/scriptoutput/c-small_copy/Blastthecode347./0/codejam1.c
+doing for 20
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//jbhateja/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//jbhateja/0/Code.c.txt  ../sourceFiles/scriptoutput/c-small_copy/jbhateja/0/Code.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/jbhateja/0/Code.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 20/ ../sourceFiles/scriptoutput/c-small_copy/jbhateja/0/Code.c
+doing for 21
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//tcantr/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//tcantr/0/countingSheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/tcantr/0/countingSheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/tcantr/0/countingSheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 21/ ../sourceFiles/scriptoutput/c-small_copy/tcantr/0/countingSheep.c
+doing for 22
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//abhiyadav1323/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//abhiyadav1323/0/1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/abhiyadav1323/0/1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/abhiyadav1323/0/1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 22/ ../sourceFiles/scriptoutput/c-small_copy/abhiyadav1323/0/1.c
+doing for 23
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//shadan227/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//shadan227/0/counting.c.txt  ../sourceFiles/scriptoutput/c-small_copy/shadan227/0/counting.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/shadan227/0/counting.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 23/ ../sourceFiles/scriptoutput/c-small_copy/shadan227/0/counting.c
+doing for 24
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//eatbuckshot/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//eatbuckshot/0/countingsheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/eatbuckshot/0/countingsheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/eatbuckshot/0/countingsheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 24/ ../sourceFiles/scriptoutput/c-small_copy/eatbuckshot/0/countingsheep.c
+doing for 25
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//tj96/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//tj96/0/ex.c.txt  ../sourceFiles/scriptoutput/c-small_copy/tj96/0/ex.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/tj96/0/ex.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 25/ ../sourceFiles/scriptoutput/c-small_copy/tj96/0/ex.c
+doing for 26
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//arvind.ch/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//arvind.ch/0/a.c.txt  ../sourceFiles/scriptoutput/c-small_copy/arvind.ch/0/a.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/arvind.ch/0/a.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 26/ ../sourceFiles/scriptoutput/c-small_copy/arvind.ch/0/a.c
+doing for 27
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//CodeZeus/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//CodeZeus/0/digits.c.txt  ../sourceFiles/scriptoutput/c-small_copy/CodeZeus/0/digits.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/CodeZeus/0/digits.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 27/ ../sourceFiles/scriptoutput/c-small_copy/CodeZeus/0/digits.c
+doing for 28
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//csesteban/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//csesteban/0/main.c.txt  ../sourceFiles/scriptoutput/c-small_copy/csesteban/0/main.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/csesteban/0/main.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 28/ ../sourceFiles/scriptoutput/c-small_copy/csesteban/0/main.c
+doing for 29
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//sfgsg/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//sfgsg/0/yo.c.txt  ../sourceFiles/scriptoutput/c-small_copy/sfgsg/0/yo.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/sfgsg/0/yo.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 29/ ../sourceFiles/scriptoutput/c-small_copy/sfgsg/0/yo.c
+doing for 30
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//brianfry713/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//brianfry713/0/a.c.txt  ../sourceFiles/scriptoutput/c-small_copy/brianfry713/0/a.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/brianfry713/0/a.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 30/ ../sourceFiles/scriptoutput/c-small_copy/brianfry713/0/a.c
+doing for 31
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//tiagofalcao/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//tiagofalcao/0/A.c.txt  ../sourceFiles/scriptoutput/c-small_copy/tiagofalcao/0/A.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/tiagofalcao/0/A.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 31/ ../sourceFiles/scriptoutput/c-small_copy/tiagofalcao/0/A.c
+doing for 32
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//4rch3r/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//4rch3r/0/Problem1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/4rch3r/0/Problem1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/4rch3r/0/Problem1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 32/ ../sourceFiles/scriptoutput/c-small_copy/4rch3r/0/Problem1.c
+doing for 33
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Debakanata/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Debakanata/0/1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/Debakanata/0/1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/Debakanata/0/1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 33/ ../sourceFiles/scriptoutput/c-small_copy/Debakanata/0/1.c
+doing for 34
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//helloneo.pe.kr/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//helloneo.pe.kr/0/a_small.c.txt  ../sourceFiles/scriptoutput/c-small_copy/helloneo.pe.kr/0/a_small.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/helloneo.pe.kr/0/a_small.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 34/ ../sourceFiles/scriptoutput/c-small_copy/helloneo.pe.kr/0/a_small.c
+doing for 35
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Svm31/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Svm31/0/COUNTING.c.txt  ../sourceFiles/scriptoutput/c-small_copy/Svm31/0/COUNTING.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/Svm31/0/COUNTING.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 35/ ../sourceFiles/scriptoutput/c-small_copy/Svm31/0/COUNTING.c
+doing for 36
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//NerrupuKumar/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//NerrupuKumar/0/Un.c.txt  ../sourceFiles/scriptoutput/c-small_copy/NerrupuKumar/0/Un.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/NerrupuKumar/0/Un.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 36/ ../sourceFiles/scriptoutput/c-small_copy/NerrupuKumar/0/Un.c
+doing for 37
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//shubhamkrm/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//shubhamkrm/0/sheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/shubhamkrm/0/sheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/shubhamkrm/0/sheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 37/ ../sourceFiles/scriptoutput/c-small_copy/shubhamkrm/0/sheep.c
+doing for 38
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Cloudless/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Cloudless/0/HW.c.txt  ../sourceFiles/scriptoutput/c-small_copy/Cloudless/0/HW.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/Cloudless/0/HW.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 38/ ../sourceFiles/scriptoutput/c-small_copy/Cloudless/0/HW.c
+doing for 39
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//thiagomarcilon/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//thiagomarcilon/0/teste.c.txt  ../sourceFiles/scriptoutput/c-small_copy/thiagomarcilon/0/teste.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/thiagomarcilon/0/teste.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 39/ ../sourceFiles/scriptoutput/c-small_copy/thiagomarcilon/0/teste.c
+doing for 40
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//VijayJoshi/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//VijayJoshi/0/pro1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/VijayJoshi/0/pro1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/VijayJoshi/0/pro1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 40/ ../sourceFiles/scriptoutput/c-small_copy/VijayJoshi/0/pro1.c
+doing for 41
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//alsoba/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//alsoba/0/a.c.txt  ../sourceFiles/scriptoutput/c-small_copy/alsoba/0/a.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/alsoba/0/a.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 41/ ../sourceFiles/scriptoutput/c-small_copy/alsoba/0/a.c
+doing for 42
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Pick/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Pick/0/main.c.txt  ../sourceFiles/scriptoutput/c-small_copy/Pick/0/main.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/Pick/0/main.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 42/ ../sourceFiles/scriptoutput/c-small_copy/Pick/0/main.c
+doing for 43
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//MeL0dy/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//MeL0dy/0/Sheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/MeL0dy/0/Sheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/MeL0dy/0/Sheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 43/ ../sourceFiles/scriptoutput/c-small_copy/MeL0dy/0/Sheep.c
+doing for 44
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Darpanjbora/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Darpanjbora/0/countingSheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/Darpanjbora/0/countingSheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/Darpanjbora/0/countingSheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 44/ ../sourceFiles/scriptoutput/c-small_copy/Darpanjbora/0/countingSheep.c
+doing for 45
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//sterosiello/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//sterosiello/0/main.c.txt  ../sourceFiles/scriptoutput/c-small_copy/sterosiello/0/main.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/sterosiello/0/main.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 45/ ../sourceFiles/scriptoutput/c-small_copy/sterosiello/0/main.c
+doing for 46
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//fsiotane/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//fsiotane/0/A.c.txt  ../sourceFiles/scriptoutput/c-small_copy/fsiotane/0/A.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/fsiotane/0/A.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 46/ ../sourceFiles/scriptoutput/c-small_copy/fsiotane/0/A.c
+doing for 47
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//NickApo/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//NickApo/0/main.c.txt  ../sourceFiles/scriptoutput/c-small_copy/NickApo/0/main.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/NickApo/0/main.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 47/ ../sourceFiles/scriptoutput/c-small_copy/NickApo/0/main.c
+doing for 48
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//postamar/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//postamar/0/counting_sheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/postamar/0/counting_sheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/postamar/0/counting_sheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 48/ ../sourceFiles/scriptoutput/c-small_copy/postamar/0/counting_sheep.c
+doing for 49
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//ElaheA/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//ElaheA/0/8.c.txt  ../sourceFiles/scriptoutput/c-small_copy/ElaheA/0/8.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/ElaheA/0/8.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 49/ ../sourceFiles/scriptoutput/c-small_copy/ElaheA/0/8.c
+doing for 50
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//skdudn321/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//skdudn321/0/problem.c.txt  ../sourceFiles/scriptoutput/c-small_copy/skdudn321/0/problem.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/skdudn321/0/problem.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 50/ ../sourceFiles/scriptoutput/c-small_copy/skdudn321/0/problem.c
+doing for 51
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//AdiKrish/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//AdiKrish/0/counting_sheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/AdiKrish/0/counting_sheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/AdiKrish/0/counting_sheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 51/ ../sourceFiles/scriptoutput/c-small_copy/AdiKrish/0/counting_sheep.c
+doing for 52
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//muratekici/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//muratekici/0/Untitled1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/muratekici/0/Untitled1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/muratekici/0/Untitled1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 52/ ../sourceFiles/scriptoutput/c-small_copy/muratekici/0/Untitled1.c
+doing for 53
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//SathyaSaagar/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//SathyaSaagar/0/SMALL.c.txt  ../sourceFiles/scriptoutput/c-small_copy/SathyaSaagar/0/SMALL.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/SathyaSaagar/0/SMALL.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 53/ ../sourceFiles/scriptoutput/c-small_copy/SathyaSaagar/0/SMALL.c
+doing for 54
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//enhao/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//enhao/0/main.c.txt  ../sourceFiles/scriptoutput/c-small_copy/enhao/0/main.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/enhao/0/main.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 54/ ../sourceFiles/scriptoutput/c-small_copy/enhao/0/main.c
+doing for 55
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//enhao/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//enhao/0/codejam.c.txt  ../sourceFiles/scriptoutput/c-small_copy/enhao/0/codejam.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/enhao/0/codejam.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 55/ ../sourceFiles/scriptoutput/c-small_copy/enhao/0/codejam.c
+doing for 56
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//deXteR/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//deXteR/0/codejamq1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/deXteR/0/codejamq1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/deXteR/0/codejamq1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 56/ ../sourceFiles/scriptoutput/c-small_copy/deXteR/0/codejamq1.c
+doing for 57
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Didar/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Didar/0/countingsheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/Didar/0/countingsheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/Didar/0/countingsheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 57/ ../sourceFiles/scriptoutput/c-small_copy/Didar/0/countingsheep.c
+doing for 58
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//manoj.bazzinga/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//manoj.bazzinga/0/Bleatrix.c.txt  ../sourceFiles/scriptoutput/c-small_copy/manoj.bazzinga/0/Bleatrix.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/manoj.bazzinga/0/Bleatrix.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 58/ ../sourceFiles/scriptoutput/c-small_copy/manoj.bazzinga/0/Bleatrix.c
+doing for 59
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//mi./0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//mi./0/A.c.txt  ../sourceFiles/scriptoutput/c-small_copy/mi./0/A.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/mi./0/A.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 59/ ../sourceFiles/scriptoutput/c-small_copy/mi./0/A.c
+doing for 60
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//krahul1996/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//krahul1996/0/bleatrix.c.txt  ../sourceFiles/scriptoutput/c-small_copy/krahul1996/0/bleatrix.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/krahul1996/0/bleatrix.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 60/ ../sourceFiles/scriptoutput/c-small_copy/krahul1996/0/bleatrix.c
+doing for 61
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Marijan/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Marijan/0/A.c.txt  ../sourceFiles/scriptoutput/c-small_copy/Marijan/0/A.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/Marijan/0/A.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 61/ ../sourceFiles/scriptoutput/c-small_copy/Marijan/0/A.c
+doing for 62
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//mradul0/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//mradul0/0/countingSheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/mradul0/0/countingSheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/mradul0/0/countingSheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 62/ ../sourceFiles/scriptoutput/c-small_copy/mradul0/0/countingSheep.c
+doing for 63
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//dementia/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//dementia/0/QR_A_Small.c.txt  ../sourceFiles/scriptoutput/c-small_copy/dementia/0/QR_A_Small.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/dementia/0/QR_A_Small.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 63/ ../sourceFiles/scriptoutput/c-small_copy/dementia/0/QR_A_Small.c
+doing for 64
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//chully/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//chully/0/codejam.c.txt  ../sourceFiles/scriptoutput/c-small_copy/chully/0/codejam.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/chully/0/codejam.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 64/ ../sourceFiles/scriptoutput/c-small_copy/chully/0/codejam.c
+doing for 65
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Qwerty29/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Qwerty29/0/sav1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/Qwerty29/0/sav1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/Qwerty29/0/sav1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 65/ ../sourceFiles/scriptoutput/c-small_copy/Qwerty29/0/sav1.c
+doing for 66
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//mzambe/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//mzambe/0/foo.c.txt  ../sourceFiles/scriptoutput/c-small_copy/mzambe/0/foo.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/mzambe/0/foo.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 66/ ../sourceFiles/scriptoutput/c-small_copy/mzambe/0/foo.c
+doing for 67
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//nick.01/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//nick.01/0/codejam.c.txt  ../sourceFiles/scriptoutput/c-small_copy/nick.01/0/codejam.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/nick.01/0/codejam.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 67/ ../sourceFiles/scriptoutput/c-small_copy/nick.01/0/codejam.c
+doing for 68
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//milky.nasa/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//milky.nasa/0/prob1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/milky.nasa/0/prob1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/milky.nasa/0/prob1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 68/ ../sourceFiles/scriptoutput/c-small_copy/milky.nasa/0/prob1.c
+doing for 69
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Vathsalya/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Vathsalya/0/google1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/Vathsalya/0/google1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/Vathsalya/0/google1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 69/ ../sourceFiles/scriptoutput/c-small_copy/Vathsalya/0/google1.c
+doing for 70
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//whitewizard/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//whitewizard/0/CountingSheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/whitewizard/0/CountingSheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/whitewizard/0/CountingSheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 70/ ../sourceFiles/scriptoutput/c-small_copy/whitewizard/0/CountingSheep.c
+doing for 71
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//vas.er/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//vas.er/0/vas.c.txt  ../sourceFiles/scriptoutput/c-small_copy/vas.er/0/vas.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/vas.er/0/vas.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 71/ ../sourceFiles/scriptoutput/c-small_copy/vas.er/0/vas.c
+doing for 72
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//thspreetham/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//thspreetham/0/main.c.txt  ../sourceFiles/scriptoutput/c-small_copy/thspreetham/0/main.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/thspreetham/0/main.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 72/ ../sourceFiles/scriptoutput/c-small_copy/thspreetham/0/main.c
+doing for 73
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Murillo2380/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Murillo2380/0/main.c.txt  ../sourceFiles/scriptoutput/c-small_copy/Murillo2380/0/main.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/Murillo2380/0/main.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 73/ ../sourceFiles/scriptoutput/c-small_copy/Murillo2380/0/main.c
+doing for 74
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//daeler/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//daeler/0/asmall.c.txt  ../sourceFiles/scriptoutput/c-small_copy/daeler/0/asmall.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/daeler/0/asmall.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 74/ ../sourceFiles/scriptoutput/c-small_copy/daeler/0/asmall.c
+doing for 75
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//john.tylor/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//john.tylor/0/Untitled1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/john.tylor/0/Untitled1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/john.tylor/0/Untitled1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 75/ ../sourceFiles/scriptoutput/c-small_copy/john.tylor/0/Untitled1.c
+doing for 76
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//klc/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//klc/0/a.c.txt  ../sourceFiles/scriptoutput/c-small_copy/klc/0/a.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/klc/0/a.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 76/ ../sourceFiles/scriptoutput/c-small_copy/klc/0/a.c
+doing for 77
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//ShiSam13/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//ShiSam13/0/codejam1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/ShiSam13/0/codejam1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/ShiSam13/0/codejam1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 77/ ../sourceFiles/scriptoutput/c-small_copy/ShiSam13/0/codejam1.c
+doing for 78
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//broom/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//broom/0/check_digits.c.txt  ../sourceFiles/scriptoutput/c-small_copy/broom/0/check_digits.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/broom/0/check_digits.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 78/ ../sourceFiles/scriptoutput/c-small_copy/broom/0/check_digits.c
+doing for 79
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//deepak54354/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//deepak54354/0/a.c.txt  ../sourceFiles/scriptoutput/c-small_copy/deepak54354/0/a.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/deepak54354/0/a.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 79/ ../sourceFiles/scriptoutput/c-small_copy/deepak54354/0/a.c
+doing for 80
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//jyotesh/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//jyotesh/0/Counting-Sheep-Small.c.txt  ../sourceFiles/scriptoutput/c-small_copy/jyotesh/0/Counting-Sheep-Small.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/jyotesh/0/Counting-Sheep-Small.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 80/ ../sourceFiles/scriptoutput/c-small_copy/jyotesh/0/Counting-Sheep-Small.c
+doing for 81
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//oromos/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//oromos/0/CountingSheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/oromos/0/CountingSheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/oromos/0/CountingSheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 81/ ../sourceFiles/scriptoutput/c-small_copy/oromos/0/CountingSheep.c
+doing for 82
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//sv0/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//sv0/0/CountingSheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/sv0/0/CountingSheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/sv0/0/CountingSheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 82/ ../sourceFiles/scriptoutput/c-small_copy/sv0/0/CountingSheep.c
+doing for 83
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//themikemikovi4/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//themikemikovi4/0/A.c.txt  ../sourceFiles/scriptoutput/c-small_copy/themikemikovi4/0/A.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/themikemikovi4/0/A.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 83/ ../sourceFiles/scriptoutput/c-small_copy/themikemikovi4/0/A.c
+doing for 84
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//akshant31/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//akshant31/0/c1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/akshant31/0/c1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/akshant31/0/c1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 84/ ../sourceFiles/scriptoutput/c-small_copy/akshant31/0/c1.c
+doing for 85
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Calvi/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Calvi/0/1_question.c.txt  ../sourceFiles/scriptoutput/c-small_copy/Calvi/0/1_question.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/Calvi/0/1_question.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 85/ ../sourceFiles/scriptoutput/c-small_copy/Calvi/0/1_question.c
+doing for 86
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//kavya9/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//kavya9/0/p1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/kavya9/0/p1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/kavya9/0/p1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 86/ ../sourceFiles/scriptoutput/c-small_copy/kavya9/0/p1.c
+doing for 87
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Noxoin/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Noxoin/0/a_small.c.txt  ../sourceFiles/scriptoutput/c-small_copy/Noxoin/0/a_small.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/Noxoin/0/a_small.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 87/ ../sourceFiles/scriptoutput/c-small_copy/Noxoin/0/a_small.c
+doing for 88
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//yssandeep/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//yssandeep/0/1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/yssandeep/0/1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/yssandeep/0/1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 88/ ../sourceFiles/scriptoutput/c-small_copy/yssandeep/0/1.c
+doing for 89
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//slasdot/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//slasdot/0/sheep.c.txt  ../sourceFiles/scriptoutput/c-small_copy/slasdot/0/sheep.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/slasdot/0/sheep.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 89/ ../sourceFiles/scriptoutput/c-small_copy/slasdot/0/sheep.c
+doing for 90
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//adibond/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//adibond/0/program.c.txt  ../sourceFiles/scriptoutput/c-small_copy/adibond/0/program.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/adibond/0/program.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 90/ ../sourceFiles/scriptoutput/c-small_copy/adibond/0/program.c
+doing for 91
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//mirza1351/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//mirza1351/0/t1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/mirza1351/0/t1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/mirza1351/0/t1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 91/ ../sourceFiles/scriptoutput/c-small_copy/mirza1351/0/t1.c
+doing for 92
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//sourav1995/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//sourav1995/0/a.c.txt  ../sourceFiles/scriptoutput/c-small_copy/sourav1995/0/a.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/sourav1995/0/a.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 92/ ../sourceFiles/scriptoutput/c-small_copy/sourav1995/0/a.c
+doing for 93
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Mayankpi/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Mayankpi/0/a.c.txt  ../sourceFiles/scriptoutput/c-small_copy/Mayankpi/0/a.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/Mayankpi/0/a.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 93/ ../sourceFiles/scriptoutput/c-small_copy/Mayankpi/0/a.c
+doing for 94
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//HonMing/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//HonMing/0/1.c.txt  ../sourceFiles/scriptoutput/c-small_copy/HonMing/0/1.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/HonMing/0/1.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 94/ ../sourceFiles/scriptoutput/c-small_copy/HonMing/0/1.c
+doing for 95
+folder: ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Palash29/0
+running ctags -f  ../sourceFiles/scriptoutput/c-small_copy_ctag_output//Palash29/0/a.c.txt  ../sourceFiles/scriptoutput/c-small_copy/Palash29/0/a.c -x
+sedding
+other crest with /home/fedora-user/crest-0.1.1/bin/crestc ../sourceFiles/scriptoutput/c-small_copy/Palash29/0/a.c -dfs 10 2>>../sourceFiles/scriptoutput/c-small_scriptLog.txt
+crest: 95/ ../sourceFiles/scriptoutput/c-small_copy/Palash29/0/a.c
+Cil files created:
+52
+Running Java Comparison........
+[Done] Analyze "/home/fedora-user/dk-crest-java/trunk/ dk-crest-java --username dek782@gmail.com/crestClean/bashScripts/../sourceFiles/Reports/c-small_comparisionReport.csv"
+  - type 1
+  - type 2
+  - type 3
+    - {adikrish/0/counting_sheep.main(), daeler/0/asmall.main()} [25.0]
+    - {akshant31/0/c1.main(), codezeus/0/digits.main()} [25.0]
+    - {adibond/0/program.mark_digits(), broom/0/check_digits.check_digits()} [21.0]
+    - {krahul1996/0/bleatrix.main(), mzambe/0/foo.main()} [24.0]
+    - {codezeus/0/digits.main(), mzambe/0/foo.main()} [24.0]
+    - {akshant31/0/c1.main(), mzambe/0/foo.main()} [21.0]
+    - {honming/0/1.main(), mzambe/0/foo.main()} [26.0]
+    - {4g.0/coding.main(), krahul1996/0/bleatrix.main()} [24.0]
+    - {calvi/0/1_question.isallapperange(), noxoin/0/a_small.seenall()} [25.0]
+    - {didar/0/countingsheep.main(), sfgsg/0/yo.main()} [25.0]
+    - {honming/0/1.main(), sfgsg/0/yo.main()} [26.0]
+    - {mzambe/0/foo.main(), sfgsg/0/yo.main()} [24.0]
+    - {daeler/0/asmall.test_array(), vas/er/0/vas.search_number()} [19.0]
+    - {noxoin/0/a_small.seenall(), vas/er/0/vas.search_number()} [23.0]
+    - {nick/01/0/codejam.main(), shadan227/0/counting.main()} [25.0]
+  - type 4
+    - {qwerty29/0/sav1.main(), soumyadityac/0/abc.main()} [35.0]
+    - {masterashish/0/number.main(), soumyadityac/0/abc.main()} [34.0]
+    - {krahul1996/0/bleatrix.main(), qwerty29/0/sav1.main()} [33.0]
+    - {krahul1996/0/bleatrix.main(), soumyadityac/0/abc.main()} [32.0]
+    - {didar/0/countingsheep.main(), qwerty29/0/sav1.main()} [31.0]
+    - {didar/0/countingsheep.main(), soumyadityac/0/abc.main()} [31.0]
+    - {didar/0/countingsheep.main(), krahul1996/0/bleatrix.main()} [33.0]
+    - {qwerty29/0/sav1.main(), shisam13/0/codejam1.main()} [30.0]
+    - {shisam13/0/codejam1.main(), soumyadityac/0/abc.main()} [31.0]
+    - {krahul1996/0/bleatrix.main(), shisam13/0/codejam1.main()} [34.0]
+    - {didar/0/countingsheep.main(), shisam13/0/codejam1.main()} [31.0]
+    - {codezeus/0/digits.main(), soumyadityac/0/abc.main()} [32.0]
+    - {codezeus/0/digits.main(), krahul1996/0/bleatrix.main()} [30.0]
+    - {krahul1996/0/bleatrix.main(), madan.main()} [34.0]
+    - {didar/0/countingsheep.main(), madan.main()} [35.0]
+    - {akshant31/0/c1.main(), krahul1996/0/bleatrix.main()} [31.0]
+    - {honming/0/1.main(), qwerty29/0/sav1.main()} [31.0]
+    - {honming/0/1.main(), soumyadityac/0/abc.main()} [32.0]
+    - {honming/0/1.main(), shisam13/0/codejam1.main()} [33.0]
+    - {codezeus/0/digits.main(), honming/0/1.main()} [33.0]
+    - {akshant31/0/c1.main(), honming/0/1.main()} [31.0]
+    - {madan.main(), palash29/0/a.main()} [31.0]
+    - {honming/0/1.main(), palash29/0/a.main()} [31.0]
+    - {mzambe/0/foo.main(), soumyadityac/0/abc.main()} [32.0]
+    - {mzambe/0/foo.main(), shisam13/0/codejam1.main()} [34.0]
+    - {4g.0/coding.main(), slasdot/0/sheep.main()} [35.0]
+    - {4g.0/coding.main(), soumyadityac/0/abc.main()} [30.0]
+    - {4g.0/coding.main(), didar/0/countingsheep.main()} [32.0]
+    - {4g.0/coding.main(), shisam13/0/codejam1.main()} [34.0]
+    - {4g.0/coding.main(), madan.main()} [34.0]
+    - {4g.0/coding.main(), mzambe/0/foo.main()} [31.0]
+    - {vas/er/0/vas.main(), vathsalya/0/google1.main()} [31.0]
+    - {madan.check(), noxoin/0/a_small.seenall()} [32.0]
+    - {noxoin/0/a_small.seenall(), tj96/0/ex.multiply()} [35.0]
+    - {mma/0/count.main(), qwerty29/0/sav1.main()} [35.0]
+    - {krahul1996/0/bleatrix.main(), mma/0/count.main()} [33.0]
+    - {akshant31/0/c1.main(), mma/0/count.main()} [32.0]
+    - {honming/0/1.main(), mma/0/count.main()} [30.0]
+    - {mma/0/count.main(), mzambe/0/foo.main()} [31.0]
+    - {noxoin/0/a_small.main(), skdudn321/0/problem.main()} [33.0]
+    - {krahul1996/0/bleatrix.main(), skdudn321/0/problem.main()} [33.0]
+    - {adibond/0/program.mark_digits(), murillo2380/0/main.tracknumber()} [31.0]
+    - {broom/0/check_digits.check_digits(), murillo2380/0/main.tracknumber()} [32.0]
+    - {milky/nasa/0/prob1._keta(), murillo2380/0/main.tracknumber()} [34.0]
+    - {qwerty29/0/sav1.main(), sfgsg/0/yo.main()} [34.0]
+    - {krahul1996/0/bleatrix.main(), sfgsg/0/yo.main()} [32.0]
+    - {sfgsg/0/yo.main(), shisam13/0/codejam1.main()} [35.0]
+    - {codezeus/0/digits.main(), sfgsg/0/yo.main()} [31.0]
+    - {madan.main(), sfgsg/0/yo.main()} [34.0]
+    - {4g.0/coding.main(), sfgsg/0/yo.main()} [31.0]
+    - {sfgsg/0/yo.main(), skdudn321/0/problem.main()} [33.0]
+    - {calvi/0/1_question.isallapperange(), vas/er/0/vas.search_number()} [34.0]
+    - {krahul1996/0/bleatrix.main(), shadan227/0/counting.main()} [35.0]
+    - {shadan227/0/counting.main(), skdudn321/0/problem.main()} [31.0]
+    - {kavya9/0/p1.main(), shadan227/0/counting.main()} [33.0]
+  - others
+    - {milky/nasa/0/prob1._bunkatu(), vijayjoshi/0/pro1.checkdigits()} [39.0]
+    - {krahul1996/0/bleatrix.main(), masterashish/0/number.main()} [38.0]
+    - {broom/0/check_digits.is_done(), madan.check()} [36.0]
+    - {shisam13/0/codejam1.main(), slasdot/0/sheep.main()} [38.0]
+    - {codezeus/0/digits.main(), qwerty29/0/sav1.main()} [39.0]
+    - {madan.main(), soumyadityac/0/abc.main()} [37.0]
+    - {codezeus/0/digits.main(), madan.main()} [36.0]
+    - {akshant31/0/c1.main(), qwerty29/0/sav1.main()} [38.0]
+    - {akshant31/0/c1.main(), soumyadityac/0/abc.main()} [36.0]
+    - {akshant31/0/c1.main(), shisam13/0/codejam1.main()} [39.0]
+    - {akshant31/0/c1.main(), madan.main()} [36.0]
+    - {honming/0/1.main(), madan.main()} [38.0]
+    - {palash29/0/a.main(), qwerty29/0/sav1.main()} [39.0]
+    - {palash29/0/a.main(), soumyadityac/0/abc.main()} [38.0]
+    - {krahul1996/0/bleatrix.main(), palash29/0/a.main()} [38.0]
+    - {didar/0/countingsheep.main(), palash29/0/a.main()} [38.0]
+    - {palash29/0/a.main(), shisam13/0/codejam1.main()} [39.0]
+    - {broom/0/check_digits.main(), madan.main()} [37.0]
+    - {broom/0/check_digits.main(), palash29/0/a.main()} [39.0]
+    - {broom/0/check_digits.check_digits(), calvi/0/1_question.isallapperange()} [38.0]
+    - {mzambe/0/foo.main(), qwerty29/0/sav1.main()} [36.0]
+    - {masterashish/0/number.main(), mzambe/0/foo.main()} [37.0]
+    - {didar/0/countingsheep.main(), mzambe/0/foo.main()} [37.0]
+    - {4g.0/coding.main(), masterashish/0/number.main()} [36.0]
+    - {4g.0/coding.main(), codezeus/0/digits.main()} [37.0]
+    - {4g.0/coding.main(), akshant31/0/c1.main()} [37.0]
+    - {4g.0/coding.main(), honming/0/1.main()} [36.0]
+    - {noxoin/0/a_small.main(), vas/er/0/vas.main()} [39.0]
+    - {noxoin/0/a_small.seenall(), vijayjoshi/0/pro1.checkdigits()} [37.0]
+    - {broom/0/check_digits.check_digits(), noxoin/0/a_small.seenall()} [38.0]
+    - {milky/nasa/0/prob1._keta(), noxoin/0/a_small.seenall()} [37.0]
+    - {didar/0/countingsheep.main(), mma/0/count.main()} [37.0]
+    - {mma/0/count.main(), shisam13/0/codejam1.main()} [39.0]
+    - {madan.main(), mma/0/count.main()} [36.0]
+    - {qwerty29/0/sav1.main(), skdudn321/0/problem.main()} [39.0]
+    - {didar/0/countingsheep.main(), skdudn321/0/problem.main()} [37.0]
+    - {honming/0/1.main(), skdudn321/0/problem.main()} [39.0]
+    - {4g.0/coding.main(), skdudn321/0/problem.main()} [39.0]
+    - {krahul1996/0/bleatrix.main(), tj96/0/ex.main()} [36.0]
+    - {mzambe/0/foo.main(), tj96/0/ex.main()} [39.0]
+    - {4g.0/coding.main(), tj96/0/ex.main()} [39.0]
+    - {palash29/0/a.main(), sfgsg/0/yo.main()} [36.0]
+    - {mma/0/count.main(), sfgsg/0/yo.main()} [37.0]
+    - {broom/0/check_digits.is_done(), vas/er/0/vas.search_number()} [39.0]
+    - {kavya9/0/p1.main(), madan.main()} [37.0]
+    - {kavya9/0/p1.main(), palash29/0/a.main()} [39.0]
+    - {4g.0/coding.main(), kavya9/0/p1.main()} [39.0]
+    - {4g.0/coding.main(), shadan227/0/counting.main()} [36.0]
+======= Clones =======
+Type-1: 0
+Type-2: 0
+Type-3: 15
+Type-4: 55
+Clones: 70 --- Others: 48
+Max-Dist: 39.0
+Min-Dist: 19.0
+/home/fedora-user/dk-crest-java/trunk/ dk-crest-java --username dek782@gmail.com/crestClean/bashScripts/../sourceFiles/Reports/c-small_comparisionReport.csv

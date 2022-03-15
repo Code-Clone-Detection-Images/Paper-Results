@@ -1,0 +1,128 @@
+nicad-runscript java-large java > nicad-large-the-last-word.txt  0,13s user 0,10s system 5% cpu 4,570 total
+
+[Script] Using docker: Docker version 20.10.12, build e91ed5707e
+./nicad6 functions "java" "/home/nicad-user/data/sub"
+
+NiCad Clone Detector v6.2 (13.11.20)
+
+config=./config/default.cfg
+system=/home/nicad-user/data/sub
+threshold=0.30
+granularity=functions
+language=java
+transform=none
+rename=blind
+filter=none
+abstract=none
+normalize=none
+cluster=yes
+report=yes
+include=
+exclude=
+
+Tue Mar 15 16:35:50 UTC 2022
+
+Extracting functions from java files in /home/nicad-user/data/sub
+
+Extracted 212 functions
+
+Applying blind renaming to extracted functions from java files in /home/nicad-user/data/sub
+
+Finding clones between 10 and 2500 lines at UPI threshold 0.30
+
+Found 9 clone pairs
+
+Clustering clone pairs into classes
+
+Clustered clone pairs into 7 classes
+
+Getting original sources for clones
+
+Making HTML reports
+
+Done.
+
+Detailed log in /home/nicad-user/data/sub_functions-clones-2022-03-15-16:35:50.log
+Results in /home/nicad-user/data/sub_functions-blind-clones/
+Report in /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes-withsource.html
+
+Tue Mar 15 16:35:54 UTC 2022
+
+[Logs] -----------------------------------------------
+Tue Mar 15 16:35:50 UTC 2022
+./txl/java-extract-functions.x ALL.java >> /home/nicad-user/data/sub_functions.xml
+
+Tue Mar 15 16:35:54 UTC 2022
+
+Tue Mar 15 16:35:54 UTC 2022
+./tools/streamprocess.x './txl/java-rename-blind-functions.x stdin' < /home/nicad-user/data/sub_functions.xml > /home/nicad-user/data/sub_functions-blind.xml
+
+real	0m0.062s
+user	0m0.061s
+sys	0m0.001s
+
+Tue Mar 15 16:35:54 UTC 2022
+
+Tue Mar 15 16:35:54 UTC 2022
+./tools/clonepairs.x /home/nicad-user/data/sub_functions-blind.xml 0.30 10 2500 > /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30.xml
+Processing /home/nicad-user/data/sub_functions-blind.xml with difference threshold 30%, clone size 10 .. 2500 lines
+Reading pcs . done.
+Total 212/6000000 potential clones of 10 lines or more
+Used 2179/100000000 total pc lines
+Used 44428/600000000 unique line text chars
+ and 888/12000000 unique lines
+Sorting pcs . done.
+Finding clones  done.
+Total 5136 pc comparisons
+Pruning embedded clone pairs .. done.
+Pruned 0 embedded clone pairs
+Found 9 clone pairs
+Generating XML output . done.
+
+
+real	0m0.017s
+user	0m0.003s
+sys	0m0.013s
+
+Tue Mar 15 16:35:54 UTC 2022
+
+Tue Mar 15 16:35:54 UTC 2022
+./tools/cloneclasses.x /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30.xml > /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes.xml
+Processing /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30.xml
+Reading clone pairs . done.
+Total 9 pairs
+Sorting pairs . done.
+Indexing pairs . done.
+Computing classes . done.
+Clustered clone pairs into 7 classes
+Generating XML output . done.
+
+
+real	0m0.025s
+user	0m0.014s
+sys	0m0.011s
+
+Tue Mar 15 16:35:54 UTC 2022
+
+Tue Mar 15 16:35:54 UTC 2022
+./tools/getsource.x /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes.xml /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes-withsource.xml
+/home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes.xml
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+
+Tue Mar 15 16:35:54 UTC 2022
+
+Tue Mar 15 16:35:54 UTC 2022
+./tools/tohtmlpairs.x /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes-withsource.xml /home/nicad-user/data/sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes-withsource.html
+functions-blind
+30%
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+
+Tue Mar 15 16:35:54 UTC 2022
+
+[Output] See: "sub_functions-blind-clones/sub_functions-blind-clones-0.30-classes-withsource.html"

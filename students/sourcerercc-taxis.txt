@@ -1,0 +1,1076 @@
+[Script] Using docker: Docker version 20.10.12, build e91ed5707e
+Sending build context to Docker daemon  4.253MB
+
+Step 1/23 : FROM openjdk:18-alpine3.15
+ ---> c89120dcca4c
+Step 2/23 : ENV HOME=/home/sourcerercc-user
+ ---> Using cache
+ ---> 69ebf587a00c
+Step 3/23 : ENV SOURCERERCC_HOME="$HOME/SourcererCC-master"
+ ---> Using cache
+ ---> ee89faca7464
+Step 4/23 : RUN addgroup --gid 1000 sourcerercc-user && adduser --uid 1000 --ingroup sourcerercc-user --home "$HOME" --disabled-password sourcerercc-user
+ ---> Using cache
+ ---> feac848f3097
+Step 5/23 : RUN apk add --update --no-cache bash wget zip unzip python3 python2 file mysql-client
+ ---> Using cache
+ ---> 380bd0485782
+Step 6/23 : RUN python3 -m ensurepip
+ ---> Using cache
+ ---> 81a0f0162c50
+Step 7/23 : RUN python2 -m ensurepip
+ ---> Using cache
+ ---> daa65f1018d1
+Step 8/23 : RUN pip2 install mysql-connector
+ ---> Using cache
+ ---> 3145baa2e61d
+Step 9/23 : ENV APACHE_ANT_VERSION=1.10.12
+ ---> Using cache
+ ---> b2d7b0917072
+Step 10/23 : RUN wget http://archive.apache.org/dist/ant/binaries/apache-ant-$APACHE_ANT_VERSION-bin.tar.gz --directory-prefix /opt/ant/
+ ---> Using cache
+ ---> 984a492d2cb2
+Step 11/23 : RUN tar -xvzf /opt/ant/apache-ant-$APACHE_ANT_VERSION-bin.tar.gz --directory /opt/ant/
+ ---> Using cache
+ ---> e38b6b6d07b3
+Step 12/23 : RUN rm -f /opt/ant/apache-ant-$APACHE_ANT_VERSION-bin.tar.gz
+ ---> Using cache
+ ---> 4fb83000ee38
+Step 13/23 : ENV ANT_HOME=/opt/ant/apache-ant-$APACHE_ANT_VERSION
+ ---> Using cache
+ ---> 3e881ee2f64f
+Step 14/23 : ENV PATH="${PATH}:${ANT_HOME}/bin"
+ ---> Using cache
+ ---> b2065557a017
+Step 15/23 : WORKDIR "$HOME"
+ ---> Using cache
+ ---> 820467201184
+Step 16/23 : RUN wget https://github.com/Mondego/SourcererCC/archive/refs/heads/master.zip --directory-prefix "$HOME"
+ ---> Using cache
+ ---> 97145f63e6ca
+Step 17/23 : RUN unzip master.zip
+ ---> Using cache
+ ---> 2778e8911fbb
+Step 18/23 : RUN rm -rf master.zip
+ ---> Using cache
+ ---> dfb8967c21ba
+Step 19/23 : RUN chown -R -c sourcerercc-user "$SOURCERERCC_HOME"
+ ---> Using cache
+ ---> 8a8a777423c8
+Step 20/23 : RUN sed -i "s|FILE_projects_list =.*|FILE_projects_list=$HOME/input.lst|" "$SOURCERERCC_HOME/tokenizers/file-level/config.ini" && sed -i "s|File_extensions =.*|File_extensions = .cpp .hpp .c .h .java|" "$SOURCERERCC_HOME/tokenizers/file-level/config.ini"
+ ---> Using cache
+ ---> c9e5eb0f3693
+Step 21/23 : COPY run_sourcerercc.sh sql/initialize.sql sql/query.sql /
+ ---> Using cache
+ ---> a1b8927eb956
+Step 22/23 : USER sourcerercc-user
+ ---> Using cache
+ ---> 2359f10a6506
+Step 23/23 : ENTRYPOINT [ "/bin/bash", "/run_sourcerercc.sh" ]
+ ---> Using cache
+ ---> ecca9375f52d
+Successfully built ecca9375f52d
+Successfully tagged sourcerercc_alpine-sourcerercc:latest
+Attaching to sourcerercc_mysql-db-sourcerercc_1, sourcerercc_alpine-sourcerercc_1
+[36malpine-sourcerercc_1    |[0m [VARDUMP] CC_ARG=/home/sourcerercc-user/data/Taxis; MYSQL_HOST=mysql-db-sourcerercc; PROJECTS_LIST=;
+[36malpine-sourcerercc_1    |[0m Step 1: run the tokenizer
+[36malpine-sourcerercc_1    |[0m      1.1: zipping all projects as necessary
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15 14:17:32+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.37-1debian10 started.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15 14:17:32+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15 14:17:32+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.37-1debian10 started.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.467318Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.468295Z 0 [Note] mysqld (mysqld 5.7.37) starting as process 1 ...
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.470188Z 0 [Note] InnoDB: PUNCH HOLE support available
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.470198Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.470201Z 0 [Note] InnoDB: Uses event mutexes
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.470204Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.470206Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.470209Z 0 [Note] InnoDB: Using Linux native AIO
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.470356Z 0 [Note] InnoDB: Number of pools: 1
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.470422Z 0 [Note] InnoDB: Using CPU crc32 instructions
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.471324Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.477801Z 0 [Note] InnoDB: Completed initialization of buffer pool
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.478963Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.490610Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.497143Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.497176Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.509857Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.510249Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.510255Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.510493Z 0 [Note] InnoDB: 5.7.37 started; log sequence number 12659926
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.510549Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.510659Z 0 [Note] Plugin 'FEDERATED' is disabled.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.513807Z 0 [Note] InnoDB: Buffer pool(s) load completed at 220315 14:17:32
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.513895Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.513900Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.513902Z 0 [Warning] A deprecated TLS version TLSv1 is enabled. Please use TLSv1.2 or higher.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.513903Z 0 [Warning] A deprecated TLS version TLSv1.1 is enabled. Please use TLSv1.2 or higher.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.514277Z 0 [Warning] CA certificate ca.pem is self signed.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.514293Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.514524Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.514540Z 0 [Note] IPv6 is available.
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/data/Taxis/Buh7lFTuRLvglBJw8PsygWcl6.java: ASCII text
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.514713Z 0 [Note]   - '::' resolves to '::';
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.514726Z 0 [Note] Server socket created on IP: '::'.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.520919Z 0 [Warning] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.527458Z 0 [Note] Event Scheduler: Loaded 0 events
+[33mmysql-db-sourcerercc_1  |[0m 2022-03-15T14:17:32.527598Z 0 [Note] mysqld: ready for connections.
+[33mmysql-db-sourcerercc_1  |[0m Version: '5.7.37'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+[36malpine-sourcerercc_1    |[0m          > Zipping necessary
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Buh7lFTuRLvglBJw8PsygWcl6.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/Buh7lFTuRLvglBJw8PsygWcl6.java (deflated 74%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/BurWPjfKUNx1S9i3g1wyEPZBd.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/BurWPjfKUNx1S9i3g1wyEPZBd.java (deflated 66%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/CHoSgQHrZtdObJCIILCg9NCNo.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/CHoSgQHrZtdObJCIILCg9NCNo.java (deflated 69%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/CHy9tzZMsUit409DPRN5zId8A.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/CHy9tzZMsUit409DPRN5zId8A.java (deflated 72%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/DeiG0PYckvUo6zECg9qhtOj2W.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/DeiG0PYckvUo6zECg9qhtOj2W.java (deflated 69%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/EUgx06Dz7it6F409dFTDp5Rir.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/EUgx06Dz7it6F409dFTDp5Rir.java (deflated 77%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/FLHyjHb9dZ9SuC5GfHaCKe0IK.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/FLHyjHb9dZ9SuC5GfHaCKe0IK.java (deflated 67%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/FMdgGWDlvOGvjLyupPON2zFBV.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/FMdgGWDlvOGvjLyupPON2zFBV.java (deflated 67%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/FtCQI3pKD6eoKxuVTmSOIkofM.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/FtCQI3pKD6eoKxuVTmSOIkofM.java (deflated 68%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/GPYf063qrOqXAO8qXB7sGLE8d.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/GPYf063qrOqXAO8qXB7sGLE8d.java (deflated 76%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Gk1v1U3LQto7TPPwZ9HsWEHH0.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/Gk1v1U3LQto7TPPwZ9HsWEHH0.java (deflated 71%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/HgFHNYF701UjmVfji9nbpuMbs.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/HgFHNYF701UjmVfji9nbpuMbs.java (deflated 70%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/IFcTWHlwWyw3I7uBJibW5ZwtK.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/IFcTWHlwWyw3I7uBJibW5ZwtK.java (deflated 66%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/IaljG2SZMe6I8nZCWp6ofFVOS.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/IaljG2SZMe6I8nZCWp6ofFVOS.java (deflated 73%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/J3RowPmOg2qHO6eYLC41Vw6ZT.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/J3RowPmOg2qHO6eYLC41Vw6ZT.java (deflated 66%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/KAm50pBuMLGt50EmuWIMfsmII.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/KAm50pBuMLGt50EmuWIMfsmII.java (deflated 72%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/KpDaNc2yULGxB1v5wlL6E3OD6.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/KpDaNc2yULGxB1v5wlL6E3OD6.java (deflated 60%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/L6mTynrcqVdsKM5dk8JM1C7WZ.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/L6mTynrcqVdsKM5dk8JM1C7WZ.java (deflated 78%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/MlxILczEgnctsogTuIyHc4IXX.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/MlxILczEgnctsogTuIyHc4IXX.java (deflated 72%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/NCdeERn0tNiGOzng398GOAKfm.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/NCdeERn0tNiGOzng398GOAKfm.java (deflated 61%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/NYs33OaJgnHVlC5gxbP4TA6U8.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/NYs33OaJgnHVlC5gxbP4TA6U8.java (deflated 62%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/NpqsFLFY0Tf85TgQ5c8URolNr.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/NpqsFLFY0Tf85TgQ5c8URolNr.java (deflated 66%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/OF1DO93HThbXM779gK7EAfnII.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/OF1DO93HThbXM779gK7EAfnII.java (deflated 69%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/OPgtMNQ4V3ceg7927dPHX1Pj6.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/OPgtMNQ4V3ceg7927dPHX1Pj6.java (deflated 66%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Ojq0tK9rUXUKcYmM6llCDBToA.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/Ojq0tK9rUXUKcYmM6llCDBToA.java (deflated 66%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Pa7PrkpPjGwWMMWvOA5Q9YvAz.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/Pa7PrkpPjGwWMMWvOA5Q9YvAz.java (deflated 68%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/QJ7DJjCXmAg6Wltw7HRX6zFzI.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/QJ7DJjCXmAg6Wltw7HRX6zFzI.java (deflated 71%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/RdW3cjQxvKlk0JGvJO6uvjnoi.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/RdW3cjQxvKlk0JGvJO6uvjnoi.java (deflated 73%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/RfEdRPSHraxPMDLm5sbIcTlok.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/RfEdRPSHraxPMDLm5sbIcTlok.java (deflated 68%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/SSHGivHlZWTTsOAgQjj8BokSs.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/SSHGivHlZWTTsOAgQjj8BokSs.java (deflated 70%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/SnOt9Q25W4q3dK0QOEtnmN5BU.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/SnOt9Q25W4q3dK0QOEtnmN5BU.java (deflated 74%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/TJI8zHEYT5LRvCsA7gYIbH7Qr.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/TJI8zHEYT5LRvCsA7gYIbH7Qr.java (deflated 80%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/UDNGhLn09kT7QYKQrhIo2bi9G.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/UDNGhLn09kT7QYKQrhIo2bi9G.java (deflated 69%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/UQ343vHfeAOWPriIL4Xru5XMC.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/UQ343vHfeAOWPriIL4Xru5XMC.java (deflated 65%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Uu1D7w3RecnGQxb3TIRXGYISR.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/Uu1D7w3RecnGQxb3TIRXGYISR.java (deflated 61%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/VHoij57foVaRucJAXnKwrz7wN.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/VHoij57foVaRucJAXnKwrz7wN.java (deflated 64%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/VUTi3tcXbl4dR0FmsuzUErX0E.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/VUTi3tcXbl4dR0FmsuzUErX0E.java (deflated 76%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Vg3Lw8sbXbWjTXB4QkHk1CztY.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/Vg3Lw8sbXbWjTXB4QkHk1CztY.java (deflated 64%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/X3L5yqKRE6s4IBEljxYi8s2gf.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/X3L5yqKRE6s4IBEljxYi8s2gf.java (deflated 71%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Xc5kZYjA03ZiJobjjVfzXfBxS.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/Xc5kZYjA03ZiJobjjVfzXfBxS.java (deflated 61%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/XnNdE6JJPrvKHbpJWwvViC0wh.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/XnNdE6JJPrvKHbpJWwvViC0wh.java (deflated 75%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/XvLggiA0U2816f7k8OxJUfOXy.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/XvLggiA0U2816f7k8OxJUfOXy.java (deflated 66%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/YsupfvRpv05mUddNkhNYEbFQV.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/YsupfvRpv05mUddNkhNYEbFQV.java (deflated 71%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/Z2YE4AGGGFMWhGTOJF9QPVXy2.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/Z2YE4AGGGFMWhGTOJF9QPVXy2.java (deflated 70%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/ZjiHWBeSJaY57W8OtdJVl0r6N.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/ZjiHWBeSJaY57W8OtdJVl0r6N.java (deflated 70%)
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/input/ZmB1ce4Z4bRirnJRrzLxHP71W.java.zip
+[36malpine-sourcerercc_1    |[0m   adding: home/sourcerercc-user/data/Taxis/ZmB1ce4Z4bRirnJRrzLxHP71W.java (deflated 70%)
+[36malpine-sourcerercc_1    |[0m      1.2: running the tokenizer
+[36malpine-sourcerercc_1    |[0m ' zip ' format
+[36malpine-sourcerercc_1    |[0m *** Starting priority projects...
+[36malpine-sourcerercc_1    |[0m *** Starting regular projects...
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <1,/home/sourcerercc-user/input/Buh7lFTuRLvglBJw8PsygWcl6.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Buh7lFTuRLvglBJw8PsygWcl6.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/Buh7lFTuRLvglBJw8PsygWcl6.java.zip/home/sourcerercc-user/data/Taxis/Buh7lFTuRLvglBJw8PsygWcl6.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/Buh7lFTuRLvglBJw8PsygWcl6.java.zip/home/sourcerercc-user/data/Taxis/Buh7lFTuRLvglBJw8PsygWcl6.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Buh7lFTuRLvglBJw8PsygWcl6.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <1,/home/sourcerercc-user/input/Buh7lFTuRLvglBJw8PsygWcl6.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.002355micros | Zip: 80 Read: 64 Separators: 31micros Tokens: 95micros Write: 14micros Hash: 38 regex: 256
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <2,/home/sourcerercc-user/input/BurWPjfKUNx1S9i3g1wyEPZBd.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/BurWPjfKUNx1S9i3g1wyEPZBd.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/BurWPjfKUNx1S9i3g1wyEPZBd.java.zip/home/sourcerercc-user/data/Taxis/BurWPjfKUNx1S9i3g1wyEPZBd.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/BurWPjfKUNx1S9i3g1wyEPZBd.java.zip/home/sourcerercc-user/data/Taxis/BurWPjfKUNx1S9i3g1wyEPZBd.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/BurWPjfKUNx1S9i3g1wyEPZBd.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <2,/home/sourcerercc-user/input/BurWPjfKUNx1S9i3g1wyEPZBd.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000769micros | Zip: 35 Read: 56 Separators: 33micros Tokens: 74micros Write: 8micros Hash: 18 regex: 30
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (3). Current total: 2
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <3,/home/sourcerercc-user/input/CHoSgQHrZtdObJCIILCg9NCNo.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/CHoSgQHrZtdObJCIILCg9NCNo.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/CHoSgQHrZtdObJCIILCg9NCNo.java.zip/home/sourcerercc-user/data/Taxis/CHoSgQHrZtdObJCIILCg9NCNo.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/CHoSgQHrZtdObJCIILCg9NCNo.java.zip/home/sourcerercc-user/data/Taxis/CHoSgQHrZtdObJCIILCg9NCNo.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/CHoSgQHrZtdObJCIILCg9NCNo.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <3,/home/sourcerercc-user/input/CHoSgQHrZtdObJCIILCg9NCNo.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001895micros | Zip: 83 Read: 58 Separators: 40micros Tokens: 88micros Write: 13micros Hash: 39 regex: 244
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <4,/home/sourcerercc-user/input/CHy9tzZMsUit409DPRN5zId8A.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/CHy9tzZMsUit409DPRN5zId8A.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/CHy9tzZMsUit409DPRN5zId8A.java.zip/home/sourcerercc-user/data/Taxis/CHy9tzZMsUit409DPRN5zId8A.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/CHy9tzZMsUit409DPRN5zId8A.java.zip/home/sourcerercc-user/data/Taxis/CHy9tzZMsUit409DPRN5zId8A.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/CHy9tzZMsUit409DPRN5zId8A.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <4,/home/sourcerercc-user/input/CHy9tzZMsUit409DPRN5zId8A.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001053micros | Zip: 51 Read: 64 Separators: 37micros Tokens: 130micros Write: 23micros Hash: 16 regex: 32
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (5). Current total: 4
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <5,/home/sourcerercc-user/input/DeiG0PYckvUo6zECg9qhtOj2W.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/DeiG0PYckvUo6zECg9qhtOj2W.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/DeiG0PYckvUo6zECg9qhtOj2W.java.zip/home/sourcerercc-user/data/Taxis/DeiG0PYckvUo6zECg9qhtOj2W.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/DeiG0PYckvUo6zECg9qhtOj2W.java.zip/home/sourcerercc-user/data/Taxis/DeiG0PYckvUo6zECg9qhtOj2W.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/DeiG0PYckvUo6zECg9qhtOj2W.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <5,/home/sourcerercc-user/input/DeiG0PYckvUo6zECg9qhtOj2W.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.002056micros | Zip: 79 Read: 56 Separators: 24micros Tokens: 96micros Write: 35micros Hash: 48 regex: 249
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <6,/home/sourcerercc-user/input/EUgx06Dz7it6F409dFTDp5Rir.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/EUgx06Dz7it6F409dFTDp5Rir.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/EUgx06Dz7it6F409dFTDp5Rir.java.zip/home/sourcerercc-user/data/Taxis/EUgx06Dz7it6F409dFTDp5Rir.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/EUgx06Dz7it6F409dFTDp5Rir.java.zip/home/sourcerercc-user/data/Taxis/EUgx06Dz7it6F409dFTDp5Rir.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/EUgx06Dz7it6F409dFTDp5Rir.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <6,/home/sourcerercc-user/input/EUgx06Dz7it6F409dFTDp5Rir.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001168micros | Zip: 49 Read: 89 Separators: 120micros Tokens: 110micros Write: 15micros Hash: 29 regex: 27
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (7). Current total: 6
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <7,/home/sourcerercc-user/input/FLHyjHb9dZ9SuC5GfHaCKe0IK.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/FLHyjHb9dZ9SuC5GfHaCKe0IK.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/FLHyjHb9dZ9SuC5GfHaCKe0IK.java.zip/home/sourcerercc-user/data/Taxis/FLHyjHb9dZ9SuC5GfHaCKe0IK.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/FLHyjHb9dZ9SuC5GfHaCKe0IK.java.zip/home/sourcerercc-user/data/Taxis/FLHyjHb9dZ9SuC5GfHaCKe0IK.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/FLHyjHb9dZ9SuC5GfHaCKe0IK.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <7,/home/sourcerercc-user/input/FLHyjHb9dZ9SuC5GfHaCKe0IK.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001969micros | Zip: 81 Read: 77 Separators: 32micros Tokens: 141micros Write: 14micros Hash: 37 regex: 269
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <8,/home/sourcerercc-user/input/FMdgGWDlvOGvjLyupPON2zFBV.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/FMdgGWDlvOGvjLyupPON2zFBV.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/FMdgGWDlvOGvjLyupPON2zFBV.java.zip/home/sourcerercc-user/data/Taxis/FMdgGWDlvOGvjLyupPON2zFBV.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/FMdgGWDlvOGvjLyupPON2zFBV.java.zip/home/sourcerercc-user/data/Taxis/FMdgGWDlvOGvjLyupPON2zFBV.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/FMdgGWDlvOGvjLyupPON2zFBV.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <8,/home/sourcerercc-user/input/FMdgGWDlvOGvjLyupPON2zFBV.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000751micros | Zip: 39 Read: 54 Separators: 38micros Tokens: 85micros Write: 11micros Hash: 16 regex: 19
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (9). Current total: 8
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <9,/home/sourcerercc-user/input/FtCQI3pKD6eoKxuVTmSOIkofM.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/FtCQI3pKD6eoKxuVTmSOIkofM.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/FtCQI3pKD6eoKxuVTmSOIkofM.java.zip/home/sourcerercc-user/data/Taxis/FtCQI3pKD6eoKxuVTmSOIkofM.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/FtCQI3pKD6eoKxuVTmSOIkofM.java.zip/home/sourcerercc-user/data/Taxis/FtCQI3pKD6eoKxuVTmSOIkofM.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/FtCQI3pKD6eoKxuVTmSOIkofM.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <9,/home/sourcerercc-user/input/FtCQI3pKD6eoKxuVTmSOIkofM.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001866micros | Zip: 76 Read: 67 Separators: 21micros Tokens: 95micros Write: 22micros Hash: 33 regex: 284
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <10,/home/sourcerercc-user/input/GPYf063qrOqXAO8qXB7sGLE8d.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/GPYf063qrOqXAO8qXB7sGLE8d.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/GPYf063qrOqXAO8qXB7sGLE8d.java.zip/home/sourcerercc-user/data/Taxis/GPYf063qrOqXAO8qXB7sGLE8d.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/GPYf063qrOqXAO8qXB7sGLE8d.java.zip/home/sourcerercc-user/data/Taxis/GPYf063qrOqXAO8qXB7sGLE8d.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/GPYf063qrOqXAO8qXB7sGLE8d.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <10,/home/sourcerercc-user/input/GPYf063qrOqXAO8qXB7sGLE8d.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000882micros | Zip: 33 Read: 65 Separators: 31micros Tokens: 112micros Write: 13micros Hash: 25 regex: 24
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (11). Current total: 10
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <11,/home/sourcerercc-user/input/Gk1v1U3LQto7TPPwZ9HsWEHH0.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Gk1v1U3LQto7TPPwZ9HsWEHH0.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/Gk1v1U3LQto7TPPwZ9HsWEHH0.java.zip/home/sourcerercc-user/data/Taxis/Gk1v1U3LQto7TPPwZ9HsWEHH0.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/Gk1v1U3LQto7TPPwZ9HsWEHH0.java.zip/home/sourcerercc-user/data/Taxis/Gk1v1U3LQto7TPPwZ9HsWEHH0.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Gk1v1U3LQto7TPPwZ9HsWEHH0.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <11,/home/sourcerercc-user/input/Gk1v1U3LQto7TPPwZ9HsWEHH0.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001749micros | Zip: 77 Read: 56 Separators: 26micros Tokens: 81micros Write: 24micros Hash: 28 regex: 244
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <12,/home/sourcerercc-user/input/HgFHNYF701UjmVfji9nbpuMbs.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/HgFHNYF701UjmVfji9nbpuMbs.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/HgFHNYF701UjmVfji9nbpuMbs.java.zip/home/sourcerercc-user/data/Taxis/HgFHNYF701UjmVfji9nbpuMbs.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/HgFHNYF701UjmVfji9nbpuMbs.java.zip/home/sourcerercc-user/data/Taxis/HgFHNYF701UjmVfji9nbpuMbs.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/HgFHNYF701UjmVfji9nbpuMbs.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <12,/home/sourcerercc-user/input/HgFHNYF701UjmVfji9nbpuMbs.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000713micros | Zip: 39 Read: 46 Separators: 23micros Tokens: 75micros Write: 24micros Hash: 10 regex: 17
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (13). Current total: 12
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <13,/home/sourcerercc-user/input/IFcTWHlwWyw3I7uBJibW5ZwtK.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/IFcTWHlwWyw3I7uBJibW5ZwtK.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/IFcTWHlwWyw3I7uBJibW5ZwtK.java.zip/home/sourcerercc-user/data/Taxis/IFcTWHlwWyw3I7uBJibW5ZwtK.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/IFcTWHlwWyw3I7uBJibW5ZwtK.java.zip/home/sourcerercc-user/data/Taxis/IFcTWHlwWyw3I7uBJibW5ZwtK.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/IFcTWHlwWyw3I7uBJibW5ZwtK.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <13,/home/sourcerercc-user/input/IFcTWHlwWyw3I7uBJibW5ZwtK.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001806micros | Zip: 78 Read: 58 Separators: 22micros Tokens: 104micros Write: 15micros Hash: 34 regex: 239
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <14,/home/sourcerercc-user/input/IaljG2SZMe6I8nZCWp6ofFVOS.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/IaljG2SZMe6I8nZCWp6ofFVOS.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/IaljG2SZMe6I8nZCWp6ofFVOS.java.zip/home/sourcerercc-user/data/Taxis/IaljG2SZMe6I8nZCWp6ofFVOS.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/IaljG2SZMe6I8nZCWp6ofFVOS.java.zip/home/sourcerercc-user/data/Taxis/IaljG2SZMe6I8nZCWp6ofFVOS.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/IaljG2SZMe6I8nZCWp6ofFVOS.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <14,/home/sourcerercc-user/input/IaljG2SZMe6I8nZCWp6ofFVOS.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000926micros | Zip: 37 Read: 77 Separators: 31micros Tokens: 111micros Write: 7micros Hash: 24 regex: 61
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (15). Current total: 14
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <15,/home/sourcerercc-user/input/J3RowPmOg2qHO6eYLC41Vw6ZT.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/J3RowPmOg2qHO6eYLC41Vw6ZT.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/J3RowPmOg2qHO6eYLC41Vw6ZT.java.zip/home/sourcerercc-user/data/Taxis/J3RowPmOg2qHO6eYLC41Vw6ZT.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/J3RowPmOg2qHO6eYLC41Vw6ZT.java.zip/home/sourcerercc-user/data/Taxis/J3RowPmOg2qHO6eYLC41Vw6ZT.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/J3RowPmOg2qHO6eYLC41Vw6ZT.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <15,/home/sourcerercc-user/input/J3RowPmOg2qHO6eYLC41Vw6ZT.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001773micros | Zip: 77 Read: 60 Separators: 22micros Tokens: 95micros Write: 12micros Hash: 29 regex: 252
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <16,/home/sourcerercc-user/input/KAm50pBuMLGt50EmuWIMfsmII.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/KAm50pBuMLGt50EmuWIMfsmII.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/KAm50pBuMLGt50EmuWIMfsmII.java.zip/home/sourcerercc-user/data/Taxis/KAm50pBuMLGt50EmuWIMfsmII.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/KAm50pBuMLGt50EmuWIMfsmII.java.zip/home/sourcerercc-user/data/Taxis/KAm50pBuMLGt50EmuWIMfsmII.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/KAm50pBuMLGt50EmuWIMfsmII.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <16,/home/sourcerercc-user/input/KAm50pBuMLGt50EmuWIMfsmII.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000809micros | Zip: 39 Read: 54 Separators: 29micros Tokens: 95micros Write: 10micros Hash: 13 regex: 23
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (17). Current total: 16
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <17,/home/sourcerercc-user/input/KpDaNc2yULGxB1v5wlL6E3OD6.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/KpDaNc2yULGxB1v5wlL6E3OD6.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/KpDaNc2yULGxB1v5wlL6E3OD6.java.zip/home/sourcerercc-user/data/Taxis/KpDaNc2yULGxB1v5wlL6E3OD6.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/KpDaNc2yULGxB1v5wlL6E3OD6.java.zip/home/sourcerercc-user/data/Taxis/KpDaNc2yULGxB1v5wlL6E3OD6.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/KpDaNc2yULGxB1v5wlL6E3OD6.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <17,/home/sourcerercc-user/input/KpDaNc2yULGxB1v5wlL6E3OD6.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.002054micros | Zip: 82 Read: 58 Separators: 22micros Tokens: 96micros Write: 15micros Hash: 30 regex: 248
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <18,/home/sourcerercc-user/input/L6mTynrcqVdsKM5dk8JM1C7WZ.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/L6mTynrcqVdsKM5dk8JM1C7WZ.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/L6mTynrcqVdsKM5dk8JM1C7WZ.java.zip/home/sourcerercc-user/data/Taxis/L6mTynrcqVdsKM5dk8JM1C7WZ.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/L6mTynrcqVdsKM5dk8JM1C7WZ.java.zip/home/sourcerercc-user/data/Taxis/L6mTynrcqVdsKM5dk8JM1C7WZ.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/L6mTynrcqVdsKM5dk8JM1C7WZ.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <18,/home/sourcerercc-user/input/L6mTynrcqVdsKM5dk8JM1C7WZ.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000855micros | Zip: 34 Read: 64 Separators: 49micros Tokens: 92micros Write: 14micros Hash: 17 regex: 57
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (19). Current total: 18
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <19,/home/sourcerercc-user/input/MlxILczEgnctsogTuIyHc4IXX.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/MlxILczEgnctsogTuIyHc4IXX.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/MlxILczEgnctsogTuIyHc4IXX.java.zip/home/sourcerercc-user/data/Taxis/MlxILczEgnctsogTuIyHc4IXX.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/MlxILczEgnctsogTuIyHc4IXX.java.zip/home/sourcerercc-user/data/Taxis/MlxILczEgnctsogTuIyHc4IXX.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/MlxILczEgnctsogTuIyHc4IXX.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <19,/home/sourcerercc-user/input/MlxILczEgnctsogTuIyHc4IXX.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.002145micros | Zip: 81 Read: 71 Separators: 36micros Tokens: 144micros Write: 35micros Hash: 49 regex: 275
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <20,/home/sourcerercc-user/input/NCdeERn0tNiGOzng398GOAKfm.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/NCdeERn0tNiGOzng398GOAKfm.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/NCdeERn0tNiGOzng398GOAKfm.java.zip/home/sourcerercc-user/data/Taxis/NCdeERn0tNiGOzng398GOAKfm.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/NCdeERn0tNiGOzng398GOAKfm.java.zip/home/sourcerercc-user/data/Taxis/NCdeERn0tNiGOzng398GOAKfm.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/NCdeERn0tNiGOzng398GOAKfm.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <20,/home/sourcerercc-user/input/NCdeERn0tNiGOzng398GOAKfm.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000846micros | Zip: 38 Read: 61 Separators: 50micros Tokens: 104micros Write: 11micros Hash: 21 regex: 41
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (21). Current total: 20
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <21,/home/sourcerercc-user/input/NYs33OaJgnHVlC5gxbP4TA6U8.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/NYs33OaJgnHVlC5gxbP4TA6U8.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/NYs33OaJgnHVlC5gxbP4TA6U8.java.zip/home/sourcerercc-user/data/Taxis/NYs33OaJgnHVlC5gxbP4TA6U8.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/NYs33OaJgnHVlC5gxbP4TA6U8.java.zip/home/sourcerercc-user/data/Taxis/NYs33OaJgnHVlC5gxbP4TA6U8.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/NYs33OaJgnHVlC5gxbP4TA6U8.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <21,/home/sourcerercc-user/input/NYs33OaJgnHVlC5gxbP4TA6U8.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001933micros | Zip: 77 Read: 70 Separators: 30micros Tokens: 123micros Write: 23micros Hash: 39 regex: 253
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <22,/home/sourcerercc-user/input/NpqsFLFY0Tf85TgQ5c8URolNr.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/NpqsFLFY0Tf85TgQ5c8URolNr.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/NpqsFLFY0Tf85TgQ5c8URolNr.java.zip/home/sourcerercc-user/data/Taxis/NpqsFLFY0Tf85TgQ5c8URolNr.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/NpqsFLFY0Tf85TgQ5c8URolNr.java.zip/home/sourcerercc-user/data/Taxis/NpqsFLFY0Tf85TgQ5c8URolNr.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/NpqsFLFY0Tf85TgQ5c8URolNr.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <22,/home/sourcerercc-user/input/NpqsFLFY0Tf85TgQ5c8URolNr.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000815micros | Zip: 41 Read: 63 Separators: 42micros Tokens: 81micros Write: 8micros Hash: 14 regex: 27
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (23). Current total: 22
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <23,/home/sourcerercc-user/input/OF1DO93HThbXM779gK7EAfnII.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/OF1DO93HThbXM779gK7EAfnII.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/OF1DO93HThbXM779gK7EAfnII.java.zip/home/sourcerercc-user/data/Taxis/OF1DO93HThbXM779gK7EAfnII.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/OF1DO93HThbXM779gK7EAfnII.java.zip/home/sourcerercc-user/data/Taxis/OF1DO93HThbXM779gK7EAfnII.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/OF1DO93HThbXM779gK7EAfnII.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <23,/home/sourcerercc-user/input/OF1DO93HThbXM779gK7EAfnII.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001619micros | Zip: 74 Read: 55 Separators: 18micros Tokens: 74micros Write: 11micros Hash: 29 regex: 231
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <24,/home/sourcerercc-user/input/OPgtMNQ4V3ceg7927dPHX1Pj6.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/OPgtMNQ4V3ceg7927dPHX1Pj6.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/OPgtMNQ4V3ceg7927dPHX1Pj6.java.zip/home/sourcerercc-user/data/Taxis/OPgtMNQ4V3ceg7927dPHX1Pj6.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/OPgtMNQ4V3ceg7927dPHX1Pj6.java.zip/home/sourcerercc-user/data/Taxis/OPgtMNQ4V3ceg7927dPHX1Pj6.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/OPgtMNQ4V3ceg7927dPHX1Pj6.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <24,/home/sourcerercc-user/input/OPgtMNQ4V3ceg7927dPHX1Pj6.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000660micros | Zip: 34 Read: 47 Separators: 17micros Tokens: 77micros Write: 7micros Hash: 10 regex: 19
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (25). Current total: 24
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <25,/home/sourcerercc-user/input/Ojq0tK9rUXUKcYmM6llCDBToA.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Ojq0tK9rUXUKcYmM6llCDBToA.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/Ojq0tK9rUXUKcYmM6llCDBToA.java.zip/home/sourcerercc-user/data/Taxis/Ojq0tK9rUXUKcYmM6llCDBToA.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/Ojq0tK9rUXUKcYmM6llCDBToA.java.zip/home/sourcerercc-user/data/Taxis/Ojq0tK9rUXUKcYmM6llCDBToA.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Ojq0tK9rUXUKcYmM6llCDBToA.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <25,/home/sourcerercc-user/input/Ojq0tK9rUXUKcYmM6llCDBToA.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001688micros | Zip: 74 Read: 55 Separators: 19micros Tokens: 93micros Write: 12micros Hash: 35 regex: 233
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <26,/home/sourcerercc-user/input/Pa7PrkpPjGwWMMWvOA5Q9YvAz.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Pa7PrkpPjGwWMMWvOA5Q9YvAz.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/Pa7PrkpPjGwWMMWvOA5Q9YvAz.java.zip/home/sourcerercc-user/data/Taxis/Pa7PrkpPjGwWMMWvOA5Q9YvAz.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/Pa7PrkpPjGwWMMWvOA5Q9YvAz.java.zip/home/sourcerercc-user/data/Taxis/Pa7PrkpPjGwWMMWvOA5Q9YvAz.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Pa7PrkpPjGwWMMWvOA5Q9YvAz.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <26,/home/sourcerercc-user/input/Pa7PrkpPjGwWMMWvOA5Q9YvAz.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000711micros | Zip: 36 Read: 51 Separators: 25micros Tokens: 84micros Write: 14micros Hash: 19 regex: 10
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (27). Current total: 26
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <27,/home/sourcerercc-user/input/QJ7DJjCXmAg6Wltw7HRX6zFzI.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/QJ7DJjCXmAg6Wltw7HRX6zFzI.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/QJ7DJjCXmAg6Wltw7HRX6zFzI.java.zip/home/sourcerercc-user/data/Taxis/QJ7DJjCXmAg6Wltw7HRX6zFzI.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/QJ7DJjCXmAg6Wltw7HRX6zFzI.java.zip/home/sourcerercc-user/data/Taxis/QJ7DJjCXmAg6Wltw7HRX6zFzI.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/QJ7DJjCXmAg6Wltw7HRX6zFzI.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <27,/home/sourcerercc-user/input/QJ7DJjCXmAg6Wltw7HRX6zFzI.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001929micros | Zip: 83 Read: 59 Separators: 22micros Tokens: 99micros Write: 19micros Hash: 43 regex: 255
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <28,/home/sourcerercc-user/input/RdW3cjQxvKlk0JGvJO6uvjnoi.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/RdW3cjQxvKlk0JGvJO6uvjnoi.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/RdW3cjQxvKlk0JGvJO6uvjnoi.java.zip/home/sourcerercc-user/data/Taxis/RdW3cjQxvKlk0JGvJO6uvjnoi.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/RdW3cjQxvKlk0JGvJO6uvjnoi.java.zip/home/sourcerercc-user/data/Taxis/RdW3cjQxvKlk0JGvJO6uvjnoi.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/RdW3cjQxvKlk0JGvJO6uvjnoi.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <28,/home/sourcerercc-user/input/RdW3cjQxvKlk0JGvJO6uvjnoi.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000857micros | Zip: 34 Read: 63 Separators: 28micros Tokens: 99micros Write: 13micros Hash: 15 regex: 33
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (29). Current total: 28
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <29,/home/sourcerercc-user/input/RfEdRPSHraxPMDLm5sbIcTlok.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/RfEdRPSHraxPMDLm5sbIcTlok.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/RfEdRPSHraxPMDLm5sbIcTlok.java.zip/home/sourcerercc-user/data/Taxis/RfEdRPSHraxPMDLm5sbIcTlok.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/RfEdRPSHraxPMDLm5sbIcTlok.java.zip/home/sourcerercc-user/data/Taxis/RfEdRPSHraxPMDLm5sbIcTlok.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/RfEdRPSHraxPMDLm5sbIcTlok.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <29,/home/sourcerercc-user/input/RfEdRPSHraxPMDLm5sbIcTlok.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.002056micros | Zip: 76 Read: 64 Separators: 112micros Tokens: 113micros Write: 20micros Hash: 43 regex: 278
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <30,/home/sourcerercc-user/input/SSHGivHlZWTTsOAgQjj8BokSs.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/SSHGivHlZWTTsOAgQjj8BokSs.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/SSHGivHlZWTTsOAgQjj8BokSs.java.zip/home/sourcerercc-user/data/Taxis/SSHGivHlZWTTsOAgQjj8BokSs.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/SSHGivHlZWTTsOAgQjj8BokSs.java.zip/home/sourcerercc-user/data/Taxis/SSHGivHlZWTTsOAgQjj8BokSs.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/SSHGivHlZWTTsOAgQjj8BokSs.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <30,/home/sourcerercc-user/input/SSHGivHlZWTTsOAgQjj8BokSs.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000795micros | Zip: 34 Read: 59 Separators: 27micros Tokens: 95micros Write: 7micros Hash: 14 regex: 19
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (31). Current total: 30
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <31,/home/sourcerercc-user/input/SnOt9Q25W4q3dK0QOEtnmN5BU.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/SnOt9Q25W4q3dK0QOEtnmN5BU.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/SnOt9Q25W4q3dK0QOEtnmN5BU.java.zip/home/sourcerercc-user/data/Taxis/SnOt9Q25W4q3dK0QOEtnmN5BU.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/SnOt9Q25W4q3dK0QOEtnmN5BU.java.zip/home/sourcerercc-user/data/Taxis/SnOt9Q25W4q3dK0QOEtnmN5BU.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/SnOt9Q25W4q3dK0QOEtnmN5BU.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <31,/home/sourcerercc-user/input/SnOt9Q25W4q3dK0QOEtnmN5BU.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.002023micros | Zip: 77 Read: 63 Separators: 46micros Tokens: 132micros Write: 20micros Hash: 42 regex: 254
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <32,/home/sourcerercc-user/input/TJI8zHEYT5LRvCsA7gYIbH7Qr.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/TJI8zHEYT5LRvCsA7gYIbH7Qr.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/TJI8zHEYT5LRvCsA7gYIbH7Qr.java.zip/home/sourcerercc-user/data/Taxis/TJI8zHEYT5LRvCsA7gYIbH7Qr.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/TJI8zHEYT5LRvCsA7gYIbH7Qr.java.zip/home/sourcerercc-user/data/Taxis/TJI8zHEYT5LRvCsA7gYIbH7Qr.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/TJI8zHEYT5LRvCsA7gYIbH7Qr.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <32,/home/sourcerercc-user/input/TJI8zHEYT5LRvCsA7gYIbH7Qr.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000920micros | Zip: 34 Read: 61 Separators: 32micros Tokens: 106micros Write: 12micros Hash: 15 regex: 29
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (33). Current total: 32
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <33,/home/sourcerercc-user/input/UDNGhLn09kT7QYKQrhIo2bi9G.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/UDNGhLn09kT7QYKQrhIo2bi9G.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/UDNGhLn09kT7QYKQrhIo2bi9G.java.zip/home/sourcerercc-user/data/Taxis/UDNGhLn09kT7QYKQrhIo2bi9G.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/UDNGhLn09kT7QYKQrhIo2bi9G.java.zip/home/sourcerercc-user/data/Taxis/UDNGhLn09kT7QYKQrhIo2bi9G.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/UDNGhLn09kT7QYKQrhIo2bi9G.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <33,/home/sourcerercc-user/input/UDNGhLn09kT7QYKQrhIo2bi9G.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001748micros | Zip: 74 Read: 57 Separators: 20micros Tokens: 96micros Write: 12micros Hash: 35 regex: 249
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <34,/home/sourcerercc-user/input/UQ343vHfeAOWPriIL4Xru5XMC.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/UQ343vHfeAOWPriIL4Xru5XMC.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/UQ343vHfeAOWPriIL4Xru5XMC.java.zip/home/sourcerercc-user/data/Taxis/UQ343vHfeAOWPriIL4Xru5XMC.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/UQ343vHfeAOWPriIL4Xru5XMC.java.zip/home/sourcerercc-user/data/Taxis/UQ343vHfeAOWPriIL4Xru5XMC.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/UQ343vHfeAOWPriIL4Xru5XMC.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <34,/home/sourcerercc-user/input/UQ343vHfeAOWPriIL4Xru5XMC.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000682micros | Zip: 33 Read: 45 Separators: 17micros Tokens: 85micros Write: 7micros Hash: 16 regex: 9
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (35). Current total: 34
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <35,/home/sourcerercc-user/input/Uu1D7w3RecnGQxb3TIRXGYISR.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Uu1D7w3RecnGQxb3TIRXGYISR.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/Uu1D7w3RecnGQxb3TIRXGYISR.java.zip/home/sourcerercc-user/data/Taxis/Uu1D7w3RecnGQxb3TIRXGYISR.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/Uu1D7w3RecnGQxb3TIRXGYISR.java.zip/home/sourcerercc-user/data/Taxis/Uu1D7w3RecnGQxb3TIRXGYISR.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Uu1D7w3RecnGQxb3TIRXGYISR.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <35,/home/sourcerercc-user/input/Uu1D7w3RecnGQxb3TIRXGYISR.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001899micros | Zip: 74 Read: 66 Separators: 57micros Tokens: 104micros Write: 23micros Hash: 36 regex: 299
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <36,/home/sourcerercc-user/input/VHoij57foVaRucJAXnKwrz7wN.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/VHoij57foVaRucJAXnKwrz7wN.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/VHoij57foVaRucJAXnKwrz7wN.java.zip/home/sourcerercc-user/data/Taxis/VHoij57foVaRucJAXnKwrz7wN.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/VHoij57foVaRucJAXnKwrz7wN.java.zip/home/sourcerercc-user/data/Taxis/VHoij57foVaRucJAXnKwrz7wN.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/VHoij57foVaRucJAXnKwrz7wN.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <36,/home/sourcerercc-user/input/VHoij57foVaRucJAXnKwrz7wN.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000864micros | Zip: 35 Read: 60 Separators: 51micros Tokens: 97micros Write: 17micros Hash: 14 regex: 40
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (37). Current total: 36
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <37,/home/sourcerercc-user/input/VUTi3tcXbl4dR0FmsuzUErX0E.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/VUTi3tcXbl4dR0FmsuzUErX0E.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/VUTi3tcXbl4dR0FmsuzUErX0E.java.zip/home/sourcerercc-user/data/Taxis/VUTi3tcXbl4dR0FmsuzUErX0E.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/VUTi3tcXbl4dR0FmsuzUErX0E.java.zip/home/sourcerercc-user/data/Taxis/VUTi3tcXbl4dR0FmsuzUErX0E.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/VUTi3tcXbl4dR0FmsuzUErX0E.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <37,/home/sourcerercc-user/input/VUTi3tcXbl4dR0FmsuzUErX0E.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.002137micros | Zip: 78 Read: 75 Separators: 118micros Tokens: 123micros Write: 25micros Hash: 46 regex: 278
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <38,/home/sourcerercc-user/input/Vg3Lw8sbXbWjTXB4QkHk1CztY.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Vg3Lw8sbXbWjTXB4QkHk1CztY.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/Vg3Lw8sbXbWjTXB4QkHk1CztY.java.zip/home/sourcerercc-user/data/Taxis/Vg3Lw8sbXbWjTXB4QkHk1CztY.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/Vg3Lw8sbXbWjTXB4QkHk1CztY.java.zip/home/sourcerercc-user/data/Taxis/Vg3Lw8sbXbWjTXB4QkHk1CztY.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Vg3Lw8sbXbWjTXB4QkHk1CztY.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <38,/home/sourcerercc-user/input/Vg3Lw8sbXbWjTXB4QkHk1CztY.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000772micros | Zip: 35 Read: 57 Separators: 22micros Tokens: 94micros Write: 16micros Hash: 14 regex: 34
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (39). Current total: 38
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <39,/home/sourcerercc-user/input/X3L5yqKRE6s4IBEljxYi8s2gf.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/X3L5yqKRE6s4IBEljxYi8s2gf.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/X3L5yqKRE6s4IBEljxYi8s2gf.java.zip/home/sourcerercc-user/data/Taxis/X3L5yqKRE6s4IBEljxYi8s2gf.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/X3L5yqKRE6s4IBEljxYi8s2gf.java.zip/home/sourcerercc-user/data/Taxis/X3L5yqKRE6s4IBEljxYi8s2gf.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/X3L5yqKRE6s4IBEljxYi8s2gf.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <39,/home/sourcerercc-user/input/X3L5yqKRE6s4IBEljxYi8s2gf.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.002422micros | Zip: 121 Read: 110 Separators: 70micros Tokens: 131micros Write: 38micros Hash: 49 regex: 340
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <40,/home/sourcerercc-user/input/Xc5kZYjA03ZiJobjjVfzXfBxS.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Xc5kZYjA03ZiJobjjVfzXfBxS.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/Xc5kZYjA03ZiJobjjVfzXfBxS.java.zip/home/sourcerercc-user/data/Taxis/Xc5kZYjA03ZiJobjjVfzXfBxS.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/Xc5kZYjA03ZiJobjjVfzXfBxS.java.zip/home/sourcerercc-user/data/Taxis/Xc5kZYjA03ZiJobjjVfzXfBxS.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Xc5kZYjA03ZiJobjjVfzXfBxS.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <40,/home/sourcerercc-user/input/Xc5kZYjA03ZiJobjjVfzXfBxS.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000690micros | Zip: 35 Read: 50 Separators: 18micros Tokens: 73micros Write: 10micros Hash: 10 regex: 42
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (41). Current total: 40
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <41,/home/sourcerercc-user/input/XnNdE6JJPrvKHbpJWwvViC0wh.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/XnNdE6JJPrvKHbpJWwvViC0wh.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/XnNdE6JJPrvKHbpJWwvViC0wh.java.zip/home/sourcerercc-user/data/Taxis/XnNdE6JJPrvKHbpJWwvViC0wh.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/XnNdE6JJPrvKHbpJWwvViC0wh.java.zip/home/sourcerercc-user/data/Taxis/XnNdE6JJPrvKHbpJWwvViC0wh.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/XnNdE6JJPrvKHbpJWwvViC0wh.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <41,/home/sourcerercc-user/input/XnNdE6JJPrvKHbpJWwvViC0wh.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001890micros | Zip: 80 Read: 66 Separators: 32micros Tokens: 113micros Write: 18micros Hash: 39 regex: 247
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <42,/home/sourcerercc-user/input/XvLggiA0U2816f7k8OxJUfOXy.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/XvLggiA0U2816f7k8OxJUfOXy.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/XvLggiA0U2816f7k8OxJUfOXy.java.zip/home/sourcerercc-user/data/Taxis/XvLggiA0U2816f7k8OxJUfOXy.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/XvLggiA0U2816f7k8OxJUfOXy.java.zip/home/sourcerercc-user/data/Taxis/XvLggiA0U2816f7k8OxJUfOXy.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/XvLggiA0U2816f7k8OxJUfOXy.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <42,/home/sourcerercc-user/input/XvLggiA0U2816f7k8OxJUfOXy.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000920micros | Zip: 34 Read: 81 Separators: 30micros Tokens: 114micros Write: 9micros Hash: 18 regex: 62
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (43). Current total: 42
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <43,/home/sourcerercc-user/input/YsupfvRpv05mUddNkhNYEbFQV.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/YsupfvRpv05mUddNkhNYEbFQV.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/YsupfvRpv05mUddNkhNYEbFQV.java.zip/home/sourcerercc-user/data/Taxis/YsupfvRpv05mUddNkhNYEbFQV.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/YsupfvRpv05mUddNkhNYEbFQV.java.zip/home/sourcerercc-user/data/Taxis/YsupfvRpv05mUddNkhNYEbFQV.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/YsupfvRpv05mUddNkhNYEbFQV.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <43,/home/sourcerercc-user/input/YsupfvRpv05mUddNkhNYEbFQV.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001711micros | Zip: 78 Read: 61 Separators: 20micros Tokens: 82micros Write: 13micros Hash: 36 regex: 232
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <44,/home/sourcerercc-user/input/Z2YE4AGGGFMWhGTOJF9QPVXy2.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/Z2YE4AGGGFMWhGTOJF9QPVXy2.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/Z2YE4AGGGFMWhGTOJF9QPVXy2.java.zip/home/sourcerercc-user/data/Taxis/Z2YE4AGGGFMWhGTOJF9QPVXy2.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/Z2YE4AGGGFMWhGTOJF9QPVXy2.java.zip/home/sourcerercc-user/data/Taxis/Z2YE4AGGGFMWhGTOJF9QPVXy2.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/Z2YE4AGGGFMWhGTOJF9QPVXy2.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <44,/home/sourcerercc-user/input/Z2YE4AGGGFMWhGTOJF9QPVXy2.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000795micros | Zip: 49 Read: 54 Separators: 18micros Tokens: 92micros Write: 19micros Hash: 13 regex: 14
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (45). Current total: 44
+[36malpine-sourcerercc_1    |[0m Starting new process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 starting
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <45,/home/sourcerercc-user/input/ZjiHWBeSJaY57W8OtdJVl0r6N.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/ZjiHWBeSJaY57W8OtdJVl0r6N.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/ZjiHWBeSJaY57W8OtdJVl0r6N.java.zip/home/sourcerercc-user/data/Taxis/ZjiHWBeSJaY57W8OtdJVl0r6N.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/ZjiHWBeSJaY57W8OtdJVl0r6N.java.zip/home/sourcerercc-user/data/Taxis/ZjiHWBeSJaY57W8OtdJVl0r6N.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/ZjiHWBeSJaY57W8OtdJVl0r6N.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <45,/home/sourcerercc-user/input/ZjiHWBeSJaY57W8OtdJVl0r6N.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.001853micros | Zip: 74 Read: 62 Separators: 28micros Tokens: 108micros Write: 14micros Hash: 29 regex: 254
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting zip project <46,/home/sourcerercc-user/input/ZmB1ce4Z4bRirnJRrzLxHP71W.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_zip_ball /home/sourcerercc-user/input/ZmB1ce4Z4bRirnJRrzLxHP71W.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Attempting to process_file_contents /home/sourcerercc-user/input/ZmB1ce4Z4bRirnJRrzLxHP71W.java.zip/home/sourcerercc-user/data/Taxis/ZmB1ce4Z4bRirnJRrzLxHP71W.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Generating original tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_file_contents /home/sourcerercc-user/input/ZmB1ce4Z4bRirnJRrzLxHP71W.java.zip/home/sourcerercc-user/data/Taxis/ZmB1ce4Z4bRirnJRrzLxHP71W.java
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Successfully ran process_zip_ball /home/sourcerercc-user/input/ZmB1ce4Z4bRirnJRrzLxHP71W.java.zip
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Project finished <46,/home/sourcerercc-user/input/ZmB1ce4Z4bRirnJRrzLxHP71W.java.zip> (process 0)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread)  (0): Total: 0:00:00.000719micros | Zip: 34 Read: 47 Separators: 19micros Tokens: 91micros Write: 7micros Hash: 18 regex: 11
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Process 0 finished. 2 files in 0s.
+[36malpine-sourcerercc_1    |[0m *** No more projects to process. Waiting for children to finish...
+[36malpine-sourcerercc_1    |[0m Process 0 finished, 2 files processed (47). Current total: 46
+[36malpine-sourcerercc_1    |[0m *** All done. 46 files in 0:00:00.124222
+[36malpine-sourcerercc_1    |[0m Step 2: prepare SourcererCC
+[36malpine-sourcerercc_1    |[0m      2.1: Find distinct token hashes
+[36malpine-sourcerercc_1    |[0m Searching on  files_tokens/files-tokens-0.tokens
+[36malpine-sourcerercc_1    |[0m Searching on  files_stats/files-stats-0.stats
+[36malpine-sourcerercc_1    |[0m      2.2: analyze token hashes
+[36malpine-sourcerercc_1    |[0m search will be carried out with 2 nodes
+[36malpine-sourcerercc_1    |[0m loading previous run state
+[36malpine-sourcerercc_1    |[0m /home/sourcerercc-user/SourcererCC-master/clone-detector/scriptinator_metadata.scc doesn't exist, creating one with state EXECUTE_1
+[36malpine-sourcerercc_1    |[0m previous run state 0
+[36malpine-sourcerercc_1    |[0m running new command /home/sourcerercc-user/SourcererCC-master/clone-detector/execute.sh 1
+[36malpine-sourcerercc_1    |[0m ('current state: ', '1')
+[36malpine-sourcerercc_1    |[0m ('flushing current state', '1')
+[36malpine-sourcerercc_1    |[0m running new command /home/sourcerercc-user/SourcererCC-master/clone-detector/backup-gtpm.sh
+[36malpine-sourcerercc_1    |[0m running new command /home/sourcerercc-user/SourcererCC-master/clone-detector/runnodes.sh init 1
+[36malpine-sourcerercc_1    |[0m ('current state: ', '2')
+[36malpine-sourcerercc_1    |[0m ('flushing current state', '2')
+[36malpine-sourcerercc_1    |[0m running new command /home/sourcerercc-user/SourcererCC-master/clone-detector/runnodes.sh index 1
+[36malpine-sourcerercc_1    |[0m ('current state: ', '3')
+[36malpine-sourcerercc_1    |[0m ('flushing current state', '3')
+[36malpine-sourcerercc_1    |[0m running new command /home/sourcerercc-user/SourcererCC-master/clone-detector/move-index.sh
+[36malpine-sourcerercc_1    |[0m ('current state: ', '4')
+[36malpine-sourcerercc_1    |[0m ('flushing current state', '4')
+[36malpine-sourcerercc_1    |[0m running new command /home/sourcerercc-user/SourcererCC-master/clone-detector/execute.sh 2
+[36malpine-sourcerercc_1    |[0m ('current state: ', '5')
+[36malpine-sourcerercc_1    |[0m ('flushing current state', '5')
+[36malpine-sourcerercc_1    |[0m running new command /home/sourcerercc-user/SourcererCC-master/clone-detector/runnodes.sh search 2
+[36malpine-sourcerercc_1    |[0m ('current state: ', '0')
+[36malpine-sourcerercc_1    |[0m ('flushing current state', '0')
+[36malpine-sourcerercc_1    |[0m SUCCESS: Search Completed on all nodes
+[36malpine-sourcerercc_1    |[0m      2.3: group the pairs
+[36malpine-sourcerercc_1    |[0m Step 3: import the database
+[36malpine-sourcerercc_1    |[0m      3.1: configure docker host
+[36malpine-sourcerercc_1    |[0m      3.2: prepare the database
+[36malpine-sourcerercc_1    |[0m      3.3: import the database
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting DB: oopslaDB with user:p
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) ### Importing files output from tokenizer
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) ## Warming up token values
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Getting info from /home/sourcerercc-user/input/files_tokens/files-tokens-0.tokens
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) ## Import into database
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) ## Importing projects
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Importing from /home/sourcerercc-user/input/bookkeeping_projs/bookkeeping-proj-0.projs
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) ## Importing files and stats
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Importing from /home/sourcerercc-user/input/files_stats/files-stats-0.stats
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Inserted 46 files. Total: 46.
+[36malpine-sourcerercc_1    |[0m      3.4: find clones in the database
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) DROP TABLE IF EXISTS `projectClones`;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) CREATE TABLE `projectClones` (
+[36malpine-sourcerercc_1    |[0m                        id                  INT(6)       UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+[36malpine-sourcerercc_1    |[0m                        cloneId             INT(6)       UNSIGNED NOT NULL,
+[36malpine-sourcerercc_1    |[0m                        cloneClonedFiles    INT(6)       UNSIGNED NOT NULL,
+[36malpine-sourcerercc_1    |[0m                        cloneTotalFiles     INT(6)       UNSIGNED NOT NULL,
+[36malpine-sourcerercc_1    |[0m                        cloneCloningPercent DECIMAL(6,3) UNSIGNED NOT NULL,
+[36malpine-sourcerercc_1    |[0m                        hostId              INT(6)       UNSIGNED NOT NULL,
+[36malpine-sourcerercc_1    |[0m                        hostAffectedFiles   INT(6)       UNSIGNED NOT NULL,
+[36malpine-sourcerercc_1    |[0m                        hostTotalFiles      INT(6)       UNSIGNED NOT NULL,
+[36malpine-sourcerercc_1    |[0m                        hostAffectedPercent DECIMAL(6,3) UNSIGNED NOT NULL,
+[36malpine-sourcerercc_1    |[0m                        INDEX(cloneId),
+[36malpine-sourcerercc_1    |[0m                        INDEX(cloneTotalFiles),
+[36malpine-sourcerercc_1    |[0m                        INDEX(cloneCloningPercent),
+[36malpine-sourcerercc_1    |[0m                        INDEX(hostId),
+[36malpine-sourcerercc_1    |[0m                        INDEX(hostTotalFiles),
+[36malpine-sourcerercc_1    |[0m                        INDEX(hostAffectedPercent),
+[36malpine-sourcerercc_1    |[0m                        UNIQUE INDEX pair (cloneId, hostId)
+[36malpine-sourcerercc_1    |[0m                        ) ENGINE = MYISAM;
+[36malpine-sourcerercc_1    |[0m [DEBUG] (MainThread) Loading project file counts...
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT projectId, COUNT(*) FROM files GROUP BY projectId;
+[36malpine-sourcerercc_1    |[0m [DEBUG] (MainThread) Loading project file counts... done
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) ### Calculating and Importing project clones
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting process 0
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) Starting process 1
+[36malpine-sourcerercc_1    |[0m [DEBUG] (MainThread) [0]: Processing project 0 (1)
+[36malpine-sourcerercc_1    |[0m [DEBUG] (MainThread) [1]: Processing project 0 (2)
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=2;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=1;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('921604c9f28c0f05d513f651edc817f9') AND projectId >= 2;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('d7283add484acfc9b1c7ba5d87668917') AND projectId >= 1;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=4;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=3;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('18f859968dc285fcf3b0c1db1b88d71e') AND projectId >= 4;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('f70631e8bf01d53522994e98bb5531a2') AND projectId >= 3;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=6;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=5;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('1be7de463d720749d4a5c4604aeee822') AND projectId >= 6;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('0a35943d40f12d7b44ae086870de4914') AND projectId >= 5;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=8;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=7;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('60452f2c46bcc3a88cfb7427a3b4663e') AND projectId >= 8;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('d0772d40a54e7c69aa95be4a5fed91f0') AND projectId >= 7;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=10;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=9;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('1c9eb903c9c928216c992232acc80cca') AND projectId >= 9;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('a0086c1e50db11db96f0a26fc617a940') AND projectId >= 10;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=12;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=11;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('7b376a7ee513a6b7cb480a2de17f87e1') AND projectId >= 12;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('2a8469ddeb5f80b229188c65ecf47ad9') AND projectId >= 11;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=13;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=14;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('a49f04bbc3675dabdae805b151927b3c') AND projectId >= 13;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('5dcd5783623f4f7c3e62c67772a1c934') AND projectId >= 14;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=15;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=16;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('91cb639fcdc6fa2b31b44d29dc9a3f74') AND projectId >= 15;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('29aaa8f814fc9fb35b07c74ed7721f74') AND projectId >= 16;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=17;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=18;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('d6c850ceea3e632bf37ebbc27c235bfe') AND projectId >= 17;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('1a90e0afe6b27822b38a01644e5312ea') AND projectId >= 18;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=19;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=20;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('e5c7d54e255f72ec1a6c53545293ef53') AND projectId >= 19;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('baedb39ae2009262f5b38447dc8158b2') AND projectId >= 20;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=21;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=22;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('7278424d499659ed80768bf229fcba26') AND projectId >= 22;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('e12da1548a8e23f771e7be09225eb06d') AND projectId >= 21;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=24;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=23;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('2222419897dc9b3f69fd36dbaf50e71c') AND projectId >= 24;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('b0518d8d6fb6b1945b142488b9a250b2') AND projectId >= 23;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=26;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=25;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('b663f06da0a19006e1d55f32f779a1ba') AND projectId >= 25;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('afa4488b17d7c60f6c4178184bf16892') AND projectId >= 26;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=27;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=28;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('b248f34e1da49b6508a642dc90dc6e81') AND projectId >= 27;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('99be8f63a0541809c9e97e6ea05a8e81') AND projectId >= 28;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=29;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=30;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('30c7a1d6375474250f0daa365a78d13a') AND projectId >= 29;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('107d72276b4dc62bcb3eb874bfaac116') AND projectId >= 30;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=31;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=32;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('2e8c40bf0c5265d7709123986ff011b8') AND projectId >= 31;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('ab77b7bcd4f4af96c84cd3f299fb29ff') AND projectId >= 32;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=33;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=34;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('82dd1205bf1af1ea469d9aff66f55c33') AND projectId >= 33;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('ef878f9d316feb8954a241cd69f065d7') AND projectId >= 34;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=35;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=36;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('3af92ff2313b61f3a16f5b62c51a62c7') AND projectId >= 36;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('5cfe027bd39d1f731944f5b74dfdea8f') AND projectId >= 35;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=38;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=37;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('2b9ab9ee441d8ad36bf65f0074aeb274') AND projectId >= 37;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('f3216a26366c3e59da48e7e692c79d73') AND projectId >= 38;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=39;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=40;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('5fda97d1d6ff4db384a728330830abac') AND projectId >= 39;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('f51802be80eaa602c418d53cfaf03cf6') AND projectId >= 40;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=41;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=42;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('b82fc3e712e4f92679c2337a91dc1724') AND projectId >= 41;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('8c24036a2bc6487c8bbe514fa71d514a') AND projectId >= 42;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=43;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=44;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('1cec46f3153db184054306af3fcc3d5e') AND projectId >= 43;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('e973cef1f4e514e43ef6238050881572') AND projectId >= 44;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=45;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, f.fileHash, tokenHash, totalTokens FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE projectId=46;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('12c78b3ffaab527345787e5b2026f577') AND projectId >= 45;
+[36malpine-sourcerercc_1    |[0m [INFO] (MainThread) SELECT fileId, projectId, f.fileHash, tokenHash FROM files as f
+[36malpine-sourcerercc_1    |[0m                    JOIN stats as s ON f.fileHash=s.fileHash
+[36malpine-sourcerercc_1    |[0m                    WHERE tokenHash in ('1c22126b981cbf83c00f0cf611b6893b') AND projectId >= 46;
+[36malpine-sourcerercc_1    |[0m      3.5: query the database
+[36malpine-sourcerercc_1    |[0m projectId	projectPath	projectUrl
+[36malpine-sourcerercc_1    |[0m 1	/home/sourcerercc-user/input/Buh7lFTuRLvglBJw8PsygWcl6.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 2	/home/sourcerercc-user/input/BurWPjfKUNx1S9i3g1wyEPZBd.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 3	/home/sourcerercc-user/input/CHoSgQHrZtdObJCIILCg9NCNo.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 4	/home/sourcerercc-user/input/CHy9tzZMsUit409DPRN5zId8A.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 5	/home/sourcerercc-user/input/DeiG0PYckvUo6zECg9qhtOj2W.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 6	/home/sourcerercc-user/input/EUgx06Dz7it6F409dFTDp5Rir.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 7	/home/sourcerercc-user/input/FLHyjHb9dZ9SuC5GfHaCKe0IK.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 8	/home/sourcerercc-user/input/FMdgGWDlvOGvjLyupPON2zFBV.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 9	/home/sourcerercc-user/input/FtCQI3pKD6eoKxuVTmSOIkofM.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 10	/home/sourcerercc-user/input/GPYf063qrOqXAO8qXB7sGLE8d.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 11	/home/sourcerercc-user/input/Gk1v1U3LQto7TPPwZ9HsWEHH0.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 12	/home/sourcerercc-user/input/HgFHNYF701UjmVfji9nbpuMbs.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 13	/home/sourcerercc-user/input/IFcTWHlwWyw3I7uBJibW5ZwtK.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 14	/home/sourcerercc-user/input/IaljG2SZMe6I8nZCWp6ofFVOS.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 15	/home/sourcerercc-user/input/J3RowPmOg2qHO6eYLC41Vw6ZT.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 16	/home/sourcerercc-user/input/KAm50pBuMLGt50EmuWIMfsmII.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 17	/home/sourcerercc-user/input/KpDaNc2yULGxB1v5wlL6E3OD6.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 18	/home/sourcerercc-user/input/L6mTynrcqVdsKM5dk8JM1C7WZ.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 19	/home/sourcerercc-user/input/MlxILczEgnctsogTuIyHc4IXX.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 20	/home/sourcerercc-user/input/NCdeERn0tNiGOzng398GOAKfm.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 21	/home/sourcerercc-user/input/NYs33OaJgnHVlC5gxbP4TA6U8.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 22	/home/sourcerercc-user/input/NpqsFLFY0Tf85TgQ5c8URolNr.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 23	/home/sourcerercc-user/input/OF1DO93HThbXM779gK7EAfnII.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 24	/home/sourcerercc-user/input/OPgtMNQ4V3ceg7927dPHX1Pj6.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 25	/home/sourcerercc-user/input/Ojq0tK9rUXUKcYmM6llCDBToA.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 26	/home/sourcerercc-user/input/Pa7PrkpPjGwWMMWvOA5Q9YvAz.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 27	/home/sourcerercc-user/input/QJ7DJjCXmAg6Wltw7HRX6zFzI.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 28	/home/sourcerercc-user/input/RdW3cjQxvKlk0JGvJO6uvjnoi.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 29	/home/sourcerercc-user/input/RfEdRPSHraxPMDLm5sbIcTlok.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 30	/home/sourcerercc-user/input/SSHGivHlZWTTsOAgQjj8BokSs.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 31	/home/sourcerercc-user/input/SnOt9Q25W4q3dK0QOEtnmN5BU.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 32	/home/sourcerercc-user/input/TJI8zHEYT5LRvCsA7gYIbH7Qr.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 33	/home/sourcerercc-user/input/UDNGhLn09kT7QYKQrhIo2bi9G.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 34	/home/sourcerercc-user/input/UQ343vHfeAOWPriIL4Xru5XMC.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 35	/home/sourcerercc-user/input/Uu1D7w3RecnGQxb3TIRXGYISR.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 36	/home/sourcerercc-user/input/VHoij57foVaRucJAXnKwrz7wN.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 37	/home/sourcerercc-user/input/VUTi3tcXbl4dR0FmsuzUErX0E.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 38	/home/sourcerercc-user/input/Vg3Lw8sbXbWjTXB4QkHk1CztY.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 39	/home/sourcerercc-user/input/X3L5yqKRE6s4IBEljxYi8s2gf.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 40	/home/sourcerercc-user/input/Xc5kZYjA03ZiJobjjVfzXfBxS.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 41	/home/sourcerercc-user/input/XnNdE6JJPrvKHbpJWwvViC0wh.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 42	/home/sourcerercc-user/input/XvLggiA0U2816f7k8OxJUfOXy.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 43	/home/sourcerercc-user/input/YsupfvRpv05mUddNkhNYEbFQV.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 44	/home/sourcerercc-user/input/Z2YE4AGGGFMWhGTOJF9QPVXy2.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 45	/home/sourcerercc-user/input/ZjiHWBeSJaY57W8OtdJVl0r6N.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m 46	/home/sourcerercc-user/input/ZmB1ce4Z4bRirnJRrzLxHP71W.java.zip	NULL
+[36malpine-sourcerercc_1    |[0m [Warning] No result pairs found!
+[36msourcerercc_alpine-sourcerercc_1 exited with code 0
+[0mAborting on container exit...

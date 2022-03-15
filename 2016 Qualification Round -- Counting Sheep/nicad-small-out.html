@@ -1,0 +1,172 @@
+<html>
+<head>
+    <title>NiCad6 Clone Report</title>
+    <style type="text/css">
+        body {font-family:sans-serif;}
+        table {background-color:white; border:0px; padding:0px; border-spacing:4px; width:auto; margin-left:30px; margin-right:auto;}
+        td {background-color:rgba(192,212,238,0.8); border:0px; padding:8px; width:auto; vertical-align:top; border-radius:8px}
+        pre {background-color:white; padding:4px;}
+        a {color:darkblue;}
+    </style>
+</head>
+<body>
+<h2>NiCad6 Clone Report</h2>
+<table>
+<tr style="font-size:14pt">
+<td><b>System:</b> &nbsp; sub</td>
+<td><b>Clone pairs:</b> &nbsp; 2</td>
+<td><b>Clone classes:</b> &nbsp; 2</td>
+</tr>
+<tr style="font-size:12pt">
+<td style="background-color:white">Clone type: &nbsp; 3-2</td>
+<td style="background-color:white">Granularity: &nbsp; functions-blind</td>
+<td style="background-color:white">Max diff threshold: &nbsp; 30%</td>
+<td style="background-color:white">Clone size: &nbsp; 10 - 2500 lines</td>
+<td style="background-color:white">Total functions-blind: &nbsp; 224</td>
+</tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 1:</b> &nbsp; 2 fragments, nominal size 23 lines, similarity 100%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag30')" href="javascript:;">
+sub/CoderKhushal/0/Rg4fFk4tVpHvzmJWEJsS3JrRK.java: 4-26
+</a>
+<div class="mid" id="frag30" style="display:none"><pre>
+   public static void main(String[] args) throws FileNotFoundException {
+     FileInputStream fis = new FileInputStream("C:\\Users\\Betu\\Desktop\\A-small-attempt4.in");
+     PrintStream out = new PrintStream(new FileOutputStream("C:\\Users\\Betu\\Desktop\\A-large.out"));
+     System.setIn(fis);
+     System.setOut(out);
+     Scanner in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+     int t = in.nextInt();  // Scanner has functions to read ints, longs, strings, chars, etc.
+     for (int i = 1; i &lt;= t; ++i) {
+         int n = in.nextInt();
+         HashSet&lt;Integer&gt; hash = new HashSet();
+         if (n == 0) {
+             System.out.println("Case #" + i + ": INSOMNIA");
+         } else {
+             int k = 1;
+             while (hash.size() != 10) {
+                 hash.addAll(getNum(n * k));
+                 k++;
+ //                System.out.println(hash.toString());
+             }
+             System.out.println("Case #" + i + ": " + n * (k - 1));
+         }
+     }
+   }
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag124')" href="javascript:;">
+sub/MARRY/0/R1r3KkTXHvr6OuOwPq5wpWM2g.java: 4-26
+</a>
+<div class="mid" id="frag124" style="display:none"><pre>
+   public static void main(String[] args) throws FileNotFoundException {
+     FileInputStream fis = new FileInputStream("A-small-attempt4.in.txt");
+     PrintStream out = new PrintStream(new FileOutputStream("A-small.out.txt"));
+     System.setIn(fis);
+     System.setOut(out);
+     Scanner in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+     int t = in.nextInt();  // Scanner has functions to read ints, longs, strings, chars, etc.
+     for (int i = 1; i &lt;= t; ++i) {
+         int n = in.nextInt();
+         HashSet&lt;Integer&gt; hash = new HashSet();
+         if (n == 0) {
+             System.out.println("Case #" + i + ": INSOMNIA");
+         } else {
+             int k = 1;
+             while (hash.size() != 10) {
+                 hash.addAll(getNum(n * k));
+                 k++;
+ //                System.out.println(hash.toString());
+             }
+             System.out.println("Case #" + i + ": " + n * (k - 1));
+         }
+     }
+   }
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<br>
+<table style="width:1000px; border:2px solid lightgrey; border-radius:8px;">
+<tr><td style="background-color:white">
+<p style="font-size:14pt"><b>Class 2:</b> &nbsp; 2 fragments, nominal size 18 lines, similarity 86%</p>
+<table cellpadding=4 border=2>
+<tr>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag100')" href="javascript:;">
+sub/vedipen/0/FeTVA1oEwMzETbY8qa4GIiWyT.java: 30-48
+</a>
+<div class="mid" id="frag100" style="display:none"><pre>
+  	public int readInt() {
+ 		int c = read();
+ 		while (isSpaceChar(c))
+ 			c = read();
+ 		int sgn = 1;
+ 		if (c == '-') {
+ 			sgn = -1;
+ 			c = read();
+ 		}
+ 		int res = 0;
+ 		do {
+ 			if (c &lt; '0' || c &gt; '9')
+ 				throw new InputMismatchException();
+ 			res *= 10;
+ 			res += c - '0';
+ 			c = read();
+ 		} while (!isSpaceChar(c));
+ 		return res * sgn;
+ 		}
+</pre></div>
+</td>
+<td width="auto">
+<a onclick="javascript:ShowHide('frag102')" href="javascript:;">
+sub/vedipen/0/FeTVA1oEwMzETbY8qa4GIiWyT.java: 82-100
+</a>
+<div class="mid" id="frag102" style="display:none"><pre>
+     public long readLong() {
+         int c = read();
+         while (isSpaceChar(c))
+             c = read();
+         int sgn = 1;
+         if (c == '-') {
+             sgn = -1;
+             c = read();
+         }
+         long res = 0;
+         do {
+             if (c &lt; '0' || c &gt; '9')
+                 throw new InputMismatchException();
+             res *= 10;
+             res += c - '0';
+             c = read();
+         } while (!isSpaceChar(c));
+         return res * sgn;
+     }
+</pre></div>
+</td>
+</tr><tr>
+</tr>
+</table>
+</td></tr>
+</table>
+<script language="JavaScript">
+function ShowHide(divId) { 
+    if(document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display='block';
+    } else { 
+        document.getElementById(divId).style.display = 'none';
+    } 
+}
+</script>
+</body>
+</html>
